@@ -3,6 +3,7 @@
     "id": "",
     "point": "",
     "size": "",
-    "faction": ""
+    "faction": "",
+    "role": ["logistics", "ewar", "link"]
   }
 }
