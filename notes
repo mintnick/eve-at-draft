@@ -4,7 +4,17 @@ done https://wiki.eveuniversity.org/Frigates
 done https://wiki.eveuniversity.org/Destroyers
 done https://wiki.eveuniversity.org/Cruisers
 done https://wiki.eveuniversity.org/Battlecruisers
-https://wiki.eveuniversity.org/Battleships
+done https://wiki.eveuniversity.org/Battleships
 
 2. rules
 https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration#h2-6
+
+no-flag:
+Leshak
+Widow
+Bhaalgorn
+Rattlesnake
+
+3. edit json
+
+to: Combat BC 13 points
