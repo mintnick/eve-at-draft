@@ -1,0 +1,1370 @@
+{
+  "Golem": {
+    "points": "24",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Kronos": {
+    "points": "24",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Vargur": {
+    "points": "24",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Redeemer": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Catalyst": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Kikimora": {
+    "points": "7",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Svipul": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Catalyst_Navy_Issue": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Talwar": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Flycatcher": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Thrasher": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Dragoon": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Algos": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Draugur": {
+    "points": "8",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Coercer_Navy_Issue": {
+    "points": "5",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Coercer": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Eris": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Magus": {
+    "points": "6",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Stork": {
+    "points": "6",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Bifrost": {
+    "points": "6",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Corax": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Cormorant_Navy_Issue": {
+    "points": "5",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Hecate": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Thrasher_Fleet_Issue": {
+    "points": "5",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Pontifex": {
+    "points": "6",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Cormorant": {
+    "points": "3",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Sabre": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Confessor": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Jackdaw": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Heretic": {
+    "points": "4",
+    "size": "Destroyer",
+    "role": []
+  },
+  "Brutix_Navy_Issue": {
+    "points": "14",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Prophecy": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Myrmidon_Navy_Issue": {
+    "points": "14",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Vulture": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Astarte": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Harbinger": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Oracle": {
+    "points": "10",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Naga": {
+    "points": "10",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Brutix": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Talos": {
+    "points": "10",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Drake": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Drake_Navy_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Drekavac": {
+    "points": "17",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Prophecy_Navy_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Claymore": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Hurricane_Fleet_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Tornado": {
+    "points": "10",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Cyclone_Fleet_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Ferox_Navy_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Hurricane": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Ferox": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Eos": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Damnation": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Cyclone": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Absolution": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Harbinger_Navy_Issue": {
+    "points": "15",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Myrmidon": {
+    "points": "13",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Nighthawk": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Sleipnir": {
+    "points": "18",
+    "size": "Battlecruiser",
+    "role": []
+  },
+  "Widow": {
+    "points": "25",
+    "size": "Battleship",
+    "role": []
+  },
+  "Machariel": {
+    "points": "23",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Abaddon": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Dominix": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Rokh": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Paladin": {
+    "points": "24",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Leshak": {
+    "points": "25",
+    "size": "Battleship",
+    "role": []
+  },
+  "Vindicator": {
+    "points": "23",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Tempest": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Sin": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Apocalypse": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Scorpion_Navy_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Megathron_Navy_Issue": {
+    "points": "20",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Barghest": {
+    "points": "23",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Raven": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Bhaalgorn": {
+    "points": "23",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Thunderchild": {
+    "points": "18",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Scorpion": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Tempest_Fleet_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Typhoon_Fleet_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Dominix_Navy_Issue": {
+    "points": "20",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Armageddon": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Megathron": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Rattlesnake": {
+    "points": "25",
+    "size": "Battleship",
+    "role": []
+  },
+  "Armageddon_Navy_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Nightmare": {
+    "points": "23",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Panther": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Typhoon": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Apocalypse_Navy_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Maelstrom": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Hyperion": {
+    "points": "19",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Raven_Navy_Issue": {
+    "points": "21",
+    "size": "Battleship",
+    "role": [
+      "Flagship"
+    ]
+  },
+  "Succubus": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Cheetah": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Executioner": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Condor": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Keres": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Purifier": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Republic_Fleet_Firetail": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Maulus_Navy_Issue": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Hawk": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Enyo": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Stiletto": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Caldari_Navy_Hookbill": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Crucifier_Navy_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Punisher": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Nergal": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Merlin": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Dramiel": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Taranis": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Rifter": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Ares": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Prospect": {
+    "points": "",
+    "size": "Frigate",
+    "faction": "Ore",
+    "role": []
+  },
+  "Vigil": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Magnate_Navy_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Bantam": {
+    "points": "1",
+    "size": "Logistics",
+    "role": []
+  },
+  "Thalia": {
+    "points": "5",
+    "size": "Logistics",
+    "role": []
+  },
+  "Hound": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Buzzard": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Slasher": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Tristan": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Jaguar": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Crow": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Raptor": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Crucifier": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Worm": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Anathema": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Daredevil": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Nemesis": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Retribution": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Heron_Navy_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Probe_Fleet_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Griffin_Navy_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Wolf": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Maulus": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Burst": {
+    "points": "1",
+    "size": "Logistics",
+    "role": []
+  },
+  "Kirin": {
+    "points": "5",
+    "size": "Logistics",
+    "role": []
+  },
+  "Astero": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Skybreaker": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Kestrel": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Atron": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Inquisitor": {
+    "points": "1",
+    "size": "Logistics",
+    "role": []
+  },
+  "Damavik": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Deacon": {
+    "points": "5",
+    "size": "Logistics",
+    "role": []
+  },
+  "Sentinel": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Ishkur": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Breacher": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Vigil_Fleet_Issue": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Harpy": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Scalpel": {
+    "points": "5",
+    "size": "Logistics",
+    "role": []
+  },
+  "Garmur": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Malediction": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Imperial_Navy_Slicer": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Crusader": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Kitsune": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Navitas": {
+    "points": "1",
+    "size": "Logistics",
+    "role": []
+  },
+  "Magnate": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Manticore": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Claw": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Probe": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Griffin": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Imicus": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Endurance": {
+    "points": "",
+    "size": "Frigate",
+    "faction": "Ore",
+    "role": []
+  },
+  "Vengeance": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Heron": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Hyena": {
+    "points": "5",
+    "size": "Frigate",
+    "role": []
+  },
+  "Incursus": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Tormentor": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Federation_Navy_Comet": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Cruor": {
+    "points": "4",
+    "size": "Frigate",
+    "role": []
+  },
+  "Helios": {
+    "points": "3",
+    "size": "Frigate",
+    "role": []
+  },
+  "Imicus_Navy_Issue": {
+    "points": "2",
+    "size": "Frigate",
+    "role": []
+  },
+  "Phobos": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Tengu": {
+    "points": "16",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Lachesis": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Osprey_Navy_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Curse": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Augoror": {
+    "points": "9",
+    "size": "Logistics",
+    "role": []
+  },
+  "Augoror_Navy_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Oneiros": {
+    "points": "16",
+    "size": "Logistics",
+    "role": []
+  },
+  "Stratios": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Rodiva": {
+    "points": "10",
+    "size": "Logistics",
+    "role": []
+  },
+  "Osprey": {
+    "points": "9",
+    "size": "Logistics",
+    "role": []
+  },
+  "Broadsword": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Vexor": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Falcon": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Omen_Navy_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Scimitar": {
+    "points": "16",
+    "size": "Logistics",
+    "role": []
+  },
+  "Rupture": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Orthrus": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Scythe": {
+    "points": "9",
+    "size": "Logistics",
+    "role": []
+  },
+  "Deimos": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Vedmak": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Rapier": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Muninn": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Thorax": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Basilisk": {
+    "points": "16",
+    "size": "Logistics",
+    "role": []
+  },
+  "Loki": {
+    "points": "16",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Caracal_Navy_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Exequror": {
+    "points": "9",
+    "size": "Logistics",
+    "role": []
+  },
+  "Arbitrator": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Stormbringer": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Stabber_Fleet_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Vagabond": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Exequror_Navy_Issue": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Omen": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Cerberus": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Guardian": {
+    "points": "16",
+    "size": "Logistics",
+    "role": []
+  },
+  "Pilgrim": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Huginn": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Phantasm": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Legion": {
+    "points": "16",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Onyx": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Devoter": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Scythe_Fleet_Issue": {
+    "points": "7",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Gila": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Celestis": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Bellicose": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Vexor_Navy_Issue": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Arazu": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Ishtar": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Proteus": {
+    "points": "16",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Cynabal": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Sacrilege": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Maller": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Caracal": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Moa": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Zealot": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Rook": {
+    "points": "14",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Ashimmu": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Blackbird": {
+    "points": "6",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Stabber": {
+    "points": "4",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Vigilant": {
+    "points": "9",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Eagle": {
+    "points": "12",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Ikitursa": {
+    "points": "15",
+    "size": "Cruiser",
+    "role": []
+  },
+  "Zarmazd": {
+    "points": "17",
+    "size": "Logistics",
+    "role": []
+  },
+  "Impairor": {
+    "roles": [],
+    "points": "1",
+    "size": "Corvette"
+  },
+  "Ibis": {
+    "roles": [],
+    "points": "1",
+    "size": "Corvette"
+  },
+  "Velator": {
+    "roles": [],
+    "points": "1",
+    "size": "Corvette"
+  },
+  "Reaper": {
+    "roles": [],
+    "points": "1",
+    "size": "Corvette"
+  },
+  "Praxis": {
+    "roles": [],
+    "points": "19",
+    "size": "Battleship"
+  },
+  "Bestower": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Sigil": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Badger": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Tayra": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Nereus": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Kryos": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Epithal": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Miasmos": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Iteron_Mark_V": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Hoarder": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Mammoth": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Wreathe": {
+    "roles": [],
+    "points": "2",
+    "size": "Industrial"
+  },
+  "Gnosis": {
+    "roles": [],
+    "points": "13",
+    "size": "Battlecruiser"
+  },
+  "Sunesis": {
+    "roles": [],
+    "points": "3",
+    "size": "Destroyer"
+  },
+  "Echo": {
+    "roles": [],
+    "points": "2",
+    "size": "Corvette"
+  },
+  "Hematos": {
+    "roles": [],
+    "points": "2",
+    "size": "Corvette"
+  },
+  "Immolator": {
+    "roles": [],
+    "points": "2",
+    "size": "Corvette"
+  },
+  "Taipan": {
+    "roles": [],
+    "points": "2",
+    "size": "Corvette"
+  },
+  "Violator": {
+    "roles": [],
+    "points": "2",
+    "size": "Corvette"
+  },
+  "Metamorphosis": {
+    "roles": [],
+    "points": "2",
+    "size": "Frigate"
+  }
+}

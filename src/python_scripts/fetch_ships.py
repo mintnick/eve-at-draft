@@ -10,14 +10,20 @@ data = {}
 for root, dirs, files in os.walk(input_dir):
   for filename in files:
     ship_name = filename.split('.')[0]
-    size = os.path.basename(root)
+    hull_type = os.path.basename(root)
 
     ship_data = {
       "points": "",
-      "size": size,
-      "faction": "",
-      "role": []
+      "hull type": hull_type,
     }
+
+    # Battleship can be flagship except...
+    if hull_type == "Battleship" and ship_name not in ["Leshak", "Bhaalgorn", "Rattlesnake", "Widow"]:
+      ship_data["flagship"] = True
+    
+    # Logistics
+    if hull_type == "Logistics":
+      ship_data["logistics"] = True
 
     data[ship_name] = ship_data
 

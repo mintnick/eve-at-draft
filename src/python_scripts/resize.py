@@ -27,10 +27,12 @@ for root, dirs, files in os.walk(input_dir):
 
         # Open the image
         img = Image.open(os.path.join(root, file))
+        width, height = img.size
+        if width != height != 32:
+          # Resize the image to the target size
+          img = img.resize(target_size, Image.ANTIALIAS)
         
-        # Resize the image to the target size
-        img = img.resize(target_size, Image.ANTIALIAS)
-        
+        file = file.replace('_', ' ')
         # Save the resized image to the output directory
         output_path = os.path.join(output_subdir, file)
         img.save(output_path)

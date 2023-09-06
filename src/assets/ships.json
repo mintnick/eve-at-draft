@@ -1,1412 +1,1075 @@
 {
-  "Golem": {
-    "points": "24",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
-  },
-  "Kronos": {
-    "points": "24",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
-  },
-  "Vargur": {
-    "points": "24",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
-  },
-  "Redeemer": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
-  },
   "Catalyst": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Kikimora": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Svipul": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Catalyst_Navy_Issue": {
-    "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Talwar": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Flycatcher": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Destroyer"
+  },
+  "Cormorant Navy Issue": {
+    "points": "",
+    "hull type": "Destroyer"
   },
   "Thrasher": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Dragoon": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Algos": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Draugur": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Destroyer"
   },
-  "Coercer_Navy_Issue": {
+  "Thrasher Fleet Issue": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Coercer": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Eris": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
+  },
+  "Catalyst Navy Issue": {
+    "points": "",
+    "hull type": "Destroyer"
   },
   "Magus": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Stork": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Bifrost": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Corax": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
-  },
-  "Cormorant_Navy_Issue": {
-    "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Hecate": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Destroyer"
   },
-  "Thrasher_Fleet_Issue": {
+  "Coercer Navy Issue": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Pontifex": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Cormorant": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Sabre": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Confessor": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Jackdaw": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Destroyer"
   },
   "Heretic": {
     "points": "",
-    "size": "Destroyer",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Destroyer"
   },
-  "Brutix_Navy_Issue": {
-    "points": "14",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+  "Harbinger Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Prophecy": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Battlecruiser"
   },
-  "Myrmidon_Navy_Issue": {
-    "points": "14",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+  "Cyclone Fleet Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
+  },
+  "Hurricane Fleet Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Vulture": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Astarte": {
-    "points": "18",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Harbinger": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Battlecruiser"
+  },
+  "Gnosis": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Oracle": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Battlecruiser"
+  },
+  "Ferox Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Naga": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Brutix": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Talos": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Drake": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
-  },
-  "Drake_Navy_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Drekavac": {
-    "points": "17",
-    "size": "Battlecruiser",
-    "faction": "Triglavian",
-    "role": []
-  },
-  "Prophecy_Navy_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Claymore": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Battlecruiser"
   },
-  "Hurricane_Fleet_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
+  "Prophecy Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
+  },
+  "Drake Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Tornado": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Cyclone_Fleet_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Ferox_Navy_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Hurricane": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Ferox": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Battlecruiser"
+  },
+  "Sunesis": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Eos": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Damnation": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Cyclone": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Battlecruiser"
+  },
+  "Myrmidon Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Absolution": {
-    "points": "18",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Battlecruiser"
   },
-  "Harbinger_Navy_Issue": {
-    "points": "15",
-    "size": "Battlecruiser",
-    "faction": "Amarr",
-    "role": []
+  "Brutix Navy Issue": {
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Myrmidon": {
     "points": "",
-    "size": "Battlecruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Battlecruiser"
   },
   "Nighthawk": {
-    "points": "18",
-    "size": "Battlecruiser",
-    "faction": "Caldari",
-    "role": []
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Sleipnir": {
-    "points": "18",
-    "size": "Battlecruiser",
-    "faction": "Minmatar",
-    "role": []
+    "points": "",
+    "hull type": "Battlecruiser"
   },
   "Widow": {
-    "points": "25",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": []
+    "points": "",
+    "hull type": "Battleship"
+  },
+  "Raven Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Machariel": {
-    "points": "23",
-    "size": "Battleship",
-    "faction": "Angel",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Abaddon": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Typhoon Fleet Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Dominix": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Rokh": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Apocalypse Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Paladin": {
-    "points": "24",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Leshak": {
-    "points": "25",
-    "size": "Battleship",
-    "faction": "Triglavian",
-    "role": []
+    "points": "",
+    "hull type": "Battleship"
   },
   "Vindicator": {
-    "points": "23",
-    "size": "Battleship",
-    "faction": "Serpentis",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Tempest": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Sin": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Apocalypse": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
-  "Scorpion_Navy_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
-  },
-  "Megathron_Navy_Issue": {
-    "points": "20",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+  "Vargur": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Barghest": {
-    "points": "23",
-    "size": "Battleship",
-    "faction": "Mordus",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Raven": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Bhaalgorn": {
-    "points": "23",
-    "size": "Battleship",
-    "faction": "Blood Raiders",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship"
+  },
+  "Armageddon Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Thunderchild": {
-    "points": "18",
-    "size": "Battleship",
-    "faction": "Edencom",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Scorpion": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
-  "Tempest_Fleet_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
+  "Dominix Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
-  "Typhoon_Fleet_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
-  },
-  "Dominix_Navy_Issue": {
-    "points": "20",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+  "Praxis": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Armageddon": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Megathron": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Rattlesnake": {
-    "points": "25",
-    "size": "Battleship",
-    "faction": "Guristas",
-    "role": []
+    "points": "",
+    "hull type": "Battleship"
   },
-  "Armageddon_Navy_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+  "Megathron Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Redeemer": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Scorpion Navy Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Nightmare": {
-    "points": "23",
-    "size": "Battleship",
-    "faction": "Sansha",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Panther": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Typhoon": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
-  },
-  "Apocalypse_Navy_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Amarr",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Maelstrom": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Minmatar",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Golem": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Kronos": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
   "Hyperion": {
-    "points": "19",
-    "size": "Battleship",
-    "faction": "Gallente",
-    "role": ["Flagship"]
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
   },
-  "Raven_Navy_Issue": {
-    "points": "21",
-    "size": "Battleship",
-    "faction": "Caldari",
-    "role": ["Flagship"]
+  "Tempest Fleet Issue": {
+    "points": "",
+    "hull type": "Battleship",
+    "flagship": true
+  },
+  "Kryos": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Epithal": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Wreathe": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Sigil": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Mammoth": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Miasmos": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Badger": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Hoarder": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Tayra": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Iteron Mark V": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Bestower": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Nereus": {
+    "points": "",
+    "hull type": "Industrial"
+  },
+  "Impairor": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Echo": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Violator": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Hematos": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Taipan": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Velator": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Reaper": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Ibis": {
+    "points": "",
+    "hull type": "Corvette"
+  },
+  "Immolator": {
+    "points": "",
+    "hull type": "Corvette"
   },
   "Succubus": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Sansha",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Federation Navy Comet": {
+    "points": "",
+    "hull type": "Frigate"
+  },
+  "Imicus Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Cheetah": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Executioner": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Condor": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Keres": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Purifier": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Republic_Fleet_Firetail": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Maulus_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Hawk": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Enyo": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Stiletto": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
-  "Caldari_Navy_Hookbill": {
+  "Vigil Fleet Issue": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
-  },
-  "Crucifier_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Punisher": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Nergal": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Frigate"
   },
   "Merlin": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Dramiel": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Angel",
-    "role": []
+    "hull type": "Frigate"
   },
   "Taranis": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Rifter": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Ares": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Prospect": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Ore",
-    "role": []
+    "hull type": "Frigate"
   },
   "Vigil": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Magnate_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Bantam": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Thalia": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Hound": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Buzzard": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Slasher": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Tristan": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Jaguar": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Crow": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Raptor": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Crucifier": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Worm": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Guristas",
-    "role": []
+    "hull type": "Frigate"
   },
   "Anathema": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Daredevil": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Serpentis",
-    "role": []
+    "hull type": "Frigate"
   },
   "Nemesis": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Retribution": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Heron_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
-  },
-  "Probe_Fleet_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Griffin_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Wolf": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Maulus": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Burst": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Griffin Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
+  },
+  "Heron Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Kirin": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Astero": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Soe",
-    "role": []
+    "hull type": "Frigate"
   },
   "Skybreaker": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Edencom",
-    "role": []
+    "hull type": "Frigate"
   },
   "Kestrel": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Atron": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Inquisitor": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Damavik": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Republic Fleet Firetail": {
+    "points": "",
+    "hull type": "Frigate"
+  },
+  "Imperial Navy Slicer": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Deacon": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Sentinel": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Ishkur": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Breacher": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Vigil_Fleet_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Harpy": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Scalpel": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Caldari Navy Hookbill": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Garmur": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Mordus",
-    "role": []
+    "hull type": "Frigate"
   },
   "Malediction": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Imperial_Navy_Slicer": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Crusader": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Crucifier Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Kitsune": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Navitas": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Magnate Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Magnate": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Manticore": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Claw": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Maulus Navy Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Probe": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
   },
   "Griffin": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Metamorphosis": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Imicus": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Endurance": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Ore",
-    "role": []
+    "hull type": "Frigate"
   },
   "Vengeance": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Frigate"
   },
   "Heron": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Frigate"
   },
   "Hyena": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Frigate"
+  },
+  "Probe Fleet Issue": {
+    "points": "",
+    "hull type": "Frigate"
   },
   "Incursus": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Tormentor": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Federation_Navy_Comet": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Cruor": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Blood Raiders",
-    "role": []
+    "hull type": "Frigate"
   },
   "Helios": {
     "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
-  },
-  "Imicus_Navy_Issue": {
-    "points": "",
-    "size": "Frigate",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Frigate"
   },
   "Phobos": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Tengu": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Lachesis": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
-  },
-  "Osprey_Navy_Issue": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Curse": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Augoror": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Augoror_Navy_Issue": {
-    "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Oneiros": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Stratios": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Soe",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Rodiva": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Osprey": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Broadsword": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Vexor": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Falcon": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
-  },
-  "Omen_Navy_Issue": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Scimitar": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Rupture": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Orthrus": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Mordus",
-    "role": []
+    "hull type": "Cruiser"
+  },
+  "Scythe Fleet Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Scythe": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
+  },
+  "Vexor Navy Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Deimos": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Vedmak": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Triglavian",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Rapier": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Muninn": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Thorax": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Basilisk": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Loki": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Caracal_Navy_Issue": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Exequror": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Arbitrator": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Stormbringer": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Edencom",
-    "role": []
+    "hull type": "Cruiser"
   },
-  "Stabber_Fleet_Issue": {
+  "Exequror Navy Issue": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Vagabond": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Exequror_Navy_Issue": {
-    "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Omen": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Cerberus": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Guardian": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
+  },
+  "Caracal Navy Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Pilgrim": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Huginn": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Phantasm": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Sansha",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Legion": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Onyx": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Devoter": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
-  },
-  "Scythe_Fleet_Issue": {
-    "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Gila": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Guristas",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Celestis": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Bellicose": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
-  },
-  "Vexor_Navy_Issue": {
-    "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Arazu": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Ishtar": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "hull type": "Cruiser"
+  },
+  "Omen Navy Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Proteus": {
-    "points": "16",
-    "size": "Cruiser",
-    "faction": "Gallente",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Cynabal": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Angel",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Sacrilege": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Maller": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Caracal": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Moa": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Zealot": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Amarr",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Rook": {
-    "points": "14",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Ashimmu": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Blood Raiders",
-    "role": []
+    "hull type": "Cruiser"
+  },
+  "Augoror Navy Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Blackbird": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Stabber": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Minmatar",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Vigilant": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Serpentis",
-    "role": []
+    "hull type": "Cruiser"
   },
   "Eagle": {
     "points": "",
-    "size": "Cruiser",
-    "faction": "Caldari",
-    "role": []
+    "hull type": "Cruiser"
+  },
+  "Stabber Fleet Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Ikitursa": {
-    "points": "15",
-    "size": "Cruiser",
-    "faction": "Triglavian",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
+  },
+  "Osprey Navy Issue": {
+    "points": "",
+    "hull type": "Cruiser"
   },
   "Zarmazd": {
-    "points": "17",
-    "size": "Cruiser",
-    "faction": "Triglavian",
-    "role": []
+    "points": "",
+    "hull type": "Cruiser"
   }
 }
