@@ -28,7 +28,7 @@ for root, dirs, files in os.walk(input_dir):
         # Open the image
         img = Image.open(os.path.join(root, file))
         width, height = img.size
-        if width != height != 32:
+        if width != 32 or height != 32:
           # Resize the image to the target size
           img = img.resize(target_size, Image.ANTIALIAS)
         
