@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import ships from '../assets/ships.json'
-let ship = ships.name
 
 defineProps({
   msg: String,
@@ -16,7 +14,6 @@ const count = ref(0)
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
-      Edit {{ ship }}
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
