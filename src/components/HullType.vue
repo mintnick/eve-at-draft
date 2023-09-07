@@ -1,17 +1,34 @@
 <script setup>
 import Ship from './Ship.vue';
 
-defineProps(['hull_type', 'ships']);
+const props = defineProps(['hull_type', 'ships']);
+
+const emit = defineEmits(['onChange'])
+
+const change = (ship_name, hull_type, property) => {
+  const obj = {
+    "ship_name": ship_name,
+    "hull_type": hull_type,
+    "property": property
+  }
+  console.log(obj)
+  emit('onChange', obj)
+};
 
 </script>
 
 <template>
   <h2>{{ hull_type }}</h2>
-  <li v-for="(property, ship_name) in ships">
+  <button 
+  v-for="(property, ship_name) in ships"
+  class="" @click.prevent="change(ship_name, hull_type, property)">
     <Ship 
-      :hull_type=hull_type
-      :ship_name = ship_name
-      :points = property.points
+    :ship_name = ship_name
+    :hull_type = hull_type
+    :points = property.points
     />
-  </li>
+  </button>
 </template>
+
+<style scoped>
+</style>
