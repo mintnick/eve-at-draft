@@ -1,1085 +1,843 @@
 {
-  "Impairor": {
-    "points": "1",
-    "hull type": "Corvette"
-  },
-  "Ibis": {
-    "points": "1",
-    "hull type": "Corvette"
-  },
-  "Velator": {
-    "points": "1",
-    "hull type": "Corvette"
-  },
-  "Reaper": {
-    "points": "1",
-    "hull type": "Corvette"
-  },
-  "Executioner": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Tormentor": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Punisher": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Magnate": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Condor": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Kestrel": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Merlin": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Heron": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Atron": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Tristan": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Incursus": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Imicus": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Slasher": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Breacher": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Rifter": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Probe": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Inquisitor": {
-    "points": "1",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Bantam": {
-    "points": "1",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Navitas": {
-    "points": "1",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Burst": {
-    "points": "1",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Crucifier": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Griffin": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Maulus": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Vigil": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Imperial Navy Slicer": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Crucifier Navy Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Caldari Navy Hookbill": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Griffin Navy Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Federation Navy Comet": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Maulus Navy Issue": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Republic Fleet Firetail": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Vigil Fleet Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Vengeance": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Retribution": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Hawk": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Harpy": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Ishkur": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Enyo": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Wolf": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Jaguar": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Anathema": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Buzzard": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Helios": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Cheetah": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Purifier": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Manticore": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Nemesis": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Hound": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Sentinel": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Kitsune": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Keres": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Hyena": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Crusader": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Malediction": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Crow": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Raptor": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Taranis": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Ares": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Claw": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Stiletto": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Deacon": {
-    "points": "5",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Kirin": {
-    "points": "5",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Thalia": {
-    "points": "5",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Scalpel": {
-    "points": "5",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Coercer": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Dragoon": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Cormorant": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Corax": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Catalyst": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Algos": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Thrasher": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Talwar": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Pontifex": {
-    "points": "6",
-    "hull type": "Destroyer"
-  },
-  "Stork": {
-    "points": "6",
-    "hull type": "Destroyer"
-  },
-  "Magus": {
-    "points": "6",
-    "hull type": "Destroyer"
-  },
-  "Bifrost": {
-    "points": "6",
-    "hull type": "Destroyer"
-  },
-  "Heretic": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Flycatcher": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Eris": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Sabre": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Confessor": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Jackdaw": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Hecate": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Svipul": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Arbitrator": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Blackbird": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Celestis": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Bellicose": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Augoror": {
-    "points": "9",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Osprey": {
-    "points": "9",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Exequror": {
-    "points": "9",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Scythe": {
-    "points": "9",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Maller": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Omen": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Moa": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Caracal": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Vexor": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Thorax": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Stabber": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Rupture": {
-    "points": "4",
-    "hull type": "Cruiser"
-  },
-  "Augoror Navy Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Omen Navy Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Caracal Navy Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Osprey Navy Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Exequror Navy Issue": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Vexor Navy Issue": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Scythe Fleet Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Stabber Fleet Issue": {
-    "points": "7",
-    "hull type": "Cruiser"
-  },
-  "Zealot": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Sacrilege": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Eagle": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Cerberus": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Ishtar": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Deimos": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Vagabond": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Muninn": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Devoter": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Onyx": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Phobos": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Broadsword": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Guardian": {
-    "points": "16",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Basilisk": {
-    "points": "16",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Oneiros": {
-    "points": "16",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Scimitar": {
-    "points": "16",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Curse": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Pilgrim": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Falcon": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Rook": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Arazu": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Lachesis": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Huginn": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Rapier": {
-    "points": "14",
-    "hull type": "Cruiser"
-  },
-  "Legion": {
-    "points": "16",
-    "hull type": "Cruiser"
-  },
-  "Tengu": {
-    "points": "16",
-    "hull type": "Cruiser"
-  },
-  "Proteus": {
-    "points": "16",
-    "hull type": "Cruiser"
-  },
-  "Loki": {
-    "points": "16",
-    "hull type": "Cruiser"
-  },
-  "Oracle": {
-    "points": "10",
-    "hull type": "Battlecruiser"
-  },
-  "Naga": {
-    "points": "10",
-    "hull type": "Battlecruiser"
-  },
-  "Talos": {
-    "points": "10",
-    "hull type": "Battlecruiser"
-  },
-  "Tornado": {
-    "points": "10",
-    "hull type": "Battlecruiser"
-  },
-  "Prophecy": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Harbinger": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Drake": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Ferox": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Brutix": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Myrmidon": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Hurricane": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Cyclone": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Harbinger Navy Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Drake Navy Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Brutix Navy Issue": {
-    "points": "14",
-    "hull type": "Battlecruiser"
-  },
-  "Hurricane Fleet Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Damnation": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Absolution": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Vulture": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Nighthawk": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Astarte": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Eos": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Claymore": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Sleipnir": {
-    "points": "18",
-    "hull type": "Battlecruiser"
-  },
-  "Abaddon": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Apocalypse": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Armageddon": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Scorpion": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Raven": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Rokh": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Hyperion": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Megathron": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Dominix": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Tempest": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Typhoon": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Maelstrom": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Praxis": {
-    "points": "19",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Apocalypse Navy Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Armageddon Navy Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Scorpion Navy Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Raven Navy Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Megathron Navy Issue": {
-    "points": "20",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Dominix Navy Issue": {
-    "points": "20",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Tempest Fleet Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Typhoon Fleet Issue": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Redeemer": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Widow": {
-    "points": "25",
-    "hull type": "Battleship"
-  },
-  "Sin": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Panther": {
-    "points": "21",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Paladin": {
-    "points": "24",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Golem": {
-    "points": "24",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Kronos": {
-    "points": "24",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Vargur": {
-    "points": "24",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Bestower": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Sigil": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Badger": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Tayra": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Nereus": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Kryos": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Epithal": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Miasmos": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Iteron Mark V": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Hoarder": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Mammoth": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Wreathe": {
-    "points": "2",
-    "hull type": "Industrial"
-  },
-  "Dramiel": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Cruor": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Worm": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Garmur": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Succubus": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Astero": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Daredevil": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Cynabal": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Ashimmu": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Gila": {
-    "points": "12",
-    "hull type": "Cruiser"
-  },
-  "Orthrus": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Phantasm": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Stratios": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Vigilant": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Machariel": {
-    "points": "23",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Bhaalgorn": {
-    "points": "23",
-    "hull type": "Battleship"
-  },
-  "Rattlesnake": {
-    "points": "25",
-    "hull type": "Battleship"
-  },
-  "Barghest": {
-    "points": "23",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Nightmare": {
-    "points": "23",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Vindicator": {
-    "points": "23",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Gnosis": {
-    "points": "13",
-    "hull type": "Battlecruiser"
-  },
-  "Sunesis": {
-    "points": "3",
-    "hull type": "Destroyer"
-  },
-  "Thunderchild": {
-    "points": "18",
-    "hull type": "Battleship",
-    "flagship": true
-  },
-  "Stormbringer": {
-    "points": "6",
-    "hull type": "Cruiser"
-  },
-  "Skybreaker": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Leshak": {
-    "points": "25",
-    "hull type": "Battleship"
-  },
-  "Zarmazd": {
-    "points": "17",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Drekavac": {
-    "points": "17",
-    "hull type": "Battlecruiser"
-  },
-  "Ikitursa": {
-    "points": "15",
-    "hull type": "Cruiser"
-  },
-  "Rodiva": {
-    "points": "10",
-    "hull type": "Logistics",
-    "logistics": true
-  },
-  "Draugur": {
-    "points": "8",
-    "hull type": "Destroyer"
-  },
-  "Vedmak": {
-    "points": "9",
-    "hull type": "Cruiser"
-  },
-  "Kikimora": {
-    "points": "7",
-    "hull type": "Destroyer"
-  },
-  "Nergal": {
-    "points": "5",
-    "hull type": "Frigate"
-  },
-  "Damavik": {
-    "points": "4",
-    "hull type": "Frigate"
-  },
-  "Echo": {
-    "points": "2",
-    "hull type": "Corvette"
-  },
-  "Hematos": {
-    "points": "2",
-    "hull type": "Corvette"
-  },
-  "Immolator": {
-    "points": "2",
-    "hull type": "Corvette"
-  },
-  "Taipan": {
-    "points": "2",
-    "hull type": "Corvette"
-  },
-  "Violator": {
-    "points": "2",
-    "hull type": "Corvette"
-  },
-  "Magnate Navy Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Heron Navy Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Imicus Navy Issue": {
-    "points": "2",
-    "hull type": "Frigate"
-  },
-  "Probe Fleet Issue": {
-    "points": "3",
-    "hull type": "Frigate"
-  },
-  "Thrasher Fleet Issue": {
-    "points": "5",
-    "hull type": "Destroyer"
-  },
-  "Cormorant Navy Issue": {
-    "points": "5",
-    "hull type": "Destroyer"
-  },
-  "Coercer Navy Issue": {
-    "points": "5",
-    "hull type": "Destroyer"
-  },
-  "Catalyst Navy Issue": {
-    "points": "4",
-    "hull type": "Destroyer"
-  },
-  "Cyclone Fleet Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Ferox Navy Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Prophecy Navy Issue": {
-    "points": "15",
-    "hull type": "Battlecruiser"
-  },
-  "Myrmidon Navy Issue": {
-    "points": "14",
-    "hull type": "Battlecruiser"
-  },
-  "Metamorphosis": {
-    "points": "2",
-    "hull type": "Frigate"
+  "Corvette": {
+    "Impairor": {
+      "points": "1"
+    },
+    "Ibis": {
+      "points": "1"
+    },
+    "Velator": {
+      "points": "1"
+    },
+    "Reaper": {
+      "points": "1"
+    },
+    "Echo": {
+      "points": "2"
+    },
+    "Hematos": {
+      "points": "2"
+    },
+    "Immolator": {
+      "points": "2"
+    },
+    "Taipan": {
+      "points": "2"
+    },
+    "Violator": {
+      "points": "2"
+    }
+  },
+  "Frigate": {
+    "Executioner": {
+      "points": "2"
+    },
+    "Tormentor": {
+      "points": "2"
+    },
+    "Punisher": {
+      "points": "3"
+    },
+    "Magnate": {
+      "points": "2"
+    },
+    "Condor": {
+      "points": "2"
+    },
+    "Kestrel": {
+      "points": "2"
+    },
+    "Merlin": {
+      "points": "2"
+    },
+    "Heron": {
+      "points": "2"
+    },
+    "Atron": {
+      "points": "2"
+    },
+    "Tristan": {
+      "points": "2"
+    },
+    "Incursus": {
+      "points": "2"
+    },
+    "Imicus": {
+      "points": "2"
+    },
+    "Slasher": {
+      "points": "2"
+    },
+    "Breacher": {
+      "points": "2"
+    },
+    "Rifter": {
+      "points": "2"
+    },
+    "Probe": {
+      "points": "2"
+    },
+    "Crucifier": {
+      "points": "3"
+    },
+    "Griffin": {
+      "points": "3"
+    },
+    "Maulus": {
+      "points": "3"
+    },
+    "Vigil": {
+      "points": "3"
+    },
+    "Imperial Navy Slicer": {
+      "points": "3"
+    },
+    "Crucifier Navy Issue": {
+      "points": "3"
+    },
+    "Caldari Navy Hookbill": {
+      "points": "3"
+    },
+    "Griffin Navy Issue": {
+      "points": "3"
+    },
+    "Federation Navy Comet": {
+      "points": "2"
+    },
+    "Maulus Navy Issue": {
+      "points": "2"
+    },
+    "Republic Fleet Firetail": {
+      "points": "3"
+    },
+    "Vigil Fleet Issue": {
+      "points": "3"
+    },
+    "Vengeance": {
+      "points": "4"
+    },
+    "Retribution": {
+      "points": "4"
+    },
+    "Hawk": {
+      "points": "4"
+    },
+    "Harpy": {
+      "points": "4"
+    },
+    "Ishkur": {
+      "points": "4"
+    },
+    "Enyo": {
+      "points": "4"
+    },
+    "Wolf": {
+      "points": "4"
+    },
+    "Jaguar": {
+      "points": "4"
+    },
+    "Anathema": {
+      "points": "3"
+    },
+    "Buzzard": {
+      "points": "3"
+    },
+    "Helios": {
+      "points": "3"
+    },
+    "Cheetah": {
+      "points": "3"
+    },
+    "Purifier": {
+      "points": "3"
+    },
+    "Manticore": {
+      "points": "3"
+    },
+    "Nemesis": {
+      "points": "3"
+    },
+    "Hound": {
+      "points": "3"
+    },
+    "Sentinel": {
+      "points": "5"
+    },
+    "Kitsune": {
+      "points": "5"
+    },
+    "Keres": {
+      "points": "5"
+    },
+    "Hyena": {
+      "points": "5"
+    },
+    "Crusader": {
+      "points": "3"
+    },
+    "Malediction": {
+      "points": "3"
+    },
+    "Crow": {
+      "points": "3"
+    },
+    "Raptor": {
+      "points": "3"
+    },
+    "Taranis": {
+      "points": "3"
+    },
+    "Ares": {
+      "points": "3"
+    },
+    "Claw": {
+      "points": "3"
+    },
+    "Stiletto": {
+      "points": "3"
+    },
+    "Dramiel": {
+      "points": "4"
+    },
+    "Cruor": {
+      "points": "4"
+    },
+    "Worm": {
+      "points": "5"
+    },
+    "Garmur": {
+      "points": "4"
+    },
+    "Succubus": {
+      "points": "4"
+    },
+    "Astero": {
+      "points": "4"
+    },
+    "Daredevil": {
+      "points": "4"
+    },
+    "Skybreaker": {
+      "points": "2"
+    },
+    "Nergal": {
+      "points": "5"
+    },
+    "Damavik": {
+      "points": "4"
+    },
+    "Magnate Navy Issue": {
+      "points": "3"
+    },
+    "Heron Navy Issue": {
+      "points": "3"
+    },
+    "Imicus Navy Issue": {
+      "points": "2"
+    },
+    "Probe Fleet Issue": {
+      "points": "3"
+    },
+    "Metamorphosis": {
+      "points": "2"
+    }
+  },
+  "Logistics": {
+    "Inquisitor": {
+      "points": "1",
+      "logistics": 0.5
+    },
+    "Bantam": {
+      "points": "1",
+      "logistics": 0.5
+    },
+    "Navitas": {
+      "points": "1",
+      "logistics": 0.5
+    },
+    "Burst": {
+      "points": "1",
+      "logistics": 0.5
+    },
+    "Deacon": {
+      "points": "5",
+      "logistics": 0.5
+    },
+    "Kirin": {
+      "points": "5",
+      "logistics": 0.5
+    },
+    "Thalia": {
+      "points": "5",
+      "logistics": 0.5
+    },
+    "Scalpel": {
+      "points": "5",
+      "logistics": 0.5
+    },
+    "Augoror": {
+      "points": "9",
+      "logistics": 1
+    },
+    "Osprey": {
+      "points": "9",
+      "logistics": 1
+    },
+    "Exequror": {
+      "points": "9",
+      "logistics": 1
+    },
+    "Scythe": {
+      "points": "9",
+      "logistics": 1
+    },
+    "Guardian": {
+      "points": "16",
+      "logistics": 1
+    },
+    "Basilisk": {
+      "points": "16",
+      "logistics": 1
+    },
+    "Oneiros": {
+      "points": "16",
+      "logistics": 0.5
+    },
+    "Scimitar": {
+      "points": "16",
+      "logistics": 1
+    },
+    "Zarmazd": {
+      "points": "17",
+      "logistics": 1
+    },
+    "Rodiva": {
+      "points": "10",
+      "logistics": 1
+    }
+  },
+  "Destroyer": {
+    "Coercer": {
+      "points": "3"
+    },
+    "Dragoon": {
+      "points": "3"
+    },
+    "Cormorant": {
+      "points": "3"
+    },
+    "Corax": {
+      "points": "3"
+    },
+    "Catalyst": {
+      "points": "3"
+    },
+    "Algos": {
+      "points": "3"
+    },
+    "Thrasher": {
+      "points": "3"
+    },
+    "Talwar": {
+      "points": "3"
+    },
+    "Pontifex": {
+      "points": "6"
+    },
+    "Stork": {
+      "points": "6"
+    },
+    "Magus": {
+      "points": "6"
+    },
+    "Bifrost": {
+      "points": "6"
+    },
+    "Heretic": {
+      "points": "4"
+    },
+    "Flycatcher": {
+      "points": "4"
+    },
+    "Eris": {
+      "points": "4"
+    },
+    "Sabre": {
+      "points": "4"
+    },
+    "Confessor": {
+      "points": "4"
+    },
+    "Jackdaw": {
+      "points": "4"
+    },
+    "Hecate": {
+      "points": "4"
+    },
+    "Svipul": {
+      "points": "4"
+    },
+    "Sunesis": {
+      "points": "3"
+    },
+    "Draugur": {
+      "points": "8"
+    },
+    "Kikimora": {
+      "points": "7"
+    },
+    "Thrasher Fleet Issue": {
+      "points": "5"
+    },
+    "Cormorant Navy Issue": {
+      "points": "5"
+    },
+    "Coercer Navy Issue": {
+      "points": "5"
+    },
+    "Catalyst Navy Issue": {
+      "points": "4"
+    }
+  },
+  "Cruiser": {
+    "Arbitrator": {
+      "points": "6"
+    },
+    "Blackbird": {
+      "points": "6"
+    },
+    "Celestis": {
+      "points": "6"
+    },
+    "Bellicose": {
+      "points": "6"
+    },
+    "Maller": {
+      "points": "4"
+    },
+    "Omen": {
+      "points": "4"
+    },
+    "Moa": {
+      "points": "4"
+    },
+    "Caracal": {
+      "points": "4"
+    },
+    "Vexor": {
+      "points": "4"
+    },
+    "Thorax": {
+      "points": "4"
+    },
+    "Stabber": {
+      "points": "4"
+    },
+    "Rupture": {
+      "points": "4"
+    },
+    "Augoror Navy Issue": {
+      "points": "7"
+    },
+    "Omen Navy Issue": {
+      "points": "7"
+    },
+    "Caracal Navy Issue": {
+      "points": "7"
+    },
+    "Osprey Navy Issue": {
+      "points": "7"
+    },
+    "Exequror Navy Issue": {
+      "points": "6"
+    },
+    "Vexor Navy Issue": {
+      "points": "6"
+    },
+    "Scythe Fleet Issue": {
+      "points": "7"
+    },
+    "Stabber Fleet Issue": {
+      "points": "7"
+    },
+    "Zealot": {
+      "points": "12"
+    },
+    "Sacrilege": {
+      "points": "12"
+    },
+    "Eagle": {
+      "points": "12"
+    },
+    "Cerberus": {
+      "points": "12"
+    },
+    "Ishtar": {
+      "points": "12"
+    },
+    "Deimos": {
+      "points": "12"
+    },
+    "Vagabond": {
+      "points": "12"
+    },
+    "Muninn": {
+      "points": "12"
+    },
+    "Devoter": {
+      "points": "12"
+    },
+    "Onyx": {
+      "points": "12"
+    },
+    "Phobos": {
+      "points": "12"
+    },
+    "Broadsword": {
+      "points": "12"
+    },
+    "Curse": {
+      "points": "14"
+    },
+    "Pilgrim": {
+      "points": "14"
+    },
+    "Falcon": {
+      "points": "14"
+    },
+    "Rook": {
+      "points": "14"
+    },
+    "Arazu": {
+      "points": "14"
+    },
+    "Lachesis": {
+      "points": "14"
+    },
+    "Huginn": {
+      "points": "14"
+    },
+    "Rapier": {
+      "points": "14"
+    },
+    "Legion": {
+      "points": "16"
+    },
+    "Tengu": {
+      "points": "16"
+    },
+    "Proteus": {
+      "points": "16"
+    },
+    "Loki": {
+      "points": "16"
+    },
+    "Cynabal": {
+      "points": "9"
+    },
+    "Ashimmu": {
+      "points": "9"
+    },
+    "Gila": {
+      "points": "12"
+    },
+    "Orthrus": {
+      "points": "9"
+    },
+    "Phantasm": {
+      "points": "9"
+    },
+    "Stratios": {
+      "points": "9"
+    },
+    "Vigilant": {
+      "points": "9"
+    },
+    "Stormbringer": {
+      "points": "6"
+    },
+    "Ikitursa": {
+      "points": "15"
+    },
+    "Vedmak": {
+      "points": "9"
+    }
+  },
+  "Battlecruiser": {
+    "Oracle": {
+      "points": "10"
+    },
+    "Naga": {
+      "points": "10"
+    },
+    "Talos": {
+      "points": "10"
+    },
+    "Tornado": {
+      "points": "10"
+    },
+    "Prophecy": {
+      "points": "13"
+    },
+    "Harbinger": {
+      "points": "13"
+    },
+    "Drake": {
+      "points": "13"
+    },
+    "Ferox": {
+      "points": "13"
+    },
+    "Brutix": {
+      "points": "13"
+    },
+    "Myrmidon": {
+      "points": "13"
+    },
+    "Hurricane": {
+      "points": "13"
+    },
+    "Cyclone": {
+      "points": "13"
+    },
+    "Harbinger Navy Issue": {
+      "points": "15"
+    },
+    "Drake Navy Issue": {
+      "points": "15"
+    },
+    "Brutix Navy Issue": {
+      "points": "14"
+    },
+    "Hurricane Fleet Issue": {
+      "points": "15"
+    },
+    "Damnation": {
+      "points": "18"
+    },
+    "Absolution": {
+      "points": "18"
+    },
+    "Vulture": {
+      "points": "18"
+    },
+    "Nighthawk": {
+      "points": "18"
+    },
+    "Astarte": {
+      "points": "18"
+    },
+    "Eos": {
+      "points": "18"
+    },
+    "Claymore": {
+      "points": "18"
+    },
+    "Sleipnir": {
+      "points": "18"
+    },
+    "Gnosis": {
+      "points": "13"
+    },
+    "Drekavac": {
+      "points": "17"
+    },
+    "Cyclone Fleet Issue": {
+      "points": "15"
+    },
+    "Ferox Navy Issue": {
+      "points": "15"
+    },
+    "Prophecy Navy Issue": {
+      "points": "15"
+    },
+    "Myrmidon Navy Issue": {
+      "points": "14"
+    }
+  },
+  "Battleship": {
+    "Abaddon": {
+      "points": "19",
+      "flagship": true
+    },
+    "Apocalypse": {
+      "points": "19",
+      "flagship": true
+    },
+    "Armageddon": {
+      "points": "19",
+      "flagship": true
+    },
+    "Scorpion": {
+      "points": "19",
+      "flagship": true
+    },
+    "Raven": {
+      "points": "19",
+      "flagship": true
+    },
+    "Rokh": {
+      "points": "19",
+      "flagship": true
+    },
+    "Hyperion": {
+      "points": "19",
+      "flagship": true
+    },
+    "Megathron": {
+      "points": "19",
+      "flagship": true
+    },
+    "Dominix": {
+      "points": "19",
+      "flagship": true
+    },
+    "Tempest": {
+      "points": "19",
+      "flagship": true
+    },
+    "Typhoon": {
+      "points": "19",
+      "flagship": true
+    },
+    "Maelstrom": {
+      "points": "19",
+      "flagship": true
+    },
+    "Praxis": {
+      "points": "19",
+      "flagship": true
+    },
+    "Apocalypse Navy Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Armageddon Navy Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Scorpion Navy Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Raven Navy Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Megathron Navy Issue": {
+      "points": "20",
+      "flagship": true
+    },
+    "Dominix Navy Issue": {
+      "points": "20",
+      "flagship": true
+    },
+    "Tempest Fleet Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Typhoon Fleet Issue": {
+      "points": "21",
+      "flagship": true
+    },
+    "Redeemer": {
+      "points": "21",
+      "flagship": true
+    },
+    "Widow": {
+      "points": "25"
+    },
+    "Sin": {
+      "points": "21",
+      "flagship": true
+    },
+    "Panther": {
+      "points": "21",
+      "flagship": true
+    },
+    "Paladin": {
+      "points": "24",
+      "flagship": true
+    },
+    "Golem": {
+      "points": "24",
+      "flagship": true
+    },
+    "Kronos": {
+      "points": "24",
+      "flagship": true
+    },
+    "Vargur": {
+      "points": "24",
+      "flagship": true
+    },
+    "Machariel": {
+      "points": "23",
+      "flagship": true
+    },
+    "Bhaalgorn": {
+      "points": "23"
+    },
+    "Rattlesnake": {
+      "points": "25"
+    },
+    "Barghest": {
+      "points": "23",
+      "flagship": true
+    },
+    "Nightmare": {
+      "points": "23",
+      "flagship": true
+    },
+    "Vindicator": {
+      "points": "23",
+      "flagship": true
+    },
+    "Thunderchild": {
+      "points": "18",
+      "flagship": true
+    },
+    "Leshak": {
+      "points": "25"
+    }
+  },
+  "Industrial": {
+    "Bestower": {
+      "points": "2"
+    },
+    "Sigil": {
+      "points": "2"
+    },
+    "Badger": {
+      "points": "2"
+    },
+    "Tayra": {
+      "points": "2"
+    },
+    "Nereus": {
+      "points": "2"
+    },
+    "Kryos": {
+      "points": "2"
+    },
+    "Epithal": {
+      "points": "2"
+    },
+    "Miasmos": {
+      "points": "2"
+    },
+    "Iteron Mark V": {
+      "points": "2"
+    },
+    "Hoarder": {
+      "points": "2"
+    },
+    "Mammoth": {
+      "points": "2"
+    },
+    "Wreathe": {
+      "points": "2"
+    }
   }
 }

@@ -12,16 +12,20 @@ with open(input_file, 'r') as points:
   csv_reader = csv.reader(points, delimiter='\t')
   for row in csv_reader:
     ship_name, points, hull_type = row[0], row[2], row[3]
-    data[ship_name] = {
-      "points": points,
-      "hull type": hull_type
+    if hull_type not in data:
+      data[hull_type] = {}
+    data[hull_type][ship_name] = {
+      "points": points
     }
 
     if hull_type == "Battleship" and ship_name not in ["Leshak", "Bhaalgorn", "Rattlesnake", "Widow"]:
-      data[ship_name]["flagship"] = True
+      data[hull_type][ship_name]["flagship"] = True
     
     elif hull_type == "Logistics":
-      data[ship_name]["logistics"] = True
+      if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Onerios", "Scimitar", "Rodiva", "Zarmazd"]:
+        data[hull_type][ship_name]["logistics"] = 1
+      else:
+        data[hull_type][ship_name]["logistics"] = 0.5
 
 # Write the JSON data to the output file
 with open(output_file, "w") as json_file:
