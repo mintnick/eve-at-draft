@@ -9,14 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@anu-vue/preset-theme-default": "^0.15.2",
-    "anu-vue": "^0.15.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@iconify-json/bx": "^1.1.7",
     "@vitejs/plugin-vue": "^4.2.3",
-    "unocss": "^0.55.7",
     "vite": "^4.4.5"
   }
 }
