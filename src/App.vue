@@ -1,8 +1,9 @@
 <script setup>
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
-import { ref, reactive } from 'vue'
-console.log(data)
+import ErrorMsg from './components/ErrorMsg.vue'
+import { ref, reactive, computed } from 'vue'
+
 // rules
 const MAX_POINTS = 100,
       MAX_SHIPS = 10,
@@ -15,6 +16,42 @@ const MAX_POINTS = 100,
 let pick = reactive([]),
     ban = reactive([]);
 let total_points = ref(0);
+let pick_limit = reactive({
+  "Flagship": 0,
+  "Logistics": 0,
+  "Battleship": 0,
+  "Battlecruiser": 0,
+  "Cruiser": 0,
+  "Destroyer": 0,
+  "Frigate": 0,
+  "Industrial": 0,
+  "Corvette": 0,
+})
+let ban_limit = reactive({
+  "Logistics": 0,
+  "Battleship": 0,
+  "Battlecruiser": 0,
+  "Cruiser": 0,
+  "Destroyer": 0,
+  "Frigate": 0,
+  "Industrial": 0,
+  "Corvette": 0,
+})
+
+// check if pick/ban is valid
+let valid_pick = computed(() => {
+  for (const [hull_type, count] in Object.entries(pick_limit)) {
+    if (count > 4) return false;
+  }
+  return total_points.value <= 100 && pick_limit.Flagship < 2 && pick_limit.Logistics < 2;
+})
+
+let valid_ban = computed(() => {
+  for (const [hull_type, count] in Object.entries(ban_limit)) {
+    if (count > 3) return false;
+  }
+  return true
+})
 
 // functions
 function add_ship(hull_type, ship_name, property) {
@@ -37,11 +74,13 @@ function add_ship(hull_type, ship_name, property) {
     "hull_type": hull_type,
     "points": property.points
   })
-  total_points.value += property.points
-
   pick.sort((a, b) => (b.points - a.points));
 
-  // update limit list
+  // update globals
+  total_points.value += property.points
+  pick_limit[hull_type] += 1;
+
+  console.log(valid_pick)
 }
 
 function remove_ship(hull_type, ship_name, property) {
@@ -58,6 +97,10 @@ function ban_ship(hull_type, ship_name, property) {
   <h1>EVE AT Draft</h1>
   <h1>{{ total_points }}</h1>
 
+  <ErrorMsg v-if="!valid_pick" 
+  :total_points = total_points
+  :pick_limit = pick_limit
+  />
   <!-- Picks -->
   <h2>Pick</h2>
   <div v-for="ship in pick">
