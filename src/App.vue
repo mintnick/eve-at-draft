@@ -1,8 +1,7 @@
 <script setup>
+import { ref, reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
-import ErrorMsg from './components/ErrorMsg.vue'
-import { ref, reactive, computed } from 'vue'
 
 // rules
 const MAX_POINTS = 100,
@@ -16,7 +15,7 @@ const MAX_POINTS = 100,
 let pick = reactive([]),
     ban = reactive([]);
 let total_points = ref(0);
-let pick_limit = reactive({
+let pick_count = reactive({
   "Flagship": 0,
   "Logistics": 0,
   "Battleship": 0,
@@ -27,7 +26,7 @@ let pick_limit = reactive({
   "Industrial": 0,
   "Corvette": 0,
 })
-let ban_limit = reactive({
+let ban_count = reactive({
   "Logistics": 0,
   "Battleship": 0,
   "Battlecruiser": 0,
@@ -37,20 +36,25 @@ let ban_limit = reactive({
   "Industrial": 0,
   "Corvette": 0,
 })
+let msgs = new Set()
 
 // check if pick/ban is valid
-let valid_pick = computed(() => {
-  for (const [hull_type, count] in Object.entries(pick_limit)) {
-    if (count > 4) return false;
+let invalid_pick = computed(() => {
+  if (total_points.value > 100) msgs.add('>100 points!'); else msgs.delete('>100 points!');
+  if (pick_count.Flagship > 1) msgs.add('1 Flagship!'); else msgs.delete('1 Flagship!');
+  if (pick_count.Logistics > 1) msgs.add('1 Cruiser Logi or 2 Frigate Logi!'); else msgs.delete('1 Cruiser Logi or 2 Frigate Logi!');
+  for (const [hull_type, count] of Object.entries(pick_count)) {
+    if (hull_type in ['Flagship', 'Logistics']) continue;
+    if (count > 4) msgs.add(`You have more than 4 ${hull_type} ships!`); else msgs.delete(`You have more than 4 ${hull_type} ships!`);
   }
-  return total_points.value <= 100 && pick_limit.Flagship < 2 && pick_limit.Logistics < 2;
+  return msgs.size;
 })
 
-let valid_ban = computed(() => {
-  for (const [hull_type, count] in Object.entries(ban_limit)) {
-    if (count > 3) return false;
+let invalid_ban = computed(() => {
+  for (const [hull_type, count] of Object.entries(ban_count)) {
+    if (count > 3) return true;
   }
-  return true
+  return false;
 })
 
 // functions
@@ -78,9 +82,8 @@ function add_ship(hull_type, ship_name, property) {
 
   // update globals
   total_points.value += property.points
-  pick_limit[hull_type] += 1;
-
-  console.log(valid_pick)
+  if (hull_type == "Logistics") pick_count[hull_type] += property.logistics;
+  else pick_count[hull_type] += 1;
 }
 
 function remove_ship(hull_type, ship_name, property) {
@@ -97,10 +100,14 @@ function ban_ship(hull_type, ship_name, property) {
   <h1>EVE AT Draft</h1>
   <h1>{{ total_points }}</h1>
 
-  <ErrorMsg v-if="!valid_pick" 
-  :total_points = total_points
-  :pick_limit = pick_limit
-  />
+  <div v-if="invalid_pick">
+    <p v-for="msg in msgs">{{ msg }}</p>
+  </div>
+
+  <div v-if="invalid_ban">
+    <p>"Maximum 3 bans per each hull type!"</p>
+  </div>
+
   <!-- Picks -->
   <h2>Pick</h2>
   <div v-for="ship in pick">
@@ -124,7 +131,6 @@ function ban_ship(hull_type, ship_name, property) {
       :points= property.points
       />
       <button @click="add_ship(hull_type, ship_name, property)">ADD</button>
-      <!-- <button @click="remove_ship(hull_type, ship_name, property)">REMOVE</button> -->
       <button @click="ban_ship(hull_type, ship_name, property)">BAN</button>
     </div>
   </div>
