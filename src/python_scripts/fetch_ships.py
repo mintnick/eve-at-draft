@@ -2,6 +2,7 @@ import os
 import json
 import csv
 from collections import defaultdict
+import requests
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 input_file = os.path.abspath(os.path.join(current_dir, "points.csv"))
@@ -13,7 +14,11 @@ with open(input_file, 'r') as points:
   csv_reader = csv.reader(points, delimiter='\t')
   for row in csv_reader:
     ship_name, points, hull_type = row[0], row[2], row[3]
-    data.append([hull_type, ship_name, int(points)])
+    obj = json.dumps([ship_name])
+    response = requests.post('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', data=obj)
+    response = response.json()
+    ship_id = response['inventory_types'][0]['id']
+    data.append([hull_type, ship_name, int(points), ship_id])
 
 json_data = {
   "Flagship": {},
@@ -30,11 +35,11 @@ json_data = {
 data = sorted(data, key=lambda x: x[2], reverse=True)
 
 for ship in data:
-  [hull_type, ship_name, points] = ship
-  json_data[hull_type][ship_name] = { "points" : points}
+  [hull_type, ship_name, points, ship_id] = ship
+  json_data[hull_type][ship_name] = { "points" : points, "ship_id": ship_id}
 
   if hull_type == "Battleship" and ship_name not in ["Leshak", "Bhaalgorn", "Rattlesnake", "Widow"]:
-    json_data["Flagship"][ship_name] = { "points" : points}
+    json_data["Flagship"][ship_name] = { "points" : points , "ship_id": ship_id}
   elif hull_type == "Logistics":
     if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Onerios", "Scimitar", "Rodiva", "Zarmazd"]:
       json_data[hull_type][ship_name]["logistics"] = 1

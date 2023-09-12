@@ -1,9 +1,8 @@
 <script setup>
-import { ref, reactive, computed } from 'vue'
+import { reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 
-// limit
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
@@ -16,7 +15,6 @@ const max_number = {
   "Corvette": 4
 }
 
-// data
 const pick = reactive({
     "Flagship": [],
     "Logistics": [],
@@ -44,35 +42,27 @@ const total_points = computed(() => {
   let points = 0;
   for (const [k, v] of Object.entries(pick)) {
     if (v.length == 0) continue;
-    for (const ship of v) {
-      points += ship.points;
-    }
+    for (const ship of v) points += ship.points;
   }
   return points;
 });
 
 const logi_count = computed(() => {
   let total_logi = 0;
-  for (const logi of pick.Logistics) {
-    total_logi += data.Logistics[logi.ship_name].logistics
-  }
+  for (const logi of pick.Logistics) total_logi += data.Logistics[logi.ship_name].logistics;
   return total_logi;
 })
 
 const pick_list = computed(() => {
   let list = [];
-  for (const [hull_type, ships] of Object.entries(pick)) {
-    for (const ship of ships) list.push(ship);
-  }
+  for (const [_, ships] of Object.entries(pick)) for (const ship of ships) list.push(ship);
   list.sort((a, b) => (b.points - a.points));
   return list;
 })
 
 const ban_list = computed(() => {
   let list = [];
-  for (const [hull_type, ships] of Object.entries(ban)) {
-    for (const ship of ships) list.push(ship);
-  }
+  for (const [_, ships] of Object.entries(ban)) for (const ship of ships) list.push(ship);
   list.sort((a, b) => (b.points - a.points));
   return list;
 })
@@ -88,22 +78,20 @@ function add_ship(hull_type, ship_name, property) {
     }
   }
 
-  // add to pick list
   pick[hull_type].push({
     "hull_type": hull_type,
     "ship_name": ship_name,
-    "points": points
+    "points": points,
+    "ship_id": property.ship_id
   })
 }
 
-function remove_ship(hull_type, ship_name, property) {
+function remove_ship(hull_type, ship_name) {
   let index = pick[hull_type].findIndex(x => x.ship_name == ship_name);
   pick[hull_type].splice(index, 1);
 
   // remove +1 points
-  for (const ship of pick[hull_type]) {
-    if (ship.ship_name == ship_name) ship.points -= 1;
-  }
+  for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.points -= 1;
 }
 
 function ban_ship(hull_type, ship_name, property) {
@@ -111,16 +99,18 @@ function ban_ship(hull_type, ship_name, property) {
     "hull_type": hull_type,
     "ship_name": ship_name,
     "points": property.points,
+    "ship_id": property.ship_id
   })
 }
 
-function unban_ship(hull_type, ship_name, property) {
+function unban_ship(hull_type, ship_name) {
   let index = ban[hull_type].findIndex(x => x.ship_name == ship_name);
   ban[hull_type].splice(index, 1);
 }
 
-function not_addable(hull_type, ship_name) {
+function not_pickable(hull_type, ship_name) {
   if (hull_type == "Flagship" && pick["Flagship"].length < 1) return false;
+  if (hull_type == "Logistics") return logi_count.value >= max_number.Logistics;
 
   // banned?
   for (const ship of ban[hull_type]) {
@@ -128,10 +118,8 @@ function not_addable(hull_type, ship_name) {
   }
 
   // points
-  if (total_points.value > 100) return true;
+  if (total_points.value >= 100) return true;
 
-  // hull type
-  if (hull_type == "Logistics") return logi_count.value >= max_number.Logistics;
   return pick[hull_type].length >= max_number[hull_type];
 }
 
@@ -156,7 +144,6 @@ function not_bannable(hull_type, ship_name) {
   <h1>EVE AT Draft</h1>
   <h1>{{ total_points }}</h1>
 
-
   <!-- Picks -->
   <h2>Pick</h2>
   <div v-for="ship in pick_list">
@@ -164,19 +151,24 @@ function not_bannable(hull_type, ship_name) {
       :hull_type="ship.hull_type"
       :ship_name="ship.ship_name"
       :points="ship.points"
+      :ship_id="ship.ship_id"
       />
-      <button @click="remove_ship(ship.hull_type, ship.ship_name, ship.property)">REMOVE</button>
+      <button @click="remove_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
   </div>
 
   <!-- Bans -->
   <h2>Ban</h2>
+  <div v-for="(ships, hull_type) in ban">
+    <span v-if="ships.length">{{ ships.length }} / 3 {{ hull_type }} banned</span>
+  </div>
   <div v-for="ship in ban_list">
       <Ship
       :hull_type="ship.hull_type"
       :ship_name="ship.ship_name"
       :points="ship.points"
+      :ship_id="ship.ship_id"
       />
-      <button @click="unban_ship(ship.hull_type, ship.ship_name, ship.property)">REMOVE</button>
+      <button @click="unban_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
   </div>
   
   <!-- Pool-->
@@ -190,8 +182,9 @@ function not_bannable(hull_type, ship_name) {
       :hull_type = hull_type
       :ship_name = ship_name
       :points= property.points
+      :ship_id = property.ship_id
       />
-      <button @click="add_ship(hull_type, ship_name, property)" :disabled="not_addable(hull_type, ship_name)">ADD</button>
+      <button @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)">ADD</button>
       <button v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)">BAN</button>
     </div>
   </div>
