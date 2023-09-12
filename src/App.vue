@@ -12,85 +12,62 @@ const MAX_POINTS = 100,
       MAX_BAN_HULL_TYPE = 3;
 
 // data
-let pick = reactive([]),
-    ban = reactive([]);
+let pick = reactive({
+    "Flagship": [],
+    "Logistics": [],
+    "Battleship": [],
+    "Battlecruiser": [],
+    "Cruiser": [],
+    "Destroyer": [],
+    "Frigate": [],
+    "Industrial": [],
+    "Corvette": []
+  }),
+    ban = reactive({
+    "Flagship": [],
+    "Logistics": [],
+    "Battleship": [],
+    "Battlecruiser": [],
+    "Cruiser": [],
+    "Destroyer": [],
+    "Frigate": [],
+    "Industrial": [],
+    "Corvette": []
+  });
 let total_points = ref(0);
-let pick_count = reactive({
-  "Flagship": 0,
-  "Logistics": 0,
-  "Battleship": 0,
-  "Battlecruiser": 0,
-  "Cruiser": 0,
-  "Destroyer": 0,
-  "Frigate": 0,
-  "Industrial": 0,
-  "Corvette": 0,
-})
-let ban_count = reactive({
-  "Logistics": 0,
-  "Battleship": 0,
-  "Battlecruiser": 0,
-  "Cruiser": 0,
-  "Destroyer": 0,
-  "Frigate": 0,
-  "Industrial": 0,
-  "Corvette": 0,
-})
-let msgs = new Set()
-
-// check if pick/ban is valid
-let invalid_pick = computed(() => {
-  if (total_points.value > 100) msgs.add('>100 points!'); else msgs.delete('>100 points!');
-  if (pick_count.Flagship > 1) msgs.add('1 Flagship!'); else msgs.delete('1 Flagship!');
-  if (pick_count.Logistics > 1) msgs.add('1 Cruiser Logi or 2 Frigate Logi!'); else msgs.delete('1 Cruiser Logi or 2 Frigate Logi!');
-  for (const [hull_type, count] of Object.entries(pick_count)) {
-    if (hull_type in ['Flagship', 'Logistics']) continue;
-    if (count > 4) msgs.add(`You have more than 4 ${hull_type} ships!`); else msgs.delete(`You have more than 4 ${hull_type} ships!`);
-  }
-  return msgs.size;
-})
-
-let invalid_ban = computed(() => {
-  for (const [hull_type, count] of Object.entries(ban_count)) {
-    if (count > 3) return true;
-  }
-  return false;
-})
 
 // functions
 function add_ship(hull_type, ship_name, property) {
-  // same ship + 1 point
-  for (const ship of pick) {
+  // same ship +1 point
+  let duplicate = false, points = property.points;
+  for (const ship of pick[hull_type]) {
+    console.log(ship, ship_name)
     if (ship.ship_name == ship_name) {
-      property.points += 1;
-      break;
-    }
-  }
-  for (const ship of pick) {
-    if (ship.ship_name == ship_name) {
+      duplicate = true;
       ship.points += 1;
+      points += 1;
     }
   }
 
   // add to pick list
-  pick.push({
+  pick[hull_type].push({
     "ship_name": ship_name,
-    "hull_type": hull_type,
-    "points": property.points
+    "points": points
   })
-  pick.sort((a, b) => (b.points - a.points));
+  pick[hull_type].sort((a, b) => (b.points - a.points));
 
   // update globals
   total_points.value += property.points
-  if (hull_type == "Logistics") pick_count[hull_type] += property.logistics;
-  else pick_count[hull_type] += 1;
 }
 
 function remove_ship(hull_type, ship_name, property) {
-
 }
 
 function ban_ship(hull_type, ship_name, property) {
+
+}
+
+function unban_ship(hull_type, ship_name, property) {
 
 }
 
@@ -100,25 +77,21 @@ function ban_ship(hull_type, ship_name, property) {
   <h1>EVE AT Draft</h1>
   <h1>{{ total_points }}</h1>
 
-  <div v-if="invalid_pick">
-    <p v-for="msg in msgs">{{ msg }}</p>
-  </div>
-
-  <div v-if="invalid_ban">
-    <p>"Maximum 3 bans per each hull type!"</p>
-  </div>
 
   <!-- Picks -->
   <h2>Pick</h2>
-  <div v-for="ship in pick">
-    <!-- <span>{{ ship.ship_name }} {{ ship.points }}</span> -->
-    <Ship 
-    :hull_type="ship.hull_type"
-    :ship_name="ship.ship_name"
-    :points="ship.points"
-    />
-    <button @click="remove_ship(hull_type, ship_name, property)">REMOVE</button>
+  <div v-for="(ships, hull_type) in pick">
+    <div v-if="ships.length" v-for="ship in ships">
+      <Ship
+      :hull_type="hull_type"
+      :ship_name="ship.ship_name"
+      :points="ship.points"
+      />
+      <button @click="remove_ship(hull_type, ship.ship_name, ship.property)">REMOVE</button>
+    </div>
   </div>
+
+  <!-- Bans -->
   
   <!-- Pool-->
   <h2>Pool</h2>
@@ -134,8 +107,6 @@ function ban_ship(hull_type, ship_name, property) {
       <button @click="ban_ship(hull_type, ship_name, property)">BAN</button>
     </div>
   </div>
-
-  <!-- Bans -->
 </template>
 
 <style scoped>
