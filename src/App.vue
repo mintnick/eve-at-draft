@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, computed } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 
@@ -66,6 +66,9 @@ const ban_list = computed(() => {
   list.sort((a, b) => (b.points - a.points));
   return list;
 })
+
+// view variables
+let tab = ref();
 
 // functions
 function add_ship(hull_type, ship_name, property) {
@@ -173,6 +176,33 @@ function not_bannable(hull_type, ship_name) {
   
   <!-- Pool-->
   <h2>Pool</h2>
+  <div class="d-flex flex-row">
+    <v-tabs
+    v-model="tab"
+    direction="vertical">
+      <v-tab v-for="(ships, hull_type) in data" :value="hull_type">
+        {{ hull_type }}
+        <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
+        <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
+      </v-tab>
+    </v-tabs>
+    <v-window v-model="tab">
+      <v-window-item v-for="(ships, hull_type) in data" :value="hull_type">
+        {{ hull_type }}
+        <div v-for="(property, ship_name) in ships">
+          <Ship
+          :hull_type = hull_type
+          :ship_name = ship_name
+          :points= property.points
+          :ship_id = property.ship_id
+          />
+          <v-btn icon="mdi-plus" size="small" @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)"></v-btn>
+          <v-btn icon="mdi-cancel" size="small" v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)"></v-btn>
+        </div>
+      </v-window-item>
+    </v-window>
+  </div>
+
   <div v-for="(ships, hull_type) in data">
     <h3>{{ hull_type }}</h3>
     <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
@@ -183,12 +213,13 @@ function not_bannable(hull_type, ship_name) {
       :ship_name = ship_name
       :points= property.points
       :ship_id = property.ship_id
+      
       />
       <button @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)">ADD</button>
       <button v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)">BAN</button>
     </div>
   </div>
-</template>
+  </template>
 
 <style scoped>
 
