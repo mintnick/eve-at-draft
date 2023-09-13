@@ -152,12 +152,14 @@ function clear_ban() {
 </script>
 
 <template>
-  <h1>EVE AT Draft</h1>
+  <h2>EVE AT Draft</h2>
+
+  <!--Draft-->
   <div class="row">
-    <div class="col no-wrap">
+    <div class="col-8 no-wrap">
       <q-splitter
       v-model="splitterModel"
-      style="height: 500px"
+      style="height: 480px"
       >
       <template v-slot:before>
         <q-tabs
@@ -180,8 +182,8 @@ function clear_ban() {
           animated
           swipeable
           vertical
-          transition-prev="jump-up"
-          transition-next="jump-up"
+          transition-prev="jump-right"
+          transition-next="jump-right"
         >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type">
@@ -224,12 +226,12 @@ function clear_ban() {
       <Ship
       :hull_type="ship.hull_type"
       :ship_name="ship.ship_name"
-      :points="ship.points"
       :ship_id="ship.ship_id"
       />
       <button @click="unban_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
     </div>
   </div>
+
   </template>
 
 <style scoped>

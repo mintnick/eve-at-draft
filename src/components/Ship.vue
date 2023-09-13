@@ -5,7 +5,7 @@ const props = defineProps(['ship_name', 'hull_type', 'points', 'ship_id']);
 <template>
     <img :src="`https://images.evetech.net/types/${ship_id}/icon`" />
     <span>{{ ship_name }}</span>
-    <span>{{ points }}</span>
+    <span v-if="points">{{ points }}</span>
 </template>
 
 <style scoped>
