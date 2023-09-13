@@ -141,30 +141,86 @@ function not_bannable(hull_type, ship_name) {
   return ban[hull_type].length >= 3;
 }
 
+function clear_pick() {
+  for(const [k, v] of Object.entries(pick)) v = [];
+}
+
+function clear_ban() {
+  for(const [k, v] of Object.entries(ban)) v = [];
+}
+
 </script>
 
 <template>
   <h1>EVE AT Draft</h1>
-  <h1>{{ total_points }}</h1>
+  <div class="row">
+    <div class="col no-wrap">
+      <q-splitter
+      v-model="splitterModel"
+      style="height: 500px"
+      >
+      <template v-slot:before>
+        <q-tabs
+          v-model="tab"
+          vertical
+          class="text-teal"
+        >
+          <q-tab v-for="(ships, hull_type) in data"
+          :name="hull_type" :label="hull_type" no-caps
+          >
+          <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
+          <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
+          </q-tab>
+        </q-tabs>
+      </template>
 
-  <!-- Picks -->
-  <h2>Pick</h2>
-  <div v-for="ship in pick_list">
-      <Ship
-      :hull_type="ship.hull_type"
-      :ship_name="ship.ship_name"
-      :points="ship.points"
-      :ship_id="ship.ship_id"
-      />
-      <button @click="remove_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
+      <template v-slot:after>
+        <q-tab-panels
+          v-model="tab"
+          animated
+          swipeable
+          vertical
+          transition-prev="jump-up"
+          transition-next="jump-up"
+        >
+          <q-tab-panel v-for="(ships, hull_type) in data"
+          :name="hull_type">
+            <div v-for="(property, ship_name) in ships" justify="space-between">
+              <Ship
+              :hull_type = hull_type
+              :ship_name = ship_name
+              :points= property.points
+              :ship_id = property.ship_id
+              />
+              <button size="small" @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)">ADD</button>
+              <button size="small" v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)">BAN</button>
+            </div>
+          </q-tab-panel>
+        </q-tab-panels>
+      </template>
+      </q-splitter>
+
+    </div>
+    <div class="col">
+      {{ total_points }}
+      <div v-for="ship in pick_list">
+        <Ship
+        :hull_type="ship.hull_type"
+        :ship_name="ship.ship_name"
+        :points="ship.points"
+        :ship_id="ship.ship_id"
+        />
+        <button @click="remove_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
+      </div>
+    </div>
   </div>
 
-  <!-- Bans -->
-  <h2>Ban</h2>
+  <!--Ban list-->
   <div v-for="(ships, hull_type) in ban">
     <span v-if="ships.length">{{ ships.length }} / 3 {{ hull_type }} banned</span>
   </div>
-  <div v-for="ship in ban_list">
+  <div class="row" justify-start>
+    <div v-for="ship in ban_list">
       <Ship
       :hull_type="ship.hull_type"
       :ship_name="ship.ship_name"
@@ -172,55 +228,9 @@ function not_bannable(hull_type, ship_name) {
       :ship_id="ship.ship_id"
       />
       <button @click="unban_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
-  </div>
-  
-  <!-- Pool-->
-  <h2>Pool</h2>
-  <div class="d-flex flex-row">
-    <v-tabs
-    v-model="tab"
-    direction="vertical">
-      <v-tab v-for="(ships, hull_type) in data" :value="hull_type">
-        {{ hull_type }}
-        <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-        <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
-      </v-tab>
-    </v-tabs>
-    <v-window v-model="tab">
-      <v-window-item v-for="(ships, hull_type) in data" :value="hull_type">
-        {{ hull_type }}
-        <div v-for="(property, ship_name) in ships">
-          <Ship
-          :hull_type = hull_type
-          :ship_name = ship_name
-          :points= property.points
-          :ship_id = property.ship_id
-          />
-          <v-btn icon="mdi-plus" size="small" @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)"></v-btn>
-          <v-btn icon="mdi-cancel" size="small" v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)"></v-btn>
-        </div>
-      </v-window-item>
-    </v-window>
-  </div>
-
-  <div v-for="(ships, hull_type) in data">
-    <h3>{{ hull_type }}</h3>
-    <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-    <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
-    <div v-for="(property, ship_name) in ships">
-      <Ship
-      :hull_type = hull_type
-      :ship_name = ship_name
-      :points= property.points
-      :ship_id = property.ship_id
-      
-      />
-      <button @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)">ADD</button>
-      <button v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)">BAN</button>
     </div>
   </div>
   </template>
 
 <style scoped>
-
 </style>

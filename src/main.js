@@ -2,26 +2,13 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-// Vuetify
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
-import { aliases, mdi } from 'vuetify/iconsets/mdi'
-import '@mdi/font/css/materialdesignicons.css'
-
-const vuetify = createVuetify({
-  components,
-  directives,
-  icons: {
-    defaultSet: 'mdi',
-    aliases,
-    sets: {
-      mdi,
-    },
-  },
-})
+// Quasar
+import { Quasar } from 'quasar'
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/src/css/index.sass'
 
 createApp(App)
-.use(vuetify)
+.use(Quasar, {
+  plugins: {}, // import Quasar plugins and add here
+})
 .mount('#app')
