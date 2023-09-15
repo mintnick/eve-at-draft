@@ -68,7 +68,8 @@ const ban_list = computed(() => {
 })
 
 // view variables
-let tab = ref();
+let tab = ref('Flagship');
+let splitterModel = ref(NaN);
 
 // functions
 function add_ship(hull_type, ship_name, property) {
@@ -149,6 +150,10 @@ function clear_ban() {
   for(const [k, v] of Object.entries(ban)) v = [];
 }
 
+function get_hull_icon(hull_type) {
+  return require(`./assets/icons/Hull Type/${hull_type}.png`);
+}
+
 </script>
 
 <template>
@@ -156,22 +161,34 @@ function clear_ban() {
 
   <!--Draft-->
   <div class="row">
-    <div class="col-8 no-wrap">
+    <div class="col-xs-12 col-sm-8 no-wrap q-mb-lg">
       <q-splitter
       v-model="splitterModel"
-      style="height: 480px"
+      style="height:470px;"
       >
       <template v-slot:before>
         <q-tabs
           v-model="tab"
           vertical
-          class="text-teal"
+          class="text-grey-10 text-weight-bolder"
+          active-color="teal"
         >
           <q-tab v-for="(ships, hull_type) in data"
-          :name="hull_type" :label="hull_type" no-caps
+          :name="hull_type" no-caps
+          class="q-my-xs"
           >
-          <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-          <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
+          <div class="row items-center no-wrap justify-start tab-wrapper">
+            <div class="col-2">
+              <img :src="`hull/${hull_type}.png`" class="tab-icon" />
+            </div>
+            <div class="col-8">
+              {{ hull_type }}
+            </div>
+            <!-- <div class="col-2"> -->
+              <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
+              <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
+            <!-- </div> -->
+          </div>
           </q-tab>
         </q-tabs>
       </template>
@@ -187,7 +204,7 @@ function clear_ban() {
         >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type">
-            <div v-for="(property, ship_name) in ships" justify="space-between">
+            <div v-for="(property, ship_name) in ships">
               <Ship
               :hull_type = hull_type
               :ship_name = ship_name
@@ -201,10 +218,10 @@ function clear_ban() {
         </q-tab-panels>
       </template>
       </q-splitter>
-
     </div>
-    <div class="col">
-      {{ total_points }}
+    <!--Pick-->
+    <div class="col-xs-12 col-sm-4">
+      PICK: {{ total_points }}
       <div v-for="ship in pick_list">
         <Ship
         :hull_type="ship.hull_type"
@@ -231,8 +248,15 @@ function clear_ban() {
       <button @click="unban_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
     </div>
   </div>
-
   </template>
 
 <style scoped>
+.tab-wrapper {
+  width: 180px;
+}
+.tab-icon {
+  background-color: black;
+  height: 28px;
+  border-radius: 25%;
+}
 </style>
