@@ -150,14 +150,10 @@ function clear_ban() {
   for(const [k, v] of Object.entries(ban)) v = [];
 }
 
-function get_hull_icon(hull_type) {
-  return require(`./assets/icons/Hull Type/${hull_type}.png`);
-}
-
 </script>
 
 <template>
-  <h2>EVE AT Draft</h2>
+  <h2 class="text-bold">EVE AT Draft</h2>
 
   <!--Draft-->
   <div class="row">
@@ -170,24 +166,19 @@ function get_hull_icon(hull_type) {
         <q-tabs
           v-model="tab"
           vertical
-          class="text-grey-10 text-weight-bolder"
+          class="text-grey-10 text-weight-medium"
           active-color="teal"
         >
           <q-tab v-for="(ships, hull_type) in data"
           :name="hull_type" no-caps
+          :ripple="false"
           class="q-my-xs"
           >
-          <div class="row items-center no-wrap justify-start tab-wrapper">
-            <div class="col-2">
-              <img :src="`hull/${hull_type}.png`" class="tab-icon" />
-            </div>
-            <div class="col-8">
-              {{ hull_type }}
-            </div>
-            <!-- <div class="col-2"> -->
-              <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-              <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
-            <!-- </div> -->
+          <div class="row items-center no-wrap justify-between q-mx-xs tab-wrapper">
+            <img :src="`hull/${hull_type}.png`" class="tab-icon" />
+            <span>{{ hull_type }}</span>
+            <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
+            <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
           </div>
           </q-tab>
         </q-tabs>
@@ -204,7 +195,7 @@ function get_hull_icon(hull_type) {
         >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type">
-            <div v-for="(property, ship_name) in ships">
+            <div v-for="(property, ship_name) in ships" class="row no-wrap items-center q-py-xs justify-start">
               <Ship
               :hull_type = hull_type
               :ship_name = ship_name
@@ -253,6 +244,7 @@ function get_hull_icon(hull_type) {
 <style scoped>
 .tab-wrapper {
   width: 180px;
+  font-size: 16px;
 }
 .tab-icon {
   background-color: black;
