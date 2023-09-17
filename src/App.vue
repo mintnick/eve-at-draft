@@ -90,7 +90,6 @@ function add_ship(hull_type, ship_name, property) {
       "ship_id": property.ship_id
     }
   })
-  console.log(logi_count.value)
 }
 
 function remove_ship(hull_type, ship_name) {
@@ -172,7 +171,7 @@ function clear_ban() {
           v-model="tab"
           vertical
           class="text-grey-10 text-weight-medium"
-          active-color="teal"
+          active-color="deep-orange-9"
         >
           <q-tab v-for="(ships, hull_type) in data"
           :name="hull_type" no-caps
@@ -200,18 +199,16 @@ function clear_ban() {
         >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type">
-            <div v-for="(property, ship_name) in ships" class="row no-wrap items-center q-py-xs justify-start">
-              <Ship
-              :hull_type = hull_type
-              :ship_name = ship_name
-              :property="property"
-              :btns="['add', 'ban']"
-              @add_ship="add_ship"
-              :not_pickable="not_pickable(hull_type, ship_name)"
-              @ban_ship="ban_ship"
-              :not_bannable="not_bannable(hull_type, ship_name)"
-              />
-            </div>
+            <Ship v-for="(property, ship_name) in ships" 
+            :hull_type = hull_type
+            :ship_name = ship_name
+            :property="property"
+            :btns="['add', 'ban']"
+            @add_ship="add_ship"
+            :not_pickable="not_pickable(hull_type, ship_name)"
+            @ban_ship="ban_ship"
+            :not_bannable="not_bannable(hull_type, ship_name)"
+            />
           </q-tab-panel>
         </q-tab-panels>
       </template>
@@ -220,15 +217,13 @@ function clear_ban() {
     <!--Pick-->
     <div class="col-xs-12 col-sm-4">
       PICK: {{ total_points }}
-      <div v-for="ship in pick_list">
-        <Ship
-        :hull_type="ship.hull_type"
-        :ship_name="ship.ship_name"
-        :property="ship.property"
-        :btns="['remove']"
-        @remove_ship="remove_ship"
-        />
-      </div>
+      <Ship v-for="ship in pick_list"
+      :hull_type="ship.hull_type"
+      :ship_name="ship.ship_name"
+      :property="ship.property"
+      :btns="['remove']"
+      @remove_ship="remove_ship"
+      />
     </div>
   </div>
 
@@ -237,15 +232,13 @@ function clear_ban() {
     <span v-if="ships.length">{{ ships.length }} / 3 {{ hull_type }} banned</span>
   </div>
   <div class="row" justify-start>
-    <div v-for="ship in ban_list">
-      <Ship
-      :hull_type="ship.hull_type"
-      :ship_name="ship.ship_name"
-      :property="ship.property"
-      :btns="['unban']"
-      @unban_ship="unban_ship"
-      />
-    </div>
+    <Ship v-for="ship in ban_list"
+    :hull_type="ship.hull_type"
+    :ship_name="ship.ship_name"
+    :property="ship.property"
+    :btns="['unban']"
+    @unban_ship="unban_ship"
+    />
   </div>
   </template>
 
