@@ -42,7 +42,7 @@ const total_points = computed(() => {
   let points = 0;
   for (const [k, v] of Object.entries(pick)) {
     if (v.length == 0) continue;
-    for (const ship of v) points += ship.points;
+    for (const ship of v) points += ship.property.points;
   }
   return points;
 });
@@ -77,7 +77,7 @@ function add_ship(hull_type, ship_name, property) {
   let points = property.points;
   for (const ship of pick[hull_type]) {
     if (ship.ship_name == ship_name) {
-      ship.points += 1;
+      ship.property.points += 1;
       points += 1;
     }
   }
@@ -85,9 +85,12 @@ function add_ship(hull_type, ship_name, property) {
   pick[hull_type].push({
     "hull_type": hull_type,
     "ship_name": ship_name,
-    "points": points,
-    "ship_id": property.ship_id
+    "property": {
+      "points": points,
+      "ship_id": property.ship_id
+    }
   })
+  console.log(logi_count.value)
 }
 
 function remove_ship(hull_type, ship_name) {
@@ -95,15 +98,17 @@ function remove_ship(hull_type, ship_name) {
   pick[hull_type].splice(index, 1);
 
   // remove +1 points
-  for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.points -= 1;
+  for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.property.points -= 1;
 }
 
 function ban_ship(hull_type, ship_name, property) {
   ban[hull_type].push({
     "hull_type": hull_type,
     "ship_name": ship_name,
-    "points": property.points,
-    "ship_id": property.ship_id
+    "property": {
+      "points": property.points,
+      "ship_id": property.ship_id,
+    },
   })
 }
 
@@ -113,7 +118,7 @@ function unban_ship(hull_type, ship_name) {
 }
 
 function not_pickable(hull_type, ship_name) {
-  if (hull_type == "Flagship" && pick["Flagship"].length < 1) return false;
+  if (hull_type == "Flagship") return pick["Flagship"].length > 0;
   if (hull_type == "Logistics") return logi_count.value >= max_number.Logistics;
 
   // banned?
@@ -199,11 +204,13 @@ function clear_ban() {
               <Ship
               :hull_type = hull_type
               :ship_name = ship_name
-              :points= property.points
-              :ship_id = property.ship_id
+              :property="property"
+              :btns="['add', 'ban']"
+              @add_ship="add_ship"
+              :not_pickable="not_pickable(hull_type, ship_name)"
+              @ban_ship="ban_ship"
+              :not_bannable="not_bannable(hull_type, ship_name)"
               />
-              <button size="small" @click="add_ship(hull_type, ship_name, property)" :disabled="not_pickable(hull_type, ship_name)">ADD</button>
-              <button size="small" v-if="hull_type != `Flagship`" @click="ban_ship(hull_type, ship_name, property)" :disabled="not_bannable(hull_type, ship_name)">BAN</button>
             </div>
           </q-tab-panel>
         </q-tab-panels>
@@ -217,10 +224,10 @@ function clear_ban() {
         <Ship
         :hull_type="ship.hull_type"
         :ship_name="ship.ship_name"
-        :points="ship.points"
-        :ship_id="ship.ship_id"
+        :property="ship.property"
+        :btns="['remove']"
+        @remove_ship="remove_ship"
         />
-        <button @click="remove_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
       </div>
     </div>
   </div>
@@ -234,9 +241,10 @@ function clear_ban() {
       <Ship
       :hull_type="ship.hull_type"
       :ship_name="ship.ship_name"
-      :ship_id="ship.ship_id"
+      :property="ship.property"
+      :btns="['unban']"
+      @unban_ship="unban_ship"
       />
-      <button @click="unban_ship(ship.hull_type, ship.ship_name)">REMOVE</button>
     </div>
   </div>
   </template>
