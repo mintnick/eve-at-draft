@@ -56,14 +56,14 @@ const logi_count = computed(() => {
 const pick_list = computed(() => {
   let list = [];
   for (const [_, ships] of Object.entries(pick)) for (const ship of ships) list.push(ship);
-  list.sort((a, b) => (b.points - a.points));
+  list.sort((a, b) => (b.property.points - a.property.points));
   return list;
 })
 
 const ban_list = computed(() => {
   let list = [];
   for (const [_, ships] of Object.entries(ban)) for (const ship of ships) list.push(ship);
-  list.sort((a, b) => (b.points - a.points));
+  list.sort((a, b) => (b.property.points - a.property.points));
   return list;
 })
 
@@ -73,6 +73,7 @@ let tab = ref('Flagship');
 // functions
 function add_ship(hull_type, ship_name, property) {
   // same ship +1 point
+  const original_points = property.points;
   let points = property.points;
   for (const ship of pick[hull_type]) {
     if (ship.ship_name == ship_name) {
@@ -85,6 +86,7 @@ function add_ship(hull_type, ship_name, property) {
     "hull_type": hull_type,
     "ship_name": ship_name,
     "property": {
+      "original_points": original_points,
       "points": points,
       "ship_id": property.ship_id
     }

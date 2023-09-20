@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue'
 const props = defineProps(['ship_name', 'hull_type', 'property', 'btns', 'not_pickable', 'not_bannable']);
 const emit = defineEmits(['add_ship', 'ban_ship', 'remove_ship', 'unban_ship']);
 
@@ -6,13 +7,17 @@ const has_btn = (btn_name) => {
   return props['btns'] && props['btns'].includes(btn_name)
 }
 
+const extra_points = computed(() => {
+  return props['property']['original_points'] && props['property']['points'] > props['property']['original_points']
+});
 </script>
 
 <template>
   <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-my-xs q-mx-sm">
     <div class="row no-wrap items-center">
-      <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" />
-      <div v-if="property.points" class="ship-points text-green-9 text-h6 text-center q-ml-xs">
+      <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" :alt="`${ship_name} icon`"/>
+      <div v-if="property.points" class="ship-points text-h6 text-center q-ml-xs"
+      :class="[extra_points ? 'text-red-9' : 'text-green-9']">
         {{ property.points }}</div>
     </div>
 
@@ -63,7 +68,7 @@ const has_btn = (btn_name) => {
 
 @media only screen and (max-width: 600px) {
   .ship-name {
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
 }
 </style>
