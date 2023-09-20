@@ -12,11 +12,11 @@ const has_btn = (btn_name) => {
   <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-my-xs q-mx-sm">
     <div class="row no-wrap items-center">
       <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" />
-      <div v-if="property.points" class="ship-points q-ml-sm text-orange-9 text-weight-bolder text-h6 text-center">
+      <div v-if="property.points" class="ship-points text-green-9 text-h6 text-center q-ml-xs">
         {{ property.points }}</div>
     </div>
 
-    <div class="ship-name text-weight-bolder">
+    <div class="ship-name text-weight-bolder q-mx-xs">
       {{ ship_name }}</div>
 
     <div class="q-gutter-sm">
@@ -56,9 +56,9 @@ const has_btn = (btn_name) => {
 }
 
 .ship-wrapper .ship-points {
-  width: 40px;
+  width: 32px;
   border-style: solid;
-  border-radius: 25%;
+  border-radius: 15%;
 }
 
 @media only screen and (max-width: 600px) {

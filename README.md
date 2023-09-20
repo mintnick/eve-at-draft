@@ -2,4 +2,5 @@
 
 current status: under construction :construction:
 
-current tech stack: Vue 3, Python
+TODO:
+header, footer

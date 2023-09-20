@@ -168,7 +168,7 @@ function clear_ban() {
 
   <!--Draft-->
   <div class="row">
-    <div class="col-xs-12 col-sm-8 row no-wrap q-mb-lg">
+    <div class="col-xs-12 col-sm-8 row no-wrap">
 
       <div class="col-xs-3 col-sm-4">
         <q-tabs
@@ -183,7 +183,7 @@ function clear_ban() {
           class="q-my-xs"
           content-class="full-width"
           >
-          <div class="row items-center no-wrap justify-between q-mx-xs tab-wrapper">
+          <div class="row items-center no-wrap justify-between tab-wrapper">
             <img :src="`hull/${hull_type}.png`" class="tab-icon" />
             <span class="gt-xs">{{ hull_type }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
@@ -223,35 +223,38 @@ function clear_ban() {
 
     <!--Pick-->
     <div class="col-xs-12 col-sm-4">
-      <div class="row reverse items-center">
-        <q-btn 
-        @click="clear_pick"
-        class="q-mx-sm"
-        >Clear</q-btn>
+      <div class="row justify-around items-center">
+        <div class="text-h6">Pick List</div>
         <div class="text-subtitle1 text-weight-bolder"
         :class="{ 'text-red-9': total_points > 100, 'text-green-9': total_points == 100 }">
           {{ total_points }} / 100
         </div>
+        <q-btn @click="clear_pick" class="q-mx-sm" icon="clear"
+        >Clear</q-btn>
       </div>
-      <Ship v-for="ship in pick_list"
-      :hull_type="ship.hull_type"
-      :ship_name="ship.ship_name"
-      :property="ship.property"
-      :btns="['remove']"
-      @remove_ship="remove_ship"
-      />
+      <div class="row wrap">
+        <Ship v-for="ship in pick_list"
+          :hull_type="ship.hull_type"
+          :ship_name="ship.ship_name"
+          :property="ship.property"
+          :btns="['remove']"
+          @remove_ship="remove_ship"
+          class="col-sm-11"
+          />
+      </div>
     </div>
   </div>
 
   <!--Ban list-->
-  <div v-if="ban_list.length">
+  <div v-if="ban_list.length" class="q-mt-md">
   <!-- <div v-for="(ships, hull_type) in ban">
     <span v-if="ships.length">{{ ships.length }} / 3 {{ hull_type }} banned</span>
   </div> -->
-    <q-btn 
-    @click="clear_ban"
-    class="q-mx-sm"
-    >Clear</q-btn>
+    <div class="row justify-center q-mb-sm">
+      <div class="text-h6">Ban List</div>
+      <q-btn @click="clear_ban" class="q-mx-sm" icon="clear"
+      >Clear</q-btn>
+    </div>
     <div class="row" justify-start>
       <Ship v-for="ship in ban_list"
       :hull_type="ship.hull_type"
