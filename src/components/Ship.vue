@@ -9,15 +9,15 @@ const has_btn = (btn_name) => {
 </script>
 
 <template>
-  <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-ma-xs">
+  <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-my-xs q-mx-sm">
     <div class="row no-wrap items-center">
-      <img :src="`https://images.evetech.net/types/${property.ship_id}/icon`" />
-      <div v-if="property.points" class="ship-points q-ml-md text-orange-7 text-weight-bolder text-body1">
+      <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" />
+      <div v-if="property.points" class="ship-points q-ml-sm text-orange-9 text-weight-bolder text-h6 text-center">
         {{ property.points }}</div>
     </div>
 
-    <span class="text-h6">
-      {{ ship_name }}</span>
+    <div class="ship-name text-weight-bolder">
+      {{ ship_name }}</div>
 
     <div class="q-gutter-sm">
       <q-btn unelevated round icon="add" size="sm" color="green-8"
@@ -47,7 +47,23 @@ const has_btn = (btn_name) => {
   width: 34px;
 }
 
+.ship-wrapper {
+  border-radius: 5%;
+}
 .ship-wrapper:hover{
-  background-color: #e9ebf5;
+  background-color: #b7b7b7;
+  
+}
+
+.ship-wrapper .ship-points {
+  width: 40px;
+  border-style: solid;
+  border-radius: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ship-name {
+    font-size: 3vw;
+  }
 }
 </style>

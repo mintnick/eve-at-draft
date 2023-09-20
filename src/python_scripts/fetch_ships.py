@@ -41,7 +41,7 @@ for ship in data:
   if hull_type == "Battleship" and ship_name not in ["Leshak", "Bhaalgorn", "Rattlesnake", "Widow"]:
     json_data["Flagship"][ship_name] = { "points" : points , "ship_id": ship_id}
   elif hull_type == "Logistics":
-    if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Onerios", "Scimitar", "Rodiva", "Zarmazd"]:
+    if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Oneiros", "Scimitar", "Rodiva", "Zarmazd"]:
       json_data[hull_type][ship_name]["logistics"] = 1
     else:
       json_data[hull_type][ship_name]["logistics"] = 0.5
