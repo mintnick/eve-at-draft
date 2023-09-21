@@ -3,6 +3,8 @@ import { ref, reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 
+const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration"
+
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
@@ -118,19 +120,19 @@ function unban_ship(hull_type, ship_name) {
 }
 
 function not_pickable(hull_type, ship_name, property) {
+  // points
+  if (total_points.value >= 100) return true;
+
   if (hull_type == "Flagship") return pick["Flagship"].length > 0;
-  if (hull_type == "Logistics") {
-    return logi_count.value >= max_number.Logistics || logi_count.value + property.logistics > max_number.Logistics;
-  } 
-    
 
   // banned?
   for (const ship of ban[hull_type]) {
     if (ship.ship_name == ship_name) return true;
   }
-
-  // points
-  if (total_points.value >= 100) return true;
+  
+  if (hull_type == "Logistics") {
+    return logi_count.value + property.logistics > max_number.Logistics;
+  } 
 
   return pick[hull_type].length >= max_number[hull_type];
 }
@@ -162,31 +164,33 @@ function clear_ban() {
     v.length = 0;
   }
 }
-
 </script>
 
 <template>
-  <h2 class="text-bold">EVE AT Draft</h2>
+  <div class="text-weight-bolder text-h3 q-mt-lg">EVE AT Draft</div>
+  <a class="text-h6" :href="rule_link" target="_blank">Rules: AT XIX (2023)</a>
 
   <!--Draft-->
+  <div class="text-h4 text-weight-bolder q-mt-md"
+  :class="{ 'text-red-9': total_points > 100, 'text-green-9': total_points == 100 }">
+    {{ total_points }} / 100
+  </div>
+
   <div class="row">
     <div class="col-xs-12 col-sm-8 row no-wrap">
-
       <div class="col-xs-3 col-sm-4">
         <q-tabs
-          v-model="tab"
-          vertical
-          class="text-grey-10 text-weight-medium full-width"
-          active-color="deep-orange-9"
-        >
+        v-model="tab"
+        vertical
+        class="text-grey-10 text-weight-medium full-width"
+        active-color="deep-orange-9">
           <q-tab v-for="(ships, hull_type) in data"
           :name="hull_type" no-caps
           :ripple="false"
           class="q-my-xs"
-          content-class="full-width"
-          >
-          <div class="row items-center no-wrap justify-between tab-wrapper">
-            <img :src="`hull/${hull_type}.png`" class="tab-icon" />
+          content-class="full-width" >
+          <div class="row items-center no-wrap justify-between full-width text-subtitle1 text-weight-bold">
+            <img :src="`hull/${hull_type}.png`" class="hull-icon" />
             <span class="gt-xs">{{ hull_type }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
             <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
@@ -197,13 +201,12 @@ function clear_ban() {
 
       <div class="col-xs-9 col-sm-8">
         <q-tab-panels
-          v-model="tab"
-          animated
-          swipeable
-          vertical
-          transition-prev="jump-right"
-          transition-next="jump-right"
-        >
+        v-model="tab"
+        animated
+        swipeable
+        vertical
+        transition-prev="jump-right"
+        transition-next="jump-right" >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type"
           style="height: 460px;">
@@ -215,23 +218,17 @@ function clear_ban() {
             @add_ship="add_ship"
             :not_pickable="not_pickable(hull_type, ship_name, property)"
             @ban_ship="ban_ship"
-            :not_bannable="not_bannable(hull_type, ship_name)"
-        />
+            :not_bannable="not_bannable(hull_type, ship_name)" />
           </q-tab-panel>
         </q-tab-panels>
       </div>
-
     </div>
 
     <!--Pick-->
     <div class="col-xs-12 col-sm-4">
-      <div class="row justify-around items-center">
-        <div class="text-h6">Pick List</div>
-        <div class="text-subtitle1 text-weight-bolder"
-        :class="{ 'text-red-9': total_points > 100, 'text-green-9': total_points == 100 }">
-          {{ total_points }} / 100
-        </div>
-        <q-btn @click="clear_pick" class="q-mx-sm" icon="clear"
+      <div class="row justify-center q-ma-md">
+        <div class="text-h5 text-green-9 text-weight-bold">Pick List</div>
+        <q-btn @click="clear_pick" class="q-mx-md" icon="clear"
         >Clear</q-btn>
       </div>
       <div class="row wrap">
@@ -249,12 +246,9 @@ function clear_ban() {
 
   <!--Ban list-->
   <div v-if="ban_list.length" class="q-mt-md">
-  <!-- <div v-for="(ships, hull_type) in ban">
-    <span v-if="ships.length">{{ ships.length }} / 3 {{ hull_type }} banned</span>
-  </div> -->
-    <div class="row justify-center q-mb-sm">
-      <div class="text-h6">Ban List</div>
-      <q-btn @click="clear_ban" class="q-mx-sm" icon="clear"
+    <div class="row justify-center q-ma-sm">
+      <div class="text-h5 text-red-9 text-weight-bold">Ban List</div>
+      <q-btn @click="clear_ban" class="q-mx-md" icon="clear"
       >Clear</q-btn>
     </div>
     <div class="row" justify-start>
@@ -263,20 +257,12 @@ function clear_ban() {
       :ship_name="ship.ship_name"
       :property="ship.property"
       :btns="['unban']"
-      @unban_ship="unban_ship"
-      />
+      @unban_ship="unban_ship" />
     </div>
   </div>
-  </template>
+
+  <!--TODO: footer-->
+</template>
 
 <style scoped>
-.tab-wrapper {
-  font-size: 16px;
-  width: 100%;
-}
-.tab-icon {
-  background-color: black;
-  height: 28px;
-  border-radius: 25%;
-}
 </style>

@@ -21,6 +21,17 @@
   text-align: center;
 }
 
+.hull-icon {
+  background-color: black;
+  height: 28px;
+  border-radius: 25%;
+}
+
+a, a:visited {
+  color: rgb(74, 74, 255);
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

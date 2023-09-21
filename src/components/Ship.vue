@@ -21,8 +21,10 @@ const extra_points = computed(() => {
         {{ property.points }}</div>
     </div>
 
-    <div class="ship-name text-weight-bolder q-mx-xs">
-      {{ ship_name }}</div>
+    <div class="row ship-name text-weight-bolder q-mx-xs items-center">
+      <img v-if="hull_type == 'Flagship' && has_btn('remove')" src="hull/Flagship.png" class="hull-icon q-mr-xs" />
+      <span>{{ ship_name }}</span>
+    </div>
 
     <div class="q-gutter-sm">
       <q-btn unelevated round icon="add" size="sm" color="green-8"
