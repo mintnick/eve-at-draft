@@ -32,6 +32,17 @@ a, a:visited {
   text-decoration: none;
 }
 
+footer {
+  margin: 100px auto 20px;
+  max-width: 1000px;
+  border-top-style: solid;
+  border-color: rgb(144, 144, 144, 0.3);
+}
+
+footer > * {
+  margin: 0 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

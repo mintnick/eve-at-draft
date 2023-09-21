@@ -3,7 +3,7 @@ import { ref, reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 
-const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration"
+const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration";
 
 const max_number = {
   "Flagship": 1,
@@ -168,7 +168,7 @@ function clear_ban() {
 
 <template>
   <div class="text-weight-bolder text-h3 q-mt-lg">EVE AT Draft</div>
-  <a class="text-h6" :href="rule_link" target="_blank">Rules: AT XIX (2023)</a>
+  <a class="text-h6" :href="rule_link" target="_blank">Rules (2023)</a>
 
   <!--Draft-->
   <div class="text-h4 text-weight-bolder q-mt-md"
@@ -262,6 +262,10 @@ function clear_ban() {
   </div>
 
   <!--TODO: footer-->
+  <footer class="row justify-center text-subtitle1 items-center">
+    <div>Made by <a href="https://github.com/mintnick">Nick Ning</a></div>
+    <a href="https://github.com/mintnick/eve-at-draft">GitHub</a>
+  </footer>
 </template>
 
 <style scoped>
