@@ -4,11 +4,10 @@ import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 import { useQuasar } from 'quasar';
 
+// vars
 const $q = useQuasar();
 
-// vars
 const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration";
-
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
@@ -20,7 +19,6 @@ const max_number = {
   "Industrial": 4,
   "Corvette": 4
 }
-
 const pick = reactive({
     "Flagship": [],
     "Logistics": [],
@@ -44,6 +42,9 @@ const pick = reactive({
     "Corvette": []
   });
 
+const tab = ref('Flagship');
+
+// computed
 const total_points = computed(() => {
   let points = 0;
   for (const [k, v] of Object.entries(pick)) {
@@ -72,9 +73,6 @@ const ban_list = computed(() => {
   list.sort((a, b) => (b.property.points - a.property.points));
   return list;
 })
-
-// view variables
-const tab = ref('Flagship');
 
 // functions
 function add_ship(hull_type, ship_name, property) {
@@ -124,9 +122,10 @@ function unban_ship(hull_type, ship_name) {
 }
 
 function not_pickable(hull_type, ship_name, property) {
-  // points
+  // points >= 100
   if (total_points.value >= 100) return true;
 
+  // 1 flagship allowed
   if (hull_type == "Flagship") return pick["Flagship"].length > 0;
 
   // banned?
@@ -134,10 +133,12 @@ function not_pickable(hull_type, ship_name, property) {
     if (ship.ship_name == ship_name) return true;
   }
   
+  // 1 cruiser logi or 2 frigate logis
   if (hull_type == "Logistics") {
     return logi_count.value + property.logistics > max_number.Logistics;
   } 
 
+  // 4 for each hull
   return pick[hull_type].length >= max_number[hull_type];
 }
 
@@ -183,7 +184,6 @@ function toggle_theme() {
       <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
     </div>
   </div>
-
   <a class="text-h6" :href="rule_link" target="_blank">Rules (2023)</a>
 
   <!--Draft-->
@@ -240,7 +240,7 @@ function toggle_theme() {
       </div>
     </div>
 
-    <!--Pick-->
+    <!--Pick list-->
     <div class="col-xs-12 col-sm-4">
       <div class="row justify-center q-ma-md">
         <div class="text-h5 text-green-9 text-weight-bold">Pick List</div>
@@ -284,5 +284,4 @@ function toggle_theme() {
 </template>
 
 <style scoped>
-
 </style>

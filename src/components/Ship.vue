@@ -4,11 +4,11 @@ const props = defineProps(['ship_name', 'hull_type', 'property', 'btns', 'not_pi
 const emit = defineEmits(['add_ship', 'ban_ship', 'remove_ship', 'unban_ship']);
 
 const has_btn = (btn_name) => {
-  return props['btns'] && props['btns'].includes(btn_name)
+  return props['btns'] && props['btns'].includes(btn_name);
 }
 
 const extra_points = computed(() => {
-  return props['property']['original_points'] && props['property']['points'] > props['property']['original_points']
+  return props['property']['original_points'] && props['property']['points'] > props['property']['original_points'];
 });
 </script>
 
