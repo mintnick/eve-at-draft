@@ -16,7 +16,7 @@ const extra_points = computed(() => {
   <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-my-xs q-mx-sm">
     <div class="row no-wrap items-center">
       <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" :alt="`${ship_name} icon`"/>
-      <div v-if="property.points" class="ship-points text-h6 text-center q-ml-xs"
+      <div v-if="property.points" class="ship-points text-subtitle1 text-weight-bold text-center q-ml-xs"
       :class="[extra_points ? 'text-red-9' : 'text-green-9']">
         {{ property.points }}</div>
     </div>
@@ -58,7 +58,7 @@ const extra_points = computed(() => {
   border-radius: 5%;
 }
 .ship-wrapper:hover{
-  background-color: #b7b7b7;
+  background-color: #a4a4a4;
   
 }
 

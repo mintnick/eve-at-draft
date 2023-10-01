@@ -1,8 +1,12 @@
 <script setup>
-import { ref, reactive, computed } from 'vue'
+import { ref, reactive, computed, watch } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
+import { useQuasar } from 'quasar';
 
+const $q = useQuasar();
+
+// vars
 const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration";
 
 const max_number = {
@@ -28,7 +32,7 @@ const pick = reactive({
     "Industrial": [],
     "Corvette": []
   }),
-    ban = reactive({
+  ban = reactive({
     "Flagship": [],
     "Logistics": [],
     "Battleship": [],
@@ -70,7 +74,7 @@ const ban_list = computed(() => {
 })
 
 // view variables
-let tab = ref('Flagship');
+const tab = ref('Flagship');
 
 // functions
 function add_ship(hull_type, ship_name, property) {
@@ -164,10 +168,22 @@ function clear_ban() {
     v.length = 0;
   }
 }
+
+function toggle_theme() {
+  $q.dark.toggle();
+  document.cookie=`theme=${$q.dark.mode}`;
+}
 </script>
 
 <template>
-  <div class="text-weight-bolder text-h3 q-mt-lg">EVE AT Draft</div>
+  <div class="row q-pt-md flex-center">
+    <div class="col-3"></div>
+    <div class="col-6 text-weight-bolder text-h4">EVE AT Draft</div>
+    <div class="col-3 row reverse q-px-md text-center">
+      <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
+    </div>
+  </div>
+
   <a class="text-h6" :href="rule_link" target="_blank">Rules (2023)</a>
 
   <!--Draft-->
@@ -182,7 +198,7 @@ function clear_ban() {
         <q-tabs
         v-model="tab"
         vertical
-        class="text-grey-10 text-weight-medium full-width"
+        class="text-weight-medium full-width"
         active-color="deep-orange-9">
           <q-tab v-for="(ships, hull_type) in data"
           :name="hull_type" no-caps
@@ -261,12 +277,12 @@ function clear_ban() {
     </div>
   </div>
 
-  <!--TODO: footer-->
   <footer class="row justify-center text-subtitle1 items-center">
-    <div>Made by <a href="https://github.com/mintnick">Nick Ning</a></div>
+    <div>Made by <a href="https://github.com/mintnick">Nick Ning</a> using Vue and Quasar</div>
     <a href="https://github.com/mintnick/eve-at-draft">GitHub</a>
   </footer>
 </template>
 
 <style scoped>
+
 </style>
