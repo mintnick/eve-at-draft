@@ -276,11 +276,6 @@ function toggle_theme() {
       @unban_ship="unban_ship" />
     </div>
   </div>
-
-  <footer class="row justify-center text-subtitle1 items-center">
-    <div>Made by <a href="https://github.com/mintnick">Nick Ning</a> using Vue and Quasar</div>
-    <a href="https://github.com/mintnick/eve-at-draft">GitHub</a>
-  </footer>
 </template>
 
 <style scoped>
