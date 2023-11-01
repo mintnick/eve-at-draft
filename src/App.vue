@@ -242,10 +242,10 @@ function toggle_theme() {
 
     <!--Pick list-->
     <div class="col-xs-12 col-sm-4">
-      <div class="row justify-center q-ma-md">
+      <div class="row flex-center q-ma-md">
         <div class="text-h5 text-green-9 text-weight-bold">Pick List</div>
-        <q-btn @click="clear_pick" class="q-mx-md" icon="clear"
-        >Clear</q-btn>
+        <q-btn @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
+          Clear</q-btn>
       </div>
       <div class="row wrap">
         <Ship v-for="ship in pick_list"
@@ -262,10 +262,10 @@ function toggle_theme() {
 
   <!--Ban list-->
   <div v-if="ban_list.length" class="q-mt-md">
-    <div class="row justify-center q-ma-sm">
+    <div class="row flex-center q-ma-sm">
       <div class="text-h5 text-red-9 text-weight-bold">Ban List</div>
-      <q-btn @click="clear_ban" class="q-mx-md" icon="clear"
-      >Clear</q-btn>
+      <q-btn @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
+        Clear</q-btn>
     </div>
     <div class="row" justify-start>
       <Ship v-for="ship in ban_list"
