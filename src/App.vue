@@ -225,7 +225,7 @@ function toggle_theme() {
         transition-next="jump-right" >
           <q-tab-panel v-for="(ships, hull_type) in data"
           :name="hull_type"
-          style="height: 460px;">
+          style="height: 510px;">
             <Ship v-for="(property, ship_name) in ships" 
             :hull_type = hull_type
             :ship_name = ship_name
