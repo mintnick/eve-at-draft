@@ -9,13 +9,17 @@ import 'quasar/src/css/index.sass'
 import 'quasar/src/css/flex-addon.sass'
 
 // load theme from cookie
-const themeString = document.cookie
+let themeString = document.cookie
   .split("; ")
   .find((row) => row.startsWith("theme="))
   ?.split("=")[1];
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  themeString = "true";
+}
 let themeValue = "auto";
 if (themeString == "true") themeValue = true;
 else if (themeString == "false") themeValue = false;
+
 else themeValue = themeString;
 
 createApp(App)
