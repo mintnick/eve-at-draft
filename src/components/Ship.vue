@@ -22,7 +22,7 @@ const extra_points = computed(() => {
     </div>
 
     <div class="row ship-name text-weight-bolder q-mx-xs items-center">
-      <img v-if="hull_type == 'Flagship' && has_btn('remove')" src="hull/Flagship.png" class="hull-icon q-mr-xs" />
+      <img v-if="hull_type == 'Flagship' && has_btn('remove')" src="/hull/Flagship.png" class="hull-icon q-mr-xs" />
       <span>{{ ship_name }}</span>
     </div>
 
