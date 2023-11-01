@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     quasar({
-      // sassVariables: 'src/quasar-variables.sass'
+      sassVariables: 'src/quasar-variables.sass',
     })
   ],
   resolve: {
