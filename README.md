@@ -1,6 +1,3 @@
 # EVE Online Alliance Tournament Draft Tool
 
-current status: under construction :construction:
-
-TODO:
-header, footer
+Current rule: AT XIX (2023)
