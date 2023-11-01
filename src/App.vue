@@ -206,7 +206,7 @@ function toggle_theme() {
           class="q-my-xs"
           content-class="full-width" >
           <div class="row items-center no-wrap justify-between full-width text-subtitle1 text-weight-bold">
-            <img :src="`/hull/${hull_type}.png`" class="hull-icon" />
+            <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
             <span class="gt-xs">{{ hull_type }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
             <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
