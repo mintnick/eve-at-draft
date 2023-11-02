@@ -47,7 +47,7 @@ for ship in data:
       json_data[hull_type][ship_name]["logistics"] = 0.5
 
 # Write the JSON data to the output file
-with open(output_file, "w") as json_file:
+with open(output_file, "w+") as json_file:
   json.dump(json_data, json_file, indent=2)
 
 print(f"JSON data written to {output_file}")
