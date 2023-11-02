@@ -117,6 +117,27 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
+"@intlify/core-base@9.6.2":
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.6.2.tgz#b3dffb0daad2594a16672da33bcc9f2639bee866"
+  integrity sha512-ci0j2nbEL/pamvqgcCqyIVeQ3LS41F1IRqI5rCBNnpSp0FjNnH8bpha8R3OifkhqatzlP4wGOuN/UqfLYVDv7g==
+  dependencies:
+    "@intlify/message-compiler" "9.6.2"
+    "@intlify/shared" "9.6.2"
+
+"@intlify/message-compiler@9.6.2":
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.6.2.tgz#8664a159d916135f91ba4fc9af0781c23d7b001e"
+  integrity sha512-kgZQL9zeJDeEB5vvD93Y++HvFUELnT48PjnpfCcF3EJaLLVs9he8IzODiNK42Z40lWbFyja0SXJZjsalybQygA==
+  dependencies:
+    "@intlify/shared" "9.6.2"
+    source-map-js "^1.0.2"
+
+"@intlify/shared@9.6.2":
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.6.2.tgz#6a7c4677ee21d457a40d814110bd16ecaa746441"
+  integrity sha512-9KBcXmJNxElp7QMnU8V0/tScTOitDqyFi4HceEZqJyyDkMi8K5DBPMTIuXIAMmtMlXpe/nj5pke7tRw97VeQRA==
+
 "@jridgewell/sourcemap-codec@^1.4.15":
   version "1.4.15"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
@@ -178,6 +199,11 @@
   dependencies:
     "@vue/compiler-dom" "3.3.7"
     "@vue/shared" "3.3.7"
+
+"@vue/devtools-api@^6.5.0":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.5.1.tgz#7f71f31e40973eeee65b9a64382b13593fdbd697"
+  integrity sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==
 
 "@vue/reactivity-transform@3.3.7":
   version "3.3.7"
@@ -427,6 +453,15 @@ vite@^4.4.5:
     rollup "^3.27.1"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-i18n@9:
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-9.6.2.tgz#ce80dc90bf71a1b85c3c721e1bcc6c581652ed53"
+  integrity sha512-J43grTQjPR8LCUxvx3mkoM+11xhTnej1Al4lvJCEeKmQqf8eqbuYPQb54HXnEg/UzZyaxLBAwPAUTbrZ8V7hcg==
+  dependencies:
+    "@intlify/core-base" "9.6.2"
+    "@intlify/shared" "9.6.2"
+    "@vue/devtools-api" "^6.5.0"
 
 vue@^3.3.4:
   version "3.3.7"

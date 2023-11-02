@@ -17,8 +17,7 @@ msg = {
   "messages": {
     "title": "",
     "rules": "",
-    "clear": "",
-    "footer": "",
+    "clear": ""
   },
   "types": {
     "Flagship": "",

@@ -179,12 +179,12 @@ function toggle_theme() {
 <template>
   <div class="row q-pt-md flex-center">
     <div class="col-3"></div>
-    <div class="col-6 text-weight-bolder text-h4">EVE AT Draft</div>
+    <div class="col-6 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
     <div class="col-3 row reverse q-px-md text-center">
       <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
     </div>
   </div>
-  <a class="text-h6" :href="rule_link" target="_blank">Rules (2023)</a>
+  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXIX(2023)</a>
 
   <!--Draft-->
   <div class="text-h4 text-weight-bolder q-mt-md"
@@ -245,7 +245,7 @@ function toggle_theme() {
       <div class="row flex-center q-ma-md">
         <div class="text-h5 text-green-9 text-weight-bold">Pick List</div>
         <q-btn @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
-          Clear</q-btn>
+          {{ $t("messages.clear") }}</q-btn>
       </div>
       <div class="row wrap">
         <Ship v-for="ship in pick_list"
@@ -265,7 +265,7 @@ function toggle_theme() {
     <div class="row flex-center q-ma-sm">
       <div class="text-h5 text-red-9 text-weight-bold">Ban List</div>
       <q-btn @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
-        Clear</q-btn>
+        {{ $t("messages.clear") }}</q-btn>
     </div>
     <div class="row" justify-start>
       <Ship v-for="ship in ban_list"

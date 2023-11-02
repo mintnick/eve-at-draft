@@ -2,8 +2,7 @@
   "messages": {
     "title": "EVE AT Draft",
     "rules": "Rules",
-    "clear": "Clear",
-    "footer": "All EVE related materials are property of CCP Games"
+    "clear": "Clear"
   },
   "types": {
     "Flagship": "Flagship",

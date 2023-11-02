@@ -2,8 +2,7 @@
   "messages": {
     "title": "EVE AT 阵容模拟",
     "rules": "规则",
-    "clear": "清空",
-    "footer": "所有游戏内素材版权属于 CCP Games "
+    "clear": "清空"
   },
   "types": {
     "Flagship": "旗舰",

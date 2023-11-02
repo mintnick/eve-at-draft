@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import i18n from './i18n'
 
 // Quasar
 import { Quasar } from 'quasar'
@@ -19,7 +20,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 let themeValue = "auto";
 if (themeString == "true") themeValue = true;
 else if (themeString == "false") themeValue = false;
-
 else themeValue = themeString;
 
 createApp(App)
@@ -29,4 +29,5 @@ createApp(App)
     dark: themeValue,
   },
 })
+.use(i18n)
 .mount('#app')
