@@ -7,10 +7,6 @@ import { useI18n } from 'vue-i18n';
 
 // vars
 const i18n = useI18n();
-// const langs = {
-//   'en': 'English',
-//   'zh': '简体中文'
-// }
 const langs = [
   {
     label: 'English',
@@ -21,7 +17,6 @@ const langs = [
     value: 'zh'
   }
 ]
-const lang_model = ref(null);
 
 const $q = useQuasar();
 
@@ -204,11 +199,6 @@ function toggle_lang() {
     <div class="col-6 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
     <div class="col-3 row reverse q-px-md text-center items-center">
       <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
-      <!-- <select v-model="$i18n.locale" @change="toggle_lang" class="text-center text-body1">
-        <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="i">
-          {{ lang }}
-        </option>
-      </select> -->
       <q-select
         outlined
         dense
