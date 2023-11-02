@@ -2,7 +2,9 @@
   "messages": {
     "title": "EVE AT Draft",
     "rules": "Rules",
-    "clear": "Clear"
+    "clear": "Clear",
+    "pick": "Picks",
+    "ban": "Bans"
   },
   "types": {
     "Flagship": "Flagship",

@@ -7,8 +7,19 @@ const messages = {
   zh: zh
 }
 
+// load lang from cookie
+let lang = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("lang="))
+  ?.split("=")[1];
+if (!lang) {
+  lang = 'en';
+  document.cookie=`lang=en`
+}
+
 const i18n = createI18n({
-  locale: 'en',
+  locale: lang,
+  legacy: false,
   messages,
 })
 

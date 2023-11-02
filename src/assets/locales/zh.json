@@ -2,7 +2,9 @@
   "messages": {
     "title": "EVE AT 阵容模拟",
     "rules": "规则",
-    "clear": "清空"
+    "clear": "清空",
+    "pick": "已选阵容",
+    "ban": "禁用"
   },
   "types": {
     "Flagship": "旗舰",

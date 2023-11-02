@@ -3,8 +3,26 @@ import { ref, reactive, computed, watch } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 import { useQuasar } from 'quasar';
+import { useI18n } from 'vue-i18n';
 
 // vars
+const i18n = useI18n();
+// const langs = {
+//   'en': 'English',
+//   'zh': '简体中文'
+// }
+const langs = [
+  {
+    label: 'English',
+    value: 'en'
+  },
+  {
+    label: '简体中文',
+    value: 'zh'
+  }
+]
+const lang_model = ref(null);
+
 const $q = useQuasar();
 
 const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration";
@@ -174,20 +192,38 @@ function toggle_theme() {
   $q.dark.toggle();
   document.cookie=`theme=${$q.dark.mode}`;
 }
+
+function toggle_lang() {
+  document.cookie=`lang=${i18n.locale.value}`
+}
 </script>
 
 <template>
   <div class="row q-pt-md flex-center">
     <div class="col-3"></div>
     <div class="col-6 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
-    <div class="col-3 row reverse q-px-md text-center">
+    <div class="col-3 row reverse q-px-md text-center items-center">
       <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
+      <!-- <select v-model="$i18n.locale" @change="toggle_lang" class="text-center text-body1">
+        <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="i">
+          {{ lang }}
+        </option>
+      </select> -->
+      <q-select
+        outlined
+        dense
+        options-dense
+        v-model="$i18n.locale"
+        :options="langs"
+        emit-value
+        map-options
+      />
     </div>
   </div>
   <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXIX(2023)</a>
 
   <!--Draft-->
-  <div class="text-h4 text-weight-bolder q-mt-md"
+  <div class="text-h4 text-weight-bolder q-my-md"
   :class="{ 'text-red-9': total_points > 100, 'text-green-9': total_points == 100 }">
     {{ total_points }} / 100
   </div>
@@ -207,7 +243,7 @@ function toggle_theme() {
           content-class="full-width" >
           <div class="row items-center no-wrap justify-between full-width text-subtitle1 text-weight-bold">
             <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
-            <span class="gt-xs">{{ hull_type }}</span>
+            <span class="gt-xs">{{ $t(`types.${hull_type}`) }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
             <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
           </div>
@@ -243,7 +279,7 @@ function toggle_theme() {
     <!--Pick list-->
     <div class="col-xs-12 col-sm-4">
       <div class="row flex-center q-ma-md">
-        <div class="text-h5 text-green-9 text-weight-bold">Pick List</div>
+        <div class="text-h5 text-green-9 text-weight-bold">{{ $t("messages.pick") }}</div>
         <q-btn @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
           {{ $t("messages.clear") }}</q-btn>
       </div>
@@ -263,7 +299,7 @@ function toggle_theme() {
   <!--Ban list-->
   <div v-if="ban_list.length" class="q-mt-md">
     <div class="row flex-center q-ma-sm">
-      <div class="text-h5 text-red-9 text-weight-bold">Ban List</div>
+      <div class="text-h5 text-red-9 text-weight-bold">{{ $t("messages.ban") }}</div>
       <q-btn @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
         {{ $t("messages.clear") }}</q-btn>
     </div>
@@ -279,4 +315,8 @@ function toggle_theme() {
 </template>
 
 <style scoped>
+select {
+  height: 35px;
+  width: 90px;
+}
 </style>
