@@ -1,19 +1,20 @@
 {
   "messages": {
-    "title": "",
-    "rules": "",
-    "clear": "",
-    "footer": ""
+    "title": "EVE AT 阵容模拟",
+    "rules": "规则",
+    "clear": "清空",
+    "footer": "所有游戏内素材版权属于 CCP Games "
   },
   "types": {
-    "Flagship": "",
-    "Logistics": "",
-    "Battleship": "",
-    "Cruiser": "",
-    "Destroyer": "",
-    "Frigate": "",
-    "Industrial": "",
-    "Corvette": ""
+    "Flagship": "旗舰",
+    "Logistics": "后勤",
+    "Battleship": "战列舰",
+    "Battlecruiser": "战列巡洋舰",
+    "Cruiser": "巡洋舰",
+    "Destroyer": "驱逐舰",
+    "Frigate": "护卫舰",
+    "Industrial": "工业舰",
+    "Corvette": "新手船"
   },
   "ships": {
     "17920": "巴戈龙级",

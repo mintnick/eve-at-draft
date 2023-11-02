@@ -24,6 +24,7 @@ msg = {
     "Flagship": "",
     "Logistics": "",
     "Battleship": "",
+    "Battlecruiser": "",
     "Cruiser": "",
     "Destroyer": "",
     "Frigate": "",
