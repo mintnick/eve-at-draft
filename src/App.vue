@@ -189,6 +189,7 @@ function toggle_theme() {
 }
 
 function toggle_lang() {
+  console.log(i18n.locale.value)
   document.cookie=`lang=${i18n.locale.value}`
 }
 </script>
@@ -207,6 +208,7 @@ function toggle_lang() {
         :options="langs"
         emit-value
         map-options
+        @update:model-value="toggle_lang"
       />
     </div>
   </div>
