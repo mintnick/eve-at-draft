@@ -189,27 +189,23 @@ function toggle_theme() {
 }
 
 function toggle_lang() {
-  console.log(i18n.locale.value)
   document.cookie=`lang=${i18n.locale.value}`
+}
+
+function change_lang(lang) {
+  i18n.locale.value = lang;
+  $cookies.set('lang', lang);
 }
 </script>
 
 <template>
   <div class="row q-pt-md flex-center">
-    <div class="col-3"></div>
-    <div class="col-6 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
-    <div class="col-3 row reverse q-px-md text-center items-center">
+    <div class="col-4"></div>
+    <div class="col-4 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
+    <div class="col-4 row reverse q-px-md text-center items-center">
       <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
-      <q-select
-        outlined
-        dense
-        options-dense
-        v-model="$i18n.locale"
-        :options="langs"
-        emit-value
-        map-options
-        @update:model-value="toggle_lang"
-      />
+      <q-btn outline @click="change_lang('zh')">简体中文</q-btn>
+      <q-btn outline @click="change_lang('en')">English</q-btn>
     </div>
   </div>
   <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXIX(2023)</a>
