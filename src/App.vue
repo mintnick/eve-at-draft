@@ -188,13 +188,13 @@ function toggle_theme() {
   document.cookie=`theme=${$q.dark.mode}`;
 }
 
-function toggle_lang() {
-  document.cookie=`lang=${i18n.locale.value}`
-}
+// function toggle_lang() {
+//   document.cookie=`lang=${i18n.locale.value}`
+// }
 
 function change_lang(lang) {
   i18n.locale.value = lang;
-  $cookies.set('lang', lang);
+  document.cookie=`lang=${i18n.locale.value}`
 }
 </script>
 
