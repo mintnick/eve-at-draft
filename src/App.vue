@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, computed, watch } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import data from './assets/ships.json'
 import Ship from './components/Ship.vue';
 import { useQuasar } from 'quasar';
