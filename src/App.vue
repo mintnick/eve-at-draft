@@ -23,6 +23,7 @@ const $q = useQuasar();
 const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration";
 const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration#h2-16";
 const max_points = 200
+const max_ships = 10
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
@@ -145,35 +146,38 @@ function unban_ship(hull_type, ship_name) {
 
 function not_pickable(hull_type, ship_name, property) {
   // points >= max_points
-  if (total_points.value >= max_points) return true;
+  if (total_points.value >= max_points) return true
+
+  // ships >= max_ships
+  if (pick_list.value.length >= max_ships) return true
 
   // 1 flagship allowed
-  if (hull_type == "Flagship") return pick["Flagship"].length > 0;
+  if (hull_type == "Flagship") return pick["Flagship"].length > 0
 
   // banned?
   for (const ship of ban[hull_type]) {
-    if (ship.ship_name == ship_name) return true;
+    if (ship.ship_name == ship_name) return true
   }
   
   // 1 cruiser logi or 2 frigate logis
   if (hull_type == "Logistics") {
-    return logi_count.value + property.logistics > max_number.Logistics;
+    return logi_count.value + property.logistics > max_number.Logistics
   } 
 
   // 4 for each hull
-  return pick[hull_type].length + flagship_type(hull_type) >= max_number[hull_type];
+  return pick[hull_type].length + flagship_type(hull_type) >= max_number[hull_type]
 }
 
 function not_bannable(hull_type, ship_name) {
   // picked?
   for (const ship of pick[hull_type]) {
-    if (hull_type == "Flagship") continue;
-    if (ship.ship_name == ship_name) return true;
+    if (hull_type == "Flagship") continue
+    if (ship.ship_name == ship_name) return true
   }
 
   // already banned
   for (const ship of ban[hull_type]) {
-    if (ship.ship_name == ship_name) return true;
+    if (ship.ship_name == ship_name) return true
   }
 
   // 3 bans for each hull type
@@ -182,13 +186,13 @@ function not_bannable(hull_type, ship_name) {
 
 function clear_pick() {
   for(const [k, v] of Object.entries(pick)) {
-    v.length = 0;
+    v.length = 0
   }
 }
 
 function clear_ban() {
   for(const [k, v] of Object.entries(ban)) {
-    v.length = 0;
+    v.length = 0
   }
 }
 
@@ -236,7 +240,7 @@ function flagship_type(hull_type) {
 
   <!--Draft-->
   <div class="text-h4 text-weight-bolder q-my-md"
-  :class="{ 'text-red-9': total_points > max_points, 'text-green-9': total_points == max_points }">
+  :class="{ 'text-red-9': total_points > max_points, 'text-amber-9': total_points == max_points, 'text-green-9': total_points < max_points }">
     {{ total_points }} / {{ max_points }}
   </div>
 
@@ -291,7 +295,11 @@ function flagship_type(hull_type) {
     <!--Pick list-->
     <div class="col-xs-12 col-sm-4">
       <div class="row flex-center q-ma-md">
-        <div class="text-h5 text-green-9 text-weight-bold">{{ $t("messages.pick") }}</div>
+        <div class="text-h5 text-green-9 text-weight-bold">{{ $t("messages.pick") }}
+          <span v-if="pick_list.length" class="text-h6"
+          :class="{ 'text-amber-9': pick_list.length >= max_ships, 'text-green-9': pick_list.length < max_ships }"
+          >({{ pick_list.length }} / {{ max_ships }})</span>
+        </div>
         <q-btn v-if="pick_list.length" @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
           {{ $t("messages.clear") }}</q-btn>
       </div>
