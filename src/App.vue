@@ -227,12 +227,12 @@ function flagship_type(hull_type) {
 </script>
 
 <template>
-  <div class="row q-pt-md flex-center">
+  <div class="row q-pt-lg flex-center">
     <div class="col-4"></div>
     <div class="col-4 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
     <div class="col-4 row reverse q-px-md text-center items-center">
-      <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme" class="q-mx-sm"></q-btn>
-      <q-btn outline @click="change_lang('zh')">简体中文</q-btn>
+      <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme"></q-btn>
+      <q-btn outline @click="change_lang('zh')" class="q-mx-xs">简体中文</q-btn>
       <q-btn outline @click="change_lang('en')">English</q-btn>
     </div>
   </div>
