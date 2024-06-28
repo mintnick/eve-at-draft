@@ -1,258 +1,269 @@
-Impairor	Rookie Ship	1	Corvette
-Ibis	Rookie Ship	1	Corvette
-Velator	Rookie Ship	1	Corvette
-Reaper	Rookie Ship	1	Corvette
-Executioner	Frigate	2	Frigate
-Tormentor	Frigate	2	Frigate
-Punisher	Punisher (Frigate)	3	Frigate
-Magnate	Frigate	2	Frigate
-Condor	Frigate	2	Frigate
-Kestrel	Frigate	2	Frigate
-Merlin	Frigate	2	Frigate
-Heron	Frigate	2	Frigate
-Atron	Frigate	2	Frigate
-Tristan	Frigate	2	Frigate
-Incursus	Frigate	2	Frigate
-Imicus	Frigate	2	Frigate
-Slasher	Frigate	2	Frigate
-Breacher	Frigate	2	Frigate
-Rifter	Frigate	2	Frigate
-Probe	Frigate	2	Frigate
-Inquisitor	Tech 1 Support Frigate	1	Logistics
-Bantam	Tech 1 Support Frigate	1	Logistics
-Navitas	Tech 1 Support Frigate	1	Logistics
-Burst	Tech 1 Support Frigate	1	Logistics
-Crucifier	Tech 1 Disruption Frigate	3	Frigate
-Griffin	Tech 1 Disruption Frigate	3	Frigate
-Maulus	Tech 1 Disruption Frigate	3	Frigate
-Vigil	Tech 1 Disruption Frigate	3	Frigate
-Imperial Navy Slicer	Frigate, Navy Faction	3	Frigate
-Crucifier Navy Issue	Frigate, Navy Faction	3	Frigate
-Caldari Navy Hookbill	Frigate, Navy Faction	3	Frigate
-Griffin Navy Issue	Frigate, Navy Faction	3	Frigate
-Federation Navy Comet	Federation Navy Comet (Frigate)	2	Frigate
-Maulus Navy Issue	Maulus Navy Issue (Frigate)	2	Frigate
-Republic Fleet Firetail	Frigate, Navy Faction	3	Frigate
-Vigil Fleet Issue	Frigate, Navy Faction	3	Frigate
-Vengeance	Assault Frigate	4	Frigate
-Retribution	Assault Frigate	4	Frigate
-Hawk	Assault Frigate	4	Frigate
-Harpy	Assault Frigate	4	Frigate
-Ishkur	Assault Frigate	4	Frigate
-Enyo	Assault Frigate	4	Frigate
-Wolf	Assault Frigate	4	Frigate
-Jaguar	Assault Frigate	4	Frigate
-Anathema	Covert Ops Ship	3	Frigate
-Buzzard	Covert Ops Ship	3	Frigate
-Helios	Covert Ops Ship	3	Frigate
-Cheetah	Covert Ops Ship	3	Frigate
-Purifier	Stealth Bomber	3	Frigate
-Manticore	Stealth Bomber	3	Frigate
-Nemesis	Stealth Bomber	3	Frigate
-Hound	Stealth Bomber	3	Frigate
-Sentinel	Electronic Attack Frigate	5	Frigate
-Kitsune	Electronic Attack Frigate	5	Frigate
-Keres	Electronic Attack Frigate	5	Frigate
-Hyena	Electronic Attack Frigate	5	Frigate
-Crusader	Interceptor	3	Frigate
-Malediction	Interceptor	3	Frigate
-Crow	Interceptor	3	Frigate
-Raptor	Interceptor	3	Frigate
-Taranis	Interceptor	3	Frigate
-Ares	Interceptor	3	Frigate
-Claw	Interceptor	3	Frigate
-Stiletto	Interceptor	3	Frigate
-Deacon	Logistics Frigate	5	Logistics
-Kirin	Logistics Frigate	5	Logistics
-Thalia	Logistics Frigate	5	Logistics
-Scalpel	Logistics Frigate	5	Logistics
-Coercer	Destroyer	3	Destroyer
-Dragoon	Destroyer	3	Destroyer
-Cormorant	Destroyer	3	Destroyer
-Corax	Destroyer	3	Destroyer
-Catalyst	Destroyer	3	Destroyer
-Algos	Destroyer	3	Destroyer
-Thrasher	Destroyer	3	Destroyer
-Talwar	Destroyer	3	Destroyer
-Pontifex	Command Destroyer	6	Destroyer
-Stork	Command Destroyer	6	Destroyer
-Magus	Command Destroyer	6	Destroyer
-Bifrost	Command Destroyer	6	Destroyer
-Heretic	Interdictor	4	Destroyer
-Flycatcher	Interdictor	4	Destroyer
-Eris	Interdictor	4	Destroyer
-Sabre	Interdictor	4	Destroyer
-Confessor	Tactical Destroyer	4	Destroyer
-Jackdaw	Tactical Destroyer	4	Destroyer
-Hecate	Tactical Destroyer	4	Destroyer
-Svipul	Tactical Destroyer	4	Destroyer
-Arbitrator	Tech 1 Disruption Cruiser	6	Cruiser
-Blackbird	Tech 1 Disruption Cruiser	6	Cruiser
-Celestis	Tech 1 Disruption Cruiser	6	Cruiser
-Bellicose	Tech 1 Disruption Cruiser	6	Cruiser
-Augoror	Tech 1 Support Cruiser	9	Logistics
-Osprey	Tech 1 Support Cruiser	9	Logistics
-Exequror	Tech 1 Support Cruiser	9	Logistics
-Scythe	Tech 1 Support Cruiser	9	Logistics
-Maller	Cruiser	4	Cruiser
-Omen	Cruiser	4	Cruiser
-Moa	Cruiser	4	Cruiser
-Caracal	Cruiser	4	Cruiser
-Vexor	Cruiser	4	Cruiser
-Thorax	Cruiser	4	Cruiser
-Stabber	Cruiser	4	Cruiser
-Rupture	Cruiser	4	Cruiser
-Augoror Navy Issue	Cruiser, Navy Faction	7	Cruiser
-Omen Navy Issue	Cruiser, Navy Faction	7	Cruiser
-Caracal Navy Issue	Cruiser, Navy Faction	7	Cruiser
-Osprey Navy Issue	Cruiser, Navy Faction	7	Cruiser
-Exequror Navy Issue	Exequror Navy Issue (Cruiser)	6	Cruiser
-Vexor Navy Issue	Vexor Navy Issue (Cruiser)	6	Cruiser
-Scythe Fleet Issue	Cruiser, Navy Faction	7	Cruiser
-Stabber Fleet Issue	Cruiser, Navy Faction	7	Cruiser
-Zealot	Heavy Assault Cruiser	12	Cruiser
-Sacrilege	Heavy Assault Cruiser	12	Cruiser
-Eagle	Heavy Assault Cruiser	12	Cruiser
-Cerberus	Heavy Assault Cruiser	12	Cruiser
-Ishtar	Heavy Assault Cruiser	12	Cruiser
-Deimos	Heavy Assault Cruiser	12	Cruiser
-Vagabond	Heavy Assault Cruiser	12	Cruiser
-Muninn	Heavy Assault Cruiser	12	Cruiser
-Devoter	Heavy Interdictor	12	Cruiser
-Onyx	Heavy Interdictor	12	Cruiser
-Phobos	Heavy Interdictor	12	Cruiser
-Broadsword	Heavy Interdictor	12	Cruiser
-Guardian	Logistics Cruiser	16	Logistics
-Basilisk	Logistics Cruiser	16	Logistics
-Oneiros	Logistics Cruiser	16	Logistics
-Scimitar	Logistics Cruiser	16	Logistics
-Curse	Recon Ship	14	Cruiser
-Pilgrim	Recon Ship	14	Cruiser
-Falcon	Recon Ship	14	Cruiser
-Rook	Recon Ship	14	Cruiser
-Arazu	Recon Ship	14	Cruiser
-Lachesis	Recon Ship	14	Cruiser
-Huginn	Recon Ship	14	Cruiser
-Rapier	Recon Ship	14	Cruiser
-Legion	Strategic Cruiser	16	Cruiser
-Tengu	Strategic Cruiser	16	Cruiser
-Proteus	Strategic Cruiser	16	Cruiser
-Loki	Strategic Cruiser	16	Cruiser
-Oracle	Attack Battlecruiser	10	Battlecruiser
-Naga	Attack Battlecruiser	10	Battlecruiser
-Talos	Attack Battlecruiser	10	Battlecruiser
-Tornado	Attack Battlecruiser	10	Battlecruiser
-Prophecy	Combat Battlecruiser	13	Battlecruiser
-Harbinger	Combat Battlecruiser	13	Battlecruiser
-Drake	Combat Battlecruiser	13	Battlecruiser
-Ferox	Combat Battlecruiser	13	Battlecruiser
-Brutix	Combat Battlecruiser	13	Battlecruiser
-Myrmidon	Combat Battlecruiser	13	Battlecruiser
-Hurricane	Combat Battlecruiser	13	Battlecruiser
-Cyclone	Combat Battlecruiser	13	Battlecruiser
-Harbinger Navy Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Drake Navy Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Brutix Navy Issue	Brutix Navy Issue (Battlecruiser)	14	Battlecruiser
-Hurricane Fleet Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Damnation	Command Ship	18	Battlecruiser
-Absolution	Command Ship	18	Battlecruiser
-Vulture	Command Ship	18	Battlecruiser
-Nighthawk	Command Ship	18	Battlecruiser
-Astarte	Command Ship	18	Battlecruiser
-Eos	Command Ship	18	Battlecruiser
-Claymore	Command Ship	18	Battlecruiser
-Sleipnir	Command Ship	18	Battlecruiser
-Abaddon	Battleship	19	Battleship
-Apocalypse	Battleship	19	Battleship
-Armageddon	Battleship	19	Battleship
-Scorpion	Battleship	19	Battleship
-Raven	Battleship	19	Battleship
-Rokh	Battleship	19	Battleship
-Hyperion	Battleship	19	Battleship
-Megathron	Battleship	19	Battleship
-Dominix	Battleship	19	Battleship
-Tempest	Battleship	19	Battleship
-Typhoon	Battleship	19	Battleship
-Maelstrom	Battleship	19	Battleship
-Praxis	Battleship	19	Battleship
-Apocalypse Navy Issue	Battleship, Navy Faction	21	Battleship
-Armageddon Navy Issue	Battleship, Navy Faction	21	Battleship
-Scorpion Navy Issue	Battleship, Navy Faction	21	Battleship
-Raven Navy Issue	Battleship, Navy Faction	21	Battleship
-Megathron Navy Issue	Megathron Navy Issue (Battleship)	20	Battleship
-Dominix Navy Issue	Dominix Navy Issue (Battleship)	20	Battleship
-Tempest Fleet Issue	Battleship, Navy Faction	21	Battleship
-Typhoon Fleet Issue	Battleship, Navy Faction	21	Battleship
-Redeemer	Black Ops Battleship	21	Battleship
-Widow	Widow (Battleship)	25	Battleship
-Sin	Black Ops Battleship	21	Battleship
-Panther	Black Ops Battleship	21	Battleship
-Paladin	Marauder	24	Battleship
-Golem	Marauder	24	Battleship
-Kronos	Marauder	24	Battleship
-Vargur	Marauder	24	Battleship
-Bestower	Tech 1 Industrial Ships	2	Industrial
-Sigil	Tech 1 Industrial Ships	2	Industrial
-Badger	Tech 1 Industrial Ships	2	Industrial
-Tayra	Tech 1 Industrial Ships	2	Industrial
-Nereus	Tech 1 Industrial Ships	2	Industrial
-Kryos	Tech 1 Industrial Ships	2	Industrial
-Epithal	Tech 1 Industrial Ships	2	Industrial
-Miasmos	Tech 1 Industrial Ships	2	Industrial
-Iteron Mark V	Tech 1 Industrial Ships	2	Industrial
-Hoarder	Tech 1 Industrial Ships	2	Industrial
-Mammoth	Tech 1 Industrial Ships	2	Industrial
-Wreathe	Tech 1 Industrial Ships	2	Industrial
-Dramiel	Frigate, Pirate Faction	4	Frigate
-Cruor	Frigate, Pirate Faction	4	Frigate
-Worm	Worm (Frigate)	5	Frigate
-Garmur	Frigate, Pirate Faction	4	Frigate
-Succubus	Frigate, Pirate Faction	4	Frigate
-Astero	Frigate, Pirate Faction	4	Frigate
-Daredevil	Frigate, Pirate Faction	4	Frigate
-Cynabal	Cruiser, Pirate Faction	9	Cruiser
-Ashimmu	Cruiser, Pirate Faction	9	Cruiser
-Gila	Gila (Pirate Cruiser)	12	Cruiser
-Orthrus	Cruiser, Pirate Faction	9	Cruiser
-Phantasm	Cruiser, Pirate Faction	9	Cruiser
-Stratios	Cruiser, Pirate Faction	9	Cruiser
-Vigilant	Cruiser, Pirate Faction	9	Cruiser
-Machariel	Battleship, Pirate Faction	23	Battleship
-Bhaalgorn	Battleship, Pirate Faction	23	Battleship
-Rattlesnake	Rattlesnake (Battleship)	25	Battleship
-Barghest	Battleship, Pirate Faction	23	Battleship
-Nightmare	Battleship, Pirate Faction	23	Battleship
-Vindicator	Battleship, Pirate Faction	23	Battleship
-Gnosis	Combat Battlecruiser	13	Battlecruiser
-Sunesis	Destroyer	3	Destroyer
-Thunderchild	Thunderchild (Battleship)	18	Battleship
-Stormbringer	Stormbringer (Cruiser)	6	Cruiser
+Impairor	Rookie Ship (Corvette)	1	Corvette
+Ibis	Rookie Ship (Corvette)	1	Corvette
+Velator	Rookie Ship (Corvette)	1	Corvette
+Reaper	Rookie Ship (Corvette)	1	Corvette
+Executioner	Frigate	4	Frigate
+Tormentor	Frigate	4	Frigate
+Punisher	Punisher (Frigate)	6	Frigate
+Magnate	Frigate	4	Frigate
+Condor	Frigate	4	Frigate
+Kestrel	Frigate	4	Frigate
+Merlin	Frigate	4	Frigate
+Heron	Frigate	4	Frigate
+Atron	Frigate	4	Frigate
+Tristan	Frigate	4	Frigate
+Incursus	Frigate	4	Frigate
+Imicus	Frigate	4	Frigate
+Slasher	Frigate	4	Frigate
+Breacher	Frigate	4	Frigate
+Rifter	Frigate	4	Frigate
+Probe	Frigate	4	Frigate
+Inquisitor	Tech 1 Support Frigate	3	Logistics
+Bantam	Tech 1 Support Frigate	3	Logistics
+Navitas	Tech 1 Support Frigate	3	Logistics
+Burst	Tech 1 Support Frigate	3	Logistics
+Crucifier	Crucifier (Tech 1 Disruption Frigate)	8	Frigate
+Griffin	Griffin (Tech 1 Disruption Frigate)	7	Frigate
+Maulus	Maulus (Tech 1 Disruption Frigate)	7	Frigate
+Vigil	Tech 1 Disruption Frigate	6	Frigate
+Imperial Navy Slicer	Imperial Navy Slicer (Frigate, Navy Faction)	7	Frigate
+Crucifier Navy Issue	Crucifier Navy Issue (Frigate, Navy Faction)	7	Frigate
+Caldari Navy Hookbill	Frigate, Navy Faction	6	Frigate
+Griffin Navy Issue	Frigate, Navy Faction	6	Frigate
+Federation Navy Comet	Frigate, Navy Faction	6	Frigate
+Maulus Navy Issue	Frigate, Navy Faction	6	Frigate
+Republic Fleet Firetail	Frigate, Navy Faction	6	Frigate
+Vigil Fleet Issue	Frigate, Navy Faction	6	Frigate
+Vengeance	Assault Frigate	9	Frigate
+Retribution	Assault Frigate	9	Frigate
+Hawk	Assault Frigate	9	Frigate
+Harpy	Assault Frigate	9	Frigate
+Ishkur	Assault Frigate	9	Frigate
+Enyo	Assault Frigate	9	Frigate
+Wolf	Assault Frigate	9	Frigate
+Jaguar	Assault Frigate	9	Frigate
+Anathema	Covert Ops Ship	4	Frigate
+Buzzard	Covert Ops Ship	4	Frigate
+Helios	Covert Ops Ship	4	Frigate
+Cheetah	Covert Ops Ship	4	Frigate
+Purifier	Stealth Bomber	7	Frigate
+Manticore	Stealth Bomber	7	Frigate
+Nemesis	Stealth Bomber	7	Frigate
+Hound	Stealth Bomber	7	Frigate
+Sentinel	Sentinel (Electronic Attack Frigate)	14	Frigate
+Kitsune	Electronic Attack Frigate	11	Frigate
+Keres	Keres (Electronic Attack Frigate)	14	Frigate
+Hyena	Electronic Attack Frigate	11	Frigate
+Crusader	Interceptor	6	Frigate
+Malediction	Interceptor	6	Frigate
+Crow	Interceptor	6	Frigate
+Raptor	Interceptor	6	Frigate
+Taranis	Interceptor	6	Frigate
+Ares	Interceptor	6	Frigate
+Claw	Interceptor	6	Frigate
+Stiletto	Interceptor	6	Frigate
+Deacon	Logistics Frigate	10	Logistics
+Kirin	Logistics Frigate	10	Logistics
+Thalia	Logistics Frigate	10	Logistics
+Scalpel	Logistics Frigate	10	Logistics
+Coercer	Destroyer	5	Destroyer
+Dragoon	Destroyer	5	Destroyer
+Cormorant	Destroyer	5	Destroyer
+Corax	Destroyer	5	Destroyer
+Catalyst	Destroyer	5	Destroyer
+Algos	Destroyer	5	Destroyer
+Thrasher	Destroyer	5	Destroyer
+Talwar	Destroyer	5	Destroyer
+Pontifex	Pontifex (Command Destroyer)	13	Destroyer
+Stork	Command Destroyer	12	Destroyer
+Magus	Command Destroyer	12	Destroyer
+Bifrost	Command Destroyer	12	Destroyer
+Heretic	Interdictor	9	Destroyer
+Flycatcher	Interdictor	9	Destroyer
+Eris	Interdictor	9	Destroyer
+Sabre	Interdictor	9	Destroyer
+Confessor	Tactical Destroyer	10	Destroyer
+Jackdaw	Jackdaw (Tactical Destroyer)	11	Destroyer
+Hecate	Tactical Destroyer	10	Destroyer
+Svipul	Tactical Destroyer	10	Destroyer
+Arbitrator	Arbitrator (Tech 1 Disruption Cruiser)	14	Cruiser
+Blackbird	Blackbird (Tech 1 Disruption Cruiser)	16	Cruiser
+Celestis	Celestis (Tech 1 Disruption Cruiser)	15	Cruiser
+Bellicose	Bellicose (Tech 1 Disruption Cruiser)	10	Cruiser
+Augoror	Tech 1 Support Cruiser	20	Logistics
+Osprey	Tech 1 Support Cruiser	20	Logistics
+Exequror	Tech 1 Support Cruiser	20	Logistics
+Scythe	Tech 1 Support Cruiser	20	Logistics
+Maller	Maller (Cruiser)	10	Cruiser
+Omen	Cruiser	9	Cruiser
+Moa	Cruiser	9	Cruiser
+Caracal	Caracal (Cruiser)	10	Cruiser
+Vexor	Vexor (Cruiser)	10	Cruiser
+Thorax	Cruiser	9	Cruiser
+Stabber	Cruiser	9	Cruiser
+Rupture	Cruiser	9	Cruiser
+Augoror Navy Issue	Augoror Navy Issue (Cruiser, Navy Faction)	20	Cruiser
+Omen Navy Issue	Cruiser, Navy Faction	16	Cruiser
+Caracal Navy Issue	Cruiser, Navy Faction	16	Cruiser
+Osprey Navy Issue	Cruiser, Navy Faction	16	Cruiser
+Exequror Navy Issue	Exequror Navy Issue (Cruiser, Navy Faction)	20	Cruiser
+Vexor Navy Issue	Cruiser, Navy Faction	16	Cruiser
+Scythe Fleet Issue	Cruiser, Navy Faction	16	Cruiser
+Stabber Fleet Issue	Cruiser, Navy Faction	16	Cruiser
+Zealot	Heavy Assault Cruiser	26	Cruiser
+Sacrilege	Heavy Assault Cruiser	26	Cruiser
+Eagle	Heavy Assault Cruiser	26	Cruiser
+Cerberus	Heavy Assault Cruiser	26	Cruiser
+Ishtar	Heavy Assault Cruiser	26	Cruiser
+Deimos	Heavy Assault Cruiser	26	Cruiser
+Vagabond	Heavy Assault Cruiser	26	Cruiser
+Muninn	Heavy Assault Cruiser	26	Cruiser
+Devoter	Heavy Interdictor	24	Cruiser
+Onyx	Heavy Interdictor	24	Cruiser
+Phobos	Heavy Interdictor	24	Cruiser
+Broadsword	Heavy Interdictor	24	Cruiser
+Guardian	Logistics Cruiser	32	Logistics
+Basilisk	Logistics Cruiser	32	Logistics
+Oneiros	Logistics Cruiser	32	Logistics
+Scimitar	Logistics Cruiser	32	Logistics
+Curse	Curse (Recon Ship)	30	Cruiser
+Pilgrim	Recon Ship	27	Cruiser
+Falcon	Falcon (Recon Ship)	28	Cruiser
+Rook	Rook (Recon Ship)	28	Cruiser
+Arazu	Arazu (Recon Ship)	28	Cruiser
+Lachesis	Lachesis (Recon Ship)	28	Cruiser
+Huginn	Recon Ship	27	Cruiser
+Rapier	Recon Ship	27	Cruiser
+Legion	Strategic Cruiser	31	Cruiser
+Tengu	Strategic Cruiser	31	Cruiser
+Proteus	Strategic Cruiser	31	Cruiser
+Loki	Loki (Strategic Cruiser)	32	Cruiser
+Oracle	Attack Battlecruiser	22	Battlecruiser
+Naga	Attack Battlecruiser	22	Battlecruiser
+Talos	Attack Battlecruiser	22	Battlecruiser
+Tornado	Attack Battlecruiser	22	Battlecruiser
+Prophecy	Combat Battlecruiser	28	Battlecruiser
+Harbinger	Combat Battlecruiser	28	Battlecruiser
+Drake	Combat Battlecruiser	28	Battlecruiser
+Ferox	Combat Battlecruiser	28	Battlecruiser
+Brutix	Combat Battlecruiser	28	Battlecruiser
+Myrmidon	Combat Battlecruiser	28	Battlecruiser
+Hurricane	Combat Battlecruiser	28	Battlecruiser
+Cyclone	Combat Battlecruiser	28	Battlecruiser
+Harbinger Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Drake Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Brutix Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Hurricane Fleet Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Damnation	Command Ship	36	Battlecruiser
+Absolution	Command Ship	36	Battlecruiser
+Vulture	Command Ship	36	Battlecruiser
+Nighthawk	Command Ship	36	Battlecruiser
+Astarte	Command Ship	36	Battlecruiser
+Eos	Command Ship	36	Battlecruiser
+Claymore	Command Ship	36	Battlecruiser
+Sleipnir	Command Ship	36	Battlecruiser
+Abaddon	Battleship	39	Battleship
+Apocalypse	Battleship	39	Battleship
+Armageddon	Battleship	39	Battleship
+Scorpion	Battleship	39	Battleship
+Raven	Battleship	39	Battleship
+Rokh	Battleship	39	Battleship
+Hyperion	Battleship	39	Battleship
+Megathron	Battleship	39	Battleship
+Dominix	Battleship	39	Battleship
+Tempest	Battleship	39	Battleship
+Typhoon	Battleship	39	Battleship
+Maelstrom	Battleship	39	Battleship
+Praxis	Battleship	39	Battleship
+Apocalypse Navy Issue	Apocalypse Navy Issue (Battleship, Navy Faction)	41	Battleship
+Armageddon Navy Issue	Armageddon Navy Issue (Battleship, Navy Faction)	46	Battleship
+Scorpion Navy Issue	Battleship, Navy Faction	45	Battleship
+Raven Navy Issue	Raven Navy Issue (Battleship, Navy Faction)	41	Battleship
+Megathron Navy Issue	Megathron Navy Issue (Battleship, Navy Faction)	41	Battleship
+Dominix Navy Issue	Battleship, Navy Faction	45	Battleship
+Tempest Fleet Issue	Tempest Fleet Issue (Battleship, Navy Faction)	41	Battleship
+Typhoon Fleet Issue	Battleship, Navy Faction	45	Battleship
+Redeemer	Black Ops Battleship	43	Battleship
+Widow	Widow (Black Ops Battleship)	50	Battleship
+Sin	Black Ops Battleship	43	Battleship
+Panther	Black Ops Battleship	43	Battleship
+Paladin	Marauder	48	Battleship
+Golem	Marauder	48	Battleship
+Kronos	Marauder	48	Battleship
+Vargur	Marauder	48	Battleship
+Bestower	Tech 1 Industrial Ships	3	Industrial
+Sigil	Tech 1 Industrial Ships	3	Industrial
+Badger	Tech 1 Industrial Ships	3	Industrial
+Tayra	Tech 1 Industrial Ships	3	Industrial
+Nereus	Tech 1 Industrial Ships	3	Industrial
+Kryos	Tech 1 Industrial Ships	3	Industrial
+Epithal	Tech 1 Industrial Ships	3	Industrial
+Miasmos	Tech 1 Industrial Ships	3	Industrial
+Iteron Mark V	Tech 1 Industrial Ships	3	Industrial
+Hoarder	Tech 1 Industrial Ships	3	Industrial
+Mammoth	Tech 1 Industrial Ships	3	Industrial
+Wreathe	Tech 1 Industrial Ships	3	Industrial
+Dramiel	Frigate, Pirate Faction	8	Frigate
+Cruor	Cruor (Frigate, Pirate Faction)	9	Frigate
+Worm	Worm (Frigate, Pirate Faction)	10	Frigate
+Garmur	Frigate, Pirate Faction	8	Frigate
+Succubus	Frigate, Pirate Faction	8	Frigate
+Astero	Frigate, Pirate Faction	8	Frigate
+Daredevil	Frigate, Pirate Faction	8	Frigate
+Cynabal	Cynabal (Cruiser, Pirate Faction)	15	Cruiser
+Ashimmu	Cruiser, Pirate Faction	18	Cruiser
+Gila	Gila (Cruiser, Pirate Faction)	23	Cruiser
+Orthrus	Orthrus (Cruiser, Pirate Faction)	19	Cruiser
+Phantasm	Cruiser, Pirate Faction	18	Cruiser
+Stratios	Cruiser, Pirate Faction	18	Cruiser
+Vigilant	Cruiser, Pirate Faction	18	Cruiser
+Machariel	Machariel (Battleship, Pirate Faction)	51	Battleship
+Bhaalgorn	Bhaalgorn (Battleship, Pirate Faction)	54	Battleship
+Rattlesnake	Rattlesnake (Battleship, Pirate Faction)	54	Battleship
+Barghest	Barghest (Battleship, Pirate Faction)	55	Battleship
+Nightmare	Nightmare (Battleship, Pirate Faction)	53	Battleship
+Vindicator	Vindicator (Battleship, Pirate Faction)	52	Battleship
+Gnosis	Combat Battlecruiser	28	Battlecruiser
+Sunesis	Destroyer	5	Destroyer
+Thunderchild	Thunderchild (Battleship)	34	Battleship
+Stormbringer	Stormbringer (Cruiser)	10	Cruiser
 Skybreaker	Skybreaker (Frigate)	2	Frigate
-Leshak	Leshak (Battleship)	25	Battleship
-Zarmazd	Zarmazd (Logistics Cruiser)	17	Logistics
-Drekavac	Drekavak (Combat Battlecruiser)	17	Battlecruiser
-Ikitursa	Ikitursa (Heavy Assault Cruiser)	15	Cruiser
-Rodiva	Rodiva (Tech 1 Support Cruiser)	10	Logistics
-Draugur	Draugur (Command Destroyer)	8	Destroyer
-Vedmak	Vedmak (Cruiser)	9	Cruiser
-Kikimora	Kikimora (Destroyer)	7	Destroyer
-Nergal	Nergal (Assault Frigate)	5	Frigate
-Damavik	Damavik (Frigate)	4	Frigate
+Leshak	Leshak (Battleship)	55	Battleship
+Zarmazd	Zarmazd (Logistics Cruiser)	34	Logistics
+Drekavac	Drekavac (Combat Battlecruiser)	34	Battlecruiser
+Ikitursa	Ikitursa (Heavy Assault Cruiser)	28	Cruiser
+Rodiva	Rodiva (Tech 1 Support Cruiser)	24	Logistics
+Draugur	Draugur (Command Destroyer)	15	Destroyer
+Vedmak	Vedmak (Cruiser)	19	Cruiser
+Kikimora	Kikimora (Destroyer)	14	Destroyer
+Nergal	Nergal (Assault Frigate)	10	Frigate
+Damavik	Damavik (Frigate)	10	Frigate
 Echo	Rookie Ship, Pirate Faction	2	Corvette
 Hematos	Rookie Ship, Pirate Faction	2	Corvette
 Immolator	Rookie Ship, Pirate Faction	2	Corvette
 Taipan	Rookie Ship, Pirate Faction	2	Corvette
 Violator	Rookie Ship, Pirate Faction	2	Corvette
-Magnate Navy Issue	Frigate, Navy Faction	3	Frigate
-Heron Navy Issue	Frigate, Navy Faction	3	Frigate
-Imicus Navy Issue	Imicus Navy Issue (Frigate)	2	Frigate
-Probe Fleet Issue	Frigate, Navy Faction	3	Frigate
-Thrasher Fleet Issue	Destroyer, Navy Faction	5	Destroyer
-Cormorant Navy Issue	Destroyer, Navy Faction	5	Destroyer
-Coercer Navy Issue	Destroyer, Navy Faction	5	Destroyer
-Catalyst Navy Issue	Catalyst Navy Issue (Destroyer)	4	Destroyer
-Cyclone Fleet Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Ferox Navy Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Prophecy Navy Issue	Battlecruiser, Navy Faction	15	Battlecruiser
-Myrmidon Navy Issue	Myrmidon Navy Issue (Battlecruiser)	14	Battlecruiser
-Metamorphosis	Frigate	2	Frigate
+Magnate Navy Issue	Frigate, Navy Faction	6	Frigate
+Heron Navy Issue	Frigate, Navy Faction	6	Frigate
+Imicus Navy Issue	Frigate, Navy Faction	6	Frigate
+Probe Fleet Issue	Frigate, Navy Faction	6	Frigate
+Thrasher Fleet Issue	Destroyer, Navy Faction	11	Destroyer
+Cormorant Navy Issue	Destroyer, Navy Faction	11	Destroyer
+Coercer Navy Issue	Destroyer, Navy Faction	11	Destroyer
+Catalyst Navy Issue	Destroyer, Navy Faction	11	Destroyer
+Cyclone Fleet Issue	Cyclone Fleet Issue (Battlecruiser, Navy Faction)	32	Battlecruiser
+Ferox Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Prophecy Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Myrmidon Navy Issue	Battlecruiser, Navy Faction	30	Battlecruiser
+Metamorphosis	Metamorphosis (Frigate)	5	Frigate
+Khizriel	Khizriel (Battlecruiser, Pirate Faction)	34	Battlecruiser
+Alligator	Battlecruiser, Pirate Faction	33	Battlecruiser
+Mamba	Destroyer, Pirate Faction	14	Destroyer
+Mekubal	Destroyer, Pirate Faction	14	Destroyer
+Squall	Squall (Tech 1 Industrial Ships)	4	Industrial
+Deluge	Tech 2 Industrial Ships	10	Industrial
+Marshal	Marshal (Black Ops Battleship)	44	Battleship
+Enforcer	Enforcer (Recon Ship)	28	Cruiser
+Pacifier	Pacifier (Covert Ops Ship)	4	Frigate
+Cybele	Cybele(Heavy Assault Cruiser Flagship)	48	Cruiser
+Shapash	Enforcer (Recon Ship)	33	Frigate

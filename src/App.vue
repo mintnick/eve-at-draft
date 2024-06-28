@@ -20,7 +20,9 @@ const langs = [
 
 const $q = useQuasar();
 
-const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration";
+const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration";
+const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration#h2-16";
+const max_points = 200
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
@@ -135,8 +137,8 @@ function unban_ship(hull_type, ship_name) {
 }
 
 function not_pickable(hull_type, ship_name, property) {
-  // points >= 100
-  if (total_points.value >= 100) return true;
+  // points >= max_points
+  if (total_points.value >= max_points) return true;
 
   // 1 flagship allowed
   if (hull_type == "Flagship") return pick["Flagship"].length > 0;
@@ -208,12 +210,12 @@ function change_lang(lang) {
       <q-btn outline @click="change_lang('en')">English</q-btn>
     </div>
   </div>
-  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXIX(2023)</a>
+  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXX(2024)</a>
 
   <!--Draft-->
   <div class="text-h4 text-weight-bolder q-my-md"
-  :class="{ 'text-red-9': total_points > 100, 'text-green-9': total_points == 100 }">
-    {{ total_points }} / 100
+  :class="{ 'text-red-9': total_points > max_points, 'text-green-9': total_points == max_points }">
+    {{ total_points }} / {{ max_points }}
   </div>
 
   <div class="row">
@@ -268,7 +270,7 @@ function change_lang(lang) {
     <div class="col-xs-12 col-sm-4">
       <div class="row flex-center q-ma-md">
         <div class="text-h5 text-green-9 text-weight-bold">{{ $t("messages.pick") }}</div>
-        <q-btn @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
+        <q-btn v-if="pick_list.length" @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
           {{ $t("messages.clear") }}</q-btn>
       </div>
       <div class="row wrap">
@@ -285,10 +287,11 @@ function change_lang(lang) {
   </div>
 
   <!--Ban list-->
-  <div v-if="ban_list.length" class="q-mt-md">
+  <div class="q-mt-md">
     <div class="row flex-center q-ma-sm">
-      <div class="text-h5 text-red-9 text-weight-bold">{{ $t("messages.ban") }}</div>
-      <q-btn @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
+      <div class="text-h5 text-red-9 text-weight-bold">{{ $t("messages.ban") }}
+        <a class="text-h6" :href="ban_link" target="_blank">({{$t("messages.rules")}})</a></div>
+      <q-btn v-if="ban_list.length" @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
         {{ $t("messages.clear") }}</q-btn>
     </div>
     <div class="row" justify-start>

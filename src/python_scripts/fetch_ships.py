@@ -13,6 +13,7 @@ data = []
 with open(input_file, 'r') as points:
   csv_reader = csv.reader(points, delimiter='\t')
   for row in csv_reader:
+    print(row)
     ship_name, points, hull_type = row[0], row[2], row[3]
     obj = json.dumps([ship_name])
     response = requests.post('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', data=obj)
@@ -38,7 +39,7 @@ for ship in data:
   [hull_type, ship_name, points, ship_id] = ship
   json_data[hull_type][ship_name] = { "points" : points, "ship_id": ship_id}
 
-  if hull_type == "Battleship" and ship_name not in ["Leshak", "Bhaalgorn", "Rattlesnake", "Widow"]:
+  if ship_name in ["Cybele", "Shapash"] or (hull_type == "Battleship" and ship_name not in ["Widow"]):
     json_data["Flagship"][ship_name] = { "points" : points , "ship_id": ship_id}
   elif hull_type == "Logistics":
     if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Oneiros", "Scimitar", "Rodiva", "Zarmazd"]:

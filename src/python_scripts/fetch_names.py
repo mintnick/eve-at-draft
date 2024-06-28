@@ -37,11 +37,11 @@ for id in ids:
   msg['ships'][id] = ""
 
 ids = list(ids)
-ids = json.dumps(ids)
+data = json.dumps(ids)
 
 # en
 url = "https://esi.evetech.net/latest/universe/names/?datasource=tranquility"
-response = requests.post(url, data=ids)
+response = requests.post(url, data=data)
 response = response.json()
 for ship in response:
   msg["ships"][ship["id"]] = ship["name"]
@@ -51,8 +51,12 @@ with open(output_file, "w+") as json_file:
   json.dump(msg, json_file, indent=2)
 
 # zh
-url = url = "https://ali-esi.evepc.163.com/latest/universe/names/?datasource=serenity"
-response = requests.post(url, data=ids)
+# 2024-06-29, ships not in serenity: 81046, 81008
+ids.remove(81046)
+ids.remove(81008)
+data = json.dumps(ids)
+url = "https://ali-esi.evepc.163.com/latest/universe/names/?datasource=serenity"
+response = requests.post(url, data=data)
 response = response.json()
 for ship in response:
   msg["ships"][ship["id"]] = ship["name"]
