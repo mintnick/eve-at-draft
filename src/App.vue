@@ -94,6 +94,13 @@ function add_ship(hull_type, ship_name, property) {
   // same ship +1 point
   const original_points = property.points;
   let points = property.points;
+  for (const ship of pick["Flagship"]) {
+    if (ship.ship_name == ship_name) {
+      ship.property.points += 1;
+      points += 1;
+    }
+  }
+
   for (const ship of pick[hull_type]) {
     if (ship.ship_name == ship_name) {
       ship.property.points += 1;
@@ -154,7 +161,7 @@ function not_pickable(hull_type, ship_name, property) {
   } 
 
   // 4 for each hull
-  return pick[hull_type].length >= max_number[hull_type];
+  return pick[hull_type].length + flagship_type(hull_type) >= max_number[hull_type];
 }
 
 function not_bannable(hull_type, ship_name) {
@@ -198,6 +205,21 @@ function change_lang(lang) {
   i18n.locale.value = lang;
   document.cookie=`lang=${i18n.locale.value}`
 }
+
+function flagship_type(hull_type) {
+  if (pick["Flagship"].length) {
+    let flagship = pick["Flagship"][0]
+
+    if (hull_type == "Frigate" && flagship.ship_name == "Shapash") {
+      return 1
+    } else if (hull_type == "Cruiser" && flagship.ship_name == "Cybele") {
+      return 1
+    } else if (hull_type == "Battleship"){
+      return 1
+    }
+  }
+  return 0
+}
 </script>
 
 <template>
@@ -235,7 +257,7 @@ function change_lang(lang) {
             <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
             <span class="gt-xs">{{ $t(`types.${hull_type}`) }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-            <span v-else>{{ pick[hull_type].length }} / {{ max_number[hull_type] }}</span>
+            <span v-else>{{ pick[hull_type].length + flagship_type(hull_type) }} / {{ max_number[hull_type] }}</span>
           </div>
           </q-tab>
         </q-tabs>
