@@ -28,6 +28,10 @@
       "points": 51,
       "ship_id": 17738
     },
+    "Laelaps": {
+      "points": 50,
+      "ship_id": 60764
+    },
     "Cybele": {
       "points": 48,
       "ship_id": 77726
@@ -47,6 +51,10 @@
     "Vargur": {
       "points": 48,
       "ship_id": 28665
+    },
+    "Bestla": {
+      "points": 47,
+      "ship_id": 74316
     },
     "Armageddon Navy Issue": {
       "points": 46,
@@ -148,6 +156,10 @@
       "points": 39,
       "ship_id": 47466
     },
+    "Raiju": {
+      "points": 37,
+      "ship_id": 60765
+    },
     "Thunderchild": {
       "points": 34,
       "ship_id": 54733
@@ -155,6 +167,10 @@
     "Shapash": {
       "points": 33,
       "ship_id": 78414
+    },
+    "Geri": {
+      "points": 32,
+      "ship_id": 60765
     }
   },
   "Logistics": {

@@ -20,8 +20,8 @@ const langs = [
 
 const $q = useQuasar();
 
-const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration";
-const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-rules-and-registration#h2-16";
+const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules";
+const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules#h2-17";
 const max_points = 200
 const max_ships = 10
 const max_number = {
@@ -88,6 +88,37 @@ const ban_list = computed(() => {
   for (const [_, ships] of Object.entries(ban)) for (const ship of ships) list.push(ship);
   list.sort((a, b) => (b.property.points - a.property.points));
   return list;
+})
+
+const flagship_type = computed(() => {
+  let result = {
+    "Battleship": 0,
+    "Cruiser": 0,
+    "Frigate": 0,
+
+    "Flagship": 0,
+    "Logistics": 0,
+    "Battlecruiser": 0,
+    "Destroyer": 0,
+    "Frigate": 0,
+    "Industrial": 0,
+    "Corvette": 0
+  }
+
+  const at_frigates = ["Shapash", "Geri", "Raiju"]
+  const at_cruisers = ["Cybele", "Laelaps", "Bestla"]
+
+  if (pick["Flagship"].length) {
+    const flagship = pick["Flagship"][0].ship_name
+    if (at_frigates.includes(flagship))
+      result["Frigate"] = 1
+    else if (at_cruisers.includes(flagship))
+      result["Cruiser"] = 1
+    else
+      result["Battleship"] = 1
+  }
+
+  return result
 })
 
 // functions
@@ -165,7 +196,7 @@ function not_pickable(hull_type, ship_name, property) {
   } 
 
   // 4 for each hull
-  return pick[hull_type].length + flagship_type(hull_type) >= max_number[hull_type]
+  return pick[hull_type].length + flagship_type.value[hull_type] >= max_number[hull_type]
 }
 
 function not_bannable(hull_type, ship_name) {
@@ -209,21 +240,6 @@ function change_lang(lang) {
   i18n.locale.value = lang;
   document.cookie=`lang=${i18n.locale.value}`
 }
-
-function flagship_type(hull_type) {
-  if (pick["Flagship"].length) {
-    let flagship = pick["Flagship"][0]
-
-    if (hull_type == "Frigate" && flagship.ship_name == "Shapash") {
-      return 1
-    } else if (hull_type == "Cruiser" && flagship.ship_name == "Cybele") {
-      return 1
-    } else if (hull_type == "Battleship" && !["Shapash", "Cybele"].includes(flagship.ship_name) ){
-      return 1
-    }
-  }
-  return 0
-}
 </script>
 
 <template>
@@ -261,7 +277,7 @@ function flagship_type(hull_type) {
             <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
             <span class="gt-xs">{{ $t(`types.${hull_type}`) }}</span>
             <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-            <span v-else>{{ pick[hull_type].length + flagship_type(hull_type) }} / {{ max_number[hull_type] }}</span>
+            <span v-else>{{ pick[hull_type].length + flagship_type[hull_type] }} / {{ max_number[hull_type] }}</span>
           </div>
           </q-tab>
         </q-tabs>
