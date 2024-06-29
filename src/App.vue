@@ -218,7 +218,7 @@ function flagship_type(hull_type) {
       return 1
     } else if (hull_type == "Cruiser" && flagship.ship_name == "Cybele") {
       return 1
-    } else if (hull_type == "Battleship"){
+    } else if (hull_type == "Battleship" && !["Shapash", "Cybele"].includes(flagship.ship_name) ){
       return 1
     }
   }
