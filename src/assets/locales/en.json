@@ -1,21 +1,19 @@
 {
   "messages": {
-    "title": "EVE AT Draft",
-    "rules": "Rules",
-    "clear": "Clear",
-    "pick": "Picks",
-    "ban": "Bans"
+    "title": "",
+    "rules": "",
+    "clear": ""
   },
   "types": {
-    "Flagship": "Flagship",
-    "Logistics": "Logistics",
-    "Battleship": "Battleship",
-    "Battlecruiser": "Battlecruiser",
-    "Cruiser": "Cruiser",
-    "Destroyer": "Destroyer",
-    "Frigate": "Frigate",
-    "Industrial": "Industrial",
-    "Corvette": "Corvette"
+    "Flagship": "",
+    "Logistics": "",
+    "Battleship": "",
+    "Battlecruiser": "",
+    "Cruiser": "",
+    "Destroyer": "",
+    "Frigate": "",
+    "Industrial": "",
+    "Corvette": ""
   },
   "ships": {
     "17920": "Bhaalgorn",
@@ -238,6 +236,7 @@
     "1944": "Bestower",
     "11377": "Nemesis",
     "22428": "Redeemer",
+    "74141": "Geri",
     "77726": "Cybele",
     "22430": "Sin",
     "591": "Tormentor",
