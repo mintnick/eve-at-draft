@@ -17,8 +17,6 @@ with open(input_file, 'r') as points:
     obj = json.dumps([ship_name])
     response = requests.post('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', data=obj)
     response = response.json()
-    if (not response['inventory_types']):
-      print(ship_name)
     ship_id = response['inventory_types'][0]['id']
     data.append([hull_type, ship_name, int(points), ship_id])
 
