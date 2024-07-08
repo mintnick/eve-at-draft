@@ -1,31 +1,31 @@
 {
   "Flagship": {
     "Barghest": {
-      "points": 55,
+      "points": 54,
       "ship_id": 33820
     },
     "Leshak": {
-      "points": 55,
+      "points": 54,
       "ship_id": 47271
     },
     "Bhaalgorn": {
-      "points": 54,
+      "points": 53,
       "ship_id": 17920
     },
     "Rattlesnake": {
-      "points": 54,
+      "points": 52,
       "ship_id": 17918
     },
     "Nightmare": {
-      "points": 53,
+      "points": 51,
       "ship_id": 17736
     },
     "Vindicator": {
-      "points": 52,
+      "points": 50,
       "ship_id": 17740
     },
     "Machariel": {
-      "points": 51,
+      "points": 47,
       "ship_id": 17738
     },
     "Laelaps": {
@@ -57,7 +57,7 @@
       "ship_id": 74316
     },
     "Armageddon Navy Issue": {
-      "points": 46,
+      "points": 44,
       "ship_id": 32305
     },
     "Scorpion Navy Issue": {
@@ -85,19 +85,19 @@
       "ship_id": 22440
     },
     "Apocalypse Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17726
     },
     "Raven Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17636
     },
     "Megathron Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17728
     },
     "Tempest Fleet Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17732
     },
     "Abaddon": {
@@ -157,7 +157,7 @@
       "ship_id": 60765
     },
     "Thunderchild": {
-      "points": 34,
+      "points": 37,
       "ship_id": 54733
     },
     "Shapash": {
@@ -263,31 +263,31 @@
   },
   "Battleship": {
     "Barghest": {
-      "points": 55,
+      "points": 54,
       "ship_id": 33820
     },
     "Leshak": {
-      "points": 55,
+      "points": 54,
       "ship_id": 47271
     },
     "Bhaalgorn": {
-      "points": 54,
+      "points": 53,
       "ship_id": 17920
     },
     "Rattlesnake": {
-      "points": 54,
+      "points": 52,
       "ship_id": 17918
     },
     "Nightmare": {
-      "points": 53,
+      "points": 51,
       "ship_id": 17736
     },
     "Vindicator": {
-      "points": 52,
+      "points": 50,
       "ship_id": 17740
     },
     "Machariel": {
-      "points": 51,
+      "points": 47,
       "ship_id": 17738
     },
     "Widow": {
@@ -311,7 +311,7 @@
       "ship_id": 28665
     },
     "Armageddon Navy Issue": {
-      "points": 46,
+      "points": 44,
       "ship_id": 32305
     },
     "Scorpion Navy Issue": {
@@ -339,19 +339,19 @@
       "ship_id": 22440
     },
     "Apocalypse Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17726
     },
     "Raven Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17636
     },
     "Megathron Navy Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17728
     },
     "Tempest Fleet Issue": {
-      "points": 41,
+      "points": 42,
       "ship_id": 17732
     },
     "Abaddon": {
@@ -407,7 +407,7 @@
       "ship_id": 47466
     },
     "Thunderchild": {
-      "points": 34,
+      "points": 37,
       "ship_id": 54733
     }
   },
@@ -449,11 +449,11 @@
       "ship_id": 49711
     },
     "Khizriel": {
-      "points": 34,
+      "points": 35,
       "ship_id": 78369
     },
     "Alligator": {
-      "points": 33,
+      "points": 36,
       "ship_id": 78366
     },
     "Cyclone Fleet Issue": {
@@ -643,7 +643,7 @@
       "ship_id": 12013
     },
     "Gila": {
-      "points": 23,
+      "points": 25,
       "ship_id": 17715
     },
     "Augoror Navy Issue": {
@@ -735,7 +735,7 @@
       "ship_id": 626
     },
     "Stormbringer": {
-      "points": 10,
+      "points": 14,
       "ship_id": 54732
     },
     "Omen": {
@@ -777,7 +777,7 @@
       "ship_id": 78333
     },
     "Pontifex": {
-      "points": 13,
+      "points": 12,
       "ship_id": 37481
     },
     "Stork": {
@@ -899,7 +899,7 @@
       "ship_id": 17930
     },
     "Nergal": {
-      "points": 10,
+      "points": 11,
       "ship_id": 52250
     },
     "Damavik": {
@@ -975,11 +975,11 @@
       "ship_id": 609
     },
     "Imperial Navy Slicer": {
-      "points": 7,
+      "points": 6,
       "ship_id": 17703
     },
     "Crucifier Navy Issue": {
-      "points": 7,
+      "points": 6,
       "ship_id": 37453
     },
     "Purifier": {
@@ -1158,12 +1158,8 @@
       "points": 4,
       "ship_id": 11182
     },
-    "Pacifier": {
-      "points": 4,
-      "ship_id": 44993
-    },
     "Skybreaker": {
-      "points": 2,
+      "points": 5,
       "ship_id": 54731
     }
   },
