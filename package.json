@@ -12,7 +12,7 @@
     "@quasar/extras": "^1.16.9",
     "quasar": "^2.14.2",
     "vue": "^3.3.4",
-    "vue-i18n": "9"
+    "vue-i18n": "^10.0.5"
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.6.0",
@@ -20,5 +20,5 @@
     "sass": "^1.33.0",
     "vite": "^4.4.5"
   },
-  "packageManager": "yarn@4.5.2"
+  "packageManager": "yarn@4.5.3"
 }
