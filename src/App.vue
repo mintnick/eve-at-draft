@@ -27,13 +27,13 @@ const max_ships = 10
 const max_number = {
   "Flagship": 1,
   "Logistics": 1,
-  "Battleship": 4,
-  "Battlecruiser": 4,
-  "Cruiser": 4,
-  "Destroyer": 4,
-  "Frigate": 4,
-  "Industrial": 4,
-  "Corvette": 4
+  "Battleship": 3,
+  "Battlecruiser": 3,
+  "Cruiser": 3,
+  "Destroyer": 3,
+  "Frigate": 3,
+  "Industrial": 3,
+  "Corvette": 3,
 }
 const pick = reactive({
     "Flagship": [],
