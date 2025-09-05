@@ -40,6 +40,24 @@ ids = list(ids)
 data = json.dumps(ids)
 
 # en
+msg["messages"] = {
+  "title": "EVE AT Draft",
+  "rules": "Rules",
+  "clear": "Clear",
+  "pick": "Picks",
+  "ban": "Bans"
+}
+msg["types"] = {
+  "Flagship": "Flagship",
+  "Logistics": "Logistics",
+  "Battleship": "Battleship",
+  "Battlecruiser": "Battlecruiser",
+  "Cruiser": "Cruiser",
+  "Destroyer": "Destroyer",
+  "Frigate": "Frigate",
+  "Industrial": "Industrial",
+  "Corvette": "Corvette"
+}
 url = "https://esi.evetech.net/latest/universe/names/?datasource=tranquility"
 response = requests.post(url, data=data)
 response = response.json()
@@ -51,9 +69,26 @@ with open(output_file, "w+") as json_file:
   json.dump(msg, json_file, indent=2)
 
 # zh
-# 2024-06-29, ships not in serenity: 81046, 81008
-ids.remove(81046)
-ids.remove(81008)
+# 2025-09-05, ships not in serenity: 81046, 81008
+ids.remove(88001)
+msg["messages"] = {
+  "title": "EVE AT 阵容模拟",
+  "rules": "规则",
+  "clear": "清空",
+  "pick": "阵容",
+  "ban": "禁用"
+}
+msg["types"] = {
+  "Flagship": "旗舰",
+  "Logistics": "后勤",
+  "Battleship": "战列舰",
+  "Battlecruiser": "战列巡洋舰",
+  "Cruiser": "巡洋舰",
+  "Destroyer": "驱逐舰",
+  "Frigate": "护卫舰",
+  "Industrial": "工业舰",
+  "Corvette": "新手船"
+}
 data = json.dumps(ids)
 url = "https://ali-esi.evepc.163.com/latest/universe/names/?datasource=serenity"
 response = requests.post(url, data=data)

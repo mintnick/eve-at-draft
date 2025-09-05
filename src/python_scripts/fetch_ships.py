@@ -23,6 +23,7 @@ data = {
 
 with open(input_file, 'r') as points:
   csv_reader = csv.reader(points, delimiter='\t')
+  csv_reader = sorted(csv_reader, key= lambda row: int(row[2]), reverse=True)
   for row in csv_reader:
     ship_name, points, hull_type = row[0], row[2], row[3]
     obj = json.dumps([ship_name])
@@ -57,7 +58,11 @@ with open(input_file, 'r') as points:
 
 data["Flagship"]["Shapash"] = data["Frigate"]["Shapash"] = {
   "points": 30,
-  "ship_id": 35832,
+  "ship_id": 78414,
+}
+data["Flagship"]["Thunderchild"] = data["Battleship"]["Thunderchild"] = {
+  "points": 40,
+  "ship_id": 54733,
 }
 
 with open(output_file, "w+") as json_file:
