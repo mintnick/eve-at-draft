@@ -1,1262 +1,1322 @@
 {
   "Flagship": {
-    "Barghest": {
-      "points": 54,
-      "ship_id": 33820
-    },
-    "Leshak": {
-      "points": 54,
-      "ship_id": 47271
-    },
-    "Bhaalgorn": {
-      "points": 53,
-      "ship_id": 17920
-    },
-    "Rattlesnake": {
-      "points": 52,
-      "ship_id": 17918
-    },
-    "Nightmare": {
-      "points": 51,
-      "ship_id": 17736
-    },
-    "Vindicator": {
-      "points": 50,
-      "ship_id": 17740
-    },
-    "Machariel": {
-      "points": 47,
-      "ship_id": 17738
-    },
-    "Laelaps": {
-      "points": 50,
-      "ship_id": 60764
-    },
-    "Cybele": {
-      "points": 48,
-      "ship_id": 77726
-    },
-    "Paladin": {
-      "points": 48,
-      "ship_id": 28659
-    },
-    "Golem": {
-      "points": 48,
-      "ship_id": 28710
-    },
-    "Kronos": {
-      "points": 48,
-      "ship_id": 28661
-    },
-    "Vargur": {
-      "points": 48,
-      "ship_id": 28665
-    },
-    "Bestla": {
-      "points": 47,
-      "ship_id": 74316
-    },
-    "Armageddon Navy Issue": {
-      "points": 44,
-      "ship_id": 32305
-    },
-    "Scorpion Navy Issue": {
-      "points": 45,
-      "ship_id": 32309
-    },
-    "Dominix Navy Issue": {
-      "points": 45,
-      "ship_id": 32307
-    },
-    "Typhoon Fleet Issue": {
-      "points": 45,
-      "ship_id": 32311
-    },
-    "Redeemer": {
-      "points": 43,
-      "ship_id": 22428
-    },
-    "Sin": {
-      "points": 43,
-      "ship_id": 22430
-    },
-    "Panther": {
-      "points": 43,
-      "ship_id": 22440
-    },
-    "Apocalypse Navy Issue": {
-      "points": 42,
-      "ship_id": 17726
-    },
-    "Raven Navy Issue": {
-      "points": 42,
-      "ship_id": 17636
-    },
-    "Megathron Navy Issue": {
-      "points": 42,
-      "ship_id": 17728
-    },
-    "Tempest Fleet Issue": {
-      "points": 42,
-      "ship_id": 17732
-    },
     "Abaddon": {
-      "points": 39,
+      "points": 37,
       "ship_id": 24692
     },
     "Apocalypse": {
-      "points": 39,
+      "points": 37,
       "ship_id": 642
     },
     "Armageddon": {
-      "points": 39,
+      "points": 37,
       "ship_id": 643
     },
     "Scorpion": {
-      "points": 39,
+      "points": 37,
       "ship_id": 640
     },
     "Raven": {
-      "points": 39,
+      "points": 35,
       "ship_id": 638
     },
     "Rokh": {
-      "points": 39,
+      "points": 36,
       "ship_id": 24688
     },
     "Hyperion": {
-      "points": 39,
+      "points": 37,
       "ship_id": 24690
     },
     "Megathron": {
-      "points": 39,
+      "points": 36,
       "ship_id": 641
     },
     "Dominix": {
-      "points": 39,
+      "points": 37,
       "ship_id": 645
     },
     "Tempest": {
-      "points": 39,
+      "points": 37,
       "ship_id": 639
     },
     "Typhoon": {
-      "points": 39,
+      "points": 37,
       "ship_id": 644
     },
     "Maelstrom": {
-      "points": 39,
+      "points": 34,
       "ship_id": 24694
     },
     "Praxis": {
-      "points": 39,
+      "points": 35,
       "ship_id": 47466
     },
-    "Raiju": {
-      "points": 37,
-      "ship_id": 60765
+    "Apocalypse Navy Issue": {
+      "points": 40,
+      "ship_id": 17726
+    },
+    "Armageddon Navy Issue": {
+      "points": 42,
+      "ship_id": 32305
+    },
+    "Scorpion Navy Issue": {
+      "points": 42,
+      "ship_id": 32309
+    },
+    "Raven Navy Issue": {
+      "points": 38,
+      "ship_id": 17636
+    },
+    "Megathron Navy Issue": {
+      "points": 40,
+      "ship_id": 17728
+    },
+    "Dominix Navy Issue": {
+      "points": 43,
+      "ship_id": 32307
+    },
+    "Tempest Fleet Issue": {
+      "points": 40,
+      "ship_id": 17732
+    },
+    "Typhoon Fleet Issue": {
+      "points": 44,
+      "ship_id": 32311
+    },
+    "Redeemer": {
+      "points": 41,
+      "ship_id": 22428
+    },
+    "Widow": {
+      "points": 48,
+      "ship_id": 22436
+    },
+    "Sin": {
+      "points": 41,
+      "ship_id": 22430
+    },
+    "Panther": {
+      "points": 41,
+      "ship_id": 22440
+    },
+    "Paladin": {
+      "points": 47,
+      "ship_id": 28659
+    },
+    "Golem": {
+      "points": 45,
+      "ship_id": 28710
+    },
+    "Kronos": {
+      "points": 46,
+      "ship_id": 28661
+    },
+    "Vargur": {
+      "points": 47,
+      "ship_id": 28665
+    },
+    "Babaroga": {
+      "points": 50,
+      "ship_id": 88001
+    },
+    "Machariel": {
+      "points": 45,
+      "ship_id": 17738
+    },
+    "Bhaalgorn": {
+      "points": 50,
+      "ship_id": 17920
+    },
+    "Rattlesnake": {
+      "points": 50,
+      "ship_id": 17918
+    },
+    "Barghest": {
+      "points": 50,
+      "ship_id": 33820
+    },
+    "Nightmare": {
+      "points": 49,
+      "ship_id": 17736
+    },
+    "Vindicator": {
+      "points": 47,
+      "ship_id": 17740
     },
     "Thunderchild": {
-      "points": 37,
-      "ship_id": 54733
+      "points": 35,
+      "ship_id": 0
     },
-    "Shapash": {
-      "points": 33,
-      "ship_id": 78414
+    "Leshak": {
+      "points": 49,
+      "ship_id": 47271
     },
     "Geri": {
-      "points": 32,
+      "points": 27,
       "ship_id": 74141
+    },
+    "Bestla": {
+      "points": 39,
+      "ship_id": 74316
+    },
+    "Laelaps": {
+      "points": 41,
+      "ship_id": 60764
+    },
+    "Raiju": {
+      "points": 32,
+      "ship_id": 60765
+    },
+    "Cybele": {
+      "points": 40,
+      "ship_id": 77726
+    },
+    "Sidewinder": {
+      "points": 31,
+      "ship_id": 85062
+    },
+    "Cobra": {
+      "points": 36,
+      "ship_id": 85229
+    },
+    "Shapash": {
+      "points": 30,
+      "ship_id": 35832
     }
   },
   "Logistics": {
-    "Zarmazd": {
-      "points": 34,
-      "ship_id": 49713,
-      "logistics": 1
-    },
-    "Guardian": {
-      "points": 32,
-      "ship_id": 11987,
-      "logistics": 1
-    },
-    "Basilisk": {
-      "points": 32,
-      "ship_id": 11985,
-      "logistics": 1
-    },
-    "Oneiros": {
-      "points": 32,
-      "ship_id": 11989,
-      "logistics": 1
-    },
-    "Scimitar": {
-      "points": 32,
-      "ship_id": 11978,
-      "logistics": 1
-    },
-    "Rodiva": {
-      "points": 24,
-      "ship_id": 49712,
-      "logistics": 1
-    },
-    "Augoror": {
-      "points": 20,
-      "ship_id": 625,
-      "logistics": 1
-    },
-    "Osprey": {
-      "points": 20,
-      "ship_id": 620,
-      "logistics": 1
-    },
-    "Exequror": {
-      "points": 20,
-      "ship_id": 634,
-      "logistics": 1
-    },
-    "Scythe": {
-      "points": 20,
-      "ship_id": 631,
-      "logistics": 1
-    },
-    "Deacon": {
-      "points": 10,
-      "ship_id": 37457,
-      "logistics": 0.5
-    },
-    "Kirin": {
-      "points": 10,
-      "ship_id": 37458,
-      "logistics": 0.5
-    },
-    "Thalia": {
-      "points": 10,
-      "ship_id": 37459,
-      "logistics": 0.5
-    },
-    "Scalpel": {
-      "points": 10,
-      "ship_id": 37460,
-      "logistics": 0.5
-    },
     "Inquisitor": {
-      "points": 3,
       "ship_id": 590,
+      "points": 3,
       "logistics": 0.5
     },
     "Bantam": {
-      "points": 3,
       "ship_id": 582,
+      "points": 3,
       "logistics": 0.5
     },
     "Navitas": {
-      "points": 3,
       "ship_id": 592,
+      "points": 3,
       "logistics": 0.5
     },
     "Burst": {
-      "points": 3,
       "ship_id": 599,
+      "points": 3,
       "logistics": 0.5
+    },
+    "Deacon": {
+      "ship_id": 37457,
+      "points": 10,
+      "logistics": 0.5
+    },
+    "Kirin": {
+      "ship_id": 37458,
+      "points": 10,
+      "logistics": 0.5
+    },
+    "Thalia": {
+      "ship_id": 37459,
+      "points": 10,
+      "logistics": 0.5
+    },
+    "Scalpel": {
+      "ship_id": 37460,
+      "points": 10,
+      "logistics": 0.5
+    },
+    "Augoror": {
+      "ship_id": 625,
+      "points": 19,
+      "logistics": 1
+    },
+    "Osprey": {
+      "ship_id": 620,
+      "points": 19,
+      "logistics": 1
+    },
+    "Exequror": {
+      "ship_id": 634,
+      "points": 19,
+      "logistics": 1
+    },
+    "Scythe": {
+      "ship_id": 631,
+      "points": 19,
+      "logistics": 1
+    },
+    "Guardian": {
+      "ship_id": 11987,
+      "points": 32,
+      "logistics": 1
+    },
+    "Basilisk": {
+      "ship_id": 11985,
+      "points": 32,
+      "logistics": 1
+    },
+    "Oneiros": {
+      "ship_id": 11989,
+      "points": 32,
+      "logistics": 1
+    },
+    "Scimitar": {
+      "ship_id": 11978,
+      "points": 32,
+      "logistics": 1
+    },
+    "Zarmazd": {
+      "ship_id": 49713,
+      "points": 32,
+      "logistics": 1
+    },
+    "Rodiva": {
+      "ship_id": 49712,
+      "points": 22,
+      "logistics": 1
     }
   },
   "Battleship": {
-    "Barghest": {
-      "points": 54,
-      "ship_id": 33820
-    },
-    "Leshak": {
-      "points": 54,
-      "ship_id": 47271
-    },
-    "Bhaalgorn": {
-      "points": 53,
-      "ship_id": 17920
-    },
-    "Rattlesnake": {
-      "points": 52,
-      "ship_id": 17918
-    },
-    "Nightmare": {
-      "points": 51,
-      "ship_id": 17736
-    },
-    "Vindicator": {
-      "points": 50,
-      "ship_id": 17740
-    },
-    "Machariel": {
-      "points": 47,
-      "ship_id": 17738
-    },
-    "Widow": {
-      "points": 50,
-      "ship_id": 22436
-    },
-    "Paladin": {
-      "points": 48,
-      "ship_id": 28659
-    },
-    "Golem": {
-      "points": 48,
-      "ship_id": 28710
-    },
-    "Kronos": {
-      "points": 48,
-      "ship_id": 28661
-    },
-    "Vargur": {
-      "points": 48,
-      "ship_id": 28665
-    },
-    "Armageddon Navy Issue": {
-      "points": 44,
-      "ship_id": 32305
-    },
-    "Scorpion Navy Issue": {
-      "points": 45,
-      "ship_id": 32309
-    },
-    "Dominix Navy Issue": {
-      "points": 45,
-      "ship_id": 32307
-    },
-    "Typhoon Fleet Issue": {
-      "points": 45,
-      "ship_id": 32311
-    },
-    "Redeemer": {
-      "points": 43,
-      "ship_id": 22428
-    },
-    "Sin": {
-      "points": 43,
-      "ship_id": 22430
-    },
-    "Panther": {
-      "points": 43,
-      "ship_id": 22440
-    },
-    "Apocalypse Navy Issue": {
-      "points": 42,
-      "ship_id": 17726
-    },
-    "Raven Navy Issue": {
-      "points": 42,
-      "ship_id": 17636
-    },
-    "Megathron Navy Issue": {
-      "points": 42,
-      "ship_id": 17728
-    },
-    "Tempest Fleet Issue": {
-      "points": 42,
-      "ship_id": 17732
-    },
     "Abaddon": {
-      "points": 39,
-      "ship_id": 24692
+      "ship_id": 24692,
+      "points": 37
     },
     "Apocalypse": {
-      "points": 39,
-      "ship_id": 642
+      "ship_id": 642,
+      "points": 37
     },
     "Armageddon": {
-      "points": 39,
-      "ship_id": 643
+      "ship_id": 643,
+      "points": 37
     },
     "Scorpion": {
-      "points": 39,
-      "ship_id": 640
+      "ship_id": 640,
+      "points": 37
     },
     "Raven": {
-      "points": 39,
-      "ship_id": 638
+      "ship_id": 638,
+      "points": 35
     },
     "Rokh": {
-      "points": 39,
-      "ship_id": 24688
+      "ship_id": 24688,
+      "points": 36
     },
     "Hyperion": {
-      "points": 39,
-      "ship_id": 24690
+      "ship_id": 24690,
+      "points": 37
     },
     "Megathron": {
-      "points": 39,
-      "ship_id": 641
+      "ship_id": 641,
+      "points": 36
     },
     "Dominix": {
-      "points": 39,
-      "ship_id": 645
+      "ship_id": 645,
+      "points": 37
     },
     "Tempest": {
-      "points": 39,
-      "ship_id": 639
+      "ship_id": 639,
+      "points": 37
     },
     "Typhoon": {
-      "points": 39,
-      "ship_id": 644
+      "ship_id": 644,
+      "points": 37
     },
     "Maelstrom": {
-      "points": 39,
-      "ship_id": 24694
+      "ship_id": 24694,
+      "points": 34
     },
     "Praxis": {
-      "points": 39,
-      "ship_id": 47466
+      "ship_id": 47466,
+      "points": 35
+    },
+    "Apocalypse Navy Issue": {
+      "ship_id": 17726,
+      "points": 40
+    },
+    "Armageddon Navy Issue": {
+      "ship_id": 32305,
+      "points": 42
+    },
+    "Scorpion Navy Issue": {
+      "ship_id": 32309,
+      "points": 42
+    },
+    "Raven Navy Issue": {
+      "ship_id": 17636,
+      "points": 38
+    },
+    "Megathron Navy Issue": {
+      "ship_id": 17728,
+      "points": 40
+    },
+    "Dominix Navy Issue": {
+      "ship_id": 32307,
+      "points": 43
+    },
+    "Tempest Fleet Issue": {
+      "ship_id": 17732,
+      "points": 40
+    },
+    "Typhoon Fleet Issue": {
+      "ship_id": 32311,
+      "points": 44
+    },
+    "Redeemer": {
+      "ship_id": 22428,
+      "points": 41
+    },
+    "Widow": {
+      "ship_id": 22436,
+      "points": 48
+    },
+    "Sin": {
+      "ship_id": 22430,
+      "points": 41
+    },
+    "Panther": {
+      "ship_id": 22440,
+      "points": 41
+    },
+    "Paladin": {
+      "ship_id": 28659,
+      "points": 47
+    },
+    "Golem": {
+      "ship_id": 28710,
+      "points": 45
+    },
+    "Kronos": {
+      "ship_id": 28661,
+      "points": 46
+    },
+    "Vargur": {
+      "ship_id": 28665,
+      "points": 47
+    },
+    "Babaroga": {
+      "ship_id": 88001,
+      "points": 50
+    },
+    "Machariel": {
+      "ship_id": 17738,
+      "points": 45
+    },
+    "Bhaalgorn": {
+      "ship_id": 17920,
+      "points": 50
+    },
+    "Rattlesnake": {
+      "ship_id": 17918,
+      "points": 50
+    },
+    "Barghest": {
+      "ship_id": 33820,
+      "points": 50
+    },
+    "Nightmare": {
+      "ship_id": 17736,
+      "points": 49
+    },
+    "Vindicator": {
+      "ship_id": 17740,
+      "points": 47
     },
     "Thunderchild": {
-      "points": 37,
-      "ship_id": 54733
+      "ship_id": 0,
+      "points": 35
+    },
+    "Leshak": {
+      "ship_id": 47271,
+      "points": 49
     }
   },
   "Battlecruiser": {
-    "Damnation": {
-      "points": 36,
-      "ship_id": 22474
-    },
-    "Absolution": {
-      "points": 36,
-      "ship_id": 22448
-    },
-    "Vulture": {
-      "points": 36,
-      "ship_id": 22446
-    },
-    "Nighthawk": {
-      "points": 36,
-      "ship_id": 22470
-    },
-    "Astarte": {
-      "points": 36,
-      "ship_id": 22466
-    },
-    "Eos": {
-      "points": 36,
-      "ship_id": 22442
-    },
-    "Claymore": {
-      "points": 36,
-      "ship_id": 22468
-    },
-    "Sleipnir": {
-      "points": 36,
-      "ship_id": 22444
-    },
-    "Drekavac": {
-      "points": 34,
-      "ship_id": 49711
-    },
-    "Khizriel": {
-      "points": 35,
-      "ship_id": 78369
-    },
-    "Alligator": {
-      "points": 36,
-      "ship_id": 78366
-    },
-    "Cyclone Fleet Issue": {
-      "points": 32,
-      "ship_id": 72811
-    },
-    "Harbinger Navy Issue": {
-      "points": 30,
-      "ship_id": 33155
-    },
-    "Drake Navy Issue": {
-      "points": 30,
-      "ship_id": 33153
-    },
-    "Brutix Navy Issue": {
-      "points": 30,
-      "ship_id": 33151
-    },
-    "Hurricane Fleet Issue": {
-      "points": 30,
-      "ship_id": 33157
-    },
-    "Ferox Navy Issue": {
-      "points": 30,
-      "ship_id": 72812
-    },
-    "Prophecy Navy Issue": {
-      "points": 30,
-      "ship_id": 72872
-    },
-    "Myrmidon Navy Issue": {
-      "points": 30,
-      "ship_id": 72869
-    },
-    "Prophecy": {
-      "points": 28,
-      "ship_id": 16233
-    },
-    "Harbinger": {
-      "points": 28,
-      "ship_id": 24696
-    },
-    "Drake": {
-      "points": 28,
-      "ship_id": 24698
-    },
-    "Ferox": {
-      "points": 28,
-      "ship_id": 16227
-    },
-    "Brutix": {
-      "points": 28,
-      "ship_id": 16229
-    },
-    "Myrmidon": {
-      "points": 28,
-      "ship_id": 24700
-    },
-    "Hurricane": {
-      "points": 28,
-      "ship_id": 24702
-    },
-    "Cyclone": {
-      "points": 28,
-      "ship_id": 16231
-    },
-    "Gnosis": {
-      "points": 28,
-      "ship_id": 3756
-    },
     "Oracle": {
-      "points": 22,
-      "ship_id": 4302
+      "ship_id": 4302,
+      "points": 21
     },
     "Naga": {
-      "points": 22,
-      "ship_id": 4306
+      "ship_id": 4306,
+      "points": 20
     },
     "Talos": {
-      "points": 22,
-      "ship_id": 4308
+      "ship_id": 4308,
+      "points": 21
     },
     "Tornado": {
-      "points": 22,
-      "ship_id": 4310
+      "ship_id": 4310,
+      "points": 21
+    },
+    "Prophecy": {
+      "ship_id": 16233,
+      "points": 27
+    },
+    "Harbinger": {
+      "ship_id": 24696,
+      "points": 27
+    },
+    "Drake": {
+      "ship_id": 24698,
+      "points": 27
+    },
+    "Ferox": {
+      "ship_id": 16227,
+      "points": 27
+    },
+    "Brutix": {
+      "ship_id": 16229,
+      "points": 27
+    },
+    "Myrmidon": {
+      "ship_id": 24700,
+      "points": 27
+    },
+    "Hurricane": {
+      "ship_id": 24702,
+      "points": 27
+    },
+    "Cyclone": {
+      "ship_id": 16231,
+      "points": 27
+    },
+    "Harbinger Navy Issue": {
+      "ship_id": 33155,
+      "points": 30
+    },
+    "Drake Navy Issue": {
+      "ship_id": 33153,
+      "points": 28
+    },
+    "Brutix Navy Issue": {
+      "ship_id": 33151,
+      "points": 30
+    },
+    "Hurricane Fleet Issue": {
+      "ship_id": 33157,
+      "points": 30
+    },
+    "Damnation": {
+      "ship_id": 22474,
+      "points": 34
+    },
+    "Absolution": {
+      "ship_id": 22448,
+      "points": 34
+    },
+    "Vulture": {
+      "ship_id": 22446,
+      "points": 34
+    },
+    "Nighthawk": {
+      "ship_id": 22470,
+      "points": 34
+    },
+    "Astarte": {
+      "ship_id": 22466,
+      "points": 34
+    },
+    "Eos": {
+      "ship_id": 22442,
+      "points": 34
+    },
+    "Claymore": {
+      "ship_id": 22468,
+      "points": 34
+    },
+    "Sleipnir": {
+      "ship_id": 22444,
+      "points": 34
+    },
+    "Gnosis": {
+      "ship_id": 3756,
+      "points": 27
+    },
+    "Drekavac": {
+      "ship_id": 49711,
+      "points": 32
+    },
+    "Cyclone Fleet Issue": {
+      "ship_id": 72811,
+      "points": 30
+    },
+    "Ferox Navy Issue": {
+      "ship_id": 72812,
+      "points": 28
+    },
+    "Prophecy Navy Issue": {
+      "ship_id": 72872,
+      "points": 30
+    },
+    "Myrmidon Navy Issue": {
+      "ship_id": 72869,
+      "points": 30
+    },
+    "Khizriel": {
+      "ship_id": 78369,
+      "points": 33
+    },
+    "Alligator": {
+      "ship_id": 78366,
+      "points": 34
+    },
+    "Cenotaph": {
+      "ship_id": 85086,
+      "points": 35
     }
   },
   "Cruiser": {
-    "Loki": {
-      "points": 32,
-      "ship_id": 29990
-    },
-    "Legion": {
-      "points": 31,
-      "ship_id": 29986
-    },
-    "Tengu": {
-      "points": 31,
-      "ship_id": 29984
-    },
-    "Proteus": {
-      "points": 31,
-      "ship_id": 29988
-    },
-    "Curse": {
-      "points": 30,
-      "ship_id": 20125
-    },
-    "Falcon": {
-      "points": 28,
-      "ship_id": 11957
-    },
-    "Rook": {
-      "points": 28,
-      "ship_id": 11959
-    },
-    "Arazu": {
-      "points": 28,
-      "ship_id": 11969
-    },
-    "Lachesis": {
-      "points": 28,
-      "ship_id": 11971
-    },
-    "Ikitursa": {
-      "points": 28,
-      "ship_id": 52252
-    },
-    "Pilgrim": {
-      "points": 27,
-      "ship_id": 11965
-    },
-    "Huginn": {
-      "points": 27,
-      "ship_id": 11961
-    },
-    "Rapier": {
-      "points": 27,
-      "ship_id": 11963
-    },
-    "Zealot": {
-      "points": 26,
-      "ship_id": 12003
-    },
-    "Sacrilege": {
-      "points": 26,
-      "ship_id": 12019
-    },
-    "Eagle": {
-      "points": 26,
-      "ship_id": 12011
-    },
-    "Cerberus": {
-      "points": 26,
-      "ship_id": 11993
-    },
-    "Ishtar": {
-      "points": 26,
-      "ship_id": 12005
-    },
-    "Deimos": {
-      "points": 26,
-      "ship_id": 12023
-    },
-    "Vagabond": {
-      "points": 26,
-      "ship_id": 11999
-    },
-    "Muninn": {
-      "points": 26,
-      "ship_id": 12015
-    },
-    "Devoter": {
-      "points": 24,
-      "ship_id": 12017
-    },
-    "Onyx": {
-      "points": 24,
-      "ship_id": 11995
-    },
-    "Phobos": {
-      "points": 24,
-      "ship_id": 12021
-    },
-    "Broadsword": {
-      "points": 24,
-      "ship_id": 12013
-    },
-    "Gila": {
-      "points": 25,
-      "ship_id": 17715
-    },
-    "Augoror Navy Issue": {
-      "points": 20,
-      "ship_id": 29337
-    },
-    "Exequror Navy Issue": {
-      "points": 20,
-      "ship_id": 29344
-    },
-    "Orthrus": {
-      "points": 19,
-      "ship_id": 33818
-    },
-    "Vedmak": {
-      "points": 19,
-      "ship_id": 47270
-    },
-    "Ashimmu": {
-      "points": 18,
-      "ship_id": 17922
-    },
-    "Phantasm": {
-      "points": 18,
-      "ship_id": 17718
-    },
-    "Stratios": {
-      "points": 18,
-      "ship_id": 33470
-    },
-    "Vigilant": {
-      "points": 18,
-      "ship_id": 17722
+    "Arbitrator": {
+      "ship_id": 628,
+      "points": 12
     },
     "Blackbird": {
-      "points": 16,
-      "ship_id": 632
-    },
-    "Omen Navy Issue": {
-      "points": 16,
-      "ship_id": 17709
-    },
-    "Caracal Navy Issue": {
-      "points": 16,
-      "ship_id": 17634
-    },
-    "Osprey Navy Issue": {
-      "points": 16,
-      "ship_id": 29340
-    },
-    "Vexor Navy Issue": {
-      "points": 16,
-      "ship_id": 17843
-    },
-    "Scythe Fleet Issue": {
-      "points": 16,
-      "ship_id": 29336
-    },
-    "Stabber Fleet Issue": {
-      "points": 16,
-      "ship_id": 17713
+      "ship_id": 632,
+      "points": 13
     },
     "Celestis": {
-      "points": 15,
-      "ship_id": 633
-    },
-    "Cynabal": {
-      "points": 15,
-      "ship_id": 17720
-    },
-    "Arbitrator": {
-      "points": 14,
-      "ship_id": 628
+      "ship_id": 633,
+      "points": 13
     },
     "Bellicose": {
-      "points": 10,
-      "ship_id": 630
+      "ship_id": 630,
+      "points": 10
     },
     "Maller": {
-      "points": 10,
-      "ship_id": 624
-    },
-    "Caracal": {
-      "points": 10,
-      "ship_id": 621
-    },
-    "Vexor": {
-      "points": 10,
-      "ship_id": 626
-    },
-    "Stormbringer": {
-      "points": 14,
-      "ship_id": 54732
+      "ship_id": 624,
+      "points": 10
     },
     "Omen": {
-      "points": 9,
-      "ship_id": 2006
+      "ship_id": 2006,
+      "points": 9
     },
     "Moa": {
-      "points": 9,
-      "ship_id": 623
+      "ship_id": 623,
+      "points": 9
+    },
+    "Caracal": {
+      "ship_id": 621,
+      "points": 8
+    },
+    "Vexor": {
+      "ship_id": 626,
+      "points": 9
     },
     "Thorax": {
-      "points": 9,
-      "ship_id": 627
+      "ship_id": 627,
+      "points": 9
     },
     "Stabber": {
-      "points": 9,
-      "ship_id": 622
+      "ship_id": 622,
+      "points": 9
     },
     "Rupture": {
-      "points": 9,
-      "ship_id": 629
+      "ship_id": 629,
+      "points": 9
+    },
+    "Augoror Navy Issue": {
+      "ship_id": 29337,
+      "points": 17
+    },
+    "Omen Navy Issue": {
+      "ship_id": 17709,
+      "points": 16
+    },
+    "Caracal Navy Issue": {
+      "ship_id": 17634,
+      "points": 14
+    },
+    "Osprey Navy Issue": {
+      "ship_id": 29340,
+      "points": 14
+    },
+    "Exequror Navy Issue": {
+      "ship_id": 29344,
+      "points": 16
+    },
+    "Vexor Navy Issue": {
+      "ship_id": 17843,
+      "points": 16
+    },
+    "Scythe Fleet Issue": {
+      "ship_id": 29336,
+      "points": 16
+    },
+    "Stabber Fleet Issue": {
+      "ship_id": 17713,
+      "points": 16
+    },
+    "Zealot": {
+      "ship_id": 12003,
+      "points": 22
+    },
+    "Sacrilege": {
+      "ship_id": 12019,
+      "points": 23
+    },
+    "Eagle": {
+      "ship_id": 12011,
+      "points": 20
+    },
+    "Cerberus": {
+      "ship_id": 11993,
+      "points": 21
+    },
+    "Ishtar": {
+      "ship_id": 12005,
+      "points": 22
+    },
+    "Deimos": {
+      "ship_id": 12023,
+      "points": 23
+    },
+    "Vagabond": {
+      "ship_id": 11999,
+      "points": 23
+    },
+    "Muninn": {
+      "ship_id": 12015,
+      "points": 22
+    },
+    "Devoter": {
+      "ship_id": 12017,
+      "points": 24
+    },
+    "Onyx": {
+      "ship_id": 11995,
+      "points": 24
+    },
+    "Phobos": {
+      "ship_id": 12021,
+      "points": 24
+    },
+    "Broadsword": {
+      "ship_id": 12013,
+      "points": 24
+    },
+    "Curse": {
+      "ship_id": 20125,
+      "points": 30
+    },
+    "Pilgrim": {
+      "ship_id": 11965,
+      "points": 25
+    },
+    "Falcon": {
+      "ship_id": 11957,
+      "points": 28
+    },
+    "Rook": {
+      "ship_id": 11959,
+      "points": 28
+    },
+    "Arazu": {
+      "ship_id": 11969,
+      "points": 28
+    },
+    "Lachesis": {
+      "ship_id": 11971,
+      "points": 28
+    },
+    "Huginn": {
+      "ship_id": 11961,
+      "points": 25
+    },
+    "Rapier": {
+      "ship_id": 11963,
+      "points": 25
+    },
+    "Legion": {
+      "ship_id": 29986,
+      "points": 30
+    },
+    "Tengu": {
+      "ship_id": 29984,
+      "points": 30
+    },
+    "Proteus": {
+      "ship_id": 29988,
+      "points": 30
+    },
+    "Loki": {
+      "ship_id": 29990,
+      "points": 30
+    },
+    "Cynabal": {
+      "ship_id": 17720,
+      "points": 15
+    },
+    "Ashimmu": {
+      "ship_id": 17922,
+      "points": 18
+    },
+    "Gila": {
+      "ship_id": 17715,
+      "points": 24
+    },
+    "Orthrus": {
+      "ship_id": 33818,
+      "points": 19
+    },
+    "Phantasm": {
+      "ship_id": 17718,
+      "points": 18
+    },
+    "Stratios": {
+      "ship_id": 33470,
+      "points": 18
+    },
+    "Vigilant": {
+      "ship_id": 17722,
+      "points": 18
+    },
+    "Stormbringer": {
+      "ship_id": 54732,
+      "points": 14
+    },
+    "Ikitursa": {
+      "ship_id": 52252,
+      "points": 26
+    },
+    "Vedmak": {
+      "ship_id": 47270,
+      "points": 19
+    },
+    "Bestla": {
+      "ship_id": 74316,
+      "points": 39
+    },
+    "Laelaps": {
+      "ship_id": 60764,
+      "points": 41
+    },
+    "Cybele": {
+      "ship_id": 77726,
+      "points": 40
+    },
+    "Cobra": {
+      "ship_id": 85229,
+      "points": 36
     }
   },
   "Destroyer": {
-    "Draugur": {
-      "points": 15,
-      "ship_id": 52254
-    },
-    "Kikimora": {
-      "points": 14,
-      "ship_id": 49710
-    },
-    "Mamba": {
-      "points": 14,
-      "ship_id": 78367
-    },
-    "Mekubal": {
-      "points": 14,
-      "ship_id": 78333
-    },
-    "Pontifex": {
-      "points": 12,
-      "ship_id": 37481
-    },
-    "Stork": {
-      "points": 12,
-      "ship_id": 37482
-    },
-    "Magus": {
-      "points": 12,
-      "ship_id": 37483
-    },
-    "Bifrost": {
-      "points": 12,
-      "ship_id": 37480
-    },
-    "Jackdaw": {
-      "points": 11,
-      "ship_id": 34828
-    },
-    "Thrasher Fleet Issue": {
-      "points": 11,
-      "ship_id": 73794
-    },
-    "Cormorant Navy Issue": {
-      "points": 11,
-      "ship_id": 73795
-    },
-    "Coercer Navy Issue": {
-      "points": 11,
-      "ship_id": 73789
-    },
-    "Catalyst Navy Issue": {
-      "points": 11,
-      "ship_id": 73796
-    },
-    "Confessor": {
-      "points": 10,
-      "ship_id": 34317
-    },
-    "Hecate": {
-      "points": 10,
-      "ship_id": 35683
-    },
-    "Svipul": {
-      "points": 10,
-      "ship_id": 34562
-    },
-    "Heretic": {
-      "points": 9,
-      "ship_id": 22452
-    },
-    "Flycatcher": {
-      "points": 9,
-      "ship_id": 22464
-    },
-    "Eris": {
-      "points": 9,
-      "ship_id": 22460
-    },
-    "Sabre": {
-      "points": 9,
-      "ship_id": 22456
-    },
     "Coercer": {
-      "points": 5,
-      "ship_id": 16236
+      "ship_id": 16236,
+      "points": 5
     },
     "Dragoon": {
-      "points": 5,
-      "ship_id": 32874
+      "ship_id": 32874,
+      "points": 5
     },
     "Cormorant": {
-      "points": 5,
-      "ship_id": 16238
+      "ship_id": 16238,
+      "points": 5
     },
     "Corax": {
-      "points": 5,
-      "ship_id": 32876
+      "ship_id": 32876,
+      "points": 5
     },
     "Catalyst": {
-      "points": 5,
-      "ship_id": 16240
+      "ship_id": 16240,
+      "points": 5
     },
     "Algos": {
-      "points": 5,
-      "ship_id": 32872
+      "ship_id": 32872,
+      "points": 5
     },
     "Thrasher": {
-      "points": 5,
-      "ship_id": 16242
+      "ship_id": 16242,
+      "points": 5
     },
     "Talwar": {
-      "points": 5,
-      "ship_id": 32878
+      "ship_id": 32878,
+      "points": 5
+    },
+    "Pontifex": {
+      "ship_id": 37481,
+      "points": 12
+    },
+    "Stork": {
+      "ship_id": 37482,
+      "points": 12
+    },
+    "Magus": {
+      "ship_id": 37483,
+      "points": 12
+    },
+    "Bifrost": {
+      "ship_id": 37480,
+      "points": 12
+    },
+    "Heretic": {
+      "ship_id": 22452,
+      "points": 9
+    },
+    "Flycatcher": {
+      "ship_id": 22464,
+      "points": 9
+    },
+    "Eris": {
+      "ship_id": 22460,
+      "points": 9
+    },
+    "Sabre": {
+      "ship_id": 22456,
+      "points": 9
+    },
+    "Confessor": {
+      "ship_id": 34317,
+      "points": 10
+    },
+    "Jackdaw": {
+      "ship_id": 34828,
+      "points": 9
+    },
+    "Hecate": {
+      "ship_id": 35683,
+      "points": 10
+    },
+    "Svipul": {
+      "ship_id": 34562,
+      "points": 10
     },
     "Sunesis": {
-      "points": 5,
-      "ship_id": 42685
+      "ship_id": 42685,
+      "points": 5
+    },
+    "Draugur": {
+      "ship_id": 52254,
+      "points": 14
+    },
+    "Kikimora": {
+      "ship_id": 49710,
+      "points": 12
+    },
+    "Thrasher Fleet Issue": {
+      "ship_id": 73794,
+      "points": 11
+    },
+    "Cormorant Navy Issue": {
+      "ship_id": 73795,
+      "points": 9
+    },
+    "Coercer Navy Issue": {
+      "ship_id": 73789,
+      "points": 11
+    },
+    "Catalyst Navy Issue": {
+      "ship_id": 73796,
+      "points": 11
+    },
+    "Mamba": {
+      "ship_id": 78367,
+      "points": 14
+    },
+    "Mekubal": {
+      "ship_id": 78333,
+      "points": 10
+    },
+    "Tholos": {
+      "ship_id": 85087,
+      "points": 14
     }
   },
   "Frigate": {
-    "Sentinel": {
-      "points": 14,
-      "ship_id": 11190
-    },
-    "Keres": {
-      "points": 14,
-      "ship_id": 11174
-    },
-    "Kitsune": {
-      "points": 11,
-      "ship_id": 11194
-    },
-    "Hyena": {
-      "points": 11,
-      "ship_id": 11387
-    },
-    "Worm": {
-      "points": 10,
-      "ship_id": 17930
-    },
-    "Nergal": {
-      "points": 11,
-      "ship_id": 52250
-    },
-    "Damavik": {
-      "points": 10,
-      "ship_id": 47269
-    },
-    "Vengeance": {
-      "points": 9,
-      "ship_id": 11365
-    },
-    "Retribution": {
-      "points": 9,
-      "ship_id": 11393
-    },
-    "Hawk": {
-      "points": 9,
-      "ship_id": 11379
-    },
-    "Harpy": {
-      "points": 9,
-      "ship_id": 11381
-    },
-    "Ishkur": {
-      "points": 9,
-      "ship_id": 12042
-    },
-    "Enyo": {
-      "points": 9,
-      "ship_id": 12044
-    },
-    "Wolf": {
-      "points": 9,
-      "ship_id": 11371
-    },
-    "Jaguar": {
-      "points": 9,
-      "ship_id": 11400
-    },
-    "Cruor": {
-      "points": 9,
-      "ship_id": 17926
-    },
-    "Crucifier": {
-      "points": 8,
-      "ship_id": 2161
-    },
-    "Dramiel": {
-      "points": 8,
-      "ship_id": 17932
-    },
-    "Garmur": {
-      "points": 8,
-      "ship_id": 33816
-    },
-    "Succubus": {
-      "points": 8,
-      "ship_id": 17924
-    },
-    "Astero": {
-      "points": 8,
-      "ship_id": 33468
-    },
-    "Daredevil": {
-      "points": 8,
-      "ship_id": 17928
-    },
-    "Griffin": {
-      "points": 7,
-      "ship_id": 584
-    },
-    "Maulus": {
-      "points": 7,
-      "ship_id": 609
-    },
-    "Imperial Navy Slicer": {
-      "points": 6,
-      "ship_id": 17703
-    },
-    "Crucifier Navy Issue": {
-      "points": 6,
-      "ship_id": 37453
-    },
-    "Purifier": {
-      "points": 7,
-      "ship_id": 12038
-    },
-    "Manticore": {
-      "points": 7,
-      "ship_id": 12032
-    },
-    "Nemesis": {
-      "points": 7,
-      "ship_id": 11377
-    },
-    "Hound": {
-      "points": 7,
-      "ship_id": 12034
-    },
-    "Punisher": {
-      "points": 6,
-      "ship_id": 597
-    },
-    "Vigil": {
-      "points": 6,
-      "ship_id": 3766
-    },
-    "Caldari Navy Hookbill": {
-      "points": 6,
-      "ship_id": 17619
-    },
-    "Griffin Navy Issue": {
-      "points": 6,
-      "ship_id": 37455
-    },
-    "Federation Navy Comet": {
-      "points": 6,
-      "ship_id": 17841
-    },
-    "Maulus Navy Issue": {
-      "points": 6,
-      "ship_id": 37456
-    },
-    "Republic Fleet Firetail": {
-      "points": 6,
-      "ship_id": 17812
-    },
-    "Vigil Fleet Issue": {
-      "points": 6,
-      "ship_id": 37454
-    },
-    "Crusader": {
-      "points": 6,
-      "ship_id": 11184
-    },
-    "Malediction": {
-      "points": 6,
-      "ship_id": 11186
-    },
-    "Crow": {
-      "points": 6,
-      "ship_id": 11176
-    },
-    "Raptor": {
-      "points": 6,
-      "ship_id": 11178
-    },
-    "Taranis": {
-      "points": 6,
-      "ship_id": 11200
-    },
-    "Ares": {
-      "points": 6,
-      "ship_id": 11202
-    },
-    "Claw": {
-      "points": 6,
-      "ship_id": 11196
-    },
-    "Stiletto": {
-      "points": 6,
-      "ship_id": 11198
-    },
-    "Magnate Navy Issue": {
-      "points": 6,
-      "ship_id": 72907
-    },
-    "Heron Navy Issue": {
-      "points": 6,
-      "ship_id": 72904
-    },
-    "Imicus Navy Issue": {
-      "points": 6,
-      "ship_id": 72913
-    },
-    "Probe Fleet Issue": {
-      "points": 6,
-      "ship_id": 72903
-    },
-    "Metamorphosis": {
-      "points": 5,
-      "ship_id": 77114
-    },
     "Executioner": {
-      "points": 4,
-      "ship_id": 589
+      "ship_id": 589,
+      "points": 4
     },
     "Tormentor": {
-      "points": 4,
-      "ship_id": 591
+      "ship_id": 591,
+      "points": 4
+    },
+    "Punisher": {
+      "ship_id": 597,
+      "points": 6
     },
     "Magnate": {
-      "points": 4,
-      "ship_id": 29248
+      "ship_id": 29248,
+      "points": 4
     },
     "Condor": {
-      "points": 4,
-      "ship_id": 583
+      "ship_id": 583,
+      "points": 4
     },
     "Kestrel": {
-      "points": 4,
-      "ship_id": 602
+      "ship_id": 602,
+      "points": 4
     },
     "Merlin": {
-      "points": 4,
-      "ship_id": 603
+      "ship_id": 603,
+      "points": 4
     },
     "Heron": {
-      "points": 4,
-      "ship_id": 605
+      "ship_id": 605,
+      "points": 4
     },
     "Atron": {
-      "points": 4,
-      "ship_id": 608
+      "ship_id": 608,
+      "points": 4
     },
     "Tristan": {
-      "points": 4,
-      "ship_id": 593
+      "ship_id": 593,
+      "points": 4
     },
     "Incursus": {
-      "points": 4,
-      "ship_id": 594
+      "ship_id": 594,
+      "points": 4
     },
     "Imicus": {
-      "points": 4,
-      "ship_id": 607
+      "ship_id": 607,
+      "points": 4
     },
     "Slasher": {
-      "points": 4,
-      "ship_id": 585
+      "ship_id": 585,
+      "points": 4
     },
     "Breacher": {
-      "points": 4,
-      "ship_id": 598
+      "ship_id": 598,
+      "points": 4
     },
     "Rifter": {
-      "points": 4,
-      "ship_id": 587
+      "ship_id": 587,
+      "points": 4
     },
     "Probe": {
-      "points": 4,
-      "ship_id": 586
+      "ship_id": 586,
+      "points": 4
+    },
+    "Crucifier": {
+      "ship_id": 2161,
+      "points": 8
+    },
+    "Griffin": {
+      "ship_id": 584,
+      "points": 7
+    },
+    "Maulus": {
+      "ship_id": 609,
+      "points": 7
+    },
+    "Vigil": {
+      "ship_id": 3766,
+      "points": 6
+    },
+    "Imperial Navy Slicer": {
+      "ship_id": 17703,
+      "points": 6
+    },
+    "Crucifier Navy Issue": {
+      "ship_id": 37453,
+      "points": 6
+    },
+    "Caldari Navy Hookbill": {
+      "ship_id": 17619,
+      "points": 5
+    },
+    "Griffin Navy Issue": {
+      "ship_id": 37455,
+      "points": 5
+    },
+    "Federation Navy Comet": {
+      "ship_id": 17841,
+      "points": 6
+    },
+    "Maulus Navy Issue": {
+      "ship_id": 37456,
+      "points": 6
+    },
+    "Republic Fleet Firetail": {
+      "ship_id": 17812,
+      "points": 6
+    },
+    "Vigil Fleet Issue": {
+      "ship_id": 37454,
+      "points": 6
+    },
+    "Vengeance": {
+      "ship_id": 11365,
+      "points": 9
+    },
+    "Retribution": {
+      "ship_id": 11393,
+      "points": 9
+    },
+    "Hawk": {
+      "ship_id": 11379,
+      "points": 9
+    },
+    "Harpy": {
+      "ship_id": 11381,
+      "points": 9
+    },
+    "Ishkur": {
+      "ship_id": 12042,
+      "points": 9
+    },
+    "Enyo": {
+      "ship_id": 12044,
+      "points": 9
+    },
+    "Wolf": {
+      "ship_id": 11371,
+      "points": 9
+    },
+    "Jaguar": {
+      "ship_id": 11400,
+      "points": 9
     },
     "Anathema": {
-      "points": 4,
-      "ship_id": 11188
+      "ship_id": 11188,
+      "points": 4
     },
     "Buzzard": {
-      "points": 4,
-      "ship_id": 11192
+      "ship_id": 11192,
+      "points": 4
     },
     "Helios": {
-      "points": 4,
-      "ship_id": 11172
+      "ship_id": 11172,
+      "points": 4
     },
     "Cheetah": {
-      "points": 4,
-      "ship_id": 11182
+      "ship_id": 11182,
+      "points": 4
+    },
+    "Purifier": {
+      "ship_id": 12038,
+      "points": 7
+    },
+    "Manticore": {
+      "ship_id": 12032,
+      "points": 7
+    },
+    "Nemesis": {
+      "ship_id": 11377,
+      "points": 7
+    },
+    "Hound": {
+      "ship_id": 12034,
+      "points": 7
+    },
+    "Sentinel": {
+      "ship_id": 11190,
+      "points": 11
+    },
+    "Kitsune": {
+      "ship_id": 11194,
+      "points": 10
+    },
+    "Keres": {
+      "ship_id": 11174,
+      "points": 12
+    },
+    "Hyena": {
+      "ship_id": 11387,
+      "points": 11
+    },
+    "Crusader": {
+      "ship_id": 11184,
+      "points": 6
+    },
+    "Malediction": {
+      "ship_id": 11186,
+      "points": 6
+    },
+    "Crow": {
+      "ship_id": 11176,
+      "points": 6
+    },
+    "Raptor": {
+      "ship_id": 11178,
+      "points": 6
+    },
+    "Taranis": {
+      "ship_id": 11200,
+      "points": 6
+    },
+    "Ares": {
+      "ship_id": 11202,
+      "points": 6
+    },
+    "Claw": {
+      "ship_id": 11196,
+      "points": 6
+    },
+    "Stiletto": {
+      "ship_id": 11198,
+      "points": 6
+    },
+    "Dramiel": {
+      "ship_id": 17932,
+      "points": 8
+    },
+    "Cruor": {
+      "ship_id": 17926,
+      "points": 9
+    },
+    "Worm": {
+      "ship_id": 17930,
+      "points": 10
+    },
+    "Garmur": {
+      "ship_id": 33816,
+      "points": 8
+    },
+    "Succubus": {
+      "ship_id": 17924,
+      "points": 8
+    },
+    "Astero": {
+      "ship_id": 33468,
+      "points": 8
+    },
+    "Daredevil": {
+      "ship_id": 17928,
+      "points": 8
     },
     "Skybreaker": {
-      "points": 5,
-      "ship_id": 54731
+      "ship_id": 54731,
+      "points": 5
+    },
+    "Nergal": {
+      "ship_id": 52250,
+      "points": 10
+    },
+    "Damavik": {
+      "ship_id": 47269,
+      "points": 8
+    },
+    "Magnate Navy Issue": {
+      "ship_id": 72907,
+      "points": 6
+    },
+    "Heron Navy Issue": {
+      "ship_id": 72904,
+      "points": 4
+    },
+    "Imicus Navy Issue": {
+      "ship_id": 72913,
+      "points": 6
+    },
+    "Probe Fleet Issue": {
+      "ship_id": 72903,
+      "points": 6
+    },
+    "Metamorphosis": {
+      "ship_id": 77114,
+      "points": 5
+    },
+    "Geri": {
+      "ship_id": 74141,
+      "points": 27
+    },
+    "Raiju": {
+      "ship_id": 60765,
+      "points": 32
+    },
+    "Sidewinder": {
+      "ship_id": 85062,
+      "points": 31
+    },
+    "Shapash": {
+      "points": 30,
+      "ship_id": 35832
     }
   },
   "Industrial": {
-    "Deluge": {
-      "points": 10,
-      "ship_id": 81046
-    },
-    "Squall": {
-      "points": 4,
-      "ship_id": 81008
-    },
     "Bestower": {
-      "points": 3,
-      "ship_id": 1944
+      "ship_id": 1944,
+      "points": 3
     },
     "Sigil": {
-      "points": 3,
-      "ship_id": 19744
+      "ship_id": 19744,
+      "points": 3
     },
     "Badger": {
-      "points": 3,
-      "ship_id": 648
+      "ship_id": 648,
+      "points": 3
     },
     "Tayra": {
-      "points": 3,
-      "ship_id": 649
+      "ship_id": 649,
+      "points": 3
     },
     "Nereus": {
-      "points": 3,
-      "ship_id": 650
+      "ship_id": 650,
+      "points": 3
     },
     "Kryos": {
-      "points": 3,
-      "ship_id": 654
+      "ship_id": 654,
+      "points": 3
     },
     "Epithal": {
-      "points": 3,
-      "ship_id": 655
+      "ship_id": 655,
+      "points": 3
     },
     "Miasmos": {
-      "points": 3,
-      "ship_id": 656
+      "ship_id": 656,
+      "points": 3
     },
     "Iteron Mark V": {
-      "points": 3,
-      "ship_id": 657
+      "ship_id": 657,
+      "points": 3
     },
     "Hoarder": {
-      "points": 3,
-      "ship_id": 651
+      "ship_id": 651,
+      "points": 3
     },
     "Mammoth": {
-      "points": 3,
-      "ship_id": 652
+      "ship_id": 652,
+      "points": 3
     },
     "Wreathe": {
-      "points": 3,
-      "ship_id": 653
+      "ship_id": 653,
+      "points": 3
+    },
+    "Squall": {
+      "ship_id": 81008,
+      "points": 7
+    },
+    "Deluge": {
+      "ship_id": 81046,
+      "points": 10
     }
   },
   "Corvette": {
-    "Echo": {
-      "points": 2,
-      "ship_id": 617
-    },
-    "Hematos": {
-      "points": 2,
-      "ship_id": 33079
-    },
-    "Immolator": {
-      "points": 2,
-      "ship_id": 615
-    },
-    "Taipan": {
-      "points": 2,
-      "ship_id": 33081
-    },
-    "Violator": {
-      "points": 2,
-      "ship_id": 33083
-    },
     "Impairor": {
-      "points": 1,
-      "ship_id": 596
+      "ship_id": 596,
+      "points": 1
     },
     "Ibis": {
-      "points": 1,
-      "ship_id": 601
+      "ship_id": 601,
+      "points": 1
     },
     "Velator": {
-      "points": 1,
-      "ship_id": 606
+      "ship_id": 606,
+      "points": 1
     },
     "Reaper": {
-      "points": 1,
-      "ship_id": 588
+      "ship_id": 588,
+      "points": 1
+    },
+    "Echo": {
+      "ship_id": 617,
+      "points": 2
+    },
+    "Hematos": {
+      "ship_id": 33079,
+      "points": 2
+    },
+    "Immolator": {
+      "ship_id": 615,
+      "points": 2
+    },
+    "Taipan": {
+      "ship_id": 33081,
+      "points": 2
+    },
+    "Violator": {
+      "ship_id": 33083,
+      "points": 2
     }
   }
 }

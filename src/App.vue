@@ -20,8 +20,8 @@ const langs = [
 
 const $q = useQuasar();
 
-const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules";
-const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules#h2-17";
+const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations";
+const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15";
 const max_points = 200
 const max_ships = 10
 const max_number = {
@@ -123,22 +123,22 @@ const flagship_type = computed(() => {
 
 // functions
 function add_ship(hull_type, ship_name, property) {
-  // same ship +1 point
+  // same ship +1 point, suppressed in ATXXI
   const original_points = property.points;
   let points = property.points;
-  for (const ship of pick["Flagship"]) {
-    if (ship.ship_name == ship_name) {
-      ship.property.points += 1;
-      points += 1;
-    }
-  }
+  // for (const ship of pick["Flagship"]) {
+  //   if (ship.ship_name == ship_name) {
+  //     ship.property.points += 1;
+  //     points += 1;
+  //   }
+  // }
 
-  for (const ship of pick[hull_type]) {
-    if (ship.ship_name == ship_name) {
-      ship.property.points += 1;
-      points += 1;
-    }
-  }
+  // for (const ship of pick[hull_type]) {
+  //   if (ship.ship_name == ship_name) {
+  //     ship.property.points += 1;
+  //     points += 1;
+  //   }
+  // }
 
   pick[hull_type].push({
     "hull_type": hull_type,
@@ -155,8 +155,8 @@ function remove_ship(hull_type, ship_name) {
   let index = pick[hull_type].findIndex(x => x.ship_name == ship_name);
   pick[hull_type].splice(index, 1);
 
-  // remove +1 points
-  for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.property.points -= 1;
+  // remove +1 points, suppressed in ATXXI
+  // for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.property.points -= 1;
 }
 
 function ban_ship(hull_type, ship_name, property) {
@@ -252,7 +252,7 @@ function change_lang(lang) {
       <q-btn outline @click="change_lang('en')">English</q-btn>
     </div>
   </div>
-  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXX(2024)</a>
+  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXXI(2025)</a>
 
   <!--Draft-->
   <div class="text-h4 text-weight-bolder q-my-md"

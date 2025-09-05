@@ -8,35 +8,72 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 input_file = os.path.abspath(os.path.join(current_dir, "points.csv"))
 output_file = os.path.abspath(os.path.join(current_dir, "..", "assets", "ships.json"))
 
-data = {}
+at_flagships = ["Cybele", "Shapash", "Bestla", "Geri", "Raiju", "Laelaps", "Cobra", "Sidewinder"]
+data = {
+  "Flagship": {},
+  "Logistics": {},
+  "Battleship": {},
+  "Battlecruiser": {},
+  "Cruiser": {},
+  "Destroyer": {},
+  "Frigate": {},
+  "Industrial": {},
+  "Corvette": {}
+}
 
 with open(input_file, 'r') as points:
   csv_reader = csv.reader(points, delimiter='\t')
   for row in csv_reader:
-    ship_name, points = row[0], row[2]
-    # obj = json.dumps([ship_name])
-    # response = requests.post('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', data=obj)
+    ship_name, points, hull_type = row[0], row[2], row[3]
+    obj = json.dumps([ship_name])
 
-    # ship_id = 0
-    # if (response.ok):
-    #   response = response.json()
-    #   if ('inventory_types' in response):
-    #     ship_id = response['inventory_types'][0]['id']
-      
-    data[ship_name] = int(points)
+    response = requests.post('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', data=obj)
 
-data['Shapash'] = 33
-print(data['Bhaalgorn'])
-output_data = {}
-with open(output_file, "r+") as output:
-  output_data = json.load(output)
+    ship_id = 0
+    if (response.ok):
+      response = response.json()
+      if ('inventory_types' in response):
+        ship_id = response['inventory_types'][0]['id']
 
-  for hull_type, ships in output_data.items():
-    for ship_name, attributes in ships.items():
-      attributes["points"] = data[ship_name]
+    if ship_name in at_flagships or hull_type == "Battleship":
+      data["Flagship"][ship_name] = {
+        "points": int(points),
+        "ship_id": int(ship_id),
+      }
+      print(ship_name, data["Flagship"][ship_name])
+
+    data[hull_type][ship_name] = {
+      "ship_id": int(ship_id),
+      "points": int(points),
+    }
+
+    if hull_type == "Logistics":
+      if ship_name in ["Augoror", "Osprey", "Exequror", "Scythe", "Guardian", "Basilisk", "Oneiros", "Scimitar", "Rodiva", "Zarmazd"]:
+        data[hull_type][ship_name]["logistics"] = 1
+      else:
+        data[hull_type][ship_name]["logistics"] = 0.5
+    
+    print(ship_name, data[hull_type][ship_name])
+
+data["Flagship"]["Shapash"] = data["Frigate"]["Shapash"] = {
+  "points": 30,
+  "ship_id": 35832,
+}
 
 with open(output_file, "w+") as json_file:
-  json.dump(output_data, json_file, indent=2)
+  json.dump(data, json_file, indent=2)
+  print(f"JSON data written to {output_file}")
+
+# output_data = {}
+# with open(output_file, "r+") as output:
+#   output_data = json.load(output)
+
+  # for hull_type, ships in output_data.items():
+  #   for ship_name, attributes in ships.items():
+  #     attributes["points"] = data[ship_name]
+
+# with open(output_file, "w+") as json_file:
+#   json.dump(output_data, json_file, indent=2)
 
 
 # obj = json.dumps(names)
