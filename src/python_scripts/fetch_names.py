@@ -69,7 +69,7 @@ with open(output_file, "w+") as json_file:
   json.dump(msg, json_file, indent=2)
 
 # zh
-# 2025-09-05, ships not in serenity: 81046, 81008
+# 2025-09-05, ship not found serenity esi: 88001
 ids.remove(88001)
 msg["messages"] = {
   "title": "EVE AT 阵容模拟",
