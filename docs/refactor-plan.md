@@ -24,18 +24,20 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 
 ### 2. Tournament data model and automation
 - Replace the single current-year `ships.json` with versioned, normalized datasets per tournament year.
+- Normalize static ship identity into a shared cross-year catalog instead of duplicating ship ids and localized names inside every yearly dataset.
 - Define a canonical generated dataset per year containing:
   - tournament metadata and source references
   - rule config: point cap, ship cap, hull caps, logistics rules, flagship rules, and ban rules
-  - ship definitions with ids, hull type, point value, logistics weight, flagship eligibility, and localized names
+  - year-specific ship participation and scoring data keyed by stable ship id or ship key
 - Split data into:
   - `data/raw/<year>/` for fetched source data and manual overrides
   - `data/generated/<year>.json` for app-consumable normalized outputs
+- Add a generated shared ship catalog containing canonical ship identity and localized names reused across all years.
 - Consolidate the current ad hoc scripts into one TypeScript-based pipeline that:
   - fetches upstream source data first
   - normalizes it into the canonical schema
   - applies repo overrides where upstream data is incomplete or inconsistent
-  - validates and emits generated year snapshots plus an index of available tournaments
+  - validates and emits the shared ship catalog, yearly tournament snapshots, and an index of available tournaments
 - Add pipeline validation for duplicate ids, missing translations, invalid hull mappings, and broken rule configurations.
 
 ### 3. Rules engine and draft flows
@@ -60,10 +62,11 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 
 ### 4. I18n and UI migration
 - Keep English and Simplified Chinese, but redesign i18n so more locales can be added cleanly later.
-- Move ship names into the tournament dataset instead of maintaining them as a separate flat locale file.
+- Move ship names into a shared ship catalog instead of duplicating them inside every tournament dataset.
 - Split translation concerns into:
   - app UI messages
-  - tournament/ship localized labels
+  - tournament labels
+  - shared ship localized labels
 - Move theme/locale preferences out of direct view logic into a small preferences utility.
 - PrimeVue migration path:
   - replace Quasar bootstrapping in the app entrypoint
@@ -76,14 +79,16 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 
 ## Public Interfaces and Types
 - Introduce shared typed contracts:
+  - `ShipCatalogEntry`
+  - `ShipCatalog`
   - `TournamentSummary`
   - `TournamentDataset`
   - `RuleConfig`
-  - `ShipDefinition`
+  - `TournamentShipRule`
   - `DraftState`
   - `DraftAction`
   - `DraftValidationResult`
-- Add generated tournament index data for the year selector.
+- Add generated ship catalog data and tournament index data for the year selector.
 - Add a draft codec interface:
   - `serializeDraft(state, tournament): string`
   - `parseDraft(text): ParsedDraft`
