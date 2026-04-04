@@ -105,10 +105,10 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Add unit tests for import/export round-trip behavior and invalid formats.
 - [ ] Add integration tests for:
   - [ ] switching years
-  - [ ] legal drafting flow
-  - [ ] illegal action feedback
-  - [ ] export to clipboard
-  - [ ] import success
+  - [x] legal drafting flow
+  - [x] illegal action feedback
+  - [x] export to clipboard
+  - [x] import success
   - [ ] import failure without state corruption
 - [x] Keep `yarn build` passing.
 - [ ] Run the full test suite and capture any residual gaps.

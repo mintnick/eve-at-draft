@@ -58,6 +58,11 @@
   - import now restores both tournament year and draft state from one payload
   - codec tests now cover format parsing, serialization, and import materialization
   - the hull-type tab list was corrected back to a vertical column after the recent UI pass
+- Phase 10 has started:
+  - component-level integration tests now cover legal drafting flow, illegal flagship feedback, clipboard export, and import success
+  - test setup now includes the browser mocks PrimeVue needs in jsdom (`ResizeObserver`, `matchMedia`, and teleports)
+  - the import dialog failure during testing was a harness issue caused by teleported PrimeVue dialog content, not an app-side import bug
+  - full test suite is currently passing with 17 tests across codec, rules, state, and UI layers
 
 ## Agreed direction
 - Keep `Vue`
@@ -74,8 +79,8 @@
 ## Recommended next step
 - Start Phase 10 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - broaden tests beyond the current single-year happy path
-  - add integration coverage for year switching, illegal feedback, and import/export flows
+  - add import-failure coverage to ensure invalid payloads do not corrupt current state
+  - add switching-year coverage once multiple generated tournament years are available or fixture coverage is introduced
   - capture any remaining acceptance gaps after the recent Phase 8 and Phase 9 work
 
 ## Resume prompt
