@@ -52,6 +52,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 
 ## Phase 5: Rules engine extraction
 - [ ] Extract draft logic out of the main view into pure rule-engine modules.
+- [ ] Break up `App.vue` so page logic, presentation components, and styles are separated into app or feature modules.
 - [ ] Define the draft action model for pick, remove, ban, unban, and clear operations.
 - [ ] Implement derived state calculation:
   - [ ] total points
@@ -80,6 +81,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 ## Phase 8: UI polish
 - [ ] Refine the overall layout and spacing now that PrimeVue migration and app state are stable.
 - [ ] Replace transitional styling with a more coherent visual system for buttons, tabs, panels, and lists.
+- [ ] Continue moving page-level styles out of `App.vue` into clearer app or feature style files where it improves maintainability.
 - [ ] Improve responsive behavior for mobile and narrow tablet widths.
 - [ ] Revisit typography, hierarchy, and density so the draft workflow is easier to scan.
 - [ ] Polish dark/light theme behavior and reduce visual regressions from the Quasar removal.

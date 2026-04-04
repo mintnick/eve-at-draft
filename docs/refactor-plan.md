@@ -40,6 +40,7 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 
 ### 3. Rules engine and draft flows
 - Extract draft logic from the view into a pure rules engine driven by tournament dataset plus draft state.
+- Break up the current oversized app shell so `App.vue` no longer owns most logic, layout, and styling directly.
 - Rules engine handles:
   - points total
   - ship count
@@ -70,6 +71,7 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
   - replace vertical `q-tabs`/`q-tab-panels` with PrimeVue `Tabs` or a thin app-owned tab shell backed by PrimeVue primitives
   - replace status/feedback patterns with PrimeVue `Message`, `Toast`, and `Dialog` where needed
   - preserve current custom CSS and app-specific layout instead of adopting a stock admin look
+- Move page-level styling out of `App.vue` where practical into dedicated app or feature styles as responsibilities become clearer.
 - Keep styling intentionally lightweight so PrimeVue is a component layer, not the whole design system.
 
 ## Public Interfaces and Types
