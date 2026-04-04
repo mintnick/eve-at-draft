@@ -8,9 +8,11 @@ export interface TournamentPipelineConfig {
   slug: string
   label: string
   rawDir: string
+  sourcesDir: string
   generatedFile: string
   sourceFile: string
   overridesFile: string
+  rulesPageUrl: string
   rules: {
     maxPoints: number
     maxShips: number
@@ -32,9 +34,11 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     slug: 'alliance-tournament-xxi',
     label: 'Alliance Tournament XXI',
     rawDir: 'data/raw/2025',
+    sourcesDir: 'data/raw/2025/sources',
     generatedFile: '2025.json',
     sourceFile: 'source.json',
     overridesFile: 'overrides.json',
+    rulesPageUrl: 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations',
     rules: {
       maxPoints: 200,
       maxShips: 10,

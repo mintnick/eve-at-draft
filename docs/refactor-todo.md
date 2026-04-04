@@ -40,7 +40,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 
 ## Phase 4: Data pipeline consolidation
 - [x] Replace the current scattered Python scripts with a unified TypeScript data pipeline.
-- [ ] Implement fetch commands for upstream source collection.
+- [x] Implement fetch commands for upstream source collection.
 - [x] Implement normalization from upstream/raw inputs into the canonical yearly schema.
 - [x] Generate and validate a shared ship catalog reused across all tournament years.
 - [x] Implement override merging for exceptional data fixes.
@@ -128,8 +128,9 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Checkpoint A: TypeScript, structure, and test harness are in place.
 - [x] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.
 - [x] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
-- [ ] Checkpoint D: Rules engine is extracted and behavior matches expected draft logic.
-- [ ] Checkpoint E: Multi-year selection works with the new i18n structure.
-- [ ] Checkpoint F: UI polish pass is complete and the app feels coherent on desktop and mobile.
-- [ ] Checkpoint G: Import/export and clipboard flow are complete.
-- [ ] Checkpoint H: Tests, docs, and cleanup are complete.
+- [x] Checkpoint D: Data pipeline fetch/build/validate flow works against the current upstream-backed raw source path.
+- [ ] Checkpoint E: Rules engine is extracted and behavior matches expected draft logic.
+- [ ] Checkpoint F: Multi-year selection works with the new i18n structure.
+- [ ] Checkpoint G: UI polish pass is complete and the app feels coherent on desktop and mobile.
+- [ ] Checkpoint H: Import/export and clipboard flow are complete.
+- [ ] Checkpoint I: Tests, docs, and cleanup are complete.

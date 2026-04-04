@@ -21,3 +21,9 @@ export async function writeJsonFile(value: unknown, ...segments: string[]): Prom
   await mkdir(path.dirname(absolutePath), { recursive: true })
   await writeFile(absolutePath, `${JSON.stringify(value, null, 2)}\n`)
 }
+
+export async function writeTextFile(value: string, ...segments: string[]): Promise<void> {
+  const absolutePath = resolveRepoPath(...segments)
+  await mkdir(path.dirname(absolutePath), { recursive: true })
+  await writeFile(absolutePath, value)
+}
