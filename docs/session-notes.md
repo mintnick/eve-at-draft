@@ -86,6 +86,10 @@
   - placeholder internal README files were updated to describe the current structure instead of future-tense refactor intent
   - `docs/refactor-summary.md` now captures the resulting architecture, supported years, validation status, and deferred follow-up work
   - generated artifact and ignore-rule review is complete; raw upstream captures and generated tournament datasets are intentionally tracked, while transient build outputs remain ignored
+  - today's historical-data commits are already pushed to `origin/codex/refactor`
+  - latest pushed commits:
+    - `558b756` `Add official tournament data for 2021 to 2023`
+    - `ee07173` `Add external match archive links`
 
 ## Agreed direction
 - Keep `Vue`
@@ -106,8 +110,9 @@
   - decide whether any remaining scaffold README files should stay or be folded into root/docs documentation
   - keep 2021 as the current earliest bundled year unless an older official ship-level source is recovered later
   - continue cleanup and close out Phase 11 once the remaining legacy-file pass is done
+  - do not spend time on older team-draft ingestion unless the product direction changes
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/refactor-summary.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by doing the last legacy-file cleanup pass and deciding whether Checkpoint I can be closed.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/refactor-summary.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by doing the last legacy-file cleanup pass, keeping 2021 as the earliest bundled year for now, and deciding whether Checkpoint I can be closed.`
