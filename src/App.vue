@@ -1,359 +1,559 @@
-<script setup>
-import { ref, reactive, computed, watch } from 'vue'
+<script setup lang="ts">
+import { computed, reactive, ref } from 'vue'
+import Button from 'primevue/button'
+import Tab from 'primevue/tab'
+import TabList from 'primevue/tablist'
+import TabPanel from 'primevue/tabpanel'
+import TabPanels from 'primevue/tabpanels'
+import Tabs from 'primevue/tabs'
 import data from './assets/ships.json'
-import Ship from './components/Ship.vue';
-import { useQuasar } from 'quasar';
-import { useI18n } from 'vue-i18n';
+import Ship from './components/Ship.vue'
+import { useI18n } from 'vue-i18n'
 
-// vars
-const i18n = useI18n();
-const langs = [
-  {
-    label: 'English',
-    value: 'en'
-  },
-  {
-    label: '简体中文',
-    value: 'zh'
+type HullType = keyof typeof data
+type LogisticsEntry = {
+  ship_id: number
+  points: number
+  logistics?: number
+}
+type ShipProperty = {
+  points: number
+  ship_id: number
+  logistics?: number
+}
+
+type DraftedShip = {
+  hull_type: HullType
+  ship_name: string
+  property: {
+    original_points?: number
+    points: number
+    ship_id: number
   }
-]
+}
 
-const $q = useQuasar();
+const i18n = useI18n()
 
-const rule_link = "https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations";
-const ban_link = "https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15";
+const rule_link = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations'
+const ban_link = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15'
 const max_points = 200
 const max_ships = 10
-const max_number = {
-  "Flagship": 1,
-  "Logistics": 1,
-  "Battleship": 3,
-  "Battlecruiser": 3,
-  "Cruiser": 3,
-  "Destroyer": 3,
-  "Frigate": 3,
-  "Industrial": 3,
-  "Corvette": 3,
+const max_number: Record<HullType, number> = {
+  Flagship: 1,
+  Logistics: 1,
+  Battleship: 3,
+  Battlecruiser: 3,
+  Cruiser: 3,
+  Destroyer: 3,
+  Frigate: 3,
+  Industrial: 3,
+  Corvette: 3,
 }
-const pick = reactive({
-    "Flagship": [],
-    "Logistics": [],
-    "Battleship": [],
-    "Battlecruiser": [],
-    "Cruiser": [],
-    "Destroyer": [],
-    "Frigate": [],
-    "Industrial": [],
-    "Corvette": []
-  }),
-  ban = reactive({
-    "Flagship": [],
-    "Logistics": [],
-    "Battleship": [],
-    "Battlecruiser": [],
-    "Cruiser": [],
-    "Destroyer": [],
-    "Frigate": [],
-    "Industrial": [],
-    "Corvette": []
-  });
 
-const tab = ref('Flagship');
+const hullTypes = Object.keys(data) as HullType[]
 
-// computed
+function createBuckets(): Record<HullType, DraftedShip[]> {
+  return hullTypes.reduce(
+    (buckets, hullType) => {
+      buckets[hullType] = []
+      return buckets
+    },
+    {} as Record<HullType, DraftedShip[]>,
+  )
+}
+
+const pick = reactive(createBuckets())
+const ban = reactive(createBuckets())
+
+const tab = ref<HullType>('Flagship')
+const isDark = ref(document.documentElement.classList.contains('app-dark'))
+
 const total_points = computed(() => {
-  let points = 0;
-  for (const [k, v] of Object.entries(pick)) {
-    if (v.length == 0) continue;
-    for (const ship of v) points += ship.property.points;
+  let points = 0
+  for (const ships of Object.values(pick)) {
+    for (const ship of ships) points += ship.property.points
   }
-  return points;
-});
+  return points
+})
 
 const logi_count = computed(() => {
-  let total_logi = 0;
-  for (const logi of pick.Logistics) total_logi += data.Logistics[logi.ship_name].logistics;
-  return total_logi;
+  let totalLogi = 0
+  for (const logi of pick.Logistics) {
+    totalLogi += (data.Logistics as Record<string, LogisticsEntry>)[logi.ship_name]?.logistics ?? 0
+  }
+  return totalLogi
 })
 
 const pick_list = computed(() => {
-  let list = [];
-  for (const [_, ships] of Object.entries(pick)) for (const ship of ships) list.push(ship);
-  list.sort((a, b) => (b.property.points - a.property.points));
-  return list;
+  const list = Object.values(pick).flat()
+  return list.sort((a, b) => b.property.points - a.property.points)
 })
 
 const ban_list = computed(() => {
-  let list = [];
-  for (const [_, ships] of Object.entries(ban)) for (const ship of ships) list.push(ship);
-  list.sort((a, b) => (b.property.points - a.property.points));
-  return list;
+  const list = Object.values(ban).flat()
+  return list.sort((a, b) => b.property.points - a.property.points)
 })
 
-const flagship_type = computed(() => {
-  let result = {
-    "Battleship": 0,
-    "Cruiser": 0,
-    "Frigate": 0,
-
-    "Flagship": 0,
-    "Logistics": 0,
-    "Battlecruiser": 0,
-    "Destroyer": 0,
-    "Frigate": 0,
-    "Industrial": 0,
-    "Corvette": 0
+const flagship_type = computed<Record<HullType, number>>(() => {
+  const result: Record<HullType, number> = {
+    Flagship: 0,
+    Logistics: 0,
+    Battleship: 0,
+    Battlecruiser: 0,
+    Cruiser: 0,
+    Destroyer: 0,
+    Frigate: 0,
+    Industrial: 0,
+    Corvette: 0,
   }
 
-  const at_frigates = ["Shapash", "Geri", "Raiju"]
-  const at_cruisers = ["Cybele", "Laelaps", "Bestla"]
+  const at_frigates = ['Shapash', 'Geri', 'Raiju']
+  const at_cruisers = ['Cybele', 'Laelaps', 'Bestla']
 
-  if (pick["Flagship"].length) {
-    const flagship = pick["Flagship"][0].ship_name
-    if (at_frigates.includes(flagship))
-      result["Frigate"] = 1
-    else if (at_cruisers.includes(flagship))
-      result["Cruiser"] = 1
-    else
-      result["Battleship"] = 1
+  if (pick.Flagship.length) {
+    const flagship = pick.Flagship[0].ship_name
+    if (at_frigates.includes(flagship)) result.Frigate = 1
+    else if (at_cruisers.includes(flagship)) result.Cruiser = 1
+    else result.Battleship = 1
   }
 
   return result
 })
 
-// functions
-function add_ship(hull_type, ship_name, property) {
-  // same ship +1 point, suppressed in ATXXI
-  const original_points = property.points;
-  let points = property.points;
-  // for (const ship of pick["Flagship"]) {
-  //   if (ship.ship_name == ship_name) {
-  //     ship.property.points += 1;
-  //     points += 1;
-  //   }
-  // }
+function add_ship(hull_type: string, ship_name: string, property: ShipProperty) {
+  const typedHullType = hull_type as HullType
+  const original_points = property.points
 
-  // for (const ship of pick[hull_type]) {
-  //   if (ship.ship_name == ship_name) {
-  //     ship.property.points += 1;
-  //     points += 1;
-  //   }
-  // }
-
-  pick[hull_type].push({
-    "hull_type": hull_type,
-    "ship_name": ship_name,
-    "property": {
-      "original_points": original_points,
-      "points": points,
-      "ship_id": property.ship_id
-    }
-  })
-}
-
-function remove_ship(hull_type, ship_name) {
-  let index = pick[hull_type].findIndex(x => x.ship_name == ship_name);
-  pick[hull_type].splice(index, 1);
-
-  // remove +1 points, suppressed in ATXXI
-  // for (const ship of pick[hull_type]) if (ship.ship_name == ship_name) ship.property.points -= 1;
-}
-
-function ban_ship(hull_type, ship_name, property) {
-  ban[hull_type].push({
-    "hull_type": hull_type,
-    "ship_name": ship_name,
-    "property": {
-      "points": property.points,
-      "ship_id": property.ship_id,
+  pick[typedHullType].push({
+    hull_type: typedHullType,
+    ship_name,
+    property: {
+      original_points,
+      points: property.points,
+      ship_id: property.ship_id,
     },
   })
 }
 
-function unban_ship(hull_type, ship_name) {
-  let index = ban[hull_type].findIndex(x => x.ship_name == ship_name);
-  ban[hull_type].splice(index, 1);
+function remove_ship(hull_type: string, ship_name: string) {
+  const typedHullType = hull_type as HullType
+  const index = pick[typedHullType].findIndex((ship) => ship.ship_name === ship_name)
+  pick[typedHullType].splice(index, 1)
 }
 
-function not_pickable(hull_type, ship_name, property) {
-  // points >= max_points
+function ban_ship(hull_type: string, ship_name: string, property: ShipProperty) {
+  const typedHullType = hull_type as HullType
+  ban[typedHullType].push({
+    hull_type: typedHullType,
+    ship_name,
+    property: {
+      points: property.points,
+      ship_id: property.ship_id,
+    },
+  })
+}
+
+function unban_ship(hull_type: string, ship_name: string) {
+  const typedHullType = hull_type as HullType
+  const index = ban[typedHullType].findIndex((ship) => ship.ship_name === ship_name)
+  ban[typedHullType].splice(index, 1)
+}
+
+function not_pickable(hull_type: HullType, ship_name: string, property: ShipProperty) {
   if (total_points.value >= max_points) return true
-
-  // ships >= max_ships
   if (pick_list.value.length >= max_ships) return true
+  if (hull_type === 'Flagship') return pick.Flagship.length > 0
 
-  // 1 flagship allowed
-  if (hull_type == "Flagship") return pick["Flagship"].length > 0
-
-  // banned?
   for (const ship of ban[hull_type]) {
-    if (ship.ship_name == ship_name) return true
+    if (ship.ship_name === ship_name) return true
   }
-  
-  // 1 cruiser logi or 2 frigate logis
-  if (hull_type == "Logistics") {
-    return logi_count.value + property.logistics > max_number.Logistics
-  } 
 
-  // 4 for each hull
+  if (hull_type === 'Logistics') {
+    return logi_count.value + (property.logistics ?? 0) > max_number.Logistics
+  }
+
   return pick[hull_type].length + flagship_type.value[hull_type] >= max_number[hull_type]
 }
 
-function not_bannable(hull_type, ship_name) {
-  // picked?
+function not_bannable(hull_type: HullType, ship_name: string) {
   for (const ship of pick[hull_type]) {
-    if (hull_type == "Flagship") continue
-    if (ship.ship_name == ship_name) return true
+    if (hull_type === 'Flagship') continue
+    if (ship.ship_name === ship_name) return true
   }
 
-  // already banned
   for (const ship of ban[hull_type]) {
-    if (ship.ship_name == ship_name) return true
+    if (ship.ship_name === ship_name) return true
   }
 
-  // 3 bans for each hull type
-  // return ban[hull_type].length >= 3;
+  return false
 }
 
 function clear_pick() {
-  for(const [k, v] of Object.entries(pick)) {
-    v.length = 0
-  }
+  for (const ships of Object.values(pick)) ships.length = 0
 }
 
 function clear_ban() {
-  for(const [k, v] of Object.entries(ban)) {
-    v.length = 0
-  }
+  for (const ships of Object.values(ban)) ships.length = 0
 }
 
 function toggle_theme() {
-  $q.dark.toggle();
-  document.cookie=`theme=${$q.dark.mode}`;
+  isDark.value = !isDark.value
+  document.documentElement.classList.toggle('app-dark', isDark.value)
+  document.cookie = `theme=${isDark.value}`
 }
 
-// function toggle_lang() {
-//   document.cookie=`lang=${i18n.locale.value}`
-// }
+function change_lang(lang: 'en' | 'zh') {
+  i18n.locale.value = lang
+  document.cookie = `lang=${lang}`
+}
 
-function change_lang(lang) {
-  i18n.locale.value = lang;
-  document.cookie=`lang=${i18n.locale.value}`
+function hullCountLabel(hullType: HullType) {
+  if (hullType === 'Logistics') return `${logi_count.value} / ${max_number.Logistics}`
+  return `${pick[hullType].length + flagship_type.value[hullType]} / ${max_number[hullType]}`
 }
 </script>
 
 <template>
-  <div class="row q-pt-lg flex-center">
-    <div class="col-4"></div>
-    <div class="col-4 text-weight-bolder text-h4">{{ $t("messages.title") }}</div>
-    <div class="col-4 row reverse q-px-md text-center items-center">
-      <q-btn unelevated round icon="brightness_medium" @click.prevent="toggle_theme"></q-btn>
-      <q-btn outline @click="change_lang('zh')" class="q-mx-xs">简体中文</q-btn>
-      <q-btn outline @click="change_lang('en')">English</q-btn>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="page-title-spacer"></div>
+      <div class="page-title">{{ $t('messages.title') }}</div>
+      <div class="page-actions">
+        <Button rounded text class="toolbar-button" @click="toggle_theme">
+          <span :class="['pi', isDark ? 'pi-sun' : 'pi-moon']"></span>
+        </Button>
+        <Button outlined class="lang-button" @click="change_lang('zh')">简体中文</Button>
+        <Button outlined class="lang-button" @click="change_lang('en')">English</Button>
+      </div>
+    </header>
+
+    <a class="rules-link" :href="rule_link" target="_blank" rel="noreferrer">
+      {{ $t('messages.rules') }} : ATXXI(2025)
+    </a>
+
+    <div
+      class="points-summary"
+      :class="{
+        'points-summary--over': total_points > max_points,
+        'points-summary--limit': total_points === max_points,
+        'points-summary--safe': total_points < max_points,
+      }"
+    >
+      {{ total_points }} / {{ max_points }}
     </div>
-  </div>
-  <a class="text-h6" :href="rule_link" target="_blank">{{ $t("messages.rules") }} : ATXXI(2025)</a>
 
-  <!--Draft-->
-  <div class="text-h4 text-weight-bolder q-my-md"
-  :class="{ 'text-red-9': total_points > max_points, 'text-amber-9': total_points == max_points, 'text-green-9': total_points < max_points }">
-    {{ total_points }} / {{ max_points }}
-  </div>
+    <main class="draft-layout">
+      <section class="selection-panel">
+        <Tabs :value="tab" class="draft-tabs" @update:value="tab = $event as HullType">
+          <div class="selection-layout">
+            <TabList class="hull-tab-list">
+              <Tab v-for="hull_type in hullTypes" :key="hull_type" :value="hull_type" class="hull-tab">
+                <div class="hull-tab-content">
+                  <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
+                  <span class="hull-tab-name">{{ $t(`types.${hull_type}`) }}</span>
+                  <span class="hull-tab-count">{{ hullCountLabel(hull_type) }}</span>
+                </div>
+              </Tab>
+            </TabList>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 row no-wrap">
-      <div class="col-xs-3 col-sm-4">
-        <q-tabs
-        v-model="tab"
-        vertical
-        class="text-weight-medium full-width"
-        active-color="deep-orange-9">
-          <q-tab v-for="(ships, hull_type) in data"
-          :name="hull_type" no-caps
-          :ripple="false"
-          class="q-my-xs"
-          content-class="full-width" >
-          <div class="row items-center no-wrap justify-between full-width text-subtitle1 text-weight-bold">
-            <img :src="`./hull/${hull_type}.png`" class="hull-icon" />
-            <span class="gt-xs">{{ $t(`types.${hull_type}`) }}</span>
-            <span v-if="hull_type=='Logistics'">{{ logi_count }} / {{ max_number.Logistics }}</span>
-            <span v-else>{{ pick[hull_type].length + flagship_type[hull_type] }} / {{ max_number[hull_type] }}</span>
+            <TabPanels class="ship-panel-list">
+              <TabPanel v-for="(ships, hull_type) in data" :key="hull_type" :value="hull_type" class="ship-panel">
+                <div class="ship-panel-scroll">
+                  <Ship
+                    v-for="(property, ship_name) in ships"
+                    :key="ship_name"
+                    :hull_type="hull_type"
+                    :ship_name="ship_name"
+                    :property="property"
+                    :btns="['add', 'ban']"
+                    :not_pickable="not_pickable(hull_type, ship_name, property)"
+                    :not_bannable="not_bannable(hull_type, ship_name)"
+                    @add_ship="add_ship"
+                    @ban_ship="ban_ship"
+                  />
+                </div>
+              </TabPanel>
+            </TabPanels>
           </div>
-          </q-tab>
-        </q-tabs>
-      </div>
+        </Tabs>
+      </section>
 
-      <div class="col-xs-9 col-sm-8">
-        <q-tab-panels
-        v-model="tab"
-        animated
-        swipeable
-        vertical
-        transition-prev="jump-right"
-        transition-next="jump-right" >
-          <q-tab-panel v-for="(ships, hull_type) in data"
-          :name="hull_type"
-          style="height: 510px;">
-            <Ship v-for="(property, ship_name) in ships" 
-            :hull_type = hull_type
-            :ship_name = ship_name
-            :property="property"
-            :btns="['add', 'ban']"
-            @add_ship="add_ship"
-            :not_pickable="not_pickable(hull_type, ship_name, property)"
-            @ban_ship="ban_ship"
-            :not_bannable="not_bannable(hull_type, ship_name)" />
-          </q-tab-panel>
-        </q-tab-panels>
-      </div>
-    </div>
-
-    <!--Pick list-->
-    <div class="col-xs-12 col-sm-4">
-      <div class="row flex-center q-ma-md">
-        <div class="text-h5 text-green-9 text-weight-bold">{{ $t("messages.pick") }}
-          <span v-if="pick_list.length" class="text-h6"
-          :class="{ 'text-amber-9': pick_list.length >= max_ships, 'text-green-9': pick_list.length < max_ships }"
-          >({{ pick_list.length }} / {{ max_ships }})</span>
+      <aside class="summary-panel">
+        <div class="summary-header">
+          <div class="summary-title summary-title--pick">
+            {{ $t('messages.pick') }}
+            <span
+              v-if="pick_list.length"
+              class="summary-title-count"
+              :class="{
+                'summary-title-count--limit': pick_list.length >= max_ships,
+                'summary-title-count--safe': pick_list.length < max_ships,
+              }"
+            >
+              ({{ pick_list.length }} / {{ max_ships }})
+            </span>
+          </div>
+          <Button
+            v-if="pick_list.length"
+            class="clear-button"
+            severity="contrast"
+            variant="outlined"
+            @click="clear_pick"
+          >
+            <img src="/icons/remove.svg" alt="" class="button-icon-image" />
+            <span>{{ $t('messages.clear') }}</span>
+          </Button>
         </div>
-        <q-btn v-if="pick_list.length" @click="clear_pick" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
-          {{ $t("messages.clear") }}</q-btn>
+
+        <div class="summary-list">
+          <Ship
+            v-for="ship in pick_list"
+            :key="`${ship.hull_type}-${ship.ship_name}`"
+            :hull_type="ship.hull_type"
+            :ship_name="ship.ship_name"
+            :property="ship.property"
+            :btns="['remove']"
+            @remove_ship="remove_ship"
+          />
+        </div>
+      </aside>
+    </main>
+
+    <section class="ban-section">
+      <div class="summary-header">
+        <div class="summary-title summary-title--ban">
+          {{ $t('messages.ban') }}
+          <a class="ban-rules-link" :href="ban_link" target="_blank" rel="noreferrer">
+            ({{ $t('messages.rules') }})
+          </a>
+        </div>
+        <Button
+          v-if="ban_list.length"
+          class="clear-button"
+          severity="contrast"
+          variant="outlined"
+          @click="clear_ban"
+        >
+          <img src="/icons/remove.svg" alt="" class="button-icon-image" />
+          <span>{{ $t('messages.clear') }}</span>
+        </Button>
       </div>
-      <div class="row wrap">
-        <Ship v-for="ship in pick_list"
+
+      <div class="ban-list">
+        <Ship
+          v-for="ship in ban_list"
+          :key="`${ship.hull_type}-${ship.ship_name}`"
           :hull_type="ship.hull_type"
           :ship_name="ship.ship_name"
           :property="ship.property"
-          :btns="['remove']"
-          @remove_ship="remove_ship"
-          class="col-sm-11"
-          />
+          :btns="['unban']"
+          @unban_ship="unban_ship"
+        />
       </div>
-    </div>
-  </div>
-
-  <!--Ban list-->
-  <div class="q-mt-md">
-    <div class="row flex-center q-ma-sm">
-      <div class="text-h5 text-red-9 text-weight-bold">{{ $t("messages.ban") }}
-        <a class="text-h6" :href="ban_link" target="_blank">({{$t("messages.rules")}})</a></div>
-      <q-btn v-if="ban_list.length" @click="clear_ban" class="q-mx-md" color="lime-8"  icon="img:./icons/remove.svg">
-        {{ $t("messages.clear") }}</q-btn>
-    </div>
-    <div class="row" justify-start>
-      <Ship v-for="ship in ban_list"
-      :hull_type="ship.hull_type"
-      :ship_name="ship.ship_name"
-      :property="ship.property"
-      :btns="['unban']"
-      @unban_ship="unban_ship" />
-    </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
-select {
-  height: 35px;
-  width: 90px;
+.page-shell {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toolbar-button,
+.lang-button,
+.clear-button {
+  gap: 0.45rem;
+}
+
+.rules-link,
+.ban-rules-link {
+  font-size: 1.1rem;
+}
+
+.points-summary {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.points-summary--over {
+  color: #c62828;
+}
+
+.points-summary--limit {
+  color: #b7791f;
+}
+
+.points-summary--safe {
+  color: #2e7d32;
+}
+
+.draft-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.selection-panel,
+.summary-panel,
+.ban-section {
+  border: 1px solid var(--surface-border);
+  border-radius: 1rem;
+  background: var(--surface-card);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.selection-panel {
+  padding: 1rem;
+}
+
+.selection-layout {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.hull-tab-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.hull-tab {
+  justify-content: stretch;
+}
+
+.hull-tab-content {
+  display: flex;
+  width: 100%;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.hull-tab-name {
+  flex: 1;
+  text-align: left;
+}
+
+.hull-tab-count {
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.ship-panel {
+  padding: 0;
+}
+
+.ship-panel-scroll {
+  height: 510px;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+
+.summary-panel,
+.ban-section {
+  padding: 1rem;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.summary-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.summary-title--pick {
+  color: #2e7d32;
+}
+
+.summary-title--ban {
+  color: #c62828;
+}
+
+.summary-title-count {
+  font-size: 1.125rem;
+}
+
+.summary-title-count--limit {
+  color: #b7791f;
+}
+
+.summary-title-count--safe {
+  color: #2e7d32;
+}
+
+.summary-list,
+.ban-list {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.ban-section {
+  margin-top: 1rem;
+}
+
+.button-icon-image {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .draft-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-header {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title-spacer {
+    display: none;
+  }
+
+  .page-actions {
+    justify-content: center;
+  }
+
+  .selection-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hull-tab-name {
+    display: none;
+  }
 }
 </style>

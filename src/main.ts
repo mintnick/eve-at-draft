@@ -1,35 +1,33 @@
 import { createApp } from 'vue'
-import './style.css'
+import PrimeVue from 'primevue/config'
+import Aura from '@primeuix/themes/aura'
+import 'primeicons/primeicons.css'
+
 import App from './App.vue'
 import i18n from './i18n'
+import './style.css'
 
-// Quasar stays in place during Phase 1 to avoid changing current behavior.
-import { Quasar } from 'quasar'
-import '@quasar/extras/material-icons/material-icons.css'
-import 'quasar/src/css/index.sass'
-import 'quasar/src/css/flex-addon.sass'
-
-function getThemePreference(): boolean | 'auto' {
-  let themeString = document.cookie
+function isDarkThemeEnabled(): boolean {
+  const themeString = document.cookie
     .split('; ')
     .find((row) => row.startsWith('theme='))
     ?.split('=')[1]
 
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    themeString = 'true'
-  }
-
   if (themeString === 'true') return true
   if (themeString === 'false') return false
 
-  return 'auto'
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
 }
 
+document.documentElement.classList.toggle('app-dark', isDarkThemeEnabled())
+
 createApp(App)
-  .use(Quasar, {
-    plugins: {},
-    config: {
-      dark: getThemePreference(),
+  .use(PrimeVue, {
+    theme: {
+      preset: Aura,
+      options: {
+        darkModeSelector: '.app-dark',
+      },
     },
   })
   .use(i18n)

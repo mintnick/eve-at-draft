@@ -1,81 +1,205 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
-const props = defineProps(['ship_name', 'hull_type', 'property', 'btns', 'not_pickable', 'not_bannable']);
-const emit = defineEmits(['add_ship', 'ban_ship', 'remove_ship', 'unban_ship']);
+import Button from 'primevue/button'
 
-const has_btn = (btn_name) => {
-  return props['btns'] && props['btns'].includes(btn_name);
+const props = defineProps<{
+  ship_name: string
+  hull_type: string
+  property: {
+    points: number
+    ship_id: number
+    original_points?: number
+  }
+  btns?: string[]
+  not_pickable?: boolean
+  not_bannable?: boolean
+}>()
+
+const emit = defineEmits<{
+  add_ship: [hull_type: string, ship_name: string, property: typeof props.property]
+  ban_ship: [hull_type: string, ship_name: string, property: typeof props.property]
+  remove_ship: [hull_type: string, ship_name: string]
+  unban_ship: [hull_type: string, ship_name: string]
+}>()
+
+const has_btn = (btn_name: string) => {
+  return props.btns?.includes(btn_name)
 }
 
 const extra_points = computed(() => {
-  return props['property']['original_points'] && props['property']['points'] > props['property']['original_points'];
-});
+  return Boolean(props.property.original_points && props.property.points > props.property.original_points)
+})
 </script>
 
 <template>
-  <div class="ship-wrapper row no-wrap justify-between items-center text-weight-medium q-my-xs q-mx-sm">
-    <div class="row no-wrap items-center">
-      <img class="gt-xs" :src="`https://images.evetech.net/types/${property.ship_id}/icon`" :alt="`${ship_name} icon`"/>
-      <div v-if="property.points" class="ship-points text-subtitle1 text-weight-bold text-center q-ml-xs"
-      :class="[extra_points ? 'text-red-9' : 'text-green-9']">
-        {{ property.points }}</div>
+  <div class="ship-wrapper">
+    <div class="ship-meta">
+      <div class="ship-points-wrap">
+        <img
+          class="ship-icon"
+          :src="`https://images.evetech.net/types/${property.ship_id}/icon`"
+          :alt="`${ship_name} icon`"
+        />
+        <div
+          v-if="property.points"
+          class="ship-points"
+          :class="[extra_points ? 'ship-points--extra' : 'ship-points--base']"
+        >
+          {{ property.points }}
+        </div>
+      </div>
+
+      <div class="ship-name">
+        <img v-if="hull_type === 'Flagship' && has_btn('remove')" src="/hull/Flagship.png" class="hull-icon hull-icon--small" />
+        <span>{{ $t(`ships.${property.ship_id}`) }}</span>
+      </div>
     </div>
 
-    <div class="row ship-name q-mx-xs items-center">
-      <img v-if="hull_type == 'Flagship' && has_btn('remove')" src="/hull/Flagship.png" class="hull-icon q-mr-xs" />
-      <span>{{ $t(`ships.${property.ship_id}`) }}</span>
-    </div>
+    <div class="ship-actions">
+      <Button
+        v-if="has_btn('add')"
+        rounded
+        text
+        class="ship-action ship-action--add"
+        :disabled="not_pickable"
+        @click="emit('add_ship', hull_type, ship_name, property)"
+      >
+        <img src="/icons/add.svg" alt="" class="ship-action-icon" />
+      </Button>
 
-    <div class="q-gutter-sm">
-      <q-btn unelevated round icon="img:./icons/add.svg" size="sm" color="green-8"
-      v-if="has_btn('add')"
-      :disabled="not_pickable"
-      @click="emit('add_ship', hull_type, ship_name, property)"></q-btn>
-      
-      <q-btn unelevated round icon="img:./icons/ban.svg" size="sm" color="red-8"
-      v-if="hull_type != `Flagship` && has_btn('ban')"
-      :disabled="not_bannable"
-      @click="emit('ban_ship', hull_type, ship_name, property)"></q-btn>
-      
-      <q-btn unelevated round icon="img:./icons/remove.svg" size="sm" color="lime-8"
-      v-if="has_btn('remove')"
-      @click="emit('remove_ship', hull_type, ship_name)"></q-btn>
-      
-      <q-btn unelevated round icon="img:./icons/remove.svg" size="sm" color="lime-8"
-      v-if="has_btn('unban')"
-      @click="emit('unban_ship', hull_type, ship_name)"></q-btn>
+      <Button
+        v-if="hull_type !== 'Flagship' && has_btn('ban')"
+        rounded
+        text
+        class="ship-action ship-action--ban"
+        :disabled="not_bannable"
+        @click="emit('ban_ship', hull_type, ship_name, property)"
+      >
+        <img src="/icons/ban.svg" alt="" class="ship-action-icon" />
+      </Button>
+
+      <Button
+        v-if="has_btn('remove')"
+        rounded
+        text
+        class="ship-action ship-action--remove"
+        @click="emit('remove_ship', hull_type, ship_name)"
+      >
+        <img src="/icons/remove.svg" alt="" class="ship-action-icon" />
+      </Button>
+
+      <Button
+        v-if="has_btn('unban')"
+        rounded
+        text
+        class="ship-action ship-action--remove"
+        @click="emit('unban_ship', hull_type, ship_name)"
+      >
+        <img src="/icons/remove.svg" alt="" class="ship-action-icon" />
+      </Button>
     </div>
   </div>
 </template>
 
 <style scoped>
-.ship-wrapper img {
-  height: 34px;
-  width: 34px;
-}
-
 .ship-wrapper {
-  border-radius: 5%;
-}
-.ship-wrapper:hover{
-  background-color: #a4a4a4;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.ship-wrapper .ship-points {
+.ship-wrapper:hover {
+  background-color: rgba(148, 163, 184, 0.18);
+}
+
+.ship-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.ship-points-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ship-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.ship-points {
   width: 32px;
-  border-style: solid;
-  border-radius: 15%;
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) {
+.ship-points--extra {
+  color: #c62828;
+}
+
+.ship-points--base {
+  color: #2e7d32;
+}
+
+.ship-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+.ship-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hull-icon--small {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.ship-actions {
+  display: flex;
+  gap: 0.25rem;
+  flex: 0 0 auto;
+}
+
+.ship-action {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ship-action-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.ship-action--add {
+  color: #2e7d32;
+}
+
+.ship-action--ban {
+  color: #c62828;
+}
+
+.ship-action--remove {
+  color: #7cb342;
+}
+
+@media (max-width: 600px) {
   .ship-name {
-    font-size: 2.8vw;
+    font-size: 0.85rem;
   }
-}
-
-button:disabled,
-button[disabled] {
-  opacity: 0.4 !important;
 }
 </style>

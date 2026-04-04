@@ -771,22 +771,59 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@quasar/extras@npm:^1.16.13":
-  version: 1.17.0
-  resolution: "@quasar/extras@npm:1.17.0"
-  checksum: 10c0/b303d3e1f71f63302eb89659cca48cdf7eace53963bb9d1b55611ebe3f7d76c4557d0c754983de90ef1a681c31667788bccf55881e5bffb50ca18a4e93b1ff43
+"@primeuix/styled@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "@primeuix/styled@npm:0.7.4"
+  dependencies:
+    "@primeuix/utils": "npm:^0.6.1"
+  checksum: 10c0/e1ed3e6c4a36bd5a6722b8fcd3e79d9fd60a36f174e5d822fd2fa0ecace49508c548228462ff8033961e1aa1bece6ec87c04879097c3691044314629120e968c
   languageName: node
   linkType: hard
 
-"@quasar/vite-plugin@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "@quasar/vite-plugin@npm:1.11.0"
+"@primeuix/styles@npm:^2.0.2":
+  version: 2.0.3
+  resolution: "@primeuix/styles@npm:2.0.3"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.4"
+  checksum: 10c0/d1b0f4b9cb9bad3099dac57efc5dbf2648712ddf914801a43cc21d1bbf4512aec3703e2fb2430fabba70684f73e797e9ff68fe54f60d7b7c2e5a79a1a9a76b7a
+  languageName: node
+  linkType: hard
+
+"@primeuix/themes@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@primeuix/themes@npm:2.0.3"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.4"
+  checksum: 10c0/4e51aa7ce0a73946b5605c485c281e3e5d82937efa5da1881e31aaae810ccbef34e29b888d24823428ad3303fa2825c99a88dfcb53718e15bfee18b63a12a53d
+  languageName: node
+  linkType: hard
+
+"@primeuix/utils@npm:^0.6.1, @primeuix/utils@npm:^0.6.2":
+  version: 0.6.4
+  resolution: "@primeuix/utils@npm:0.6.4"
+  checksum: 10c0/ee5f284c1cd3a5070c5eed6c45d803313574e0db95c45b6fc822ddb76416bbeb86986105ec4912a9d9964cb9bf7736e4b5f316c5406ec3fc16ba8012ba91a9fe
+  languageName: node
+  linkType: hard
+
+"@primevue/core@npm:4.5.4":
+  version: 4.5.4
+  resolution: "@primevue/core@npm:4.5.4"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.4"
+    "@primeuix/utils": "npm:^0.6.2"
   peerDependencies:
-    "@vitejs/plugin-vue": ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    quasar: ^2.16.0
-    vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-    vue: ^3.0.0
-  checksum: 10c0/933e72d017db228f6b8f79703ddaeeed636644c241735ef01648f2613c505292f2c8f6b78231dbb7692d4918d13874e982019dc108ff00fe99933fa5effca8c3
+    vue: ^3.5.0
+  checksum: 10c0/a76b1cbadee3d03da1dd521b07faafccbb004093a440278ab6d8bda5f7d83fb1721700ffa9eb9b8c0e9a397793760fed63e7904d59032a0704cc158008df37e9
+  languageName: node
+  linkType: hard
+
+"@primevue/icons@npm:4.5.4":
+  version: 4.5.4
+  resolution: "@primevue/icons@npm:4.5.4"
+  dependencies:
+    "@primeuix/utils": "npm:^0.6.2"
+    "@primevue/core": "npm:4.5.4"
+  checksum: 10c0/7a6eedd20aa395d6ec25a0ceb530e8fca610ff8c8af6dbd4d7f88599c35f1fe82e09c986f473f43b74046a1dc6c4d67d7a5911b7e3d825a5e9d721daf904dd32
   languageName: node
   linkType: hard
 
@@ -1817,13 +1854,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eve-at-draft@workspace:."
   dependencies:
-    "@quasar/extras": "npm:^1.16.13"
-    "@quasar/vite-plugin": "npm:^1.11.0"
+    "@primeuix/themes": "npm:^2.0.3"
     "@types/node": "npm:^25.5.2"
     "@vitejs/plugin-vue": "npm:^5.2.4"
     "@vue/test-utils": "npm:^2.4.6"
     jsdom: "npm:^29.0.1"
-    quasar: "npm:^2.18.2"
+    primeicons: "npm:^7.0.0"
+    primevue: "npm:^4.5.4"
     sass: "npm:^1.81.0"
     tsx: "npm:^4.21.0"
     typescript: "npm:^6.0.2"
@@ -2534,6 +2571,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"primeicons@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "primeicons@npm:7.0.0"
+  checksum: 10c0/a7f6344d6db49e785d2040b35f8cae761d15bb8f8ee70ade8981d45438245414e913fe7235921122aade2b0a11a032c98b44dc527be2da11aa791ff145099c06
+  languageName: node
+  linkType: hard
+
+"primevue@npm:^4.5.4":
+  version: 4.5.4
+  resolution: "primevue@npm:4.5.4"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.4"
+    "@primeuix/styles": "npm:^2.0.2"
+    "@primeuix/utils": "npm:^0.6.2"
+    "@primevue/core": "npm:4.5.4"
+    "@primevue/icons": "npm:4.5.4"
+  checksum: 10c0/1e006ca3851dc2196d37abd32e49381b4bd6f11b89900943a6006775d313d610150daa087bc5cc9126b734f3b7870d0fe0bd0ace41fa8f1941b3942e58b40898
+  languageName: node
+  linkType: hard
+
 "proc-log@npm:^6.0.0":
   version: 6.1.0
   resolution: "proc-log@npm:6.1.0"
@@ -2552,13 +2609,6 @@ __metadata:
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 10c0/14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
-  languageName: node
-  linkType: hard
-
-"quasar@npm:^2.18.2":
-  version: 2.18.2
-  resolution: "quasar@npm:2.18.2"
-  checksum: 10c0/6d08fee1d53673fddb985451ed0695a015b634b89a358002642438d989ba0f25f2d7cffbd7f03b47b7bf398dda2e206b344e28e3742473c60aa8e9f1cd487a0b
   languageName: node
   linkType: hard
 

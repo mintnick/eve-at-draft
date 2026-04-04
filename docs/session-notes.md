@@ -5,16 +5,18 @@
 - Remote branch exists on GitHub and tracks `origin/codex/refactor`
 - Phase 0 is complete
 - Phase 1 is complete
+- Phase 2 is complete
 - Refactor plan is saved in `docs/refactor-plan.md`
 - Step-by-step checklist is saved in `docs/refactor-todo.md`
 - Baseline and docs index are saved in `docs/current-baseline.md` and `docs/README.md`
 - TypeScript, Vitest, and TS tooling support are in place
+- PrimeVue now replaces Quasar in the app shell and current draft screen
 - Validation commands currently passing:
   - `yarn tools:validate`
   - `yarn typecheck`
   - `yarn test:run`
   - `yarn build`
-- Phase 2 is the current next step
+- Phase 3 is the current next step
 
 ## Agreed direction
 - Keep `Vue`
@@ -25,14 +27,14 @@
 - Add text import/export and clipboard support
 
 ## Recommended next step
-- Start Phase 2 from `docs/refactor-todo.md`
+- Start Phase 3 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - install PrimeVue
-  - replace Quasar bootstrapping
-  - swap current screen components to PrimeVue or thin app-owned wrappers
-  - keep the current layout and behavior stable during the framework migration
+  - define the canonical yearly tournament dataset schema
+  - define the generated year index format
+  - move the current dataset into the new schema as the first migrated year
+  - document where overrides will live for future historical data fixes
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 2 and keep the current UI behavior stable while replacing Quasar with PrimeVue.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 3 by defining the yearly tournament dataset model and migrating the current data into it.`

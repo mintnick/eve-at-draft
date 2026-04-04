@@ -17,17 +17,17 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Keep the app build passing during the structure migration.
 
 ## Phase 2: PrimeVue migration foundation
-- [ ] Install PrimeVue and remove Quasar from the bootstrapping path.
-- [ ] Replace Quasar app setup in the entrypoint with PrimeVue setup.
-- [ ] Identify the minimum component primitives needed for the current UI:
-  - [ ] buttons
-  - [ ] tabs
-  - [ ] select/year picker
-  - [ ] message or toast feedback
-  - [ ] dialog or modal if needed for import/export
-- [ ] Replace Quasar usage in the current screen with PrimeVue or app-owned wrapper components.
-- [ ] Preserve the existing functional layout during the framework migration.
-- [ ] Remove leftover Quasar-specific code and styles once the page is stable.
+- [x] Install PrimeVue and remove Quasar from the bootstrapping path.
+- [x] Replace Quasar app setup in the entrypoint with PrimeVue setup.
+- [x] Identify the minimum component primitives needed for the current UI:
+  - [x] buttons
+  - [x] tabs
+  - [x] select/year picker
+  - [x] message or toast feedback
+  - [x] dialog or modal if needed for import/export
+- [x] Replace Quasar usage in the current screen with PrimeVue or app-owned wrapper components.
+- [x] Preserve the existing functional layout during the framework migration.
+- [x] Remove leftover Quasar-specific code and styles once the page is stable.
 
 ## Phase 3: Data model redesign
 - [ ] Define the canonical schema for a yearly tournament dataset.
@@ -109,7 +109,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 
 ## Suggested review checkpoints
 - [x] Checkpoint A: TypeScript, structure, and test harness are in place.
-- [ ] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.
+- [x] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.
 - [ ] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
 - [ ] Checkpoint D: Rules engine is extracted and behavior matches expected draft logic.
 - [ ] Checkpoint E: Multi-year selection works with the new i18n structure.
