@@ -11,6 +11,7 @@
 - Refactor plan is saved in `docs/refactor-plan.md`
 - Step-by-step checklist is saved in `docs/refactor-todo.md`
 - Baseline and docs index are saved in `docs/current-baseline.md` and `docs/README.md`
+- Official tournament source references and future-session sourcing prompt are saved in `docs/tournament-source-notes.md`
 - TypeScript, Vitest, and TS tooling support are in place
 - PrimeVue now replaces Quasar in the app shell and current draft screen
 - The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset

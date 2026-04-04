@@ -7,6 +7,7 @@
 - [Refactor plan](./docs/refactor-plan.md)
 - [Refactor TODO](./docs/refactor-todo.md)
 - [Session notes](./docs/session-notes.md)
+- [Tournament source notes](./docs/tournament-source-notes.md)
 
 ## Rules: [AT XX (2024)](https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules)
 
