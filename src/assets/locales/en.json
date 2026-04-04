@@ -4,7 +4,8 @@
     "rules": "Rules",
     "clear": "Clear",
     "pick": "Picks",
-    "ban": "Bans"
+    "ban": "Bans",
+    "year": "Tournament"
   },
   "validation": {
     "ship-not-found": "This ship is not available in the selected tournament dataset.",

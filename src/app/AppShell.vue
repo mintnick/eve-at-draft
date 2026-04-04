@@ -1,24 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
+import Select from 'primevue/select'
 
-import tournament from '../../data/generated/2025.json'
-import shipCatalogData from '../../data/generated/ship-catalog.json'
+import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
-import type { ShipCatalog, TournamentDataset } from '@/lib/types'
-
-const currentTournament = tournament as TournamentDataset
-const shipCatalog = shipCatalogData as ShipCatalog
 
 const { locale } = useI18n()
-
-const isDark = ref(document.documentElement.classList.contains('app-dark'))
+const { currentTournament, draftState, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
 
 function toggleTheme() {
-  isDark.value = !isDark.value
-  document.documentElement.classList.toggle('app-dark', isDark.value)
-  document.cookie = `theme=${isDark.value}`
+  uiState.isDark = !uiState.isDark
+  document.documentElement.classList.toggle('app-dark', uiState.isDark)
+  document.cookie = `theme=${uiState.isDark}`
 }
 
 function changeLang(nextLocale: 'en' | 'zh') {
@@ -33,15 +27,31 @@ function changeLang(nextLocale: 'en' | 'zh') {
       <div class="page-title-spacer"></div>
       <div class="page-title">{{ $t('messages.title') }}</div>
       <div class="page-actions">
+        <div class="year-picker">
+          <label class="year-picker-label" for="tournament-year">{{ $t('messages.year') }}</label>
+          <Select
+            id="tournament-year"
+            v-model="tournamentState.selectedYear"
+            :options="tournamentOptions"
+            option-label="label"
+            option-value="value"
+            class="year-select"
+          />
+        </div>
         <Button rounded text class="toolbar-button" @click="toggleTheme">
-          <span :class="['pi', isDark ? 'pi-sun' : 'pi-moon']"></span>
+          <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
         </Button>
         <Button outlined class="lang-button" @click="changeLang('zh')">简体中文</Button>
         <Button outlined class="lang-button" @click="changeLang('en')">English</Button>
       </div>
     </header>
 
-    <DraftScreen :dataset="currentTournament" :ship-catalog="shipCatalog" />
+    <DraftScreen
+      v-if="currentTournament"
+      :key="`${tournamentState.selectedYear}-${draftState.resetVersion}`"
+      :dataset="currentTournament"
+      :ship-catalog="shipCatalog"
+    />
   </div>
 </template>
 
@@ -78,6 +88,23 @@ function changeLang(nextLocale: 'en' | 'zh') {
   gap: 0.45rem;
 }
 
+.year-picker {
+  display: grid;
+  gap: 0.3rem;
+  min-width: 220px;
+}
+
+.year-picker-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.year-select {
+  min-width: 220px;
+}
+
 @media (max-width: 720px) {
   .page-header {
     grid-template-columns: 1fr;
@@ -89,6 +116,11 @@ function changeLang(nextLocale: 'en' | 'zh') {
 
   .page-actions {
     justify-content: center;
+  }
+
+  .year-picker,
+  .year-select {
+    min-width: 100%;
   }
 }
 </style>

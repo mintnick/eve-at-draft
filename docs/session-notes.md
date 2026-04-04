@@ -34,6 +34,12 @@
   - draft page rendering and styling now live under `src/features/draft/components/DraftScreen.vue`
   - invalid draft actions now surface visible localized feedback in the UI
   - draft engine tests now cover flagship classification, logistics cap enforcement, ban/pick conflicts, flagship uniqueness, ship-count cap, and hull-cap behavior
+- Phase 6 is now complete:
+  - app-level state now separates tournament selection, draft reset state, and UI preferences in `src/app/useAppState.ts`
+  - the app now reads available tournament years from `data/generated/index.json`
+  - the app shell can switch the active tournament dataset by selected year
+  - changing the selected tournament resets the current draft screen instance cleanly
+  - the draft UI remains connected to the extracted rules engine through the selected dataset
 
 ## Agreed direction
 - Keep `Vue`
@@ -48,13 +54,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 6 from `docs/refactor-todo.md`
+- Start Phase 7 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - introduce app state that separates tournament selection, draft state, and UI state
-  - add year selection backed by the generated tournament index
-  - reset and reload the draft state when the selected tournament changes
+  - move locale bootstrapping into a dedicated i18n module structure
+  - separate app UI strings from tournament and ship labels
+  - move cookie-backed language and theme persistence out of view components
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 6 by adding tournament year selection and separating tournament state from draft/UI state.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 7 by reorganizing i18n and moving cookie-backed preferences out of the view layer.`

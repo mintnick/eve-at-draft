@@ -67,11 +67,11 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Verify that the migrated current-year behavior still matches the existing app where intended.
 
 ## Phase 6: App state and year selection
-- [ ] Introduce a clear app state model that separates tournament data, draft state, and UI state.
-- [ ] Add tournament year selection backed by the generated year index.
-- [ ] Reset draft state when the selected year changes.
-- [ ] Load the correct tournament dataset and localized labels for the selected year.
-- [ ] Reconnect the current draft UI to the new rules engine outputs.
+- [x] Introduce a clear app state model that separates tournament data, draft state, and UI state.
+- [x] Add tournament year selection backed by the generated year index.
+- [x] Reset draft state when the selected year changes.
+- [x] Load the correct tournament dataset and localized labels for the selected year.
+- [x] Reconnect the current draft UI to the new rules engine outputs.
 
 ## Phase 7: I18n redesign
 - [ ] Move locale setup into a dedicated i18n module structure.

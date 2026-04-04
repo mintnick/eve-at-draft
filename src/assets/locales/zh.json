@@ -4,7 +4,8 @@
     "rules": "规则",
     "clear": "清空",
     "pick": "阵容",
-    "ban": "禁用"
+    "ban": "禁用",
+    "year": "赛事"
   },
   "validation": {
     "ship-not-found": "当前赛事数据中没有这艘舰船。",
