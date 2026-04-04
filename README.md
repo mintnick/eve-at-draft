@@ -1,5 +1,13 @@
 # EVE Online Alliance Tournament Draft Tool
 
+## Refactor docs
+
+- [Docs index](./docs/README.md)
+- [Current baseline](./docs/current-baseline.md)
+- [Refactor plan](./docs/refactor-plan.md)
+- [Refactor TODO](./docs/refactor-todo.md)
+- [Session notes](./docs/session-notes.md)
+
 ## Rules: [AT XX (2024)](https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules)
 
 
