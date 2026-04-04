@@ -29,6 +29,7 @@
 - Support drafting across historical tournament years
 - Improve data pipeline, file structure, and i18n architecture
 - Add text import/export and clipboard support
+- Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
 - Start Phase 4 from `docs/refactor-todo.md`

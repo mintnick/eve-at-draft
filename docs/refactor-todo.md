@@ -107,6 +107,11 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Review generated files and ignore rules so the repo only keeps intended artifacts.
 - [ ] Prepare a final refactor summary describing what changed and any follow-up work.
 
+## Optional backlog
+- [ ] Investigate support for historic team draft presets, starting with champions and later expanding to other past teams.
+- [ ] Identify realistic data sources and fallback/manual curation strategy for team-level historic drafts.
+- [ ] Decide whether team drafts should be stored as reusable presets, reference snapshots, or a separate dataset family.
+
 ## Suggested review checkpoints
 - [x] Checkpoint A: TypeScript, structure, and test harness are in place.
 - [x] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.

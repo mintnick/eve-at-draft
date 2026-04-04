@@ -115,3 +115,8 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 - Historical support is designed for all available years, with repo overrides allowed where upstream data is incomplete.
 - English ship keys are the canonical identifiers for v1 import/export.
 - Switching tournament year clears the current draft instead of attempting cross-year conversion.
+
+## Optional Future Extension
+- Add historic team draft presets or references for past tournament teams, including champions and other notable teams.
+- Treat this as optional because upstream data discovery and normalization may be difficult or incomplete.
+- Keep the current refactor architecture compatible with future team-level datasets, but do not block the active refactor phases on this feature.
