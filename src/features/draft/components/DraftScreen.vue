@@ -73,22 +73,29 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 
 <template>
   <div class="draft-page">
-    <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
-      {{ $t('messages.rules') }} : {{ tournamentLabel }}
-    </a>
+    <section class="draft-hero">
+      <div class="draft-meta">
+        <div class="draft-meta-label">{{ tournamentLabel }}</div>
+        <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
+          {{ $t('messages.rules') }}
+        </a>
+      </div>
 
-    <div
-      class="points-summary"
-      :class="{
-        'points-summary--over': derivedState.totalPoints > dataset.rules.maxPoints,
-        'points-summary--limit': derivedState.totalPoints === dataset.rules.maxPoints,
-        'points-summary--safe': derivedState.totalPoints < dataset.rules.maxPoints,
-      }"
-    >
-      {{ derivedState.totalPoints }} / {{ dataset.rules.maxPoints }}
-    </div>
+      <div
+        class="points-summary"
+        :class="{
+          'points-summary--over': derivedState.totalPoints > dataset.rules.maxPoints,
+          'points-summary--limit': derivedState.totalPoints === dataset.rules.maxPoints,
+          'points-summary--safe': derivedState.totalPoints < dataset.rules.maxPoints,
+        }"
+      >
+        <span class="points-summary-value">{{ derivedState.totalPoints }}</span>
+        <span class="points-summary-divider">/</span>
+        <span class="points-summary-cap">{{ dataset.rules.maxPoints }}</span>
+      </div>
+    </section>
 
-    <Message v-if="feedbackMessages.length" severity="warn" variant="outlined">
+    <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message">
       {{ feedbackMessages[0] }}
     </Message>
 
@@ -217,29 +224,76 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 <style scoped>
 .draft-page {
   display: grid;
+  gap: 1.2rem;
+}
+
+.draft-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 1rem;
+  align-items: end;
+  border: 1px solid var(--app-border);
+  border-radius: 1.5rem;
+  background: var(--app-panel);
+  box-shadow: var(--app-shadow-soft);
+  backdrop-filter: blur(16px);
+  padding: 1.1rem 1.2rem;
+}
+
+.draft-meta {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.draft-meta-label {
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 .rules-link,
 .ban-rules-link {
-  font-size: 1.1rem;
+  font-size: 0.96rem;
+  color: var(--app-text-muted);
 }
 
 .points-summary {
-  font-size: 2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1.2rem;
+  background: var(--app-panel-strong);
+  border: 1px solid var(--app-border);
   font-weight: 800;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.points-summary-value {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.points-summary-divider,
+.points-summary-cap {
+  font-size: 1.15rem;
+  color: var(--app-text-muted);
 }
 
 .points-summary--over {
-  color: #c62828;
+  color: var(--app-danger);
 }
 
 .points-summary--limit {
-  color: #b7791f;
+  color: var(--app-warning);
 }
 
 .points-summary--safe {
-  color: #2e7d32;
+  color: var(--app-success);
+}
+
+.feedback-message {
+  box-shadow: var(--app-shadow-soft);
 }
 
 .draft-layout {
@@ -252,16 +306,17 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 .selection-panel,
 .summary-panel,
 .ban-section {
-  border: 1px solid var(--surface-border);
-  border-radius: 1rem;
-  background: var(--surface-card);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--app-border);
+  border-radius: 1.4rem;
+  background: var(--app-panel);
+  box-shadow: var(--app-shadow-soft);
+  backdrop-filter: blur(16px);
 }
 
 .selection-panel,
 .summary-panel,
 .ban-section {
-  padding: 1rem;
+  padding: 1rem 1rem 1.1rem;
 }
 
 .selection-layout {
@@ -273,17 +328,18 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 
 .hull-tab-list {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .hull-tab {
   justify-content: stretch;
+  border-radius: 1rem;
 }
 
 .hull-tab-content {
   display: flex;
   width: 100%;
-  gap: 0.75rem;
+  gap: 0.8rem;
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
@@ -297,6 +353,7 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 .hull-tab-count {
   white-space: nowrap;
   font-size: 0.95rem;
+  color: var(--app-text-muted);
 }
 
 .ship-panel {
@@ -304,14 +361,14 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 }
 
 .ship-panel-scroll {
-  height: 510px;
+  height: min(62vh, 760px);
   overflow: auto;
-  padding-right: 0.25rem;
+  padding-right: 0.35rem;
 }
 
 .summary-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -321,14 +378,15 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 .summary-title {
   font-size: 1.5rem;
   font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 .summary-title--pick {
-  color: #2e7d32;
+  color: var(--app-success);
 }
 
 .summary-title--ban {
-  color: #c62828;
+  color: var(--app-danger);
 }
 
 .summary-title-count {
@@ -336,21 +394,21 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 }
 
 .summary-title-count--limit {
-  color: #b7791f;
+  color: var(--app-warning);
 }
 
 .summary-title-count--safe {
-  color: #2e7d32;
+  color: var(--app-success);
 }
 
 .summary-list,
 .ban-list {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.4rem;
 }
 
 .ban-section {
-  margin-top: 1rem;
+  margin-top: 0.15rem;
 }
 
 .button-icon-image {
@@ -359,6 +417,11 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 }
 
 @media (max-width: 900px) {
+  .draft-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
   .draft-layout {
     grid-template-columns: 1fr;
   }
@@ -369,8 +432,16 @@ function handleBanShip(hullType: HullType, shipKey: string) {
     grid-template-columns: 1fr;
   }
 
+  .summary-header {
+    justify-content: center;
+  }
+
   .hull-tab-name {
     display: none;
+  }
+
+  .ship-panel-scroll {
+    height: min(52vh, 560px);
   }
 }
 </style>

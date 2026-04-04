@@ -112,12 +112,20 @@ const extra_points = computed(() => {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 0.35rem 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.9rem;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.12);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
 }
 
 .ship-wrapper:hover {
   background-color: rgba(148, 163, 184, 0.18);
+  border-color: var(--app-border);
+  transform: translateY(-1px);
 }
 
 .ship-meta {
@@ -141,17 +149,18 @@ const extra_points = computed(() => {
 .ship-points {
   width: 32px;
   border: 1px solid currentColor;
-  border-radius: 0.4rem;
+  border-radius: 0.55rem;
   text-align: center;
   font-weight: 700;
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .ship-points--extra {
-  color: #c62828;
+  color: var(--app-danger);
 }
 
 .ship-points--base {
-  color: #2e7d32;
+  color: var(--app-success);
 }
 
 .ship-name {
@@ -195,15 +204,15 @@ const extra_points = computed(() => {
 }
 
 .ship-action--add {
-  color: #2e7d32;
+  color: var(--app-success);
 }
 
 .ship-action--ban {
-  color: #c62828;
+  color: var(--app-danger);
 }
 
 .ship-action--remove {
-  color: #7cb342;
+  color: var(--app-accent);
 }
 
 @media (max-width: 600px) {

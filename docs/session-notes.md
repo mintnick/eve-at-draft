@@ -46,6 +46,10 @@
   - cookie-backed locale and theme persistence now live in `src/lib/preferences/index.ts`
   - view components no longer read or write cookies directly for language or theme
   - the header now uses a locale selector instead of hardcoded language buttons, which scales cleanly for future locale additions
+- Phase 8 has started, but is intentionally not finished:
+  - top-level layout, panel styling, points summary, and ship row presentation received a first polish pass
+  - responsive behavior for the header and draft layout was improved
+  - deeper UI/detail tuning is deferred for a later pass before Phase 8 is marked complete
 
 ## Agreed direction
 - Keep `Vue`
@@ -60,13 +64,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 8 from `docs/refactor-todo.md`
+- Start Phase 9 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - refine the year selector and top-level layout now that app state and i18n structure are stable
-  - continue moving page-level styling into clearer feature/app layers where it improves maintainability
-  - tighten responsive behavior and overall visual coherence after the structural refactors
+  - define the `EVE-AT-DRAFT v1` text format
+  - implement draft export and parsing against the extracted rules/state model
+  - add UI affordances for clipboard export and text import with validation feedback
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 8 by polishing the layout, responsive behavior, and visual system now that app state and i18n have been reorganized.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 9 by implementing the draft import/export format and wiring clipboard/text flows into the UI.`

@@ -35,10 +35,13 @@ function changeLang(nextLocale: LocaleCode) {
 <template>
   <div class="page-shell">
     <header class="page-header">
-      <div class="page-title-spacer"></div>
-      <div class="page-title">{{ $t('messages.title') }}</div>
-      <div class="page-actions">
-        <div class="year-picker">
+      <div class="page-title-wrap">
+        <p class="page-eyebrow">Alliance Tournament</p>
+        <div class="page-title">{{ $t('messages.title') }}</div>
+      </div>
+      <div class="page-actions-card">
+        <div class="page-actions">
+          <div class="control-group">
           <label class="year-picker-label" for="tournament-year">{{ $t('messages.year') }}</label>
           <Select
             id="tournament-year"
@@ -48,22 +51,23 @@ function changeLang(nextLocale: LocaleCode) {
             option-value="value"
             class="year-select"
           />
+          </div>
+          <div class="control-group">
+            <label class="year-picker-label" for="app-language">{{ $t('messages.language') }}</label>
+            <Select
+              id="app-language"
+              :model-value="locale"
+              :options="localeOptions"
+              option-label="label"
+              option-value="value"
+              class="year-select"
+              @update:model-value="changeLang($event as LocaleCode)"
+            />
+          </div>
+          <Button rounded text class="toolbar-button" @click="toggleTheme">
+            <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
+          </Button>
         </div>
-        <div class="year-picker">
-          <label class="year-picker-label" for="app-language">{{ $t('messages.language') }}</label>
-          <Select
-            id="app-language"
-            :model-value="locale"
-            :options="localeOptions"
-            option-label="label"
-            option-value="value"
-            class="year-select"
-            @update:model-value="changeLang($event as LocaleCode)"
-          />
-        </div>
-        <Button rounded text class="toolbar-button" @click="toggleTheme">
-          <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
-        </Button>
       </div>
     </header>
 
@@ -79,36 +83,65 @@ function changeLang(nextLocale: LocaleCode) {
 <style scoped>
 .page-shell {
   display: grid;
-  gap: 1rem;
-  padding-top: 1.5rem;
+  gap: 1.25rem;
+  padding-top: 1.75rem;
 }
 
 .page-header {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 1.25rem;
+}
+
+.page-title-wrap {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.page-eyebrow {
+  margin: 0;
+  color: var(--app-accent-warm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .page-title {
-  font-size: 2rem;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
   font-weight: 800;
-  text-align: center;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.page-actions-card {
+  border: 1px solid var(--app-border);
+  border-radius: 1.5rem;
+  background: var(--app-panel);
+  box-shadow: var(--app-shadow-soft);
+  backdrop-filter: blur(16px);
+  padding: 0.85rem;
 }
 
 .page-actions {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  align-items: end;
   flex-wrap: wrap;
 }
 
 .toolbar-button {
   gap: 0.45rem;
+  align-self: center;
+  border: 1px solid var(--app-border);
+  background: var(--app-panel-strong);
+  color: var(--app-text);
 }
 
-.year-picker {
+.control-group {
   display: grid;
   gap: 0.3rem;
   min-width: 220px;
@@ -119,6 +152,7 @@ function changeLang(nextLocale: LocaleCode) {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  color: var(--app-text-muted);
 }
 
 .year-select {
@@ -128,19 +162,24 @@ function changeLang(nextLocale: LocaleCode) {
 @media (max-width: 720px) {
   .page-header {
     grid-template-columns: 1fr;
+    align-items: stretch;
   }
 
-  .page-title-spacer {
-    display: none;
+  .page-actions-card {
+    padding: 0.75rem;
   }
 
   .page-actions {
-    justify-content: center;
+    display: grid;
   }
 
-  .year-picker,
+  .control-group,
   .year-select {
     min-width: 100%;
+  }
+
+  .toolbar-button {
+    justify-self: stretch;
   }
 }
 </style>

@@ -81,6 +81,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Confirm the new structure can add a future locale without changing feature code.
 
 ## Phase 8: UI polish
+- [ ] First polish pass landed, but detailed UI cleanup is intentionally deferred for a later pass.
 - [ ] Refine the overall layout and spacing now that PrimeVue migration and app state are stable.
 - [ ] Replace transitional styling with a more coherent visual system for buttons, tabs, panels, and lists.
 - [ ] Continue moving page-level styles out of `App.vue` into clearer app or feature style files where it improves maintainability.
