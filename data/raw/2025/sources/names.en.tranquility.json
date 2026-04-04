@@ -186,6 +186,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 85229,
+    "name": "Cobra"
+  },
+  {
+    "category": "inventory_type",
     "id": 638,
     "name": "Raven"
   },
@@ -208,6 +213,11 @@
     "category": "inventory_type",
     "id": 60765,
     "name": "Raiju"
+  },
+  {
+    "category": "inventory_type",
+    "id": 85062,
+    "name": "Sidewinder"
   },
   {
     "category": "inventory_type",
@@ -371,11 +381,6 @@
   },
   {
     "category": "inventory_type",
-    "id": 33155,
-    "name": "Harbinger Navy Issue"
-  },
-  {
-    "category": "inventory_type",
     "id": 33151,
     "name": "Brutix Navy Issue"
   },
@@ -486,6 +491,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 29984,
+    "name": "Tengu"
+  },
+  {
+    "category": "inventory_type",
     "id": 29988,
     "name": "Proteus"
   },
@@ -493,6 +503,11 @@
     "category": "inventory_type",
     "id": 29990,
     "name": "Loki"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11957,
+    "name": "Falcon"
   },
   {
     "category": "inventory_type",
@@ -596,6 +611,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 33818,
+    "name": "Orthrus"
+  },
+  {
+    "category": "inventory_type",
     "id": 47270,
     "name": "Vedmak"
   },
@@ -618,6 +638,11 @@
     "category": "inventory_type",
     "id": 17722,
     "name": "Vigilant"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29337,
+    "name": "Augoror Navy Issue"
   },
   {
     "category": "inventory_type",
@@ -776,6 +801,16 @@
   },
   {
     "category": "inventory_type",
+    "id": 73796,
+    "name": "Catalyst Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 34317,
+    "name": "Confessor"
+  },
+  {
+    "category": "inventory_type",
     "id": 35683,
     "name": "Hecate"
   },
@@ -898,6 +933,11 @@
     "category": "inventory_type",
     "id": 11365,
     "name": "Vengeance"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11393,
+    "name": "Retribution"
   },
   {
     "category": "inventory_type",
@@ -1033,6 +1073,16 @@
     "category": "inventory_type",
     "id": 17812,
     "name": "Republic Fleet Firetail"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37454,
+    "name": "Vigil Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11184,
+    "name": "Crusader"
   },
   {
     "category": "inventory_type",
@@ -1296,11 +1346,6 @@
   },
   {
     "category": "inventory_type",
-    "id": 33083,
-    "name": "Violator"
-  },
-  {
-    "category": "inventory_type",
     "id": 596,
     "name": "Impairor"
   },
@@ -1321,57 +1366,12 @@
   },
   {
     "category": "inventory_type",
-    "id": 85229,
-    "name": "Cobra"
+    "id": 33083,
+    "name": "Violator"
   },
   {
     "category": "inventory_type",
-    "id": 85062,
-    "name": "Sidewinder"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29984,
-    "name": "Tengu"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11957,
-    "name": "Falcon"
-  },
-  {
-    "category": "inventory_type",
-    "id": 34317,
-    "name": "Confessor"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11393,
-    "name": "Retribution"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11184,
-    "name": "Crusader"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29337,
-    "name": "Augoror Navy Issue"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33818,
-    "name": "Orthrus"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73796,
-    "name": "Catalyst Navy Issue"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37454,
-    "name": "Vigil Fleet Issue"
+    "id": 33155,
+    "name": "Harbinger Navy Issue"
   }
 ]

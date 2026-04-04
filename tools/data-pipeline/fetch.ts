@@ -35,6 +35,9 @@ export async function fetchTournamentSource(year: number): Promise<void> {
   }).then((response) => response.json() as Promise<{ inventory_types?: { id: number; name: string }[] }>)
 
   const inventoryTypes = idsResponse.inventory_types ?? []
+  const filteredIdsResponse = {
+    inventory_types: inventoryTypes,
+  }
   const shipIds = inventoryTypes.map((entry) => entry.id)
 
   const [enNames, zhNames] = await Promise.all([
@@ -83,7 +86,7 @@ export async function fetchTournamentSource(year: number): Promise<void> {
   }
 
   await writeTextFile(rulesHtml, config.sourcesDir, 'rules.html')
-  await writeJsonFile(idsResponse, config.sourcesDir, 'ids.tranquility.json')
+  await writeJsonFile(filteredIdsResponse, config.sourcesDir, 'ids.tranquility.json')
   await writeJsonFile(enNames, config.sourcesDir, 'names.en.tranquility.json')
   await writeJsonFile(zhNames, config.sourcesDir, 'names.zh.serenity.json')
   await writeJsonFile(source, config.rawDir, config.sourceFile)

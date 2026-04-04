@@ -181,6 +181,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 85229,
+    "name": "眼镜蛇级"
+  },
+  {
+    "category": "inventory_type",
     "id": 638,
     "name": "乌鸦级"
   },
@@ -203,6 +208,11 @@
     "category": "inventory_type",
     "id": 60765,
     "name": "雷兽级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 85062,
+    "name": "侧进蛇级"
   },
   {
     "category": "inventory_type",
@@ -481,6 +491,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 29984,
+    "name": "金鹏级"
+  },
+  {
+    "category": "inventory_type",
     "id": 29988,
     "name": "海神级"
   },
@@ -488,6 +503,11 @@
     "category": "inventory_type",
     "id": 29990,
     "name": "洛基级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11957,
+    "name": "战隼级"
   },
   {
     "category": "inventory_type",
@@ -786,6 +806,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 34317,
+    "name": "忏悔者级"
+  },
+  {
+    "category": "inventory_type",
     "id": 35683,
     "name": "赫卡特级"
   },
@@ -908,6 +933,11 @@
     "category": "inventory_type",
     "id": 11365,
     "name": "惩戒级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11393,
+    "name": "审判者级"
   },
   {
     "category": "inventory_type",
@@ -1338,35 +1368,5 @@
     "category": "inventory_type",
     "id": 588,
     "name": "死神号"
-  },
-  {
-    "category": "inventory_type",
-    "id": 85229,
-    "name": "眼镜蛇级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 85062,
-    "name": "侧进蛇级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29984,
-    "name": "金鹏级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11957,
-    "name": "战隼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 34317,
-    "name": "忏悔者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11393,
-    "name": "审判者级"
   }
 ]
