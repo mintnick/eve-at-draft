@@ -74,6 +74,9 @@
 - Phase 11 has started:
   - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
   - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years
+  - placeholder internal README files were updated to describe the current structure instead of future-tense refactor intent
+  - `docs/refactor-summary.md` now captures the resulting architecture, supported years, validation status, and deferred follow-up work
+  - generated artifact and ignore-rule review is complete; raw upstream captures and generated tournament datasets are intentionally tracked, while transient build outputs remain ignored
 
 ## Agreed direction
 - Keep `Vue`
@@ -90,11 +93,11 @@
 ## Recommended next step
 - Continue Phase 11 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - review generated files and ignore rules now that 2024 raw and generated artifacts are checked in
   - remove or quarantine any remaining deprecated legacy files that are no longer part of the new pipeline or app path
-  - prepare the final refactor summary and call out deferred work, especially the unfinished Phase 8 UI polish
+  - decide whether any remaining scaffold README files should stay or be folded into root/docs documentation
+  - close Phase 11 after the final legacy-file pass and a short final wrap-up commit
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by reviewing generated artifacts and legacy leftovers, then prepare the final refactor summary and remaining follow-up list.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/refactor-summary.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by doing the last legacy-file cleanup pass and deciding whether Checkpoint I can be closed.`

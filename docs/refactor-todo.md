@@ -117,8 +117,8 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Remove deprecated legacy files and dead code once replacements are in place.
 - [x] Update README to reflect the new architecture, tooling commands, and multi-year support.
 - [x] Add a short maintainer guide for refreshing tournament data.
-- [ ] Review generated files and ignore rules so the repo only keeps intended artifacts.
-- [ ] Prepare a final refactor summary describing what changed and any follow-up work.
+- [x] Review generated files and ignore rules so the repo only keeps intended artifacts.
+- [x] Prepare a final refactor summary describing what changed and any follow-up work.
 
 ## Optional backlog
 - [ ] Investigate support for historic team draft presets, starting with champions and later expanding to other past teams.
