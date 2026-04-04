@@ -12,7 +12,7 @@ import Ship from './components/Ship.vue'
 import { useI18n } from 'vue-i18n'
 import type { HullType, ShipCatalog, TournamentDataset, TournamentHullRules } from './lib/types'
 
-const currentTournament = tournament as TournamentDataset
+const currentTournament = tournament as unknown as TournamentDataset
 const shipCatalog = shipCatalogData as ShipCatalog
 const data = currentTournament.hulls as TournamentHullRules
 type LogisticsEntry = {

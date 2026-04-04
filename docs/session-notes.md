@@ -14,9 +14,10 @@
 - PrimeVue now replaces Quasar in the app shell and current draft screen
 - The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset
 - The app resolves ship names through `data/generated/ship-catalog.json`
-- `tools/migrate-legacy-data.ts` generates the shared ship catalog, the current yearly dataset, and `data/generated/index.json`
+- The TypeScript pipeline now owns fetch/build/validate flow via `yarn data:fetch`, `yarn data:build`, `yarn data:validate`, and `yarn data:refresh`
+- `data/raw/2025/source.json` is now the raw snapshot input for the current generated outputs
 - Validation commands currently passing:
-  - `yarn data:migrate-legacy`
+  - `yarn data:refresh`
   - `yarn tools:validate`
   - `yarn typecheck`
   - `yarn test:run`
@@ -38,12 +39,12 @@
 ## Recommended next step
 - Start Phase 4 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - extend the current migration script into a real fetch/normalize pipeline
-  - add validation for duplicates, translations, hull mappings, and rule integrity
-  - generate the current tournament dataset through the new pipeline contract
-  - document the refresh flow for adding future tournament years
+  - add a real upstream fetch provider instead of the current legacy-repo snapshot source
+  - keep the fetch/build/validate contract stable while expanding source coverage
+  - preserve the generated shared ship catalog plus yearly dataset outputs
+  - continue documenting how to add future tournament years
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 4 by turning the current legacy migration into the real data fetch/normalize pipeline.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 4 by replacing the current legacy-repo snapshot fetch provider with a more real upstream source provider.`

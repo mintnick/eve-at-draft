@@ -16,6 +16,7 @@ async function main(): Promise<void> {
     ensureExists('data/generated'),
     ensureExists('docs/refactor-plan.md'),
     ensureExists('docs/refactor-todo.md'),
+    ensureExists('tools/data-pipeline/cli.ts'),
   ])
 
   console.log('Tooling baseline verified.')

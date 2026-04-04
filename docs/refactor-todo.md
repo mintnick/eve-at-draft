@@ -39,18 +39,18 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Revise the schema so ship identity and localized names live in a shared cross-year ship catalog instead of being duplicated per year.
 
 ## Phase 4: Data pipeline consolidation
-- [ ] Replace the current scattered Python scripts with a unified TypeScript data pipeline.
+- [x] Replace the current scattered Python scripts with a unified TypeScript data pipeline.
 - [ ] Implement fetch commands for upstream source collection.
-- [ ] Implement normalization from upstream/raw inputs into the canonical yearly schema.
-- [ ] Generate and validate a shared ship catalog reused across all tournament years.
-- [ ] Implement override merging for exceptional data fixes.
-- [ ] Implement validation checks for:
-  - [ ] duplicate ship ids
-  - [ ] missing required translations
-  - [ ] invalid hull mappings
-  - [ ] broken rule definitions
-- [ ] Generate the first app-consumable tournament snapshot and year index from the new pipeline.
-- [ ] Document how to refresh or add a tournament year.
+- [x] Implement normalization from upstream/raw inputs into the canonical yearly schema.
+- [x] Generate and validate a shared ship catalog reused across all tournament years.
+- [x] Implement override merging for exceptional data fixes.
+- [x] Implement validation checks for:
+  - [x] duplicate ship ids
+  - [x] missing required translations
+  - [x] invalid hull mappings
+  - [x] broken rule definitions
+- [x] Generate the first app-consumable tournament snapshot and year index from the new pipeline.
+- [x] Document how to refresh or add a tournament year.
 
 ## Phase 5: Rules engine extraction
 - [ ] Extract draft logic out of the main view into pure rule-engine modules.

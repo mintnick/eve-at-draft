@@ -8,7 +8,10 @@
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest",
     "test:run": "vitest run",
-    "data:migrate-legacy": "tsx ./tools/migrate-legacy-data.ts",
+    "data:fetch": "tsx ./tools/data-pipeline/cli.ts fetch 2025",
+    "data:build": "tsx ./tools/data-pipeline/cli.ts build 2025",
+    "data:validate": "tsx ./tools/data-pipeline/cli.ts validate 2025",
+    "data:refresh": "tsx ./tools/data-pipeline/cli.ts refresh 2025",
     "tools:validate": "tsx ./tools/validate-data.ts",
     "build": "vite build",
     "preview": "vite preview"
