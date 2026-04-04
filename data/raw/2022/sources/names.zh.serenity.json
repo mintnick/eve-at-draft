@@ -11,8 +11,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 33820,
-    "name": "巴盖斯级"
+    "id": 17918,
+    "name": "响尾蛇级"
   },
   {
     "category": "inventory_type",
@@ -21,8 +21,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 17920,
-    "name": "巴戈龙级"
+    "id": 22436,
+    "name": "寡妇级"
   },
   {
     "category": "inventory_type",
@@ -31,18 +31,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 17918,
-    "name": "响尾蛇级"
-  },
-  {
-    "category": "inventory_type",
     "id": 588,
     "name": "死神号"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17736,
-    "name": "噩梦级"
   },
   {
     "category": "inventory_type",
@@ -51,18 +41,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 60764,
-    "name": "猎獒级"
-  },
-  {
-    "category": "inventory_type",
     "id": 591,
     "name": "巨神兵级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17740,
-    "name": "惩戒者级"
   },
   {
     "category": "inventory_type",
@@ -71,8 +51,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 22436,
-    "name": "寡妇级"
+    "id": 17732,
+    "name": "狂暴级舰队型"
   },
   {
     "category": "inventory_type",
@@ -81,13 +61,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 583,
-    "name": "秃鹫级"
+    "id": 32311,
+    "name": "台风级舰队型"
   },
   {
     "category": "inventory_type",
-    "id": 77726,
-    "name": "西布勒级"
+    "id": 583,
+    "name": "秃鹫级"
   },
   {
     "category": "inventory_type",
@@ -96,23 +76,23 @@
   },
   {
     "category": "inventory_type",
-    "id": 74316,
-    "name": "贝斯特拉级"
-  },
-  {
-    "category": "inventory_type",
     "id": 603,
     "name": "小鹰级"
   },
   {
     "category": "inventory_type",
-    "id": 17738,
-    "name": "马克瑞级"
+    "id": 54733,
+    "name": "雷裔级"
   },
   {
     "category": "inventory_type",
     "id": 605,
     "name": "苍鹭级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 49713,
+    "name": "扎玛德级"
   },
   {
     "category": "inventory_type",
@@ -126,8 +106,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 32305,
-    "name": "末日沙场级海军型"
+    "id": 52252,
+    "name": "伊基图萨级"
   },
   {
     "category": "inventory_type",
@@ -141,18 +121,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 17726,
-    "name": "灾难级海军型"
-  },
-  {
-    "category": "inventory_type",
     "id": 585,
     "name": "伐木者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17636,
-    "name": "乌鸦级海军型"
   },
   {
     "category": "inventory_type",
@@ -161,18 +131,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 17728,
-    "name": "万王宝座级海军型"
-  },
-  {
-    "category": "inventory_type",
     "id": 587,
     "name": "裂谷级"
   },
   {
     "category": "inventory_type",
-    "id": 17732,
-    "name": "狂暴级舰队型"
+    "id": 33157,
+    "name": "暴风级舰队型"
   },
   {
     "category": "inventory_type",
@@ -186,18 +151,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 54733,
-    "name": "雷裔级"
+    "id": 17715,
+    "name": "毒蜥级"
   },
   {
     "category": "inventory_type",
     "id": 582,
     "name": "矮脚鸡级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 60765,
-    "name": "雷兽级"
   },
   {
     "category": "inventory_type",
@@ -211,13 +171,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 2161,
-    "name": "磨难级"
+    "id": 49712,
+    "name": "洛迪瓦级"
   },
   {
     "category": "inventory_type",
-    "id": 78369,
-    "name": "基兹里尔级"
+    "id": 2161,
+    "name": "磨难级"
   },
   {
     "category": "inventory_type",
@@ -226,8 +186,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 49713,
-    "name": "扎玛德级"
+    "id": 52254,
+    "name": "德拉古级"
   },
   {
     "category": "inventory_type",
@@ -236,18 +196,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 49711,
-    "name": "德雷卡瓦级"
+    "id": 47270,
+    "name": "维德马克级"
   },
   {
     "category": "inventory_type",
     "id": 3766,
     "name": "守夜者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78414,
-    "name": "沙帕什级"
   },
   {
     "category": "inventory_type",
@@ -261,8 +216,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 29990,
-    "name": "洛基级"
+    "id": 49710,
+    "name": "奇奇莫拉级"
   },
   {
     "category": "inventory_type",
@@ -271,18 +226,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 72811,
-    "name": "飓风级舰队型"
-  },
-  {
-    "category": "inventory_type",
     "id": 37455,
     "name": "狮鹫级海军型"
   },
   {
     "category": "inventory_type",
-    "id": 74141,
-    "name": "恐狼级"
+    "id": 52250,
+    "name": "涅伽尔级"
   },
   {
     "category": "inventory_type",
@@ -296,13 +246,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 17812,
-    "name": "共和舰队火尾鸡级"
+    "id": 54732,
+    "name": "唤风级"
   },
   {
     "category": "inventory_type",
-    "id": 20125,
-    "name": "诅咒级"
+    "id": 17812,
+    "name": "共和舰队火尾鸡级"
   },
   {
     "category": "inventory_type",
@@ -311,18 +261,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 11957,
-    "name": "战隼级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11365,
     "name": "惩戒级"
   },
   {
     "category": "inventory_type",
-    "id": 11959,
-    "name": "白嘴鸦级"
+    "id": 17713,
+    "name": "刺刀级舰队型"
   },
   {
     "category": "inventory_type",
@@ -331,8 +276,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 11969,
-    "name": "埃拉兹级"
+    "id": 47269,
+    "name": "达玛维克级"
   },
   {
     "category": "inventory_type",
@@ -341,23 +286,18 @@
   },
   {
     "category": "inventory_type",
-    "id": 11971,
-    "name": "拉克希斯级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11381,
     "name": "女妖级"
   },
   {
     "category": "inventory_type",
-    "id": 52252,
-    "name": "伊基图萨级"
+    "id": 12042,
+    "name": "伊什库尔级"
   },
   {
     "category": "inventory_type",
-    "id": 12042,
-    "name": "伊什库尔级"
+    "id": 17930,
+    "name": "潜龙级"
   },
   {
     "category": "inventory_type",
@@ -376,11 +316,6 @@
   },
   {
     "category": "inventory_type",
-    "id": 17715,
-    "name": "毒蜥级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11188,
     "name": "咒逐级"
   },
@@ -388,11 +323,6 @@
     "category": "inventory_type",
     "id": 11192,
     "name": "秃鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 49712,
-    "name": "洛迪瓦级"
   },
   {
     "category": "inventory_type",
@@ -411,18 +341,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 29337,
-    "name": "奥格诺级海军型"
-  },
-  {
-    "category": "inventory_type",
     "id": 12032,
     "name": "蝎尾怪级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29344,
-    "name": "送葬者级海军型"
   },
   {
     "category": "inventory_type",
@@ -431,18 +351,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 47270,
-    "name": "维德马克级"
-  },
-  {
-    "category": "inventory_type",
     "id": 12034,
     "name": "猎犬级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33818,
-    "name": "奥苏斯级"
   },
   {
     "category": "inventory_type",
@@ -461,18 +371,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 632,
-    "name": "黑鸟级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11387,
     "name": "土狼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 52254,
-    "name": "德拉古级"
   },
   {
     "category": "inventory_type",
@@ -481,18 +381,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 633,
-    "name": "星空级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11186,
     "name": "咒灭级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17720,
-    "name": "塞纳波级"
   },
   {
     "category": "inventory_type",
@@ -501,8 +391,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 49710,
-    "name": "奇奇莫拉级"
+    "id": 54731,
+    "name": "破天级"
   },
   {
     "category": "inventory_type",
@@ -526,28 +416,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 628,
-    "name": "主宰级"
-  },
-  {
-    "category": "inventory_type",
     "id": 11198,
     "name": "短剑级"
   },
   {
     "category": "inventory_type",
-    "id": 54732,
-    "name": "唤风级"
-  },
-  {
-    "category": "inventory_type",
     "id": 37457,
     "name": "执事级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37481,
-    "name": "庞蒂菲斯级"
   },
   {
     "category": "inventory_type",
@@ -576,18 +451,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 34828,
-    "name": "寒鸦级"
-  },
-  {
-    "category": "inventory_type",
     "id": 16238,
     "name": "海燕级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 52250,
-    "name": "涅伽尔级"
   },
   {
     "category": "inventory_type",
@@ -601,18 +466,8 @@
   },
   {
     "category": "inventory_type",
-    "id": 630,
-    "name": "挑战级"
-  },
-  {
-    "category": "inventory_type",
     "id": 32872,
     "name": "阿尔格斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 624,
-    "name": "暴君级"
   },
   {
     "category": "inventory_type",
@@ -621,23 +476,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 621,
-    "name": "狞獾级"
-  },
-  {
-    "category": "inventory_type",
     "id": 32878,
     "name": "弯刀级"
   },
   {
     "category": "inventory_type",
-    "id": 626,
-    "name": "狂怒者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17930,
-    "name": "潜龙级"
+    "id": 37481,
+    "name": "庞蒂菲斯级"
   },
   {
     "category": "inventory_type",
@@ -651,11 +496,6 @@
   },
   {
     "category": "inventory_type",
-    "id": 47269,
-    "name": "达玛维克级"
-  },
-  {
-    "category": "inventory_type",
     "id": 37480,
     "name": "天梯级"
   },
@@ -663,11 +503,6 @@
     "category": "inventory_type",
     "id": 22452,
     "name": "异端级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17926,
-    "name": "凝血级"
   },
   {
     "category": "inventory_type",
@@ -691,6 +526,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 34828,
+    "name": "寒鸦级"
+  },
+  {
+    "category": "inventory_type",
     "id": 35683,
     "name": "赫卡特级"
   },
@@ -698,6 +538,26 @@
     "category": "inventory_type",
     "id": 34562,
     "name": "斯威普级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 628,
+    "name": "主宰级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 632,
+    "name": "黑鸟级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 633,
+    "name": "星空级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 630,
+    "name": "挑战级"
   },
   {
     "category": "inventory_type",
@@ -716,18 +576,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 77114,
-    "name": "变形级"
-  },
-  {
-    "category": "inventory_type",
     "id": 631,
     "name": "镰刀级"
   },
   {
     "category": "inventory_type",
-    "id": 54731,
-    "name": "破天级"
+    "id": 624,
+    "name": "暴君级"
   },
   {
     "category": "inventory_type",
@@ -741,8 +596,13 @@
   },
   {
     "category": "inventory_type",
-    "id": 81008,
-    "name": "疾风级"
+    "id": 621,
+    "name": "狞獾级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 626,
+    "name": "狂怒者级"
   },
   {
     "category": "inventory_type",
@@ -761,6 +621,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 29337,
+    "name": "奥格诺级海军型"
+  },
+  {
+    "category": "inventory_type",
     "id": 17709,
     "name": "启示级海军型"
   },
@@ -776,6 +641,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 29344,
+    "name": "送葬者级海军型"
+  },
+  {
+    "category": "inventory_type",
     "id": 17843,
     "name": "狂怒者级海军型"
   },
@@ -783,11 +653,6 @@
     "category": "inventory_type",
     "id": 29336,
     "name": "镰刀级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17713,
-    "name": "刺刀级舰队型"
   },
   {
     "category": "inventory_type",
@@ -871,8 +736,33 @@
   },
   {
     "category": "inventory_type",
+    "id": 20125,
+    "name": "诅咒级"
+  },
+  {
+    "category": "inventory_type",
     "id": 11965,
     "name": "皮尔格里姆级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11957,
+    "name": "战隼级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11959,
+    "name": "白嘴鸦级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11969,
+    "name": "埃拉兹级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11971,
+    "name": "拉克希斯级"
   },
   {
     "category": "inventory_type",
@@ -898,6 +788,11 @@
     "category": "inventory_type",
     "id": 29988,
     "name": "海神级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29990,
+    "name": "洛基级"
   },
   {
     "category": "inventory_type",
@@ -973,11 +868,6 @@
     "category": "inventory_type",
     "id": 33151,
     "name": "布鲁提克斯级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33157,
-    "name": "暴风级舰队型"
   },
   {
     "category": "inventory_type",
@@ -1086,18 +976,33 @@
   },
   {
     "category": "inventory_type",
+    "id": 17726,
+    "name": "灾难级海军型"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32305,
+    "name": "末日沙场级海军型"
+  },
+  {
+    "category": "inventory_type",
     "id": 32309,
     "name": "毒蝎级海军型"
   },
   {
     "category": "inventory_type",
-    "id": 32307,
-    "name": "多米尼克斯级海军型"
+    "id": 17636,
+    "name": "乌鸦级海军型"
   },
   {
     "category": "inventory_type",
-    "id": 32311,
-    "name": "台风级舰队型"
+    "id": 17728,
+    "name": "万王宝座级海军型"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32307,
+    "name": "多米尼克斯级海军型"
   },
   {
     "category": "inventory_type",
@@ -1201,6 +1106,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 17926,
+    "name": "凝血级"
+  },
+  {
+    "category": "inventory_type",
     "id": 33816,
     "name": "加姆级"
   },
@@ -1221,8 +1131,18 @@
   },
   {
     "category": "inventory_type",
+    "id": 17720,
+    "name": "塞纳波级"
+  },
+  {
+    "category": "inventory_type",
     "id": 17922,
     "name": "阿什姆级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33818,
+    "name": "奥苏斯级"
   },
   {
     "category": "inventory_type",
@@ -1238,6 +1158,31 @@
     "category": "inventory_type",
     "id": 17722,
     "name": "警惕级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17738,
+    "name": "马克瑞级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17920,
+    "name": "巴戈龙级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33820,
+    "name": "巴盖斯级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17736,
+    "name": "噩梦级"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17740,
+    "name": "惩戒者级"
   },
   {
     "category": "inventory_type",
@@ -1273,80 +1218,5 @@
     "category": "inventory_type",
     "id": 33083,
     "name": "违逆者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72907,
-    "name": "富豪级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72904,
-    "name": "苍鹭级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72913,
-    "name": "伊米卡斯级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72903,
-    "name": "探索级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73794,
-    "name": "长尾鲛级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73795,
-    "name": "海燕级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73789,
-    "name": "强制者级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73796,
-    "name": "促进级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72812,
-    "name": "猛鲑级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72872,
-    "name": "先知级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72869,
-    "name": "弥洱米顿级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78366,
-    "name": "短吻鳄级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78367,
-    "name": "曼巴级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78333,
-    "name": "梅库巴级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 81046,
-    "name": "暴雨级"
   }
 ]

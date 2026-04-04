@@ -2,1351 +2,1221 @@
   {
     "category": "inventory_type",
     "id": 47271,
-    "name": "勒沙克级"
+    "name": "Leshak"
   },
   {
     "category": "inventory_type",
     "id": 596,
-    "name": "帝国号"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33820,
-    "name": "巴盖斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 601,
-    "name": "伊毕斯号"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17920,
-    "name": "巴戈龙级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 606,
-    "name": "维拉托尔号"
+    "name": "Impairor"
   },
   {
     "category": "inventory_type",
     "id": 17918,
-    "name": "响尾蛇级"
+    "name": "Rattlesnake"
   },
   {
     "category": "inventory_type",
-    "id": 588,
-    "name": "死神号"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17736,
-    "name": "噩梦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 589,
-    "name": "刽子手级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 60764,
-    "name": "猎獒级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 591,
-    "name": "巨神兵级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17740,
-    "name": "惩戒者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 597,
-    "name": "惩罚者级"
+    "id": 601,
+    "name": "Ibis"
   },
   {
     "category": "inventory_type",
     "id": 22436,
-    "name": "寡妇级"
+    "name": "Widow"
   },
   {
     "category": "inventory_type",
-    "id": 29248,
-    "name": "富豪级"
+    "id": 606,
+    "name": "Velator"
   },
   {
     "category": "inventory_type",
-    "id": 583,
-    "name": "秃鹫级"
+    "id": 588,
+    "name": "Reaper"
   },
   {
     "category": "inventory_type",
-    "id": 77726,
-    "name": "西布勒级"
+    "id": 589,
+    "name": "Executioner"
   },
   {
     "category": "inventory_type",
-    "id": 602,
-    "name": "茶隼级"
+    "id": 591,
+    "name": "Tormentor"
   },
   {
     "category": "inventory_type",
-    "id": 74316,
-    "name": "贝斯特拉级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 603,
-    "name": "小鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17738,
-    "name": "马克瑞级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 605,
-    "name": "苍鹭级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 608,
-    "name": "阿特龙级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 593,
-    "name": "特里斯坦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32305,
-    "name": "末日沙场级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 594,
-    "name": "因卡萨斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 607,
-    "name": "伊米卡斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17726,
-    "name": "灾难级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 585,
-    "name": "伐木者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17636,
-    "name": "乌鸦级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 598,
-    "name": "分裂者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17728,
-    "name": "万王宝座级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 587,
-    "name": "裂谷级"
+    "id": 597,
+    "name": "Punisher"
   },
   {
     "category": "inventory_type",
     "id": 17732,
-    "name": "狂暴级舰队型"
+    "name": "Tempest Fleet Issue"
   },
   {
     "category": "inventory_type",
-    "id": 586,
-    "name": "探索级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 590,
-    "name": "检察官级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 54733,
-    "name": "雷裔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 582,
-    "name": "矮脚鸡级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 60765,
-    "name": "雷兽级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 592,
-    "name": "纳维达斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 599,
-    "name": "爆发级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 2161,
-    "name": "磨难级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78369,
-    "name": "基兹里尔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 584,
-    "name": "狮鹫级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 49713,
-    "name": "扎玛德级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 609,
-    "name": "毛鲁斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 49711,
-    "name": "德雷卡瓦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 3766,
-    "name": "守夜者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78414,
-    "name": "沙帕什级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17703,
-    "name": "帝国海军切割机级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37453,
-    "name": "磨难级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29990,
-    "name": "洛基级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17619,
-    "name": "加达里海军霍克比尔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72811,
-    "name": "飓风级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37455,
-    "name": "狮鹫级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 74141,
-    "name": "恐狼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17841,
-    "name": "联邦海军彗星级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37456,
-    "name": "毛鲁斯级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17812,
-    "name": "共和舰队火尾鸡级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 20125,
-    "name": "诅咒级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37454,
-    "name": "守夜者级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11957,
-    "name": "战隼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11365,
-    "name": "惩戒级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11959,
-    "name": "白嘴鸦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11393,
-    "name": "审判者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11969,
-    "name": "埃拉兹级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11379,
-    "name": "战鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11971,
-    "name": "拉克希斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11381,
-    "name": "女妖级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 52252,
-    "name": "伊基图萨级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12042,
-    "name": "伊什库尔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12044,
-    "name": "恩尤级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11371,
-    "name": "猎狼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11400,
-    "name": "美洲虎级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17715,
-    "name": "毒蜥级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11188,
-    "name": "咒逐级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11192,
-    "name": "秃鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 49712,
-    "name": "洛迪瓦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11172,
-    "name": "太阳神级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11182,
-    "name": "猎豹级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12038,
-    "name": "净化级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29337,
-    "name": "奥格诺级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12032,
-    "name": "蝎尾怪级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29344,
-    "name": "送葬者级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11377,
-    "name": "纳美西斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 47270,
-    "name": "维德马克级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12034,
-    "name": "猎犬级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33818,
-    "name": "奥苏斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11190,
-    "name": "哨兵级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11194,
-    "name": "狐妖级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11174,
-    "name": "克勒斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 632,
-    "name": "黑鸟级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11387,
-    "name": "土狼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 52254,
-    "name": "德拉古级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11184,
-    "name": "科洛斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 633,
-    "name": "星空级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11186,
-    "name": "咒灭级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17720,
-    "name": "塞纳波级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11176,
-    "name": "黑鸦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 49710,
-    "name": "奇奇莫拉级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11178,
-    "name": "猛禽级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11200,
-    "name": "塔纳尼斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11202,
-    "name": "阿瑞斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11196,
-    "name": "利爪级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 628,
-    "name": "主宰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11198,
-    "name": "短剑级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 54732,
-    "name": "唤风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37457,
-    "name": "执事级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37481,
-    "name": "庞蒂菲斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37458,
-    "name": "麒麟级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37459,
-    "name": "塔利亚级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37460,
-    "name": "手术刀级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16236,
-    "name": "强制者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32874,
-    "name": "龙骑兵级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 34828,
-    "name": "寒鸦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16238,
-    "name": "海燕级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 52250,
-    "name": "涅伽尔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32876,
-    "name": "渡鸦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16240,
-    "name": "促进级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 630,
-    "name": "挑战级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32872,
-    "name": "阿尔格斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 624,
-    "name": "暴君级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16242,
-    "name": "长尾鲛级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 621,
-    "name": "狞獾级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32878,
-    "name": "弯刀级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 626,
-    "name": "狂怒者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17930,
-    "name": "潜龙级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37482,
-    "name": "鹳鸟级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37483,
-    "name": "占星级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 47269,
-    "name": "达玛维克级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 37480,
-    "name": "天梯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22452,
-    "name": "异端级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17926,
-    "name": "凝血级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22464,
-    "name": "飞燕级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22460,
-    "name": "厄里斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22456,
-    "name": "剑齿虎级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 34317,
-    "name": "忏悔者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 35683,
-    "name": "赫卡特级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 34562,
-    "name": "斯威普级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 625,
-    "name": "奥格诺级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 620,
-    "name": "鱼鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 634,
-    "name": "送葬者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 77114,
-    "name": "变形级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 631,
-    "name": "镰刀级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 54731,
-    "name": "破天级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 2006,
-    "name": "启示级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 623,
-    "name": "巨鸟级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 81008,
-    "name": "疾风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 627,
-    "name": "托勒克斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 622,
-    "name": "刺刀级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 629,
-    "name": "断崖级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17709,
-    "name": "启示级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17634,
-    "name": "狞獾级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29340,
-    "name": "鱼鹰级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17843,
-    "name": "狂怒者级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29336,
-    "name": "镰刀级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 17713,
-    "name": "刺刀级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12003,
-    "name": "狂热级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12019,
-    "name": "渎圣级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12011,
-    "name": "银鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11993,
-    "name": "希尔博拉斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12005,
-    "name": "伊什塔级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12023,
-    "name": "戴默斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11999,
-    "name": "流浪级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12015,
-    "name": "缪宁级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12017,
-    "name": "奉献级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11995,
-    "name": "奥尼克斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12021,
-    "name": "伏波斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12013,
-    "name": "阔刀级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11987,
-    "name": "守卫级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11985,
-    "name": "皇冠蜥级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11989,
-    "name": "奥内罗斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11978,
-    "name": "曲剑级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11965,
-    "name": "皮尔格里姆级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11961,
-    "name": "休津级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11963,
-    "name": "长剑级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29986,
-    "name": "圣卒级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29984,
-    "name": "金鹏级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29988,
-    "name": "海神级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 4302,
-    "name": "预言级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 4306,
-    "name": "娜迦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 4308,
-    "name": "塔洛斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 4310,
-    "name": "龙卷风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16233,
-    "name": "先知级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24696,
-    "name": "先驱者级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24698,
-    "name": "幼龙级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16227,
-    "name": "猛鲑级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16229,
-    "name": "布鲁提克斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24700,
-    "name": "弥洱米顿级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24702,
-    "name": "暴风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16231,
-    "name": "飓风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33155,
-    "name": "先驱者级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33153,
-    "name": "幼龙级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33151,
-    "name": "布鲁提克斯级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 33157,
-    "name": "暴风级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22474,
-    "name": "永灭级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22448,
-    "name": "救赎级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22446,
-    "name": "兀鹫级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22470,
-    "name": "夜鹰级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22466,
-    "name": "阿施塔特级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22442,
-    "name": "曙光女神级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22468,
-    "name": "月刃级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22444,
-    "name": "斯雷普尼级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24692,
-    "name": "地狱天使级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 642,
-    "name": "灾难级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 643,
-    "name": "末日沙场级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 640,
-    "name": "毒蝎级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 638,
-    "name": "乌鸦级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24688,
-    "name": "鹏鲲级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24690,
-    "name": "亥伯龙神级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 641,
-    "name": "万王宝座级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 645,
-    "name": "多米尼克斯级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 639,
-    "name": "狂暴级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 644,
-    "name": "台风级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 24694,
-    "name": "死亡漩涡级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 47466,
-    "name": "实践级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32309,
-    "name": "毒蝎级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 32307,
-    "name": "多米尼克斯级海军型"
+    "id": 29248,
+    "name": "Magnate"
   },
   {
     "category": "inventory_type",
     "id": 32311,
-    "name": "台风级舰队型"
+    "name": "Typhoon Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 583,
+    "name": "Condor"
+  },
+  {
+    "category": "inventory_type",
+    "id": 602,
+    "name": "Kestrel"
+  },
+  {
+    "category": "inventory_type",
+    "id": 603,
+    "name": "Merlin"
+  },
+  {
+    "category": "inventory_type",
+    "id": 54733,
+    "name": "Thunderchild"
+  },
+  {
+    "category": "inventory_type",
+    "id": 605,
+    "name": "Heron"
+  },
+  {
+    "category": "inventory_type",
+    "id": 49713,
+    "name": "Zarmazd"
+  },
+  {
+    "category": "inventory_type",
+    "id": 608,
+    "name": "Atron"
+  },
+  {
+    "category": "inventory_type",
+    "id": 593,
+    "name": "Tristan"
+  },
+  {
+    "category": "inventory_type",
+    "id": 52252,
+    "name": "Ikitursa"
+  },
+  {
+    "category": "inventory_type",
+    "id": 594,
+    "name": "Incursus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 607,
+    "name": "Imicus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 585,
+    "name": "Slasher"
+  },
+  {
+    "category": "inventory_type",
+    "id": 598,
+    "name": "Breacher"
+  },
+  {
+    "category": "inventory_type",
+    "id": 587,
+    "name": "Rifter"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33157,
+    "name": "Hurricane Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 586,
+    "name": "Probe"
+  },
+  {
+    "category": "inventory_type",
+    "id": 590,
+    "name": "Inquisitor"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17715,
+    "name": "Gila"
+  },
+  {
+    "category": "inventory_type",
+    "id": 582,
+    "name": "Bantam"
+  },
+  {
+    "category": "inventory_type",
+    "id": 592,
+    "name": "Navitas"
+  },
+  {
+    "category": "inventory_type",
+    "id": 599,
+    "name": "Burst"
+  },
+  {
+    "category": "inventory_type",
+    "id": 49712,
+    "name": "Rodiva"
+  },
+  {
+    "category": "inventory_type",
+    "id": 2161,
+    "name": "Crucifier"
+  },
+  {
+    "category": "inventory_type",
+    "id": 584,
+    "name": "Griffin"
+  },
+  {
+    "category": "inventory_type",
+    "id": 52254,
+    "name": "Draugur"
+  },
+  {
+    "category": "inventory_type",
+    "id": 609,
+    "name": "Maulus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 47270,
+    "name": "Vedmak"
+  },
+  {
+    "category": "inventory_type",
+    "id": 3766,
+    "name": "Vigil"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17703,
+    "name": "Imperial Navy Slicer"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37453,
+    "name": "Crucifier Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 49710,
+    "name": "Kikimora"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17619,
+    "name": "Caldari Navy Hookbill"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37455,
+    "name": "Griffin Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 52250,
+    "name": "Nergal"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17841,
+    "name": "Federation Navy Comet"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37456,
+    "name": "Maulus Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 54732,
+    "name": "Stormbringer"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17812,
+    "name": "Republic Fleet Firetail"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37454,
+    "name": "Vigil Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11365,
+    "name": "Vengeance"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17713,
+    "name": "Stabber Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11393,
+    "name": "Retribution"
+  },
+  {
+    "category": "inventory_type",
+    "id": 47269,
+    "name": "Damavik"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11379,
+    "name": "Hawk"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11381,
+    "name": "Harpy"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12042,
+    "name": "Ishkur"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17930,
+    "name": "Worm"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12044,
+    "name": "Enyo"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11371,
+    "name": "Wolf"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11400,
+    "name": "Jaguar"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11188,
+    "name": "Anathema"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11192,
+    "name": "Buzzard"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11172,
+    "name": "Helios"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11182,
+    "name": "Cheetah"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12038,
+    "name": "Purifier"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12032,
+    "name": "Manticore"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11377,
+    "name": "Nemesis"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12034,
+    "name": "Hound"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11190,
+    "name": "Sentinel"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11194,
+    "name": "Kitsune"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11174,
+    "name": "Keres"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11387,
+    "name": "Hyena"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11184,
+    "name": "Crusader"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11186,
+    "name": "Malediction"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11176,
+    "name": "Crow"
+  },
+  {
+    "category": "inventory_type",
+    "id": 54731,
+    "name": "Skybreaker"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11178,
+    "name": "Raptor"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11200,
+    "name": "Taranis"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11202,
+    "name": "Ares"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11196,
+    "name": "Claw"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11198,
+    "name": "Stiletto"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37457,
+    "name": "Deacon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37458,
+    "name": "Kirin"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37459,
+    "name": "Thalia"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37460,
+    "name": "Scalpel"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16236,
+    "name": "Coercer"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32874,
+    "name": "Dragoon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16238,
+    "name": "Cormorant"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32876,
+    "name": "Corax"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16240,
+    "name": "Catalyst"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32872,
+    "name": "Algos"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16242,
+    "name": "Thrasher"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32878,
+    "name": "Talwar"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37481,
+    "name": "Pontifex"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37482,
+    "name": "Stork"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37483,
+    "name": "Magus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 37480,
+    "name": "Bifrost"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22452,
+    "name": "Heretic"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22464,
+    "name": "Flycatcher"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22460,
+    "name": "Eris"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22456,
+    "name": "Sabre"
+  },
+  {
+    "category": "inventory_type",
+    "id": 34317,
+    "name": "Confessor"
+  },
+  {
+    "category": "inventory_type",
+    "id": 34828,
+    "name": "Jackdaw"
+  },
+  {
+    "category": "inventory_type",
+    "id": 35683,
+    "name": "Hecate"
+  },
+  {
+    "category": "inventory_type",
+    "id": 34562,
+    "name": "Svipul"
+  },
+  {
+    "category": "inventory_type",
+    "id": 628,
+    "name": "Arbitrator"
+  },
+  {
+    "category": "inventory_type",
+    "id": 632,
+    "name": "Blackbird"
+  },
+  {
+    "category": "inventory_type",
+    "id": 633,
+    "name": "Celestis"
+  },
+  {
+    "category": "inventory_type",
+    "id": 630,
+    "name": "Bellicose"
+  },
+  {
+    "category": "inventory_type",
+    "id": 625,
+    "name": "Augoror"
+  },
+  {
+    "category": "inventory_type",
+    "id": 620,
+    "name": "Osprey"
+  },
+  {
+    "category": "inventory_type",
+    "id": 634,
+    "name": "Exequror"
+  },
+  {
+    "category": "inventory_type",
+    "id": 631,
+    "name": "Scythe"
+  },
+  {
+    "category": "inventory_type",
+    "id": 624,
+    "name": "Maller"
+  },
+  {
+    "category": "inventory_type",
+    "id": 2006,
+    "name": "Omen"
+  },
+  {
+    "category": "inventory_type",
+    "id": 623,
+    "name": "Moa"
+  },
+  {
+    "category": "inventory_type",
+    "id": 621,
+    "name": "Caracal"
+  },
+  {
+    "category": "inventory_type",
+    "id": 626,
+    "name": "Vexor"
+  },
+  {
+    "category": "inventory_type",
+    "id": 627,
+    "name": "Thorax"
+  },
+  {
+    "category": "inventory_type",
+    "id": 622,
+    "name": "Stabber"
+  },
+  {
+    "category": "inventory_type",
+    "id": 629,
+    "name": "Rupture"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29337,
+    "name": "Augoror Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17709,
+    "name": "Omen Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17634,
+    "name": "Caracal Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29340,
+    "name": "Osprey Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29344,
+    "name": "Exequror Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17843,
+    "name": "Vexor Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29336,
+    "name": "Scythe Fleet Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12003,
+    "name": "Zealot"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12019,
+    "name": "Sacrilege"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12011,
+    "name": "Eagle"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11993,
+    "name": "Cerberus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12005,
+    "name": "Ishtar"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12023,
+    "name": "Deimos"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11999,
+    "name": "Vagabond"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12015,
+    "name": "Muninn"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12017,
+    "name": "Devoter"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11995,
+    "name": "Onyx"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12021,
+    "name": "Phobos"
+  },
+  {
+    "category": "inventory_type",
+    "id": 12013,
+    "name": "Broadsword"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11987,
+    "name": "Guardian"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11985,
+    "name": "Basilisk"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11989,
+    "name": "Oneiros"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11978,
+    "name": "Scimitar"
+  },
+  {
+    "category": "inventory_type",
+    "id": 20125,
+    "name": "Curse"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11965,
+    "name": "Pilgrim"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11957,
+    "name": "Falcon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11959,
+    "name": "Rook"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11969,
+    "name": "Arazu"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11971,
+    "name": "Lachesis"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11961,
+    "name": "Huginn"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11963,
+    "name": "Rapier"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29986,
+    "name": "Legion"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29984,
+    "name": "Tengu"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29988,
+    "name": "Proteus"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29990,
+    "name": "Loki"
+  },
+  {
+    "category": "inventory_type",
+    "id": 4302,
+    "name": "Oracle"
+  },
+  {
+    "category": "inventory_type",
+    "id": 4306,
+    "name": "Naga"
+  },
+  {
+    "category": "inventory_type",
+    "id": 4310,
+    "name": "Tornado"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16233,
+    "name": "Prophecy"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24696,
+    "name": "Harbinger"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24698,
+    "name": "Drake"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16227,
+    "name": "Ferox"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16229,
+    "name": "Brutix"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24700,
+    "name": "Myrmidon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24702,
+    "name": "Hurricane"
+  },
+  {
+    "category": "inventory_type",
+    "id": 16231,
+    "name": "Cyclone"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33155,
+    "name": "Harbinger Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33153,
+    "name": "Drake Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33151,
+    "name": "Brutix Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22474,
+    "name": "Damnation"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22448,
+    "name": "Absolution"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22446,
+    "name": "Vulture"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22470,
+    "name": "Nighthawk"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22466,
+    "name": "Astarte"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22442,
+    "name": "Eos"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22468,
+    "name": "Claymore"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22444,
+    "name": "Sleipnir"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24692,
+    "name": "Abaddon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 642,
+    "name": "Apocalypse"
+  },
+  {
+    "category": "inventory_type",
+    "id": 643,
+    "name": "Armageddon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 640,
+    "name": "Scorpion"
+  },
+  {
+    "category": "inventory_type",
+    "id": 638,
+    "name": "Raven"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24688,
+    "name": "Rokh"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24690,
+    "name": "Hyperion"
+  },
+  {
+    "category": "inventory_type",
+    "id": 641,
+    "name": "Megathron"
+  },
+  {
+    "category": "inventory_type",
+    "id": 645,
+    "name": "Dominix"
+  },
+  {
+    "category": "inventory_type",
+    "id": 639,
+    "name": "Tempest"
+  },
+  {
+    "category": "inventory_type",
+    "id": 644,
+    "name": "Typhoon"
+  },
+  {
+    "category": "inventory_type",
+    "id": 24694,
+    "name": "Maelstrom"
+  },
+  {
+    "category": "inventory_type",
+    "id": 47466,
+    "name": "Praxis"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17726,
+    "name": "Apocalypse Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32305,
+    "name": "Armageddon Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32309,
+    "name": "Scorpion Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17636,
+    "name": "Raven Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17728,
+    "name": "Megathron Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 32307,
+    "name": "Dominix Navy Issue"
   },
   {
     "category": "inventory_type",
     "id": 22428,
-    "name": "救世级"
+    "name": "Redeemer"
   },
   {
     "category": "inventory_type",
     "id": 22430,
-    "name": "罪恶级"
+    "name": "Sin"
   },
   {
     "category": "inventory_type",
     "id": 22440,
-    "name": "黑豹级"
+    "name": "Panther"
   },
   {
     "category": "inventory_type",
     "id": 28659,
-    "name": "帕拉丁级"
+    "name": "Paladin"
   },
   {
     "category": "inventory_type",
     "id": 28710,
-    "name": "魔像级"
+    "name": "Golem"
   },
   {
     "category": "inventory_type",
     "id": 28661,
-    "name": "克洛诺斯级"
+    "name": "Kronos"
   },
   {
     "category": "inventory_type",
     "id": 28665,
-    "name": "恶狼级"
+    "name": "Vargur"
   },
   {
     "category": "inventory_type",
     "id": 1944,
-    "name": "恩赐者级"
+    "name": "Bestower"
   },
   {
     "category": "inventory_type",
     "id": 19744,
-    "name": "魔符级"
+    "name": "Sigil"
   },
   {
     "category": "inventory_type",
     "id": 648,
-    "name": "獾级"
+    "name": "Badger"
   },
   {
     "category": "inventory_type",
     "id": 649,
-    "name": "狐鼬级"
+    "name": "Tayra"
   },
   {
     "category": "inventory_type",
     "id": 650,
-    "name": "涅鲁斯级"
+    "name": "Nereus"
   },
   {
     "category": "inventory_type",
     "id": 654,
-    "name": "克琉斯级"
+    "name": "Kryos"
   },
   {
     "category": "inventory_type",
     "id": 655,
-    "name": "埃比斯级"
+    "name": "Epithal"
   },
   {
     "category": "inventory_type",
     "id": 656,
-    "name": "米亚莫斯级"
+    "name": "Miasmos"
   },
   {
     "category": "inventory_type",
     "id": 657,
-    "name": "伊特龙级MKV"
+    "name": "Iteron Mark V"
   },
   {
     "category": "inventory_type",
     "id": 651,
-    "name": "囤积者级"
+    "name": "Hoarder"
   },
   {
     "category": "inventory_type",
     "id": 652,
-    "name": "猛犸级"
+    "name": "Mammoth"
   },
   {
     "category": "inventory_type",
     "id": 653,
-    "name": "环绕级"
+    "name": "Wreathe"
   },
   {
     "category": "inventory_type",
     "id": 17932,
-    "name": "德拉米尔级"
+    "name": "Dramiel"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17926,
+    "name": "Cruor"
   },
   {
     "category": "inventory_type",
     "id": 33816,
-    "name": "加姆级"
+    "name": "Garmur"
   },
   {
     "category": "inventory_type",
     "id": 17924,
-    "name": "魔女级"
+    "name": "Succubus"
   },
   {
     "category": "inventory_type",
     "id": 33468,
-    "name": "阿斯特罗级"
+    "name": "Astero"
   },
   {
     "category": "inventory_type",
     "id": 17928,
-    "name": "夜魔侠级"
+    "name": "Daredevil"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17720,
+    "name": "Cynabal"
   },
   {
     "category": "inventory_type",
     "id": 17922,
-    "name": "阿什姆级"
+    "name": "Ashimmu"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33818,
+    "name": "Orthrus"
   },
   {
     "category": "inventory_type",
     "id": 17718,
-    "name": "幽灵级"
+    "name": "Phantasm"
   },
   {
     "category": "inventory_type",
     "id": 33470,
-    "name": "斯特修斯级"
+    "name": "Stratios"
   },
   {
     "category": "inventory_type",
     "id": 17722,
-    "name": "警惕级"
+    "name": "Vigilant"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17738,
+    "name": "Machariel"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17920,
+    "name": "Bhaalgorn"
+  },
+  {
+    "category": "inventory_type",
+    "id": 33820,
+    "name": "Barghest"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17736,
+    "name": "Nightmare"
+  },
+  {
+    "category": "inventory_type",
+    "id": 17740,
+    "name": "Vindicator"
   },
   {
     "category": "inventory_type",
     "id": 3756,
-    "name": "灵感级"
+    "name": "Gnosis"
   },
   {
     "category": "inventory_type",
     "id": 42685,
-    "name": "旭日级"
+    "name": "Sunesis"
   },
   {
     "category": "inventory_type",
     "id": 617,
-    "name": "回声级"
+    "name": "Echo"
   },
   {
     "category": "inventory_type",
     "id": 33079,
-    "name": "未来人类级"
+    "name": "Hematos"
   },
   {
     "category": "inventory_type",
     "id": 615,
-    "name": "因莫雷特级"
+    "name": "Immolator"
   },
   {
     "category": "inventory_type",
     "id": 33081,
-    "name": "毒蛇级"
+    "name": "Taipan"
   },
   {
     "category": "inventory_type",
     "id": 33083,
-    "name": "违逆者级"
+    "name": "Violator"
   },
   {
     "category": "inventory_type",
-    "id": 72907,
-    "name": "富豪级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72904,
-    "name": "苍鹭级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72913,
-    "name": "伊米卡斯级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72903,
-    "name": "探索级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73794,
-    "name": "长尾鲛级舰队型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73795,
-    "name": "海燕级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73789,
-    "name": "强制者级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 73796,
-    "name": "促进级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72812,
-    "name": "猛鲑级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72872,
-    "name": "先知级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 72869,
-    "name": "弥洱米顿级海军型"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78366,
-    "name": "短吻鳄级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78367,
-    "name": "曼巴级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 78333,
-    "name": "梅库巴级"
-  },
-  {
-    "category": "inventory_type",
-    "id": 81046,
-    "name": "暴雨级"
+    "id": 4308,
+    "name": "Talos"
   }
 ]

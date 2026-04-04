@@ -193,14 +193,16 @@ function parseStaticValuesTable(
   }
 
   const entries = new Map<string, { hullType: HullType; points: number }>()
+  const columnSets = [
+    [0, 1, 2],
+    [4, 6, 7],
+    [5, 7, 8],
+  ] as const
 
   for (const row of payload.table.rows) {
     const values = row.c.map((cell) => cell?.v ?? null)
 
-    for (const [nameIndex, pointsIndex, hullIndex] of [
-      [0, 1, 2],
-      [5, 7, 8],
-    ] as const) {
+    for (const [nameIndex, pointsIndex, hullIndex] of columnSets) {
       const rawName = values[nameIndex]
       const rawPoints = values[pointsIndex]
       const rawHull = values[hullIndex]

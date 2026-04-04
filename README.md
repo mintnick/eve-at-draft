@@ -3,8 +3,11 @@
 This is a Vue + PrimeVue draft helper for EVE Alliance Tournament formats.
 
 Current bundled tournament years:
-- 2025: Alliance Tournament XXI
+- 2021: Alliance Tournament XVII
+- 2022: Alliance Tournament XVIII
+- 2023: Alliance Tournament XIX
 - 2024: Alliance Tournament XX
+- 2025: Alliance Tournament XXI
 
 ## Development
 
@@ -47,6 +50,9 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 The ban rules are intentionally not auto-enforced in the UI, because tournament ban flow can include shared bans and final-day carry-over bans.
 
 Official rules links:
+- [AT XVII Rules and Registration](https://www.eveonline.com/news/view/at-xvii-rules-and-registration)
+- [Alliance Tournament XVIII Rules and Registration](https://www.eveonline.com/news/view/alliance-tournament-xviii-rules-and-registration)
+- [Alliance Tournament XIX Rules and Registration](https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration)
 - [Alliance Tournament XXI Rules and Regulations](https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations)
 - [Alliance Tournament XX: Revamped Rules!](https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules)
 

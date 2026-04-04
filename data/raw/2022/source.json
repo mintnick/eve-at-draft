@@ -1,129 +1,57 @@
 {
-  "year": 2024,
+  "year": 2022,
   "provider": "official-sheet-static-values",
-  "capturedAt": "2026-04-04T15:11:26.871Z",
+  "capturedAt": "2026-04-04T15:11:25.667Z",
   "hulls": {
     "Flagship": {
       "Leshak": {
         "shipId": 47271,
-        "points": 54,
+        "points": 25,
         "flagshipEligible": true,
         "names": {
           "en": "Leshak",
           "zh": "勒沙克级"
         }
       },
-      "Barghest": {
-        "shipId": 33820,
-        "points": 54,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Barghest",
-          "zh": "巴盖斯级"
-        }
-      },
-      "Bhaalgorn": {
-        "shipId": 17920,
-        "points": 53,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Bhaalgorn",
-          "zh": "巴戈龙级"
-        }
-      },
       "Rattlesnake": {
         "shipId": 17918,
-        "points": 52,
+        "points": 25,
         "flagshipEligible": true,
         "names": {
           "en": "Rattlesnake",
           "zh": "响尾蛇级"
         }
       },
-      "Nightmare": {
-        "shipId": 17736,
-        "points": 51,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Nightmare",
-          "zh": "噩梦级"
-        }
-      },
-      "Vindicator": {
-        "shipId": 17740,
-        "points": 50,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Vindicator",
-          "zh": "惩戒者级"
-        }
-      },
       "Widow": {
         "shipId": 22436,
-        "points": 50,
+        "points": 25,
         "flagshipEligible": true,
         "names": {
           "en": "Widow",
           "zh": "寡妇级"
         }
       },
-      "Machariel": {
-        "shipId": 17738,
-        "points": 47,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Machariel",
-          "zh": "马克瑞级"
-        }
-      },
-      "Armageddon Navy Issue": {
-        "shipId": 32305,
-        "points": 44,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Armageddon Navy Issue",
-          "zh": "末日沙场级海军型"
-        }
-      },
-      "Apocalypse Navy Issue": {
-        "shipId": 17726,
-        "points": 42,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Apocalypse Navy Issue",
-          "zh": "灾难级海军型"
-        }
-      },
-      "Raven Navy Issue": {
-        "shipId": 17636,
-        "points": 42,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Raven Navy Issue",
-          "zh": "乌鸦级海军型"
-        }
-      },
-      "Megathron Navy Issue": {
-        "shipId": 17728,
-        "points": 42,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Megathron Navy Issue",
-          "zh": "万王宝座级海军型"
-        }
-      },
       "Tempest Fleet Issue": {
         "shipId": 17732,
-        "points": 42,
+        "points": 20,
         "flagshipEligible": true,
         "names": {
           "en": "Tempest Fleet Issue",
           "zh": "狂暴级舰队型"
         }
       },
+      "Typhoon Fleet Issue": {
+        "shipId": 32311,
+        "points": 20,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Typhoon Fleet Issue",
+          "zh": "台风级舰队型"
+        }
+      },
       "Thunderchild": {
         "shipId": 54733,
-        "points": 37,
+        "points": 18,
         "flagshipEligible": true,
         "names": {
           "en": "Thunderchild",
@@ -132,7 +60,7 @@
       },
       "Abaddon": {
         "shipId": 24692,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Abaddon",
@@ -141,7 +69,7 @@
       },
       "Apocalypse": {
         "shipId": 642,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Apocalypse",
@@ -150,7 +78,7 @@
       },
       "Armageddon": {
         "shipId": 643,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Armageddon",
@@ -159,7 +87,7 @@
       },
       "Scorpion": {
         "shipId": 640,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Scorpion",
@@ -168,7 +96,7 @@
       },
       "Raven": {
         "shipId": 638,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Raven",
@@ -177,7 +105,7 @@
       },
       "Rokh": {
         "shipId": 24688,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Rokh",
@@ -186,7 +114,7 @@
       },
       "Hyperion": {
         "shipId": 24690,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Hyperion",
@@ -195,7 +123,7 @@
       },
       "Megathron": {
         "shipId": 641,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Megathron",
@@ -204,7 +132,7 @@
       },
       "Dominix": {
         "shipId": 645,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Dominix",
@@ -213,7 +141,7 @@
       },
       "Tempest": {
         "shipId": 639,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Tempest",
@@ -222,7 +150,7 @@
       },
       "Typhoon": {
         "shipId": 644,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Typhoon",
@@ -231,7 +159,7 @@
       },
       "Maelstrom": {
         "shipId": 24694,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Maelstrom",
@@ -240,43 +168,70 @@
       },
       "Praxis": {
         "shipId": 47466,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": true,
         "names": {
           "en": "Praxis",
           "zh": "实践级"
         }
       },
+      "Apocalypse Navy Issue": {
+        "shipId": 17726,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Apocalypse Navy Issue",
+          "zh": "灾难级海军型"
+        }
+      },
+      "Armageddon Navy Issue": {
+        "shipId": 32305,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Armageddon Navy Issue",
+          "zh": "末日沙场级海军型"
+        }
+      },
       "Scorpion Navy Issue": {
         "shipId": 32309,
-        "points": 45,
+        "points": 21,
         "flagshipEligible": true,
         "names": {
           "en": "Scorpion Navy Issue",
           "zh": "毒蝎级海军型"
         }
       },
+      "Raven Navy Issue": {
+        "shipId": 17636,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Raven Navy Issue",
+          "zh": "乌鸦级海军型"
+        }
+      },
+      "Megathron Navy Issue": {
+        "shipId": 17728,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Megathron Navy Issue",
+          "zh": "万王宝座级海军型"
+        }
+      },
       "Dominix Navy Issue": {
         "shipId": 32307,
-        "points": 45,
+        "points": 21,
         "flagshipEligible": true,
         "names": {
           "en": "Dominix Navy Issue",
           "zh": "多米尼克斯级海军型"
         }
       },
-      "Typhoon Fleet Issue": {
-        "shipId": 32311,
-        "points": 45,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Typhoon Fleet Issue",
-          "zh": "台风级舰队型"
-        }
-      },
       "Redeemer": {
         "shipId": 22428,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": true,
         "names": {
           "en": "Redeemer",
@@ -285,7 +240,7 @@
       },
       "Sin": {
         "shipId": 22430,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": true,
         "names": {
           "en": "Sin",
@@ -294,7 +249,7 @@
       },
       "Panther": {
         "shipId": 22440,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": true,
         "names": {
           "en": "Panther",
@@ -303,7 +258,7 @@
       },
       "Paladin": {
         "shipId": 28659,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": true,
         "names": {
           "en": "Paladin",
@@ -312,7 +267,7 @@
       },
       "Golem": {
         "shipId": 28710,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": true,
         "names": {
           "en": "Golem",
@@ -321,7 +276,7 @@
       },
       "Kronos": {
         "shipId": 28661,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": true,
         "names": {
           "en": "Kronos",
@@ -330,72 +285,73 @@
       },
       "Vargur": {
         "shipId": 28665,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": true,
         "names": {
           "en": "Vargur",
           "zh": "恶狼级"
         }
       },
-      "Shapash": {
-        "shipId": 78414,
-        "points": 33,
+      "Machariel": {
+        "shipId": 17738,
+        "points": 23,
         "flagshipEligible": true,
         "names": {
-          "en": "Shapash",
-          "zh": "沙帕什级"
+          "en": "Machariel",
+          "zh": "马克瑞级"
         }
       },
-      "Geri": {
-        "shipId": 74141,
-        "points": 32,
+      "Bhaalgorn": {
+        "shipId": 17920,
+        "points": 23,
         "flagshipEligible": true,
         "names": {
-          "en": "Geri",
-          "zh": "恐狼级"
+          "en": "Bhaalgorn",
+          "zh": "巴戈龙级"
         }
       },
-      "Raiju": {
-        "shipId": 60765,
-        "points": 37,
+      "Barghest": {
+        "shipId": 33820,
+        "points": 23,
         "flagshipEligible": true,
         "names": {
-          "en": "Raiju",
-          "zh": "雷兽级"
+          "en": "Barghest",
+          "zh": "巴盖斯级"
         }
       },
-      "Cybele": {
-        "shipId": 77726,
-        "points": 48,
+      "Nightmare": {
+        "shipId": 17736,
+        "points": 23,
         "flagshipEligible": true,
         "names": {
-          "en": "Cybele",
-          "zh": "西布勒级"
+          "en": "Nightmare",
+          "zh": "噩梦级"
         }
       },
-      "Laelaps": {
-        "shipId": 60764,
-        "points": 50,
+      "Vindicator": {
+        "shipId": 17740,
+        "points": 23,
         "flagshipEligible": true,
         "names": {
-          "en": "Laelaps",
-          "zh": "猎獒级"
-        }
-      },
-      "Bestla": {
-        "shipId": 74316,
-        "points": 47,
-        "flagshipEligible": true,
-        "names": {
-          "en": "Bestla",
-          "zh": "贝斯特拉级"
+          "en": "Vindicator",
+          "zh": "惩戒者级"
         }
       }
     },
     "Logistics": {
+      "Zarmazd": {
+        "shipId": 49713,
+        "points": 18,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Zarmazd",
+          "zh": "扎玛德级"
+        }
+      },
       "Inquisitor": {
         "shipId": 590,
-        "points": 3,
+        "points": 1,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -405,7 +361,7 @@
       },
       "Bantam": {
         "shipId": 582,
-        "points": 3,
+        "points": 1,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -415,7 +371,7 @@
       },
       "Navitas": {
         "shipId": 592,
-        "points": 3,
+        "points": 1,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -425,7 +381,7 @@
       },
       "Burst": {
         "shipId": 599,
-        "points": 3,
+        "points": 1,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -433,19 +389,9 @@
           "zh": "爆发级"
         }
       },
-      "Zarmazd": {
-        "shipId": 49713,
-        "points": 34,
-        "logisticsWeight": 1,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Zarmazd",
-          "zh": "扎玛德级"
-        }
-      },
       "Rodiva": {
         "shipId": 49712,
-        "points": 24,
+        "points": 11,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -455,7 +401,7 @@
       },
       "Deacon": {
         "shipId": 37457,
-        "points": 10,
+        "points": 5,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -465,7 +411,7 @@
       },
       "Kirin": {
         "shipId": 37458,
-        "points": 10,
+        "points": 5,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -475,7 +421,7 @@
       },
       "Thalia": {
         "shipId": 37459,
-        "points": 10,
+        "points": 5,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -485,7 +431,7 @@
       },
       "Scalpel": {
         "shipId": 37460,
-        "points": 10,
+        "points": 5,
         "logisticsWeight": 0.5,
         "flagshipEligible": false,
         "names": {
@@ -495,7 +441,7 @@
       },
       "Augoror": {
         "shipId": 625,
-        "points": 20,
+        "points": 9,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -505,7 +451,7 @@
       },
       "Osprey": {
         "shipId": 620,
-        "points": 20,
+        "points": 9,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -515,7 +461,7 @@
       },
       "Exequror": {
         "shipId": 634,
-        "points": 20,
+        "points": 9,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -525,7 +471,7 @@
       },
       "Scythe": {
         "shipId": 631,
-        "points": 20,
+        "points": 9,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -535,7 +481,7 @@
       },
       "Guardian": {
         "shipId": 11987,
-        "points": 32,
+        "points": 16,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -545,7 +491,7 @@
       },
       "Basilisk": {
         "shipId": 11985,
-        "points": 32,
+        "points": 16,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -555,7 +501,7 @@
       },
       "Oneiros": {
         "shipId": 11989,
-        "points": 32,
+        "points": 16,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -565,7 +511,7 @@
       },
       "Scimitar": {
         "shipId": 11978,
-        "points": 32,
+        "points": 16,
         "logisticsWeight": 1,
         "flagshipEligible": false,
         "names": {
@@ -577,124 +523,52 @@
     "Battleship": {
       "Leshak": {
         "shipId": 47271,
-        "points": 54,
+        "points": 25,
         "flagshipEligible": false,
         "names": {
           "en": "Leshak",
           "zh": "勒沙克级"
         }
       },
-      "Barghest": {
-        "shipId": 33820,
-        "points": 54,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Barghest",
-          "zh": "巴盖斯级"
-        }
-      },
-      "Bhaalgorn": {
-        "shipId": 17920,
-        "points": 53,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Bhaalgorn",
-          "zh": "巴戈龙级"
-        }
-      },
       "Rattlesnake": {
         "shipId": 17918,
-        "points": 52,
+        "points": 25,
         "flagshipEligible": false,
         "names": {
           "en": "Rattlesnake",
           "zh": "响尾蛇级"
         }
       },
-      "Nightmare": {
-        "shipId": 17736,
-        "points": 51,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Nightmare",
-          "zh": "噩梦级"
-        }
-      },
-      "Vindicator": {
-        "shipId": 17740,
-        "points": 50,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Vindicator",
-          "zh": "惩戒者级"
-        }
-      },
       "Widow": {
         "shipId": 22436,
-        "points": 50,
+        "points": 25,
         "flagshipEligible": false,
         "names": {
           "en": "Widow",
           "zh": "寡妇级"
         }
       },
-      "Machariel": {
-        "shipId": 17738,
-        "points": 47,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Machariel",
-          "zh": "马克瑞级"
-        }
-      },
-      "Armageddon Navy Issue": {
-        "shipId": 32305,
-        "points": 44,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Armageddon Navy Issue",
-          "zh": "末日沙场级海军型"
-        }
-      },
-      "Apocalypse Navy Issue": {
-        "shipId": 17726,
-        "points": 42,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Apocalypse Navy Issue",
-          "zh": "灾难级海军型"
-        }
-      },
-      "Raven Navy Issue": {
-        "shipId": 17636,
-        "points": 42,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Raven Navy Issue",
-          "zh": "乌鸦级海军型"
-        }
-      },
-      "Megathron Navy Issue": {
-        "shipId": 17728,
-        "points": 42,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Megathron Navy Issue",
-          "zh": "万王宝座级海军型"
-        }
-      },
       "Tempest Fleet Issue": {
         "shipId": 17732,
-        "points": 42,
+        "points": 20,
         "flagshipEligible": false,
         "names": {
           "en": "Tempest Fleet Issue",
           "zh": "狂暴级舰队型"
         }
       },
+      "Typhoon Fleet Issue": {
+        "shipId": 32311,
+        "points": 20,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Typhoon Fleet Issue",
+          "zh": "台风级舰队型"
+        }
+      },
       "Thunderchild": {
         "shipId": 54733,
-        "points": 37,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Thunderchild",
@@ -703,7 +577,7 @@
       },
       "Abaddon": {
         "shipId": 24692,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Abaddon",
@@ -712,7 +586,7 @@
       },
       "Apocalypse": {
         "shipId": 642,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Apocalypse",
@@ -721,7 +595,7 @@
       },
       "Armageddon": {
         "shipId": 643,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Armageddon",
@@ -730,7 +604,7 @@
       },
       "Scorpion": {
         "shipId": 640,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Scorpion",
@@ -739,7 +613,7 @@
       },
       "Raven": {
         "shipId": 638,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Raven",
@@ -748,7 +622,7 @@
       },
       "Rokh": {
         "shipId": 24688,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Rokh",
@@ -757,7 +631,7 @@
       },
       "Hyperion": {
         "shipId": 24690,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Hyperion",
@@ -766,7 +640,7 @@
       },
       "Megathron": {
         "shipId": 641,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Megathron",
@@ -775,7 +649,7 @@
       },
       "Dominix": {
         "shipId": 645,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Dominix",
@@ -784,7 +658,7 @@
       },
       "Tempest": {
         "shipId": 639,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Tempest",
@@ -793,7 +667,7 @@
       },
       "Typhoon": {
         "shipId": 644,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Typhoon",
@@ -802,7 +676,7 @@
       },
       "Maelstrom": {
         "shipId": 24694,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Maelstrom",
@@ -811,43 +685,70 @@
       },
       "Praxis": {
         "shipId": 47466,
-        "points": 39,
+        "points": 19,
         "flagshipEligible": false,
         "names": {
           "en": "Praxis",
           "zh": "实践级"
         }
       },
+      "Apocalypse Navy Issue": {
+        "shipId": 17726,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Apocalypse Navy Issue",
+          "zh": "灾难级海军型"
+        }
+      },
+      "Armageddon Navy Issue": {
+        "shipId": 32305,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Armageddon Navy Issue",
+          "zh": "末日沙场级海军型"
+        }
+      },
       "Scorpion Navy Issue": {
         "shipId": 32309,
-        "points": 45,
+        "points": 21,
         "flagshipEligible": false,
         "names": {
           "en": "Scorpion Navy Issue",
           "zh": "毒蝎级海军型"
         }
       },
+      "Raven Navy Issue": {
+        "shipId": 17636,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Raven Navy Issue",
+          "zh": "乌鸦级海军型"
+        }
+      },
+      "Megathron Navy Issue": {
+        "shipId": 17728,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Megathron Navy Issue",
+          "zh": "万王宝座级海军型"
+        }
+      },
       "Dominix Navy Issue": {
         "shipId": 32307,
-        "points": 45,
+        "points": 21,
         "flagshipEligible": false,
         "names": {
           "en": "Dominix Navy Issue",
           "zh": "多米尼克斯级海军型"
         }
       },
-      "Typhoon Fleet Issue": {
-        "shipId": 32311,
-        "points": 45,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Typhoon Fleet Issue",
-          "zh": "台风级舰队型"
-        }
-      },
       "Redeemer": {
         "shipId": 22428,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": false,
         "names": {
           "en": "Redeemer",
@@ -856,7 +757,7 @@
       },
       "Sin": {
         "shipId": 22430,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": false,
         "names": {
           "en": "Sin",
@@ -865,7 +766,7 @@
       },
       "Panther": {
         "shipId": 22440,
-        "points": 43,
+        "points": 21,
         "flagshipEligible": false,
         "names": {
           "en": "Panther",
@@ -874,7 +775,7 @@
       },
       "Paladin": {
         "shipId": 28659,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": false,
         "names": {
           "en": "Paladin",
@@ -883,7 +784,7 @@
       },
       "Golem": {
         "shipId": 28710,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": false,
         "names": {
           "en": "Golem",
@@ -892,7 +793,7 @@
       },
       "Kronos": {
         "shipId": 28661,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": false,
         "names": {
           "en": "Kronos",
@@ -901,45 +802,72 @@
       },
       "Vargur": {
         "shipId": 28665,
-        "points": 48,
+        "points": 24,
         "flagshipEligible": false,
         "names": {
           "en": "Vargur",
           "zh": "恶狼级"
         }
+      },
+      "Machariel": {
+        "shipId": 17738,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Machariel",
+          "zh": "马克瑞级"
+        }
+      },
+      "Bhaalgorn": {
+        "shipId": 17920,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bhaalgorn",
+          "zh": "巴戈龙级"
+        }
+      },
+      "Barghest": {
+        "shipId": 33820,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Barghest",
+          "zh": "巴盖斯级"
+        }
+      },
+      "Nightmare": {
+        "shipId": 17736,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nightmare",
+          "zh": "噩梦级"
+        }
+      },
+      "Vindicator": {
+        "shipId": 17740,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vindicator",
+          "zh": "惩戒者级"
+        }
       }
     },
     "Battlecruiser": {
-      "Khizriel": {
-        "shipId": 78369,
-        "points": 35,
+      "Hurricane Fleet Issue": {
+        "shipId": 33157,
+        "points": 14,
         "flagshipEligible": false,
         "names": {
-          "en": "Khizriel",
-          "zh": "基兹里尔级"
-        }
-      },
-      "Drekavac": {
-        "shipId": 49711,
-        "points": 34,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Drekavac",
-          "zh": "德雷卡瓦级"
-        }
-      },
-      "Cyclone Fleet Issue": {
-        "shipId": 72811,
-        "points": 32,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Cyclone Fleet Issue",
-          "zh": "飓风级舰队型"
+          "en": "Hurricane Fleet Issue",
+          "zh": "暴风级舰队型"
         }
       },
       "Oracle": {
         "shipId": 4302,
-        "points": 22,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Oracle",
@@ -948,7 +876,7 @@
       },
       "Naga": {
         "shipId": 4306,
-        "points": 22,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Naga",
@@ -957,7 +885,7 @@
       },
       "Talos": {
         "shipId": 4308,
-        "points": 22,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Talos",
@@ -966,7 +894,7 @@
       },
       "Tornado": {
         "shipId": 4310,
-        "points": 22,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Tornado",
@@ -975,7 +903,7 @@
       },
       "Prophecy": {
         "shipId": 16233,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Prophecy",
@@ -984,7 +912,7 @@
       },
       "Harbinger": {
         "shipId": 24696,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Harbinger",
@@ -993,7 +921,7 @@
       },
       "Drake": {
         "shipId": 24698,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Drake",
@@ -1002,7 +930,7 @@
       },
       "Ferox": {
         "shipId": 16227,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Ferox",
@@ -1011,7 +939,7 @@
       },
       "Brutix": {
         "shipId": 16229,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Brutix",
@@ -1020,7 +948,7 @@
       },
       "Myrmidon": {
         "shipId": 24700,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Myrmidon",
@@ -1029,7 +957,7 @@
       },
       "Hurricane": {
         "shipId": 24702,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Hurricane",
@@ -1038,7 +966,7 @@
       },
       "Cyclone": {
         "shipId": 16231,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Cyclone",
@@ -1047,7 +975,7 @@
       },
       "Harbinger Navy Issue": {
         "shipId": 33155,
-        "points": 30,
+        "points": 15,
         "flagshipEligible": false,
         "names": {
           "en": "Harbinger Navy Issue",
@@ -1056,7 +984,7 @@
       },
       "Drake Navy Issue": {
         "shipId": 33153,
-        "points": 30,
+        "points": 15,
         "flagshipEligible": false,
         "names": {
           "en": "Drake Navy Issue",
@@ -1065,25 +993,16 @@
       },
       "Brutix Navy Issue": {
         "shipId": 33151,
-        "points": 30,
+        "points": 15,
         "flagshipEligible": false,
         "names": {
           "en": "Brutix Navy Issue",
           "zh": "布鲁提克斯级海军型"
         }
       },
-      "Hurricane Fleet Issue": {
-        "shipId": 33157,
-        "points": 30,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Hurricane Fleet Issue",
-          "zh": "暴风级舰队型"
-        }
-      },
       "Damnation": {
         "shipId": 22474,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Damnation",
@@ -1092,7 +1011,7 @@
       },
       "Absolution": {
         "shipId": 22448,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Absolution",
@@ -1101,7 +1020,7 @@
       },
       "Vulture": {
         "shipId": 22446,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Vulture",
@@ -1110,7 +1029,7 @@
       },
       "Nighthawk": {
         "shipId": 22470,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Nighthawk",
@@ -1119,7 +1038,7 @@
       },
       "Astarte": {
         "shipId": 22466,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Astarte",
@@ -1128,7 +1047,7 @@
       },
       "Eos": {
         "shipId": 22442,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Eos",
@@ -1137,7 +1056,7 @@
       },
       "Claymore": {
         "shipId": 22468,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Claymore",
@@ -1146,7 +1065,7 @@
       },
       "Sleipnir": {
         "shipId": 22444,
-        "points": 36,
+        "points": 18,
         "flagshipEligible": false,
         "names": {
           "en": "Sleipnir",
@@ -1155,135 +1074,18 @@
       },
       "Gnosis": {
         "shipId": 3756,
-        "points": 28,
+        "points": 13,
         "flagshipEligible": false,
         "names": {
           "en": "Gnosis",
           "zh": "灵感级"
         }
-      },
-      "Ferox Navy Issue": {
-        "shipId": 72812,
-        "points": 30,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Ferox Navy Issue",
-          "zh": "猛鲑级海军型"
-        }
-      },
-      "Prophecy Navy Issue": {
-        "shipId": 72872,
-        "points": 30,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Prophecy Navy Issue",
-          "zh": "先知级海军型"
-        }
-      },
-      "Myrmidon Navy Issue": {
-        "shipId": 72869,
-        "points": 30,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Myrmidon Navy Issue",
-          "zh": "弥洱米顿级海军型"
-        }
-      },
-      "Alligator": {
-        "shipId": 78366,
-        "points": 36,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Alligator",
-          "zh": "短吻鳄级"
-        }
       }
     },
     "Cruiser": {
-      "Laelaps": {
-        "shipId": 60764,
-        "points": 50,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Laelaps",
-          "zh": "猎獒级"
-        }
-      },
-      "Cybele": {
-        "shipId": 77726,
-        "points": 48,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Cybele",
-          "zh": "西布勒级"
-        }
-      },
-      "Bestla": {
-        "shipId": 74316,
-        "points": 47,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Bestla",
-          "zh": "贝斯特拉级"
-        }
-      },
-      "Loki": {
-        "shipId": 29990,
-        "points": 32,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Loki",
-          "zh": "洛基级"
-        }
-      },
-      "Curse": {
-        "shipId": 20125,
-        "points": 30,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Curse",
-          "zh": "诅咒级"
-        }
-      },
-      "Falcon": {
-        "shipId": 11957,
-        "points": 28,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Falcon",
-          "zh": "战隼级"
-        }
-      },
-      "Rook": {
-        "shipId": 11959,
-        "points": 28,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Rook",
-          "zh": "白嘴鸦级"
-        }
-      },
-      "Arazu": {
-        "shipId": 11969,
-        "points": 28,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Arazu",
-          "zh": "埃拉兹级"
-        }
-      },
-      "Lachesis": {
-        "shipId": 11971,
-        "points": 28,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Lachesis",
-          "zh": "拉克希斯级"
-        }
-      },
       "Ikitursa": {
         "shipId": 52252,
-        "points": 28,
+        "points": 16,
         "flagshipEligible": false,
         "names": {
           "en": "Ikitursa",
@@ -1292,52 +1094,52 @@
       },
       "Gila": {
         "shipId": 17715,
-        "points": 25,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Gila",
           "zh": "毒蜥级"
         }
       },
-      "Augoror Navy Issue": {
-        "shipId": 29337,
-        "points": 20,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Augoror Navy Issue",
-          "zh": "奥格诺级海军型"
-        }
-      },
-      "Exequror Navy Issue": {
-        "shipId": 29344,
-        "points": 20,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Exequror Navy Issue",
-          "zh": "送葬者级海军型"
-        }
-      },
       "Vedmak": {
         "shipId": 47270,
-        "points": 19,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Vedmak",
           "zh": "维德马克级"
         }
       },
-      "Orthrus": {
-        "shipId": 33818,
-        "points": 19,
+      "Stormbringer": {
+        "shipId": 54732,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
-          "en": "Orthrus",
-          "zh": "奥苏斯级"
+          "en": "Stormbringer",
+          "zh": "唤风级"
+        }
+      },
+      "Stabber Fleet Issue": {
+        "shipId": 17713,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stabber Fleet Issue",
+          "zh": "刺刀级舰队型"
+        }
+      },
+      "Arbitrator": {
+        "shipId": 628,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Arbitrator",
+          "zh": "主宰级"
         }
       },
       "Blackbird": {
         "shipId": 632,
-        "points": 16,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Blackbird",
@@ -1346,43 +1148,16 @@
       },
       "Celestis": {
         "shipId": 633,
-        "points": 15,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Celestis",
           "zh": "星空级"
         }
       },
-      "Cynabal": {
-        "shipId": 17720,
-        "points": 15,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Cynabal",
-          "zh": "塞纳波级"
-        }
-      },
-      "Arbitrator": {
-        "shipId": 628,
-        "points": 14,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Arbitrator",
-          "zh": "主宰级"
-        }
-      },
-      "Stormbringer": {
-        "shipId": 54732,
-        "points": 14,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Stormbringer",
-          "zh": "唤风级"
-        }
-      },
       "Bellicose": {
         "shipId": 630,
-        "points": 10,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Bellicose",
@@ -1391,34 +1166,16 @@
       },
       "Maller": {
         "shipId": 624,
-        "points": 10,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Maller",
           "zh": "暴君级"
         }
       },
-      "Caracal": {
-        "shipId": 621,
-        "points": 10,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Caracal",
-          "zh": "狞獾级"
-        }
-      },
-      "Vexor": {
-        "shipId": 626,
-        "points": 10,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Vexor",
-          "zh": "狂怒者级"
-        }
-      },
       "Omen": {
         "shipId": 2006,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Omen",
@@ -1427,16 +1184,34 @@
       },
       "Moa": {
         "shipId": 623,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Moa",
           "zh": "巨鸟级"
         }
       },
+      "Caracal": {
+        "shipId": 621,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Caracal",
+          "zh": "狞獾级"
+        }
+      },
+      "Vexor": {
+        "shipId": 626,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vexor",
+          "zh": "狂怒者级"
+        }
+      },
       "Thorax": {
         "shipId": 627,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Thorax",
@@ -1445,7 +1220,7 @@
       },
       "Stabber": {
         "shipId": 622,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Stabber",
@@ -1454,16 +1229,25 @@
       },
       "Rupture": {
         "shipId": 629,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Rupture",
           "zh": "断崖级"
         }
       },
+      "Augoror Navy Issue": {
+        "shipId": 29337,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Augoror Navy Issue",
+          "zh": "奥格诺级海军型"
+        }
+      },
       "Omen Navy Issue": {
         "shipId": 17709,
-        "points": 16,
+        "points": 7,
         "flagshipEligible": false,
         "names": {
           "en": "Omen Navy Issue",
@@ -1472,7 +1256,7 @@
       },
       "Caracal Navy Issue": {
         "shipId": 17634,
-        "points": 16,
+        "points": 7,
         "flagshipEligible": false,
         "names": {
           "en": "Caracal Navy Issue",
@@ -1481,16 +1265,25 @@
       },
       "Osprey Navy Issue": {
         "shipId": 29340,
-        "points": 16,
+        "points": 7,
         "flagshipEligible": false,
         "names": {
           "en": "Osprey Navy Issue",
           "zh": "鱼鹰级海军型"
         }
       },
+      "Exequror Navy Issue": {
+        "shipId": 29344,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Exequror Navy Issue",
+          "zh": "送葬者级海军型"
+        }
+      },
       "Vexor Navy Issue": {
         "shipId": 17843,
-        "points": 16,
+        "points": 7,
         "flagshipEligible": false,
         "names": {
           "en": "Vexor Navy Issue",
@@ -1499,25 +1292,16 @@
       },
       "Scythe Fleet Issue": {
         "shipId": 29336,
-        "points": 16,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Scythe Fleet Issue",
           "zh": "镰刀级舰队型"
         }
       },
-      "Stabber Fleet Issue": {
-        "shipId": 17713,
-        "points": 16,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Stabber Fleet Issue",
-          "zh": "刺刀级舰队型"
-        }
-      },
       "Zealot": {
         "shipId": 12003,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Zealot",
@@ -1526,7 +1310,7 @@
       },
       "Sacrilege": {
         "shipId": 12019,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Sacrilege",
@@ -1535,7 +1319,7 @@
       },
       "Eagle": {
         "shipId": 12011,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Eagle",
@@ -1544,7 +1328,7 @@
       },
       "Cerberus": {
         "shipId": 11993,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Cerberus",
@@ -1553,7 +1337,7 @@
       },
       "Ishtar": {
         "shipId": 12005,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Ishtar",
@@ -1562,7 +1346,7 @@
       },
       "Deimos": {
         "shipId": 12023,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Deimos",
@@ -1571,7 +1355,7 @@
       },
       "Vagabond": {
         "shipId": 11999,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Vagabond",
@@ -1580,7 +1364,7 @@
       },
       "Muninn": {
         "shipId": 12015,
-        "points": 26,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Muninn",
@@ -1589,7 +1373,7 @@
       },
       "Devoter": {
         "shipId": 12017,
-        "points": 24,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Devoter",
@@ -1598,7 +1382,7 @@
       },
       "Onyx": {
         "shipId": 11995,
-        "points": 24,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Onyx",
@@ -1607,7 +1391,7 @@
       },
       "Phobos": {
         "shipId": 12021,
-        "points": 24,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Phobos",
@@ -1616,25 +1400,70 @@
       },
       "Broadsword": {
         "shipId": 12013,
-        "points": 24,
+        "points": 12,
         "flagshipEligible": false,
         "names": {
           "en": "Broadsword",
           "zh": "阔刀级"
         }
       },
+      "Curse": {
+        "shipId": 20125,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Curse",
+          "zh": "诅咒级"
+        }
+      },
       "Pilgrim": {
         "shipId": 11965,
-        "points": 27,
+        "points": 14,
         "flagshipEligible": false,
         "names": {
           "en": "Pilgrim",
           "zh": "皮尔格里姆级"
         }
       },
+      "Falcon": {
+        "shipId": 11957,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Falcon",
+          "zh": "战隼级"
+        }
+      },
+      "Rook": {
+        "shipId": 11959,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rook",
+          "zh": "白嘴鸦级"
+        }
+      },
+      "Arazu": {
+        "shipId": 11969,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Arazu",
+          "zh": "埃拉兹级"
+        }
+      },
+      "Lachesis": {
+        "shipId": 11971,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Lachesis",
+          "zh": "拉克希斯级"
+        }
+      },
       "Huginn": {
         "shipId": 11961,
-        "points": 27,
+        "points": 14,
         "flagshipEligible": false,
         "names": {
           "en": "Huginn",
@@ -1643,7 +1472,7 @@
       },
       "Rapier": {
         "shipId": 11963,
-        "points": 27,
+        "points": 14,
         "flagshipEligible": false,
         "names": {
           "en": "Rapier",
@@ -1652,7 +1481,7 @@
       },
       "Legion": {
         "shipId": 29986,
-        "points": 31,
+        "points": 16,
         "flagshipEligible": false,
         "names": {
           "en": "Legion",
@@ -1661,7 +1490,7 @@
       },
       "Tengu": {
         "shipId": 29984,
-        "points": 31,
+        "points": 16,
         "flagshipEligible": false,
         "names": {
           "en": "Tengu",
@@ -1670,25 +1499,52 @@
       },
       "Proteus": {
         "shipId": 29988,
-        "points": 31,
+        "points": 16,
         "flagshipEligible": false,
         "names": {
           "en": "Proteus",
           "zh": "海神级"
         }
       },
+      "Loki": {
+        "shipId": 29990,
+        "points": 16,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Loki",
+          "zh": "洛基级"
+        }
+      },
+      "Cynabal": {
+        "shipId": 17720,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cynabal",
+          "zh": "塞纳波级"
+        }
+      },
       "Ashimmu": {
         "shipId": 17922,
-        "points": 18,
+        "points": 9,
         "flagshipEligible": false,
         "names": {
           "en": "Ashimmu",
           "zh": "阿什姆级"
         }
       },
+      "Orthrus": {
+        "shipId": 33818,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Orthrus",
+          "zh": "奥苏斯级"
+        }
+      },
       "Phantasm": {
         "shipId": 17718,
-        "points": 18,
+        "points": 9,
         "flagshipEligible": false,
         "names": {
           "en": "Phantasm",
@@ -1697,7 +1553,7 @@
       },
       "Stratios": {
         "shipId": 33470,
-        "points": 18,
+        "points": 9,
         "flagshipEligible": false,
         "names": {
           "en": "Stratios",
@@ -1706,7 +1562,7 @@
       },
       "Vigilant": {
         "shipId": 17722,
-        "points": 18,
+        "points": 9,
         "flagshipEligible": false,
         "names": {
           "en": "Vigilant",
@@ -1717,7 +1573,7 @@
     "Destroyer": {
       "Draugur": {
         "shipId": 52254,
-        "points": 15,
+        "points": 10,
         "flagshipEligible": false,
         "names": {
           "en": "Draugur",
@@ -1726,25 +1582,16 @@
       },
       "Kikimora": {
         "shipId": 49710,
-        "points": 14,
+        "points": 8,
         "flagshipEligible": false,
         "names": {
           "en": "Kikimora",
           "zh": "奇奇莫拉级"
         }
       },
-      "Pontifex": {
-        "shipId": 37481,
-        "points": 12,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Pontifex",
-          "zh": "庞蒂菲斯级"
-        }
-      },
       "Coercer": {
         "shipId": 16236,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Coercer",
@@ -1753,25 +1600,16 @@
       },
       "Dragoon": {
         "shipId": 32874,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Dragoon",
           "zh": "龙骑兵级"
         }
       },
-      "Jackdaw": {
-        "shipId": 34828,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Jackdaw",
-          "zh": "寒鸦级"
-        }
-      },
       "Cormorant": {
         "shipId": 16238,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Cormorant",
@@ -1780,7 +1618,7 @@
       },
       "Corax": {
         "shipId": 32876,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Corax",
@@ -1789,7 +1627,7 @@
       },
       "Catalyst": {
         "shipId": 16240,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Catalyst",
@@ -1798,7 +1636,7 @@
       },
       "Algos": {
         "shipId": 32872,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Algos",
@@ -1807,7 +1645,7 @@
       },
       "Thrasher": {
         "shipId": 16242,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Thrasher",
@@ -1816,16 +1654,25 @@
       },
       "Talwar": {
         "shipId": 32878,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Talwar",
           "zh": "弯刀级"
         }
       },
+      "Pontifex": {
+        "shipId": 37481,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Pontifex",
+          "zh": "庞蒂菲斯级"
+        }
+      },
       "Stork": {
         "shipId": 37482,
-        "points": 12,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Stork",
@@ -1834,7 +1681,7 @@
       },
       "Magus": {
         "shipId": 37483,
-        "points": 12,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Magus",
@@ -1843,7 +1690,7 @@
       },
       "Bifrost": {
         "shipId": 37480,
-        "points": 12,
+        "points": 6,
         "flagshipEligible": false,
         "names": {
           "en": "Bifrost",
@@ -1852,7 +1699,7 @@
       },
       "Heretic": {
         "shipId": 22452,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Heretic",
@@ -1861,7 +1708,7 @@
       },
       "Flycatcher": {
         "shipId": 22464,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Flycatcher",
@@ -1870,7 +1717,7 @@
       },
       "Eris": {
         "shipId": 22460,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Eris",
@@ -1879,7 +1726,7 @@
       },
       "Sabre": {
         "shipId": 22456,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Sabre",
@@ -1888,16 +1735,25 @@
       },
       "Confessor": {
         "shipId": 34317,
-        "points": 10,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Confessor",
           "zh": "忏悔者级"
         }
       },
+      "Jackdaw": {
+        "shipId": 34828,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Jackdaw",
+          "zh": "寒鸦级"
+        }
+      },
       "Hecate": {
         "shipId": 35683,
-        "points": 10,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Hecate",
@@ -1906,7 +1762,7 @@
       },
       "Svipul": {
         "shipId": 34562,
-        "points": 10,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Svipul",
@@ -1915,72 +1771,18 @@
       },
       "Sunesis": {
         "shipId": 42685,
-        "points": 5,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Sunesis",
           "zh": "旭日级"
-        }
-      },
-      "Thrasher Fleet Issue": {
-        "shipId": 73794,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Thrasher Fleet Issue",
-          "zh": "长尾鲛级舰队型"
-        }
-      },
-      "Cormorant Navy Issue": {
-        "shipId": 73795,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Cormorant Navy Issue",
-          "zh": "海燕级海军型"
-        }
-      },
-      "Coercer Navy Issue": {
-        "shipId": 73789,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Coercer Navy Issue",
-          "zh": "强制者级海军型"
-        }
-      },
-      "Catalyst Navy Issue": {
-        "shipId": 73796,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Catalyst Navy Issue",
-          "zh": "促进级海军型"
-        }
-      },
-      "Mamba": {
-        "shipId": 78367,
-        "points": 14,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Mamba",
-          "zh": "曼巴级"
-        }
-      },
-      "Mekubal": {
-        "shipId": 78333,
-        "points": 14,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Mekubal",
-          "zh": "梅库巴级"
         }
       }
     },
     "Frigate": {
       "Executioner": {
         "shipId": 589,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Executioner",
@@ -1989,7 +1791,7 @@
       },
       "Tormentor": {
         "shipId": 591,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Tormentor",
@@ -1998,7 +1800,7 @@
       },
       "Punisher": {
         "shipId": 597,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Punisher",
@@ -2007,7 +1809,7 @@
       },
       "Magnate": {
         "shipId": 29248,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Magnate",
@@ -2016,7 +1818,7 @@
       },
       "Condor": {
         "shipId": 583,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Condor",
@@ -2025,7 +1827,7 @@
       },
       "Kestrel": {
         "shipId": 602,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Kestrel",
@@ -2034,7 +1836,7 @@
       },
       "Merlin": {
         "shipId": 603,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Merlin",
@@ -2043,7 +1845,7 @@
       },
       "Heron": {
         "shipId": 605,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Heron",
@@ -2052,7 +1854,7 @@
       },
       "Atron": {
         "shipId": 608,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Atron",
@@ -2061,7 +1863,7 @@
       },
       "Tristan": {
         "shipId": 593,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Tristan",
@@ -2070,7 +1872,7 @@
       },
       "Incursus": {
         "shipId": 594,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Incursus",
@@ -2079,7 +1881,7 @@
       },
       "Imicus": {
         "shipId": 607,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Imicus",
@@ -2088,7 +1890,7 @@
       },
       "Slasher": {
         "shipId": 585,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Slasher",
@@ -2097,7 +1899,7 @@
       },
       "Breacher": {
         "shipId": 598,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Breacher",
@@ -2106,7 +1908,7 @@
       },
       "Rifter": {
         "shipId": 587,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Rifter",
@@ -2115,25 +1917,16 @@
       },
       "Probe": {
         "shipId": 586,
-        "points": 4,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Probe",
           "zh": "探索级"
         }
       },
-      "Raiju": {
-        "shipId": 60765,
-        "points": 37,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Raiju",
-          "zh": "雷兽级"
-        }
-      },
       "Crucifier": {
         "shipId": 2161,
-        "points": 8,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Crucifier",
@@ -2142,7 +1935,7 @@
       },
       "Griffin": {
         "shipId": 584,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Griffin",
@@ -2151,7 +1944,7 @@
       },
       "Maulus": {
         "shipId": 609,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Maulus",
@@ -2160,25 +1953,16 @@
       },
       "Vigil": {
         "shipId": 3766,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Vigil",
           "zh": "守夜者级"
         }
       },
-      "Shapash": {
-        "shipId": 78414,
-        "points": 33,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Shapash",
-          "zh": "沙帕什级"
-        }
-      },
       "Imperial Navy Slicer": {
         "shipId": 17703,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Imperial Navy Slicer",
@@ -2187,7 +1971,7 @@
       },
       "Crucifier Navy Issue": {
         "shipId": 37453,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Crucifier Navy Issue",
@@ -2196,7 +1980,7 @@
       },
       "Caldari Navy Hookbill": {
         "shipId": 17619,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Caldari Navy Hookbill",
@@ -2205,25 +1989,25 @@
       },
       "Griffin Navy Issue": {
         "shipId": 37455,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Griffin Navy Issue",
           "zh": "狮鹫级海军型"
         }
       },
-      "Geri": {
-        "shipId": 74141,
-        "points": 32,
+      "Nergal": {
+        "shipId": 52250,
+        "points": 7,
         "flagshipEligible": false,
         "names": {
-          "en": "Geri",
-          "zh": "恐狼级"
+          "en": "Nergal",
+          "zh": "涅伽尔级"
         }
       },
       "Federation Navy Comet": {
         "shipId": 17841,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Federation Navy Comet",
@@ -2232,7 +2016,7 @@
       },
       "Maulus Navy Issue": {
         "shipId": 37456,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Maulus Navy Issue",
@@ -2241,7 +2025,7 @@
       },
       "Republic Fleet Firetail": {
         "shipId": 17812,
-        "points": 6,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Republic Fleet Firetail",
@@ -2250,7 +2034,7 @@
       },
       "Vigil Fleet Issue": {
         "shipId": 37454,
-        "points": 6,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Vigil Fleet Issue",
@@ -2259,7 +2043,7 @@
       },
       "Vengeance": {
         "shipId": 11365,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Vengeance",
@@ -2268,16 +2052,25 @@
       },
       "Retribution": {
         "shipId": 11393,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Retribution",
           "zh": "审判者级"
         }
       },
+      "Damavik": {
+        "shipId": 47269,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Damavik",
+          "zh": "达玛维克级"
+        }
+      },
       "Hawk": {
         "shipId": 11379,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Hawk",
@@ -2286,7 +2079,7 @@
       },
       "Harpy": {
         "shipId": 11381,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Harpy",
@@ -2295,16 +2088,25 @@
       },
       "Ishkur": {
         "shipId": 12042,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Ishkur",
           "zh": "伊什库尔级"
         }
       },
+      "Worm": {
+        "shipId": 17930,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Worm",
+          "zh": "潜龙级"
+        }
+      },
       "Enyo": {
         "shipId": 12044,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Enyo",
@@ -2313,7 +2115,7 @@
       },
       "Wolf": {
         "shipId": 11371,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Wolf",
@@ -2322,7 +2124,7 @@
       },
       "Jaguar": {
         "shipId": 11400,
-        "points": 9,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Jaguar",
@@ -2331,7 +2133,7 @@
       },
       "Anathema": {
         "shipId": 11188,
-        "points": 4,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Anathema",
@@ -2340,7 +2142,7 @@
       },
       "Buzzard": {
         "shipId": 11192,
-        "points": 4,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Buzzard",
@@ -2349,7 +2151,7 @@
       },
       "Helios": {
         "shipId": 11172,
-        "points": 4,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Helios",
@@ -2358,7 +2160,7 @@
       },
       "Cheetah": {
         "shipId": 11182,
-        "points": 4,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Cheetah",
@@ -2367,7 +2169,7 @@
       },
       "Purifier": {
         "shipId": 12038,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Purifier",
@@ -2376,7 +2178,7 @@
       },
       "Manticore": {
         "shipId": 12032,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Manticore",
@@ -2385,7 +2187,7 @@
       },
       "Nemesis": {
         "shipId": 11377,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Nemesis",
@@ -2394,7 +2196,7 @@
       },
       "Hound": {
         "shipId": 12034,
-        "points": 7,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Hound",
@@ -2403,7 +2205,7 @@
       },
       "Sentinel": {
         "shipId": 11190,
-        "points": 14,
+        "points": 5,
         "flagshipEligible": false,
         "names": {
           "en": "Sentinel",
@@ -2412,7 +2214,7 @@
       },
       "Kitsune": {
         "shipId": 11194,
-        "points": 11,
+        "points": 5,
         "flagshipEligible": false,
         "names": {
           "en": "Kitsune",
@@ -2421,7 +2223,7 @@
       },
       "Keres": {
         "shipId": 11174,
-        "points": 14,
+        "points": 5,
         "flagshipEligible": false,
         "names": {
           "en": "Keres",
@@ -2430,7 +2232,7 @@
       },
       "Hyena": {
         "shipId": 11387,
-        "points": 11,
+        "points": 5,
         "flagshipEligible": false,
         "names": {
           "en": "Hyena",
@@ -2439,7 +2241,7 @@
       },
       "Crusader": {
         "shipId": 11184,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Crusader",
@@ -2448,7 +2250,7 @@
       },
       "Malediction": {
         "shipId": 11186,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Malediction",
@@ -2457,16 +2259,25 @@
       },
       "Crow": {
         "shipId": 11176,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Crow",
           "zh": "黑鸦级"
         }
       },
+      "Skybreaker": {
+        "shipId": 54731,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Skybreaker",
+          "zh": "破天级"
+        }
+      },
       "Raptor": {
         "shipId": 11178,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Raptor",
@@ -2475,7 +2286,7 @@
       },
       "Taranis": {
         "shipId": 11200,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Taranis",
@@ -2484,7 +2295,7 @@
       },
       "Ares": {
         "shipId": 11202,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Ares",
@@ -2493,7 +2304,7 @@
       },
       "Claw": {
         "shipId": 11196,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Claw",
@@ -2502,79 +2313,34 @@
       },
       "Stiletto": {
         "shipId": 11198,
-        "points": 6,
+        "points": 3,
         "flagshipEligible": false,
         "names": {
           "en": "Stiletto",
           "zh": "短剑级"
         }
       },
-      "Nergal": {
-        "shipId": 52250,
-        "points": 11,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Nergal",
-          "zh": "涅伽尔级"
-        }
-      },
-      "Worm": {
-        "shipId": 17930,
-        "points": 10,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Worm",
-          "zh": "潜龙级"
-        }
-      },
-      "Damavik": {
-        "shipId": 47269,
-        "points": 10,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Damavik",
-          "zh": "达玛维克级"
-        }
-      },
-      "Cruor": {
-        "shipId": 17926,
-        "points": 9,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Cruor",
-          "zh": "凝血级"
-        }
-      },
-      "Metamorphosis": {
-        "shipId": 77114,
-        "points": 5,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Metamorphosis",
-          "zh": "变形级"
-        }
-      },
-      "Skybreaker": {
-        "shipId": 54731,
-        "points": 5,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Skybreaker",
-          "zh": "破天级"
-        }
-      },
       "Dramiel": {
         "shipId": 17932,
-        "points": 8,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Dramiel",
           "zh": "德拉米尔级"
         }
       },
+      "Cruor": {
+        "shipId": 17926,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cruor",
+          "zh": "凝血级"
+        }
+      },
       "Garmur": {
         "shipId": 33816,
-        "points": 8,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Garmur",
@@ -2583,7 +2349,7 @@
       },
       "Succubus": {
         "shipId": 17924,
-        "points": 8,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Succubus",
@@ -2592,7 +2358,7 @@
       },
       "Astero": {
         "shipId": 33468,
-        "points": 8,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Astero",
@@ -2601,63 +2367,18 @@
       },
       "Daredevil": {
         "shipId": 17928,
-        "points": 8,
+        "points": 4,
         "flagshipEligible": false,
         "names": {
           "en": "Daredevil",
           "zh": "夜魔侠级"
         }
-      },
-      "Magnate Navy Issue": {
-        "shipId": 72907,
-        "points": 6,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Magnate Navy Issue",
-          "zh": "富豪级海军型"
-        }
-      },
-      "Heron Navy Issue": {
-        "shipId": 72904,
-        "points": 6,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Heron Navy Issue",
-          "zh": "苍鹭级海军型"
-        }
-      },
-      "Imicus Navy Issue": {
-        "shipId": 72913,
-        "points": 6,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Imicus Navy Issue",
-          "zh": "伊米卡斯级海军型"
-        }
-      },
-      "Probe Fleet Issue": {
-        "shipId": 72903,
-        "points": 6,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Probe Fleet Issue",
-          "zh": "探索级舰队型"
-        }
       }
     },
     "Industrial": {
-      "Squall": {
-        "shipId": 81008,
-        "points": 4,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Squall",
-          "zh": "疾风级"
-        }
-      },
       "Bestower": {
         "shipId": 1944,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Bestower",
@@ -2666,7 +2387,7 @@
       },
       "Sigil": {
         "shipId": 19744,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Sigil",
@@ -2675,7 +2396,7 @@
       },
       "Badger": {
         "shipId": 648,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Badger",
@@ -2684,7 +2405,7 @@
       },
       "Tayra": {
         "shipId": 649,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Tayra",
@@ -2693,7 +2414,7 @@
       },
       "Nereus": {
         "shipId": 650,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Nereus",
@@ -2702,7 +2423,7 @@
       },
       "Kryos": {
         "shipId": 654,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Kryos",
@@ -2711,7 +2432,7 @@
       },
       "Epithal": {
         "shipId": 655,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Epithal",
@@ -2720,7 +2441,7 @@
       },
       "Miasmos": {
         "shipId": 656,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Miasmos",
@@ -2729,7 +2450,7 @@
       },
       "Iteron Mark V": {
         "shipId": 657,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Iteron Mark V",
@@ -2738,7 +2459,7 @@
       },
       "Hoarder": {
         "shipId": 651,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Hoarder",
@@ -2747,7 +2468,7 @@
       },
       "Mammoth": {
         "shipId": 652,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Mammoth",
@@ -2756,20 +2477,11 @@
       },
       "Wreathe": {
         "shipId": 653,
-        "points": 3,
+        "points": 2,
         "flagshipEligible": false,
         "names": {
           "en": "Wreathe",
           "zh": "环绕级"
-        }
-      },
-      "Deluge": {
-        "shipId": 81046,
-        "points": 10,
-        "flagshipEligible": false,
-        "names": {
-          "en": "Deluge",
-          "zh": "暴雨级"
         }
       }
     },

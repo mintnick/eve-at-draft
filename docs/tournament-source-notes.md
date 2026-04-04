@@ -13,6 +13,30 @@ The current pipeline should treat the official post and linked sheet as the prim
 
 ## Verified official links
 
+### Alliance Tournament XVII
+- Official rules post:
+  - [AT XVII Rules and Registration](https://www.eveonline.com/news/view/at-xvii-rules-and-registration)
+  - Published: 2021-07-19T00:00:00.000Z
+- Official Google Sheet:
+  - [ATXVII Comp Calculator](https://docs.google.com/spreadsheets/d/1wTPRtJf6U3sE59INBOw9XHWGhOWxZZd_AZu2Yv4bwDU/edit?usp=sharing)
+  - Static values tab recovered through Google Visualization JSON using `gid=1760486846`
+
+### Alliance Tournament XVIII
+- Official rules post:
+  - [Alliance Tournament XVIII Rules and Registration](https://www.eveonline.com/news/view/alliance-tournament-xviii-rules-and-registration)
+  - Published: 2022-08-09T00:00:00.000Z
+- Official Google Sheet:
+  - [ATXVIII Quick Comp Creator](https://docs.google.com/spreadsheets/d/1WzK4id6vkXBiIQMLbLpDGzOuxR7pFifldhBKKYvAYqI/edit?usp=sharing)
+  - Static values tab recovered through Google Visualization JSON using `gid=1946786400`
+
+### Alliance Tournament XIX
+- Official rules post:
+  - [Alliance Tournament XIX Rules and Registration](https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration)
+  - Published: 2023-04-25T21:30:00.000Z
+- Official Google Sheet:
+  - [ATXIX Quick Comp Creator](https://docs.google.com/spreadsheets/d/1kd0NByVdqgQvjb_atFGl3NEe6FMddvV4fG4klVzpzW0/edit?usp=sharing)
+  - Static values tab recovered through Google Visualization JSON using `gid=284772315`
+
 ### Alliance Tournament XXI
 - Official rules post:
   - [Alliance Tournament XXI Rules and Regulations](https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations)
@@ -29,13 +53,6 @@ The current pipeline should treat the official post and linked sheet as the prim
   - Static values tab recovered through Google Visualization JSON using `gid=284772315`
   - The current 2024 dataset in this repo is generated from that official static-values tab plus ESI name/id resolution
 
-### Alliance Tournament XIX
-- Official rules post:
-  - [Alliance Tournament XIX: Rules and Registration](https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration)
-  - Published: 2023-04-25T21:30:00.000Z
-- Official Google Sheet:
-  - [Quick Comp Creator](https://docs.google.com/spreadsheets/d/1kd0NByVdqgQvjb_atFGl3NEe6FMddvV4fG4klVzpzW0/edit?usp=sharing)
-
 ## Current recommendation for future data ingestion
 
 When adding a new tournament year or backfilling an old one:
@@ -50,9 +67,18 @@ When adding a new tournament year or backfilling an old one:
 
 ## Current historical coverage in the repo
 
+- 2021 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
+- 2022 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
+- 2023 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
 - 2025 is generated from the current legacy snapshot source path plus official rules references.
 - 2024 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
-- `data/generated/index.json` currently exposes both 2024 and 2025 to the app year selector.
+- `data/generated/index.json` currently exposes 2021 through 2025 to the app year selector.
+
+## Earliest reliable official-source coverage found so far
+
+- 2021 is the earliest year currently recovered into the app with a linked official calculator sheet and trustworthy ship-level data.
+- Older tournament years still have official CCP rules posts available, for example Alliance Tournament XV and XIV.
+- I have not yet recovered equally trustworthy official calculator data for those older years, so they are not bundled yet.
 
 ## Important caveat
 

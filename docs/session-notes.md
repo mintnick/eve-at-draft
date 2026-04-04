@@ -15,7 +15,7 @@
 - TypeScript, Vitest, and TS tooling support are in place
 - PrimeVue now replaces Quasar in the app shell and current draft screen
 - The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset
-- The app now exposes both `data/generated/2024.json` and `data/generated/2025.json` through the generated year index
+- The app now exposes `data/generated/2021.json` through `data/generated/2025.json` through the generated year index
 - The app resolves ship names through `data/generated/ship-catalog.json`
 - The TypeScript pipeline now owns fetch/build/validate flow via `yarn data:fetch`, `yarn data:build`, `yarn data:validate`, and `yarn data:refresh`
 - `data/raw/2025/source.json` is now the raw snapshot input for the current generated outputs
@@ -71,6 +71,10 @@
   - 2024 is fetched from the official Alliance Tournament XX rules post plus the official Google Sheet static-values tab (`gid=284772315`)
   - the generated year index now lets the app switch cleanly between 2024 and 2025
   - 2024-specific rule metadata is now data-driven, including the higher non-logistics hull caps and duplicate-ship inflation metadata
+- Historical year support now extends back to 2021:
+  - `2021`, `2022`, and `2023` are now generated from official CCP rules posts plus official Google Sheet static-values tabs
+  - the static-values parser now supports both the newer 9-column sheet layout and the older 8-column layout used by ATXVII through ATXIX
+  - the earliest trustworthy official-source tournament data currently bundled is 2021
 - Phase 11 has started:
   - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
   - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years
@@ -95,7 +99,7 @@
 - First concrete implementation milestone:
   - remove or quarantine any remaining deprecated legacy files that are no longer part of the new pipeline or app path
   - decide whether any remaining scaffold README files should stay or be folded into root/docs documentation
-  - close Phase 11 after the final legacy-file pass and a short final wrap-up commit
+  - decide whether to stop at 2021 as the earliest trustworthy bundled year, or invest in manual recovery for older tournaments that only have prose rules available
 
 ## Resume prompt
 Use this in a future session:

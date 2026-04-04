@@ -1,6 +1,11 @@
 [
   {
     "category": "inventory_type",
+    "id": 47271,
+    "name": "Leshak"
+  },
+  {
+    "category": "inventory_type",
     "id": 596,
     "name": "Impairor"
   },
@@ -41,6 +46,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 589,
+    "name": "Executioner"
+  },
+  {
+    "category": "inventory_type",
     "id": 60764,
     "name": "Laelaps"
   },
@@ -58,6 +68,16 @@
     "category": "inventory_type",
     "id": 597,
     "name": "Punisher"
+  },
+  {
+    "category": "inventory_type",
+    "id": 22436,
+    "name": "Widow"
+  },
+  {
+    "category": "inventory_type",
+    "id": 29248,
+    "name": "Magnate"
   },
   {
     "category": "inventory_type",
@@ -143,6 +163,11 @@
     "category": "inventory_type",
     "id": 17728,
     "name": "Megathron Navy Issue"
+  },
+  {
+    "category": "inventory_type",
+    "id": 587,
+    "name": "Rifter"
   },
   {
     "category": "inventory_type",
@@ -298,6 +323,11 @@
     "category": "inventory_type",
     "id": 11959,
     "name": "Rook"
+  },
+  {
+    "category": "inventory_type",
+    "id": 11393,
+    "name": "Retribution"
   },
   {
     "category": "inventory_type",
@@ -651,6 +681,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 22456,
+    "name": "Sabre"
+  },
+  {
+    "category": "inventory_type",
     "id": 34317,
     "name": "Confessor"
   },
@@ -776,6 +811,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 12005,
+    "name": "Ishtar"
+  },
+  {
+    "category": "inventory_type",
     "id": 12023,
     "name": "Deimos"
   },
@@ -896,6 +936,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 16227,
+    "name": "Ferox"
+  },
+  {
+    "category": "inventory_type",
     "id": 16229,
     "name": "Brutix"
   },
@@ -956,6 +1001,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 22466,
+    "name": "Astarte"
+  },
+  {
+    "category": "inventory_type",
     "id": 22442,
     "name": "Eos"
   },
@@ -991,6 +1041,11 @@
   },
   {
     "category": "inventory_type",
+    "id": 638,
+    "name": "Raven"
+  },
+  {
+    "category": "inventory_type",
     "id": 24688,
     "name": "Rokh"
   },
@@ -998,6 +1053,11 @@
     "category": "inventory_type",
     "id": 24690,
     "name": "Hyperion"
+  },
+  {
+    "category": "inventory_type",
+    "id": 641,
+    "name": "Megathron"
   },
   {
     "category": "inventory_type",
@@ -1063,6 +1123,11 @@
     "category": "inventory_type",
     "id": 28710,
     "name": "Golem"
+  },
+  {
+    "category": "inventory_type",
+    "id": 28661,
+    "name": "Kronos"
   },
   {
     "category": "inventory_type",
@@ -1283,70 +1348,5 @@
     "category": "inventory_type",
     "id": 81046,
     "name": "Deluge"
-  },
-  {
-    "category": "inventory_type",
-    "id": 47271,
-    "name": "Leshak"
-  },
-  {
-    "category": "inventory_type",
-    "id": 589,
-    "name": "Executioner"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22436,
-    "name": "Widow"
-  },
-  {
-    "category": "inventory_type",
-    "id": 29248,
-    "name": "Magnate"
-  },
-  {
-    "category": "inventory_type",
-    "id": 587,
-    "name": "Rifter"
-  },
-  {
-    "category": "inventory_type",
-    "id": 12005,
-    "name": "Ishtar"
-  },
-  {
-    "category": "inventory_type",
-    "id": 16227,
-    "name": "Ferox"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22466,
-    "name": "Astarte"
-  },
-  {
-    "category": "inventory_type",
-    "id": 638,
-    "name": "Raven"
-  },
-  {
-    "category": "inventory_type",
-    "id": 641,
-    "name": "Megathron"
-  },
-  {
-    "category": "inventory_type",
-    "id": 28661,
-    "name": "Kronos"
-  },
-  {
-    "category": "inventory_type",
-    "id": 22456,
-    "name": "Sabre"
-  },
-  {
-    "category": "inventory_type",
-    "id": 11393,
-    "name": "Retribution"
   }
 ]
