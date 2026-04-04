@@ -42,21 +42,28 @@ export interface RuleConfig {
   }
 }
 
-export interface ShipDefinition {
+export interface ShipCatalogEntry {
+  shipId: number
+  key: string
+  names: Record<LocaleCode, string>
+}
+
+export type ShipCatalog = Record<string, ShipCatalogEntry>
+
+export interface TournamentShipRule {
   shipId: number
   points: number
   logisticsWeight?: number
   flagshipEligible?: boolean
-  names: Record<LocaleCode, string>
 }
 
-export type TournamentHullCatalog = Record<HullType, Record<string, ShipDefinition>>
+export type TournamentHullRules = Record<HullType, Record<string, TournamentShipRule>>
 
 export interface TournamentDataset {
   summary: TournamentSummary
   sources: SourceReference[]
   rules: RuleConfig
-  hulls: TournamentHullCatalog
+  hulls: TournamentHullRules
 }
 
 export interface DraftShipSelection {

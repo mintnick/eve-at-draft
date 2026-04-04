@@ -36,7 +36,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Decide and document where manual overrides live for broken or incomplete upstream data.
 - [x] Move current single-year data into the new schema as the first migrated dataset.
 - [x] Ensure ship localization data is represented inside the tournament dataset model.
-- [ ] Revise the schema so ship identity and localized names live in a shared cross-year ship catalog instead of being duplicated per year.
+- [x] Revise the schema so ship identity and localized names live in a shared cross-year ship catalog instead of being duplicated per year.
 
 ## Phase 4: Data pipeline consolidation
 - [ ] Replace the current scattered Python scripts with a unified TypeScript data pipeline.

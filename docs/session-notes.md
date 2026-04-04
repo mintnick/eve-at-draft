@@ -13,7 +13,8 @@
 - TypeScript, Vitest, and TS tooling support are in place
 - PrimeVue now replaces Quasar in the app shell and current draft screen
 - The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset
-- `tools/migrate-legacy-data.ts` generates the current yearly dataset and `data/generated/index.json`
+- The app resolves ship names through `data/generated/ship-catalog.json`
+- `tools/migrate-legacy-data.ts` generates the shared ship catalog, the current yearly dataset, and `data/generated/index.json`
 - Validation commands currently passing:
   - `yarn data:migrate-legacy`
   - `yarn tools:validate`

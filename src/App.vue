@@ -6,13 +6,15 @@ import TabList from 'primevue/tablist'
 import TabPanel from 'primevue/tabpanel'
 import TabPanels from 'primevue/tabpanels'
 import Tabs from 'primevue/tabs'
+import shipCatalogData from '../data/generated/ship-catalog.json'
 import tournament from '../data/generated/2025.json'
 import Ship from './components/Ship.vue'
 import { useI18n } from 'vue-i18n'
-import type { HullType, TournamentDataset, TournamentHullCatalog } from './lib/types'
+import type { HullType, ShipCatalog, TournamentDataset, TournamentHullRules } from './lib/types'
 
 const currentTournament = tournament as TournamentDataset
-const data = currentTournament.hulls as TournamentHullCatalog
+const shipCatalog = shipCatalogData as ShipCatalog
+const data = currentTournament.hulls as TournamentHullRules
 type LogisticsEntry = {
   shipId: number
   points: number
@@ -204,8 +206,11 @@ function hullCountLabel(hullType: HullType) {
   return `${pick[hullType].length + flagship_type.value[hullType]} / ${max_number[hullType]}`
 }
 
-function localizedShipName(property: { names: Record<'en' | 'zh', string> }) {
-  return property.names[i18n.locale.value as 'en' | 'zh'] ?? property.names.en
+function localizedShipName(shipKey: string) {
+  const ship = shipCatalog[shipKey]
+  if (!ship) return shipKey
+
+  return ship.names[i18n.locale.value as 'en' | 'zh'] ?? ship.names.en
 }
 </script>
 
@@ -260,7 +265,7 @@ function localizedShipName(property: { names: Record<'en' | 'zh', string> }) {
                     :key="ship_name"
                     :hull_type="hull_type"
                     :ship_name="ship_name"
-                    :display_name="localizedShipName(property)"
+                    :display_name="localizedShipName(ship_name)"
                     :property="property"
                     :btns="['add', 'ban']"
                     :not_pickable="not_pickable(hull_type, ship_name, property)"
@@ -308,7 +313,7 @@ function localizedShipName(property: { names: Record<'en' | 'zh', string> }) {
             :key="`${ship.hull_type}-${ship.ship_name}`"
             :hull_type="ship.hull_type"
             :ship_name="ship.ship_name"
-            :display_name="localizedShipName(data[ship.hull_type][ship.ship_name])"
+            :display_name="localizedShipName(ship.ship_name)"
             :property="ship.property"
             :btns="['remove']"
             @remove_ship="remove_ship"
@@ -343,7 +348,7 @@ function localizedShipName(property: { names: Record<'en' | 'zh', string> }) {
           :key="`${ship.hull_type}-${ship.ship_name}`"
           :hull_type="ship.hull_type"
           :ship_name="ship.ship_name"
-          :display_name="localizedShipName(data[ship.hull_type][ship.ship_name])"
+          :display_name="localizedShipName(ship.ship_name)"
           :property="ship.property"
           :btns="['unban']"
           @unban_ship="unban_ship"

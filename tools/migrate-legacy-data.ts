@@ -7,9 +7,11 @@ import en from '../src/assets/locales/en.json'
 import zh from '../src/assets/locales/zh.json'
 import type {
   HullType,
-  ShipDefinition,
+  ShipCatalog,
+  ShipCatalogEntry,
   TournamentDataset,
-  TournamentHullCatalog,
+  TournamentHullRules,
+  TournamentShipRule,
   TournamentIndexEntry,
 } from '../src/lib/types'
 
@@ -22,6 +24,7 @@ const generatedDir = path.resolve(__dirname, '../data/generated')
 
 const currentYear = 2025
 const datasetFile = `${currentYear}.json`
+const shipCatalogFile = 'ship-catalog.json'
 
 const rulesLink = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations'
 const banLink = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15'
@@ -38,7 +41,30 @@ const hullCaps: Record<HullType, number> = {
   Corvette: 3,
 }
 
-function buildHullCatalog(): TournamentHullCatalog {
+function buildShipCatalog(): ShipCatalog {
+  const entries = new Map<string, ShipCatalogEntry>()
+
+  for (const ships of Object.values(legacyShips)) {
+    for (const [shipKey, property] of Object.entries(ships)) {
+      const ship = property as {
+        ship_id: number
+      }
+
+      entries.set(shipKey, {
+        shipId: ship.ship_id,
+        key: shipKey,
+        names: {
+          en: enShipNames[String(ship.ship_id)] ?? shipKey,
+          zh: zhShipNames[String(ship.ship_id)] ?? shipKey,
+        },
+      })
+    }
+  }
+
+  return Object.fromEntries(entries)
+}
+
+function buildHullRules(): TournamentHullRules {
   return Object.fromEntries(
     Object.entries(legacyShips).map(([hullType, ships]) => {
       const entries = Object.fromEntries(
@@ -49,27 +75,24 @@ function buildHullCatalog(): TournamentHullCatalog {
             logistics?: number
           }
 
-          const localizedShip: ShipDefinition = {
+          const tournamentShip: TournamentShipRule = {
             shipId: ship.ship_id,
             points: ship.points,
             logisticsWeight: ship.logistics,
             flagshipEligible: hullType === 'Flagship',
-            names: {
-              en: enShipNames[String(ship.ship_id)] ?? shipKey,
-              zh: zhShipNames[String(ship.ship_id)] ?? shipKey,
-            },
           }
 
-          return [shipKey, localizedShip]
+          return [shipKey, tournamentShip]
         }),
       )
 
       return [hullType, entries]
     }),
-  ) as TournamentHullCatalog
+  ) as TournamentHullRules
 }
 
 async function main() {
+  const shipCatalog = buildShipCatalog()
   const dataset: TournamentDataset = {
     summary: {
       year: currentYear,
@@ -101,7 +124,7 @@ async function main() {
         },
       },
     },
-    hulls: buildHullCatalog(),
+    hulls: buildHullRules(),
   }
 
   const tournamentIndex: TournamentIndexEntry[] = [
@@ -112,10 +135,11 @@ async function main() {
   ]
 
   await mkdir(generatedDir, { recursive: true })
+  await writeFile(path.join(generatedDir, shipCatalogFile), `${JSON.stringify(shipCatalog, null, 2)}\n`)
   await writeFile(path.join(generatedDir, datasetFile), `${JSON.stringify(dataset, null, 2)}\n`)
   await writeFile(path.join(generatedDir, 'index.json'), `${JSON.stringify(tournamentIndex, null, 2)}\n`)
 
-  console.log(`Generated ${datasetFile} and index.json`)
+  console.log(`Generated ${shipCatalogFile}, ${datasetFile}, and index.json`)
 }
 
 main().catch((error: unknown) => {
