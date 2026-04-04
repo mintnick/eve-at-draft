@@ -6,17 +6,21 @@
 - Phase 0 is complete
 - Phase 1 is complete
 - Phase 2 is complete
+- Phase 3 is complete
 - Refactor plan is saved in `docs/refactor-plan.md`
 - Step-by-step checklist is saved in `docs/refactor-todo.md`
 - Baseline and docs index are saved in `docs/current-baseline.md` and `docs/README.md`
 - TypeScript, Vitest, and TS tooling support are in place
 - PrimeVue now replaces Quasar in the app shell and current draft screen
+- The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset
+- `tools/migrate-legacy-data.ts` generates the current yearly dataset and `data/generated/index.json`
 - Validation commands currently passing:
+  - `yarn data:migrate-legacy`
   - `yarn tools:validate`
   - `yarn typecheck`
   - `yarn test:run`
   - `yarn build`
-- Phase 3 is the current next step
+- Phase 4 is the current next step
 
 ## Agreed direction
 - Keep `Vue`
@@ -27,14 +31,14 @@
 - Add text import/export and clipboard support
 
 ## Recommended next step
-- Start Phase 3 from `docs/refactor-todo.md`
+- Start Phase 4 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - define the canonical yearly tournament dataset schema
-  - define the generated year index format
-  - move the current dataset into the new schema as the first migrated year
-  - document where overrides will live for future historical data fixes
+  - extend the current migration script into a real fetch/normalize pipeline
+  - add validation for duplicates, translations, hull mappings, and rule integrity
+  - generate the current tournament dataset through the new pipeline contract
+  - document the refresh flow for adding future tournament years
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 3 by defining the yearly tournament dataset model and migrating the current data into it.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 4 by turning the current legacy migration into the real data fetch/normalize pipeline.`

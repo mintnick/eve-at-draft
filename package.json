@@ -8,6 +8,7 @@
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest",
     "test:run": "vitest run",
+    "data:migrate-legacy": "tsx ./tools/migrate-legacy-data.ts",
     "tools:validate": "tsx ./tools/validate-data.ts",
     "build": "vite build",
     "preview": "vite preview"

@@ -30,12 +30,12 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Remove leftover Quasar-specific code and styles once the page is stable.
 
 ## Phase 3: Data model redesign
-- [ ] Define the canonical schema for a yearly tournament dataset.
-- [ ] Define the generated index format for listing available tournament years.
-- [ ] Separate raw source inputs from generated normalized outputs.
-- [ ] Decide and document where manual overrides live for broken or incomplete upstream data.
-- [ ] Move current single-year data into the new schema as the first migrated dataset.
-- [ ] Ensure ship localization data is represented inside the tournament dataset model.
+- [x] Define the canonical schema for a yearly tournament dataset.
+- [x] Define the generated index format for listing available tournament years.
+- [x] Separate raw source inputs from generated normalized outputs.
+- [x] Decide and document where manual overrides live for broken or incomplete upstream data.
+- [x] Move current single-year data into the new schema as the first migrated dataset.
+- [x] Ensure ship localization data is represented inside the tournament dataset model.
 
 ## Phase 4: Data pipeline consolidation
 - [ ] Replace the current scattered Python scripts with a unified TypeScript data pipeline.
@@ -110,7 +110,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 ## Suggested review checkpoints
 - [x] Checkpoint A: TypeScript, structure, and test harness are in place.
 - [x] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.
-- [ ] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
+- [x] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
 - [ ] Checkpoint D: Rules engine is extracted and behavior matches expected draft logic.
 - [ ] Checkpoint E: Multi-year selection works with the new i18n structure.
 - [ ] Checkpoint F: Import/export and clipboard flow are complete.

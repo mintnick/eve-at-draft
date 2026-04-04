@@ -6,20 +6,22 @@ import TabList from 'primevue/tablist'
 import TabPanel from 'primevue/tabpanel'
 import TabPanels from 'primevue/tabpanels'
 import Tabs from 'primevue/tabs'
-import data from './assets/ships.json'
+import tournament from '../data/generated/2025.json'
 import Ship from './components/Ship.vue'
 import { useI18n } from 'vue-i18n'
+import type { HullType, TournamentDataset, TournamentHullCatalog } from './lib/types'
 
-type HullType = keyof typeof data
+const currentTournament = tournament as TournamentDataset
+const data = currentTournament.hulls as TournamentHullCatalog
 type LogisticsEntry = {
-  ship_id: number
+  shipId: number
   points: number
-  logistics?: number
+  logisticsWeight?: number
 }
 type ShipProperty = {
+  shipId: number
   points: number
-  ship_id: number
-  logistics?: number
+  logisticsWeight?: number
 }
 
 type DraftedShip = {
@@ -28,27 +30,17 @@ type DraftedShip = {
   property: {
     original_points?: number
     points: number
-    ship_id: number
+    shipId: number
   }
 }
 
 const i18n = useI18n()
 
-const rule_link = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations'
-const ban_link = 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15'
-const max_points = 200
-const max_ships = 10
-const max_number: Record<HullType, number> = {
-  Flagship: 1,
-  Logistics: 1,
-  Battleship: 3,
-  Battlecruiser: 3,
-  Cruiser: 3,
-  Destroyer: 3,
-  Frigate: 3,
-  Industrial: 3,
-  Corvette: 3,
-}
+const rule_link = currentTournament.sources.find((source) => source.label === 'Rules')?.url ?? '#'
+const ban_link = currentTournament.sources.find((source) => source.label === 'Ban Rules')?.url ?? '#'
+const max_points = currentTournament.rules.maxPoints
+const max_ships = currentTournament.rules.maxShips
+const max_number = currentTournament.rules.hullCaps as Record<HullType, number>
 
 const hullTypes = Object.keys(data) as HullType[]
 
@@ -79,7 +71,7 @@ const total_points = computed(() => {
 const logi_count = computed(() => {
   let totalLogi = 0
   for (const logi of pick.Logistics) {
-    totalLogi += (data.Logistics as Record<string, LogisticsEntry>)[logi.ship_name]?.logistics ?? 0
+    totalLogi += (data.Logistics as Record<string, LogisticsEntry>)[logi.ship_name]?.logisticsWeight ?? 0
   }
   return totalLogi
 })
@@ -130,7 +122,7 @@ function add_ship(hull_type: string, ship_name: string, property: ShipProperty) 
     property: {
       original_points,
       points: property.points,
-      ship_id: property.ship_id,
+      shipId: property.shipId,
     },
   })
 }
@@ -148,7 +140,7 @@ function ban_ship(hull_type: string, ship_name: string, property: ShipProperty) 
     ship_name,
     property: {
       points: property.points,
-      ship_id: property.ship_id,
+      shipId: property.shipId,
     },
   })
 }
@@ -169,7 +161,7 @@ function not_pickable(hull_type: HullType, ship_name: string, property: ShipProp
   }
 
   if (hull_type === 'Logistics') {
-    return logi_count.value + (property.logistics ?? 0) > max_number.Logistics
+    return logi_count.value + (property.logisticsWeight ?? 0) > max_number.Logistics
   }
 
   return pick[hull_type].length + flagship_type.value[hull_type] >= max_number[hull_type]
@@ -210,6 +202,10 @@ function change_lang(lang: 'en' | 'zh') {
 function hullCountLabel(hullType: HullType) {
   if (hullType === 'Logistics') return `${logi_count.value} / ${max_number.Logistics}`
   return `${pick[hullType].length + flagship_type.value[hullType]} / ${max_number[hullType]}`
+}
+
+function localizedShipName(property: { names: Record<'en' | 'zh', string> }) {
+  return property.names[i18n.locale.value as 'en' | 'zh'] ?? property.names.en
 }
 </script>
 
@@ -264,6 +260,7 @@ function hullCountLabel(hullType: HullType) {
                     :key="ship_name"
                     :hull_type="hull_type"
                     :ship_name="ship_name"
+                    :display_name="localizedShipName(property)"
                     :property="property"
                     :btns="['add', 'ban']"
                     :not_pickable="not_pickable(hull_type, ship_name, property)"
@@ -311,6 +308,7 @@ function hullCountLabel(hullType: HullType) {
             :key="`${ship.hull_type}-${ship.ship_name}`"
             :hull_type="ship.hull_type"
             :ship_name="ship.ship_name"
+            :display_name="localizedShipName(data[ship.hull_type][ship.ship_name])"
             :property="ship.property"
             :btns="['remove']"
             @remove_ship="remove_ship"
@@ -345,6 +343,7 @@ function hullCountLabel(hullType: HullType) {
           :key="`${ship.hull_type}-${ship.ship_name}`"
           :hull_type="ship.hull_type"
           :ship_name="ship.ship_name"
+          :display_name="localizedShipName(data[ship.hull_type][ship.ship_name])"
           :property="ship.property"
           :btns="['unban']"
           @unban_ship="unban_ship"

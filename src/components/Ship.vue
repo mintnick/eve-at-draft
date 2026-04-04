@@ -4,10 +4,11 @@ import Button from 'primevue/button'
 
 const props = defineProps<{
   ship_name: string
+  display_name: string
   hull_type: string
   property: {
     points: number
-    ship_id: number
+    shipId: number
     original_points?: number
   }
   btns?: string[]
@@ -37,7 +38,7 @@ const extra_points = computed(() => {
       <div class="ship-points-wrap">
         <img
           class="ship-icon"
-          :src="`https://images.evetech.net/types/${property.ship_id}/icon`"
+          :src="`https://images.evetech.net/types/${property.shipId}/icon`"
           :alt="`${ship_name} icon`"
         />
         <div
@@ -51,7 +52,7 @@ const extra_points = computed(() => {
 
       <div class="ship-name">
         <img v-if="hull_type === 'Flagship' && has_btn('remove')" src="/hull/Flagship.png" class="hull-icon hull-icon--small" />
-        <span>{{ $t(`ships.${property.ship_id}`) }}</span>
+        <span>{{ display_name }}</span>
       </div>
     </div>
 
