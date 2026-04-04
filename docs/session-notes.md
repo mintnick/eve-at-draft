@@ -22,10 +22,18 @@
 - Validation commands currently passing:
   - `yarn data:refresh`
   - `yarn tools:validate`
-  - `yarn typecheck`
   - `yarn test:run`
   - `yarn build`
 - Phase 5 is the current next step
+- Phase 5 has started:
+- Phase 5 is now complete:
+  - draft state and validation logic now live in `src/lib/rules/draft-engine.ts`
+  - `DraftAction` is now explicit for pick, remove, ban, unban, and clear operations
+  - derived draft metrics now cover points, ship count, hull counts, logistics usage, and flagship classification
+  - `App.vue` is now a thin entry point that renders `src/app/AppShell.vue`
+  - draft page rendering and styling now live under `src/features/draft/components/DraftScreen.vue`
+  - invalid draft actions now surface visible localized feedback in the UI
+  - draft engine tests now cover flagship classification, logistics cap enforcement, ban/pick conflicts, flagship uniqueness, ship-count cap, and hull-cap behavior
 
 ## Agreed direction
 - Keep `Vue`
@@ -40,14 +48,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 5 from `docs/refactor-todo.md`
+- Start Phase 6 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - extract draft rules and derived state out of `App.vue`
-  - break up page logic, presentation, and styles into app/feature modules
-  - keep current drafting behavior stable while moving logic into pure rule-engine utilities
-  - prepare the app for later multi-year state and import/export features
+  - introduce app state that separates tournament selection, draft state, and UI state
+  - add year selection backed by the generated tournament index
+  - reset and reload the draft state when the selected tournament changes
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, and docs/session-notes.md, then continue with Phase 5 by extracting the draft rules and reducing App.vue responsibilities.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 6 by adding tournament year selection and separating tournament state from draft/UI state.`

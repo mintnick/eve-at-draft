@@ -70,10 +70,12 @@ export interface DraftShipSelection {
   hullType: HullType
   shipKey: string
   shipId: number
+  originalPoints?: number
   points: number
+  logisticsWeight?: number
 }
 
-export type DraftBuckets = Partial<Record<HullType, DraftShipSelection[]>>
+export type DraftBuckets = Record<HullType, DraftShipSelection[]>
 
 export interface DraftState {
   picks: DraftBuckets
@@ -81,9 +83,9 @@ export interface DraftState {
 }
 
 export type DraftAction =
-  | { type: 'pick'; shipKey: string }
+  | { type: 'pick'; hullType: HullType; shipKey: string }
   | { type: 'remove'; shipKey: string; hullType: HullType }
-  | { type: 'ban'; shipKey: string }
+  | { type: 'ban'; hullType: HullType; shipKey: string }
   | { type: 'unban'; shipKey: string; hullType: HullType }
   | { type: 'clear-picks' }
   | { type: 'clear-bans' }

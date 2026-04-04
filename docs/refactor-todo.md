@@ -53,18 +53,18 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Document how to refresh or add a tournament year.
 
 ## Phase 5: Rules engine extraction
-- [ ] Extract draft logic out of the main view into pure rule-engine modules.
-- [ ] Break up `App.vue` so page logic, presentation components, and styles are separated into app or feature modules.
-- [ ] Define the draft action model for pick, remove, ban, unban, and clear operations.
-- [ ] Implement derived state calculation:
-  - [ ] total points
-  - [ ] total ship count
-  - [ ] hull counts
-  - [ ] logistics usage
-  - [ ] flagship classification
-- [ ] Implement validation results for legal and illegal actions with user-facing reasons.
-- [ ] Make year-specific rule variation data-driven from the tournament dataset.
-- [ ] Verify that the migrated current-year behavior still matches the existing app where intended.
+- [x] Extract draft logic out of the main view into pure rule-engine modules.
+- [x] Break up `App.vue` so page logic, presentation components, and styles are separated into app or feature modules.
+- [x] Define the draft action model for pick, remove, ban, unban, and clear operations.
+- [x] Implement derived state calculation:
+  - [x] total points
+  - [x] total ship count
+  - [x] hull counts
+  - [x] logistics usage
+  - [x] flagship classification
+- [x] Implement validation results for legal and illegal actions with user-facing reasons.
+- [x] Make year-specific rule variation data-driven from the tournament dataset.
+- [x] Verify that the migrated current-year behavior still matches the existing app where intended.
 
 ## Phase 6: App state and year selection
 - [ ] Introduce a clear app state model that separates tournament data, draft state, and UI state.
@@ -129,7 +129,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Checkpoint B: PrimeVue migration is complete and the current-year UI still works.
 - [x] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
 - [x] Checkpoint D: Data pipeline fetch/build/validate flow works against the current upstream-backed raw source path.
-- [ ] Checkpoint E: Rules engine is extracted and behavior matches expected draft logic.
+- [x] Checkpoint E: Rules engine is extracted and behavior matches expected draft logic.
 - [ ] Checkpoint F: Multi-year selection works with the new i18n structure.
 - [ ] Checkpoint G: UI polish pass is complete and the app feels coherent on desktop and mobile.
 - [ ] Checkpoint H: Import/export and clipboard flow are complete.

@@ -14,6 +14,8 @@ const props = defineProps<{
   btns?: string[]
   not_pickable?: boolean
   not_bannable?: boolean
+  pick_reason?: string
+  ban_reason?: string
 }>()
 
 const emit = defineEmits<{
@@ -61,8 +63,9 @@ const extra_points = computed(() => {
         v-if="has_btn('add')"
         rounded
         text
-        class="ship-action ship-action--add"
-        :disabled="not_pickable"
+        :class="['ship-action ship-action--add', { 'ship-action--blocked': not_pickable }]"
+        :title="pick_reason"
+        :aria-label="pick_reason || undefined"
         @click="emit('add_ship', hull_type, ship_name, property)"
       >
         <img src="/icons/add.svg" alt="" class="ship-action-icon" />
@@ -72,8 +75,9 @@ const extra_points = computed(() => {
         v-if="hull_type !== 'Flagship' && has_btn('ban')"
         rounded
         text
-        class="ship-action ship-action--ban"
-        :disabled="not_bannable"
+        :class="['ship-action ship-action--ban', { 'ship-action--blocked': not_bannable }]"
+        :title="ban_reason"
+        :aria-label="ban_reason || undefined"
         @click="emit('ban_ship', hull_type, ship_name, property)"
       >
         <img src="/icons/ban.svg" alt="" class="ship-action-icon" />
@@ -179,6 +183,10 @@ const extra_points = computed(() => {
 .ship-action {
   width: 2rem;
   height: 2rem;
+}
+
+.ship-action--blocked {
+  opacity: 0.45;
 }
 
 .ship-action-icon {

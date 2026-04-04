@@ -6,6 +6,19 @@
     "pick": "阵容",
     "ban": "禁用"
   },
+  "validation": {
+    "ship-not-found": "当前赛事数据中没有这艘舰船。",
+    "max-points-reached": "已达到 200 分上限，不能继续添加舰船。",
+    "max-ships-reached": "已达到 10 艘舰船上限，不能继续添加。",
+    "flagship-already-picked": "只能选择一艘旗舰。",
+    "ship-banned": "这艘舰船已经被禁用，不能加入阵容。",
+    "logistics-cap-reached": "后勤额度已满，不能再添加这艘舰船。",
+    "hull-cap-reached": "该舰船类别数量已达上限。",
+    "ship-picked": "已经加入阵容的舰船不能再禁用。",
+    "ship-already-banned": "这艘舰船已经被禁用。",
+    "ship-not-picked": "这艘舰船当前不在阵容中。",
+    "ship-not-banned": "这艘舰船当前不在禁用列表中。"
+  },
   "types": {
     "Flagship": "旗舰",
     "Logistics": "后勤",
