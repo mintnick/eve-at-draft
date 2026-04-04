@@ -7,6 +7,7 @@ import {
   getHullTypes,
   validateDraftAction,
 } from '@/lib/rules/draft-engine'
+import { getShipDisplayName } from '@/lib/i18n/labels'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
 import type { DraftAction, HullType, LocaleCode, ShipCatalog, TournamentDataset, TournamentShipRule } from '@/lib/types'
 
@@ -86,12 +87,7 @@ export function useDraftBoard(
   }
 
   function localizedShipName(shipKey: string) {
-    const ship = shipCatalog[shipKey]
-    if (!ship) {
-      return shipKey
-    }
-
-    return ship.names[locale.value] ?? ship.names.en
+    return getShipDisplayName(shipCatalog, shipKey, locale.value)
   }
 
   function shipProperty(rule: TournamentShipRule) {

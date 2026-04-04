@@ -1,23 +1,34 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Select from 'primevue/select'
 
 import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
+import { appMessages } from '@/lib/i18n'
+import { setStoredLocale, setStoredThemeDark } from '@/lib/preferences'
+import type { LocaleCode } from '@/lib/types'
 
 const { locale } = useI18n()
 const { currentTournament, draftState, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
 
+const localeOptions = computed(() =>
+  (Object.keys(appMessages) as LocaleCode[]).map((value) => ({
+    value,
+    label: value === 'zh' ? '简体中文' : 'English',
+  })),
+)
+
 function toggleTheme() {
   uiState.isDark = !uiState.isDark
   document.documentElement.classList.toggle('app-dark', uiState.isDark)
-  document.cookie = `theme=${uiState.isDark}`
+  setStoredThemeDark(uiState.isDark)
 }
 
-function changeLang(nextLocale: 'en' | 'zh') {
+function changeLang(nextLocale: LocaleCode) {
   locale.value = nextLocale
-  document.cookie = `lang=${nextLocale}`
+  setStoredLocale(nextLocale)
 }
 </script>
 
@@ -38,11 +49,21 @@ function changeLang(nextLocale: 'en' | 'zh') {
             class="year-select"
           />
         </div>
+        <div class="year-picker">
+          <label class="year-picker-label" for="app-language">{{ $t('messages.language') }}</label>
+          <Select
+            id="app-language"
+            :model-value="locale"
+            :options="localeOptions"
+            option-label="label"
+            option-value="value"
+            class="year-select"
+            @update:model-value="changeLang($event as LocaleCode)"
+          />
+        </div>
         <Button rounded text class="toolbar-button" @click="toggleTheme">
           <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
         </Button>
-        <Button outlined class="lang-button" @click="changeLang('zh')">简体中文</Button>
-        <Button outlined class="lang-button" @click="changeLang('en')">English</Button>
       </div>
     </header>
 
@@ -83,8 +104,7 @@ function changeLang(nextLocale: 'en' | 'zh') {
   flex-wrap: wrap;
 }
 
-.toolbar-button,
-.lang-button {
+.toolbar-button {
   gap: 0.45rem;
 }
 

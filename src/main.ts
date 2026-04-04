@@ -4,22 +4,13 @@ import Aura from '@primeuix/themes/aura'
 import 'primeicons/primeicons.css'
 
 import App from './App.vue'
-import i18n from './i18n'
+import { createAppI18n } from '@/lib/i18n'
+import { getInitialThemeDark } from '@/lib/preferences'
 import './style.css'
 
-function isDarkThemeEnabled(): boolean {
-  const themeString = document.cookie
-    .split('; ')
-    .find((row) => row.startsWith('theme='))
-    ?.split('=')[1]
+document.documentElement.classList.toggle('app-dark', getInitialThemeDark())
 
-  if (themeString === 'true') return true
-  if (themeString === 'false') return false
-
-  return window.matchMedia('(prefers-color-scheme: dark)').matches
-}
-
-document.documentElement.classList.toggle('app-dark', isDarkThemeEnabled())
+const i18n = createAppI18n()
 
 createApp(App)
   .use(PrimeVue, {

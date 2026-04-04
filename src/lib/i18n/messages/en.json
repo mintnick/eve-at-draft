@@ -1,0 +1,35 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "Rules",
+    "clear": "Clear",
+    "pick": "Picks",
+    "ban": "Bans",
+    "year": "Tournament",
+    "language": "Language"
+  },
+  "validation": {
+    "ship-not-found": "This ship is not available in the selected tournament dataset.",
+    "max-points-reached": "You cannot add more ships because the 200 point cap is already reached.",
+    "max-ships-reached": "You cannot add more ships because the 10 ship cap is already reached.",
+    "flagship-already-picked": "Only one flagship can be picked.",
+    "ship-banned": "You cannot pick a ship that is already banned.",
+    "logistics-cap-reached": "You cannot add that ship because the logistics limit is already full.",
+    "hull-cap-reached": "You cannot add that ship because this hull cap is already full.",
+    "ship-picked": "You cannot ban a ship that is already picked.",
+    "ship-already-banned": "That ship is already banned.",
+    "ship-not-picked": "That ship is not currently picked.",
+    "ship-not-banned": "That ship is not currently banned."
+  },
+  "types": {
+    "Flagship": "Flagship",
+    "Logistics": "Logistics",
+    "Battleship": "Battleship",
+    "Battlecruiser": "Battlecruiser",
+    "Cruiser": "Cruiser",
+    "Destroyer": "Destroyer",
+    "Frigate": "Frigate",
+    "Industrial": "Industrial",
+    "Corvette": "Corvette"
+  }
+}

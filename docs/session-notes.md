@@ -22,10 +22,9 @@
 - Validation commands currently passing:
   - `yarn data:refresh`
   - `yarn tools:validate`
+  - `yarn typecheck`
   - `yarn test:run`
   - `yarn build`
-- Phase 5 is the current next step
-- Phase 5 has started:
 - Phase 5 is now complete:
   - draft state and validation logic now live in `src/lib/rules/draft-engine.ts`
   - `DraftAction` is now explicit for pick, remove, ban, unban, and clear operations
@@ -40,6 +39,13 @@
   - the app shell can switch the active tournament dataset by selected year
   - changing the selected tournament resets the current draft screen instance cleanly
   - the draft UI remains connected to the extracted rules engine through the selected dataset
+- Phase 7 is now complete:
+  - locale bootstrapping now lives under `src/lib/i18n/`
+  - app UI messages now live in dedicated i18n message files separate from ship labels
+  - tournament and ship label lookup now go through i18n label helpers
+  - cookie-backed locale and theme persistence now live in `src/lib/preferences/index.ts`
+  - view components no longer read or write cookies directly for language or theme
+  - the header now uses a locale selector instead of hardcoded language buttons, which scales cleanly for future locale additions
 
 ## Agreed direction
 - Keep `Vue`
@@ -54,13 +60,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 7 from `docs/refactor-todo.md`
+- Start Phase 8 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - move locale bootstrapping into a dedicated i18n module structure
-  - separate app UI strings from tournament and ship labels
-  - move cookie-backed language and theme persistence out of view components
+  - refine the year selector and top-level layout now that app state and i18n structure are stable
+  - continue moving page-level styling into clearer feature/app layers where it improves maintainability
+  - tighten responsive behavior and overall visual coherence after the structural refactors
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 7 by reorganizing i18n and moving cookie-backed preferences out of the view layer.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 8 by polishing the layout, responsive behavior, and visual system now that app state and i18n have been reorganized.`

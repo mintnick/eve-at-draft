@@ -74,11 +74,11 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Reconnect the current draft UI to the new rules engine outputs.
 
 ## Phase 7: I18n redesign
-- [ ] Move locale setup into a dedicated i18n module structure.
-- [ ] Separate app UI messages from tournament and ship labels.
-- [ ] Replace direct cookie handling in view code with a small preferences utility.
-- [ ] Preserve English and Simplified Chinese support.
-- [ ] Confirm the new structure can add a future locale without changing feature code.
+- [x] Move locale setup into a dedicated i18n module structure.
+- [x] Separate app UI messages from tournament and ship labels.
+- [x] Replace direct cookie handling in view code with a small preferences utility.
+- [x] Preserve English and Simplified Chinese support.
+- [x] Confirm the new structure can add a future locale without changing feature code.
 
 ## Phase 8: UI polish
 - [ ] Refine the overall layout and spacing now that PrimeVue migration and app state are stable.

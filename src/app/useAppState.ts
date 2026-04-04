@@ -2,6 +2,7 @@ import { computed, reactive, watch } from 'vue'
 
 import tournamentIndexData from '../../data/generated/index.json'
 import shipCatalogData from '../../data/generated/ship-catalog.json'
+import { getInitialThemeDark } from '@/lib/preferences'
 import type { ShipCatalog, TournamentDataset, TournamentIndexEntry } from '@/lib/types'
 
 interface TournamentAppState {
@@ -53,7 +54,7 @@ export function useAppState() {
   })
 
   const uiState = reactive<UiAppState>({
-    isDark: document.documentElement.classList.contains('app-dark'),
+    isDark: getInitialThemeDark(),
   })
 
   const currentTournament = computed(() => {

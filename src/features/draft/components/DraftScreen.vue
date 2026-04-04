@@ -11,6 +11,7 @@ import Tabs from 'primevue/tabs'
 
 import Ship from '@/components/Ship.vue'
 import { useDraftBoard } from '@/features/draft/useDraftBoard'
+import { getTournamentDisplayLabel } from '@/lib/i18n/labels'
 import type { HullType, LocaleCode, ShipCatalog, TournamentDataset } from '@/lib/types'
 
 const props = defineProps<{
@@ -49,6 +50,7 @@ const {
 } = useDraftBoard(props.dataset, props.shipCatalog, appLocale)
 
 const feedbackMessages = computed(() => feedbackReasons.value.map((reason) => t(`validation.${reason}`)))
+const tournamentLabel = computed(() => getTournamentDisplayLabel(dataset.summary, appLocale.value))
 
 function pickReason(hullType: HullType, shipKey: string) {
   const validation = pickValidation(hullType, shipKey)
@@ -72,7 +74,7 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 <template>
   <div class="draft-page">
     <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
-      {{ $t('messages.rules') }} : {{ dataset.summary.label }}
+      {{ $t('messages.rules') }} : {{ tournamentLabel }}
     </a>
 
     <div
