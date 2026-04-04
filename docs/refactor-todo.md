@@ -77,7 +77,15 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Preserve English and Simplified Chinese support.
 - [ ] Confirm the new structure can add a future locale without changing feature code.
 
-## Phase 8: Import and export
+## Phase 8: UI polish
+- [ ] Refine the overall layout and spacing now that PrimeVue migration and app state are stable.
+- [ ] Replace transitional styling with a more coherent visual system for buttons, tabs, panels, and lists.
+- [ ] Improve responsive behavior for mobile and narrow tablet widths.
+- [ ] Revisit typography, hierarchy, and density so the draft workflow is easier to scan.
+- [ ] Polish dark/light theme behavior and reduce visual regressions from the Quasar removal.
+- [ ] Review the year selector and future import/export affordances as part of the UI pass.
+
+## Phase 9: Import and export
 - [ ] Define the `EVE-AT-DRAFT v1` plain-text format precisely.
 - [ ] Implement draft serialization to text.
 - [ ] Implement draft parsing from text.
@@ -86,7 +94,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Add paste/import UI flow with visible parse and validation errors.
 - [ ] Ensure import can restore both year and draft state from one text payload.
 
-## Phase 9: Testing and acceptance
+## Phase 10: Testing and acceptance
 - [ ] Add unit tests for data normalization and override behavior.
 - [ ] Add unit tests for rule-engine behavior across multiple tournament years.
 - [ ] Add unit tests for import/export round-trip behavior and invalid formats.
@@ -100,7 +108,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Keep `yarn build` passing.
 - [ ] Run the full test suite and capture any residual gaps.
 
-## Phase 10: Cleanup and handoff
+## Phase 11: Cleanup and handoff
 - [ ] Remove deprecated legacy files and dead code once replacements are in place.
 - [ ] Update README to reflect the new architecture, tooling commands, and multi-year support.
 - [ ] Add a short maintainer guide for refreshing tournament data.
@@ -118,5 +126,6 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
 - [ ] Checkpoint D: Rules engine is extracted and behavior matches expected draft logic.
 - [ ] Checkpoint E: Multi-year selection works with the new i18n structure.
-- [ ] Checkpoint F: Import/export and clipboard flow are complete.
-- [ ] Checkpoint G: Tests, docs, and cleanup are complete.
+- [ ] Checkpoint F: UI polish pass is complete and the app feels coherent on desktop and mobile.
+- [ ] Checkpoint G: Import/export and clipboard flow are complete.
+- [ ] Checkpoint H: Tests, docs, and cleanup are complete.

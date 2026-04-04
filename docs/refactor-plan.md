@@ -106,6 +106,7 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 - Acceptance checks:
   - `yarn build`
   - test suite passes after PrimeVue migration and Quasar removal
+  - UI polish pass preserves core drafting flows across desktop and mobile breakpoints
 
 ## Assumptions and Defaults
 - PrimeVue is the target UI framework for this refactor.
@@ -120,3 +121,8 @@ Refactor the app into a typed static Vue SPA backed by a versioned historical to
 - Add historic team draft presets or references for past tournament teams, including champions and other notable teams.
 - Treat this as optional because upstream data discovery and normalization may be difficult or incomplete.
 - Keep the current refactor architecture compatible with future team-level datasets, but do not block the active refactor phases on this feature.
+
+## Explicit UI Polish Scope
+- Add a dedicated polish pass after the core data, rules, and state work is stable enough to avoid repeated visual rework.
+- Polish includes layout refinement, responsive behavior, consistent PrimeVue customization, visual hierarchy, spacing, theme cleanup, and import/export or year-selection UX cleanup.
+- The goal is not just framework migration; the app should end the refactor looking intentional and coherent on desktop and mobile.
