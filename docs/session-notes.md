@@ -75,6 +75,11 @@
   - `2021`, `2022`, and `2023` are now generated from official CCP rules posts plus official Google Sheet static-values tabs
   - the static-values parser now supports both the newer 9-column sheet layout and the older 8-column layout used by ATXVII through ATXIX
   - the earliest trustworthy official-source tournament data currently bundled is 2021
+- Historical team drafts will not be ingested as app presets for now:
+  - EVE_NT was identified as the most useful public archive for match-level historical lineups
+  - we are intentionally choosing per-year external archive links over importing champion or team draft presets into the app
+  - this avoids a large naming and curation problem while still giving interested users a direct path to historic match comps
+  - the draft header now surfaces a per-year `Match Archive` link that opens the corresponding EVE_NT tournament page
 - Phase 11 has started:
   - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
   - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years
@@ -99,7 +104,8 @@
 - First concrete implementation milestone:
   - remove or quarantine any remaining deprecated legacy files that are no longer part of the new pipeline or app path
   - decide whether any remaining scaffold README files should stay or be folded into root/docs documentation
-  - decide whether to stop at 2021 as the earliest trustworthy bundled year, or invest in manual recovery for older tournaments that only have prose rules available
+  - keep 2021 as the current earliest bundled year unless an older official ship-level source is recovered later
+  - continue cleanup and close out Phase 11 once the remaining legacy-file pass is done
 
 ## Resume prompt
 Use this in a future session:

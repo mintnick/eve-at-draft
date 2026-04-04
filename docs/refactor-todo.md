@@ -121,9 +121,10 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Prepare a final refactor summary describing what changed and any follow-up work.
 
 ## Optional backlog
-- [ ] Investigate support for historic team draft presets, starting with champions and later expanding to other past teams.
-- [ ] Identify realistic data sources and fallback/manual curation strategy for team-level historic drafts.
-- [ ] Decide whether team drafts should be stored as reusable presets, reference snapshots, or a separate dataset family.
+- [x] Investigate support for historic team draft presets, starting with champions and later expanding to other past teams.
+- [x] Identify realistic data sources and fallback/manual curation strategy for team-level historic drafts.
+- [x] Decide whether team drafts should be stored as reusable presets, reference snapshots, or a separate dataset family.
+- [x] Chosen direction: do not ingest team presets for now; link each tournament year to an external match archive instead.
 
 ## Suggested review checkpoints
 - [x] Checkpoint A: TypeScript, structure, and test harness are in place.

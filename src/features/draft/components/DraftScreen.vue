@@ -31,6 +31,7 @@ const shipGroups = computed(() =>
 const {
   activeHullType,
   addShip,
+  archiveLink,
   banLink,
   banShip,
   banValidation,
@@ -85,9 +86,14 @@ defineExpose({
     <section class="draft-hero">
       <div class="draft-meta">
         <div class="draft-meta-label">{{ tournamentLabel }}</div>
-        <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
-          {{ $t('messages.rules') }}
-        </a>
+        <div class="draft-meta-links">
+          <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
+            {{ $t('messages.rules') }}
+          </a>
+          <a v-if="archiveLink" class="rules-link" :href="archiveLink" target="_blank" rel="noreferrer">
+            {{ $t('messages.matchArchive') }}
+          </a>
+        </div>
       </div>
 
       <div
@@ -252,6 +258,12 @@ defineExpose({
 .draft-meta {
   display: grid;
   gap: 0.35rem;
+}
+
+.draft-meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
 }
 
 .draft-meta-label {

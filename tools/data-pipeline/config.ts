@@ -8,6 +8,7 @@ export interface TournamentPipelineConfig {
   year: number
   slug: string
   label: string
+  archiveUrl?: string
   rawDir: string
   sourcesDir: string
   generatedFile: string
@@ -40,6 +41,7 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2021,
     slug: 'alliance-tournament-xvii',
     label: 'Alliance Tournament XVII',
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXVII',
     rawDir: 'data/raw/2021',
     sourcesDir: 'data/raw/2021/sources',
     generatedFile: '2021.json',
@@ -77,6 +79,7 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2022,
     slug: 'alliance-tournament-xviii',
     label: 'Alliance Tournament XVIII',
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXVIII',
     rawDir: 'data/raw/2022',
     sourcesDir: 'data/raw/2022/sources',
     generatedFile: '2022.json',
@@ -116,6 +119,7 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2023,
     slug: 'alliance-tournament-xix',
     label: 'Alliance Tournament XIX',
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXIX',
     rawDir: 'data/raw/2023',
     sourcesDir: 'data/raw/2023/sources',
     generatedFile: '2023.json',
@@ -155,6 +159,7 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2024,
     slug: 'alliance-tournament-xx',
     label: 'Alliance Tournament XX',
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXX',
     rawDir: 'data/raw/2024',
     sourcesDir: 'data/raw/2024/sources',
     generatedFile: '2024.json',
@@ -201,6 +206,7 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2025,
     slug: 'alliance-tournament-xxi',
     label: 'Alliance Tournament XXI',
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXXI',
     rawDir: 'data/raw/2025',
     sourcesDir: 'data/raw/2025/sources',
     generatedFile: '2025.json',

@@ -80,6 +80,13 @@ When adding a new tournament year or backfilling an old one:
 - Older tournament years still have official CCP rules posts available, for example Alliance Tournament XV and XIV.
 - I have not yet recovered equally trustworthy official calculator data for those older years, so they are not bundled yet.
 
+## Historical Match Archive Decision
+
+- Historical team compositions are better treated as external reference data than bundled app presets.
+- The most useful public archive found so far is [EVE_NT Alliance Tournament](https://open.eve-nt.uk/).
+- The app should expose per-year archive links to EVE_NT tournament pages instead of trying to import and name large numbers of historic team drafts.
+- The current app now does this via a `Match Archive` source link on each bundled tournament year.
+
 ## Important caveat
 
 Do not treat the current legacy app dataset as the final source of truth for future years. It is acceptable as a bootstrap or fallback only when the official post or official spreadsheet cannot be recovered.

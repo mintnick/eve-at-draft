@@ -124,6 +124,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
     sources: [
       { label: 'Rules', url: config.rules.rulesLink },
       { label: 'Ban Rules', url: config.rules.banLink },
+      ...(config.archiveUrl ? [{ label: 'Match Archive', url: config.archiveUrl }] : []),
     ],
     rules: {
       maxPoints: config.rules.maxPoints,

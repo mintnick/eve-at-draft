@@ -56,6 +56,8 @@ Official rules links:
 - [Alliance Tournament XXI Rules and Regulations](https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations)
 - [Alliance Tournament XX: Revamped Rules!](https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules)
 
+The app also exposes per-year external `Match Archive` links to EVE_NT for users who want to browse historical match compositions without importing team presets into the repo.
+
 ## Refactor docs
 
 - [Docs index](./docs/README.md)
