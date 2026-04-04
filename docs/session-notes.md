@@ -15,6 +15,7 @@
 - TypeScript, Vitest, and TS tooling support are in place
 - PrimeVue now replaces Quasar in the app shell and current draft screen
 - The app now reads from `data/generated/2025.json` instead of the legacy flat ship dataset
+- The app now exposes both `data/generated/2024.json` and `data/generated/2025.json` through the generated year index
 - The app resolves ship names through `data/generated/ship-catalog.json`
 - The TypeScript pipeline now owns fetch/build/validate flow via `yarn data:fetch`, `yarn data:build`, `yarn data:validate`, and `yarn data:refresh`
 - `data/raw/2025/source.json` is now the raw snapshot input for the current generated outputs
@@ -59,10 +60,20 @@
   - codec tests now cover format parsing, serialization, and import materialization
   - the hull-type tab list was corrected back to a vertical column after the recent UI pass
 - Phase 10 has started:
-  - component-level integration tests now cover legal drafting flow, illegal flagship feedback, clipboard export, and import success
+  - component-level integration tests now cover legal drafting flow, illegal flagship feedback, clipboard export, import success, year switching, and failed-import state preservation
   - test setup now includes the browser mocks PrimeVue needs in jsdom (`ResizeObserver`, `matchMedia`, and teleports)
   - the import dialog failure during testing was a harness issue caused by teleported PrimeVue dialog content, not an app-side import bug
-  - full test suite is currently passing with 17 tests across codec, rules, state, and UI layers
+  - a real import acceptance bug was fixed: failed imports are now validated against the target tournament year before the app switches years or resets draft state
+  - rule-engine coverage now includes historical multi-year dataset assertions
+  - full test suite is currently passing with 20 tests across codec, rules, state, and UI layers
+- Historical year support is now live for 2024:
+  - `tools/data-pipeline/config.ts` now includes 2024 and 2025 tournament configs
+  - 2024 is fetched from the official Alliance Tournament XX rules post plus the official Google Sheet static-values tab (`gid=284772315`)
+  - the generated year index now lets the app switch cleanly between 2024 and 2025
+  - 2024-specific rule metadata is now data-driven, including the higher non-logistics hull caps and duplicate-ship inflation metadata
+- Phase 11 has started:
+  - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
+  - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years
 
 ## Agreed direction
 - Keep `Vue`
@@ -77,13 +88,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 10 from `docs/refactor-todo.md`
+- Continue Phase 11 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - add import-failure coverage to ensure invalid payloads do not corrupt current state
-  - add switching-year coverage once multiple generated tournament years are available or fixture coverage is introduced
-  - capture any remaining acceptance gaps after the recent Phase 8 and Phase 9 work
+  - review generated files and ignore rules now that 2024 raw and generated artifacts are checked in
+  - remove or quarantine any remaining deprecated legacy files that are no longer part of the new pipeline or app path
+  - prepare the final refactor summary and call out deferred work, especially the unfinished Phase 8 UI polish
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 10 by expanding tests and acceptance coverage for year switching, illegal actions, and the new import/export flows.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by reviewing generated artifacts and legacy leftovers, then prepare the final refactor summary and remaining follow-up list.`

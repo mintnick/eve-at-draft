@@ -101,22 +101,22 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 
 ## Phase 10: Testing and acceptance
 - [ ] Add unit tests for data normalization and override behavior.
-- [ ] Add unit tests for rule-engine behavior across multiple tournament years.
+- [x] Add unit tests for rule-engine behavior across multiple tournament years.
 - [x] Add unit tests for import/export round-trip behavior and invalid formats.
 - [ ] Add integration tests for:
-  - [ ] switching years
+  - [x] switching years
   - [x] legal drafting flow
   - [x] illegal action feedback
   - [x] export to clipboard
   - [x] import success
-  - [ ] import failure without state corruption
+  - [x] import failure without state corruption
 - [x] Keep `yarn build` passing.
-- [ ] Run the full test suite and capture any residual gaps.
+- [x] Run the full test suite and capture any residual gaps.
 
 ## Phase 11: Cleanup and handoff
 - [ ] Remove deprecated legacy files and dead code once replacements are in place.
-- [ ] Update README to reflect the new architecture, tooling commands, and multi-year support.
-- [ ] Add a short maintainer guide for refreshing tournament data.
+- [x] Update README to reflect the new architecture, tooling commands, and multi-year support.
+- [x] Add a short maintainer guide for refreshing tournament data.
 - [ ] Review generated files and ignore rules so the repo only keeps intended artifacts.
 - [ ] Prepare a final refactor summary describing what changed and any follow-up work.
 
@@ -131,7 +131,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Checkpoint C: New tournament data model and pipeline generate the current year successfully.
 - [x] Checkpoint D: Data pipeline fetch/build/validate flow works against the current upstream-backed raw source path.
 - [x] Checkpoint E: Rules engine is extracted and behavior matches expected draft logic.
-- [ ] Checkpoint F: Multi-year selection works with the new i18n structure.
+- [x] Checkpoint F: Multi-year selection works with the new i18n structure.
 - [ ] Checkpoint G: UI polish pass is complete and the app feels coherent on desktop and mobile.
 - [x] Checkpoint H: Import/export and clipboard flow are complete.
 - [ ] Checkpoint I: Tests, docs, and cleanup are complete.

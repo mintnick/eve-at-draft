@@ -3,6 +3,7 @@ import { nextTick } from 'vue'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura'
+import Select from 'primevue/select'
 
 import AppShell from '@/app/AppShell.vue'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
@@ -145,6 +146,64 @@ describe('draft UI', () => {
     await nextTick()
 
     expect(wrapper.text()).toContain('Draft imported successfully.')
+    expect(wrapper.text()).toContain('Bhaalgorn')
+  })
+
+  it('switches years and resets the current draft state', async () => {
+    const wrapper = mountWithApp(AppShell)
+    const draftScreen = wrapper.findComponent(DraftScreen)
+    const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
+    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+
+    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await nextTick()
+
+    expect(wrapper.text()).toContain('Bhaalgorn')
+    expect(wrapper.text()).toContain('Alliance Tournament XXI')
+
+    const yearSelect = wrapper.findAllComponents(Select)[0]
+    await yearSelect.vm.$emit('update:modelValue', 2024)
+    await nextTick()
+
+    expect(wrapper.text()).toContain('Alliance Tournament XX')
+    const switchedDraftScreen = wrapper.findComponent(DraftScreen)
+    expect((switchedDraftScreen.vm as { exportDraftText: () => string }).exportDraftText()).toBe(
+      ['EVE-AT-DRAFT v1', 'YEAR: 2024', 'PICKS:', 'BANS:'].join('\n'),
+    )
+  })
+
+  it('keeps the current draft untouched when an import fails validation', async () => {
+    const wrapper = mountWithApp(AppShell)
+    const draftScreen = wrapper.findComponent(DraftScreen)
+    const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
+    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+
+    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await nextTick()
+
+    const importButton = wrapper
+      .findAll('button')
+      .find((button) => button.text().includes('Import'))
+
+    expect(importButton).toBeDefined()
+
+    await importButton!.trigger('click')
+    await nextTick()
+
+    const textarea = wrapper.find('textarea')
+    await textarea.setValue(['EVE-AT-DRAFT v1', 'YEAR: 2024', 'PICKS:', '- Flagship: Caracal', 'BANS:'].join('\n'))
+
+    const applyButton = wrapper
+      .findAll('button')
+      .find((button) => button.text().includes('Apply Import'))
+
+    expect(applyButton).toBeDefined()
+
+    await applyButton!.trigger('click')
+    await nextTick()
+
+    expect(wrapper.text()).toContain('This draft references a ship key that does not exist in the selected tournament dataset.')
+    expect(wrapper.text()).toContain('Alliance Tournament XXI')
     expect(wrapper.text()).toContain('Bhaalgorn')
   })
 })

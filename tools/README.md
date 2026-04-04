@@ -10,3 +10,8 @@ Current commands:
 - `yarn data:build` normalizes raw data into generated outputs
 - `yarn data:validate` validates generated outputs
 - `yarn data:refresh` runs fetch, build, and validate for the configured year
+
+For another tournament year, call the CLI directly:
+- `tsx ./tools/data-pipeline/cli.ts fetch 2024`
+- `tsx ./tools/data-pipeline/cli.ts build 2024`
+- `tsx ./tools/data-pipeline/cli.ts validate 2024`

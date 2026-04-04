@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest'
 
+import tournament2024 from '../data/generated/2024.json'
 import tournament from '../data/generated/2025.json'
 import { applyDraftAction, getDraftDerivedState, validateDraftAction } from '@/lib/rules/draft-engine'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
 import type { TournamentDataset } from '@/lib/types'
 
+const dataset2024 = tournament2024 as TournamentDataset
 const dataset = tournament as TournamentDataset
+const hullTypes2024 = Object.keys(dataset2024.hulls) as Array<keyof TournamentDataset['hulls']>
 const hullTypes = Object.keys(dataset.hulls) as Array<keyof TournamentDataset['hulls']>
 
 describe('draft engine', () => {
@@ -155,6 +158,24 @@ describe('draft engine', () => {
     expect(validation).toEqual({
       valid: false,
       reasons: ['hull-cap-reached'],
+    })
+  })
+
+  it('loads historical 2024 point values from the official source snapshot', () => {
+    let state = createEmptyDraftState(hullTypes2024)
+
+    state = applyDraftAction(dataset2024, state, {
+      type: 'pick',
+      hullType: 'Flagship',
+      shipKey: 'Bhaalgorn',
+    })
+
+    const derived = getDraftDerivedState(dataset2024, state)
+
+    expect(derived.totalPoints).toBe(53)
+    expect(dataset2024.rules.hullCaps.Cruiser).toBe(4)
+    expect(dataset2024.rules.pointInflation).toEqual({
+      duplicateShipIncrement: 1,
     })
   })
 })

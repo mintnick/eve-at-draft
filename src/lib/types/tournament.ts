@@ -31,6 +31,9 @@ export interface RuleConfig {
   maxPoints: number
   maxShips: number
   hullCaps: Partial<Record<HullType, number>>
+  pointInflation?: {
+    duplicateShipIncrement: number
+  }
   banRules: {
     enabled: boolean
     enforced: boolean

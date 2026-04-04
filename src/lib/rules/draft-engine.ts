@@ -146,10 +146,6 @@ export function validateDraftAction(
       return invalid('ship-not-found')
     }
 
-    if (derivedState.totalPoints >= dataset.rules.maxPoints) {
-      return invalid('max-points-reached')
-    }
-
     if (derivedState.totalShips >= dataset.rules.maxShips) {
       return invalid('max-ships-reached')
     }
@@ -173,7 +169,16 @@ export function validateDraftAction(
 
     const hullCap = dataset.rules.hullCaps[action.hullType] ?? 0
 
-    return derivedState.hullCounts[action.hullType] >= hullCap ? invalid('hull-cap-reached') : valid()
+    if (derivedState.hullCounts[action.hullType] >= hullCap) {
+      return invalid('hull-cap-reached')
+    }
+
+    const nextState = applyDraftAction(dataset, state, action)
+    if (getDraftDerivedState(dataset, nextState).totalPoints > dataset.rules.maxPoints) {
+      return invalid('max-points-reached')
+    }
+
+    return valid()
   }
 
   if (action.type === 'ban') {
@@ -220,6 +225,7 @@ export function applyDraftAction(
     const ship = findRegisteredShip(dataset, action.hullType, action.shipKey)
     if (ship) {
       nextState.picks[action.hullType].push(createShipSelection(ship.hullType, ship.shipKey, ship.rule))
+      recalculatePickPoints(dataset, nextState)
     }
     return nextState
   }
@@ -228,6 +234,7 @@ export function applyDraftAction(
     nextState.picks[action.hullType] = nextState.picks[action.hullType].filter(
       (selection) => selection.shipKey !== action.shipKey,
     )
+    recalculatePickPoints(dataset, nextState)
     return nextState
   }
 
@@ -272,6 +279,20 @@ function cloneDraftState(state: DraftState, hullTypes: HullType[]): DraftState {
   }
 
   return nextState
+}
+
+function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
+  const duplicateIncrement = dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
+  const shipCounts = new Map<string, number>()
+
+  for (const selection of Object.values(state.picks).flat()) {
+    shipCounts.set(selection.shipKey, (shipCounts.get(selection.shipKey) ?? 0) + 1)
+  }
+
+  for (const selection of Object.values(state.picks).flat()) {
+    const duplicates = shipCounts.get(selection.shipKey) ?? 1
+    selection.points = (selection.originalPoints ?? selection.points) + duplicateIncrement * (duplicates - 1)
+  }
 }
 
 function valid(): DraftValidationResult {

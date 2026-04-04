@@ -4,6 +4,7 @@
 - [Refactor Plan](./refactor-plan.md)
 - [Refactor TODO](./refactor-todo.md)
 - [Session Notes](./session-notes.md)
+- [Maintainer Guide](./maintainer-guide.md)
 - [Tournament Source Notes](./tournament-source-notes.md)
 
 Use these files as the source of truth for the refactor:
@@ -11,4 +12,5 @@ Use these files as the source of truth for the refactor:
 - `refactor-plan.md` captures the agreed target architecture
 - `refactor-todo.md` tracks implementation progress and review checkpoints
 - `session-notes.md` records current status and the recommended next step
+- `maintainer-guide.md` covers routine development and tournament data refresh workflows
 - `tournament-source-notes.md` records official tournament source links and the future-session sourcing prompt

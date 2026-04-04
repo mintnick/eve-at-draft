@@ -11,11 +11,11 @@ import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
 import { appMessages } from '@/lib/i18n'
 import { setStoredLocale, setStoredThemeDark } from '@/lib/preferences'
-import { parseDraft } from '@/lib/rules/draft-codec'
+import { materializeParsedDraft, parseDraft } from '@/lib/rules/draft-codec'
 import type { DraftValidationResult, LocaleCode, ParsedDraft } from '@/lib/types'
 
 const { locale, t } = useI18n()
-const { availableTournaments, currentTournament, draftState, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
+const { availableTournaments, currentTournament, draftState, getTournamentByYear, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
 
 type DraftScreenExpose = {
   exportDraftText: () => string
@@ -79,6 +79,18 @@ async function applyImport() {
   const hasYear = availableTournaments.value.some((entry) => entry.year === parsedDraft.year)
   if (!hasYear) {
     transferMessage.value = { severity: 'warn', text: t('validation.import-unknown-year') }
+    return
+  }
+
+  const targetTournament = getTournamentByYear(parsedDraft.year)
+  if (!targetTournament) {
+    transferMessage.value = { severity: 'warn', text: t('validation.import-unknown-year') }
+    return
+  }
+
+  const preview = materializeParsedDraft(parsedDraft, targetTournament)
+  if (!preview.validation.valid) {
+    transferMessage.value = { severity: 'warn', text: t(`validation.${preview.validation.reasons[0] ?? 'invalid-format-header'}`) }
     return
   }
 

@@ -26,6 +26,8 @@ The current pipeline should treat the official post and linked sheet as the prim
   - Published: 2024-06-28T22:30:00.000Z
 - Official Google Sheet:
   - [Quick Comp Creator / Calculator](https://docs.google.com/spreadsheets/d/1uxKDZ4JFz_vUdVCeinyZAjYxwcNr9l414MQMdWq9_eU/edit?usp=sharing)
+  - Static values tab recovered through Google Visualization JSON using `gid=284772315`
+  - The current 2024 dataset in this repo is generated from that official static-values tab plus ESI name/id resolution
 
 ### Alliance Tournament XIX
 - Official rules post:
@@ -45,6 +47,12 @@ When adding a new tournament year or backfilling an old one:
 6. Use ESI to resolve stable ship ids and localized names.
 7. Keep manual fixes in `data/raw/<year>/overrides.json`.
 8. Generate `ship-catalog.json`, `<year>.json`, and `index.json`.
+
+## Current historical coverage in the repo
+
+- 2025 is generated from the current legacy snapshot source path plus official rules references.
+- 2024 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
+- `data/generated/index.json` currently exposes both 2024 and 2025 to the app year selector.
 
 ## Important caveat
 

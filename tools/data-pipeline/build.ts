@@ -60,6 +60,21 @@ function createShipCatalog(source: RawTournamentSource): ShipCatalog {
   return Object.fromEntries(entries)
 }
 
+function mergeShipCatalogEntries(sources: RawTournamentSource[]): ShipCatalog {
+  const entries = new Map<string, ShipCatalogEntry>()
+
+  for (const source of sources) {
+    const catalog = createShipCatalog(source)
+    for (const [shipKey, ship] of Object.entries(catalog)) {
+      if (!entries.has(shipKey)) {
+        entries.set(shipKey, ship)
+      }
+    }
+  }
+
+  return Object.fromEntries(entries)
+}
+
 function createYearlyRules(source: RawTournamentSource): TournamentHullRules {
   return Object.fromEntries(
     Object.entries(source.hulls).map(([hullType, shipMap]) => [
@@ -87,7 +102,17 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
   ])
 
   const merged = mergeSourceWithOverrides(source, overrides)
-  const shipCatalog = createShipCatalog(merged)
+  const allMergedSources = await Promise.all(
+    TOURNAMENTS.map(async (entry) => {
+      const [entrySource, entryOverrides] = await Promise.all([
+        readJsonFile<RawTournamentSource>(entry.rawDir, entry.sourceFile),
+        readJsonFile<RawTournamentOverrides>(entry.rawDir, entry.overridesFile),
+      ])
+
+      return mergeSourceWithOverrides(entrySource, entryOverrides)
+    }),
+  )
+  const shipCatalog = mergeShipCatalogEntries(allMergedSources)
 
   const dataset: TournamentDataset = {
     summary: {
@@ -104,6 +129,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
       maxPoints: config.rules.maxPoints,
       maxShips: config.rules.maxShips,
       hullCaps: config.rules.hullCaps,
+      pointInflation: config.rules.pointInflation,
       banRules: config.rules.banRules,
       flagship: {
         enabled: true,

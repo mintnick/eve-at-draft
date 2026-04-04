@@ -61,6 +61,10 @@ export function useAppState() {
     return datasets.get(tournamentState.selectedYear) ?? datasets.get(initialYear)
   })
 
+  function getTournamentByYear(year: number) {
+    return datasets.get(year)
+  }
+
   const tournamentOptions = computed(() =>
     tournamentState.availableTournaments.map((entry) => ({
       label: `${entry.year} · ${entry.label}`,
@@ -81,6 +85,7 @@ export function useAppState() {
     availableTournaments: computed(() => tournamentState.availableTournaments),
     currentTournament,
     draftState,
+    getTournamentByYear,
     shipCatalog,
     tournamentOptions,
     tournamentState,
