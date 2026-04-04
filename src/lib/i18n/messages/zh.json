@@ -6,7 +6,16 @@
     "pick": "阵容",
     "ban": "禁用",
     "year": "赛事",
-    "language": "语言"
+    "language": "语言",
+    "import": "导入",
+    "export": "导出",
+    "importDraft": "导入阵容",
+    "exportDraft": "导出阵容",
+    "importPlaceholder": "在这里粘贴 EVE-AT-DRAFT v1 文本。",
+    "cancel": "取消",
+    "applyImport": "应用导入",
+    "copied": "阵容已复制到剪贴板。",
+    "importApplied": "阵容导入成功。"
   },
   "validation": {
     "ship-not-found": "当前赛事数据中没有这艘舰船。",
@@ -19,7 +28,15 @@
     "ship-picked": "已经加入阵容的舰船不能再禁用。",
     "ship-already-banned": "这艘舰船已经被禁用。",
     "ship-not-picked": "这艘舰船当前不在阵容中。",
-    "ship-not-banned": "这艘舰船当前不在禁用列表中。"
+    "ship-not-banned": "这艘舰船当前不在禁用列表中。",
+    "invalid-format-header": "导入文本缺少有效的 EVE-AT-DRAFT v1 头部。",
+    "missing-year": "导入文本缺少赛事年份。",
+    "invalid-year": "导入文本中的赛事年份无效。",
+    "invalid-sections": "导入文本必须包含 PICKS 和 BANS 两个区块。",
+    "invalid-entry": "每条导入舰船记录都必须以 \"- \" 开头。",
+    "import-unknown-year": "该草稿引用的赛事年份当前还没有在应用中提供。",
+    "import-unknown-ship": "该草稿引用了当前赛事数据中不存在的舰船 key。",
+    "clipboard-unavailable": "当前浏览器环境不支持剪贴板访问。"
   },
   "types": {
     "Flagship": "旗舰",

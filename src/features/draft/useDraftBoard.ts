@@ -1,6 +1,7 @@
 import { computed, ref } from 'vue'
 import type { Ref } from 'vue'
 
+import { materializeParsedDraft, serializeDraft } from '@/lib/rules/draft-codec'
 import {
   applyDraftAction,
   getDraftDerivedState,
@@ -9,7 +10,7 @@ import {
 } from '@/lib/rules/draft-engine'
 import { getShipDisplayName } from '@/lib/i18n/labels'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
-import type { DraftAction, HullType, LocaleCode, ShipCatalog, TournamentDataset, TournamentShipRule } from '@/lib/types'
+import type { DraftAction, DraftState, HullType, LocaleCode, ParsedDraft, ShipCatalog, TournamentDataset, TournamentShipRule } from '@/lib/types'
 
 export function useDraftBoard(
   dataset: TournamentDataset,
@@ -98,6 +99,26 @@ export function useDraftBoard(
     }
   }
 
+  function replaceDraftState(nextState: DraftState) {
+    state.value = nextState
+    feedbackReasons.value = []
+  }
+
+  function exportDraftText() {
+    return serializeDraft(state.value, dataset)
+  }
+
+  function importParsedDraft(parsedDraft: ParsedDraft) {
+    const result = materializeParsedDraft(parsedDraft, dataset)
+    if (!result.validation.valid || !result.state) {
+      feedbackReasons.value = result.validation.reasons
+      return result.validation
+    }
+
+    replaceDraftState(result.state)
+    return result.validation
+  }
+
   return {
     activeHullType,
     banLink,
@@ -115,6 +136,8 @@ export function useDraftBoard(
     removeShip,
     banShip,
     banValidation,
+    exportDraftText,
+    importParsedDraft,
     shipProperty,
     state,
     unbanShip,

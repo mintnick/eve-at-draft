@@ -94,3 +94,16 @@ export interface DraftValidationResult {
   valid: boolean
   reasons: string[]
 }
+
+export interface ParsedDraft {
+  version: 'v1'
+  year: number
+  picks: Array<{
+    hullType: HullType
+    shipKey: string
+  }>
+  bans: Array<{
+    hullType: HullType
+    shipKey: string
+  }>
+}

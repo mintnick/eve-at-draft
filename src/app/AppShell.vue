@@ -1,17 +1,31 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
+import Dialog from 'primevue/dialog'
+import Message from 'primevue/message'
 import Select from 'primevue/select'
+import Textarea from 'primevue/textarea'
 
 import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
 import { appMessages } from '@/lib/i18n'
 import { setStoredLocale, setStoredThemeDark } from '@/lib/preferences'
-import type { LocaleCode } from '@/lib/types'
+import { parseDraft } from '@/lib/rules/draft-codec'
+import type { DraftValidationResult, LocaleCode, ParsedDraft } from '@/lib/types'
 
-const { locale } = useI18n()
-const { currentTournament, draftState, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
+const { locale, t } = useI18n()
+const { availableTournaments, currentTournament, draftState, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
+
+type DraftScreenExpose = {
+  exportDraftText: () => string
+  importParsedDraft: (parsedDraft: ParsedDraft) => DraftValidationResult
+}
+
+const draftScreenRef = ref<DraftScreenExpose | null>(null)
+const importDialogVisible = ref(false)
+const importText = ref('')
+const transferMessage = ref<{ severity: 'success' | 'warn'; text: string } | null>(null)
 
 const localeOptions = computed(() =>
   (Object.keys(appMessages) as LocaleCode[]).map((value) => ({
@@ -29,6 +43,57 @@ function toggleTheme() {
 function changeLang(nextLocale: LocaleCode) {
   locale.value = nextLocale
   setStoredLocale(nextLocale)
+}
+
+async function exportDraft() {
+  const text = draftScreenRef.value?.exportDraftText()
+  if (!text) {
+    return
+  }
+
+  if (!navigator.clipboard?.writeText) {
+    transferMessage.value = { severity: 'warn', text: t('validation.clipboard-unavailable') }
+    return
+  }
+
+  await navigator.clipboard.writeText(text)
+  transferMessage.value = { severity: 'success', text: t('messages.copied') }
+}
+
+function openImportDialog() {
+  importDialogVisible.value = true
+  transferMessage.value = null
+}
+
+async function applyImport() {
+  let parsedDraft: ParsedDraft
+
+  try {
+    parsedDraft = parseDraft(importText.value)
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : 'invalid-format-header'
+    transferMessage.value = { severity: 'warn', text: t(`validation.${reason}`) }
+    return
+  }
+
+  const hasYear = availableTournaments.value.some((entry) => entry.year === parsedDraft.year)
+  if (!hasYear) {
+    transferMessage.value = { severity: 'warn', text: t('validation.import-unknown-year') }
+    return
+  }
+
+  tournamentState.selectedYear = parsedDraft.year
+  await nextTick()
+
+  const validation = draftScreenRef.value?.importParsedDraft(parsedDraft)
+  if (!validation?.valid) {
+    transferMessage.value = { severity: 'warn', text: t(`validation.${validation?.reasons[0] ?? 'invalid-format-header'}`) }
+    return
+  }
+
+  importDialogVisible.value = false
+  importText.value = ''
+  transferMessage.value = { severity: 'success', text: t('messages.importApplied') }
 }
 </script>
 
@@ -67,16 +132,33 @@ function changeLang(nextLocale: LocaleCode) {
           <Button rounded text class="toolbar-button" @click="toggleTheme">
             <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
           </Button>
+          <Button outlined class="transfer-button" @click="openImportDialog">{{ $t('messages.import') }}</Button>
+          <Button outlined class="transfer-button" @click="exportDraft">{{ $t('messages.export') }}</Button>
         </div>
       </div>
     </header>
 
+    <Message v-if="transferMessage" :severity="transferMessage.severity" variant="outlined" class="transfer-message">
+      {{ transferMessage.text }}
+    </Message>
+
     <DraftScreen
       v-if="currentTournament"
+      ref="draftScreenRef"
       :key="`${tournamentState.selectedYear}-${draftState.resetVersion}`"
       :dataset="currentTournament"
       :ship-catalog="shipCatalog"
     />
+
+    <Dialog v-model:visible="importDialogVisible" modal class="import-dialog" :header="$t('messages.importDraft')">
+      <div class="import-dialog-body">
+        <Textarea v-model="importText" rows="12" auto-resize class="import-textarea" :placeholder="$t('messages.importPlaceholder')" />
+        <div class="import-dialog-actions">
+          <Button text @click="importDialogVisible = false">{{ $t('messages.cancel') }}</Button>
+          <Button @click="applyImport">{{ $t('messages.applyImport') }}</Button>
+        </div>
+      </div>
+    </Dialog>
   </div>
 </template>
 
@@ -141,6 +223,10 @@ function changeLang(nextLocale: LocaleCode) {
   color: var(--app-text);
 }
 
+.transfer-button {
+  align-self: center;
+}
+
 .control-group {
   display: grid;
   gap: 0.3rem;
@@ -157,6 +243,26 @@ function changeLang(nextLocale: LocaleCode) {
 
 .year-select {
   min-width: 220px;
+}
+
+.transfer-message {
+  box-shadow: var(--app-shadow-soft);
+}
+
+.import-dialog-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.import-textarea {
+  width: min(78vw, 720px);
+  max-width: 100%;
+}
+
+.import-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 @media (max-width: 720px) {
@@ -180,6 +286,14 @@ function changeLang(nextLocale: LocaleCode) {
 
   .toolbar-button {
     justify-self: stretch;
+  }
+
+  .import-dialog-actions {
+    flex-direction: column-reverse;
+  }
+
+  .transfer-button {
+    width: 100%;
   }
 }
 </style>

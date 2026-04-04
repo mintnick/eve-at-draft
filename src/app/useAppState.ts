@@ -78,6 +78,7 @@ export function useAppState() {
   )
 
   return {
+    availableTournaments: computed(() => tournamentState.availableTournaments),
     currentTournament,
     draftState,
     shipCatalog,

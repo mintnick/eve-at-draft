@@ -91,18 +91,18 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [ ] Review the year selector and future import/export affordances as part of the UI pass.
 
 ## Phase 9: Import and export
-- [ ] Define the `EVE-AT-DRAFT v1` plain-text format precisely.
-- [ ] Implement draft serialization to text.
-- [ ] Implement draft parsing from text.
-- [ ] Validate imported year and ship keys against known datasets.
-- [ ] Add clipboard export in the UI.
-- [ ] Add paste/import UI flow with visible parse and validation errors.
-- [ ] Ensure import can restore both year and draft state from one text payload.
+- [x] Define the `EVE-AT-DRAFT v1` plain-text format precisely.
+- [x] Implement draft serialization to text.
+- [x] Implement draft parsing from text.
+- [x] Validate imported year and ship keys against known datasets.
+- [x] Add clipboard export in the UI.
+- [x] Add paste/import UI flow with visible parse and validation errors.
+- [x] Ensure import can restore both year and draft state from one text payload.
 
 ## Phase 10: Testing and acceptance
 - [ ] Add unit tests for data normalization and override behavior.
 - [ ] Add unit tests for rule-engine behavior across multiple tournament years.
-- [ ] Add unit tests for import/export round-trip behavior and invalid formats.
+- [x] Add unit tests for import/export round-trip behavior and invalid formats.
 - [ ] Add integration tests for:
   - [ ] switching years
   - [ ] legal drafting flow
@@ -110,7 +110,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
   - [ ] export to clipboard
   - [ ] import success
   - [ ] import failure without state corruption
-- [ ] Keep `yarn build` passing.
+- [x] Keep `yarn build` passing.
 - [ ] Run the full test suite and capture any residual gaps.
 
 ## Phase 11: Cleanup and handoff
@@ -133,5 +133,5 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Checkpoint E: Rules engine is extracted and behavior matches expected draft logic.
 - [ ] Checkpoint F: Multi-year selection works with the new i18n structure.
 - [ ] Checkpoint G: UI polish pass is complete and the app feels coherent on desktop and mobile.
-- [ ] Checkpoint H: Import/export and clipboard flow are complete.
+- [x] Checkpoint H: Import/export and clipboard flow are complete.
 - [ ] Checkpoint I: Tests, docs, and cleanup are complete.

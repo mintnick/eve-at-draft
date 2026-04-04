@@ -50,6 +50,14 @@
   - top-level layout, panel styling, points summary, and ship row presentation received a first polish pass
   - responsive behavior for the header and draft layout was improved
   - deeper UI/detail tuning is deferred for a later pass before Phase 8 is marked complete
+- Phase 9 is now complete:
+  - the `EVE-AT-DRAFT v1` text codec now lives in `src/lib/rules/draft-codec.ts`
+  - codec entries now preserve hull type explicitly, so flagship ships round-trip correctly even when the same ship key also exists in another hull bucket
+  - drafts can be exported to clipboard from the app shell
+  - drafts can be pasted/imported through a dialog with visible parse and validation feedback
+  - import now restores both tournament year and draft state from one payload
+  - codec tests now cover format parsing, serialization, and import materialization
+  - the hull-type tab list was corrected back to a vertical column after the recent UI pass
 
 ## Agreed direction
 - Keep `Vue`
@@ -64,13 +72,13 @@
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
-- Start Phase 9 from `docs/refactor-todo.md`
+- Start Phase 10 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - define the `EVE-AT-DRAFT v1` text format
-  - implement draft export and parsing against the extracted rules/state model
-  - add UI affordances for clipboard export and text import with validation feedback
+  - broaden tests beyond the current single-year happy path
+  - add integration coverage for year switching, illegal feedback, and import/export flows
+  - capture any remaining acceptance gaps after the recent Phase 8 and Phase 9 work
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 9 by implementing the draft import/export format and wiring clipboard/text flows into the UI.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, and docs/tournament-source-notes.md, then continue with Phase 10 by expanding tests and acceptance coverage for year switching, illegal actions, and the new import/export flows.`

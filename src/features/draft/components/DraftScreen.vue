@@ -12,7 +12,7 @@ import Tabs from 'primevue/tabs'
 import Ship from '@/components/Ship.vue'
 import { useDraftBoard } from '@/features/draft/useDraftBoard'
 import { getTournamentDisplayLabel } from '@/lib/i18n/labels'
-import type { HullType, LocaleCode, ShipCatalog, TournamentDataset } from '@/lib/types'
+import type { HullType, LocaleCode, ParsedDraft, ShipCatalog, TournamentDataset } from '@/lib/types'
 
 const props = defineProps<{
   dataset: TournamentDataset
@@ -38,9 +38,11 @@ const {
   clearPicks,
   dataset,
   derivedState,
+  exportDraftText,
   feedbackReasons,
   hullCountLabel,
   hullTypes,
+  importParsedDraft,
   localizedShipName,
   pickValidation,
   removeShip,
@@ -69,6 +71,13 @@ function handleAddShip(hullType: HullType, shipKey: string) {
 function handleBanShip(hullType: HullType, shipKey: string) {
   banShip(hullType, shipKey)
 }
+
+defineExpose({
+  exportDraftText,
+  importParsedDraft(parsedDraft: ParsedDraft) {
+    return importParsedDraft(parsedDraft)
+  },
+})
 </script>
 
 <template>
@@ -327,6 +336,11 @@ function handleBanShip(hullType: HullType, shipKey: string) {
 }
 
 .hull-tab-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.hull-tab-list:deep(.p-tablist-tab-list) {
   display: grid;
   gap: 0.6rem;
 }
