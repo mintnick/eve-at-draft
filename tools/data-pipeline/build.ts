@@ -10,7 +10,7 @@ import { GENERATED_INDEX_FILE, getTournamentConfig, SHIP_CATALOG_FILE, TOURNAMEN
 import { readJsonFile, writeJsonFile } from './fs'
 import type { RawTournamentOverrides, RawTournamentSource } from './types'
 
-function mergeSourceWithOverrides(
+export function mergeSourceWithOverrides(
   source: RawTournamentSource,
   overrides: RawTournamentOverrides,
 ): RawTournamentSource {
@@ -42,7 +42,7 @@ function mergeSourceWithOverrides(
   }
 }
 
-function createShipCatalog(source: RawTournamentSource): ShipCatalog {
+export function createShipCatalog(source: RawTournamentSource): ShipCatalog {
   const entries = new Map<string, ShipCatalogEntry>()
 
   for (const shipMap of Object.values(source.hulls)) {
@@ -60,7 +60,7 @@ function createShipCatalog(source: RawTournamentSource): ShipCatalog {
   return Object.fromEntries(entries)
 }
 
-function mergeShipCatalogEntries(sources: RawTournamentSource[]): ShipCatalog {
+export function mergeShipCatalogEntries(sources: RawTournamentSource[]): ShipCatalog {
   const entries = new Map<string, ShipCatalogEntry>()
 
   for (const source of sources) {
@@ -75,7 +75,7 @@ function mergeShipCatalogEntries(sources: RawTournamentSource[]): ShipCatalog {
   return Object.fromEntries(entries)
 }
 
-function createYearlyRules(source: RawTournamentSource): TournamentHullRules {
+export function createYearlyRules(source: RawTournamentSource): TournamentHullRules {
   return Object.fromEntries(
     Object.entries(source.hulls).map(([hullType, shipMap]) => [
       hullType,

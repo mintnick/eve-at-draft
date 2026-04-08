@@ -60,12 +60,13 @@
   - codec tests now cover format parsing, serialization, and import materialization
   - the hull-type tab list was corrected back to a vertical column after the recent UI pass
 - Phase 10 has started:
+  - data-pipeline unit tests now cover override merging, catalog generation, cross-year catalog dedupe, and yearly rule shaping in `tests/data-pipeline.spec.ts`
   - component-level integration tests now cover legal drafting flow, illegal flagship feedback, clipboard export, import success, year switching, and failed-import state preservation
   - test setup now includes the browser mocks PrimeVue needs in jsdom (`ResizeObserver`, `matchMedia`, and teleports)
   - the import dialog failure during testing was a harness issue caused by teleported PrimeVue dialog content, not an app-side import bug
   - a real import acceptance bug was fixed: failed imports are now validated against the target tournament year before the app switches years or resets draft state
   - rule-engine coverage now includes historical multi-year dataset assertions
-  - full test suite is currently passing with 20 tests across codec, rules, state, and UI layers
+  - full test suite now covers data-pipeline, codec, rules, state, and UI layers
 - Historical year support is now live for 2024:
   - `tools/data-pipeline/config.ts` now includes 2024 and 2025 tournament configs
   - 2024 is fetched from the official Alliance Tournament XX rules post plus the official Google Sheet static-values tab (`gid=284772315`)
@@ -86,6 +87,7 @@
   - placeholder internal README files were updated to describe the current structure instead of future-tense refactor intent
   - `docs/refactor-summary.md` now captures the resulting architecture, supported years, validation status, and deferred follow-up work
   - generated artifact and ignore-rule review is complete; raw upstream captures and generated tournament datasets are intentionally tracked, while transient build outputs remain ignored
+  - stale tracked locale snapshots under `src/assets/locales/` were removed after confirming the app now reads only from `src/lib/i18n/messages/` plus the generated ship catalog
   - today's historical-data commits are already pushed to `origin/codex/refactor`
   - latest pushed commits:
     - `558b756` `Add official tournament data for 2021 to 2023`
@@ -106,13 +108,13 @@
 ## Recommended next step
 - Continue Phase 11 from `docs/refactor-todo.md`
 - First concrete implementation milestone:
-  - remove or quarantine any remaining deprecated legacy files that are no longer part of the new pipeline or app path
+  - finish the validation pass after the legacy-file cleanup
   - decide whether any remaining scaffold README files should stay or be folded into root/docs documentation
   - keep 2021 as the current earliest bundled year unless an older official ship-level source is recovered later
-  - continue cleanup and close out Phase 11 once the remaining legacy-file pass is done
+  - close out Phase 11 once the remaining doc acceptance items are done
   - do not spend time on older team-draft ingestion unless the product direction changes
 
 ## Resume prompt
 Use this in a future session:
 
-`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/refactor-summary.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with Phase 11 by doing the last legacy-file cleanup pass, keeping 2021 as the earliest bundled year for now, and deciding whether Checkpoint I can be closed.`
+`Open /Users/nick/Desktop/Projects/eve-at-draft on branch codex/refactor, read docs/refactor-plan.md, docs/refactor-todo.md, docs/session-notes.md, docs/refactor-summary.md, docs/maintainer-guide.md, and docs/tournament-source-notes.md, then continue with the final validation/doc pass after the Phase 11 cleanup, keeping 2021 as the earliest bundled year for now, and deciding whether Checkpoint I can be closed.`

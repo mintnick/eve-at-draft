@@ -100,7 +100,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Ensure import can restore both year and draft state from one text payload.
 
 ## Phase 10: Testing and acceptance
-- [ ] Add unit tests for data normalization and override behavior.
+- [x] Add unit tests for data normalization and override behavior.
 - [x] Add unit tests for rule-engine behavior across multiple tournament years.
 - [x] Add unit tests for import/export round-trip behavior and invalid formats.
 - [ ] Add integration tests for:
@@ -114,7 +114,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Run the full test suite and capture any residual gaps.
 
 ## Phase 11: Cleanup and handoff
-- [ ] Remove deprecated legacy files and dead code once replacements are in place.
+- [x] Remove deprecated legacy files and dead code once replacements are in place.
 - [x] Update README to reflect the new architecture, tooling commands, and multi-year support.
 - [x] Add a short maintainer guide for refreshing tournament data.
 - [x] Review generated files and ignore rules so the repo only keeps intended artifacts.
