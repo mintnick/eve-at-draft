@@ -20,7 +20,7 @@
   },
   "validation": {
     "ship-not-found": "当前赛事数据中没有这艘舰船。",
-    "max-points-reached": "已达到 200 分上限，不能继续添加舰船。",
+    "max-points-reached": "添加这艘舰船会超过 200 分上限。",
     "max-ships-reached": "已达到 10 艘舰船上限，不能继续添加。",
     "flagship-already-picked": "只能选择一艘旗舰。",
     "ship-banned": "这艘舰船已经被禁用，不能加入阵容。",

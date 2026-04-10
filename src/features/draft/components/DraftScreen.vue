@@ -116,7 +116,12 @@ defineExpose({
 
     <main class="draft-layout">
       <section class="selection-panel">
-        <Tabs :value="activeHullType" class="draft-tabs" @update:value="activeHullType = $event as HullType">
+        <Tabs
+          :value="activeHullType"
+          :show-navigators="false"
+          class="draft-tabs"
+          @update:value="activeHullType = $event as HullType"
+        >
           <div class="selection-layout">
             <TabList class="hull-tab-list">
               <Tab v-for="hullType in hullTypes" :key="hullType" :value="hullType" class="hull-tab">
@@ -180,7 +185,7 @@ defineExpose({
             variant="outlined"
             @click="clearPicks"
           >
-            <img src="/icons/remove.svg" alt="" class="button-icon-image" />
+            <span class="button-icon-image button-icon-image--remove" aria-hidden="true"></span>
             <span>{{ $t('messages.clear') }}</span>
           </Button>
         </div>
@@ -215,22 +220,32 @@ defineExpose({
           variant="outlined"
           @click="clearBans"
         >
-          <img src="/icons/remove.svg" alt="" class="button-icon-image" />
+          <span class="button-icon-image button-icon-image--remove" aria-hidden="true"></span>
           <span>{{ $t('messages.clear') }}</span>
         </Button>
       </div>
 
       <div class="ban-list">
-        <Ship
+        <div
           v-for="ship in derivedState.banList"
           :key="`${ship.hullType}-${ship.shipKey}`"
-          :hull_type="ship.hullType"
-          :ship_name="ship.shipKey"
-          :display_name="localizedShipName(ship.shipKey)"
-          :property="{ points: ship.points, shipId: ship.shipId, original_points: ship.originalPoints }"
-          :btns="['unban']"
-          @unban_ship="unbanShip(ship.hullType, ship.shipKey)"
-        />
+          class="ban-pill"
+        >
+          <img
+            class="ban-pill-icon"
+            :src="`https://images.evetech.net/types/${ship.shipId}/icon`"
+            :alt="`${ship.shipKey} icon`"
+          />
+          <span class="ban-pill-name">{{ localizedShipName(ship.shipKey) }}</span>
+          <Button
+            rounded
+            text
+            class="ship-action ship-action--remove ban-pill-remove-button"
+            @click="unbanShip(ship.hullType, ship.shipKey)"
+          >
+            <span class="ship-action-icon ship-action-icon--remove" aria-hidden="true"></span>
+          </Button>
+        </div>
       </div>
     </section>
   </div>
@@ -274,8 +289,9 @@ defineExpose({
 
 .rules-link,
 .ban-rules-link {
-  font-size: 0.96rem;
-  color: var(--app-text-muted);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--app-accent-warm-muted);
 }
 
 .points-summary {
@@ -350,21 +366,62 @@ defineExpose({
 .hull-tab-list {
   display: grid;
   gap: 0.6rem;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.hull-tab-list:deep(.p-tablist-content) {
+  overflow: hidden;
+  border: 0;
+}
+
+.hull-tab-list:deep(.p-tablist-nav-button) {
+  display: none;
+}
+
+.hull-tab-list:deep(.p-tablist-active-bar) {
+  display: none;
 }
 
 .hull-tab-list:deep(.p-tablist-tab-list) {
   display: grid;
   gap: 0.6rem;
+  min-width: 0;
+  border: 0;
 }
 
 .hull-tab {
   justify-content: stretch;
+  min-width: 0;
+  max-width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   border-radius: 1rem;
+  background: rgba(148, 163, 184, 0.08);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.hull-tab:hover {
+  border-color: var(--app-border);
+  background: rgba(148, 163, 184, 0.14);
+}
+
+.hull-tab.p-tab-active {
+  border-color: var(--app-accent);
+  background: var(--app-panel-strong);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent),
+    0 12px 28px rgba(15, 23, 42, 0.12);
 }
 
 .hull-tab-content {
   display: flex;
   width: 100%;
+  min-width: 0;
   gap: 0.8rem;
   align-items: center;
   justify-content: space-between;
@@ -373,13 +430,22 @@ defineExpose({
 
 .hull-tab-name {
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   text-align: left;
 }
 
 .hull-tab-count {
+  flex: 0 0 auto;
   white-space: nowrap;
   font-size: 0.95rem;
   color: var(--app-text-muted);
+}
+
+.hull-tab.p-tab-active .hull-tab-count {
+  color: var(--app-accent);
 }
 
 .ship-panel {
@@ -427,10 +493,90 @@ defineExpose({
   color: var(--app-success);
 }
 
-.summary-list,
-.ban-list {
+.summary-list {
   display: grid;
   gap: 0.4rem;
+}
+
+.ban-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.ban-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  max-width: 100%;
+  border: 1px solid rgba(185, 28, 28, 0.22);
+  border-radius: 999px;
+  background: rgba(185, 28, 28, 0.1);
+  color: var(--app-text);
+  padding: 0.28rem 0.35rem 0.28rem 0.32rem;
+  font-weight: 750;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.ban-pill:hover {
+  border-color: rgba(185, 28, 28, 0.42);
+  background: rgba(185, 28, 28, 0.16);
+  transform: translateY(-1px);
+}
+
+.ban-pill-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.ban-pill-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ban-pill-remove-button {
+  flex: 0 0 auto;
+  width: 2.45rem;
+  height: 2.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: var(--app-action-remove-bg);
+  color: var(--app-action-remove-fg);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+}
+
+.ban-pill-remove-button:hover {
+  background: var(--app-action-remove-bg);
+  color: var(--app-action-remove-fg);
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.ban-pill-remove-button .ship-action-icon {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.ban-pill-remove-button .ship-action-icon--remove {
+  -webkit-mask-image: url('/icons/remove.svg');
+  -webkit-mask-size: 185%;
+  mask-image: url('/icons/remove.svg');
+  mask-size: 185%;
 }
 
 .ban-section {
@@ -438,8 +584,38 @@ defineExpose({
 }
 
 .button-icon-image {
-  width: 0.95rem;
-  height: 0.95rem;
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.button-icon-image--remove {
+  -webkit-mask-image: url('/icons/remove.svg');
+  -webkit-mask-size: 145%;
+  mask-image: url('/icons/remove.svg');
+  mask-size: 145%;
+}
+
+.clear-button {
+  border-color: var(--app-action-clear-border);
+  background: var(--app-action-clear-bg);
+  color: var(--app-action-clear-fg);
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(180, 83, 9, 0.18);
+}
+
+.clear-button:hover {
+  border-color: var(--app-action-clear-border);
+  background: var(--app-action-clear-bg);
+  color: var(--app-action-clear-fg);
+  filter: brightness(1.08);
 }
 
 @media (max-width: 900px) {
@@ -462,8 +638,26 @@ defineExpose({
     justify-content: center;
   }
 
+  .hull-tab-list:deep(.p-tablist-tab-list) {
+    grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
+  }
+
+  .hull-tab-content {
+    justify-content: center;
+    gap: 0.45rem;
+  }
+
   .hull-tab-name {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .hull-tab-count {
+    font-size: 0.82rem;
   }
 
   .ship-panel-scroll {

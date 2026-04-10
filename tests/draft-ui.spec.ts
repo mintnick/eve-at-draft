@@ -70,6 +70,49 @@ describe('draft UI', () => {
     expect(wrapper.text()).toContain('(1 / 10)')
   })
 
+  it('shows the ban action on flagship ship rows', () => {
+    const wrapper = mountWithApp(DraftScreen, {
+      props: {
+        dataset,
+        shipCatalog,
+      },
+    })
+
+    const shipRows = wrapper.findAllComponents({ name: 'Ship' })
+    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+
+    expect(bhaalgorn).toBeDefined()
+    expect(bhaalgorn!.find('.ship-action--ban').exists()).toBe(true)
+  })
+
+  it('renders banned ships as compact removable pills', async () => {
+    const wrapper = mountWithApp(DraftScreen, {
+      props: {
+        dataset,
+        shipCatalog,
+      },
+    })
+
+    const shipRows = wrapper.findAllComponents({ name: 'Ship' })
+    const caracal = shipRows.find((row) => row.props('ship_name') === 'Caracal' && row.props('hull_type') === 'Cruiser')
+
+    await caracal!.vm.$emit('ban_ship', 'Cruiser', 'Caracal', { points: 4, shipId: 621, original_points: 4 })
+    await nextTick()
+
+    const banPill = wrapper.find('.ban-pill')
+    expect(banPill.exists()).toBe(true)
+    expect(banPill.text()).toContain('Caracal')
+    expect(banPill.text()).not.toContain('Cruiser')
+    expect(banPill.find('.ban-pill-icon').exists()).toBe(true)
+    expect(banPill.find('.ban-pill-remove-button').exists()).toBe(true)
+    expect(wrapper.find('.ban-list').findComponent({ name: 'Ship' }).exists()).toBe(false)
+
+    await banPill.find('.ban-pill-remove-button').trigger('click')
+    await nextTick()
+
+    expect(wrapper.find('.ban-pill').exists()).toBe(false)
+  })
+
   it('shows illegal action feedback when a second flagship is added', async () => {
     const wrapper = mountWithApp(DraftScreen, {
       props: {

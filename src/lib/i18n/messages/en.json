@@ -20,7 +20,7 @@
   },
   "validation": {
     "ship-not-found": "This ship is not available in the selected tournament dataset.",
-    "max-points-reached": "You cannot add more ships because the 200 point cap is already reached.",
+    "max-points-reached": "Adding this ship would exceed the 200 point cap.",
     "max-ships-reached": "You cannot add more ships because the 10 ship cap is already reached.",
     "flagship-already-picked": "Only one flagship can be picked.",
     "ship-banned": "You cannot pick a ship that is already banned.",

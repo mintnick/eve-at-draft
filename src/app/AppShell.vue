@@ -130,7 +130,10 @@ async function applyImport() {
           />
           </div>
           <div class="control-group">
-            <label class="year-picker-label" for="app-language">{{ $t('messages.language') }}</label>
+            <label class="year-picker-label year-picker-label--icon" for="app-language">
+              <span class="language-label-icon" aria-hidden="true"></span>
+              <span>{{ $t('messages.language') }}</span>
+            </label>
             <Select
               id="app-language"
               :model-value="locale"
@@ -229,14 +232,28 @@ async function applyImport() {
 
 .toolbar-button {
   gap: 0.45rem;
-  align-self: center;
+  align-self: end;
   border: 1px solid var(--app-border);
   background: var(--app-panel-strong);
   color: var(--app-text);
+  min-height: 2.65rem;
 }
 
 .transfer-button {
-  align-self: center;
+  align-self: end;
+  min-height: 2.65rem;
+  border-color: var(--app-action-transfer-border);
+  background: var(--app-action-transfer-bg);
+  color: var(--app-action-transfer-fg);
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(29, 78, 216, 0.12);
+}
+
+.transfer-button:hover {
+  border-color: var(--app-action-transfer-border);
+  background: var(--app-action-transfer-bg);
+  color: var(--app-action-transfer-fg);
+  filter: brightness(1.06);
 }
 
 .control-group {
@@ -251,6 +268,26 @@ async function applyImport() {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--app-text-muted);
+}
+
+.year-picker-label--icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.language-label-icon {
+  width: 1rem;
+  height: 1rem;
+  background: currentColor;
+  -webkit-mask-image: url('/icons/language.svg');
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url('/icons/language.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
 
 .year-select {

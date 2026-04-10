@@ -50,6 +50,30 @@
 - Phase 8 has started, but is intentionally not finished:
   - top-level layout, panel styling, points summary, and ship row presentation received a first polish pass
   - responsive behavior for the header and draft layout was improved
+  - UI issue fixed during polish follow-up: flagship ship rows now show the ban action when ship rows are rendered with ban controls
+  - UI issue fixed during polish follow-up: add, ban, remove, and clear actions now use stronger theme-aware backgrounds and masked icons for better light/dark contrast
+  - UI issue fixed during polish follow-up: action icons inside add, ban, remove, and clear buttons were enlarged and their SVG masks were scaled past `contain` so the actual glyphs read larger
+  - UI issue fixed during polish follow-up: Ship component round action buttons were enlarged further so the add and ban glyphs are no longer cramped
+  - UI issue fixed during polish follow-up: clear buttons now use a lighter neutral treatment in light mode instead of a heavy dark fill
+  - UI issue fixed during polish follow-up: clear buttons now use a shared amber warning treatment that remains visible in both light and dark themes
+  - UI issue fixed during polish follow-up: banned ships now render as compact pills with an inline remove affordance instead of full ship rows
+  - UI issue fixed during polish follow-up: ban pills keep ship thumbnails, omit the hull label, and reuse the same round remove control as picked ships
+  - UI issue fixed during polish follow-up: over-point-cap validation copy now says adding the selected ship would exceed the 200 point cap instead of implying the cap was already reached
+  - UI issue fixed during polish follow-up: the language selector label now includes the language icon for quicker scanning
+  - UI issue fixed during polish follow-up: theme, import, and export controls now align with the bottom of the selector inputs instead of sitting between labels and inputs
+  - UI issue fixed during polish follow-up: import/export buttons now use stronger theme-aware filled styling so they remain visible in light mode
+  - UI issue fixed during polish follow-up: footer content now uses app-owned one-line styling, hides the long CCP disclaimer on narrow screens, and keeps action links visible
+  - UI issue fixed during polish follow-up: footer links now use a lighter, thinner underline treatment instead of heavy bold link text
+  - UI issue fixed during polish follow-up: selected hull-type tabs now use a stronger filled background, border, and highlighted count for better active-state visibility
+  - UI issue fixed during polish follow-up: selected hull-type tab styling was simplified to use the existing app accent instead of a separate warm gradient
+  - UI issue fixed during polish follow-up: selected hull-type tab styling no longer offsets the active tab horizontally, avoiding overlap with the ship panel
+  - UI issue fixed during polish follow-up: hull-type tab labels now truncate or hide at narrow widths instead of scrolling or using tab paging controls
+  - UI issue fixed during polish follow-up: PrimeVue hull-tab navigator arrow buttons are disabled so narrow tabs clip instead of showing paging controls
+  - UI issue fixed during polish follow-up: PrimeVue hull-tab bottom underline/active-bar styling is hidden so only the custom tab border is visible
+  - UI issue fixed during polish follow-up: rules and match archive links are slightly larger and heavier for better visibility
+  - UI issue fixed during polish follow-up: rules and match archive links now use the warm accent color so they stand apart from plain text
+  - UI issue fixed during polish follow-up: rules and match archive links were softened to a muted warm accent after the full warm accent read too strong
+  - UI issue fixed during polish follow-up: dark-mode CSS variables now target `html.app-dark` so theme-specific colors are applied correctly
   - deeper UI/detail tuning is deferred for a later pass before Phase 8 is marked complete
 - Phase 9 is now complete:
   - the `EVE-AT-DRAFT v1` text codec now lives in `src/lib/rules/draft-codec.ts`

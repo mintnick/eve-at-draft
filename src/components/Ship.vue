@@ -68,11 +68,11 @@ const extra_points = computed(() => {
         :aria-label="pick_reason || undefined"
         @click="emit('add_ship', hull_type, ship_name, property)"
       >
-        <img src="/icons/add.svg" alt="" class="ship-action-icon" />
+        <span class="ship-action-icon ship-action-icon--add" aria-hidden="true"></span>
       </Button>
 
       <Button
-        v-if="hull_type !== 'Flagship' && has_btn('ban')"
+        v-if="has_btn('ban')"
         rounded
         text
         :class="['ship-action ship-action--ban', { 'ship-action--blocked': not_bannable }]"
@@ -80,7 +80,7 @@ const extra_points = computed(() => {
         :aria-label="ban_reason || undefined"
         @click="emit('ban_ship', hull_type, ship_name, property)"
       >
-        <img src="/icons/ban.svg" alt="" class="ship-action-icon" />
+        <span class="ship-action-icon ship-action-icon--ban" aria-hidden="true"></span>
       </Button>
 
       <Button
@@ -90,7 +90,7 @@ const extra_points = computed(() => {
         class="ship-action ship-action--remove"
         @click="emit('remove_ship', hull_type, ship_name)"
       >
-        <img src="/icons/remove.svg" alt="" class="ship-action-icon" />
+        <span class="ship-action-icon ship-action-icon--remove" aria-hidden="true"></span>
       </Button>
 
       <Button
@@ -100,7 +100,7 @@ const extra_points = computed(() => {
         class="ship-action ship-action--remove"
         @click="emit('unban_ship', hull_type, ship_name)"
       >
-        <img src="/icons/remove.svg" alt="" class="ship-action-icon" />
+        <span class="ship-action-icon ship-action-icon--remove" aria-hidden="true"></span>
       </Button>
     </div>
   </div>
@@ -190,29 +190,69 @@ const extra_points = computed(() => {
 }
 
 .ship-action {
-  width: 2rem;
-  height: 2rem;
+  width: 2.45rem;
+  height: 2.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
 }
 
 .ship-action--blocked {
-  opacity: 0.45;
+  filter: grayscale(0.35);
+  opacity: 0.62;
 }
 
 .ship-action-icon {
-  width: 0.95rem;
-  height: 0.95rem;
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.ship-action-icon--add {
+  -webkit-mask-image: url('/icons/add.svg');
+  -webkit-mask-size: 185%;
+  mask-image: url('/icons/add.svg');
+  mask-size: 185%;
+}
+
+.ship-action-icon--ban {
+  -webkit-mask-image: url('/icons/ban.svg');
+  -webkit-mask-size: 132%;
+  mask-image: url('/icons/ban.svg');
+  mask-size: 132%;
+}
+
+.ship-action-icon--remove {
+  -webkit-mask-image: url('/icons/remove.svg');
+  -webkit-mask-size: 185%;
+  mask-image: url('/icons/remove.svg');
+  mask-size: 185%;
 }
 
 .ship-action--add {
-  color: var(--app-success);
+  background: var(--app-action-add-bg);
+  color: var(--app-action-add-fg);
 }
 
 .ship-action--ban {
-  color: var(--app-danger);
+  background: var(--app-action-ban-bg);
+  color: var(--app-action-ban-fg);
 }
 
 .ship-action--remove {
-  color: var(--app-accent);
+  background: var(--app-action-remove-bg);
+  color: var(--app-action-remove-fg);
+}
+
+.ship-action:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
 }
 
 @media (max-width: 600px) {
