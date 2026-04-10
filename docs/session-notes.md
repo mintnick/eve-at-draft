@@ -112,6 +112,7 @@
   - `docs/refactor-summary.md` now captures the resulting architecture, supported years, validation status, and deferred follow-up work
   - generated artifact and ignore-rule review is complete; raw upstream captures and generated tournament datasets are intentionally tracked, while transient build outputs remain ignored
   - stale tracked locale snapshots under `src/assets/locales/` were removed after confirming the app now reads only from `src/lib/i18n/messages/` plus the generated ship catalog
+  - production build chunk warning cleanup is complete: Vue/i18n runtime, PrimeVue/theme code, and generated tournament data now build into explicit Vite/Rollup manual chunks
   - today's historical-data commits are already pushed to `origin/codex/refactor`
   - latest pushed commits:
     - `558b756` `Add official tournament data for 2021 to 2023`
@@ -127,6 +128,7 @@
 - Treat ship identity and localized ship names as shared cross-year data rather than duplicating them in yearly datasets
 - Reduce `App.vue` responsibility by splitting page logic, presentation, and styles into clearer modules
 - Add an explicit later UI polish pass; framework migration alone is not considered sufficient visual cleanup
+- Add seven more app-owned locales in addition to the current English and Simplified Chinese support: German (`de`), Russian (`ru`), Japanese (`ja`), Korean (`ko`), French (`fr`), Spanish (`es`), and Traditional Chinese (`zh-TW`)
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
