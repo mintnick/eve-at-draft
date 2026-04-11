@@ -73,6 +73,8 @@
   - UI issue fixed during polish follow-up: rules and match archive links are slightly larger and heavier for better visibility
   - UI issue fixed during polish follow-up: rules and match archive links now use the warm accent color so they stand apart from plain text
   - UI issue fixed during polish follow-up: rules and match archive links were softened to a muted warm accent after the full warm accent read too strong
+  - UI issue fixed during polish follow-up: the main hull and ship selection area no longer has an outer panel border/background, so it sits directly on the page
+  - UI issue fixed during polish follow-up: the ship selection list height now follows the fully visible hull list height without making hull types scroll
   - UI issue fixed during polish follow-up: dark-mode CSS variables now target `html.app-dark` so theme-specific colors are applied correctly
   - deeper UI/detail tuning is deferred for a later pass before Phase 8 is marked complete
 - Phase 9 is now complete:

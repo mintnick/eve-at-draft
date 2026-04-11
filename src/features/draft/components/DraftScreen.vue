@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Message from 'primevue/message'
@@ -54,6 +54,32 @@ const {
 
 const feedbackMessages = computed(() => feedbackReasons.value.map((reason) => t(`validation.${reason}`)))
 const tournamentLabel = computed(() => getTournamentDisplayLabel(dataset.summary, appLocale.value))
+const hullListElement = ref<HTMLElement | null>(null)
+const shipListHeight = ref('min(62vh, 760px)')
+let hullListResizeObserver: ResizeObserver | undefined
+
+function updateShipListHeight() {
+  const height = hullListElement.value?.getBoundingClientRect().height
+
+  if (height && Number.isFinite(height)) {
+    shipListHeight.value = `${height}px`
+  }
+}
+
+onMounted(() => {
+  void nextTick(() => {
+    updateShipListHeight()
+
+    if (hullListElement.value && typeof ResizeObserver !== 'undefined') {
+      hullListResizeObserver = new ResizeObserver(updateShipListHeight)
+      hullListResizeObserver.observe(hullListElement.value)
+    }
+  })
+})
+
+onBeforeUnmount(() => {
+  hullListResizeObserver?.disconnect()
+})
 
 function pickReason(hullType: HullType, shipKey: string) {
   const validation = pickValidation(hullType, shipKey)
@@ -123,15 +149,17 @@ defineExpose({
           @update:value="activeHullType = $event as HullType"
         >
           <div class="selection-layout">
-            <TabList class="hull-tab-list">
-              <Tab v-for="hullType in hullTypes" :key="hullType" :value="hullType" class="hull-tab">
-                <div class="hull-tab-content">
-                  <img :src="`./hull/${hullType}.png`" class="hull-icon" />
-                  <span class="hull-tab-name">{{ $t(`types.${hullType}`) }}</span>
-                  <span class="hull-tab-count">{{ hullCountLabel(hullType) }}</span>
-                </div>
-              </Tab>
-            </TabList>
+            <div ref="hullListElement" class="hull-list-frame">
+              <TabList class="hull-tab-list">
+                <Tab v-for="hullType in hullTypes" :key="hullType" :value="hullType" class="hull-tab">
+                  <div class="hull-tab-content">
+                    <img :src="`./hull/${hullType}.png`" class="hull-icon" />
+                    <span class="hull-tab-name">{{ $t(`types.${hullType}`) }}</span>
+                    <span class="hull-tab-count">{{ hullCountLabel(hullType) }}</span>
+                  </div>
+                </Tab>
+              </TabList>
+            </div>
 
             <TabPanels class="ship-panel-list">
               <TabPanel
@@ -140,7 +168,7 @@ defineExpose({
                 :value="group.hullType"
                 class="ship-panel"
               >
-                <div class="ship-panel-scroll">
+                <div class="ship-panel-scroll" :style="{ height: shipListHeight }">
                   <Ship
                     v-for="(property, shipKey) in group.ships"
                     :key="shipKey"
@@ -340,7 +368,6 @@ defineExpose({
   align-items: start;
 }
 
-.selection-panel,
 .summary-panel,
 .ban-section {
   border: 1px solid var(--app-border);
@@ -350,28 +377,35 @@ defineExpose({
   backdrop-filter: blur(16px);
 }
 
-.selection-panel,
 .summary-panel,
 .ban-section {
   padding: 1rem 1rem 1.1rem;
 }
 
+.selection-panel {
+  min-width: 0;
+}
+
 .selection-layout {
   display: grid;
   grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
-  gap: 1rem;
+  gap: 1.1rem;
   align-items: start;
+}
+
+.hull-list-frame {
+  min-width: 0;
 }
 
 .hull-tab-list {
   display: grid;
   gap: 0.6rem;
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hull-tab-list:deep(.p-tablist-content) {
-  overflow: hidden;
+  overflow: visible;
   border: 0;
 }
 
@@ -450,6 +484,11 @@ defineExpose({
 
 .ship-panel {
   padding: 0;
+}
+
+.ship-panel-list {
+  padding: 0;
+  background: transparent;
 }
 
 .ship-panel-scroll {
@@ -660,8 +699,5 @@ defineExpose({
     font-size: 0.82rem;
   }
 
-  .ship-panel-scroll {
-    height: min(52vh, 560px);
-  }
 }
 </style>
