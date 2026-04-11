@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "ルール",
+    "matchArchive": "試合アーカイブ",
+    "clear": "クリア",
+    "pick": "ピック",
+    "ban": "バン",
+    "year": "トーナメント",
+    "language": "言語",
+    "import": "インポート",
+    "export": "エクスポート",
+    "importDraft": "ドラフトをインポート",
+    "exportDraft": "ドラフトをエクスポート",
+    "importPlaceholder": "EVE-AT-DRAFT v1 のテキストをここに貼り付けてください。",
+    "cancel": "キャンセル",
+    "applyImport": "インポートを適用",
+    "copied": "ドラフトをクリップボードにコピーしました。",
+    "importApplied": "ドラフトをインポートしました。"
+  },
+  "validation": {
+    "ship-not-found": "この艦船は選択中のトーナメントデータにありません。",
+    "max-points-reached": "この艦船を追加すると 200 ポイント上限を超えます。",
+    "max-ships-reached": "10 隻上限に達しているため、これ以上艦船を追加できません。",
+    "flagship-already-picked": "フラッグシップは 1 隻だけ選択できます。",
+    "ship-banned": "すでにバンされている艦船はピックできません。",
+    "logistics-cap-reached": "ロジスティクス上限に達しているため、この艦船を追加できません。",
+    "hull-cap-reached": "この船体区分の上限に達しているため、この艦船を追加できません。",
+    "ship-picked": "すでにピックされている艦船はバンできません。",
+    "ship-already-banned": "この艦船はすでにバンされています。",
+    "ship-not-picked": "この艦船は現在ピックされていません。",
+    "ship-not-banned": "この艦船は現在バンされていません。",
+    "invalid-format-header": "ドラフトテキストが有効な EVE-AT-DRAFT v1 ヘッダーで始まっていません。",
+    "missing-year": "ドラフトテキストにトーナメント年がありません。",
+    "invalid-year": "ドラフト年が無効です。",
+    "invalid-sections": "ドラフトテキストには PICKS と BANS のセクションが必要です。",
+    "invalid-entry": "インポートする各艦船行は \"- \" で始まる必要があります。",
+    "import-unknown-year": "このドラフトは、アプリでまだ利用できないトーナメント年を参照しています。",
+    "import-unknown-ship": "このドラフトは、選択中のトーナメントデータに存在しない艦船キーを参照しています。",
+    "clipboard-unavailable": "このブラウザー環境ではクリップボードにアクセスできません。"
+  },
+  "types": {
+    "Flagship": "フラッグシップ",
+    "Logistics": "ロジスティクス",
+    "Battleship": "戦艦",
+    "Battlecruiser": "巡洋戦艦",
+    "Cruiser": "巡洋艦",
+    "Destroyer": "駆逐艦",
+    "Frigate": "フリゲート",
+    "Industrial": "輸送艦",
+    "Corvette": "コルベット"
+  }
+}

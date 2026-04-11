@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "Règles",
+    "matchArchive": "Archive des matchs",
+    "clear": "Effacer",
+    "pick": "Picks",
+    "ban": "Bans",
+    "year": "Tournoi",
+    "language": "Langue",
+    "import": "Importer",
+    "export": "Exporter",
+    "importDraft": "Importer un draft",
+    "exportDraft": "Exporter un draft",
+    "importPlaceholder": "Collez ici un texte EVE-AT-DRAFT v1.",
+    "cancel": "Annuler",
+    "applyImport": "Appliquer l'import",
+    "copied": "Draft copié dans le presse-papiers.",
+    "importApplied": "Draft importé avec succès."
+  },
+  "validation": {
+    "ship-not-found": "Ce vaisseau n'est pas disponible dans les données du tournoi sélectionné.",
+    "max-points-reached": "Ajouter ce vaisseau dépasserait la limite de 200 points.",
+    "max-ships-reached": "Vous ne pouvez pas ajouter plus de vaisseaux, car la limite de 10 vaisseaux est déjà atteinte.",
+    "flagship-already-picked": "Un seul flagship peut être choisi.",
+    "ship-banned": "Vous ne pouvez pas choisir un vaisseau déjà banni.",
+    "logistics-cap-reached": "Vous ne pouvez pas ajouter ce vaisseau, car la limite de logistique est déjà atteinte.",
+    "hull-cap-reached": "Vous ne pouvez pas ajouter ce vaisseau, car la limite de cette classe est déjà atteinte.",
+    "ship-picked": "Vous ne pouvez pas bannir un vaisseau déjà choisi.",
+    "ship-already-banned": "Ce vaisseau est déjà banni.",
+    "ship-not-picked": "Ce vaisseau n'est pas actuellement choisi.",
+    "ship-not-banned": "Ce vaisseau n'est pas actuellement banni.",
+    "invalid-format-header": "Le texte du draft ne commence pas par un en-tête EVE-AT-DRAFT v1 valide.",
+    "missing-year": "Le texte du draft ne contient pas l'année du tournoi.",
+    "invalid-year": "L'année du draft est invalide.",
+    "invalid-sections": "Le texte du draft doit contenir les sections PICKS et BANS.",
+    "invalid-entry": "Chaque entrée de vaisseau importée doit commencer par \"- \".",
+    "import-unknown-year": "Ce draft référence une année de tournoi qui n'est pas encore disponible dans l'application.",
+    "import-unknown-ship": "Ce draft référence une clé de vaisseau absente des données du tournoi sélectionné.",
+    "clipboard-unavailable": "L'accès au presse-papiers n'est pas disponible dans ce contexte de navigateur."
+  },
+  "types": {
+    "Flagship": "Flagship",
+    "Logistics": "Logistique",
+    "Battleship": "Cuirassé",
+    "Battlecruiser": "Croiseur de bataille",
+    "Cruiser": "Croiseur",
+    "Destroyer": "Destroyer",
+    "Frigate": "Frégate",
+    "Industrial": "Industriel",
+    "Corvette": "Corvette"
+  }
+}

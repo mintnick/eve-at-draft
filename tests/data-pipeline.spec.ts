@@ -6,7 +6,22 @@ import {
   mergeShipCatalogEntries,
   mergeSourceWithOverrides,
 } from '../tools/data-pipeline/build'
+import type { LocaleCode } from '../src/lib/types'
 import type { RawTournamentOverrides, RawTournamentSource } from '../tools/data-pipeline/types'
+
+function names(en: string, zhCN: string): Record<LocaleCode, string> {
+  return {
+    en,
+    'zh-CN': zhCN,
+    'zh-TW': zhCN,
+    ru: en,
+    de: en,
+    ja: en,
+    ko: en,
+    fr: en,
+    es: en,
+  }
+}
 
 const baseSource: RawTournamentSource = {
   year: 2099,
@@ -18,10 +33,7 @@ const baseSource: RawTournamentSource = {
         shipId: 17920,
         points: 30,
         flagshipEligible: true,
-        names: {
-          en: 'Bhaalgorn',
-          zh: '巴戈龙级',
-        },
+        names: names('Bhaalgorn', '巴戈龙级'),
       },
     },
     Logistics: {
@@ -29,20 +41,14 @@ const baseSource: RawTournamentSource = {
         shipId: 582,
         points: 4,
         logisticsWeight: 0.5,
-        names: {
-          en: 'Bantam',
-          zh: '矮脚鸡级',
-        },
+        names: names('Bantam', '矮脚鸡级'),
       },
     },
     Cruiser: {
       Caracal: {
         shipId: 621,
         points: 12,
-        names: {
-          en: 'Caracal',
-          zh: '狞獾级',
-        },
+        names: names('Caracal', '狞獾级'),
       },
     },
   },
@@ -55,7 +61,8 @@ describe('data pipeline build helpers', () => {
         Bhaalgorn: {
           points: 31,
           names: {
-            zh: '巴戈龙旗舰级',
+            'zh-CN': '巴戈龙旗舰级',
+            'zh-TW': '巴戈龙旗舰级',
           },
         },
         Bantam: {
@@ -72,8 +79,9 @@ describe('data pipeline build helpers', () => {
       points: 31,
       flagshipEligible: true,
       names: {
-        en: 'Bhaalgorn',
-        zh: '巴戈龙旗舰级',
+        ...names('Bhaalgorn', '巴戈龙级'),
+        'zh-CN': '巴戈龙旗舰级',
+        'zh-TW': '巴戈龙旗舰级',
       },
     })
     expect(merged.hulls.Logistics?.Bantam).toEqual({
@@ -81,10 +89,7 @@ describe('data pipeline build helpers', () => {
       points: 4,
       logisticsWeight: 1,
       flagshipEligible: false,
-      names: {
-        en: 'Bantam',
-        zh: '矮脚鸡级',
-      },
+      names: names('Bantam', '矮脚鸡级'),
     })
     expect(merged.hulls.Cruiser?.Caracal).toEqual(baseSource.hulls.Cruiser?.Caracal)
   })
@@ -96,26 +101,17 @@ describe('data pipeline build helpers', () => {
       Bhaalgorn: {
         shipId: 17920,
         key: 'Bhaalgorn',
-        names: {
-          en: 'Bhaalgorn',
-          zh: '巴戈龙级',
-        },
+        names: names('Bhaalgorn', '巴戈龙级'),
       },
       Bantam: {
         shipId: 582,
         key: 'Bantam',
-        names: {
-          en: 'Bantam',
-          zh: '矮脚鸡级',
-        },
+        names: names('Bantam', '矮脚鸡级'),
       },
       Caracal: {
         shipId: 621,
         key: 'Caracal',
-        names: {
-          en: 'Caracal',
-          zh: '狞獾级',
-        },
+        names: names('Caracal', '狞獾级'),
       },
     })
   })
@@ -130,20 +126,14 @@ describe('data pipeline build helpers', () => {
             shipId: 17920,
             points: 32,
             flagshipEligible: true,
-            names: {
-              en: 'Bhaalgorn Alt',
-              zh: '巴戈龙级改',
-            },
+            names: names('Bhaalgorn Alt', '巴戈龙级改'),
           },
         },
         Frigate: {
           Condor: {
             shipId: 583,
             points: 2,
-            names: {
-              en: 'Condor',
-              zh: '秃鹫级',
-            },
+            names: names('Condor', '秃鹫级'),
           },
         },
       },
@@ -154,18 +144,12 @@ describe('data pipeline build helpers', () => {
     expect(catalog.Bhaalgorn).toEqual({
       shipId: 17920,
       key: 'Bhaalgorn',
-      names: {
-        en: 'Bhaalgorn',
-        zh: '巴戈龙级',
-      },
+      names: names('Bhaalgorn', '巴戈龙级'),
     })
     expect(catalog.Condor).toEqual({
       shipId: 583,
       key: 'Condor',
-      names: {
-        en: 'Condor',
-        zh: '秃鹫级',
-      },
+      names: names('Condor', '秃鹫级'),
     })
   })
 

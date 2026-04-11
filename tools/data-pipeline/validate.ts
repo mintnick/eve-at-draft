@@ -1,4 +1,5 @@
 import type { HullType, ShipCatalog, TournamentDataset, TournamentIndexEntry } from '../../src/lib/types'
+import { APP_LOCALES } from '../../src/lib/i18n/locales'
 import { GENERATED_INDEX_FILE, getTournamentConfig, SHIP_CATALOG_FILE } from './config'
 import { readJsonFile } from './fs'
 
@@ -19,7 +20,9 @@ export async function validateTournamentArtifacts(year: number): Promise<void> {
   for (const [shipKey, ship] of Object.entries(catalog)) {
     assert(ship.shipId > 0, `Ship ${shipKey} must have a positive shipId`)
     assert(ship.names.en?.trim(), `Ship ${shipKey} is missing English name`)
-    assert(ship.names.zh?.trim(), `Ship ${shipKey} is missing Simplified Chinese name`)
+    for (const locale of APP_LOCALES) {
+      assert(ship.names[locale]?.trim(), `Ship ${shipKey} is missing ${locale} name`)
+    }
 
     const duplicateKey = seenShipIds.get(ship.shipId)
     assert(!duplicateKey || duplicateKey === shipKey, `Duplicate ship id ${ship.shipId} found for ${shipKey} and ${duplicateKey}`)

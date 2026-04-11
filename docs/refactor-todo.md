@@ -79,6 +79,7 @@ This checklist turns the refactor plan into reviewable implementation steps. Eac
 - [x] Replace direct cookie handling in view code with a small preferences utility.
 - [x] Preserve English and Simplified Chinese support.
 - [x] Confirm the new structure can add a future locale without changing feature code.
+- [x] Add expanded app-owned locale support for Traditional Chinese, Russian, German, Japanese, Korean, French, and Spanish.
 
 ## Phase 8: UI polish
 - [ ] First polish pass landed, but detailed UI cleanup is intentionally deferred for a later pass.

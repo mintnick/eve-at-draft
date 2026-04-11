@@ -5,7 +5,14 @@
     "label": "Alliance Tournament XVII",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ],
     "generatedFile": "2021.json"
   },
@@ -15,7 +22,14 @@
     "label": "Alliance Tournament XVIII",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ],
     "generatedFile": "2022.json"
   },
@@ -25,7 +39,14 @@
     "label": "Alliance Tournament XIX",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ],
     "generatedFile": "2023.json"
   },
@@ -35,7 +56,14 @@
     "label": "Alliance Tournament XX",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ],
     "generatedFile": "2024.json"
   },
@@ -45,7 +73,14 @@
     "label": "Alliance Tournament XXI",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ],
     "generatedFile": "2025.json"
   }

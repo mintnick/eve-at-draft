@@ -1,4 +1,5 @@
 import type { LocaleCode } from '@/lib/types'
+import { normalizeLocaleCode } from '@/lib/i18n/locales'
 
 export interface AppPreferences {
   locale: LocaleCode
@@ -21,7 +22,7 @@ export function getCookieValue(name: string): string | null {
 
 export function getStoredLocale(): LocaleCode | null {
   const locale = getCookieValue(LANG_COOKIE)
-  return locale === 'en' || locale === 'zh' ? locale : null
+  return normalizeLocaleCode(locale)
 }
 
 export function setStoredLocale(locale: LocaleCode) {

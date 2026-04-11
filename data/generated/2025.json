@@ -5,7 +5,14 @@
     "label": "Alliance Tournament XXI",
     "locales": [
       "en",
-      "zh"
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
     ]
   },
   "sources": [

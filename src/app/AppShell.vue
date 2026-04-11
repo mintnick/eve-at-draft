@@ -10,6 +10,7 @@ import Textarea from 'primevue/textarea'
 import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
 import { appMessages } from '@/lib/i18n'
+import { LOCALE_LABELS } from '@/lib/i18n/locales'
 import { setStoredLocale, setStoredThemeDark } from '@/lib/preferences'
 import { materializeParsedDraft, parseDraft } from '@/lib/rules/draft-codec'
 import type { DraftValidationResult, LocaleCode, ParsedDraft } from '@/lib/types'
@@ -30,7 +31,7 @@ const transferMessage = ref<{ severity: 'success' | 'warn'; text: string } | nul
 const localeOptions = computed(() =>
   (Object.keys(appMessages) as LocaleCode[]).map((value) => ({
     value,
-    label: value === 'zh' ? '简体中文' : 'English',
+    label: LOCALE_LABELS[value],
   })),
 )
 
@@ -113,7 +114,6 @@ async function applyImport() {
   <div class="page-shell">
     <header class="page-header">
       <div class="page-title-wrap">
-        <p class="page-eyebrow">Alliance Tournament</p>
         <div class="page-title">{{ $t('messages.title') }}</div>
       </div>
       <div class="page-actions-card">
@@ -140,6 +140,7 @@ async function applyImport() {
               :options="localeOptions"
               option-label="label"
               option-value="value"
+              scroll-height="none"
               class="year-select"
               @update:model-value="changeLang($event as LocaleCode)"
             />
@@ -196,16 +197,8 @@ async function applyImport() {
   gap: 0.35rem;
 }
 
-.page-eyebrow {
-  margin: 0;
-  color: var(--app-accent-warm);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
 .page-title {
+  color: var(--app-accent-warm);
   font-size: clamp(2.2rem, 4vw, 3.4rem);
   font-weight: 800;
   line-height: 0.95;

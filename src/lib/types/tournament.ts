@@ -1,4 +1,6 @@
-export type LocaleCode = 'en' | 'zh'
+import type { LocaleCode } from '@/lib/i18n/locales'
+
+export type { LocaleCode } from '@/lib/i18n/locales'
 
 export type HullType =
   | 'Flagship'

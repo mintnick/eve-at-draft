@@ -6,6 +6,7 @@ import type {
   TournamentIndexEntry,
   TournamentShipRule,
 } from '../../src/lib/types'
+import { APP_LOCALES } from '../../src/lib/i18n/locales'
 import { GENERATED_INDEX_FILE, getTournamentConfig, SHIP_CATALOG_FILE, TOURNAMENTS } from './config'
 import { readJsonFile, writeJsonFile } from './fs'
 import type { RawTournamentOverrides, RawTournamentSource } from './types'
@@ -119,7 +120,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
       year: config.year,
       slug: config.slug,
       label: config.label,
-      locales: ['en', 'zh'],
+      locales: [...APP_LOCALES],
     },
     sources: [
       { label: 'Rules', url: config.rules.rulesLink },
@@ -144,7 +145,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
     year: entry.year,
     slug: entry.slug,
     label: entry.label,
-    locales: ['en', 'zh'],
+    locales: [...APP_LOCALES],
     generatedFile: entry.generatedFile,
   }))
 

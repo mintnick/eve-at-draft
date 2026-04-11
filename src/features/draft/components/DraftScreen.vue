@@ -111,14 +111,16 @@ defineExpose({
   <div class="draft-page">
     <section class="draft-hero">
       <div class="draft-meta">
-        <div class="draft-meta-label">{{ tournamentLabel }}</div>
-        <div class="draft-meta-links">
-          <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
-            {{ $t('messages.rules') }}
-          </a>
-          <a v-if="archiveLink" class="rules-link" :href="archiveLink" target="_blank" rel="noreferrer">
-            {{ $t('messages.matchArchive') }}
-          </a>
+        <div class="draft-meta-title-row">
+          <div class="draft-meta-label">{{ tournamentLabel }}</div>
+          <div class="draft-meta-links">
+            <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
+              {{ $t('messages.rules') }}
+            </a>
+            <a v-if="archiveLink" class="rules-link" :href="archiveLink" target="_blank" rel="noreferrer">
+              {{ $t('messages.matchArchive') }}
+            </a>
+          </div>
         </div>
       </div>
 
@@ -288,31 +290,36 @@ defineExpose({
 .draft-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1rem;
-  align-items: end;
-  border: 1px solid var(--app-border);
-  border-radius: 1.5rem;
-  background: var(--app-panel);
-  box-shadow: var(--app-shadow-soft);
-  backdrop-filter: blur(16px);
-  padding: 1.1rem 1.2rem;
+  gap: 0.85rem;
+  align-items: center;
 }
 
 .draft-meta {
   display: grid;
   gap: 0.35rem;
+  min-width: 0;
+}
+
+.draft-meta-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  min-width: 0;
+  flex-wrap: wrap;
 }
 
 .draft-meta-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
+  gap: 0.75rem;
+  align-items: baseline;
 }
 
 .draft-meta-label {
   font-size: clamp(1.1rem, 2vw, 1.45rem);
   font-weight: 800;
   letter-spacing: -0.03em;
+  min-width: 0;
 }
 
 .rules-link,
@@ -325,23 +332,23 @@ defineExpose({
 .points-summary {
   display: flex;
   align-items: baseline;
-  gap: 0.35rem;
-  padding: 0.85rem 1rem;
-  border-radius: 1.2rem;
+  gap: 0.3rem;
+  padding: 0.42rem 0.68rem;
+  border-radius: 0.8rem;
   background: var(--app-panel-strong);
   border: 1px solid var(--app-border);
   font-weight: 800;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  box-shadow: var(--app-shadow-soft);
 }
 
 .points-summary-value {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
   line-height: 1;
 }
 
 .points-summary-divider,
 .points-summary-cap {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--app-text-muted);
 }
 
@@ -363,7 +370,7 @@ defineExpose({
 
 .draft-layout {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  grid-template-columns: max-content minmax(300px, 1fr);
   gap: 1.25rem;
   align-items: start;
 }
@@ -388,7 +395,7 @@ defineExpose({
 
 .selection-layout {
   display: grid;
-  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  grid-template-columns: minmax(180px, 220px) minmax(360px, 420px);
   gap: 1.1rem;
   align-items: start;
 }
@@ -428,6 +435,7 @@ defineExpose({
   justify-content: stretch;
   min-width: 0;
   max-width: 100%;
+  padding: 0.42rem 0.55rem;
   border: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-radius: 1rem;
@@ -456,10 +464,17 @@ defineExpose({
   display: flex;
   width: 100%;
   min-width: 0;
-  gap: 0.8rem;
+  gap: 0.65rem;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.06rem;
   font-weight: 700;
+}
+
+.hull-tab-content .hull-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
 }
 
 .hull-tab-name {
@@ -474,7 +489,7 @@ defineExpose({
 .hull-tab-count {
   flex: 0 0 auto;
   white-space: nowrap;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--app-text-muted);
 }
 
@@ -489,6 +504,7 @@ defineExpose({
 .ship-panel-list {
   padding: 0;
   background: transparent;
+  min-width: 0;
 }
 
 .ship-panel-scroll {
@@ -666,9 +682,17 @@ defineExpose({
   .draft-layout {
     grid-template-columns: 1fr;
   }
+
+  .selection-layout {
+    grid-template-columns: minmax(180px, 220px) minmax(360px, 1fr);
+  }
 }
 
 @media (max-width: 720px) {
+  .draft-meta-title-row {
+    gap: 0.45rem 0.75rem;
+  }
+
   .selection-layout {
     grid-template-columns: 1fr;
   }

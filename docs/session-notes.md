@@ -47,6 +47,8 @@
   - cookie-backed locale and theme persistence now live in `src/lib/preferences/index.ts`
   - view components no longer read or write cookies directly for language or theme
   - the header now uses a locale selector instead of hardcoded language buttons, which scales cleanly for future locale additions
+  - language support now includes English, Simplified Chinese (`zh-CN`), Traditional Chinese (`zh-TW`), Russian, German, Japanese, Korean, French, and Spanish
+  - `zh-TW` is ordered next to `zh-CN`; Traditional Chinese ship names currently fall back to Simplified Chinese because ESI does not expose a Traditional Chinese type-name locale
 - Phase 8 has started, but is intentionally not finished:
   - top-level layout, panel styling, points summary, and ship row presentation received a first polish pass
   - responsive behavior for the header and draft layout was improved
@@ -130,7 +132,7 @@
 - Treat ship identity and localized ship names as shared cross-year data rather than duplicating them in yearly datasets
 - Reduce `App.vue` responsibility by splitting page logic, presentation, and styles into clearer modules
 - Add an explicit later UI polish pass; framework migration alone is not considered sufficient visual cleanup
-- Add seven more app-owned locales in addition to the current English and Simplified Chinese support: German (`de`), Russian (`ru`), Japanese (`ja`), Korean (`ko`), French (`fr`), Spanish (`es`), and Traditional Chinese (`zh-TW`)
+- Keep expanded app-owned locale support for English, Simplified Chinese (`zh-CN`), Traditional Chinese (`zh-TW`), Russian, German, Japanese, Korean, French, and Spanish
 - Optional future idea: support historic team draft presets, likely starting with champions, if data sourcing is practical
 
 ## Recommended next step
