@@ -211,12 +211,6 @@ async function applyImport() {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 720px) {
-  .page-subtitle {
-    display: none;
-  }
-}
-
 .page-title {
   color: var(--app-accent-warm);
   font-size: clamp(2.2rem, 4vw, 3.4rem);
@@ -373,6 +367,10 @@ async function applyImport() {
 
   .transfer-button {
     width: 100%;
+  }
+
+  .page-subtitle {
+    display: none;
   }
 }
 </style>

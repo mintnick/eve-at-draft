@@ -423,7 +423,7 @@ defineExpose({
 }
 
 .hull-tab-list:deep(.p-tab) {
-  background: transparent;
+  background: transparent !important;
 }
 
 .hull-tab-list:deep(.p-tablist-active-bar) {
@@ -446,7 +446,7 @@ defineExpose({
   border: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-radius: 1rem;
-  background: transparent !important;
+  background: transparent;
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
