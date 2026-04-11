@@ -14,11 +14,11 @@
   --app-danger: #b91c1c;
   --app-warning: #b45309;
   --app-action-add-bg: #166534;
-  --app-action-add-fg: #f0fdf4;
+  --app-action-add-fg: #ffffff;
   --app-action-ban-bg: #b91c1c;
-  --app-action-ban-fg: #fef2f2;
+  --app-action-ban-fg: #ffffff;
   --app-action-remove-bg: #1d4ed8;
-  --app-action-remove-fg: #eff6ff;
+  --app-action-remove-fg: #ffffff;
   --app-action-clear-bg: #fbbf24;
   --app-action-clear-fg: #422006;
   --app-action-clear-border: rgba(180, 83, 9, 0.48);
@@ -74,9 +74,9 @@ html.app-dark {
   --app-action-add-bg: #22c55e;
   --app-action-add-fg: #052e16;
   --app-action-ban-bg: #ef4444;
-  --app-action-ban-fg: #450a0a;
+  --app-action-ban-fg: #3b0000;
   --app-action-remove-bg: #60a5fa;
-  --app-action-remove-fg: #082f49;
+  --app-action-remove-fg: #07234a;
   --app-action-clear-bg: #fbbf24;
   --app-action-clear-fg: #422006;
   --app-action-clear-border: rgba(251, 191, 36, 0.62);

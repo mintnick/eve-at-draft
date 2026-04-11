@@ -222,8 +222,8 @@ defineExpose({
 
         <div class="summary-list">
           <Ship
-            v-for="ship in derivedState.pickList"
-            :key="`${ship.hullType}-${ship.shipKey}`"
+            v-for="(ship, index) in derivedState.pickList"
+            :key="`${ship.hullType}-${ship.shipKey}-${index}`"
             :hull_type="ship.hullType"
             :ship_name="ship.shipKey"
             :display_name="localizedShipName(ship.shipKey)"
@@ -409,15 +409,21 @@ defineExpose({
   gap: 0.6rem;
   min-width: 0;
   overflow: visible;
+  background: transparent;
 }
 
 .hull-tab-list:deep(.p-tablist-content) {
   overflow: visible;
   border: 0;
+  background: transparent;
 }
 
 .hull-tab-list:deep(.p-tablist-nav-button) {
   display: none;
+}
+
+.hull-tab-list:deep(.p-tab) {
+  background: transparent;
 }
 
 .hull-tab-list:deep(.p-tablist-active-bar) {
@@ -429,6 +435,7 @@ defineExpose({
   gap: 0.6rem;
   min-width: 0;
   border: 0;
+  background: transparent;
 }
 
 .hull-tab {
@@ -439,7 +446,7 @@ defineExpose({
   border: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-radius: 1rem;
-  background: rgba(148, 163, 184, 0.08);
+  background: transparent !important;
   transition:
     background-color 160ms ease,
     border-color 160ms ease,

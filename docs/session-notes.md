@@ -109,6 +109,11 @@
   - we are intentionally choosing per-year external archive links over importing champion or team draft presets into the app
   - this avoids a large naming and curation problem while still giving interested users a direct path to historic match comps
   - the draft header now surfaces a per-year `Match Archive` link that opens the corresponding EVE_NT tournament page
+- UI polish follow-up (post-Phase 11):
+  - hull list tab container background is now fully transparent (TabList, p-tablist-content, p-tablist-tab-list, and individual p-tab all set to transparent)
+  - ship item rows no longer apply a translateY elevation on hover; only background and border-color transition remains
+  - action button icon fg colors are now solid white in light mode (against the dark green/red/blue button backgrounds) and deep-dark in dark mode (against the bright button backgrounds), replacing the previous near-white and near-black pastels that read too thin
+  - a subtitle "EVE Online Alliance Tournaments Drafting Tool" now appears inline next to the page title on wider screens and is hidden below 720px
 - Phase 11 has started:
   - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
   - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years

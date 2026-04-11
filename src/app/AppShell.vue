@@ -115,41 +115,46 @@ async function applyImport() {
     <header class="page-header">
       <div class="page-title-wrap">
         <div class="page-title">{{ $t('messages.title') }}</div>
+        <div class="page-subtitle">EVE Online Alliance Tournaments Drafting Tool</div>
       </div>
       <div class="page-actions-card">
         <div class="page-actions">
-          <div class="control-group">
-          <label class="year-picker-label" for="tournament-year">{{ $t('messages.year') }}</label>
-          <Select
-            id="tournament-year"
-            v-model="tournamentState.selectedYear"
-            :options="tournamentOptions"
-            option-label="label"
-            option-value="value"
-            class="year-select"
-          />
+          <div class="page-actions-left">
+            <div class="control-group">
+              <label class="year-picker-label" for="tournament-year">{{ $t('messages.year') }}</label>
+              <Select
+                id="tournament-year"
+                v-model="tournamentState.selectedYear"
+                :options="tournamentOptions"
+                option-label="label"
+                option-value="value"
+                class="year-select"
+              />
+            </div>
+            <div class="control-group">
+              <label class="year-picker-label year-picker-label--icon" for="app-language">
+                <span class="language-label-icon" aria-hidden="true"></span>
+                <span>{{ $t('messages.language') }}</span>
+              </label>
+              <Select
+                id="app-language"
+                :model-value="locale"
+                :options="localeOptions"
+                option-label="label"
+                option-value="value"
+                scroll-height="none"
+                class="year-select"
+                @update:model-value="changeLang($event as LocaleCode)"
+              />
+            </div>
           </div>
-          <div class="control-group">
-            <label class="year-picker-label year-picker-label--icon" for="app-language">
-              <span class="language-label-icon" aria-hidden="true"></span>
-              <span>{{ $t('messages.language') }}</span>
-            </label>
-            <Select
-              id="app-language"
-              :model-value="locale"
-              :options="localeOptions"
-              option-label="label"
-              option-value="value"
-              scroll-height="none"
-              class="year-select"
-              @update:model-value="changeLang($event as LocaleCode)"
-            />
+          <div class="page-actions-right">
+            <Button rounded text class="toolbar-button" @click="toggleTheme">
+              <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
+            </Button>
+            <Button outlined class="transfer-button" @click="openImportDialog">{{ $t('messages.import') }}</Button>
+            <Button outlined class="transfer-button" @click="exportDraft">{{ $t('messages.export') }}</Button>
           </div>
-          <Button rounded text class="toolbar-button" @click="toggleTheme">
-            <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
-          </Button>
-          <Button outlined class="transfer-button" @click="openImportDialog">{{ $t('messages.import') }}</Button>
-          <Button outlined class="transfer-button" @click="exportDraft">{{ $t('messages.export') }}</Button>
         </div>
       </div>
     </header>
@@ -187,14 +192,29 @@ async function applyImport() {
 
 .page-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 1.25rem;
+  gap: 0.9rem;
 }
 
 .page-title-wrap {
-  display: grid;
-  gap: 0.35rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--app-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 720px) {
+  .page-subtitle {
+    display: none;
+  }
 }
 
 .page-title {
@@ -202,8 +222,10 @@ async function applyImport() {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
   font-weight: 800;
   line-height: 0.95;
-  letter-spacing: -0.04em;
-  text-wrap: balance;
+  letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .page-actions-card {
@@ -217,7 +239,21 @@ async function applyImport() {
 
 .page-actions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.page-actions-left {
+  display: flex;
+  gap: 0.75rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.page-actions-right {
+  display: flex;
   gap: 0.75rem;
   align-items: end;
   flex-wrap: wrap;
@@ -308,17 +344,18 @@ async function applyImport() {
 }
 
 @media (max-width: 720px) {
-  .page-header {
-    grid-template-columns: 1fr;
-    align-items: stretch;
-  }
-
   .page-actions-card {
     padding: 0.75rem;
   }
 
   .page-actions {
     display: grid;
+  }
+
+  .page-actions-left,
+  .page-actions-right {
+    display: grid;
+    width: 100%;
   }
 
   .control-group,

@@ -118,14 +118,12 @@ const extra_points = computed(() => {
   background: rgba(255, 255, 255, 0.12);
   transition:
     background-color 160ms ease,
-    border-color 160ms ease,
-    transform 160ms ease;
+    border-color 160ms ease;
 }
 
 .ship-wrapper:hover {
   background-color: rgba(148, 163, 184, 0.18);
   border-color: var(--app-border);
-  transform: translateY(-1px);
 }
 
 .ship-meta {
@@ -212,6 +210,7 @@ const extra_points = computed(() => {
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: contain;
+  filter: drop-shadow(0 0 0.6px currentColor) drop-shadow(0 0 0.6px currentColor);
 }
 
 .ship-action-icon--add {
