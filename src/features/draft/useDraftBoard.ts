@@ -10,7 +10,22 @@ import {
 } from '@/lib/rules/draft-engine'
 import { getShipDisplayName } from '@/lib/i18n/labels'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
-import type { DraftAction, DraftState, HullType, LocaleCode, ParsedDraft, ShipCatalog, TournamentDataset, TournamentShipRule } from '@/lib/types'
+import type {
+  DraftAction,
+  DraftState,
+  DraftValidationResult,
+  HullType,
+  LocaleCode,
+  ParsedDraft,
+  ShipCatalog,
+  TournamentDataset,
+  TournamentShipRule,
+} from '@/lib/types'
+
+interface ShipValidationState {
+  pick: DraftValidationResult
+  ban: DraftValidationResult
+}
 
 export function useDraftBoard(
   dataset: TournamentDataset,
@@ -27,6 +42,35 @@ export function useDraftBoard(
   const feedbackReasons = ref<string[]>([])
 
   const derivedState = computed(() => getDraftDerivedState(dataset, state.value))
+  const shipValidation = computed(() => {
+    const validation = new Map<string, ShipValidationState>()
+    const currentState = state.value
+    const currentDerivedState = derivedState.value
+
+    for (const hullType of hullTypes) {
+      for (const shipKey of Object.keys(dataset.hulls[hullType])) {
+        validation.set(getShipValidationKey(hullType, shipKey), {
+          pick: validateDraftAction(
+            dataset,
+            currentState,
+            {
+              type: 'pick',
+              hullType,
+              shipKey,
+            },
+            currentDerivedState,
+          ),
+          ban: validateDraftAction(dataset, currentState, {
+            type: 'ban',
+            hullType,
+            shipKey,
+          }),
+        })
+      }
+    }
+
+    return validation
+  })
 
   function runAction(action: DraftAction) {
     const validation = validateDraftAction(dataset, state.value, action)
@@ -65,19 +109,21 @@ export function useDraftBoard(
   }
 
   function pickValidation(hullType: HullType, shipKey: string) {
-    return validateDraftAction(dataset, state.value, {
-      type: 'pick',
-      hullType,
-      shipKey,
-    })
+    return shipValidation.value.get(getShipValidationKey(hullType, shipKey))?.pick
+      ?? validateDraftAction(dataset, state.value, {
+        type: 'pick',
+        hullType,
+        shipKey,
+      })
   }
 
   function banValidation(hullType: HullType, shipKey: string) {
-    return validateDraftAction(dataset, state.value, {
-      type: 'ban',
-      hullType,
-      shipKey,
-    })
+    return shipValidation.value.get(getShipValidationKey(hullType, shipKey))?.ban
+      ?? validateDraftAction(dataset, state.value, {
+        type: 'ban',
+        hullType,
+        shipKey,
+      })
   }
 
   function hullCountLabel(hullType: HullType) {
@@ -144,4 +190,8 @@ export function useDraftBoard(
     state,
     unbanShip,
   }
+}
+
+function getShipValidationKey(hullType: HullType, shipKey: string) {
+  return `${hullType}:${shipKey}`
 }

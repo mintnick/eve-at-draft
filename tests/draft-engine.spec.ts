@@ -178,4 +178,61 @@ describe('draft engine', () => {
       duplicateShipIncrement: 1,
     })
   })
+
+  it('removes one matching pick at a time when duplicate ship picks exist', () => {
+    let state = createEmptyDraftState(hullTypes2024)
+
+    state = applyDraftAction(dataset2024, state, {
+      type: 'pick',
+      hullType: 'Cruiser',
+      shipKey: 'Caracal',
+    })
+    state = applyDraftAction(dataset2024, state, {
+      type: 'pick',
+      hullType: 'Cruiser',
+      shipKey: 'Caracal',
+    })
+    state = applyDraftAction(dataset2024, state, {
+      type: 'remove',
+      hullType: 'Cruiser',
+      shipKey: 'Caracal',
+    })
+
+    expect(state.picks.Cruiser).toHaveLength(1)
+    expect(state.picks.Cruiser[0]).toMatchObject({
+      shipKey: 'Caracal',
+      points: dataset2024.hulls.Cruiser.Caracal.points,
+    })
+  })
+
+  it('validates duplicate point inflation without allowing picks over the point cap', () => {
+    let state = createEmptyDraftState(hullTypes2024)
+
+    state = applyDraftAction(dataset2024, state, {
+      type: 'pick',
+      hullType: 'Cruiser',
+      shipKey: 'Caracal',
+    })
+
+    const derived = getDraftDerivedState(dataset2024, state)
+    const caracalPoints = dataset2024.hulls.Cruiser.Caracal.points
+    const datasetAtDuplicateLimit = {
+      ...dataset2024,
+      rules: {
+        ...dataset2024.rules,
+        maxPoints: derived.totalPoints + caracalPoints + 1,
+      },
+    }
+
+    const validation = validateDraftAction(datasetAtDuplicateLimit, state, {
+      type: 'pick',
+      hullType: 'Cruiser',
+      shipKey: 'Caracal',
+    })
+
+    expect(validation).toEqual({
+      valid: false,
+      reasons: ['max-points-reached'],
+    })
+  })
 })

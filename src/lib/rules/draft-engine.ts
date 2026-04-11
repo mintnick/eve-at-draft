@@ -137,16 +137,17 @@ export function validateDraftAction(
   dataset: TournamentDataset,
   state: DraftState,
   action: DraftAction,
+  derivedState?: DraftDerivedState,
 ): DraftValidationResult {
-  const derivedState = getDraftDerivedState(dataset, state)
-
   if (action.type === 'pick') {
     const ship = findRegisteredShip(dataset, action.hullType, action.shipKey)
     if (!ship) {
       return invalid('ship-not-found')
     }
 
-    if (derivedState.totalShips >= dataset.rules.maxShips) {
+    const currentDerivedState = derivedState ?? getDraftDerivedState(dataset, state)
+
+    if (currentDerivedState.totalShips >= dataset.rules.maxShips) {
       return invalid('max-ships-reached')
     }
 
@@ -162,19 +163,21 @@ export function validateDraftAction(
       const logisticsCap = dataset.rules.hullCaps.Logistics ?? 0
       const logisticsWeight = ship.rule.logisticsWeight ?? 0
 
-      return derivedState.logisticsUsage + logisticsWeight > logisticsCap
+      return currentDerivedState.logisticsUsage + logisticsWeight > logisticsCap
         ? invalid('logistics-cap-reached')
         : valid()
     }
 
     const hullCap = dataset.rules.hullCaps[action.hullType] ?? 0
 
-    if (derivedState.hullCounts[action.hullType] >= hullCap) {
+    if (currentDerivedState.hullCounts[action.hullType] >= hullCap) {
       return invalid('hull-cap-reached')
     }
 
-    const nextState = applyDraftAction(dataset, state, action)
-    if (getDraftDerivedState(dataset, nextState).totalPoints > dataset.rules.maxPoints) {
+    if (
+      getProjectedPickTotalPoints(currentDerivedState.totalPoints, dataset, state, ship.shipKey, ship.rule)
+      > dataset.rules.maxPoints
+    ) {
       return invalid('max-points-reached')
     }
 
@@ -231,9 +234,12 @@ export function applyDraftAction(
   }
 
   if (action.type === 'remove') {
-    nextState.picks[action.hullType] = nextState.picks[action.hullType].filter(
-      (selection) => selection.shipKey !== action.shipKey,
+    const selectionIndex = nextState.picks[action.hullType].findIndex(
+      (selection) => selection.shipKey === action.shipKey,
     )
+    if (selectionIndex >= 0) {
+      nextState.picks[action.hullType].splice(selectionIndex, 1)
+    }
     recalculatePickPoints(dataset, nextState)
     return nextState
   }
@@ -283,6 +289,10 @@ function cloneDraftState(state: DraftState, hullTypes: HullType[]): DraftState {
 
 function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
   const duplicateIncrement = dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
+  if (duplicateIncrement === 0) {
+    return
+  }
+
   const shipCounts = new Map<string, number>()
 
   for (const selection of Object.values(state.picks).flat()) {
@@ -293,6 +303,26 @@ function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
     const duplicates = shipCounts.get(selection.shipKey) ?? 1
     selection.points = (selection.originalPoints ?? selection.points) + duplicateIncrement * (duplicates - 1)
   }
+}
+
+function getProjectedPickTotalPoints(
+  currentTotalPoints: number,
+  dataset: TournamentDataset,
+  state: DraftState,
+  shipKey: string,
+  rule: TournamentShipRule,
+) {
+  const duplicateIncrement = dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
+  if (duplicateIncrement === 0) {
+    return currentTotalPoints + rule.points
+  }
+
+  const duplicateCount = Object.values(state.picks)
+    .flat()
+    .filter((selection) => selection.shipKey === shipKey)
+    .length
+
+  return currentTotalPoints + rule.points + duplicateCount * duplicateIncrement * 2
 }
 
 function valid(): DraftValidationResult {
