@@ -81,15 +81,17 @@ export function createYearlyRules(source: RawTournamentSource): TournamentHullRu
     Object.entries(source.hulls).map(([hullType, shipMap]) => [
       hullType,
       Object.fromEntries(
-        Object.entries(shipMap ?? {}).map(([shipKey, ship]): [string, TournamentShipRule] => [
-          shipKey,
-          {
-            shipId: ship.shipId,
-            points: ship.points,
-            logisticsWeight: ship.logisticsWeight,
-            flagshipEligible: ship.flagshipEligible,
-          },
-        ]),
+        Object.entries(shipMap ?? {})
+          .map(([shipKey, ship]): [string, TournamentShipRule] => [
+            shipKey,
+            {
+              shipId: ship.shipId,
+              points: ship.points,
+              logisticsWeight: ship.logisticsWeight,
+              flagshipEligible: ship.flagshipEligible,
+            },
+          ])
+          .sort(([aKey, a], [bKey, b]) => b.points - a.points || aKey.localeCompare(bKey)),
       ),
     ]),
   ) as TournamentHullRules
