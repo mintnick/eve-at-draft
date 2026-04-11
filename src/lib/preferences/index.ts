@@ -44,8 +44,17 @@ export function setStoredThemeDark(themeDark: boolean) {
   }
 }
 
+function detectBrowserLocale(): LocaleCode | null {
+  if (typeof navigator === 'undefined') return null
+  for (const lang of navigator.languages ?? []) {
+    const normalized = normalizeLocaleCode(lang)
+    if (normalized) return normalized
+  }
+  return null
+}
+
 export function getInitialLocale(): LocaleCode {
-  return getStoredLocale() ?? 'en'
+  return getStoredLocale() ?? detectBrowserLocale() ?? 'en'
 }
 
 export function getInitialThemeDark(): boolean {
