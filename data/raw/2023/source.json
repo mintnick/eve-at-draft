@@ -1,0 +1,4747 @@
+{
+  "year": 2023,
+  "provider": "official-sheet-static-values",
+  "capturedAt": "2026-04-04T15:11:25.443Z",
+  "hulls": {
+    "Flagship": {
+      "Leshak": {
+        "shipId": 47271,
+        "points": 25,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Leshak",
+          "zh-CN": "勒沙克级",
+          "zh-TW": "勒沙克级",
+          "ru": "Leshak",
+          "de": "Leshak",
+          "ja": "レシャク",
+          "ko": "레샤크",
+          "fr": "Leshak",
+          "es": "Leshak"
+        }
+      },
+      "Rattlesnake": {
+        "shipId": 17918,
+        "points": 25,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Rattlesnake",
+          "zh-CN": "响尾蛇级",
+          "zh-TW": "响尾蛇级",
+          "ru": "Rattlesnake",
+          "de": "Rattlesnake",
+          "ja": "ラトルスネーク",
+          "ko": "래틀스네이크",
+          "fr": "Rattlesnake",
+          "es": "Rattlesnake"
+        }
+      },
+      "Widow": {
+        "shipId": 22436,
+        "points": 25,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Widow",
+          "zh-CN": "寡妇级",
+          "zh-TW": "寡妇级",
+          "ru": "Widow",
+          "de": "Widow",
+          "ja": "ウィドウ",
+          "ko": "위도우",
+          "fr": "Widow",
+          "es": "Widow"
+        }
+      },
+      "Megathron Navy Issue": {
+        "shipId": 17728,
+        "points": 20,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Megathron Navy Issue",
+          "zh-CN": "万王宝座级海军型",
+          "zh-TW": "万王宝座级海军型",
+          "ru": "Megathron Navy Issue",
+          "de": "Megathron Navy Issue",
+          "ja": "メガソロン海軍仕様",
+          "ko": "메가쓰론 해군 에디션",
+          "fr": "Megathron modèle Navy",
+          "es": "Megathron modelo de la Armada"
+        }
+      },
+      "Dominix Navy Issue": {
+        "shipId": 32307,
+        "points": 20,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Dominix Navy Issue",
+          "zh-CN": "多米尼克斯级海军型",
+          "zh-TW": "多米尼克斯级海军型",
+          "ru": "Dominix Navy Issue",
+          "de": "Dominix Navy Issue",
+          "ja": "ドミニックス海軍仕様",
+          "ko": "도미닉스 해군 에디션",
+          "fr": "Dominix modèle Navy",
+          "es": "Dominix modelo de la Armada"
+        }
+      },
+      "Thunderchild": {
+        "shipId": 54733,
+        "points": 18,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Thunderchild",
+          "zh-CN": "雷裔级",
+          "zh-TW": "雷裔级",
+          "ru": "Thunderchild",
+          "de": "Thunderchild",
+          "ja": "サンダーチャイルド",
+          "ko": "썬더차일드",
+          "fr": "Thunderchild",
+          "es": "Thunderchild"
+        }
+      },
+      "Abaddon": {
+        "shipId": 24692,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Abaddon",
+          "zh-CN": "地狱天使级",
+          "zh-TW": "地狱天使级",
+          "ru": "Abaddon",
+          "de": "Abaddon",
+          "ja": "アバドン",
+          "ko": "아바돈",
+          "fr": "Abaddon",
+          "es": "La Abaddon"
+        }
+      },
+      "Apocalypse": {
+        "shipId": 642,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Apocalypse",
+          "zh-CN": "灾难级",
+          "zh-TW": "灾难级",
+          "ru": "Apocalypse",
+          "de": "Apocalypse",
+          "ja": "アポカリプス",
+          "ko": "아포칼립스",
+          "fr": "Apocalypse",
+          "es": "Apocalypse"
+        }
+      },
+      "Armageddon": {
+        "shipId": 643,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Armageddon",
+          "zh-CN": "末日沙场级",
+          "zh-TW": "末日沙场级",
+          "ru": "Armageddon",
+          "de": "Armageddon",
+          "ja": "アルマゲドン",
+          "ko": "아마겟돈",
+          "fr": "Armageddon",
+          "es": "Armageddon"
+        }
+      },
+      "Scorpion": {
+        "shipId": 640,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Scorpion",
+          "zh-CN": "毒蝎级",
+          "zh-TW": "毒蝎级",
+          "ru": "Scorpion",
+          "de": "Scorpion",
+          "ja": "スコーピオン",
+          "ko": "스콜피온",
+          "fr": "Scorpion",
+          "es": "La Scorpion"
+        }
+      },
+      "Raven": {
+        "shipId": 638,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Raven",
+          "zh-CN": "乌鸦级",
+          "zh-TW": "乌鸦级",
+          "ru": "Raven",
+          "de": "Raven",
+          "ja": "レイブン",
+          "ko": "레이븐",
+          "fr": "Raven",
+          "es": "Raven"
+        }
+      },
+      "Rokh": {
+        "shipId": 24688,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Rokh",
+          "zh-CN": "鹏鲲级",
+          "zh-TW": "鹏鲲级",
+          "ru": "Rokh",
+          "de": "Rokh",
+          "ja": "ローク",
+          "ko": "로크",
+          "fr": "Rokh",
+          "es": "Rokh"
+        }
+      },
+      "Hyperion": {
+        "shipId": 24690,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Hyperion",
+          "zh-CN": "亥伯龙神级",
+          "zh-TW": "亥伯龙神级",
+          "ru": "Hyperion",
+          "de": "Hyperion",
+          "ja": "ハイペリオン",
+          "ko": "히페리온",
+          "fr": "Hyperion",
+          "es": "Hyperion"
+        }
+      },
+      "Megathron": {
+        "shipId": 641,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Megathron",
+          "zh-CN": "万王宝座级",
+          "zh-TW": "万王宝座级",
+          "ru": "Megathron",
+          "de": "Megathron",
+          "ja": "メガソロン",
+          "ko": "메가쓰론",
+          "fr": "Megathron",
+          "es": "Megathron"
+        }
+      },
+      "Dominix": {
+        "shipId": 645,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Dominix",
+          "zh-CN": "多米尼克斯级",
+          "zh-TW": "多米尼克斯级",
+          "ru": "Dominix",
+          "de": "Dominix",
+          "ja": "ドミニックス",
+          "ko": "도미닉스",
+          "fr": "Dominix",
+          "es": "Dominix"
+        }
+      },
+      "Tempest": {
+        "shipId": 639,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Tempest",
+          "zh-CN": "狂暴级",
+          "zh-TW": "狂暴级",
+          "ru": "Tempest",
+          "de": "Tempest",
+          "ja": "テンペスト",
+          "ko": "템페스트",
+          "fr": "Tempest",
+          "es": "Tempest"
+        }
+      },
+      "Typhoon": {
+        "shipId": 644,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Typhoon",
+          "zh-CN": "台风级",
+          "zh-TW": "台风级",
+          "ru": "Typhoon",
+          "de": "Typhoon",
+          "ja": "タイフーン",
+          "ko": "타이푼",
+          "fr": "Typhoon",
+          "es": "Typhoon"
+        }
+      },
+      "Maelstrom": {
+        "shipId": 24694,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Maelstrom",
+          "zh-CN": "死亡漩涡级",
+          "zh-TW": "死亡漩涡级",
+          "ru": "Maelstrom",
+          "de": "Maelstrom",
+          "ja": "メイルストローム",
+          "ko": "마엘스트롬",
+          "fr": "Maelstrom",
+          "es": "Maelstrom"
+        }
+      },
+      "Praxis": {
+        "shipId": 47466,
+        "points": 19,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Praxis",
+          "zh-CN": "实践级",
+          "zh-TW": "实践级",
+          "ru": "Praxis",
+          "de": "Praxis",
+          "ja": "プラクシス",
+          "ko": "프락시스",
+          "fr": "Praxis",
+          "es": "Praxis"
+        }
+      },
+      "Apocalypse Navy Issue": {
+        "shipId": 17726,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Apocalypse Navy Issue",
+          "zh-CN": "灾难级海军型",
+          "zh-TW": "灾难级海军型",
+          "ru": "Apocalypse Navy Issue",
+          "de": "Apocalypse Navy Issue",
+          "ja": "アポカリプス海軍仕様",
+          "ko": "아포칼립스 해군 에디션",
+          "fr": "Apocalypse modèle Navy",
+          "es": "Apocalypse modelo de la Armada"
+        }
+      },
+      "Armageddon Navy Issue": {
+        "shipId": 32305,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Armageddon Navy Issue",
+          "zh-CN": "末日沙场级海军型",
+          "zh-TW": "末日沙场级海军型",
+          "ru": "Armageddon Navy Issue",
+          "de": "Armageddon Navy Issue",
+          "ja": "アルマゲドン海軍仕様",
+          "ko": "아마겟돈 해군 에디션",
+          "fr": "Armageddon modèle Navy",
+          "es": "Armageddon modelo de la Armada"
+        }
+      },
+      "Scorpion Navy Issue": {
+        "shipId": 32309,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Scorpion Navy Issue",
+          "zh-CN": "毒蝎级海军型",
+          "zh-TW": "毒蝎级海军型",
+          "ru": "Scorpion Navy Issue",
+          "de": "Scorpion Navy Issue",
+          "ja": "スコーピオン海軍仕様",
+          "ko": "스콜피온 해군 에디션",
+          "fr": "Scorpion modèle Navy",
+          "es": "Scorpion modelo de la Armada"
+        }
+      },
+      "Raven Navy Issue": {
+        "shipId": 17636,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Raven Navy Issue",
+          "zh-CN": "乌鸦级海军型",
+          "zh-TW": "乌鸦级海军型",
+          "ru": "Raven Navy Issue",
+          "de": "Raven Navy Issue",
+          "ja": "レイブン海軍仕様",
+          "ko": "레이븐 해군 에디션",
+          "fr": "Raven modèle Navy",
+          "es": "Raven modelo de la Armada"
+        }
+      },
+      "Tempest Fleet Issue": {
+        "shipId": 17732,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Tempest Fleet Issue",
+          "zh-CN": "狂暴级舰队型",
+          "zh-TW": "狂暴级舰队型",
+          "ru": "Tempest Fleet Issue",
+          "de": "Tempest Fleet Issue",
+          "ja": "テンペスト海軍仕様",
+          "ko": "템페스트 함대 에디션",
+          "fr": "Tempest modèle Flotte",
+          "es": "Tempest modelo de la Flota"
+        }
+      },
+      "Typhoon Fleet Issue": {
+        "shipId": 32311,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Typhoon Fleet Issue",
+          "zh-CN": "台风级舰队型",
+          "zh-TW": "台风级舰队型",
+          "ru": "Typhoon Fleet Issue",
+          "de": "Typhoon Fleet Issue",
+          "ja": "タイフーン海軍仕様",
+          "ko": "타이푼 함대 에디션",
+          "fr": "Typhoon modèle Flotte",
+          "es": "Typhoon modelo de la Flota"
+        }
+      },
+      "Redeemer": {
+        "shipId": 22428,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Redeemer",
+          "zh-CN": "救世级",
+          "zh-TW": "救世级",
+          "ru": "Redeemer",
+          "de": "Redeemer",
+          "ja": "リディーマー",
+          "ko": "리디머",
+          "fr": "Redeemer",
+          "es": "Redeemer"
+        }
+      },
+      "Sin": {
+        "shipId": 22430,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Sin",
+          "zh-CN": "罪恶级",
+          "zh-TW": "罪恶级",
+          "ru": "Sin",
+          "de": "Sin",
+          "ja": "シン",
+          "ko": "씬",
+          "fr": "Sin",
+          "es": "Sin"
+        }
+      },
+      "Panther": {
+        "shipId": 22440,
+        "points": 21,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Panther",
+          "zh-CN": "黑豹级",
+          "zh-TW": "黑豹级",
+          "ru": "Panther",
+          "de": "Panther",
+          "ja": "パンサー",
+          "ko": "팬서",
+          "fr": "Panther",
+          "es": "Panther"
+        }
+      },
+      "Paladin": {
+        "shipId": 28659,
+        "points": 24,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Paladin",
+          "zh-CN": "帕拉丁级",
+          "zh-TW": "帕拉丁级",
+          "ru": "Paladin",
+          "de": "Paladin",
+          "ja": "パラディン",
+          "ko": "팔라딘",
+          "fr": "Paladin",
+          "es": "Paladin"
+        }
+      },
+      "Golem": {
+        "shipId": 28710,
+        "points": 24,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Golem",
+          "zh-CN": "魔像级",
+          "zh-TW": "魔像级",
+          "ru": "Golem",
+          "de": "Golem",
+          "ja": "ゴーレム",
+          "ko": "골렘",
+          "fr": "Golem",
+          "es": "La Golem"
+        }
+      },
+      "Kronos": {
+        "shipId": 28661,
+        "points": 24,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Kronos",
+          "zh-CN": "克洛诺斯级",
+          "zh-TW": "克洛诺斯级",
+          "ru": "Kronos",
+          "de": "Kronos",
+          "ja": "クロノス",
+          "ko": "크로노스",
+          "fr": "Kronos",
+          "es": "Kronos"
+        }
+      },
+      "Vargur": {
+        "shipId": 28665,
+        "points": 24,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Vargur",
+          "zh-CN": "恶狼级",
+          "zh-TW": "恶狼级",
+          "ru": "Vargur",
+          "de": "Vargur",
+          "ja": "ヴァーガー",
+          "ko": "바르거",
+          "fr": "Vargur",
+          "es": "Vargur"
+        }
+      },
+      "Machariel": {
+        "shipId": 17738,
+        "points": 23,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Machariel",
+          "zh-CN": "马克瑞级",
+          "zh-TW": "马克瑞级",
+          "ru": "Machariel",
+          "de": "Machariel",
+          "ja": "マカリエル",
+          "ko": "마케리엘",
+          "fr": "Machariel",
+          "es": "Machariel"
+        }
+      },
+      "Bhaalgorn": {
+        "shipId": 17920,
+        "points": 23,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Bhaalgorn",
+          "zh-CN": "巴戈龙级",
+          "zh-TW": "巴戈龙级",
+          "ru": "Bhaalgorn",
+          "de": "Bhaalgorn",
+          "ja": "バールゴーン",
+          "ko": "바알고른",
+          "fr": "Bhaalgorn",
+          "es": "Bhaalgorn"
+        }
+      },
+      "Barghest": {
+        "shipId": 33820,
+        "points": 23,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Barghest",
+          "zh-CN": "巴盖斯级",
+          "zh-TW": "巴盖斯级",
+          "ru": "Barghest",
+          "de": "Barghest",
+          "ja": "バーゲスト",
+          "ko": "바르게스트",
+          "fr": "Barghest",
+          "es": "Barghest"
+        }
+      },
+      "Nightmare": {
+        "shipId": 17736,
+        "points": 23,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Nightmare",
+          "zh-CN": "噩梦级",
+          "zh-TW": "噩梦级",
+          "ru": "Nightmare",
+          "de": "Nightmare",
+          "ja": "ナイトメア",
+          "ko": "나이트메어",
+          "fr": "Nightmare",
+          "es": "Nightmare"
+        }
+      },
+      "Vindicator": {
+        "shipId": 17740,
+        "points": 23,
+        "flagshipEligible": true,
+        "names": {
+          "en": "Vindicator",
+          "zh-CN": "惩戒者级",
+          "zh-TW": "惩戒者级",
+          "ru": "Vindicator",
+          "de": "Vindicator",
+          "ja": "ビンディケイター",
+          "ko": "빈디케이터",
+          "fr": "Vindicator",
+          "es": "Vindicator"
+        }
+      }
+    },
+    "Logistics": {
+      "Zarmazd": {
+        "shipId": 49713,
+        "points": 17,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Zarmazd",
+          "zh-CN": "扎玛德级",
+          "zh-TW": "扎玛德级",
+          "ru": "Zarmazd",
+          "de": "Zarmazd",
+          "ja": "ザルマズド",
+          "ko": "자르마즈드",
+          "fr": "Zarmazd",
+          "es": "Zarmazd"
+        }
+      },
+      "Inquisitor": {
+        "shipId": 590,
+        "points": 1,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Inquisitor",
+          "zh-CN": "检察官级",
+          "zh-TW": "检察官级",
+          "ru": "Inquisitor",
+          "de": "Inquisitor",
+          "ja": "インクイジター",
+          "ko": "인퀴지터",
+          "fr": "Inquisitor",
+          "es": "Inquisitor"
+        }
+      },
+      "Bantam": {
+        "shipId": 582,
+        "points": 1,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bantam",
+          "zh-CN": "矮脚鸡级",
+          "zh-TW": "矮脚鸡级",
+          "ru": "Bantam",
+          "de": "Bantam",
+          "ja": "バンタム",
+          "ko": "밴텀",
+          "fr": "Bantam",
+          "es": "Bantam"
+        }
+      },
+      "Navitas": {
+        "shipId": 592,
+        "points": 1,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Navitas",
+          "zh-CN": "纳维达斯级",
+          "zh-TW": "纳维达斯级",
+          "ru": "Navitas",
+          "de": "Navitas",
+          "ja": "ナビタス",
+          "ko": "나비타스",
+          "fr": "Navitas",
+          "es": "Navitas"
+        }
+      },
+      "Burst": {
+        "shipId": 599,
+        "points": 1,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Burst",
+          "zh-CN": "爆发级",
+          "zh-TW": "爆发级",
+          "ru": "Burst",
+          "de": "Burst",
+          "ja": "バースト",
+          "ko": "버스트",
+          "fr": "Burst",
+          "es": "Burst"
+        }
+      },
+      "Rodiva": {
+        "shipId": 49712,
+        "points": 10,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rodiva",
+          "zh-CN": "洛迪瓦级",
+          "zh-TW": "洛迪瓦级",
+          "ru": "Rodiva",
+          "de": "Rodiva",
+          "ja": "ロディバ",
+          "ko": "로디바",
+          "fr": "Rodiva",
+          "es": "Rodiva"
+        }
+      },
+      "Deacon": {
+        "shipId": 37457,
+        "points": 5,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Deacon",
+          "zh-CN": "执事级",
+          "zh-TW": "执事级",
+          "ru": "Deacon",
+          "de": "Deacon",
+          "ja": "ディーコン",
+          "ko": "디콘",
+          "fr": "Deacon",
+          "es": "Deacon"
+        }
+      },
+      "Kirin": {
+        "shipId": 37458,
+        "points": 5,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kirin",
+          "zh-CN": "麒麟级",
+          "zh-TW": "麒麟级",
+          "ru": "Kirin",
+          "de": "Kirin",
+          "ja": "キリン",
+          "ko": "키린",
+          "fr": "Kirin",
+          "es": "Kirin"
+        }
+      },
+      "Thalia": {
+        "shipId": 37459,
+        "points": 5,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Thalia",
+          "zh-CN": "塔利亚级",
+          "zh-TW": "塔利亚级",
+          "ru": "Thalia",
+          "de": "Thalia",
+          "ja": "タリア",
+          "ko": "탈리아",
+          "fr": "Thalia",
+          "es": "Thalia"
+        }
+      },
+      "Scalpel": {
+        "shipId": 37460,
+        "points": 5,
+        "logisticsWeight": 0.5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scalpel",
+          "zh-CN": "手术刀级",
+          "zh-TW": "手术刀级",
+          "ru": "Scalpel",
+          "de": "Scalpel",
+          "ja": "スカルペル",
+          "ko": "스칼펠",
+          "fr": "Scalpel",
+          "es": "Scalpel"
+        }
+      },
+      "Augoror": {
+        "shipId": 625,
+        "points": 9,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Augoror",
+          "zh-CN": "奥格诺级",
+          "zh-TW": "奥格诺级",
+          "ru": "Augoror",
+          "de": "Augoror",
+          "ja": "オーゴロー",
+          "ko": "아거르",
+          "fr": "Augoror",
+          "es": "Augoror"
+        }
+      },
+      "Osprey": {
+        "shipId": 620,
+        "points": 9,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Osprey",
+          "zh-CN": "鱼鹰级",
+          "zh-TW": "鱼鹰级",
+          "ru": "Osprey",
+          "de": "Osprey",
+          "ja": "オスプレイ",
+          "ko": "오스프리",
+          "fr": "Osprey",
+          "es": "Osprey"
+        }
+      },
+      "Exequror": {
+        "shipId": 634,
+        "points": 9,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Exequror",
+          "zh-CN": "送葬者级",
+          "zh-TW": "送葬者级",
+          "ru": "Exequror",
+          "de": "Exequror",
+          "ja": "イクセキュラー",
+          "ko": "엑제큐러",
+          "fr": "Exequror",
+          "es": "Exequror"
+        }
+      },
+      "Scythe": {
+        "shipId": 631,
+        "points": 9,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scythe",
+          "zh-CN": "镰刀级",
+          "zh-TW": "镰刀级",
+          "ru": "Scythe",
+          "de": "Scythe",
+          "ja": "サイス",
+          "ko": "사이드",
+          "fr": "Scythe",
+          "es": "Scythe"
+        }
+      },
+      "Guardian": {
+        "shipId": 11987,
+        "points": 16,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Guardian",
+          "zh-CN": "守卫级",
+          "zh-TW": "守卫级",
+          "ru": "Guardian",
+          "de": "Guardian",
+          "ja": "ガーディアン",
+          "ko": "가디언",
+          "fr": "Guardian",
+          "es": "Guardián"
+        }
+      },
+      "Basilisk": {
+        "shipId": 11985,
+        "points": 16,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Basilisk",
+          "zh-CN": "皇冠蜥级",
+          "zh-TW": "皇冠蜥级",
+          "ru": "Basilisk",
+          "de": "Basilisk",
+          "ja": "バシリスク",
+          "ko": "바실리스크",
+          "fr": "Basilisk",
+          "es": "Basilisk"
+        }
+      },
+      "Oneiros": {
+        "shipId": 11989,
+        "points": 16,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Oneiros",
+          "zh-CN": "奥内罗斯级",
+          "zh-TW": "奥内罗斯级",
+          "ru": "Oneiros",
+          "de": "Oneiros",
+          "ja": "オネイロス",
+          "ko": "오네이로스",
+          "fr": "Oneiros",
+          "es": "Oneiros"
+        }
+      },
+      "Scimitar": {
+        "shipId": 11978,
+        "points": 16,
+        "logisticsWeight": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scimitar",
+          "zh-CN": "曲剑级",
+          "zh-TW": "曲剑级",
+          "ru": "Scimitar",
+          "de": "Scimitar",
+          "ja": "シミター",
+          "ko": "시미터",
+          "fr": "Scimitar",
+          "es": "Scimitar"
+        }
+      }
+    },
+    "Battleship": {
+      "Leshak": {
+        "shipId": 47271,
+        "points": 25,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Leshak",
+          "zh-CN": "勒沙克级",
+          "zh-TW": "勒沙克级",
+          "ru": "Leshak",
+          "de": "Leshak",
+          "ja": "レシャク",
+          "ko": "레샤크",
+          "fr": "Leshak",
+          "es": "Leshak"
+        }
+      },
+      "Rattlesnake": {
+        "shipId": 17918,
+        "points": 25,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rattlesnake",
+          "zh-CN": "响尾蛇级",
+          "zh-TW": "响尾蛇级",
+          "ru": "Rattlesnake",
+          "de": "Rattlesnake",
+          "ja": "ラトルスネーク",
+          "ko": "래틀스네이크",
+          "fr": "Rattlesnake",
+          "es": "Rattlesnake"
+        }
+      },
+      "Widow": {
+        "shipId": 22436,
+        "points": 25,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Widow",
+          "zh-CN": "寡妇级",
+          "zh-TW": "寡妇级",
+          "ru": "Widow",
+          "de": "Widow",
+          "ja": "ウィドウ",
+          "ko": "위도우",
+          "fr": "Widow",
+          "es": "Widow"
+        }
+      },
+      "Megathron Navy Issue": {
+        "shipId": 17728,
+        "points": 20,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Megathron Navy Issue",
+          "zh-CN": "万王宝座级海军型",
+          "zh-TW": "万王宝座级海军型",
+          "ru": "Megathron Navy Issue",
+          "de": "Megathron Navy Issue",
+          "ja": "メガソロン海軍仕様",
+          "ko": "메가쓰론 해군 에디션",
+          "fr": "Megathron modèle Navy",
+          "es": "Megathron modelo de la Armada"
+        }
+      },
+      "Dominix Navy Issue": {
+        "shipId": 32307,
+        "points": 20,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Dominix Navy Issue",
+          "zh-CN": "多米尼克斯级海军型",
+          "zh-TW": "多米尼克斯级海军型",
+          "ru": "Dominix Navy Issue",
+          "de": "Dominix Navy Issue",
+          "ja": "ドミニックス海軍仕様",
+          "ko": "도미닉스 해군 에디션",
+          "fr": "Dominix modèle Navy",
+          "es": "Dominix modelo de la Armada"
+        }
+      },
+      "Thunderchild": {
+        "shipId": 54733,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Thunderchild",
+          "zh-CN": "雷裔级",
+          "zh-TW": "雷裔级",
+          "ru": "Thunderchild",
+          "de": "Thunderchild",
+          "ja": "サンダーチャイルド",
+          "ko": "썬더차일드",
+          "fr": "Thunderchild",
+          "es": "Thunderchild"
+        }
+      },
+      "Abaddon": {
+        "shipId": 24692,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Abaddon",
+          "zh-CN": "地狱天使级",
+          "zh-TW": "地狱天使级",
+          "ru": "Abaddon",
+          "de": "Abaddon",
+          "ja": "アバドン",
+          "ko": "아바돈",
+          "fr": "Abaddon",
+          "es": "La Abaddon"
+        }
+      },
+      "Apocalypse": {
+        "shipId": 642,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Apocalypse",
+          "zh-CN": "灾难级",
+          "zh-TW": "灾难级",
+          "ru": "Apocalypse",
+          "de": "Apocalypse",
+          "ja": "アポカリプス",
+          "ko": "아포칼립스",
+          "fr": "Apocalypse",
+          "es": "Apocalypse"
+        }
+      },
+      "Armageddon": {
+        "shipId": 643,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Armageddon",
+          "zh-CN": "末日沙场级",
+          "zh-TW": "末日沙场级",
+          "ru": "Armageddon",
+          "de": "Armageddon",
+          "ja": "アルマゲドン",
+          "ko": "아마겟돈",
+          "fr": "Armageddon",
+          "es": "Armageddon"
+        }
+      },
+      "Scorpion": {
+        "shipId": 640,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scorpion",
+          "zh-CN": "毒蝎级",
+          "zh-TW": "毒蝎级",
+          "ru": "Scorpion",
+          "de": "Scorpion",
+          "ja": "スコーピオン",
+          "ko": "스콜피온",
+          "fr": "Scorpion",
+          "es": "La Scorpion"
+        }
+      },
+      "Raven": {
+        "shipId": 638,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Raven",
+          "zh-CN": "乌鸦级",
+          "zh-TW": "乌鸦级",
+          "ru": "Raven",
+          "de": "Raven",
+          "ja": "レイブン",
+          "ko": "레이븐",
+          "fr": "Raven",
+          "es": "Raven"
+        }
+      },
+      "Rokh": {
+        "shipId": 24688,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rokh",
+          "zh-CN": "鹏鲲级",
+          "zh-TW": "鹏鲲级",
+          "ru": "Rokh",
+          "de": "Rokh",
+          "ja": "ローク",
+          "ko": "로크",
+          "fr": "Rokh",
+          "es": "Rokh"
+        }
+      },
+      "Hyperion": {
+        "shipId": 24690,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hyperion",
+          "zh-CN": "亥伯龙神级",
+          "zh-TW": "亥伯龙神级",
+          "ru": "Hyperion",
+          "de": "Hyperion",
+          "ja": "ハイペリオン",
+          "ko": "히페리온",
+          "fr": "Hyperion",
+          "es": "Hyperion"
+        }
+      },
+      "Megathron": {
+        "shipId": 641,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Megathron",
+          "zh-CN": "万王宝座级",
+          "zh-TW": "万王宝座级",
+          "ru": "Megathron",
+          "de": "Megathron",
+          "ja": "メガソロン",
+          "ko": "메가쓰론",
+          "fr": "Megathron",
+          "es": "Megathron"
+        }
+      },
+      "Dominix": {
+        "shipId": 645,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Dominix",
+          "zh-CN": "多米尼克斯级",
+          "zh-TW": "多米尼克斯级",
+          "ru": "Dominix",
+          "de": "Dominix",
+          "ja": "ドミニックス",
+          "ko": "도미닉스",
+          "fr": "Dominix",
+          "es": "Dominix"
+        }
+      },
+      "Tempest": {
+        "shipId": 639,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tempest",
+          "zh-CN": "狂暴级",
+          "zh-TW": "狂暴级",
+          "ru": "Tempest",
+          "de": "Tempest",
+          "ja": "テンペスト",
+          "ko": "템페스트",
+          "fr": "Tempest",
+          "es": "Tempest"
+        }
+      },
+      "Typhoon": {
+        "shipId": 644,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Typhoon",
+          "zh-CN": "台风级",
+          "zh-TW": "台风级",
+          "ru": "Typhoon",
+          "de": "Typhoon",
+          "ja": "タイフーン",
+          "ko": "타이푼",
+          "fr": "Typhoon",
+          "es": "Typhoon"
+        }
+      },
+      "Maelstrom": {
+        "shipId": 24694,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Maelstrom",
+          "zh-CN": "死亡漩涡级",
+          "zh-TW": "死亡漩涡级",
+          "ru": "Maelstrom",
+          "de": "Maelstrom",
+          "ja": "メイルストローム",
+          "ko": "마엘스트롬",
+          "fr": "Maelstrom",
+          "es": "Maelstrom"
+        }
+      },
+      "Praxis": {
+        "shipId": 47466,
+        "points": 19,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Praxis",
+          "zh-CN": "实践级",
+          "zh-TW": "实践级",
+          "ru": "Praxis",
+          "de": "Praxis",
+          "ja": "プラクシス",
+          "ko": "프락시스",
+          "fr": "Praxis",
+          "es": "Praxis"
+        }
+      },
+      "Apocalypse Navy Issue": {
+        "shipId": 17726,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Apocalypse Navy Issue",
+          "zh-CN": "灾难级海军型",
+          "zh-TW": "灾难级海军型",
+          "ru": "Apocalypse Navy Issue",
+          "de": "Apocalypse Navy Issue",
+          "ja": "アポカリプス海軍仕様",
+          "ko": "아포칼립스 해군 에디션",
+          "fr": "Apocalypse modèle Navy",
+          "es": "Apocalypse modelo de la Armada"
+        }
+      },
+      "Armageddon Navy Issue": {
+        "shipId": 32305,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Armageddon Navy Issue",
+          "zh-CN": "末日沙场级海军型",
+          "zh-TW": "末日沙场级海军型",
+          "ru": "Armageddon Navy Issue",
+          "de": "Armageddon Navy Issue",
+          "ja": "アルマゲドン海軍仕様",
+          "ko": "아마겟돈 해군 에디션",
+          "fr": "Armageddon modèle Navy",
+          "es": "Armageddon modelo de la Armada"
+        }
+      },
+      "Scorpion Navy Issue": {
+        "shipId": 32309,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scorpion Navy Issue",
+          "zh-CN": "毒蝎级海军型",
+          "zh-TW": "毒蝎级海军型",
+          "ru": "Scorpion Navy Issue",
+          "de": "Scorpion Navy Issue",
+          "ja": "スコーピオン海軍仕様",
+          "ko": "스콜피온 해군 에디션",
+          "fr": "Scorpion modèle Navy",
+          "es": "Scorpion modelo de la Armada"
+        }
+      },
+      "Raven Navy Issue": {
+        "shipId": 17636,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Raven Navy Issue",
+          "zh-CN": "乌鸦级海军型",
+          "zh-TW": "乌鸦级海军型",
+          "ru": "Raven Navy Issue",
+          "de": "Raven Navy Issue",
+          "ja": "レイブン海軍仕様",
+          "ko": "레이븐 해군 에디션",
+          "fr": "Raven modèle Navy",
+          "es": "Raven modelo de la Armada"
+        }
+      },
+      "Tempest Fleet Issue": {
+        "shipId": 17732,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tempest Fleet Issue",
+          "zh-CN": "狂暴级舰队型",
+          "zh-TW": "狂暴级舰队型",
+          "ru": "Tempest Fleet Issue",
+          "de": "Tempest Fleet Issue",
+          "ja": "テンペスト海軍仕様",
+          "ko": "템페스트 함대 에디션",
+          "fr": "Tempest modèle Flotte",
+          "es": "Tempest modelo de la Flota"
+        }
+      },
+      "Typhoon Fleet Issue": {
+        "shipId": 32311,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Typhoon Fleet Issue",
+          "zh-CN": "台风级舰队型",
+          "zh-TW": "台风级舰队型",
+          "ru": "Typhoon Fleet Issue",
+          "de": "Typhoon Fleet Issue",
+          "ja": "タイフーン海軍仕様",
+          "ko": "타이푼 함대 에디션",
+          "fr": "Typhoon modèle Flotte",
+          "es": "Typhoon modelo de la Flota"
+        }
+      },
+      "Redeemer": {
+        "shipId": 22428,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Redeemer",
+          "zh-CN": "救世级",
+          "zh-TW": "救世级",
+          "ru": "Redeemer",
+          "de": "Redeemer",
+          "ja": "リディーマー",
+          "ko": "리디머",
+          "fr": "Redeemer",
+          "es": "Redeemer"
+        }
+      },
+      "Sin": {
+        "shipId": 22430,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sin",
+          "zh-CN": "罪恶级",
+          "zh-TW": "罪恶级",
+          "ru": "Sin",
+          "de": "Sin",
+          "ja": "シン",
+          "ko": "씬",
+          "fr": "Sin",
+          "es": "Sin"
+        }
+      },
+      "Panther": {
+        "shipId": 22440,
+        "points": 21,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Panther",
+          "zh-CN": "黑豹级",
+          "zh-TW": "黑豹级",
+          "ru": "Panther",
+          "de": "Panther",
+          "ja": "パンサー",
+          "ko": "팬서",
+          "fr": "Panther",
+          "es": "Panther"
+        }
+      },
+      "Paladin": {
+        "shipId": 28659,
+        "points": 24,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Paladin",
+          "zh-CN": "帕拉丁级",
+          "zh-TW": "帕拉丁级",
+          "ru": "Paladin",
+          "de": "Paladin",
+          "ja": "パラディン",
+          "ko": "팔라딘",
+          "fr": "Paladin",
+          "es": "Paladin"
+        }
+      },
+      "Golem": {
+        "shipId": 28710,
+        "points": 24,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Golem",
+          "zh-CN": "魔像级",
+          "zh-TW": "魔像级",
+          "ru": "Golem",
+          "de": "Golem",
+          "ja": "ゴーレム",
+          "ko": "골렘",
+          "fr": "Golem",
+          "es": "La Golem"
+        }
+      },
+      "Kronos": {
+        "shipId": 28661,
+        "points": 24,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kronos",
+          "zh-CN": "克洛诺斯级",
+          "zh-TW": "克洛诺斯级",
+          "ru": "Kronos",
+          "de": "Kronos",
+          "ja": "クロノス",
+          "ko": "크로노스",
+          "fr": "Kronos",
+          "es": "Kronos"
+        }
+      },
+      "Vargur": {
+        "shipId": 28665,
+        "points": 24,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vargur",
+          "zh-CN": "恶狼级",
+          "zh-TW": "恶狼级",
+          "ru": "Vargur",
+          "de": "Vargur",
+          "ja": "ヴァーガー",
+          "ko": "바르거",
+          "fr": "Vargur",
+          "es": "Vargur"
+        }
+      },
+      "Machariel": {
+        "shipId": 17738,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Machariel",
+          "zh-CN": "马克瑞级",
+          "zh-TW": "马克瑞级",
+          "ru": "Machariel",
+          "de": "Machariel",
+          "ja": "マカリエル",
+          "ko": "마케리엘",
+          "fr": "Machariel",
+          "es": "Machariel"
+        }
+      },
+      "Bhaalgorn": {
+        "shipId": 17920,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bhaalgorn",
+          "zh-CN": "巴戈龙级",
+          "zh-TW": "巴戈龙级",
+          "ru": "Bhaalgorn",
+          "de": "Bhaalgorn",
+          "ja": "バールゴーン",
+          "ko": "바알고른",
+          "fr": "Bhaalgorn",
+          "es": "Bhaalgorn"
+        }
+      },
+      "Barghest": {
+        "shipId": 33820,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Barghest",
+          "zh-CN": "巴盖斯级",
+          "zh-TW": "巴盖斯级",
+          "ru": "Barghest",
+          "de": "Barghest",
+          "ja": "バーゲスト",
+          "ko": "바르게스트",
+          "fr": "Barghest",
+          "es": "Barghest"
+        }
+      },
+      "Nightmare": {
+        "shipId": 17736,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nightmare",
+          "zh-CN": "噩梦级",
+          "zh-TW": "噩梦级",
+          "ru": "Nightmare",
+          "de": "Nightmare",
+          "ja": "ナイトメア",
+          "ko": "나이트메어",
+          "fr": "Nightmare",
+          "es": "Nightmare"
+        }
+      },
+      "Vindicator": {
+        "shipId": 17740,
+        "points": 23,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vindicator",
+          "zh-CN": "惩戒者级",
+          "zh-TW": "惩戒者级",
+          "ru": "Vindicator",
+          "de": "Vindicator",
+          "ja": "ビンディケイター",
+          "ko": "빈디케이터",
+          "fr": "Vindicator",
+          "es": "Vindicator"
+        }
+      }
+    },
+    "Battlecruiser": {
+      "Myrmidon Navy Issue": {
+        "shipId": 72869,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Myrmidon Navy Issue",
+          "zh-CN": "弥洱米顿级海军型",
+          "zh-TW": "弥洱米顿级海军型",
+          "ru": "Myrmidon Navy Issue",
+          "de": "Myrmidon Navy Issue",
+          "ja": "ミュルミドン海軍仕様",
+          "ko": "미르미돈 해군 에디션",
+          "fr": "Myrmidon (Navy Issue)",
+          "es": "Myrmidon modelo de la Armada"
+        }
+      },
+      "Brutix Navy Issue": {
+        "shipId": 33151,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Brutix Navy Issue",
+          "zh-CN": "布鲁提克斯级海军型",
+          "zh-TW": "布鲁提克斯级海军型",
+          "ru": "Brutix Navy Issue",
+          "de": "Brutix Navy Issue",
+          "ja": "ブルティクス海軍仕様",
+          "ko": "브루틱스 해군 에디션",
+          "fr": "Brutix modèle Navy",
+          "es": "Brutix modelo de la Armada"
+        }
+      },
+      "Oracle": {
+        "shipId": 4302,
+        "points": 10,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Oracle",
+          "zh-CN": "预言级",
+          "zh-TW": "预言级",
+          "ru": "Oracle",
+          "de": "Oracle",
+          "ja": "オラクル",
+          "ko": "오라클",
+          "fr": "Oracle",
+          "es": "Oracle"
+        }
+      },
+      "Naga": {
+        "shipId": 4306,
+        "points": 10,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Naga",
+          "zh-CN": "娜迦级",
+          "zh-TW": "娜迦级",
+          "ru": "Naga",
+          "de": "Naga",
+          "ja": "ナーガ",
+          "ko": "나가",
+          "fr": "Naga",
+          "es": "Naga"
+        }
+      },
+      "Talos": {
+        "shipId": 4308,
+        "points": 10,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Talos",
+          "zh-CN": "塔洛斯级",
+          "zh-TW": "塔洛斯级",
+          "ru": "Talos",
+          "de": "Talos",
+          "ja": "タロス",
+          "ko": "탈로스",
+          "fr": "Talos",
+          "es": "Talos"
+        }
+      },
+      "Tornado": {
+        "shipId": 4310,
+        "points": 10,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tornado",
+          "zh-CN": "龙卷风级",
+          "zh-TW": "龙卷风级",
+          "ru": "Tornado",
+          "de": "Tornado",
+          "ja": "トルネード",
+          "ko": "토네이도",
+          "fr": "Tornado",
+          "es": "Tornado"
+        }
+      },
+      "Prophecy": {
+        "shipId": 16233,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Prophecy",
+          "zh-CN": "先知级",
+          "zh-TW": "先知级",
+          "ru": "Prophecy",
+          "de": "Prophecy",
+          "ja": "プロフェシー",
+          "ko": "프로퍼시",
+          "fr": "Prophecy",
+          "es": "Prophecy"
+        }
+      },
+      "Harbinger": {
+        "shipId": 24696,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Harbinger",
+          "zh-CN": "先驱者级",
+          "zh-TW": "先驱者级",
+          "ru": "Harbinger",
+          "de": "Harbinger",
+          "ja": "ハービンジャー",
+          "ko": "하빈저",
+          "fr": "Harbinger",
+          "es": "La Harbinger"
+        }
+      },
+      "Drake": {
+        "shipId": 24698,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Drake",
+          "zh-CN": "幼龙级",
+          "zh-TW": "幼龙级",
+          "ru": "Drake",
+          "de": "Drake",
+          "ja": "ドレイク",
+          "ko": "드레이크",
+          "fr": "Drake",
+          "es": "La Drake"
+        }
+      },
+      "Ferox": {
+        "shipId": 16227,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ferox",
+          "zh-CN": "猛鲑级",
+          "zh-TW": "猛鲑级",
+          "ru": "Ferox",
+          "de": "Ferox",
+          "ja": "フェロックス",
+          "ko": "페록스",
+          "fr": "Ferox",
+          "es": "Ferox"
+        }
+      },
+      "Brutix": {
+        "shipId": 16229,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Brutix",
+          "zh-CN": "布鲁提克斯级",
+          "zh-TW": "布鲁提克斯级",
+          "ru": "Brutix",
+          "de": "Brutix",
+          "ja": "ブルティクス",
+          "ko": "브루틱스",
+          "fr": "Brutix",
+          "es": "La Brutix"
+        }
+      },
+      "Myrmidon": {
+        "shipId": 24700,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Myrmidon",
+          "zh-CN": "弥洱米顿级",
+          "zh-TW": "弥洱米顿级",
+          "ru": "Myrmidon",
+          "de": "Myrmidon",
+          "ja": "ミュルミドン",
+          "ko": "미르미돈",
+          "fr": "Myrmidon",
+          "es": "Myrmidon"
+        }
+      },
+      "Hurricane": {
+        "shipId": 24702,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hurricane",
+          "zh-CN": "暴风级",
+          "zh-TW": "暴风级",
+          "ru": "Hurricane",
+          "de": "Hurricane",
+          "ja": "ハリケーン",
+          "ko": "허리케인",
+          "fr": "Hurricane",
+          "es": "Hurricane"
+        }
+      },
+      "Cyclone": {
+        "shipId": 16231,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cyclone",
+          "zh-CN": "飓风级",
+          "zh-TW": "飓风级",
+          "ru": "Cyclone",
+          "de": "Cyclone",
+          "ja": "サイクロン",
+          "ko": "사이클론",
+          "fr": "Cyclone",
+          "es": "Cyclone"
+        }
+      },
+      "Harbinger Navy Issue": {
+        "shipId": 33155,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Harbinger Navy Issue",
+          "zh-CN": "先驱者级海军型",
+          "zh-TW": "先驱者级海军型",
+          "ru": "Harbinger Navy Issue",
+          "de": "Harbinger Navy Issue",
+          "ja": "ハービンジャー海軍仕様",
+          "ko": "하빈저 해군 에디션",
+          "fr": "Harbinger modèle Navy",
+          "es": "Harbinger modelo de la Armada"
+        }
+      },
+      "Drake Navy Issue": {
+        "shipId": 33153,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Drake Navy Issue",
+          "zh-CN": "幼龙级海军型",
+          "zh-TW": "幼龙级海军型",
+          "ru": "Drake Navy Issue",
+          "de": "Drake Navy Issue",
+          "ja": "ドレイク海軍仕様",
+          "ko": "드레이크 해군 에디션",
+          "fr": "Drake modèle Navy",
+          "es": "Drake modelo de la Armada"
+        }
+      },
+      "Hurricane Fleet Issue": {
+        "shipId": 33157,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hurricane Fleet Issue",
+          "zh-CN": "暴风级舰队型",
+          "zh-TW": "暴风级舰队型",
+          "ru": "Hurricane Fleet Issue",
+          "de": "Hurricane Fleet Issue",
+          "ja": "ハリケーン海軍仕様",
+          "ko": "허리케인 함대 에디션",
+          "fr": "Hurricane modèle Flotte",
+          "es": "Hurricane modelo de la Flota"
+        }
+      },
+      "Damnation": {
+        "shipId": 22474,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Damnation",
+          "zh-CN": "永灭级",
+          "zh-TW": "永灭级",
+          "ru": "Damnation",
+          "de": "Damnation",
+          "ja": "ダムネーション",
+          "ko": "댐네이션",
+          "fr": "Damnation",
+          "es": "Damnation"
+        }
+      },
+      "Absolution": {
+        "shipId": 22448,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Absolution",
+          "zh-CN": "救赎级",
+          "zh-TW": "救赎级",
+          "ru": "Absolution",
+          "de": "Absolution",
+          "ja": "アブソリューション",
+          "ko": "앱솔루션",
+          "fr": "Absolution",
+          "es": "Absolution"
+        }
+      },
+      "Vulture": {
+        "shipId": 22446,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vulture",
+          "zh-CN": "兀鹫级",
+          "zh-TW": "兀鹫级",
+          "ru": "Vulture",
+          "de": "Vulture",
+          "ja": "ボーチャー",
+          "ko": "벌쳐",
+          "fr": "Vulture",
+          "es": "Vulture"
+        }
+      },
+      "Nighthawk": {
+        "shipId": 22470,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nighthawk",
+          "zh-CN": "夜鹰级",
+          "zh-TW": "夜鹰级",
+          "ru": "Nighthawk",
+          "de": "Nighthawk",
+          "ja": "ナイトホーク",
+          "ko": "나이트호크",
+          "fr": "Nighthawk",
+          "es": "Nighthawk"
+        }
+      },
+      "Astarte": {
+        "shipId": 22466,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Astarte",
+          "zh-CN": "阿施塔特级",
+          "zh-TW": "阿施塔特级",
+          "ru": "Astarte",
+          "de": "Astarte",
+          "ja": "アスタルト",
+          "ko": "아스타르테",
+          "fr": "Astarte",
+          "es": "Astarte"
+        }
+      },
+      "Eos": {
+        "shipId": 22442,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Eos",
+          "zh-CN": "曙光女神级",
+          "zh-TW": "曙光女神级",
+          "ru": "Eos",
+          "de": "Eos",
+          "ja": "エオス",
+          "ko": "에오스",
+          "fr": "Eos",
+          "es": "Eos"
+        }
+      },
+      "Claymore": {
+        "shipId": 22468,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Claymore",
+          "zh-CN": "月刃级",
+          "zh-TW": "月刃级",
+          "ru": "Claymore",
+          "de": "Claymore",
+          "ja": "クレイモア",
+          "ko": "클레이모어",
+          "fr": "Claymore",
+          "es": "Claymore"
+        }
+      },
+      "Sleipnir": {
+        "shipId": 22444,
+        "points": 18,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sleipnir",
+          "zh-CN": "斯雷普尼级",
+          "zh-TW": "斯雷普尼级",
+          "ru": "Sleipnir",
+          "de": "Sleipnir",
+          "ja": "スレイプニル",
+          "ko": "슬레이프니르",
+          "fr": "Sleipnir",
+          "es": "Sleipnir"
+        }
+      },
+      "Gnosis": {
+        "shipId": 3756,
+        "points": 13,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Gnosis",
+          "zh-CN": "灵感级",
+          "zh-TW": "灵感级",
+          "ru": "Gnosis",
+          "de": "Gnosis",
+          "ja": "グノーシス",
+          "ko": "그노시스",
+          "fr": "Gnosis",
+          "es": "Gnosis"
+        }
+      },
+      "Cyclone Fleet Issue": {
+        "shipId": 72811,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cyclone Fleet Issue",
+          "zh-CN": "飓风级舰队型",
+          "zh-TW": "飓风级舰队型",
+          "ru": "Cyclone Fleet Issue",
+          "de": "Cyclone Fleet Issue",
+          "ja": "サイクロン海軍仕様",
+          "ko": "사이클론 함대 에디션",
+          "fr": "Cyclone (Fleet Issue)",
+          "es": "Cyclone modelo de la Flota"
+        }
+      },
+      "Ferox Navy Issue": {
+        "shipId": 72812,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ferox Navy Issue",
+          "zh-CN": "猛鲑级海军型",
+          "zh-TW": "猛鲑级海军型",
+          "ru": "Ferox Navy Issue",
+          "de": "Ferox Navy Issue",
+          "ja": "フェロックス海軍仕様",
+          "ko": "페록스 해군 에디션",
+          "fr": "Ferox (Navy Issue)",
+          "es": "Ferox modelo de la Armada"
+        }
+      },
+      "Prophecy Navy Issue": {
+        "shipId": 72872,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Prophecy Navy Issue",
+          "zh-CN": "先知级海军型",
+          "zh-TW": "先知级海军型",
+          "ru": "Prophecy Navy Issue",
+          "de": "Prophecy Navy Issue",
+          "ja": "プロフェシー海軍仕様",
+          "ko": "프로퍼시 해군 에디션",
+          "fr": "Prophecy (Navy Issue)",
+          "es": "Prophecy modelo de la Armada"
+        }
+      }
+    },
+    "Cruiser": {
+      "Ikitursa": {
+        "shipId": 52252,
+        "points": 15,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ikitursa",
+          "zh-CN": "伊基图萨级",
+          "zh-TW": "伊基图萨级",
+          "ru": "Ikitursa",
+          "de": "Ikitursa",
+          "ja": "イキトゥルサ",
+          "ko": "이키투르사",
+          "fr": "Ikitursa",
+          "es": "Ikitursa"
+        }
+      },
+      "Gila": {
+        "shipId": 17715,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Gila",
+          "zh-CN": "毒蜥级",
+          "zh-TW": "毒蜥级",
+          "ru": "Gila",
+          "de": "Gila",
+          "ja": "ギラ",
+          "ko": "길라",
+          "fr": "Gila",
+          "es": "Gila"
+        }
+      },
+      "Vedmak": {
+        "shipId": 47270,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vedmak",
+          "zh-CN": "维德马克级",
+          "zh-TW": "维德马克级",
+          "ru": "Vedmak",
+          "de": "Vedmak",
+          "ja": "ヴェドマック",
+          "ko": "베드마크",
+          "fr": "Vedmak",
+          "es": "Vedmak"
+        }
+      },
+      "Stormbringer": {
+        "shipId": 54732,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stormbringer",
+          "zh-CN": "唤风级",
+          "zh-TW": "唤风级",
+          "ru": "Stormbringer",
+          "de": "Stormbringer",
+          "ja": "ストームブリンガー",
+          "ko": "스톰브링어",
+          "fr": "Stormbringer",
+          "es": "Stormbringer"
+        }
+      },
+      "Exequror Navy Issue": {
+        "shipId": 29344,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Exequror Navy Issue",
+          "zh-CN": "送葬者级海军型",
+          "zh-TW": "送葬者级海军型",
+          "ru": "Exequror Navy Issue",
+          "de": "Exequror Navy Issue",
+          "ja": "イクセキュラー海軍仕様",
+          "ko": "엑제큐러 해군 에디션",
+          "fr": "Exequror modèle Navy",
+          "es": "Exequror modelo de la Armada"
+        }
+      },
+      "Vexor Navy Issue": {
+        "shipId": 17843,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vexor Navy Issue",
+          "zh-CN": "狂怒者级海军型",
+          "zh-TW": "狂怒者级海军型",
+          "ru": "Vexor Navy Issue",
+          "de": "Vexor Navy Issue",
+          "ja": "ベクサー海軍仕様",
+          "ko": "벡서 해군 에디션",
+          "fr": "Vexor modèle Navy",
+          "es": "Vexor modelo de la Armada"
+        }
+      },
+      "Arbitrator": {
+        "shipId": 628,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Arbitrator",
+          "zh-CN": "主宰级",
+          "zh-TW": "主宰级",
+          "ru": "Arbitrator",
+          "de": "Arbitrator",
+          "ja": "アービトレイター",
+          "ko": "아비트레이터",
+          "fr": "Arbitrator",
+          "es": "Arbitrator"
+        }
+      },
+      "Blackbird": {
+        "shipId": 632,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Blackbird",
+          "zh-CN": "黑鸟级",
+          "zh-TW": "黑鸟级",
+          "ru": "Blackbird",
+          "de": "Blackbird",
+          "ja": "ブラックバード",
+          "ko": "블랙버드",
+          "fr": "Blackbird",
+          "es": "Blackbird"
+        }
+      },
+      "Celestis": {
+        "shipId": 633,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Celestis",
+          "zh-CN": "星空级",
+          "zh-TW": "星空级",
+          "ru": "Celestis",
+          "de": "Celestis",
+          "ja": "セレスティス",
+          "ko": "셀레스티스",
+          "fr": "Celestis",
+          "es": "Celestis"
+        }
+      },
+      "Bellicose": {
+        "shipId": 630,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bellicose",
+          "zh-CN": "挑战级",
+          "zh-TW": "挑战级",
+          "ru": "Bellicose",
+          "de": "Bellicose",
+          "ja": "ベリコース",
+          "ko": "벨리코즈",
+          "fr": "Bellicose",
+          "es": "Bellicose"
+        }
+      },
+      "Maller": {
+        "shipId": 624,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Maller",
+          "zh-CN": "暴君级",
+          "zh-TW": "暴君级",
+          "ru": "Maller",
+          "de": "Maller",
+          "ja": "モーラー",
+          "ko": "말러",
+          "fr": "Maller",
+          "es": "Maller"
+        }
+      },
+      "Omen": {
+        "shipId": 2006,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Omen",
+          "zh-CN": "启示级",
+          "zh-TW": "启示级",
+          "ru": "Omen",
+          "de": "Omen",
+          "ja": "オーメン",
+          "ko": "오멘",
+          "fr": "Omen",
+          "es": "Omen"
+        }
+      },
+      "Moa": {
+        "shipId": 623,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Moa",
+          "zh-CN": "巨鸟级",
+          "zh-TW": "巨鸟级",
+          "ru": "Moa",
+          "de": "Moa",
+          "ja": "モア",
+          "ko": "모아",
+          "fr": "Moa",
+          "es": "Moa"
+        }
+      },
+      "Caracal": {
+        "shipId": 621,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Caracal",
+          "zh-CN": "狞獾级",
+          "zh-TW": "狞獾级",
+          "ru": "Caracal",
+          "de": "Caracal",
+          "ja": "カラカル",
+          "ko": "카라칼",
+          "fr": "Caracal",
+          "es": "Caracal"
+        }
+      },
+      "Vexor": {
+        "shipId": 626,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vexor",
+          "zh-CN": "狂怒者级",
+          "zh-TW": "狂怒者级",
+          "ru": "Vexor",
+          "de": "Vexor",
+          "ja": "ベクサー",
+          "ko": "벡서",
+          "fr": "Vexor",
+          "es": "Vexor"
+        }
+      },
+      "Thorax": {
+        "shipId": 627,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Thorax",
+          "zh-CN": "托勒克斯级",
+          "zh-TW": "托勒克斯级",
+          "ru": "Thorax",
+          "de": "Thorax",
+          "ja": "ソーラックス",
+          "ko": "쏘락스",
+          "fr": "Thorax",
+          "es": "Thorax"
+        }
+      },
+      "Stabber": {
+        "shipId": 622,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stabber",
+          "zh-CN": "刺刀级",
+          "zh-TW": "刺刀级",
+          "ru": "Stabber",
+          "de": "Stabber",
+          "ja": "スタッバー",
+          "ko": "스태버",
+          "fr": "Stabber",
+          "es": "Stabber"
+        }
+      },
+      "Rupture": {
+        "shipId": 629,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rupture",
+          "zh-CN": "断崖级",
+          "zh-TW": "断崖级",
+          "ru": "Rupture",
+          "de": "Rupture",
+          "ja": "ラプチャー",
+          "ko": "럽쳐",
+          "fr": "Rupture",
+          "es": "Rupture"
+        }
+      },
+      "Augoror Navy Issue": {
+        "shipId": 29337,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Augoror Navy Issue",
+          "zh-CN": "奥格诺级海军型",
+          "zh-TW": "奥格诺级海军型",
+          "ru": "Augoror Navy Issue",
+          "de": "Augoror Navy Issue",
+          "ja": "オーゴロー海軍仕様",
+          "ko": "아거르 해군 에디션",
+          "fr": "Augoror modèle Navy",
+          "es": "Augoror modelo de la Armada"
+        }
+      },
+      "Omen Navy Issue": {
+        "shipId": 17709,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Omen Navy Issue",
+          "zh-CN": "启示级海军型",
+          "zh-TW": "启示级海军型",
+          "ru": "Omen Navy Issue",
+          "de": "Omen Navy Issue",
+          "ja": "オーメン海軍仕様",
+          "ko": "오멘 해군 에디션",
+          "fr": "Omen modèle Navy",
+          "es": "Omen modelo de la Armada"
+        }
+      },
+      "Caracal Navy Issue": {
+        "shipId": 17634,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Caracal Navy Issue",
+          "zh-CN": "狞獾级海军型",
+          "zh-TW": "狞獾级海军型",
+          "ru": "Caracal Navy Issue",
+          "de": "Caracal Navy Issue",
+          "ja": "カラカル海軍仕様",
+          "ko": "카라칼 해군 에디션",
+          "fr": "Caracal modèle Navy",
+          "es": "Caracal modelo de la Armada"
+        }
+      },
+      "Osprey Navy Issue": {
+        "shipId": 29340,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Osprey Navy Issue",
+          "zh-CN": "鱼鹰级海军型",
+          "zh-TW": "鱼鹰级海军型",
+          "ru": "Osprey Navy Issue",
+          "de": "Osprey Navy Issue",
+          "ja": "オスプレイ海軍仕様",
+          "ko": "오스프리 해군 에디션",
+          "fr": "Osprey modèle Navy",
+          "es": "Osprey modelo de la Armada"
+        }
+      },
+      "Scythe Fleet Issue": {
+        "shipId": 29336,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Scythe Fleet Issue",
+          "zh-CN": "镰刀级舰队型",
+          "zh-TW": "镰刀级舰队型",
+          "ru": "Scythe Fleet Issue",
+          "de": "Scythe Fleet Issue",
+          "ja": "サイス海軍仕様",
+          "ko": "사이드 함대 에디션",
+          "fr": "Scythe modèle Flotte",
+          "es": "Scythe modelo de la Flota"
+        }
+      },
+      "Stabber Fleet Issue": {
+        "shipId": 17713,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stabber Fleet Issue",
+          "zh-CN": "刺刀级舰队型",
+          "zh-TW": "刺刀级舰队型",
+          "ru": "Stabber Fleet Issue",
+          "de": "Stabber Fleet Issue",
+          "ja": "スタッバー海軍仕様",
+          "ko": "스태버 함대 에디션",
+          "fr": "Stabber modèle Flotte",
+          "es": "Stabber modelo de la Flota"
+        }
+      },
+      "Zealot": {
+        "shipId": 12003,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Zealot",
+          "zh-CN": "狂热级",
+          "zh-TW": "狂热级",
+          "ru": "Zealot",
+          "de": "Zealot",
+          "ja": "ゼレット",
+          "ko": "질럿",
+          "fr": "Zealot",
+          "es": "Zealot"
+        }
+      },
+      "Sacrilege": {
+        "shipId": 12019,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sacrilege",
+          "zh-CN": "渎圣级",
+          "zh-TW": "渎圣级",
+          "ru": "Sacrilege",
+          "de": "Sacrilege",
+          "ja": "サクリッジ",
+          "ko": "사크릴리즈",
+          "fr": "Sacrilege",
+          "es": "Sacrilege"
+        }
+      },
+      "Eagle": {
+        "shipId": 12011,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Eagle",
+          "zh-CN": "银鹰级",
+          "zh-TW": "银鹰级",
+          "ru": "Eagle",
+          "de": "Eagle",
+          "ja": "イーグル",
+          "ko": "이글",
+          "fr": "Eagle",
+          "es": "Eagle"
+        }
+      },
+      "Cerberus": {
+        "shipId": 11993,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cerberus",
+          "zh-CN": "希尔博拉斯级",
+          "zh-TW": "希尔博拉斯级",
+          "ru": "Cerberus",
+          "de": "Cerberus",
+          "ja": "ケルベロス",
+          "ko": "케르베로스",
+          "fr": "Cerberus",
+          "es": "Cerberus"
+        }
+      },
+      "Ishtar": {
+        "shipId": 12005,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ishtar",
+          "zh-CN": "伊什塔级",
+          "zh-TW": "伊什塔级",
+          "ru": "Ishtar",
+          "de": "Ishtar",
+          "ja": "イシュタル",
+          "ko": "이슈타르",
+          "fr": "Ishtar",
+          "es": "Ishtar"
+        }
+      },
+      "Deimos": {
+        "shipId": 12023,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Deimos",
+          "zh-CN": "戴默斯级",
+          "zh-TW": "戴默斯级",
+          "ru": "Deimos",
+          "de": "Deimos",
+          "ja": "デイモス",
+          "ko": "데이모스",
+          "fr": "Deimos",
+          "es": "Deimos"
+        }
+      },
+      "Vagabond": {
+        "shipId": 11999,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vagabond",
+          "zh-CN": "流浪级",
+          "zh-TW": "流浪级",
+          "ru": "Vagabond",
+          "de": "Vagabond",
+          "ja": "バガボンド",
+          "ko": "배가본드",
+          "fr": "Vagabond",
+          "es": "Vagabond"
+        }
+      },
+      "Muninn": {
+        "shipId": 12015,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Muninn",
+          "zh-CN": "缪宁级",
+          "zh-TW": "缪宁级",
+          "ru": "Muninn",
+          "de": "Muninn",
+          "ja": "ムニン",
+          "ko": "무닌",
+          "fr": "Muninn",
+          "es": "Muninn"
+        }
+      },
+      "Devoter": {
+        "shipId": 12017,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Devoter",
+          "zh-CN": "奉献级",
+          "zh-TW": "奉献级",
+          "ru": "Devoter",
+          "de": "Devoter",
+          "ja": "ディボーター",
+          "ko": "디보우터",
+          "fr": "Devoter",
+          "es": "Devoter"
+        }
+      },
+      "Onyx": {
+        "shipId": 11995,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Onyx",
+          "zh-CN": "奥尼克斯级",
+          "zh-TW": "奥尼克斯级",
+          "ru": "Onyx",
+          "de": "Onyx",
+          "ja": "オニキス",
+          "ko": "오닉스",
+          "fr": "Onyx",
+          "es": "Onyx"
+        }
+      },
+      "Phobos": {
+        "shipId": 12021,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Phobos",
+          "zh-CN": "伏波斯级",
+          "zh-TW": "伏波斯级",
+          "ru": "Phobos",
+          "de": "Phobos",
+          "ja": "フォボス",
+          "ko": "포보스",
+          "fr": "Phobos",
+          "es": "Phobos"
+        }
+      },
+      "Broadsword": {
+        "shipId": 12013,
+        "points": 12,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Broadsword",
+          "zh-CN": "阔刀级",
+          "zh-TW": "阔刀级",
+          "ru": "Broadsword",
+          "de": "Broadsword",
+          "ja": "ブロードソード",
+          "ko": "브로드소드",
+          "fr": "Broadsword",
+          "es": "Broadsword"
+        }
+      },
+      "Curse": {
+        "shipId": 20125,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Curse",
+          "zh-CN": "诅咒级",
+          "zh-TW": "诅咒级",
+          "ru": "Curse",
+          "de": "Curse",
+          "ja": "カース",
+          "ko": "커스",
+          "fr": "Curse",
+          "es": "Curse"
+        }
+      },
+      "Pilgrim": {
+        "shipId": 11965,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Pilgrim",
+          "zh-CN": "皮尔格里姆级",
+          "zh-TW": "皮尔格里姆级",
+          "ru": "Pilgrim",
+          "de": "Pilgrim",
+          "ja": "ピルグリム",
+          "ko": "필그림",
+          "fr": "Pilgrim",
+          "es": "Pilgrim"
+        }
+      },
+      "Falcon": {
+        "shipId": 11957,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Falcon",
+          "zh-CN": "战隼级",
+          "zh-TW": "战隼级",
+          "ru": "Falcon",
+          "de": "Falcon",
+          "ja": "ファルコン",
+          "ko": "팔콘",
+          "fr": "Falcon",
+          "es": "Falcon"
+        }
+      },
+      "Rook": {
+        "shipId": 11959,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rook",
+          "zh-CN": "白嘴鸦级",
+          "zh-TW": "白嘴鸦级",
+          "ru": "Rook",
+          "de": "Rook",
+          "ja": "ルーク",
+          "ko": "룩",
+          "fr": "Rook",
+          "es": "Rook"
+        }
+      },
+      "Arazu": {
+        "shipId": 11969,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Arazu",
+          "zh-CN": "埃拉兹级",
+          "zh-TW": "埃拉兹级",
+          "ru": "Arazu",
+          "de": "Arazu",
+          "ja": "アラズ",
+          "ko": "아라주",
+          "fr": "Arazu",
+          "es": "Arazu"
+        }
+      },
+      "Lachesis": {
+        "shipId": 11971,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Lachesis",
+          "zh-CN": "拉克希斯级",
+          "zh-TW": "拉克希斯级",
+          "ru": "Lachesis",
+          "de": "Lachesis",
+          "ja": "ラケシス",
+          "ko": "라케시스",
+          "fr": "Lachesis",
+          "es": "Lachesis"
+        }
+      },
+      "Huginn": {
+        "shipId": 11961,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Huginn",
+          "zh-CN": "休津级",
+          "zh-TW": "休津级",
+          "ru": "Huginn",
+          "de": "Huginn",
+          "ja": "フギン",
+          "ko": "후긴",
+          "fr": "Huginn",
+          "es": "Huginn"
+        }
+      },
+      "Rapier": {
+        "shipId": 11963,
+        "points": 14,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rapier",
+          "zh-CN": "长剑级",
+          "zh-TW": "长剑级",
+          "ru": "Rapier",
+          "de": "Rapier",
+          "ja": "レイピア",
+          "ko": "레이피어",
+          "fr": "Rapier",
+          "es": "Rapier"
+        }
+      },
+      "Legion": {
+        "shipId": 29986,
+        "points": 16,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Legion",
+          "zh-CN": "圣卒级",
+          "zh-TW": "圣卒级",
+          "ru": "Legion",
+          "de": "Legion",
+          "ja": "レギオン",
+          "ko": "레기온",
+          "fr": "Legion",
+          "es": "Legion"
+        }
+      },
+      "Tengu": {
+        "shipId": 29984,
+        "points": 16,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tengu",
+          "zh-CN": "金鹏级",
+          "zh-TW": "金鹏级",
+          "ru": "Tengu",
+          "de": "Tengu",
+          "ja": "テング",
+          "ko": "텐구",
+          "fr": "Tengu",
+          "es": "Tengu"
+        }
+      },
+      "Proteus": {
+        "shipId": 29988,
+        "points": 16,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Proteus",
+          "zh-CN": "海神级",
+          "zh-TW": "海神级",
+          "ru": "Proteus",
+          "de": "Proteus",
+          "ja": "プロテウス",
+          "ko": "프로테우스",
+          "fr": "Proteus",
+          "es": "Proteus"
+        }
+      },
+      "Loki": {
+        "shipId": 29990,
+        "points": 16,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Loki",
+          "zh-CN": "洛基级",
+          "zh-TW": "洛基级",
+          "ru": "Loki",
+          "de": "Loki",
+          "ja": "ロキ",
+          "ko": "로키",
+          "fr": "Loki",
+          "es": "Loki"
+        }
+      },
+      "Cynabal": {
+        "shipId": 17720,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cynabal",
+          "zh-CN": "塞纳波级",
+          "zh-TW": "塞纳波级",
+          "ru": "Cynabal",
+          "de": "Cynabal",
+          "ja": "サイノバル",
+          "ko": "시나발",
+          "fr": "Cynabal",
+          "es": "Cynabal"
+        }
+      },
+      "Ashimmu": {
+        "shipId": 17922,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ashimmu",
+          "zh-CN": "阿什姆级",
+          "zh-TW": "阿什姆级",
+          "ru": "Ashimmu",
+          "de": "Ashimmu",
+          "ja": "アシッムー",
+          "ko": "아시무",
+          "fr": "Ashimmu",
+          "es": "Ashimmu"
+        }
+      },
+      "Orthrus": {
+        "shipId": 33818,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Orthrus",
+          "zh-CN": "奥苏斯级",
+          "zh-TW": "奥苏斯级",
+          "ru": "Orthrus",
+          "de": "Orthrus",
+          "ja": "オーソラス",
+          "ko": "오르서스",
+          "fr": "Orthrus",
+          "es": "Orthrus"
+        }
+      },
+      "Phantasm": {
+        "shipId": 17718,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Phantasm",
+          "zh-CN": "幽灵级",
+          "zh-TW": "幽灵级",
+          "ru": "Phantasm",
+          "de": "Phantasm",
+          "ja": "ファンタズム",
+          "ko": "판타즘",
+          "fr": "Phantasm",
+          "es": "Phantasm"
+        }
+      },
+      "Stratios": {
+        "shipId": 33470,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stratios",
+          "zh-CN": "斯特修斯级",
+          "zh-TW": "斯特修斯级",
+          "ru": "Stratios",
+          "de": "Stratios",
+          "ja": "ストラティオス",
+          "ko": "스트라티오스",
+          "fr": "Stratios",
+          "es": "Stratios"
+        }
+      },
+      "Vigilant": {
+        "shipId": 17722,
+        "points": 9,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vigilant",
+          "zh-CN": "警惕级",
+          "zh-TW": "警惕级",
+          "ru": "Vigilant",
+          "de": "Vigilant",
+          "ja": "ヴィジラント",
+          "ko": "비질런트",
+          "fr": "Vigilant",
+          "es": "Vigilant"
+        }
+      }
+    },
+    "Destroyer": {
+      "Draugur": {
+        "shipId": 52254,
+        "points": 8,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Draugur",
+          "zh-CN": "德拉古级",
+          "zh-TW": "德拉古级",
+          "ru": "Draugur",
+          "de": "Draugur",
+          "ja": "ドラウグル",
+          "ko": "드라우거",
+          "fr": "Draugur",
+          "es": "Draugur"
+        }
+      },
+      "Kikimora": {
+        "shipId": 49710,
+        "points": 7,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kikimora",
+          "zh-CN": "奇奇莫拉级",
+          "zh-TW": "奇奇莫拉级",
+          "ru": "Kikimora",
+          "de": "Kikimora",
+          "ja": "キキモラ",
+          "ko": "키키모라",
+          "fr": "Kikimora",
+          "es": "Kikimora"
+        }
+      },
+      "Catalyst Navy Issue": {
+        "shipId": 73796,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Catalyst Navy Issue",
+          "zh-CN": "促进级海军型",
+          "zh-TW": "促进级海军型",
+          "ru": "Catalyst Navy Issue",
+          "de": "Catalyst Navy Issue",
+          "ja": "カタリスト海軍仕様",
+          "ko": "카탈리스트 해군 에디션",
+          "fr": "Catalyst Navy Issue",
+          "es": "Catalyst modelo de la Armada"
+        }
+      },
+      "Coercer": {
+        "shipId": 16236,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Coercer",
+          "zh-CN": "强制者级",
+          "zh-TW": "强制者级",
+          "ru": "Coercer",
+          "de": "Coercer",
+          "ja": "コウアーサー",
+          "ko": "코얼서",
+          "fr": "Coercer",
+          "es": "Coercer"
+        }
+      },
+      "Dragoon": {
+        "shipId": 32874,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Dragoon",
+          "zh-CN": "龙骑兵级",
+          "zh-TW": "龙骑兵级",
+          "ru": "Dragoon",
+          "de": "Dragoon",
+          "ja": "ドラグーン",
+          "ko": "드라군",
+          "fr": "Dragoon",
+          "es": "Dragoon"
+        }
+      },
+      "Cormorant": {
+        "shipId": 16238,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cormorant",
+          "zh-CN": "海燕级",
+          "zh-TW": "海燕级",
+          "ru": "Cormorant",
+          "de": "Cormorant",
+          "ja": "コーモラント",
+          "ko": "코모란트",
+          "fr": "Cormorant",
+          "es": "Cormorant"
+        }
+      },
+      "Corax": {
+        "shipId": 32876,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Corax",
+          "zh-CN": "渡鸦级",
+          "zh-TW": "渡鸦级",
+          "ru": "Corax",
+          "de": "Corax",
+          "ja": "コラックス",
+          "ko": "코락스",
+          "fr": "Corax",
+          "es": "Corax"
+        }
+      },
+      "Catalyst": {
+        "shipId": 16240,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Catalyst",
+          "zh-CN": "促进级",
+          "zh-TW": "促进级",
+          "ru": "Catalyst",
+          "de": "Catalyst",
+          "ja": "カタリスト",
+          "ko": "카탈리스트",
+          "fr": "Catalyst",
+          "es": "Catalizador"
+        }
+      },
+      "Algos": {
+        "shipId": 32872,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Algos",
+          "zh-CN": "阿尔格斯级",
+          "zh-TW": "阿尔格斯级",
+          "ru": "Algos",
+          "de": "Algos",
+          "ja": "アルゴス",
+          "ko": "알고스",
+          "fr": "Algos",
+          "es": "Algos"
+        }
+      },
+      "Thrasher": {
+        "shipId": 16242,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Thrasher",
+          "zh-CN": "长尾鲛级",
+          "zh-TW": "长尾鲛级",
+          "ru": "Thrasher",
+          "de": "Thrasher",
+          "ja": "シュラッシャー",
+          "ko": "쓰레셔",
+          "fr": "Thrasher",
+          "es": "Thrasher"
+        }
+      },
+      "Talwar": {
+        "shipId": 32878,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Talwar",
+          "zh-CN": "弯刀级",
+          "zh-TW": "弯刀级",
+          "ru": "Talwar",
+          "de": "Talwar",
+          "ja": "タルワー",
+          "ko": "탈와르",
+          "fr": "Talwar",
+          "es": "Talwar"
+        }
+      },
+      "Pontifex": {
+        "shipId": 37481,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Pontifex",
+          "zh-CN": "庞蒂菲斯级",
+          "zh-TW": "庞蒂菲斯级",
+          "ru": "Pontifex",
+          "de": "Pontifex",
+          "ja": "ポンティフェックス",
+          "ko": "폰티펙스",
+          "fr": "Pontifex",
+          "es": "Pontifex"
+        }
+      },
+      "Stork": {
+        "shipId": 37482,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stork",
+          "zh-CN": "鹳鸟级",
+          "zh-TW": "鹳鸟级",
+          "ru": "Stork",
+          "de": "Stork",
+          "ja": "ストーク",
+          "ko": "스토크",
+          "fr": "Stork",
+          "es": "Stork"
+        }
+      },
+      "Magus": {
+        "shipId": 37483,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Magus",
+          "zh-CN": "占星级",
+          "zh-TW": "占星级",
+          "ru": "Magus",
+          "de": "Magus",
+          "ja": "メイガス",
+          "ko": "마구스",
+          "fr": "Magus",
+          "es": "Magus"
+        }
+      },
+      "Bifrost": {
+        "shipId": 37480,
+        "points": 6,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bifrost",
+          "zh-CN": "天梯级",
+          "zh-TW": "天梯级",
+          "ru": "Bifrost",
+          "de": "Bifrost",
+          "ja": "ビフレスト",
+          "ko": "비프로스트",
+          "fr": "Bifrost",
+          "es": "Bifrost"
+        }
+      },
+      "Heretic": {
+        "shipId": 22452,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Heretic",
+          "zh-CN": "异端级",
+          "zh-TW": "异端级",
+          "ru": "Heretic",
+          "de": "Heretic",
+          "ja": "ヘレティック",
+          "ko": "헤레틱",
+          "fr": "Heretic",
+          "es": "Heretic"
+        }
+      },
+      "Flycatcher": {
+        "shipId": 22464,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Flycatcher",
+          "zh-CN": "飞燕级",
+          "zh-TW": "飞燕级",
+          "ru": "Flycatcher",
+          "de": "Flycatcher",
+          "ja": "フライキャッチャー",
+          "ko": "플라이캐쳐",
+          "fr": "Flycatcher",
+          "es": "Flycatcher"
+        }
+      },
+      "Eris": {
+        "shipId": 22460,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Eris",
+          "zh-CN": "厄里斯级",
+          "zh-TW": "厄里斯级",
+          "ru": "Eris",
+          "de": "Eris",
+          "ja": "エリス",
+          "ko": "에리스",
+          "fr": "Eris",
+          "es": "Eris"
+        }
+      },
+      "Sabre": {
+        "shipId": 22456,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sabre",
+          "zh-CN": "剑齿虎级",
+          "zh-TW": "剑齿虎级",
+          "ru": "Sabre",
+          "de": "Sabre",
+          "ja": "セイバー",
+          "ko": "세이버",
+          "fr": "Sabre",
+          "es": "Sabre"
+        }
+      },
+      "Confessor": {
+        "shipId": 34317,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Confessor",
+          "zh-CN": "忏悔者级",
+          "zh-TW": "忏悔者级",
+          "ru": "Confessor",
+          "de": "Confessor",
+          "ja": "コンフェッサー",
+          "ko": "컨페서",
+          "fr": "Confessor",
+          "es": "Confessor"
+        }
+      },
+      "Jackdaw": {
+        "shipId": 34828,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Jackdaw",
+          "zh-CN": "寒鸦级",
+          "zh-TW": "寒鸦级",
+          "ru": "Jackdaw",
+          "de": "Jackdaw",
+          "ja": "ジャックドー",
+          "ko": "잭도우",
+          "fr": "Jackdaw",
+          "es": "Jackdaw"
+        }
+      },
+      "Hecate": {
+        "shipId": 35683,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hecate",
+          "zh-CN": "赫卡特级",
+          "zh-TW": "赫卡特级",
+          "ru": "Hecate",
+          "de": "Hecate",
+          "ja": "ヘカテ",
+          "ko": "헤카테",
+          "fr": "Hécate",
+          "es": "Hecate"
+        }
+      },
+      "Svipul": {
+        "shipId": 34562,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Svipul",
+          "zh-CN": "斯威普级",
+          "zh-TW": "斯威普级",
+          "ru": "Svipul",
+          "de": "Svipul",
+          "ja": "スヴィプル",
+          "ko": "스비풀",
+          "fr": "Svipul",
+          "es": "Svipul"
+        }
+      },
+      "Sunesis": {
+        "shipId": 42685,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sunesis",
+          "zh-CN": "旭日级",
+          "zh-TW": "旭日级",
+          "ru": "Sunesis",
+          "de": "Sunesis",
+          "ja": "スネシス",
+          "ko": "수네시스",
+          "fr": "Sunesis",
+          "es": "Sunesis"
+        }
+      },
+      "Thrasher Fleet Issue": {
+        "shipId": 73794,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Thrasher Fleet Issue",
+          "zh-CN": "长尾鲛级舰队型",
+          "zh-TW": "长尾鲛级舰队型",
+          "ru": "Thrasher Fleet Issue",
+          "de": "Thrasher Fleet Issue",
+          "ja": "シュラッシャー海軍仕様",
+          "ko": "쓰레셔 함대 에디션",
+          "fr": "Thrasher Fleet Issue",
+          "es": "Thrasher modelo de la Flota"
+        }
+      },
+      "Cormorant Navy Issue": {
+        "shipId": 73795,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cormorant Navy Issue",
+          "zh-CN": "海燕级海军型",
+          "zh-TW": "海燕级海军型",
+          "ru": "Cormorant Navy Issue",
+          "de": "Cormorant Navy Issue",
+          "ja": "コーモラント海軍仕様",
+          "ko": "코모란트 해군 에디션",
+          "fr": "Cormorant Navy Issue",
+          "es": "Cormorant modelo de la Armada"
+        }
+      },
+      "Coercer Navy Issue": {
+        "shipId": 73789,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Coercer Navy Issue",
+          "zh-CN": "强制者级海军型",
+          "zh-TW": "强制者级海军型",
+          "ru": "Coercer Navy Issue",
+          "de": "Coercer Navy Issue",
+          "ja": "コウアーサー海軍仕様",
+          "ko": "코얼서 해군 에디션",
+          "fr": "Coercer Navy Issue",
+          "es": "Coercer modelo de la Armada"
+        }
+      }
+    },
+    "Frigate": {
+      "Executioner": {
+        "shipId": 589,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Executioner",
+          "zh-CN": "刽子手级",
+          "zh-TW": "刽子手级",
+          "ru": "Executioner",
+          "de": "Executioner",
+          "ja": "エクスキューショナー",
+          "ko": "엑스큐셔너",
+          "fr": "Executioner",
+          "es": "Executioner"
+        }
+      },
+      "Tormentor": {
+        "shipId": 591,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tormentor",
+          "zh-CN": "巨神兵级",
+          "zh-TW": "巨神兵级",
+          "ru": "Tormentor",
+          "de": "Tormentor",
+          "ja": "トーメンター",
+          "ko": "토멘터",
+          "fr": "Tormentor",
+          "es": "Tormentor"
+        }
+      },
+      "Punisher": {
+        "shipId": 597,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Punisher",
+          "zh-CN": "惩罚者级",
+          "zh-TW": "惩罚者级",
+          "ru": "Punisher",
+          "de": "Punisher",
+          "ja": "パニッシャー",
+          "ko": "퍼니셔",
+          "fr": "Punisher",
+          "es": "Punisher"
+        }
+      },
+      "Magnate": {
+        "shipId": 29248,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Magnate",
+          "zh-CN": "富豪级",
+          "zh-TW": "富豪级",
+          "ru": "Magnate",
+          "de": "Magnate",
+          "ja": "マグニート",
+          "ko": "마그네이트",
+          "fr": "Magnate",
+          "es": "Magnate"
+        }
+      },
+      "Condor": {
+        "shipId": 583,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Condor",
+          "zh-CN": "秃鹫级",
+          "zh-TW": "秃鹫级",
+          "ru": "Condor",
+          "de": "Condor",
+          "ja": "コンドール",
+          "ko": "콘도르",
+          "fr": "Condor",
+          "es": "Condor"
+        }
+      },
+      "Kestrel": {
+        "shipId": 602,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kestrel",
+          "zh-CN": "茶隼级",
+          "zh-TW": "茶隼级",
+          "ru": "Kestrel",
+          "de": "Kestrel",
+          "ja": "ケストレル",
+          "ko": "케스트렐",
+          "fr": "Kestrel",
+          "es": "Kestrel"
+        }
+      },
+      "Merlin": {
+        "shipId": 603,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Merlin",
+          "zh-CN": "小鹰级",
+          "zh-TW": "小鹰级",
+          "ru": "Merlin",
+          "de": "Merlin",
+          "ja": "マーリン",
+          "ko": "멀린",
+          "fr": "Merlin",
+          "es": "Merlin"
+        }
+      },
+      "Heron": {
+        "shipId": 605,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Heron",
+          "zh-CN": "苍鹭级",
+          "zh-TW": "苍鹭级",
+          "ru": "Heron",
+          "de": "Heron",
+          "ja": "ヘロン",
+          "ko": "헤론",
+          "fr": "Heron",
+          "es": "Heron"
+        }
+      },
+      "Atron": {
+        "shipId": 608,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Atron",
+          "zh-CN": "阿特龙级",
+          "zh-TW": "阿特龙级",
+          "ru": "Atron",
+          "de": "Atron",
+          "ja": "アトロン",
+          "ko": "아트론",
+          "fr": "Atron",
+          "es": "Atron"
+        }
+      },
+      "Tristan": {
+        "shipId": 593,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tristan",
+          "zh-CN": "特里斯坦级",
+          "zh-TW": "特里斯坦级",
+          "ru": "Tristan",
+          "de": "Tristan",
+          "ja": "トリスタン",
+          "ko": "트리스탄",
+          "fr": "Tristan",
+          "es": "Tristan"
+        }
+      },
+      "Incursus": {
+        "shipId": 594,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Incursus",
+          "zh-CN": "因卡萨斯级",
+          "zh-TW": "因卡萨斯级",
+          "ru": "Incursus",
+          "de": "Incursus",
+          "ja": "インカーサス",
+          "ko": "인커서스",
+          "fr": "Incursus",
+          "es": "Incursus"
+        }
+      },
+      "Imicus": {
+        "shipId": 607,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Imicus",
+          "zh-CN": "伊米卡斯级",
+          "zh-TW": "伊米卡斯级",
+          "ru": "Imicus",
+          "de": "Imicus",
+          "ja": "イミュカス",
+          "ko": "이미커스",
+          "fr": "Imicus",
+          "es": "Imicus"
+        }
+      },
+      "Slasher": {
+        "shipId": 585,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Slasher",
+          "zh-CN": "伐木者级",
+          "zh-TW": "伐木者级",
+          "ru": "Slasher",
+          "de": "Slasher",
+          "ja": "スラッシャー",
+          "ko": "슬래셔",
+          "fr": "Slasher",
+          "es": "Slasher"
+        }
+      },
+      "Breacher": {
+        "shipId": 598,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Breacher",
+          "zh-CN": "分裂者级",
+          "zh-TW": "分裂者级",
+          "ru": "Breacher",
+          "de": "Breacher",
+          "ja": "ブリーチャー",
+          "ko": "브리쳐",
+          "fr": "Breacher",
+          "es": "Breacher"
+        }
+      },
+      "Rifter": {
+        "shipId": 587,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Rifter",
+          "zh-CN": "裂谷级",
+          "zh-TW": "裂谷级",
+          "ru": "Rifter",
+          "de": "Rifter",
+          "ja": "リフター",
+          "ko": "리프터",
+          "fr": "Rifter",
+          "es": "Rifter"
+        }
+      },
+      "Probe": {
+        "shipId": 586,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Probe",
+          "zh-CN": "探索级",
+          "zh-TW": "探索级",
+          "ru": "Probe",
+          "de": "Probe",
+          "ja": "プローブ",
+          "ko": "프로브",
+          "fr": "Probe",
+          "es": "Sonda"
+        }
+      },
+      "Crucifier": {
+        "shipId": 2161,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Crucifier",
+          "zh-CN": "磨难级",
+          "zh-TW": "磨难级",
+          "ru": "Crucifier",
+          "de": "Crucifier",
+          "ja": "クルセファー",
+          "ko": "크루시파이어",
+          "fr": "Crucifier",
+          "es": "Crucifier"
+        }
+      },
+      "Griffin": {
+        "shipId": 584,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Griffin",
+          "zh-CN": "狮鹫级",
+          "zh-TW": "狮鹫级",
+          "ru": "Griffin",
+          "de": "Griffin",
+          "ja": "グリフィン",
+          "ko": "그리핀",
+          "fr": "Griffin",
+          "es": "Griffin"
+        }
+      },
+      "Maulus": {
+        "shipId": 609,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Maulus",
+          "zh-CN": "毛鲁斯级",
+          "zh-TW": "毛鲁斯级",
+          "ru": "Maulus",
+          "de": "Maulus",
+          "ja": "マウルス",
+          "ko": "마울러스",
+          "fr": "Maulus",
+          "es": "Maulus"
+        }
+      },
+      "Vigil": {
+        "shipId": 3766,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vigil",
+          "zh-CN": "守夜者级",
+          "zh-TW": "守夜者级",
+          "ru": "Vigil",
+          "de": "Vigil",
+          "ja": "ヴィジリ",
+          "ko": "비질",
+          "fr": "Vigil",
+          "es": "Vigil"
+        }
+      },
+      "Imperial Navy Slicer": {
+        "shipId": 17703,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Imperial Navy Slicer",
+          "zh-CN": "帝国海军切割机级",
+          "zh-TW": "帝国海军切割机级",
+          "ru": "Imperial Navy Slicer",
+          "de": "Imperial Navy Slicer",
+          "ja": "帝国海軍仕様スライサー",
+          "ko": "제국 해군 슬라이서",
+          "fr": "Slicer de la Navy impériale",
+          "es": "Slicer de la Armada Imperial"
+        }
+      },
+      "Crucifier Navy Issue": {
+        "shipId": 37453,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Crucifier Navy Issue",
+          "zh-CN": "磨难级海军型",
+          "zh-TW": "磨难级海军型",
+          "ru": "Crucifier Navy Issue",
+          "de": "Crucifier Navy Issue",
+          "ja": "クルセファー海軍版",
+          "ko": "크루시파이어 해군 에디션",
+          "fr": "Crucifier modèle Navy",
+          "es": "Crucifier modelo de la Armada"
+        }
+      },
+      "Caldari Navy Hookbill": {
+        "shipId": 17619,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Caldari Navy Hookbill",
+          "zh-CN": "加达里海军霍克比尔级",
+          "zh-TW": "加达里海军霍克比尔级",
+          "ru": "Caldari Navy Hookbill",
+          "de": "Caldari Navy Hookbill",
+          "ja": "カルダリ海軍仕様フックビル",
+          "ko": "칼다리 해군 후크빌",
+          "fr": "Hookbill de la Caldari Navy",
+          "es": "Hookbill de la Armada Caldari"
+        }
+      },
+      "Griffin Navy Issue": {
+        "shipId": 37455,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Griffin Navy Issue",
+          "zh-CN": "狮鹫级海军型",
+          "zh-TW": "狮鹫级海军型",
+          "ru": "Griffin Navy Issue",
+          "de": "Griffin Navy Issue",
+          "ja": "グリフィン海軍版",
+          "ko": "그리핀 해군 에디션",
+          "fr": "Griffin modèle Navy",
+          "es": "Griffin modelo de la Armada"
+        }
+      },
+      "Federation Navy Comet": {
+        "shipId": 17841,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Federation Navy Comet",
+          "zh-CN": "联邦海军彗星级",
+          "zh-TW": "联邦海军彗星级",
+          "ru": "Federation Navy Comet",
+          "de": "Federation Navy Comet",
+          "ja": "連邦海軍仕様コメット",
+          "ko": "연방 해군 코멧",
+          "fr": "Comet de la Federation Navy",
+          "es": "Comet de la Armada de la Federación"
+        }
+      },
+      "Maulus Navy Issue": {
+        "shipId": 37456,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Maulus Navy Issue",
+          "zh-CN": "毛鲁斯级海军型",
+          "zh-TW": "毛鲁斯级海军型",
+          "ru": "Maulus Navy Issue",
+          "de": "Maulus Navy Issue",
+          "ja": "マウルス海軍版",
+          "ko": "마울러스 해군 에디션",
+          "fr": "Maulus modèle Navy",
+          "es": "Maulus modelo de la Armada"
+        }
+      },
+      "Republic Fleet Firetail": {
+        "shipId": 17812,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Republic Fleet Firetail",
+          "zh-CN": "共和舰队火尾鸡级",
+          "zh-TW": "共和舰队火尾鸡级",
+          "ru": "Republic Fleet Firetail",
+          "de": "Republic Fleet Firetail",
+          "ja": "共和国海軍仕様ファイアテイル",
+          "ko": "공화국 함대 파이어테일",
+          "fr": "Firetail de la Republic Fleet",
+          "es": "Firetail de la Flota de la República"
+        }
+      },
+      "Vigil Fleet Issue": {
+        "shipId": 37454,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vigil Fleet Issue",
+          "zh-CN": "守夜者级舰队型",
+          "zh-TW": "守夜者级舰队型",
+          "ru": "Vigil Fleet Issue",
+          "de": "Vigil Fleet Issue",
+          "ja": "ヴィジリ フリート版",
+          "ko": "비질 함대 에디션",
+          "fr": "Vigil modèle Flotte",
+          "es": "Vigil modelo de la Flota"
+        }
+      },
+      "Vengeance": {
+        "shipId": 11365,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Vengeance",
+          "zh-CN": "惩戒级",
+          "zh-TW": "惩戒级",
+          "ru": "Vengeance",
+          "de": "Vengeance",
+          "ja": "ベンジェンス",
+          "ko": "벤젼스",
+          "fr": "Vengeance",
+          "es": "Vengeance"
+        }
+      },
+      "Retribution": {
+        "shipId": 11393,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Retribution",
+          "zh-CN": "审判者级",
+          "zh-TW": "审判者级",
+          "ru": "Retribution",
+          "de": "Retribution",
+          "ja": "レトリビューション",
+          "ko": "레트리뷰션",
+          "fr": "Retribution",
+          "es": "Retribution"
+        }
+      },
+      "Hawk": {
+        "shipId": 11379,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hawk",
+          "zh-CN": "战鹰级",
+          "zh-TW": "战鹰级",
+          "ru": "Hawk",
+          "de": "Hawk",
+          "ja": "ホーク",
+          "ko": "호크",
+          "fr": "Hawk",
+          "es": "Hawk"
+        }
+      },
+      "Nergal": {
+        "shipId": 52250,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nergal",
+          "zh-CN": "涅伽尔级",
+          "zh-TW": "涅伽尔级",
+          "ru": "Nergal",
+          "de": "Nergal",
+          "ja": "ネルガル",
+          "ko": "네르갈",
+          "fr": "Nergal",
+          "es": "Nergal"
+        }
+      },
+      "Harpy": {
+        "shipId": 11381,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Harpy",
+          "zh-CN": "女妖级",
+          "zh-TW": "女妖级",
+          "ru": "Harpy",
+          "de": "Harpy",
+          "ja": "ハーピー",
+          "ko": "하피",
+          "fr": "Harpy",
+          "es": "Harpy"
+        }
+      },
+      "Ishkur": {
+        "shipId": 12042,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ishkur",
+          "zh-CN": "伊什库尔级",
+          "zh-TW": "伊什库尔级",
+          "ru": "Ishkur",
+          "de": "Ishkur",
+          "ja": "イシュカー",
+          "ko": "이쉬쿠르",
+          "fr": "Ishkur",
+          "es": "Ishkur"
+        }
+      },
+      "Enyo": {
+        "shipId": 12044,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Enyo",
+          "zh-CN": "恩尤级",
+          "zh-TW": "恩尤级",
+          "ru": "Enyo",
+          "de": "Enyo",
+          "ja": "エンヨ",
+          "ko": "엔요",
+          "fr": "Enyo",
+          "es": "Enyo"
+        }
+      },
+      "Worm": {
+        "shipId": 17930,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Worm",
+          "zh-CN": "潜龙级",
+          "zh-TW": "潜龙级",
+          "ru": "Worm",
+          "de": "Worm",
+          "ja": "ワーム",
+          "ko": "웜",
+          "fr": "Worm",
+          "es": "Worm"
+        }
+      },
+      "Wolf": {
+        "shipId": 11371,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Wolf",
+          "zh-CN": "猎狼级",
+          "zh-TW": "猎狼级",
+          "ru": "Wolf",
+          "de": "Wolf",
+          "ja": "ウルフ",
+          "ko": "울프",
+          "fr": "Wolf",
+          "es": "Wolf"
+        }
+      },
+      "Jaguar": {
+        "shipId": 11400,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Jaguar",
+          "zh-CN": "美洲虎级",
+          "zh-TW": "美洲虎级",
+          "ru": "Jaguar",
+          "de": "Jaguar",
+          "ja": "ジャガー",
+          "ko": "재규어",
+          "fr": "Jaguar",
+          "es": "Jaguar"
+        }
+      },
+      "Anathema": {
+        "shipId": 11188,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Anathema",
+          "zh-CN": "咒逐级",
+          "zh-TW": "咒逐级",
+          "ru": "Anathema",
+          "de": "Anathema",
+          "ja": "アナシマ",
+          "ko": "아나테마",
+          "fr": "Anathema",
+          "es": "Anathema"
+        }
+      },
+      "Buzzard": {
+        "shipId": 11192,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Buzzard",
+          "zh-CN": "秃鹰级",
+          "zh-TW": "秃鹰级",
+          "ru": "Buzzard",
+          "de": "Buzzard",
+          "ja": "バザード",
+          "ko": "버자드",
+          "fr": "Buzzard",
+          "es": "Buzzard"
+        }
+      },
+      "Damavik": {
+        "shipId": 47269,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Damavik",
+          "zh-CN": "达玛维克级",
+          "zh-TW": "达玛维克级",
+          "ru": "Damavik",
+          "de": "Damavik",
+          "ja": "ダマヴィク",
+          "ko": "다마비크",
+          "fr": "Damavik",
+          "es": "Damavik"
+        }
+      },
+      "Helios": {
+        "shipId": 11172,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Helios",
+          "zh-CN": "太阳神级",
+          "zh-TW": "太阳神级",
+          "ru": "Helios",
+          "de": "Helios",
+          "ja": "ヘリオス",
+          "ko": "헬리오스",
+          "fr": "Helios",
+          "es": "Helios"
+        }
+      },
+      "Cheetah": {
+        "shipId": 11182,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cheetah",
+          "zh-CN": "猎豹级",
+          "zh-TW": "猎豹级",
+          "ru": "Cheetah",
+          "de": "Cheetah",
+          "ja": "チーター",
+          "ko": "치타",
+          "fr": "Cheetah",
+          "es": "Cheetah"
+        }
+      },
+      "Purifier": {
+        "shipId": 12038,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Purifier",
+          "zh-CN": "净化级",
+          "zh-TW": "净化级",
+          "ru": "Purifier",
+          "de": "Purifier",
+          "ja": "ピュリファイヤー",
+          "ko": "퓨리파이어",
+          "fr": "Purifier",
+          "es": "Purifier"
+        }
+      },
+      "Manticore": {
+        "shipId": 12032,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Manticore",
+          "zh-CN": "蝎尾怪级",
+          "zh-TW": "蝎尾怪级",
+          "ru": "Manticore",
+          "de": "Manticore",
+          "ja": "マンティコア",
+          "ko": "만티코어",
+          "fr": "Manticore",
+          "es": "Manticore"
+        }
+      },
+      "Nemesis": {
+        "shipId": 11377,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nemesis",
+          "zh-CN": "纳美西斯级",
+          "zh-TW": "纳美西斯级",
+          "ru": "Nemesis",
+          "de": "Nemesis",
+          "ja": "ネメシス",
+          "ko": "네메시스",
+          "fr": "Nemesis",
+          "es": "Nemesis"
+        }
+      },
+      "Hound": {
+        "shipId": 12034,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hound",
+          "zh-CN": "猎犬级",
+          "zh-TW": "猎犬级",
+          "ru": "Hound",
+          "de": "Hound",
+          "ja": "ハウンド",
+          "ko": "하운드",
+          "fr": "Hound",
+          "es": "Hound"
+        }
+      },
+      "Sentinel": {
+        "shipId": 11190,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sentinel",
+          "zh-CN": "哨兵级",
+          "zh-TW": "哨兵级",
+          "ru": "Sentinel",
+          "de": "Sentinel",
+          "ja": "センチネル",
+          "ko": "센티넬",
+          "fr": "Sentinel",
+          "es": "Centinela"
+        }
+      },
+      "Kitsune": {
+        "shipId": 11194,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kitsune",
+          "zh-CN": "狐妖级",
+          "zh-TW": "狐妖级",
+          "ru": "Kitsune",
+          "de": "Kitsune",
+          "ja": "キツネ",
+          "ko": "키츠네",
+          "fr": "Kitsune",
+          "es": "Kitsune"
+        }
+      },
+      "Keres": {
+        "shipId": 11174,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Keres",
+          "zh-CN": "克勒斯级",
+          "zh-TW": "克勒斯级",
+          "ru": "Keres",
+          "de": "Keres",
+          "ja": "ケレス",
+          "ko": "케레스",
+          "fr": "Keres",
+          "es": "Keres"
+        }
+      },
+      "Hyena": {
+        "shipId": 11387,
+        "points": 5,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hyena",
+          "zh-CN": "土狼级",
+          "zh-TW": "土狼级",
+          "ru": "Hyena",
+          "de": "Hyena",
+          "ja": "ハイエナ",
+          "ko": "하이에나",
+          "fr": "Hyena",
+          "es": "Hyena"
+        }
+      },
+      "Crusader": {
+        "shipId": 11184,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Crusader",
+          "zh-CN": "科洛斯级",
+          "zh-TW": "科洛斯级",
+          "ru": "Crusader",
+          "de": "Crusader",
+          "ja": "クルセイダー",
+          "ko": "크루세이더",
+          "fr": "Crusader",
+          "es": "Crusader"
+        }
+      },
+      "Malediction": {
+        "shipId": 11186,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Malediction",
+          "zh-CN": "咒灭级",
+          "zh-TW": "咒灭级",
+          "ru": "Malediction",
+          "de": "Malediction",
+          "ja": "メルディクション",
+          "ko": "말레딕션",
+          "fr": "Malediction",
+          "es": "Malediction"
+        }
+      },
+      "Crow": {
+        "shipId": 11176,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Crow",
+          "zh-CN": "黑鸦级",
+          "zh-TW": "黑鸦级",
+          "ru": "Crow",
+          "de": "Crow",
+          "ja": "クロウ",
+          "ko": "크로우",
+          "fr": "Crow",
+          "es": "Crow"
+        }
+      },
+      "Raptor": {
+        "shipId": 11178,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Raptor",
+          "zh-CN": "猛禽级",
+          "zh-TW": "猛禽级",
+          "ru": "Raptor",
+          "de": "Raptor",
+          "ja": "ラプター",
+          "ko": "랩터",
+          "fr": "Raptor",
+          "es": "Raptor"
+        }
+      },
+      "Skybreaker": {
+        "shipId": 54731,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Skybreaker",
+          "zh-CN": "破天级",
+          "zh-TW": "破天级",
+          "ru": "Skybreaker",
+          "de": "Skybreaker",
+          "ja": "スカイブレイカー",
+          "ko": "스카이브레이커",
+          "fr": "Skybreaker",
+          "es": "Skybreaker"
+        }
+      },
+      "Taranis": {
+        "shipId": 11200,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Taranis",
+          "zh-CN": "塔纳尼斯级",
+          "zh-TW": "塔纳尼斯级",
+          "ru": "Taranis",
+          "de": "Taranis",
+          "ja": "タラニス",
+          "ko": "타라니스",
+          "fr": "Taranis",
+          "es": "Taranis"
+        }
+      },
+      "Imicus Navy Issue": {
+        "shipId": 72913,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Imicus Navy Issue",
+          "zh-CN": "伊米卡斯级海军型",
+          "zh-TW": "伊米卡斯级海军型",
+          "ru": "Imicus Navy Issue",
+          "de": "Imicus Navy Issue",
+          "ja": "イミュカス海軍仕様",
+          "ko": "이미커스 해군 에디션",
+          "fr": "Imicus (Navy Issue)",
+          "es": "Imicus modelo de la Armada"
+        }
+      },
+      "Ares": {
+        "shipId": 11202,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ares",
+          "zh-CN": "阿瑞斯级",
+          "zh-TW": "阿瑞斯级",
+          "ru": "Ares",
+          "de": "Ares",
+          "ja": "エリーズ",
+          "ko": "아레스",
+          "fr": "Ares",
+          "es": "Ares"
+        }
+      },
+      "Claw": {
+        "shipId": 11196,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Claw",
+          "zh-CN": "利爪级",
+          "zh-TW": "利爪级",
+          "ru": "Claw",
+          "de": "Claw",
+          "ja": "クロー",
+          "ko": "클로우",
+          "fr": "Claw",
+          "es": "Claw"
+        }
+      },
+      "Stiletto": {
+        "shipId": 11198,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Stiletto",
+          "zh-CN": "短剑级",
+          "zh-TW": "短剑级",
+          "ru": "Stiletto",
+          "de": "Stiletto",
+          "ja": "スティレット",
+          "ko": "스틸레토",
+          "fr": "Stiletto",
+          "es": "Stiletto"
+        }
+      },
+      "Dramiel": {
+        "shipId": 17932,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Dramiel",
+          "zh-CN": "德拉米尔级",
+          "zh-TW": "德拉米尔级",
+          "ru": "Dramiel",
+          "de": "Dramiel",
+          "ja": "ドラミエル",
+          "ko": "드라미엘",
+          "fr": "Dramiel",
+          "es": "Dramiel"
+        }
+      },
+      "Cruor": {
+        "shipId": 17926,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Cruor",
+          "zh-CN": "凝血级",
+          "zh-TW": "凝血级",
+          "ru": "Cruor",
+          "de": "Cruor",
+          "ja": "クルール",
+          "ko": "크루오어",
+          "fr": "Cruor",
+          "es": "Cruor"
+        }
+      },
+      "Garmur": {
+        "shipId": 33816,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Garmur",
+          "zh-CN": "加姆级",
+          "zh-TW": "加姆级",
+          "ru": "Garmur",
+          "de": "Garmur",
+          "ja": "ガルム",
+          "ko": "가머",
+          "fr": "Garmur",
+          "es": "Garmur"
+        }
+      },
+      "Succubus": {
+        "shipId": 17924,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Succubus",
+          "zh-CN": "魔女级",
+          "zh-TW": "魔女级",
+          "ru": "Succubus",
+          "de": "Succubus",
+          "ja": "サキュバス",
+          "ko": "서큐버스",
+          "fr": "Succubus",
+          "es": "Succubus"
+        }
+      },
+      "Astero": {
+        "shipId": 33468,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Astero",
+          "zh-CN": "阿斯特罗级",
+          "zh-TW": "阿斯特罗级",
+          "ru": "Astero",
+          "de": "Astero",
+          "ja": "アステロ",
+          "ko": "아스테로",
+          "fr": "Astero",
+          "es": "Astero"
+        }
+      },
+      "Daredevil": {
+        "shipId": 17928,
+        "points": 4,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Daredevil",
+          "zh-CN": "夜魔侠级",
+          "zh-TW": "夜魔侠级",
+          "ru": "Daredevil",
+          "de": "Daredevil",
+          "ja": "デアデビル",
+          "ko": "데어데블",
+          "fr": "Daredevil",
+          "es": "Daredevil"
+        }
+      },
+      "Magnate Navy Issue": {
+        "shipId": 72907,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Magnate Navy Issue",
+          "zh-CN": "富豪级海军型",
+          "zh-TW": "富豪级海军型",
+          "ru": "Magnate Navy Issue",
+          "de": "Magnate Navy Issue",
+          "ja": "マグニート海軍仕様",
+          "ko": "마그네이트 해군 에디션",
+          "fr": "Magnate (Navy Issue)",
+          "es": "Magnate modelo de la Armada"
+        }
+      },
+      "Heron Navy Issue": {
+        "shipId": 72904,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Heron Navy Issue",
+          "zh-CN": "苍鹭级海军型",
+          "zh-TW": "苍鹭级海军型",
+          "ru": "Heron Navy Issue",
+          "de": "Heron Navy Issue",
+          "ja": "ヘロン海軍仕様",
+          "ko": "헤론 해군 에디션",
+          "fr": "Heron (Navy Issue)",
+          "es": "Heron modelo de la Armada"
+        }
+      },
+      "Probe Fleet Issue": {
+        "shipId": 72903,
+        "points": 3,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Probe Fleet Issue",
+          "zh-CN": "探索级舰队型",
+          "zh-TW": "探索级舰队型",
+          "ru": "Probe Fleet Issue",
+          "de": "Probe Fleet Issue",
+          "ja": "プローブ海軍仕様",
+          "ko": "프로브 함대 에디션",
+          "fr": "Probe (Fleet Issue)",
+          "es": "Probe modelo de la Flota"
+        }
+      },
+      "Metamorphosis": {
+        "shipId": 77114,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Metamorphosis",
+          "zh-CN": "变形级",
+          "zh-TW": "变形级",
+          "ru": "Metamorphosis",
+          "de": "Metamorphosis",
+          "ja": "メタモルフォーシス",
+          "ko": "메타몰포시스",
+          "fr": "Metamorphosis",
+          "es": "Metamorphosis"
+        }
+      }
+    },
+    "Industrial": {
+      "Bestower": {
+        "shipId": 1944,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Bestower",
+          "zh-CN": "恩赐者级",
+          "zh-TW": "恩赐者级",
+          "ru": "Bestower",
+          "de": "Bestower",
+          "ja": "ビストワー",
+          "ko": "베스토어",
+          "fr": "Bestower",
+          "es": "Bestower"
+        }
+      },
+      "Sigil": {
+        "shipId": 19744,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Sigil",
+          "zh-CN": "魔符级",
+          "zh-TW": "魔符级",
+          "ru": "Sigil",
+          "de": "Sigil",
+          "ja": "サイジル",
+          "ko": "시길",
+          "fr": "Sigil",
+          "es": "Sigil"
+        }
+      },
+      "Badger": {
+        "shipId": 648,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Badger",
+          "zh-CN": "獾级",
+          "zh-TW": "獾级",
+          "ru": "Badger",
+          "de": "Badger",
+          "ja": "バッジャー",
+          "ko": "뱃져",
+          "fr": "Badger",
+          "es": "Badger"
+        }
+      },
+      "Tayra": {
+        "shipId": 649,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Tayra",
+          "zh-CN": "狐鼬级",
+          "zh-TW": "狐鼬级",
+          "ru": "Tayra",
+          "de": "Tayra",
+          "ja": "タイラ",
+          "ko": "타이라",
+          "fr": "Tayra",
+          "es": "Tayra"
+        }
+      },
+      "Nereus": {
+        "shipId": 650,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Nereus",
+          "zh-CN": "涅鲁斯级",
+          "zh-TW": "涅鲁斯级",
+          "ru": "Nereus",
+          "de": "Nereus",
+          "ja": "ネレウス",
+          "ko": "네레우스",
+          "fr": "Nereus",
+          "es": "Nereus"
+        }
+      },
+      "Kryos": {
+        "shipId": 654,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Kryos",
+          "zh-CN": "克琉斯级",
+          "zh-TW": "克琉斯级",
+          "ru": "Kryos",
+          "de": "Kryos",
+          "ja": "クリオス",
+          "ko": "크라이오스",
+          "fr": "Kryos",
+          "es": "Kryos"
+        }
+      },
+      "Epithal": {
+        "shipId": 655,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Epithal",
+          "zh-CN": "埃比斯级",
+          "zh-TW": "埃比斯级",
+          "ru": "Epithal",
+          "de": "Epithal",
+          "ja": "エピタル",
+          "ko": "에피탈",
+          "fr": "Epithal",
+          "es": "Epithal"
+        }
+      },
+      "Miasmos": {
+        "shipId": 656,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Miasmos",
+          "zh-CN": "米亚莫斯级",
+          "zh-TW": "米亚莫斯级",
+          "ru": "Miasmos",
+          "de": "Miasmos",
+          "ja": "ミアスモス",
+          "ko": "미아스모스",
+          "fr": "Miasmos",
+          "es": "Miasmos"
+        }
+      },
+      "Iteron Mark V": {
+        "shipId": 657,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Iteron Mark V",
+          "zh-CN": "伊特龙级MKV",
+          "zh-TW": "伊特龙级MKV",
+          "ru": "Iteron Mark V",
+          "de": "Iteron Mark V",
+          "ja": "イタロンマークV",
+          "ko": "이테론 마크 V",
+          "fr": "Iteron Mark V",
+          "es": "Iteron Mark V"
+        }
+      },
+      "Hoarder": {
+        "shipId": 651,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hoarder",
+          "zh-CN": "囤积者级",
+          "zh-TW": "囤积者级",
+          "ru": "Hoarder",
+          "de": "Hoarder",
+          "ja": "ホーダー",
+          "ko": "호더",
+          "fr": "Hoarder",
+          "es": "Hoarder"
+        }
+      },
+      "Mammoth": {
+        "shipId": 652,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Mammoth",
+          "zh-CN": "猛犸级",
+          "zh-TW": "猛犸级",
+          "ru": "Mammoth",
+          "de": "Mammoth",
+          "ja": "マンモス",
+          "ko": "맘모스",
+          "fr": "Mammoth",
+          "es": "Mammoth"
+        }
+      },
+      "Wreathe": {
+        "shipId": 653,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Wreathe",
+          "zh-CN": "环绕级",
+          "zh-TW": "环绕级",
+          "ru": "Wreathe",
+          "de": "Wreathe",
+          "ja": "ウレス",
+          "ko": "레이쓰",
+          "fr": "Wreathe",
+          "es": "Wreathe"
+        }
+      }
+    },
+    "Corvette": {
+      "Impairor": {
+        "shipId": 596,
+        "points": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Impairor",
+          "zh-CN": "帝国号",
+          "zh-TW": "帝国号",
+          "ru": "Impairor",
+          "de": "Impairor",
+          "ja": "インパロール",
+          "ko": "임페이러",
+          "fr": "Impairor",
+          "es": "Impairor"
+        }
+      },
+      "Ibis": {
+        "shipId": 601,
+        "points": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Ibis",
+          "zh-CN": "伊毕斯号",
+          "zh-TW": "伊毕斯号",
+          "ru": "Ibis",
+          "de": "Ibis",
+          "ja": "イビス",
+          "ko": "이비스",
+          "fr": "Ibis",
+          "es": "Ibis"
+        }
+      },
+      "Velator": {
+        "shipId": 606,
+        "points": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Velator",
+          "zh-CN": "维拉托尔号",
+          "zh-TW": "维拉托尔号",
+          "ru": "Velator",
+          "de": "Velator",
+          "ja": "ベラター",
+          "ko": "벨레이터",
+          "fr": "Velator",
+          "es": "Velator"
+        }
+      },
+      "Reaper": {
+        "shipId": 588,
+        "points": 1,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Reaper",
+          "zh-CN": "死神号",
+          "zh-TW": "死神号",
+          "ru": "Reaper",
+          "de": "Reaper",
+          "ja": "リーパー",
+          "ko": "리퍼",
+          "fr": "Reaper",
+          "es": "Reaper"
+        }
+      },
+      "Echo": {
+        "shipId": 617,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Echo",
+          "zh-CN": "回声级",
+          "zh-TW": "回声级",
+          "ru": "Echo",
+          "de": "Echo",
+          "ja": "エコー",
+          "ko": "에코",
+          "fr": "Echo",
+          "es": "Echo"
+        }
+      },
+      "Hematos": {
+        "shipId": 33079,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Hematos",
+          "zh-CN": "未来人类级",
+          "zh-TW": "未来人类级",
+          "ru": "Hematos",
+          "de": "Hematos",
+          "ja": "ヘマトス",
+          "ko": "헤마토스",
+          "fr": "Hematos",
+          "es": "Hematos"
+        }
+      },
+      "Immolator": {
+        "shipId": 615,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Immolator",
+          "zh-CN": "因莫雷特级",
+          "zh-TW": "因莫雷特级",
+          "ru": "Immolator",
+          "de": "Immolator",
+          "ja": "イモレイター",
+          "ko": "이몰레이터",
+          "fr": "Immolator",
+          "es": "Immolator"
+        }
+      },
+      "Taipan": {
+        "shipId": 33081,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Taipan",
+          "zh-CN": "毒蛇级",
+          "zh-TW": "毒蛇级",
+          "ru": "Taipan",
+          "de": "Taipan",
+          "ja": "タイパン",
+          "ko": "타이판",
+          "fr": "Taipan",
+          "es": "Taipan"
+        }
+      },
+      "Violator": {
+        "shipId": 33083,
+        "points": 2,
+        "flagshipEligible": false,
+        "names": {
+          "en": "Violator",
+          "zh-CN": "违逆者级",
+          "zh-TW": "违逆者级",
+          "ru": "Violator",
+          "de": "Violator",
+          "ja": "バイオレイター",
+          "ko": "바이얼레이터",
+          "fr": "Violator",
+          "es": "Velator"
+        }
+      }
+    }
+  }
+}

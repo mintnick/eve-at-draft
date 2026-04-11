@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT 陣容模擬",
+    "rules": "規則",
+    "matchArchive": "歷史對局",
+    "clear": "清空",
+    "pick": "陣容",
+    "ban": "禁用",
+    "year": "賽事",
+    "language": "語言",
+    "import": "匯入",
+    "export": "匯出",
+    "importDraft": "匯入陣容",
+    "exportDraft": "匯出陣容",
+    "importPlaceholder": "在這裡貼上 EVE-AT-DRAFT v1 文字。",
+    "cancel": "取消",
+    "applyImport": "套用匯入",
+    "copied": "陣容已複製到剪貼簿。",
+    "importApplied": "陣容匯入成功。"
+  },
+  "validation": {
+    "ship-not-found": "目前賽事資料中沒有這艘艦船。",
+    "max-points-reached": "加入這艘艦船會超過 200 分上限。",
+    "max-ships-reached": "已達到 10 艘艦船上限，不能繼續加入。",
+    "flagship-already-picked": "只能選擇一艘旗艦。",
+    "ship-banned": "這艘艦船已被禁用，不能加入陣容。",
+    "logistics-cap-reached": "後勤額度已滿，不能再加入這艘艦船。",
+    "hull-cap-reached": "該艦船類別數量已達上限。",
+    "ship-picked": "已加入陣容的艦船不能再禁用。",
+    "ship-already-banned": "這艘艦船已被禁用。",
+    "ship-not-picked": "這艘艦船目前不在陣容中。",
+    "ship-not-banned": "這艘艦船目前不在禁用列表中。",
+    "invalid-format-header": "匯入文字缺少有效的 EVE-AT-DRAFT v1 標頭。",
+    "missing-year": "匯入文字缺少賽事年份。",
+    "invalid-year": "匯入文字中的賽事年份無效。",
+    "invalid-sections": "匯入文字必須包含 PICKS 和 BANS 兩個區塊。",
+    "invalid-entry": "每條匯入艦船記錄都必須以 \"- \" 開頭。",
+    "import-unknown-year": "該草稿引用的賽事年份目前尚未在應用中提供。",
+    "import-unknown-ship": "該草稿引用了目前賽事資料中不存在的艦船 key。",
+    "clipboard-unavailable": "目前瀏覽器環境不支援剪貼簿存取。"
+  },
+  "types": {
+    "Flagship": "旗艦",
+    "Logistics": "後勤",
+    "Battleship": "戰列艦",
+    "Battlecruiser": "戰列巡洋艦",
+    "Cruiser": "巡洋艦",
+    "Destroyer": "驅逐艦",
+    "Frigate": "護衛艦",
+    "Industrial": "工業艦",
+    "Corvette": "新手船"
+  }
+}

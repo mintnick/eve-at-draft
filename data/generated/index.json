@@ -1,0 +1,87 @@
+[
+  {
+    "year": 2021,
+    "slug": "alliance-tournament-xvii",
+    "label": "Alliance Tournament XVII",
+    "locales": [
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "generatedFile": "2021.json"
+  },
+  {
+    "year": 2022,
+    "slug": "alliance-tournament-xviii",
+    "label": "Alliance Tournament XVIII",
+    "locales": [
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "generatedFile": "2022.json"
+  },
+  {
+    "year": 2023,
+    "slug": "alliance-tournament-xix",
+    "label": "Alliance Tournament XIX",
+    "locales": [
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "generatedFile": "2023.json"
+  },
+  {
+    "year": 2024,
+    "slug": "alliance-tournament-xx",
+    "label": "Alliance Tournament XX",
+    "locales": [
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "generatedFile": "2024.json"
+  },
+  {
+    "year": 2025,
+    "slug": "alliance-tournament-xxi",
+    "label": "Alliance Tournament XXI",
+    "locales": [
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "generatedFile": "2025.json"
+  }
+]

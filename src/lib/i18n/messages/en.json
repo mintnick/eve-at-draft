@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "Rules",
+    "matchArchive": "Match Archive",
+    "clear": "Clear",
+    "pick": "Picks",
+    "ban": "Bans",
+    "year": "Tournament",
+    "language": "Language",
+    "import": "Import",
+    "export": "Export",
+    "importDraft": "Import Draft",
+    "exportDraft": "Export Draft",
+    "importPlaceholder": "Paste an EVE-AT-DRAFT v1 payload here.",
+    "cancel": "Cancel",
+    "applyImport": "Apply Import",
+    "copied": "Draft copied to clipboard.",
+    "importApplied": "Draft imported successfully."
+  },
+  "validation": {
+    "ship-not-found": "This ship is not available in the selected tournament dataset.",
+    "max-points-reached": "Adding this ship would exceed the 200 point cap.",
+    "max-ships-reached": "You cannot add more ships because the 10 ship cap is already reached.",
+    "flagship-already-picked": "Only one flagship can be picked.",
+    "ship-banned": "You cannot pick a ship that is already banned.",
+    "logistics-cap-reached": "You cannot add that ship because the logistics limit is already full.",
+    "hull-cap-reached": "You cannot add that ship because this hull cap is already full.",
+    "ship-picked": "You cannot ban a ship that is already picked.",
+    "ship-already-banned": "That ship is already banned.",
+    "ship-not-picked": "That ship is not currently picked.",
+    "ship-not-banned": "That ship is not currently banned.",
+    "invalid-format-header": "The draft text does not start with a valid EVE-AT-DRAFT v1 header.",
+    "missing-year": "The draft text is missing its tournament year.",
+    "invalid-year": "The draft year is invalid.",
+    "invalid-sections": "The draft text must contain PICKS and BANS sections.",
+    "invalid-entry": "Each imported ship entry must start with \"- \".",
+    "import-unknown-year": "This draft references a tournament year that is not available in the app yet.",
+    "import-unknown-ship": "This draft references a ship key that does not exist in the selected tournament dataset.",
+    "clipboard-unavailable": "Clipboard access is not available in this browser context."
+  },
+  "types": {
+    "Flagship": "Flagship",
+    "Logistics": "Logistics",
+    "Battleship": "Battleship",
+    "Battlecruiser": "Battlecruiser",
+    "Cruiser": "Cruiser",
+    "Destroyer": "Destroyer",
+    "Frigate": "Frigate",
+    "Industrial": "Industrial",
+    "Corvette": "Corvette"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "Reglas",
+    "matchArchive": "Archivo de partidas",
+    "clear": "Limpiar",
+    "pick": "Picks",
+    "ban": "Bans",
+    "year": "Torneo",
+    "language": "Idioma",
+    "import": "Importar",
+    "export": "Exportar",
+    "importDraft": "Importar draft",
+    "exportDraft": "Exportar draft",
+    "importPlaceholder": "Pega aquí un texto EVE-AT-DRAFT v1.",
+    "cancel": "Cancelar",
+    "applyImport": "Aplicar importación",
+    "copied": "Draft copiado al portapapeles.",
+    "importApplied": "Draft importado correctamente."
+  },
+  "validation": {
+    "ship-not-found": "Esta nave no está disponible en el conjunto de datos del torneo seleccionado.",
+    "max-points-reached": "Añadir esta nave superaría el límite de 200 puntos.",
+    "max-ships-reached": "No puedes añadir más naves porque ya se alcanzó el límite de 10 naves.",
+    "flagship-already-picked": "Solo se puede elegir un flagship.",
+    "ship-banned": "No puedes elegir una nave que ya está baneada.",
+    "logistics-cap-reached": "No puedes añadir esa nave porque el límite de logística ya está lleno.",
+    "hull-cap-reached": "No puedes añadir esa nave porque el límite de esta clase ya está lleno.",
+    "ship-picked": "No puedes banear una nave que ya está elegida.",
+    "ship-already-banned": "Esa nave ya está baneada.",
+    "ship-not-picked": "Esa nave no está elegida actualmente.",
+    "ship-not-banned": "Esa nave no está baneada actualmente.",
+    "invalid-format-header": "El texto del draft no empieza con una cabecera EVE-AT-DRAFT v1 válida.",
+    "missing-year": "Al texto del draft le falta el año del torneo.",
+    "invalid-year": "El año del draft no es válido.",
+    "invalid-sections": "El texto del draft debe contener las secciones PICKS y BANS.",
+    "invalid-entry": "Cada entrada de nave importada debe empezar con \"- \".",
+    "import-unknown-year": "Este draft hace referencia a un año de torneo que aún no está disponible en la app.",
+    "import-unknown-ship": "Este draft hace referencia a una clave de nave que no existe en el conjunto de datos del torneo seleccionado.",
+    "clipboard-unavailable": "El acceso al portapapeles no está disponible en este contexto del navegador."
+  },
+  "types": {
+    "Flagship": "Flagship",
+    "Logistics": "Logística",
+    "Battleship": "Acorazado",
+    "Battlecruiser": "Crucero de batalla",
+    "Cruiser": "Crucero",
+    "Destroyer": "Destructor",
+    "Frigate": "Fragata",
+    "Industrial": "Industrial",
+    "Corvette": "Corbeta"
+  }
+}

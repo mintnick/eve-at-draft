@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "title": "EVE AT Draft",
+    "rules": "규칙",
+    "matchArchive": "경기 기록",
+    "clear": "지우기",
+    "pick": "픽",
+    "ban": "밴",
+    "year": "토너먼트",
+    "language": "언어",
+    "import": "가져오기",
+    "export": "내보내기",
+    "importDraft": "드래프트 가져오기",
+    "exportDraft": "드래프트 내보내기",
+    "importPlaceholder": "EVE-AT-DRAFT v1 텍스트를 여기에 붙여넣으세요.",
+    "cancel": "취소",
+    "applyImport": "가져오기 적용",
+    "copied": "드래프트가 클립보드에 복사되었습니다.",
+    "importApplied": "드래프트를 가져왔습니다."
+  },
+  "validation": {
+    "ship-not-found": "선택한 토너먼트 데이터에 이 함선이 없습니다.",
+    "max-points-reached": "이 함선을 추가하면 200점 제한을 초과합니다.",
+    "max-ships-reached": "함선 10척 제한에 이미 도달하여 더 추가할 수 없습니다.",
+    "flagship-already-picked": "플래그십은 하나만 선택할 수 있습니다.",
+    "ship-banned": "이미 밴된 함선은 픽할 수 없습니다.",
+    "logistics-cap-reached": "로지스틱스 제한이 이미 가득 차서 이 함선을 추가할 수 없습니다.",
+    "hull-cap-reached": "이 함급 제한이 이미 가득 차서 이 함선을 추가할 수 없습니다.",
+    "ship-picked": "이미 픽된 함선은 밴할 수 없습니다.",
+    "ship-already-banned": "이 함선은 이미 밴되었습니다.",
+    "ship-not-picked": "이 함선은 현재 픽되어 있지 않습니다.",
+    "ship-not-banned": "이 함선은 현재 밴되어 있지 않습니다.",
+    "invalid-format-header": "드래프트 텍스트가 유효한 EVE-AT-DRAFT v1 헤더로 시작하지 않습니다.",
+    "missing-year": "드래프트 텍스트에 토너먼트 연도가 없습니다.",
+    "invalid-year": "드래프트 연도가 올바르지 않습니다.",
+    "invalid-sections": "드래프트 텍스트에는 PICKS 및 BANS 섹션이 있어야 합니다.",
+    "invalid-entry": "가져오는 각 함선 항목은 \"- \"로 시작해야 합니다.",
+    "import-unknown-year": "이 드래프트는 앱에서 아직 사용할 수 없는 토너먼트 연도를 참조합니다.",
+    "import-unknown-ship": "이 드래프트는 선택한 토너먼트 데이터에 없는 함선 키를 참조합니다.",
+    "clipboard-unavailable": "현재 브라우저 환경에서는 클립보드 접근을 사용할 수 없습니다."
+  },
+  "types": {
+    "Flagship": "플래그십",
+    "Logistics": "로지스틱스",
+    "Battleship": "배틀십",
+    "Battlecruiser": "배틀크루저",
+    "Cruiser": "크루저",
+    "Destroyer": "디스트로이어",
+    "Frigate": "프리깃",
+    "Industrial": "인더스트리얼",
+    "Corvette": "코르벳"
+  }
+}
