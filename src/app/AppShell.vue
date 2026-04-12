@@ -118,7 +118,6 @@ async function applyImport() {
       <div class="page-title-wrap">
         <div class="page-title-copy">
           <div class="page-title">{{ $t('messages.title') }}</div>
-          <div class="page-subtitle">EVE Online Alliance Tournaments Drafting Tool</div>
         </div>
         <div class="control-group language-control">
           <label class="year-picker-label year-picker-label--icon" for="app-language">
@@ -191,6 +190,13 @@ async function applyImport() {
         </div>
       </div>
     </Dialog>
+
+    <footer class="app-footer">
+      <span class="app-footer-disclaimer">{{ $t('messages.footerDisclaimer') }}</span>
+      <span>&copy; Nick Ning</span>
+      <span><a href="https://github.com/mintnick/eve-at-draft" target="_blank" rel="noreferrer">GitHub</a></span>
+      <span><a href="https://github.com/mintnick/eve-at-draft/issues/new" target="_blank" rel="noreferrer">{{ $t('messages.reportBug') }}</a></span>
+    </footer>
   </div>
 </template>
 

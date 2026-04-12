@@ -18,7 +18,9 @@
     "copied": "阵容已复制到剪贴板。",
     "importApplied": "阵容导入成功。",
     "prizeSponsor": "赞助方：{sponsor}",
-    "prizeShips": "奖品舰船："
+    "prizeShips": "奖品舰船：",
+    "reportBug": "反馈问题",
+    "footerDisclaimer": "所有 EVE 相关素材均为 CCP Games 的财产"
   },
   "validation": {
     "ship-not-found": "当前赛事数据中没有这艘舰船。",

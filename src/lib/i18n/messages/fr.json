@@ -18,7 +18,9 @@
     "copied": "Draft copié dans le presse-papiers.",
     "importApplied": "Draft importé avec succès.",
     "prizeSponsor": "Sponsor : {sponsor}",
-    "prizeShips": "Vaisseaux de prix :"
+    "prizeShips": "Vaisseaux de prix :",
+    "reportBug": "Signaler un bug",
+    "footerDisclaimer": "Tous les contenus liés à EVE sont la propriété de CCP Games"
   },
   "validation": {
     "ship-not-found": "Ce vaisseau n'est pas disponible dans les données du tournoi sélectionné.",

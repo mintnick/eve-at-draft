@@ -18,7 +18,9 @@
     "copied": "ドラフトをクリップボードにコピーしました。",
     "importApplied": "ドラフトをインポートしました。",
     "prizeSponsor": "スポンサー: {sponsor}",
-    "prizeShips": "賞品艦船:"
+    "prizeShips": "賞品艦船:",
+    "reportBug": "バグを報告",
+    "footerDisclaimer": "EVE 関連の素材はすべて CCP Games の所有物です"
   },
   "validation": {
     "ship-not-found": "この艦船は選択中のトーナメントデータにありません。",

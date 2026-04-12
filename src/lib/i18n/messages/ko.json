@@ -18,7 +18,9 @@
     "copied": "드래프트가 클립보드에 복사되었습니다.",
     "importApplied": "드래프트를 가져왔습니다.",
     "prizeSponsor": "후원: {sponsor}",
-    "prizeShips": "상금 함선:"
+    "prizeShips": "상금 함선:",
+    "reportBug": "버그 신고",
+    "footerDisclaimer": "모든 EVE 관련 자료는 CCP Games의 자산입니다"
   },
   "validation": {
     "ship-not-found": "선택한 토너먼트 데이터에 이 함선이 없습니다.",

@@ -18,7 +18,9 @@
     "copied": "Draft copied to clipboard.",
     "importApplied": "Draft imported successfully.",
     "prizeSponsor": "Sponsored by {sponsor}",
-    "prizeShips": "Prize ships:"
+    "prizeShips": "Prize ships:",
+    "reportBug": "Report a bug",
+    "footerDisclaimer": "All EVE related materials are property of CCP Games"
   },
   "validation": {
     "ship-not-found": "This ship is not available in the selected tournament dataset.",

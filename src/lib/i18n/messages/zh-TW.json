@@ -18,7 +18,9 @@
     "copied": "陣容已複製到剪貼簿。",
     "importApplied": "陣容匯入成功。",
     "prizeSponsor": "贊助方：{sponsor}",
-    "prizeShips": "獎品艦船："
+    "prizeShips": "獎品艦船：",
+    "reportBug": "回報問題",
+    "footerDisclaimer": "所有 EVE 相關素材均為 CCP Games 的財產"
   },
   "validation": {
     "ship-not-found": "目前賽事資料中沒有這艘艦船。",

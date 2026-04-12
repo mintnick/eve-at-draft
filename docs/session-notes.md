@@ -113,7 +113,7 @@
   - hull list tab container background is now fully transparent (TabList, p-tablist-content, p-tablist-tab-list, and individual p-tab all set to transparent)
   - ship item rows no longer apply a translateY elevation on hover; only background and border-color transition remains
   - action button icon fg colors are now solid white in light mode (against the dark green/red/blue button backgrounds) and deep-dark in dark mode (against the bright button backgrounds), replacing the previous near-white and near-black pastels that read too thin
-  - a subtitle "EVE Online Alliance Tournaments Drafting Tool" now appears inline next to the page title on wider screens and is hidden below 720px
+  - a subtitle "EVE Online Alliance Tournaments Drafting Tool" was added inline next to the page title on wider screens (subsequently removed)
 - Phase 11 has started:
   - `README.md` now documents the multi-year app, validation commands, and per-year pipeline usage
   - `docs/maintainer-guide.md` now documents refresh and backfill workflow for tournament years
@@ -126,6 +126,12 @@
   - latest pushed commits:
     - `558b756` `Add official tournament data for 2021 to 2023`
     - `ee07173` `Add external match archive links`
+
+- UI polish follow-up (post-Phase 11, current session):
+  - page subtitle removed
+  - footer moved from `index.html` into `AppShell.vue` and made fully i18n-supported (`messages.footerDisclaimer`, `messages.reportBug` added to all 9 locales)
+  - footer "Feedback" link renamed to "Report a bug"
+  - `.gitattributes` added: `data/raw/` and `data/generated/` marked `linguist-vendored` so GitHub correctly identifies the repo as TypeScript/Vue
 
 ## Agreed direction
 - Keep `Vue`

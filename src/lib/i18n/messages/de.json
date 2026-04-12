@@ -18,7 +18,9 @@
     "copied": "Draft in die Zwischenablage kopiert.",
     "importApplied": "Draft erfolgreich importiert.",
     "prizeSponsor": "Sponsor: {sponsor}",
-    "prizeShips": "Preisschiffe:"
+    "prizeShips": "Preisschiffe:",
+    "reportBug": "Fehler melden",
+    "footerDisclaimer": "Alle EVE-bezogenen Materialien sind Eigentum von CCP Games"
   },
   "validation": {
     "ship-not-found": "Dieses Schiff ist im ausgewählten Turnierdatensatz nicht verfügbar.",
