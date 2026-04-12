@@ -17,10 +17,19 @@ export interface TournamentSummary {
   year: number
   slug: string
   label: string
-  locales: LocaleCode[]
+  prize: {
+    sponsor: string
+    rewardShips: Array<{
+      name: string
+      shipId: number
+    }>
+  }
 }
 
-export interface TournamentIndexEntry extends TournamentSummary {
+export interface TournamentIndexEntry {
+  year: number
+  slug: string
+  label: string
   generatedFile: string
 }
 
@@ -59,7 +68,6 @@ export interface TournamentShipRule {
   shipId: number
   points: number
   logisticsWeight?: number
-  flagshipEligible?: boolean
 }
 
 export type TournamentHullRules = Record<HullType, Record<string, TournamentShipRule>>

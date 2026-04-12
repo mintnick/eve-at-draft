@@ -1,3 +1,5 @@
+import * as OpenCC from 'opencc-js'
+
 import type { HullType } from '../../src/lib/types'
 import type { LocaleCode } from '../../src/lib/i18n/locales'
 import type { RawShipRecord, RawTournamentSource } from './types'
@@ -16,10 +18,21 @@ type LegacyShips = Record<
   >
 >
 
-const ESI_TYPE_NAME_LOCALES = ['ru', 'de', 'ja', 'ko', 'fr', 'es'] as const
+const ESI_TYPE_NAME_LOCALES = ['zh-CN', 'ru', 'de', 'ja', 'ko', 'fr', 'es'] as const
 const TYPE_NAME_FETCH_CONCURRENCY = 12
 type EsiTypeNameLocale = (typeof ESI_TYPE_NAME_LOCALES)[number]
 type LocalizedTypeNamesByLocale = Record<EsiTypeNameLocale, Record<number, string>>
+const convertZhCnToZhTw = OpenCC.Converter({ from: 'cn', to: 'tw' })
+
+const ESI_LANGUAGE_BY_LOCALE = {
+  'zh-CN': 'zh',
+  ru: 'ru',
+  de: 'de',
+  ja: 'ja',
+  ko: 'ko',
+  fr: 'fr',
+  es: 'es',
+} satisfies Record<EsiTypeNameLocale, string>
 
 export async function fetchTournamentSource(year: number): Promise<void> {
   const config = getTournamentConfig(year)
@@ -47,23 +60,17 @@ export async function fetchTournamentSource(year: number): Promise<void> {
   }
   const shipIds = inventoryTypes.map((entry) => entry.id)
 
-  const [enNames, zhNames, localizedTypeNames] = await Promise.all([
+  const [enNames, localizedTypeNames] = await Promise.all([
     fetch('https://esi.evetech.net/latest/universe/names/?datasource=tranquility', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(shipIds),
-    }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
-    fetch('https://ali-esi.evepc.163.com/latest/universe/names/?datasource=serenity', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(shipIds.filter((id) => id !== 88001)),
     }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
     fetchLocalizedTypeNames(shipIds, ESI_TYPE_NAME_LOCALES),
   ])
 
   const idByKey = Object.fromEntries(inventoryTypes.map((entry) => [entry.name, entry.id]))
   const enNamesById = Object.fromEntries(enNames.map((entry) => [entry.id, entry.name]))
-  const zhNamesById = Object.fromEntries(zhNames.map((entry) => [entry.id, entry.name]))
 
   const hulls = Object.fromEntries(
     Object.entries(legacyShips).map(([hullType, shipMap]) => [
@@ -75,9 +82,8 @@ export async function fetchTournamentSource(year: number): Promise<void> {
             shipId: idByKey[shipKey] ?? ship.ship_id,
             points: ship.points,
             logisticsWeight: ship.logistics,
-            flagshipEligible: hullType === 'Flagship',
             names: {
-              ...createShipNames(shipKey, idByKey[shipKey] ?? ship.ship_id, enNamesById, zhNamesById, localizedTypeNames),
+              ...createShipNames(shipKey, idByKey[shipKey] ?? ship.ship_id, enNamesById, localizedTypeNames),
             },
           },
         ]),
@@ -95,7 +101,6 @@ export async function fetchTournamentSource(year: number): Promise<void> {
   await writeTextFile(rulesHtml, config.sourcesDir, 'rules.html')
   await writeJsonFile(filteredIdsResponse, config.sourcesDir, 'ids.tranquility.json')
   await writeJsonFile(enNames, config.sourcesDir, 'names.en.tranquility.json')
-  await writeJsonFile(zhNames, config.sourcesDir, 'names.zh.serenity.json')
   await writeJsonFile(localizedTypeNames, config.sourcesDir, 'type-names.tranquility.json')
   await writeJsonFile(source, config.rawDir, config.sourceFile)
   console.log(`Fetched upstream tournament artifacts and raw source for ${year}`)
@@ -133,25 +138,19 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   }
   const shipIds = inventoryTypes.map((entry) => entry.id)
 
-  const [enNames, zhNames, localizedTypeNames] = await Promise.all([
+  const [enNames, localizedTypeNames] = await Promise.all([
     fetch('https://esi.evetech.net/latest/universe/names/?datasource=tranquility', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(shipIds),
-    }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
-    fetch('https://ali-esi.evepc.163.com/latest/universe/names/?datasource=serenity', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(shipIds.filter((id) => id !== 88001)),
     }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
     fetchLocalizedTypeNames(shipIds, ESI_TYPE_NAME_LOCALES),
   ])
 
   const idByKey = Object.fromEntries(inventoryTypes.map((entry) => [entry.name, entry.id]))
   const enNamesById = Object.fromEntries(enNames.map((entry) => [entry.id, entry.name]))
-  const zhNamesById = Object.fromEntries(zhNames.map((entry) => [entry.id, entry.name]))
 
-  const hulls = buildOfficialHulls(staticValues, idByKey, enNamesById, zhNamesById, localizedTypeNames, logisticsWeights, config.rules.flagshipOverrides)
+  const hulls = buildOfficialHulls(staticValues, idByKey, enNamesById, localizedTypeNames, logisticsWeights, config.rules.flagshipOverrides)
 
   const source: RawTournamentSource = {
     year,
@@ -165,7 +164,6 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   await writeTextFile(staticValuesText, config.sourcesDir, 'static-values.gviz.json')
   await writeJsonFile(filteredIdsResponse, config.sourcesDir, 'ids.tranquility.json')
   await writeJsonFile(enNames, config.sourcesDir, 'names.en.tranquility.json')
-  await writeJsonFile(zhNames, config.sourcesDir, 'names.zh.serenity.json')
   await writeJsonFile(localizedTypeNames, config.sourcesDir, 'type-names.tranquility.json')
   await writeJsonFile(source, config.rawDir, config.sourceFile)
   console.log(`Fetched upstream tournament artifacts and raw source for ${year}`)
@@ -181,7 +179,8 @@ async function fetchLocalizedTypeNames(
       for (let index = 0; index < shipIds.length; index += TYPE_NAME_FETCH_CONCURRENCY) {
         const batch = shipIds.slice(index, index + TYPE_NAME_FETCH_CONCURRENCY)
         const batchNames = await Promise.all(batch.map(async (shipId) => {
-          const response = await fetch(`https://esi.evetech.net/latest/universe/types/${shipId}/?datasource=tranquility&language=${locale}`)
+          const esiLanguage = ESI_LANGUAGE_BY_LOCALE[locale]
+          const response = await fetch(`https://esi.evetech.net/latest/universe/types/${shipId}/?datasource=tranquility&language=${esiLanguage}`)
           const payload = await response.json() as { name?: string }
           return [shipId, payload.name] as const
         }))
@@ -202,16 +201,15 @@ function createShipNames(
   shipKey: string,
   shipId: number,
   enNamesById: Record<number, string>,
-  zhNamesById: Record<number, string>,
   localizedTypeNames: LocalizedTypeNamesByLocale,
 ): Record<LocaleCode, string> {
   const en = enNamesById[shipId] ?? shipKey
-  const zhCN = zhNamesById[shipId] ?? shipKey
+  const zhCN = localizedTypeNames['zh-CN'][shipId] ?? en
 
   return {
     en,
     'zh-CN': zhCN,
-    'zh-TW': zhCN,
+    'zh-TW': convertZhCnToZhTw(zhCN),
     ru: localizedTypeNames.ru[shipId] ?? en,
     de: localizedTypeNames.de[shipId] ?? en,
     ja: localizedTypeNames.ja[shipId] ?? en,
@@ -306,7 +304,6 @@ function buildOfficialHulls(
   staticValues: Record<string, { hullType: HullType; points: number }>,
   idByKey: Record<string, number>,
   enNamesById: Record<number, string>,
-  zhNamesById: Record<number, string>,
   localizedTypeNames: LocalizedTypeNamesByLocale,
   logisticsWeights: Record<string, number | undefined>,
   flagshipOverrides: Partial<Record<string, HullType>>,
@@ -333,9 +330,8 @@ function buildOfficialHulls(
       shipId,
       points: ship.points,
       logisticsWeight: ship.hullType === 'Logistics' ? logisticsWeights[shipKey] : undefined,
-      flagshipEligible: false,
       names: {
-        ...createShipNames(shipKey, shipId, enNamesById, zhNamesById, localizedTypeNames),
+        ...createShipNames(shipKey, shipId, enNamesById, localizedTypeNames),
       },
     }
   }
@@ -343,7 +339,6 @@ function buildOfficialHulls(
   for (const [shipKey, ship] of Object.entries(hulls.Battleship ?? {})) {
     hulls.Flagship![shipKey] = {
       ...ship,
-      flagshipEligible: true,
     }
   }
 
@@ -355,7 +350,6 @@ function buildOfficialHulls(
 
     hulls.Flagship![shipKey] = {
       ...existing,
-      flagshipEligible: true,
     }
   }
 

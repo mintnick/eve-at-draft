@@ -32,7 +32,6 @@ const baseSource: RawTournamentSource = {
       Bhaalgorn: {
         shipId: 17920,
         points: 30,
-        flagshipEligible: true,
         names: names('Bhaalgorn', '巴戈龙级'),
       },
     },
@@ -67,7 +66,6 @@ describe('data pipeline build helpers', () => {
         },
         Bantam: {
           logisticsWeight: 1,
-          flagshipEligible: false,
         },
       },
     }
@@ -77,7 +75,6 @@ describe('data pipeline build helpers', () => {
     expect(merged.hulls.Battleship?.Bhaalgorn).toEqual({
       shipId: 17920,
       points: 31,
-      flagshipEligible: true,
       names: {
         ...names('Bhaalgorn', '巴戈龙级'),
         'zh-CN': '巴戈龙旗舰级',
@@ -88,7 +85,6 @@ describe('data pipeline build helpers', () => {
       shipId: 582,
       points: 4,
       logisticsWeight: 1,
-      flagshipEligible: false,
       names: names('Bantam', '矮脚鸡级'),
     })
     expect(merged.hulls.Cruiser?.Caracal).toEqual(baseSource.hulls.Cruiser?.Caracal)
@@ -125,7 +121,6 @@ describe('data pipeline build helpers', () => {
           Bhaalgorn: {
             shipId: 17920,
             points: 32,
-            flagshipEligible: true,
             names: names('Bhaalgorn Alt', '巴戈龙级改'),
           },
         },
@@ -167,19 +162,16 @@ describe('data pipeline build helpers', () => {
     expect(rules.Battleship.Bhaalgorn).toEqual({
       shipId: 17920,
       points: 33,
-      flagshipEligible: true,
     })
     expect(rules.Logistics.Bantam).toEqual({
       shipId: 582,
       points: 4,
       logisticsWeight: 0.5,
-      flagshipEligible: undefined,
     })
     expect(rules.Cruiser.Caracal).toEqual({
       shipId: 621,
       points: 12,
       logisticsWeight: undefined,
-      flagshipEligible: undefined,
     })
   })
 })

@@ -204,8 +204,9 @@ describe('draft UI', () => {
     expect(wrapper.text()).toContain('Bhaalgorn')
     expect(wrapper.text()).toContain('Alliance Tournament XXI')
 
-    const yearSelect = wrapper.findAllComponents(Select)[0]
-    await yearSelect.vm.$emit('update:modelValue', 2024)
+    const yearSelect = wrapper.findAllComponents(Select).find((select) => select.attributes('id') === 'tournament-year')
+    expect(yearSelect).toBeDefined()
+    await yearSelect!.vm.$emit('update:modelValue', 2024)
     await nextTick()
 
     expect(wrapper.text()).toContain('Alliance Tournament XX')

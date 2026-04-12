@@ -8,6 +8,13 @@ export interface TournamentPipelineConfig {
   year: number
   slug: string
   label: string
+  prize: {
+    sponsor: string
+    rewardShips: Array<{
+      name: string
+      shipId: number
+    }>
+  }
   archiveUrl?: string
   rawDir: string
   sourcesDir: string
@@ -41,6 +48,13 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2021,
     slug: 'alliance-tournament-xvii',
     label: 'Alliance Tournament XVII',
+    prize: {
+      sponsor: "Mordu's Legion",
+      rewardShips: [
+        { name: 'Raiju', shipId: 60765 },
+        { name: 'Laelaps', shipId: 60764 },
+      ],
+    },
     archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXVII',
     rawDir: 'data/raw/2021',
     sourcesDir: 'data/raw/2021/sources',
@@ -79,6 +93,13 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2022,
     slug: 'alliance-tournament-xviii',
     label: 'Alliance Tournament XVIII',
+    prize: {
+      sponsor: 'Minmatar Republic',
+      rewardShips: [
+        { name: 'Geri', shipId: 74141 },
+        { name: 'Bestla', shipId: 74316 },
+      ],
+    },
     archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXVIII',
     rawDir: 'data/raw/2022',
     sourcesDir: 'data/raw/2022/sources',
@@ -119,6 +140,13 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2023,
     slug: 'alliance-tournament-xix',
     label: 'Alliance Tournament XIX',
+    prize: {
+      sponsor: 'Gallente Federation',
+      rewardShips: [
+        { name: 'Shapash', shipId: 78414 },
+        { name: 'Cybele', shipId: 77726 },
+      ],
+    },
     archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXIX',
     rawDir: 'data/raw/2023',
     sourcesDir: 'data/raw/2023/sources',
@@ -159,6 +187,14 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2024,
     slug: 'alliance-tournament-xx',
     label: 'Alliance Tournament XX',
+    prize: {
+      sponsor: 'Guristas',
+      rewardShips: [
+        { name: 'Sidewinder', shipId: 85062 },
+        { name: 'Cobra', shipId: 85229 },
+        { name: 'Python', shipId: 85236 },
+      ],
+    },
     archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXX',
     rawDir: 'data/raw/2024',
     sourcesDir: 'data/raw/2024/sources',
@@ -206,6 +242,13 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
     year: 2025,
     slug: 'alliance-tournament-xxi',
     label: 'Alliance Tournament XXI',
+    prize: {
+      sponsor: 'Caldari State',
+      rewardShips: [
+        { name: 'Skua', shipId: 89808 },
+        { name: 'Anhinga', shipId: 89807 },
+      ],
+    },
     archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXXI',
     rawDir: 'data/raw/2025',
     sourcesDir: 'data/raw/2025/sources',

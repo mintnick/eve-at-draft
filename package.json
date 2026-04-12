@@ -25,9 +25,11 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.2",
+    "@types/opencc-js": "^1",
     "@vitejs/plugin-vue": "^6.0.5",
     "@vue/test-utils": "^2.4.6",
     "jsdom": "^29.0.1",
+    "opencc-js": "^1.0.5",
     "sass": "^1.81.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2",

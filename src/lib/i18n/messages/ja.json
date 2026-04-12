@@ -16,7 +16,9 @@
     "cancel": "キャンセル",
     "applyImport": "インポートを適用",
     "copied": "ドラフトをクリップボードにコピーしました。",
-    "importApplied": "ドラフトをインポートしました。"
+    "importApplied": "ドラフトをインポートしました。",
+    "prizeSponsor": "スポンサー: {sponsor}",
+    "prizeShips": "賞品艦船:"
   },
   "validation": {
     "ship-not-found": "この艦船は選択中のトーナメントデータにありません。",

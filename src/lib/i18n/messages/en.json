@@ -16,7 +16,9 @@
     "cancel": "Cancel",
     "applyImport": "Apply Import",
     "copied": "Draft copied to clipboard.",
-    "importApplied": "Draft imported successfully."
+    "importApplied": "Draft imported successfully.",
+    "prizeSponsor": "Sponsored by {sponsor}",
+    "prizeShips": "Prize ships:"
   },
   "validation": {
     "ship-not-found": "This ship is not available in the selected tournament dataset.",

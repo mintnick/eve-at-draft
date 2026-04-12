@@ -36,9 +36,7 @@ export function useDraftBoard(
   const state = ref(createEmptyDraftState(hullTypes))
   const activeHullType = ref<HullType>(hullTypes[0] ?? 'Flagship')
 
-  const ruleLink = dataset.sources.find((source) => source.label === 'Rules')?.url ?? '#'
   const banLink = dataset.sources.find((source) => source.label === 'Ban Rules')?.url ?? '#'
-  const archiveLink = dataset.sources.find((source) => source.label === 'Match Archive')?.url ?? null
   const feedbackReasons = ref<string[]>([])
 
   const derivedState = computed(() => getDraftDerivedState(dataset, state.value))
@@ -178,9 +176,7 @@ export function useDraftBoard(
     hullTypes,
     localizedShipName,
     pickValidation,
-    ruleLink,
     addShip,
-    archiveLink,
     removeShip,
     banShip,
     banValidation,

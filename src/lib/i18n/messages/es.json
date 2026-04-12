@@ -16,7 +16,9 @@
     "cancel": "Cancelar",
     "applyImport": "Aplicar importación",
     "copied": "Draft copiado al portapapeles.",
-    "importApplied": "Draft importado correctamente."
+    "importApplied": "Draft importado correctamente.",
+    "prizeSponsor": "Patrocinado por {sponsor}",
+    "prizeShips": "Naves premio:"
   },
   "validation": {
     "ship-not-found": "Esta nave no está disponible en el conjunto de datos del torneo seleccionado.",

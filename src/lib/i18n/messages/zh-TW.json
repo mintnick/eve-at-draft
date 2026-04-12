@@ -16,7 +16,9 @@
     "cancel": "取消",
     "applyImport": "套用匯入",
     "copied": "陣容已複製到剪貼簿。",
-    "importApplied": "陣容匯入成功。"
+    "importApplied": "陣容匯入成功。",
+    "prizeSponsor": "贊助方：{sponsor}",
+    "prizeShips": "獎品艦船："
   },
   "validation": {
     "ship-not-found": "目前賽事資料中沒有這艘艦船。",

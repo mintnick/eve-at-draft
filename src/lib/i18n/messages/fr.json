@@ -16,7 +16,9 @@
     "cancel": "Annuler",
     "applyImport": "Appliquer l'import",
     "copied": "Draft copié dans le presse-papiers.",
-    "importApplied": "Draft importé avec succès."
+    "importApplied": "Draft importé avec succès.",
+    "prizeSponsor": "Sponsor : {sponsor}",
+    "prizeShips": "Vaisseaux de prix :"
   },
   "validation": {
     "ship-not-found": "Ce vaisseau n'est pas disponible dans les données du tournoi sélectionné.",

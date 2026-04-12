@@ -34,6 +34,8 @@ const localeOptions = computed(() =>
     label: LOCALE_LABELS[value],
   })),
 )
+const ruleLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Rules')?.url ?? null)
+const archiveLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Match Archive')?.url ?? null)
 
 function toggleTheme() {
   uiState.isDark = !uiState.isDark
@@ -114,38 +116,47 @@ async function applyImport() {
   <div class="page-shell">
     <header class="page-header">
       <div class="page-title-wrap">
-        <div class="page-title">{{ $t('messages.title') }}</div>
-        <div class="page-subtitle">EVE Online Alliance Tournaments Drafting Tool</div>
+        <div class="page-title-copy">
+          <div class="page-title">{{ $t('messages.title') }}</div>
+          <div class="page-subtitle">EVE Online Alliance Tournaments Drafting Tool</div>
+        </div>
+        <div class="control-group language-control">
+          <label class="year-picker-label year-picker-label--icon" for="app-language">
+            <span class="language-label-icon" aria-hidden="true"></span>
+            <span>{{ $t('messages.language') }}</span>
+          </label>
+          <Select
+            id="app-language"
+            :model-value="locale"
+            :options="localeOptions"
+            option-label="label"
+            option-value="value"
+            scroll-height="none"
+            class="year-select"
+            @update:model-value="changeLang($event as LocaleCode)"
+          />
+        </div>
       </div>
       <div class="page-actions-card">
         <div class="page-actions">
           <div class="page-actions-left">
             <div class="control-group">
-              <label class="year-picker-label" for="tournament-year">{{ $t('messages.year') }}</label>
               <Select
                 id="tournament-year"
                 v-model="tournamentState.selectedYear"
                 :options="tournamentOptions"
                 option-label="label"
                 option-value="value"
-                class="year-select"
+                class="year-select tournament-year-select"
               />
             </div>
-            <div class="control-group">
-              <label class="year-picker-label year-picker-label--icon" for="app-language">
-                <span class="language-label-icon" aria-hidden="true"></span>
-                <span>{{ $t('messages.language') }}</span>
-              </label>
-              <Select
-                id="app-language"
-                :model-value="locale"
-                :options="localeOptions"
-                option-label="label"
-                option-value="value"
-                scroll-height="none"
-                class="year-select"
-                @update:model-value="changeLang($event as LocaleCode)"
-              />
+            <div class="tournament-source-links">
+              <a v-if="ruleLink" class="source-link" :href="ruleLink" target="_blank" rel="noreferrer">
+                {{ $t('messages.rules') }}
+              </a>
+              <a v-if="archiveLink" class="source-link" :href="archiveLink" target="_blank" rel="noreferrer">
+                {{ $t('messages.matchArchive') }}
+              </a>
             </div>
           </div>
           <div class="page-actions-right">
@@ -196,6 +207,14 @@ async function applyImport() {
 }
 
 .page-title-wrap {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.page-title-copy {
   display: flex;
   align-items: baseline;
   gap: 0.85rem;
@@ -285,6 +304,31 @@ async function applyImport() {
   min-width: 220px;
 }
 
+.language-control {
+  min-width: 180px;
+}
+
+.language-control .year-select {
+  min-width: 180px;
+}
+
+.tournament-source-links {
+  display: flex;
+  align-items: flex-end;
+  align-self: end;
+  gap: 1.15rem;
+  min-height: 2.65rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.35rem;
+}
+
+.source-link {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--app-accent-warm-muted);
+  white-space: nowrap;
+}
+
 .year-picker-label {
   font-size: 0.85rem;
   font-weight: 700;
@@ -315,6 +359,16 @@ async function applyImport() {
 
 .year-select {
   min-width: 220px;
+}
+
+.tournament-year-select {
+  min-width: 300px;
+}
+
+.tournament-year-select:deep(.p-select-label) {
+  font-size: 1.2rem;
+  font-weight: 850;
+  line-height: 1.15;
 }
 
 .transfer-message {
@@ -352,9 +406,18 @@ async function applyImport() {
     width: 100%;
   }
 
+  .page-title-wrap,
+  .page-title-copy {
+    display: grid;
+  }
+
   .control-group,
   .year-select {
     min-width: 100%;
+  }
+
+  .language-control {
+    width: 100%;
   }
 
   .toolbar-button {

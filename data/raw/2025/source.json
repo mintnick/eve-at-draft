@@ -1,17 +1,16 @@
 {
   "year": 2025,
   "provider": "legacy-repo-snapshot",
-  "capturedAt": "2026-04-04T13:25:53.151Z",
+  "capturedAt": "2026-04-12T14:07:33.709Z",
   "hulls": {
     "Flagship": {
       "Babaroga": {
         "shipId": 88001,
         "points": 50,
-        "flagshipEligible": true,
         "names": {
           "en": "Babaroga",
-          "zh-CN": "Babaroga",
-          "zh-TW": "Babaroga",
+          "zh-CN": "巴巴罗加号",
+          "zh-TW": "巴巴羅加號",
           "ru": "Babaroga",
           "de": "Babaroga",
           "ja": "ババロガ",
@@ -23,11 +22,10 @@
       "Bhaalgorn": {
         "shipId": 17920,
         "points": 50,
-        "flagshipEligible": true,
         "names": {
           "en": "Bhaalgorn",
           "zh-CN": "巴戈龙级",
-          "zh-TW": "巴戈龙级",
+          "zh-TW": "巴戈龍級",
           "ru": "Bhaalgorn",
           "de": "Bhaalgorn",
           "ja": "バールゴーン",
@@ -39,11 +37,10 @@
       "Rattlesnake": {
         "shipId": 17918,
         "points": 50,
-        "flagshipEligible": true,
         "names": {
           "en": "Rattlesnake",
           "zh-CN": "响尾蛇级",
-          "zh-TW": "响尾蛇级",
+          "zh-TW": "響尾蛇級",
           "ru": "Rattlesnake",
           "de": "Rattlesnake",
           "ja": "ラトルスネーク",
@@ -55,11 +52,10 @@
       "Barghest": {
         "shipId": 33820,
         "points": 50,
-        "flagshipEligible": true,
         "names": {
           "en": "Barghest",
           "zh-CN": "巴盖斯级",
-          "zh-TW": "巴盖斯级",
+          "zh-TW": "巴蓋斯級",
           "ru": "Barghest",
           "de": "Barghest",
           "ja": "バーゲスト",
@@ -71,11 +67,10 @@
       "Nightmare": {
         "shipId": 17736,
         "points": 49,
-        "flagshipEligible": true,
         "names": {
           "en": "Nightmare",
           "zh-CN": "噩梦级",
-          "zh-TW": "噩梦级",
+          "zh-TW": "噩夢級",
           "ru": "Nightmare",
           "de": "Nightmare",
           "ja": "ナイトメア",
@@ -87,11 +82,10 @@
       "Leshak": {
         "shipId": 47271,
         "points": 49,
-        "flagshipEligible": true,
         "names": {
           "en": "Leshak",
           "zh-CN": "勒沙克级",
-          "zh-TW": "勒沙克级",
+          "zh-TW": "勒沙克級",
           "ru": "Leshak",
           "de": "Leshak",
           "ja": "レシャク",
@@ -103,11 +97,10 @@
       "Widow": {
         "shipId": 22436,
         "points": 48,
-        "flagshipEligible": true,
         "names": {
           "en": "Widow",
           "zh-CN": "寡妇级",
-          "zh-TW": "寡妇级",
+          "zh-TW": "寡婦級",
           "ru": "Widow",
           "de": "Widow",
           "ja": "ウィドウ",
@@ -119,11 +112,10 @@
       "Paladin": {
         "shipId": 28659,
         "points": 47,
-        "flagshipEligible": true,
         "names": {
           "en": "Paladin",
           "zh-CN": "帕拉丁级",
-          "zh-TW": "帕拉丁级",
+          "zh-TW": "帕拉丁級",
           "ru": "Paladin",
           "de": "Paladin",
           "ja": "パラディン",
@@ -135,11 +127,10 @@
       "Vargur": {
         "shipId": 28665,
         "points": 47,
-        "flagshipEligible": true,
         "names": {
           "en": "Vargur",
           "zh-CN": "恶狼级",
-          "zh-TW": "恶狼级",
+          "zh-TW": "惡狼級",
           "ru": "Vargur",
           "de": "Vargur",
           "ja": "ヴァーガー",
@@ -151,11 +142,10 @@
       "Vindicator": {
         "shipId": 17740,
         "points": 47,
-        "flagshipEligible": true,
         "names": {
           "en": "Vindicator",
-          "zh-CN": "惩戒者级",
-          "zh-TW": "惩戒者级",
+          "zh-CN": "复仇者级",
+          "zh-TW": "復仇者級",
           "ru": "Vindicator",
           "de": "Vindicator",
           "ja": "ビンディケイター",
@@ -167,11 +157,10 @@
       "Kronos": {
         "shipId": 28661,
         "points": 46,
-        "flagshipEligible": true,
         "names": {
           "en": "Kronos",
           "zh-CN": "克洛诺斯级",
-          "zh-TW": "克洛诺斯级",
+          "zh-TW": "克洛諾斯級",
           "ru": "Kronos",
           "de": "Kronos",
           "ja": "クロノス",
@@ -183,11 +172,10 @@
       "Golem": {
         "shipId": 28710,
         "points": 45,
-        "flagshipEligible": true,
         "names": {
           "en": "Golem",
           "zh-CN": "魔像级",
-          "zh-TW": "魔像级",
+          "zh-TW": "魔像級",
           "ru": "Golem",
           "de": "Golem",
           "ja": "ゴーレム",
@@ -199,11 +187,10 @@
       "Machariel": {
         "shipId": 17738,
         "points": 45,
-        "flagshipEligible": true,
         "names": {
           "en": "Machariel",
           "zh-CN": "马克瑞级",
-          "zh-TW": "马克瑞级",
+          "zh-TW": "馬克瑞級",
           "ru": "Machariel",
           "de": "Machariel",
           "ja": "マカリエル",
@@ -215,11 +202,10 @@
       "Typhoon Fleet Issue": {
         "shipId": 32311,
         "points": 44,
-        "flagshipEligible": true,
         "names": {
           "en": "Typhoon Fleet Issue",
           "zh-CN": "台风级舰队型",
-          "zh-TW": "台风级舰队型",
+          "zh-TW": "颱風級艦隊型",
           "ru": "Typhoon Fleet Issue",
           "de": "Typhoon Fleet Issue",
           "ja": "タイフーン海軍仕様",
@@ -231,11 +217,10 @@
       "Dominix Navy Issue": {
         "shipId": 32307,
         "points": 43,
-        "flagshipEligible": true,
         "names": {
           "en": "Dominix Navy Issue",
           "zh-CN": "多米尼克斯级海军型",
-          "zh-TW": "多米尼克斯级海军型",
+          "zh-TW": "多米尼克斯級海軍型",
           "ru": "Dominix Navy Issue",
           "de": "Dominix Navy Issue",
           "ja": "ドミニックス海軍仕様",
@@ -247,11 +232,10 @@
       "Armageddon Navy Issue": {
         "shipId": 32305,
         "points": 42,
-        "flagshipEligible": true,
         "names": {
           "en": "Armageddon Navy Issue",
           "zh-CN": "末日沙场级海军型",
-          "zh-TW": "末日沙场级海军型",
+          "zh-TW": "末日沙場級海軍型",
           "ru": "Armageddon Navy Issue",
           "de": "Armageddon Navy Issue",
           "ja": "アルマゲドン海軍仕様",
@@ -263,11 +247,10 @@
       "Scorpion Navy Issue": {
         "shipId": 32309,
         "points": 42,
-        "flagshipEligible": true,
         "names": {
           "en": "Scorpion Navy Issue",
           "zh-CN": "毒蝎级海军型",
-          "zh-TW": "毒蝎级海军型",
+          "zh-TW": "毒蠍級海軍型",
           "ru": "Scorpion Navy Issue",
           "de": "Scorpion Navy Issue",
           "ja": "スコーピオン海軍仕様",
@@ -279,11 +262,10 @@
       "Redeemer": {
         "shipId": 22428,
         "points": 41,
-        "flagshipEligible": true,
         "names": {
           "en": "Redeemer",
           "zh-CN": "救世级",
-          "zh-TW": "救世级",
+          "zh-TW": "救世級",
           "ru": "Redeemer",
           "de": "Redeemer",
           "ja": "リディーマー",
@@ -295,11 +277,10 @@
       "Sin": {
         "shipId": 22430,
         "points": 41,
-        "flagshipEligible": true,
         "names": {
           "en": "Sin",
           "zh-CN": "罪恶级",
-          "zh-TW": "罪恶级",
+          "zh-TW": "罪惡級",
           "ru": "Sin",
           "de": "Sin",
           "ja": "シン",
@@ -311,11 +292,10 @@
       "Panther": {
         "shipId": 22440,
         "points": 41,
-        "flagshipEligible": true,
         "names": {
           "en": "Panther",
           "zh-CN": "黑豹级",
-          "zh-TW": "黑豹级",
+          "zh-TW": "黑豹級",
           "ru": "Panther",
           "de": "Panther",
           "ja": "パンサー",
@@ -327,11 +307,10 @@
       "Laelaps": {
         "shipId": 60764,
         "points": 41,
-        "flagshipEligible": true,
         "names": {
           "en": "Laelaps",
           "zh-CN": "猎獒级",
-          "zh-TW": "猎獒级",
+          "zh-TW": "獵獒級",
           "ru": "Laelaps",
           "de": "Laelaps",
           "ja": "ライラプス",
@@ -343,11 +322,10 @@
       "Apocalypse Navy Issue": {
         "shipId": 17726,
         "points": 40,
-        "flagshipEligible": true,
         "names": {
           "en": "Apocalypse Navy Issue",
           "zh-CN": "灾难级海军型",
-          "zh-TW": "灾难级海军型",
+          "zh-TW": "災難級海軍型",
           "ru": "Apocalypse Navy Issue",
           "de": "Apocalypse Navy Issue",
           "ja": "アポカリプス海軍仕様",
@@ -359,11 +337,10 @@
       "Megathron Navy Issue": {
         "shipId": 17728,
         "points": 40,
-        "flagshipEligible": true,
         "names": {
           "en": "Megathron Navy Issue",
           "zh-CN": "万王宝座级海军型",
-          "zh-TW": "万王宝座级海军型",
+          "zh-TW": "萬王寶座級海軍型",
           "ru": "Megathron Navy Issue",
           "de": "Megathron Navy Issue",
           "ja": "メガソロン海軍仕様",
@@ -375,11 +352,10 @@
       "Tempest Fleet Issue": {
         "shipId": 17732,
         "points": 40,
-        "flagshipEligible": true,
         "names": {
           "en": "Tempest Fleet Issue",
           "zh-CN": "狂暴级舰队型",
-          "zh-TW": "狂暴级舰队型",
+          "zh-TW": "狂暴級艦隊型",
           "ru": "Tempest Fleet Issue",
           "de": "Tempest Fleet Issue",
           "ja": "テンペスト海軍仕様",
@@ -391,11 +367,10 @@
       "Cybele": {
         "shipId": 77726,
         "points": 40,
-        "flagshipEligible": true,
         "names": {
           "en": "Cybele",
           "zh-CN": "西布勒级",
-          "zh-TW": "西布勒级",
+          "zh-TW": "西布勒級",
           "ru": "Cybele",
           "de": "Cybele",
           "ja": "キュベレー",
@@ -407,11 +382,10 @@
       "Bestla": {
         "shipId": 74316,
         "points": 39,
-        "flagshipEligible": true,
         "names": {
           "en": "Bestla",
-          "zh-CN": "贝斯特拉级",
-          "zh-TW": "贝斯特拉级",
+          "zh-CN": "贝斯特拉",
+          "zh-TW": "貝斯特拉",
           "ru": "Bestla",
           "de": "Bestla",
           "ja": "ベストラ",
@@ -423,11 +397,10 @@
       "Raven Navy Issue": {
         "shipId": 17636,
         "points": 38,
-        "flagshipEligible": true,
         "names": {
           "en": "Raven Navy Issue",
           "zh-CN": "乌鸦级海军型",
-          "zh-TW": "乌鸦级海军型",
+          "zh-TW": "烏鴉級海軍型",
           "ru": "Raven Navy Issue",
           "de": "Raven Navy Issue",
           "ja": "レイブン海軍仕様",
@@ -439,11 +412,10 @@
       "Abaddon": {
         "shipId": 24692,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Abaddon",
           "zh-CN": "地狱天使级",
-          "zh-TW": "地狱天使级",
+          "zh-TW": "地獄天使級",
           "ru": "Abaddon",
           "de": "Abaddon",
           "ja": "アバドン",
@@ -455,11 +427,10 @@
       "Apocalypse": {
         "shipId": 642,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Apocalypse",
           "zh-CN": "灾难级",
-          "zh-TW": "灾难级",
+          "zh-TW": "災難級",
           "ru": "Apocalypse",
           "de": "Apocalypse",
           "ja": "アポカリプス",
@@ -471,11 +442,10 @@
       "Armageddon": {
         "shipId": 643,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Armageddon",
           "zh-CN": "末日沙场级",
-          "zh-TW": "末日沙场级",
+          "zh-TW": "末日沙場級",
           "ru": "Armageddon",
           "de": "Armageddon",
           "ja": "アルマゲドン",
@@ -487,11 +457,10 @@
       "Scorpion": {
         "shipId": 640,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Scorpion",
           "zh-CN": "毒蝎级",
-          "zh-TW": "毒蝎级",
+          "zh-TW": "毒蠍級",
           "ru": "Scorpion",
           "de": "Scorpion",
           "ja": "スコーピオン",
@@ -503,11 +472,10 @@
       "Hyperion": {
         "shipId": 24690,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Hyperion",
           "zh-CN": "亥伯龙神级",
-          "zh-TW": "亥伯龙神级",
+          "zh-TW": "亥伯龍神級",
           "ru": "Hyperion",
           "de": "Hyperion",
           "ja": "ハイペリオン",
@@ -519,11 +487,10 @@
       "Dominix": {
         "shipId": 645,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Dominix",
           "zh-CN": "多米尼克斯级",
-          "zh-TW": "多米尼克斯级",
+          "zh-TW": "多米尼克斯級",
           "ru": "Dominix",
           "de": "Dominix",
           "ja": "ドミニックス",
@@ -535,11 +502,10 @@
       "Tempest": {
         "shipId": 639,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Tempest",
           "zh-CN": "狂暴级",
-          "zh-TW": "狂暴级",
+          "zh-TW": "狂暴級",
           "ru": "Tempest",
           "de": "Tempest",
           "ja": "テンペスト",
@@ -551,11 +517,10 @@
       "Typhoon": {
         "shipId": 644,
         "points": 37,
-        "flagshipEligible": true,
         "names": {
           "en": "Typhoon",
           "zh-CN": "台风级",
-          "zh-TW": "台风级",
+          "zh-TW": "颱風級",
           "ru": "Typhoon",
           "de": "Typhoon",
           "ja": "タイフーン",
@@ -567,11 +532,10 @@
       "Rokh": {
         "shipId": 24688,
         "points": 36,
-        "flagshipEligible": true,
         "names": {
           "en": "Rokh",
           "zh-CN": "鹏鲲级",
-          "zh-TW": "鹏鲲级",
+          "zh-TW": "鵬鯤級",
           "ru": "Rokh",
           "de": "Rokh",
           "ja": "ローク",
@@ -583,11 +547,10 @@
       "Megathron": {
         "shipId": 641,
         "points": 36,
-        "flagshipEligible": true,
         "names": {
           "en": "Megathron",
           "zh-CN": "万王宝座级",
-          "zh-TW": "万王宝座级",
+          "zh-TW": "萬王寶座級",
           "ru": "Megathron",
           "de": "Megathron",
           "ja": "メガソロン",
@@ -599,11 +562,10 @@
       "Cobra": {
         "shipId": 85229,
         "points": 36,
-        "flagshipEligible": true,
         "names": {
           "en": "Cobra",
           "zh-CN": "眼镜蛇级",
-          "zh-TW": "眼镜蛇级",
+          "zh-TW": "眼鏡蛇級",
           "ru": "Cobra",
           "de": "Cobra",
           "ja": "コブラ",
@@ -615,11 +577,10 @@
       "Raven": {
         "shipId": 638,
         "points": 35,
-        "flagshipEligible": true,
         "names": {
           "en": "Raven",
           "zh-CN": "乌鸦级",
-          "zh-TW": "乌鸦级",
+          "zh-TW": "烏鴉級",
           "ru": "Raven",
           "de": "Raven",
           "ja": "レイブン",
@@ -631,11 +592,10 @@
       "Praxis": {
         "shipId": 47466,
         "points": 35,
-        "flagshipEligible": true,
         "names": {
           "en": "Praxis",
           "zh-CN": "实践级",
-          "zh-TW": "实践级",
+          "zh-TW": "實踐級",
           "ru": "Praxis",
           "de": "Praxis",
           "ja": "プラクシス",
@@ -647,11 +607,10 @@
       "Thunderchild": {
         "shipId": 54733,
         "points": 40,
-        "flagshipEligible": true,
         "names": {
           "en": "Thunderchild",
           "zh-CN": "雷裔级",
-          "zh-TW": "雷裔级",
+          "zh-TW": "雷裔級",
           "ru": "Thunderchild",
           "de": "Thunderchild",
           "ja": "サンダーチャイルド",
@@ -663,11 +622,10 @@
       "Maelstrom": {
         "shipId": 24694,
         "points": 34,
-        "flagshipEligible": true,
         "names": {
           "en": "Maelstrom",
           "zh-CN": "死亡漩涡级",
-          "zh-TW": "死亡漩涡级",
+          "zh-TW": "死亡漩渦級",
           "ru": "Maelstrom",
           "de": "Maelstrom",
           "ja": "メイルストローム",
@@ -679,11 +637,10 @@
       "Raiju": {
         "shipId": 60765,
         "points": 32,
-        "flagshipEligible": true,
         "names": {
           "en": "Raiju",
           "zh-CN": "雷兽级",
-          "zh-TW": "雷兽级",
+          "zh-TW": "雷獸級",
           "ru": "Raiju",
           "de": "Raiju",
           "ja": "ライジュウ",
@@ -695,11 +652,10 @@
       "Sidewinder": {
         "shipId": 85062,
         "points": 31,
-        "flagshipEligible": true,
         "names": {
           "en": "Sidewinder",
           "zh-CN": "侧进蛇级",
-          "zh-TW": "侧进蛇级",
+          "zh-TW": "側進蛇級",
           "ru": "Sidewinder",
           "de": "Sidewinder",
           "ja": "サイドワインダー",
@@ -711,11 +667,10 @@
       "Geri": {
         "shipId": 74141,
         "points": 27,
-        "flagshipEligible": true,
         "names": {
           "en": "Geri",
-          "zh-CN": "恐狼级",
-          "zh-TW": "恐狼级",
+          "zh-CN": "格里级",
+          "zh-TW": "格里級",
           "ru": "Geri",
           "de": "Geri",
           "ja": "ゲリ",
@@ -727,11 +682,10 @@
       "Shapash": {
         "shipId": 78414,
         "points": 30,
-        "flagshipEligible": true,
         "names": {
           "en": "Shapash",
           "zh-CN": "沙帕什级",
-          "zh-TW": "沙帕什级",
+          "zh-TW": "沙帕什級",
           "ru": "Shapash",
           "de": "Shapash",
           "ja": "シャパシュ",
@@ -746,11 +700,10 @@
         "shipId": 11987,
         "points": 32,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Guardian",
           "zh-CN": "守卫级",
-          "zh-TW": "守卫级",
+          "zh-TW": "守衛級",
           "ru": "Guardian",
           "de": "Guardian",
           "ja": "ガーディアン",
@@ -763,11 +716,10 @@
         "shipId": 11985,
         "points": 32,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Basilisk",
           "zh-CN": "皇冠蜥级",
-          "zh-TW": "皇冠蜥级",
+          "zh-TW": "皇冠蜥級",
           "ru": "Basilisk",
           "de": "Basilisk",
           "ja": "バシリスク",
@@ -780,11 +732,10 @@
         "shipId": 11989,
         "points": 32,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Oneiros",
           "zh-CN": "奥内罗斯级",
-          "zh-TW": "奥内罗斯级",
+          "zh-TW": "奧內羅斯級",
           "ru": "Oneiros",
           "de": "Oneiros",
           "ja": "オネイロス",
@@ -797,11 +748,10 @@
         "shipId": 11978,
         "points": 32,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Scimitar",
           "zh-CN": "曲剑级",
-          "zh-TW": "曲剑级",
+          "zh-TW": "曲劍級",
           "ru": "Scimitar",
           "de": "Scimitar",
           "ja": "シミター",
@@ -814,11 +764,10 @@
         "shipId": 49713,
         "points": 32,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Zarmazd",
           "zh-CN": "扎玛德级",
-          "zh-TW": "扎玛德级",
+          "zh-TW": "扎瑪德級",
           "ru": "Zarmazd",
           "de": "Zarmazd",
           "ja": "ザルマズド",
@@ -831,11 +780,10 @@
         "shipId": 49712,
         "points": 22,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Rodiva",
           "zh-CN": "洛迪瓦级",
-          "zh-TW": "洛迪瓦级",
+          "zh-TW": "洛迪瓦級",
           "ru": "Rodiva",
           "de": "Rodiva",
           "ja": "ロディバ",
@@ -848,11 +796,10 @@
         "shipId": 625,
         "points": 19,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Augoror",
           "zh-CN": "奥格诺级",
-          "zh-TW": "奥格诺级",
+          "zh-TW": "奧格諾級",
           "ru": "Augoror",
           "de": "Augoror",
           "ja": "オーゴロー",
@@ -865,11 +812,10 @@
         "shipId": 620,
         "points": 19,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Osprey",
           "zh-CN": "鱼鹰级",
-          "zh-TW": "鱼鹰级",
+          "zh-TW": "魚鷹級",
           "ru": "Osprey",
           "de": "Osprey",
           "ja": "オスプレイ",
@@ -882,11 +828,10 @@
         "shipId": 634,
         "points": 19,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Exequror",
           "zh-CN": "送葬者级",
-          "zh-TW": "送葬者级",
+          "zh-TW": "送葬者級",
           "ru": "Exequror",
           "de": "Exequror",
           "ja": "イクセキュラー",
@@ -899,11 +844,10 @@
         "shipId": 631,
         "points": 19,
         "logisticsWeight": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Scythe",
           "zh-CN": "镰刀级",
-          "zh-TW": "镰刀级",
+          "zh-TW": "鐮刀級",
           "ru": "Scythe",
           "de": "Scythe",
           "ja": "サイス",
@@ -916,11 +860,10 @@
         "shipId": 37457,
         "points": 10,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Deacon",
           "zh-CN": "执事级",
-          "zh-TW": "执事级",
+          "zh-TW": "執事級",
           "ru": "Deacon",
           "de": "Deacon",
           "ja": "ディーコン",
@@ -933,11 +876,10 @@
         "shipId": 37458,
         "points": 10,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Kirin",
           "zh-CN": "麒麟级",
-          "zh-TW": "麒麟级",
+          "zh-TW": "麒麟級",
           "ru": "Kirin",
           "de": "Kirin",
           "ja": "キリン",
@@ -950,11 +892,10 @@
         "shipId": 37459,
         "points": 10,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Thalia",
           "zh-CN": "塔利亚级",
-          "zh-TW": "塔利亚级",
+          "zh-TW": "塔利亞級",
           "ru": "Thalia",
           "de": "Thalia",
           "ja": "タリア",
@@ -967,11 +908,10 @@
         "shipId": 37460,
         "points": 10,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Scalpel",
           "zh-CN": "手术刀级",
-          "zh-TW": "手术刀级",
+          "zh-TW": "手術刀級",
           "ru": "Scalpel",
           "de": "Scalpel",
           "ja": "スカルペル",
@@ -984,11 +924,10 @@
         "shipId": 590,
         "points": 3,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Inquisitor",
           "zh-CN": "检察官级",
-          "zh-TW": "检察官级",
+          "zh-TW": "檢察官級",
           "ru": "Inquisitor",
           "de": "Inquisitor",
           "ja": "インクイジター",
@@ -1001,11 +940,10 @@
         "shipId": 582,
         "points": 3,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Bantam",
           "zh-CN": "矮脚鸡级",
-          "zh-TW": "矮脚鸡级",
+          "zh-TW": "矮腳雞級",
           "ru": "Bantam",
           "de": "Bantam",
           "ja": "バンタム",
@@ -1018,11 +956,10 @@
         "shipId": 592,
         "points": 3,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Navitas",
           "zh-CN": "纳维达斯级",
-          "zh-TW": "纳维达斯级",
+          "zh-TW": "納維達斯級",
           "ru": "Navitas",
           "de": "Navitas",
           "ja": "ナビタス",
@@ -1035,11 +972,10 @@
         "shipId": 599,
         "points": 3,
         "logisticsWeight": 0.5,
-        "flagshipEligible": false,
         "names": {
           "en": "Burst",
           "zh-CN": "爆发级",
-          "zh-TW": "爆发级",
+          "zh-TW": "爆發級",
           "ru": "Burst",
           "de": "Burst",
           "ja": "バースト",
@@ -1053,11 +989,10 @@
       "Babaroga": {
         "shipId": 88001,
         "points": 50,
-        "flagshipEligible": false,
         "names": {
           "en": "Babaroga",
-          "zh-CN": "Babaroga",
-          "zh-TW": "Babaroga",
+          "zh-CN": "巴巴罗加号",
+          "zh-TW": "巴巴羅加號",
           "ru": "Babaroga",
           "de": "Babaroga",
           "ja": "ババロガ",
@@ -1069,11 +1004,10 @@
       "Bhaalgorn": {
         "shipId": 17920,
         "points": 50,
-        "flagshipEligible": false,
         "names": {
           "en": "Bhaalgorn",
           "zh-CN": "巴戈龙级",
-          "zh-TW": "巴戈龙级",
+          "zh-TW": "巴戈龍級",
           "ru": "Bhaalgorn",
           "de": "Bhaalgorn",
           "ja": "バールゴーン",
@@ -1085,11 +1019,10 @@
       "Rattlesnake": {
         "shipId": 17918,
         "points": 50,
-        "flagshipEligible": false,
         "names": {
           "en": "Rattlesnake",
           "zh-CN": "响尾蛇级",
-          "zh-TW": "响尾蛇级",
+          "zh-TW": "響尾蛇級",
           "ru": "Rattlesnake",
           "de": "Rattlesnake",
           "ja": "ラトルスネーク",
@@ -1101,11 +1034,10 @@
       "Barghest": {
         "shipId": 33820,
         "points": 50,
-        "flagshipEligible": false,
         "names": {
           "en": "Barghest",
           "zh-CN": "巴盖斯级",
-          "zh-TW": "巴盖斯级",
+          "zh-TW": "巴蓋斯級",
           "ru": "Barghest",
           "de": "Barghest",
           "ja": "バーゲスト",
@@ -1117,11 +1049,10 @@
       "Nightmare": {
         "shipId": 17736,
         "points": 49,
-        "flagshipEligible": false,
         "names": {
           "en": "Nightmare",
           "zh-CN": "噩梦级",
-          "zh-TW": "噩梦级",
+          "zh-TW": "噩夢級",
           "ru": "Nightmare",
           "de": "Nightmare",
           "ja": "ナイトメア",
@@ -1133,11 +1064,10 @@
       "Leshak": {
         "shipId": 47271,
         "points": 49,
-        "flagshipEligible": false,
         "names": {
           "en": "Leshak",
           "zh-CN": "勒沙克级",
-          "zh-TW": "勒沙克级",
+          "zh-TW": "勒沙克級",
           "ru": "Leshak",
           "de": "Leshak",
           "ja": "レシャク",
@@ -1149,11 +1079,10 @@
       "Widow": {
         "shipId": 22436,
         "points": 48,
-        "flagshipEligible": false,
         "names": {
           "en": "Widow",
           "zh-CN": "寡妇级",
-          "zh-TW": "寡妇级",
+          "zh-TW": "寡婦級",
           "ru": "Widow",
           "de": "Widow",
           "ja": "ウィドウ",
@@ -1165,11 +1094,10 @@
       "Paladin": {
         "shipId": 28659,
         "points": 47,
-        "flagshipEligible": false,
         "names": {
           "en": "Paladin",
           "zh-CN": "帕拉丁级",
-          "zh-TW": "帕拉丁级",
+          "zh-TW": "帕拉丁級",
           "ru": "Paladin",
           "de": "Paladin",
           "ja": "パラディン",
@@ -1181,11 +1109,10 @@
       "Vargur": {
         "shipId": 28665,
         "points": 47,
-        "flagshipEligible": false,
         "names": {
           "en": "Vargur",
           "zh-CN": "恶狼级",
-          "zh-TW": "恶狼级",
+          "zh-TW": "惡狼級",
           "ru": "Vargur",
           "de": "Vargur",
           "ja": "ヴァーガー",
@@ -1197,11 +1124,10 @@
       "Vindicator": {
         "shipId": 17740,
         "points": 47,
-        "flagshipEligible": false,
         "names": {
           "en": "Vindicator",
-          "zh-CN": "惩戒者级",
-          "zh-TW": "惩戒者级",
+          "zh-CN": "复仇者级",
+          "zh-TW": "復仇者級",
           "ru": "Vindicator",
           "de": "Vindicator",
           "ja": "ビンディケイター",
@@ -1213,11 +1139,10 @@
       "Kronos": {
         "shipId": 28661,
         "points": 46,
-        "flagshipEligible": false,
         "names": {
           "en": "Kronos",
           "zh-CN": "克洛诺斯级",
-          "zh-TW": "克洛诺斯级",
+          "zh-TW": "克洛諾斯級",
           "ru": "Kronos",
           "de": "Kronos",
           "ja": "クロノス",
@@ -1229,11 +1154,10 @@
       "Golem": {
         "shipId": 28710,
         "points": 45,
-        "flagshipEligible": false,
         "names": {
           "en": "Golem",
           "zh-CN": "魔像级",
-          "zh-TW": "魔像级",
+          "zh-TW": "魔像級",
           "ru": "Golem",
           "de": "Golem",
           "ja": "ゴーレム",
@@ -1245,11 +1169,10 @@
       "Machariel": {
         "shipId": 17738,
         "points": 45,
-        "flagshipEligible": false,
         "names": {
           "en": "Machariel",
           "zh-CN": "马克瑞级",
-          "zh-TW": "马克瑞级",
+          "zh-TW": "馬克瑞級",
           "ru": "Machariel",
           "de": "Machariel",
           "ja": "マカリエル",
@@ -1261,11 +1184,10 @@
       "Typhoon Fleet Issue": {
         "shipId": 32311,
         "points": 44,
-        "flagshipEligible": false,
         "names": {
           "en": "Typhoon Fleet Issue",
           "zh-CN": "台风级舰队型",
-          "zh-TW": "台风级舰队型",
+          "zh-TW": "颱風級艦隊型",
           "ru": "Typhoon Fleet Issue",
           "de": "Typhoon Fleet Issue",
           "ja": "タイフーン海軍仕様",
@@ -1277,11 +1199,10 @@
       "Dominix Navy Issue": {
         "shipId": 32307,
         "points": 43,
-        "flagshipEligible": false,
         "names": {
           "en": "Dominix Navy Issue",
           "zh-CN": "多米尼克斯级海军型",
-          "zh-TW": "多米尼克斯级海军型",
+          "zh-TW": "多米尼克斯級海軍型",
           "ru": "Dominix Navy Issue",
           "de": "Dominix Navy Issue",
           "ja": "ドミニックス海軍仕様",
@@ -1293,11 +1214,10 @@
       "Armageddon Navy Issue": {
         "shipId": 32305,
         "points": 42,
-        "flagshipEligible": false,
         "names": {
           "en": "Armageddon Navy Issue",
           "zh-CN": "末日沙场级海军型",
-          "zh-TW": "末日沙场级海军型",
+          "zh-TW": "末日沙場級海軍型",
           "ru": "Armageddon Navy Issue",
           "de": "Armageddon Navy Issue",
           "ja": "アルマゲドン海軍仕様",
@@ -1309,11 +1229,10 @@
       "Scorpion Navy Issue": {
         "shipId": 32309,
         "points": 42,
-        "flagshipEligible": false,
         "names": {
           "en": "Scorpion Navy Issue",
           "zh-CN": "毒蝎级海军型",
-          "zh-TW": "毒蝎级海军型",
+          "zh-TW": "毒蠍級海軍型",
           "ru": "Scorpion Navy Issue",
           "de": "Scorpion Navy Issue",
           "ja": "スコーピオン海軍仕様",
@@ -1325,11 +1244,10 @@
       "Redeemer": {
         "shipId": 22428,
         "points": 41,
-        "flagshipEligible": false,
         "names": {
           "en": "Redeemer",
           "zh-CN": "救世级",
-          "zh-TW": "救世级",
+          "zh-TW": "救世級",
           "ru": "Redeemer",
           "de": "Redeemer",
           "ja": "リディーマー",
@@ -1341,11 +1259,10 @@
       "Sin": {
         "shipId": 22430,
         "points": 41,
-        "flagshipEligible": false,
         "names": {
           "en": "Sin",
           "zh-CN": "罪恶级",
-          "zh-TW": "罪恶级",
+          "zh-TW": "罪惡級",
           "ru": "Sin",
           "de": "Sin",
           "ja": "シン",
@@ -1357,11 +1274,10 @@
       "Panther": {
         "shipId": 22440,
         "points": 41,
-        "flagshipEligible": false,
         "names": {
           "en": "Panther",
           "zh-CN": "黑豹级",
-          "zh-TW": "黑豹级",
+          "zh-TW": "黑豹級",
           "ru": "Panther",
           "de": "Panther",
           "ja": "パンサー",
@@ -1373,11 +1289,10 @@
       "Apocalypse Navy Issue": {
         "shipId": 17726,
         "points": 40,
-        "flagshipEligible": false,
         "names": {
           "en": "Apocalypse Navy Issue",
           "zh-CN": "灾难级海军型",
-          "zh-TW": "灾难级海军型",
+          "zh-TW": "災難級海軍型",
           "ru": "Apocalypse Navy Issue",
           "de": "Apocalypse Navy Issue",
           "ja": "アポカリプス海軍仕様",
@@ -1389,11 +1304,10 @@
       "Megathron Navy Issue": {
         "shipId": 17728,
         "points": 40,
-        "flagshipEligible": false,
         "names": {
           "en": "Megathron Navy Issue",
           "zh-CN": "万王宝座级海军型",
-          "zh-TW": "万王宝座级海军型",
+          "zh-TW": "萬王寶座級海軍型",
           "ru": "Megathron Navy Issue",
           "de": "Megathron Navy Issue",
           "ja": "メガソロン海軍仕様",
@@ -1405,11 +1319,10 @@
       "Tempest Fleet Issue": {
         "shipId": 17732,
         "points": 40,
-        "flagshipEligible": false,
         "names": {
           "en": "Tempest Fleet Issue",
           "zh-CN": "狂暴级舰队型",
-          "zh-TW": "狂暴级舰队型",
+          "zh-TW": "狂暴級艦隊型",
           "ru": "Tempest Fleet Issue",
           "de": "Tempest Fleet Issue",
           "ja": "テンペスト海軍仕様",
@@ -1421,11 +1334,10 @@
       "Raven Navy Issue": {
         "shipId": 17636,
         "points": 38,
-        "flagshipEligible": false,
         "names": {
           "en": "Raven Navy Issue",
           "zh-CN": "乌鸦级海军型",
-          "zh-TW": "乌鸦级海军型",
+          "zh-TW": "烏鴉級海軍型",
           "ru": "Raven Navy Issue",
           "de": "Raven Navy Issue",
           "ja": "レイブン海軍仕様",
@@ -1437,11 +1349,10 @@
       "Abaddon": {
         "shipId": 24692,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Abaddon",
           "zh-CN": "地狱天使级",
-          "zh-TW": "地狱天使级",
+          "zh-TW": "地獄天使級",
           "ru": "Abaddon",
           "de": "Abaddon",
           "ja": "アバドン",
@@ -1453,11 +1364,10 @@
       "Apocalypse": {
         "shipId": 642,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Apocalypse",
           "zh-CN": "灾难级",
-          "zh-TW": "灾难级",
+          "zh-TW": "災難級",
           "ru": "Apocalypse",
           "de": "Apocalypse",
           "ja": "アポカリプス",
@@ -1469,11 +1379,10 @@
       "Armageddon": {
         "shipId": 643,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Armageddon",
           "zh-CN": "末日沙场级",
-          "zh-TW": "末日沙场级",
+          "zh-TW": "末日沙場級",
           "ru": "Armageddon",
           "de": "Armageddon",
           "ja": "アルマゲドン",
@@ -1485,11 +1394,10 @@
       "Scorpion": {
         "shipId": 640,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Scorpion",
           "zh-CN": "毒蝎级",
-          "zh-TW": "毒蝎级",
+          "zh-TW": "毒蠍級",
           "ru": "Scorpion",
           "de": "Scorpion",
           "ja": "スコーピオン",
@@ -1501,11 +1409,10 @@
       "Hyperion": {
         "shipId": 24690,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Hyperion",
           "zh-CN": "亥伯龙神级",
-          "zh-TW": "亥伯龙神级",
+          "zh-TW": "亥伯龍神級",
           "ru": "Hyperion",
           "de": "Hyperion",
           "ja": "ハイペリオン",
@@ -1517,11 +1424,10 @@
       "Dominix": {
         "shipId": 645,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Dominix",
           "zh-CN": "多米尼克斯级",
-          "zh-TW": "多米尼克斯级",
+          "zh-TW": "多米尼克斯級",
           "ru": "Dominix",
           "de": "Dominix",
           "ja": "ドミニックス",
@@ -1533,11 +1439,10 @@
       "Tempest": {
         "shipId": 639,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Tempest",
           "zh-CN": "狂暴级",
-          "zh-TW": "狂暴级",
+          "zh-TW": "狂暴級",
           "ru": "Tempest",
           "de": "Tempest",
           "ja": "テンペスト",
@@ -1549,11 +1454,10 @@
       "Typhoon": {
         "shipId": 644,
         "points": 37,
-        "flagshipEligible": false,
         "names": {
           "en": "Typhoon",
           "zh-CN": "台风级",
-          "zh-TW": "台风级",
+          "zh-TW": "颱風級",
           "ru": "Typhoon",
           "de": "Typhoon",
           "ja": "タイフーン",
@@ -1565,11 +1469,10 @@
       "Rokh": {
         "shipId": 24688,
         "points": 36,
-        "flagshipEligible": false,
         "names": {
           "en": "Rokh",
           "zh-CN": "鹏鲲级",
-          "zh-TW": "鹏鲲级",
+          "zh-TW": "鵬鯤級",
           "ru": "Rokh",
           "de": "Rokh",
           "ja": "ローク",
@@ -1581,11 +1484,10 @@
       "Megathron": {
         "shipId": 641,
         "points": 36,
-        "flagshipEligible": false,
         "names": {
           "en": "Megathron",
           "zh-CN": "万王宝座级",
-          "zh-TW": "万王宝座级",
+          "zh-TW": "萬王寶座級",
           "ru": "Megathron",
           "de": "Megathron",
           "ja": "メガソロン",
@@ -1597,11 +1499,10 @@
       "Raven": {
         "shipId": 638,
         "points": 35,
-        "flagshipEligible": false,
         "names": {
           "en": "Raven",
           "zh-CN": "乌鸦级",
-          "zh-TW": "乌鸦级",
+          "zh-TW": "烏鴉級",
           "ru": "Raven",
           "de": "Raven",
           "ja": "レイブン",
@@ -1613,11 +1514,10 @@
       "Praxis": {
         "shipId": 47466,
         "points": 35,
-        "flagshipEligible": false,
         "names": {
           "en": "Praxis",
           "zh-CN": "实践级",
-          "zh-TW": "实践级",
+          "zh-TW": "實踐級",
           "ru": "Praxis",
           "de": "Praxis",
           "ja": "プラクシス",
@@ -1629,11 +1529,10 @@
       "Thunderchild": {
         "shipId": 54733,
         "points": 40,
-        "flagshipEligible": false,
         "names": {
           "en": "Thunderchild",
           "zh-CN": "雷裔级",
-          "zh-TW": "雷裔级",
+          "zh-TW": "雷裔級",
           "ru": "Thunderchild",
           "de": "Thunderchild",
           "ja": "サンダーチャイルド",
@@ -1645,11 +1544,10 @@
       "Maelstrom": {
         "shipId": 24694,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Maelstrom",
           "zh-CN": "死亡漩涡级",
-          "zh-TW": "死亡漩涡级",
+          "zh-TW": "死亡漩渦級",
           "ru": "Maelstrom",
           "de": "Maelstrom",
           "ja": "メイルストローム",
@@ -1663,11 +1561,10 @@
       "Cenotaph": {
         "shipId": 85086,
         "points": 35,
-        "flagshipEligible": false,
         "names": {
           "en": "Cenotaph",
-          "zh-CN": "丰碑级",
-          "zh-TW": "丰碑级",
+          "zh-CN": "纪念碑级",
+          "zh-TW": "紀念碑級",
           "ru": "Cenotaph",
           "de": "Cenotaph",
           "ja": "セノターフ",
@@ -1679,11 +1576,10 @@
       "Damnation": {
         "shipId": 22474,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Damnation",
           "zh-CN": "永灭级",
-          "zh-TW": "永灭级",
+          "zh-TW": "永滅級",
           "ru": "Damnation",
           "de": "Damnation",
           "ja": "ダムネーション",
@@ -1695,11 +1591,10 @@
       "Absolution": {
         "shipId": 22448,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Absolution",
           "zh-CN": "救赎级",
-          "zh-TW": "救赎级",
+          "zh-TW": "救贖級",
           "ru": "Absolution",
           "de": "Absolution",
           "ja": "アブソリューション",
@@ -1711,11 +1606,10 @@
       "Vulture": {
         "shipId": 22446,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Vulture",
           "zh-CN": "兀鹫级",
-          "zh-TW": "兀鹫级",
+          "zh-TW": "兀鷲級",
           "ru": "Vulture",
           "de": "Vulture",
           "ja": "ボーチャー",
@@ -1727,11 +1621,10 @@
       "Nighthawk": {
         "shipId": 22470,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Nighthawk",
           "zh-CN": "夜鹰级",
-          "zh-TW": "夜鹰级",
+          "zh-TW": "夜鷹級",
           "ru": "Nighthawk",
           "de": "Nighthawk",
           "ja": "ナイトホーク",
@@ -1743,11 +1636,10 @@
       "Astarte": {
         "shipId": 22466,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Astarte",
           "zh-CN": "阿施塔特级",
-          "zh-TW": "阿施塔特级",
+          "zh-TW": "阿施塔特級",
           "ru": "Astarte",
           "de": "Astarte",
           "ja": "アスタルト",
@@ -1759,11 +1651,10 @@
       "Eos": {
         "shipId": 22442,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Eos",
           "zh-CN": "曙光女神级",
-          "zh-TW": "曙光女神级",
+          "zh-TW": "曙光女神級",
           "ru": "Eos",
           "de": "Eos",
           "ja": "エオス",
@@ -1775,11 +1666,10 @@
       "Claymore": {
         "shipId": 22468,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Claymore",
           "zh-CN": "月刃级",
-          "zh-TW": "月刃级",
+          "zh-TW": "月刃級",
           "ru": "Claymore",
           "de": "Claymore",
           "ja": "クレイモア",
@@ -1791,11 +1681,10 @@
       "Sleipnir": {
         "shipId": 22444,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Sleipnir",
           "zh-CN": "斯雷普尼级",
-          "zh-TW": "斯雷普尼级",
+          "zh-TW": "斯雷普尼級",
           "ru": "Sleipnir",
           "de": "Sleipnir",
           "ja": "スレイプニル",
@@ -1807,11 +1696,10 @@
       "Alligator": {
         "shipId": 78366,
         "points": 34,
-        "flagshipEligible": false,
         "names": {
           "en": "Alligator",
           "zh-CN": "短吻鳄级",
-          "zh-TW": "短吻鳄级",
+          "zh-TW": "短吻鱷級",
           "ru": "Alligator",
           "de": "Alligator",
           "ja": "アリゲーター",
@@ -1823,11 +1711,10 @@
       "Khizriel": {
         "shipId": 78369,
         "points": 33,
-        "flagshipEligible": false,
         "names": {
           "en": "Khizriel",
-          "zh-CN": "基兹里尔级",
-          "zh-TW": "基兹里尔级",
+          "zh-CN": "希兹里尔级",
+          "zh-TW": "希茲里爾級",
           "ru": "Khizriel",
           "de": "Khizriel",
           "ja": "キズリエル",
@@ -1839,11 +1726,10 @@
       "Drekavac": {
         "shipId": 49711,
         "points": 32,
-        "flagshipEligible": false,
         "names": {
           "en": "Drekavac",
           "zh-CN": "德雷卡瓦级",
-          "zh-TW": "德雷卡瓦级",
+          "zh-TW": "德雷卡瓦級",
           "ru": "Drekavac",
           "de": "Drekavac",
           "ja": "ドレカヴァク",
@@ -1855,11 +1741,10 @@
       "Harbinger Navy Issue": {
         "shipId": 33155,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Harbinger Navy Issue",
           "zh-CN": "先驱者级海军型",
-          "zh-TW": "先驱者级海军型",
+          "zh-TW": "先驅者級海軍型",
           "ru": "Harbinger Navy Issue",
           "de": "Harbinger Navy Issue",
           "ja": "ハービンジャー海軍仕様",
@@ -1871,11 +1756,10 @@
       "Brutix Navy Issue": {
         "shipId": 33151,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Brutix Navy Issue",
           "zh-CN": "布鲁提克斯级海军型",
-          "zh-TW": "布鲁提克斯级海军型",
+          "zh-TW": "布魯提克斯級海軍型",
           "ru": "Brutix Navy Issue",
           "de": "Brutix Navy Issue",
           "ja": "ブルティクス海軍仕様",
@@ -1887,11 +1771,10 @@
       "Hurricane Fleet Issue": {
         "shipId": 33157,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Hurricane Fleet Issue",
           "zh-CN": "暴风级舰队型",
-          "zh-TW": "暴风级舰队型",
+          "zh-TW": "暴風級艦隊型",
           "ru": "Hurricane Fleet Issue",
           "de": "Hurricane Fleet Issue",
           "ja": "ハリケーン海軍仕様",
@@ -1903,11 +1786,10 @@
       "Cyclone Fleet Issue": {
         "shipId": 72811,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Cyclone Fleet Issue",
           "zh-CN": "飓风级舰队型",
-          "zh-TW": "飓风级舰队型",
+          "zh-TW": "颶風級艦隊型",
           "ru": "Cyclone Fleet Issue",
           "de": "Cyclone Fleet Issue",
           "ja": "サイクロン海軍仕様",
@@ -1919,11 +1801,10 @@
       "Prophecy Navy Issue": {
         "shipId": 72872,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Prophecy Navy Issue",
           "zh-CN": "先知级海军型",
-          "zh-TW": "先知级海军型",
+          "zh-TW": "先知級海軍型",
           "ru": "Prophecy Navy Issue",
           "de": "Prophecy Navy Issue",
           "ja": "プロフェシー海軍仕様",
@@ -1935,11 +1816,10 @@
       "Myrmidon Navy Issue": {
         "shipId": 72869,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Myrmidon Navy Issue",
           "zh-CN": "弥洱米顿级海军型",
-          "zh-TW": "弥洱米顿级海军型",
+          "zh-TW": "彌洱米頓級海軍型",
           "ru": "Myrmidon Navy Issue",
           "de": "Myrmidon Navy Issue",
           "ja": "ミュルミドン海軍仕様",
@@ -1951,11 +1831,10 @@
       "Drake Navy Issue": {
         "shipId": 33153,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Drake Navy Issue",
           "zh-CN": "幼龙级海军型",
-          "zh-TW": "幼龙级海军型",
+          "zh-TW": "幼龍級海軍型",
           "ru": "Drake Navy Issue",
           "de": "Drake Navy Issue",
           "ja": "ドレイク海軍仕様",
@@ -1967,11 +1846,10 @@
       "Ferox Navy Issue": {
         "shipId": 72812,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Ferox Navy Issue",
           "zh-CN": "猛鲑级海军型",
-          "zh-TW": "猛鲑级海军型",
+          "zh-TW": "猛鮭級海軍型",
           "ru": "Ferox Navy Issue",
           "de": "Ferox Navy Issue",
           "ja": "フェロックス海軍仕様",
@@ -1983,11 +1861,10 @@
       "Prophecy": {
         "shipId": 16233,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Prophecy",
           "zh-CN": "先知级",
-          "zh-TW": "先知级",
+          "zh-TW": "先知級",
           "ru": "Prophecy",
           "de": "Prophecy",
           "ja": "プロフェシー",
@@ -1999,11 +1876,10 @@
       "Harbinger": {
         "shipId": 24696,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Harbinger",
           "zh-CN": "先驱者级",
-          "zh-TW": "先驱者级",
+          "zh-TW": "先驅者級",
           "ru": "Harbinger",
           "de": "Harbinger",
           "ja": "ハービンジャー",
@@ -2015,11 +1891,10 @@
       "Drake": {
         "shipId": 24698,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Drake",
           "zh-CN": "幼龙级",
-          "zh-TW": "幼龙级",
+          "zh-TW": "幼龍級",
           "ru": "Drake",
           "de": "Drake",
           "ja": "ドレイク",
@@ -2031,11 +1906,10 @@
       "Ferox": {
         "shipId": 16227,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Ferox",
           "zh-CN": "猛鲑级",
-          "zh-TW": "猛鲑级",
+          "zh-TW": "猛鮭級",
           "ru": "Ferox",
           "de": "Ferox",
           "ja": "フェロックス",
@@ -2047,11 +1921,10 @@
       "Brutix": {
         "shipId": 16229,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Brutix",
           "zh-CN": "布鲁提克斯级",
-          "zh-TW": "布鲁提克斯级",
+          "zh-TW": "布魯提克斯級",
           "ru": "Brutix",
           "de": "Brutix",
           "ja": "ブルティクス",
@@ -2063,11 +1936,10 @@
       "Myrmidon": {
         "shipId": 24700,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Myrmidon",
           "zh-CN": "弥洱米顿级",
-          "zh-TW": "弥洱米顿级",
+          "zh-TW": "彌洱米頓級",
           "ru": "Myrmidon",
           "de": "Myrmidon",
           "ja": "ミュルミドン",
@@ -2079,11 +1951,10 @@
       "Hurricane": {
         "shipId": 24702,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Hurricane",
           "zh-CN": "暴风级",
-          "zh-TW": "暴风级",
+          "zh-TW": "暴風級",
           "ru": "Hurricane",
           "de": "Hurricane",
           "ja": "ハリケーン",
@@ -2095,11 +1966,10 @@
       "Cyclone": {
         "shipId": 16231,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Cyclone",
           "zh-CN": "飓风级",
-          "zh-TW": "飓风级",
+          "zh-TW": "颶風級",
           "ru": "Cyclone",
           "de": "Cyclone",
           "ja": "サイクロン",
@@ -2111,11 +1981,10 @@
       "Gnosis": {
         "shipId": 3756,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Gnosis",
           "zh-CN": "灵感级",
-          "zh-TW": "灵感级",
+          "zh-TW": "靈感級",
           "ru": "Gnosis",
           "de": "Gnosis",
           "ja": "グノーシス",
@@ -2127,11 +1996,10 @@
       "Oracle": {
         "shipId": 4302,
         "points": 21,
-        "flagshipEligible": false,
         "names": {
           "en": "Oracle",
           "zh-CN": "预言级",
-          "zh-TW": "预言级",
+          "zh-TW": "預言級",
           "ru": "Oracle",
           "de": "Oracle",
           "ja": "オラクル",
@@ -2143,11 +2011,10 @@
       "Talos": {
         "shipId": 4308,
         "points": 21,
-        "flagshipEligible": false,
         "names": {
           "en": "Talos",
           "zh-CN": "塔洛斯级",
-          "zh-TW": "塔洛斯级",
+          "zh-TW": "塔洛斯級",
           "ru": "Talos",
           "de": "Talos",
           "ja": "タロス",
@@ -2159,11 +2026,10 @@
       "Tornado": {
         "shipId": 4310,
         "points": 21,
-        "flagshipEligible": false,
         "names": {
           "en": "Tornado",
           "zh-CN": "龙卷风级",
-          "zh-TW": "龙卷风级",
+          "zh-TW": "龍捲風級",
           "ru": "Tornado",
           "de": "Tornado",
           "ja": "トルネード",
@@ -2175,11 +2041,10 @@
       "Naga": {
         "shipId": 4306,
         "points": 20,
-        "flagshipEligible": false,
         "names": {
           "en": "Naga",
           "zh-CN": "娜迦级",
-          "zh-TW": "娜迦级",
+          "zh-TW": "娜迦級",
           "ru": "Naga",
           "de": "Naga",
           "ja": "ナーガ",
@@ -2193,11 +2058,10 @@
       "Laelaps": {
         "shipId": 60764,
         "points": 41,
-        "flagshipEligible": false,
         "names": {
           "en": "Laelaps",
           "zh-CN": "猎獒级",
-          "zh-TW": "猎獒级",
+          "zh-TW": "獵獒級",
           "ru": "Laelaps",
           "de": "Laelaps",
           "ja": "ライラプス",
@@ -2209,11 +2073,10 @@
       "Cybele": {
         "shipId": 77726,
         "points": 40,
-        "flagshipEligible": false,
         "names": {
           "en": "Cybele",
           "zh-CN": "西布勒级",
-          "zh-TW": "西布勒级",
+          "zh-TW": "西布勒級",
           "ru": "Cybele",
           "de": "Cybele",
           "ja": "キュベレー",
@@ -2225,11 +2088,10 @@
       "Bestla": {
         "shipId": 74316,
         "points": 39,
-        "flagshipEligible": false,
         "names": {
           "en": "Bestla",
-          "zh-CN": "贝斯特拉级",
-          "zh-TW": "贝斯特拉级",
+          "zh-CN": "贝斯特拉",
+          "zh-TW": "貝斯特拉",
           "ru": "Bestla",
           "de": "Bestla",
           "ja": "ベストラ",
@@ -2241,11 +2103,10 @@
       "Cobra": {
         "shipId": 85229,
         "points": 36,
-        "flagshipEligible": false,
         "names": {
           "en": "Cobra",
           "zh-CN": "眼镜蛇级",
-          "zh-TW": "眼镜蛇级",
+          "zh-TW": "眼鏡蛇級",
           "ru": "Cobra",
           "de": "Cobra",
           "ja": "コブラ",
@@ -2257,11 +2118,10 @@
       "Curse": {
         "shipId": 20125,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Curse",
           "zh-CN": "诅咒级",
-          "zh-TW": "诅咒级",
+          "zh-TW": "詛咒級",
           "ru": "Curse",
           "de": "Curse",
           "ja": "カース",
@@ -2273,11 +2133,10 @@
       "Legion": {
         "shipId": 29986,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Legion",
           "zh-CN": "圣卒级",
-          "zh-TW": "圣卒级",
+          "zh-TW": "聖卒級",
           "ru": "Legion",
           "de": "Legion",
           "ja": "レギオン",
@@ -2289,11 +2148,10 @@
       "Tengu": {
         "shipId": 29984,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Tengu",
           "zh-CN": "金鹏级",
-          "zh-TW": "金鹏级",
+          "zh-TW": "金鵬級",
           "ru": "Tengu",
           "de": "Tengu",
           "ja": "テング",
@@ -2305,11 +2163,10 @@
       "Proteus": {
         "shipId": 29988,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Proteus",
           "zh-CN": "海神级",
-          "zh-TW": "海神级",
+          "zh-TW": "海神級",
           "ru": "Proteus",
           "de": "Proteus",
           "ja": "プロテウス",
@@ -2321,11 +2178,10 @@
       "Loki": {
         "shipId": 29990,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Loki",
           "zh-CN": "洛基级",
-          "zh-TW": "洛基级",
+          "zh-TW": "洛基級",
           "ru": "Loki",
           "de": "Loki",
           "ja": "ロキ",
@@ -2337,11 +2193,10 @@
       "Falcon": {
         "shipId": 11957,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Falcon",
           "zh-CN": "战隼级",
-          "zh-TW": "战隼级",
+          "zh-TW": "戰隼級",
           "ru": "Falcon",
           "de": "Falcon",
           "ja": "ファルコン",
@@ -2353,11 +2208,10 @@
       "Rook": {
         "shipId": 11959,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Rook",
           "zh-CN": "白嘴鸦级",
-          "zh-TW": "白嘴鸦级",
+          "zh-TW": "白嘴鴉級",
           "ru": "Rook",
           "de": "Rook",
           "ja": "ルーク",
@@ -2369,11 +2223,10 @@
       "Arazu": {
         "shipId": 11969,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Arazu",
           "zh-CN": "埃拉兹级",
-          "zh-TW": "埃拉兹级",
+          "zh-TW": "埃拉茲級",
           "ru": "Arazu",
           "de": "Arazu",
           "ja": "アラズ",
@@ -2385,11 +2238,10 @@
       "Lachesis": {
         "shipId": 11971,
         "points": 28,
-        "flagshipEligible": false,
         "names": {
           "en": "Lachesis",
           "zh-CN": "拉克希斯级",
-          "zh-TW": "拉克希斯级",
+          "zh-TW": "拉克希斯級",
           "ru": "Lachesis",
           "de": "Lachesis",
           "ja": "ラケシス",
@@ -2401,11 +2253,10 @@
       "Ikitursa": {
         "shipId": 52252,
         "points": 26,
-        "flagshipEligible": false,
         "names": {
           "en": "Ikitursa",
           "zh-CN": "伊基图萨级",
-          "zh-TW": "伊基图萨级",
+          "zh-TW": "伊基圖薩級",
           "ru": "Ikitursa",
           "de": "Ikitursa",
           "ja": "イキトゥルサ",
@@ -2417,11 +2268,10 @@
       "Pilgrim": {
         "shipId": 11965,
         "points": 25,
-        "flagshipEligible": false,
         "names": {
           "en": "Pilgrim",
-          "zh-CN": "皮尔格里姆级",
-          "zh-TW": "皮尔格里姆级",
+          "zh-CN": "朝圣级",
+          "zh-TW": "朝聖級",
           "ru": "Pilgrim",
           "de": "Pilgrim",
           "ja": "ピルグリム",
@@ -2433,11 +2283,10 @@
       "Huginn": {
         "shipId": 11961,
         "points": 25,
-        "flagshipEligible": false,
         "names": {
           "en": "Huginn",
           "zh-CN": "休津级",
-          "zh-TW": "休津级",
+          "zh-TW": "休津級",
           "ru": "Huginn",
           "de": "Huginn",
           "ja": "フギン",
@@ -2449,11 +2298,10 @@
       "Rapier": {
         "shipId": 11963,
         "points": 25,
-        "flagshipEligible": false,
         "names": {
           "en": "Rapier",
           "zh-CN": "长剑级",
-          "zh-TW": "长剑级",
+          "zh-TW": "長劍級",
           "ru": "Rapier",
           "de": "Rapier",
           "ja": "レイピア",
@@ -2465,11 +2313,10 @@
       "Devoter": {
         "shipId": 12017,
         "points": 24,
-        "flagshipEligible": false,
         "names": {
           "en": "Devoter",
           "zh-CN": "奉献级",
-          "zh-TW": "奉献级",
+          "zh-TW": "奉獻級",
           "ru": "Devoter",
           "de": "Devoter",
           "ja": "ディボーター",
@@ -2481,11 +2328,10 @@
       "Onyx": {
         "shipId": 11995,
         "points": 24,
-        "flagshipEligible": false,
         "names": {
           "en": "Onyx",
           "zh-CN": "奥尼克斯级",
-          "zh-TW": "奥尼克斯级",
+          "zh-TW": "奧尼克斯級",
           "ru": "Onyx",
           "de": "Onyx",
           "ja": "オニキス",
@@ -2497,11 +2343,10 @@
       "Phobos": {
         "shipId": 12021,
         "points": 24,
-        "flagshipEligible": false,
         "names": {
           "en": "Phobos",
           "zh-CN": "伏波斯级",
-          "zh-TW": "伏波斯级",
+          "zh-TW": "伏波斯級",
           "ru": "Phobos",
           "de": "Phobos",
           "ja": "フォボス",
@@ -2513,11 +2358,10 @@
       "Broadsword": {
         "shipId": 12013,
         "points": 24,
-        "flagshipEligible": false,
         "names": {
           "en": "Broadsword",
           "zh-CN": "阔刀级",
-          "zh-TW": "阔刀级",
+          "zh-TW": "闊刀級",
           "ru": "Broadsword",
           "de": "Broadsword",
           "ja": "ブロードソード",
@@ -2529,11 +2373,10 @@
       "Gila": {
         "shipId": 17715,
         "points": 24,
-        "flagshipEligible": false,
         "names": {
           "en": "Gila",
           "zh-CN": "毒蜥级",
-          "zh-TW": "毒蜥级",
+          "zh-TW": "毒蜥級",
           "ru": "Gila",
           "de": "Gila",
           "ja": "ギラ",
@@ -2545,11 +2388,10 @@
       "Sacrilege": {
         "shipId": 12019,
         "points": 23,
-        "flagshipEligible": false,
         "names": {
           "en": "Sacrilege",
           "zh-CN": "渎圣级",
-          "zh-TW": "渎圣级",
+          "zh-TW": "瀆聖級",
           "ru": "Sacrilege",
           "de": "Sacrilege",
           "ja": "サクリッジ",
@@ -2561,11 +2403,10 @@
       "Deimos": {
         "shipId": 12023,
         "points": 23,
-        "flagshipEligible": false,
         "names": {
           "en": "Deimos",
           "zh-CN": "戴默斯级",
-          "zh-TW": "戴默斯级",
+          "zh-TW": "戴默斯級",
           "ru": "Deimos",
           "de": "Deimos",
           "ja": "デイモス",
@@ -2577,11 +2418,10 @@
       "Vagabond": {
         "shipId": 11999,
         "points": 23,
-        "flagshipEligible": false,
         "names": {
           "en": "Vagabond",
           "zh-CN": "流浪级",
-          "zh-TW": "流浪级",
+          "zh-TW": "流浪級",
           "ru": "Vagabond",
           "de": "Vagabond",
           "ja": "バガボンド",
@@ -2593,11 +2433,10 @@
       "Zealot": {
         "shipId": 12003,
         "points": 22,
-        "flagshipEligible": false,
         "names": {
           "en": "Zealot",
           "zh-CN": "狂热级",
-          "zh-TW": "狂热级",
+          "zh-TW": "狂熱級",
           "ru": "Zealot",
           "de": "Zealot",
           "ja": "ゼレット",
@@ -2609,11 +2448,10 @@
       "Ishtar": {
         "shipId": 12005,
         "points": 22,
-        "flagshipEligible": false,
         "names": {
           "en": "Ishtar",
           "zh-CN": "伊什塔级",
-          "zh-TW": "伊什塔级",
+          "zh-TW": "伊什塔級",
           "ru": "Ishtar",
           "de": "Ishtar",
           "ja": "イシュタル",
@@ -2625,11 +2463,10 @@
       "Muninn": {
         "shipId": 12015,
         "points": 22,
-        "flagshipEligible": false,
         "names": {
           "en": "Muninn",
           "zh-CN": "缪宁级",
-          "zh-TW": "缪宁级",
+          "zh-TW": "繆寧級",
           "ru": "Muninn",
           "de": "Muninn",
           "ja": "ムニン",
@@ -2641,11 +2478,10 @@
       "Cerberus": {
         "shipId": 11993,
         "points": 21,
-        "flagshipEligible": false,
         "names": {
           "en": "Cerberus",
           "zh-CN": "希尔博拉斯级",
-          "zh-TW": "希尔博拉斯级",
+          "zh-TW": "希爾博拉斯級",
           "ru": "Cerberus",
           "de": "Cerberus",
           "ja": "ケルベロス",
@@ -2657,11 +2493,10 @@
       "Eagle": {
         "shipId": 12011,
         "points": 20,
-        "flagshipEligible": false,
         "names": {
           "en": "Eagle",
           "zh-CN": "银鹰级",
-          "zh-TW": "银鹰级",
+          "zh-TW": "銀鷹級",
           "ru": "Eagle",
           "de": "Eagle",
           "ja": "イーグル",
@@ -2673,11 +2508,10 @@
       "Orthrus": {
         "shipId": 33818,
         "points": 19,
-        "flagshipEligible": false,
         "names": {
           "en": "Orthrus",
           "zh-CN": "奥苏斯级",
-          "zh-TW": "奥苏斯级",
+          "zh-TW": "奧蘇斯級",
           "ru": "Orthrus",
           "de": "Orthrus",
           "ja": "オーソラス",
@@ -2689,11 +2523,10 @@
       "Vedmak": {
         "shipId": 47270,
         "points": 19,
-        "flagshipEligible": false,
         "names": {
           "en": "Vedmak",
           "zh-CN": "维德马克级",
-          "zh-TW": "维德马克级",
+          "zh-TW": "維德馬克級",
           "ru": "Vedmak",
           "de": "Vedmak",
           "ja": "ヴェドマック",
@@ -2705,11 +2538,10 @@
       "Ashimmu": {
         "shipId": 17922,
         "points": 18,
-        "flagshipEligible": false,
         "names": {
           "en": "Ashimmu",
           "zh-CN": "阿什姆级",
-          "zh-TW": "阿什姆级",
+          "zh-TW": "阿什姆級",
           "ru": "Ashimmu",
           "de": "Ashimmu",
           "ja": "アシッムー",
@@ -2721,11 +2553,10 @@
       "Phantasm": {
         "shipId": 17718,
         "points": 18,
-        "flagshipEligible": false,
         "names": {
           "en": "Phantasm",
           "zh-CN": "幽灵级",
-          "zh-TW": "幽灵级",
+          "zh-TW": "幽靈級",
           "ru": "Phantasm",
           "de": "Phantasm",
           "ja": "ファンタズム",
@@ -2737,11 +2568,10 @@
       "Stratios": {
         "shipId": 33470,
         "points": 18,
-        "flagshipEligible": false,
         "names": {
           "en": "Stratios",
           "zh-CN": "斯特修斯级",
-          "zh-TW": "斯特修斯级",
+          "zh-TW": "斯特修斯級",
           "ru": "Stratios",
           "de": "Stratios",
           "ja": "ストラティオス",
@@ -2753,11 +2583,10 @@
       "Vigilant": {
         "shipId": 17722,
         "points": 18,
-        "flagshipEligible": false,
         "names": {
           "en": "Vigilant",
           "zh-CN": "警惕级",
-          "zh-TW": "警惕级",
+          "zh-TW": "警惕級",
           "ru": "Vigilant",
           "de": "Vigilant",
           "ja": "ヴィジラント",
@@ -2769,11 +2598,10 @@
       "Augoror Navy Issue": {
         "shipId": 29337,
         "points": 17,
-        "flagshipEligible": false,
         "names": {
           "en": "Augoror Navy Issue",
           "zh-CN": "奥格诺级海军型",
-          "zh-TW": "奥格诺级海军型",
+          "zh-TW": "奧格諾級海軍型",
           "ru": "Augoror Navy Issue",
           "de": "Augoror Navy Issue",
           "ja": "オーゴロー海軍仕様",
@@ -2785,11 +2613,10 @@
       "Omen Navy Issue": {
         "shipId": 17709,
         "points": 16,
-        "flagshipEligible": false,
         "names": {
           "en": "Omen Navy Issue",
           "zh-CN": "启示级海军型",
-          "zh-TW": "启示级海军型",
+          "zh-TW": "啟示級海軍型",
           "ru": "Omen Navy Issue",
           "de": "Omen Navy Issue",
           "ja": "オーメン海軍仕様",
@@ -2801,11 +2628,10 @@
       "Exequror Navy Issue": {
         "shipId": 29344,
         "points": 16,
-        "flagshipEligible": false,
         "names": {
           "en": "Exequror Navy Issue",
           "zh-CN": "送葬者级海军型",
-          "zh-TW": "送葬者级海军型",
+          "zh-TW": "送葬者級海軍型",
           "ru": "Exequror Navy Issue",
           "de": "Exequror Navy Issue",
           "ja": "イクセキュラー海軍仕様",
@@ -2817,11 +2643,10 @@
       "Vexor Navy Issue": {
         "shipId": 17843,
         "points": 16,
-        "flagshipEligible": false,
         "names": {
           "en": "Vexor Navy Issue",
           "zh-CN": "狂怒者级海军型",
-          "zh-TW": "狂怒者级海军型",
+          "zh-TW": "狂怒者級海軍型",
           "ru": "Vexor Navy Issue",
           "de": "Vexor Navy Issue",
           "ja": "ベクサー海軍仕様",
@@ -2833,11 +2658,10 @@
       "Scythe Fleet Issue": {
         "shipId": 29336,
         "points": 16,
-        "flagshipEligible": false,
         "names": {
           "en": "Scythe Fleet Issue",
           "zh-CN": "镰刀级舰队型",
-          "zh-TW": "镰刀级舰队型",
+          "zh-TW": "鐮刀級艦隊型",
           "ru": "Scythe Fleet Issue",
           "de": "Scythe Fleet Issue",
           "ja": "サイス海軍仕様",
@@ -2849,11 +2673,10 @@
       "Stabber Fleet Issue": {
         "shipId": 17713,
         "points": 16,
-        "flagshipEligible": false,
         "names": {
           "en": "Stabber Fleet Issue",
-          "zh-CN": "刺刀级舰队型",
-          "zh-TW": "刺刀级舰队型",
+          "zh-CN": "刺客级舰队型",
+          "zh-TW": "刺客級艦隊型",
           "ru": "Stabber Fleet Issue",
           "de": "Stabber Fleet Issue",
           "ja": "スタッバー海軍仕様",
@@ -2865,11 +2688,10 @@
       "Cynabal": {
         "shipId": 17720,
         "points": 15,
-        "flagshipEligible": false,
         "names": {
           "en": "Cynabal",
           "zh-CN": "塞纳波级",
-          "zh-TW": "塞纳波级",
+          "zh-TW": "塞納波級",
           "ru": "Cynabal",
           "de": "Cynabal",
           "ja": "サイノバル",
@@ -2881,11 +2703,10 @@
       "Caracal Navy Issue": {
         "shipId": 17634,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Caracal Navy Issue",
           "zh-CN": "狞獾级海军型",
-          "zh-TW": "狞獾级海军型",
+          "zh-TW": "獰獾級海軍型",
           "ru": "Caracal Navy Issue",
           "de": "Caracal Navy Issue",
           "ja": "カラカル海軍仕様",
@@ -2897,11 +2718,10 @@
       "Osprey Navy Issue": {
         "shipId": 29340,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Osprey Navy Issue",
           "zh-CN": "鱼鹰级海军型",
-          "zh-TW": "鱼鹰级海军型",
+          "zh-TW": "魚鷹級海軍型",
           "ru": "Osprey Navy Issue",
           "de": "Osprey Navy Issue",
           "ja": "オスプレイ海軍仕様",
@@ -2913,11 +2733,10 @@
       "Stormbringer": {
         "shipId": 54732,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Stormbringer",
           "zh-CN": "唤风级",
-          "zh-TW": "唤风级",
+          "zh-TW": "喚風級",
           "ru": "Stormbringer",
           "de": "Stormbringer",
           "ja": "ストームブリンガー",
@@ -2929,11 +2748,10 @@
       "Blackbird": {
         "shipId": 632,
         "points": 13,
-        "flagshipEligible": false,
         "names": {
           "en": "Blackbird",
           "zh-CN": "黑鸟级",
-          "zh-TW": "黑鸟级",
+          "zh-TW": "黑鳥級",
           "ru": "Blackbird",
           "de": "Blackbird",
           "ja": "ブラックバード",
@@ -2945,11 +2763,10 @@
       "Celestis": {
         "shipId": 633,
         "points": 13,
-        "flagshipEligible": false,
         "names": {
           "en": "Celestis",
           "zh-CN": "星空级",
-          "zh-TW": "星空级",
+          "zh-TW": "星空級",
           "ru": "Celestis",
           "de": "Celestis",
           "ja": "セレスティス",
@@ -2961,11 +2778,10 @@
       "Arbitrator": {
         "shipId": 628,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Arbitrator",
           "zh-CN": "主宰级",
-          "zh-TW": "主宰级",
+          "zh-TW": "主宰級",
           "ru": "Arbitrator",
           "de": "Arbitrator",
           "ja": "アービトレイター",
@@ -2977,11 +2793,10 @@
       "Bellicose": {
         "shipId": 630,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Bellicose",
           "zh-CN": "挑战级",
-          "zh-TW": "挑战级",
+          "zh-TW": "挑戰級",
           "ru": "Bellicose",
           "de": "Bellicose",
           "ja": "ベリコース",
@@ -2993,11 +2808,10 @@
       "Maller": {
         "shipId": 624,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Maller",
           "zh-CN": "暴君级",
-          "zh-TW": "暴君级",
+          "zh-TW": "暴君級",
           "ru": "Maller",
           "de": "Maller",
           "ja": "モーラー",
@@ -3009,11 +2823,10 @@
       "Omen": {
         "shipId": 2006,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Omen",
           "zh-CN": "启示级",
-          "zh-TW": "启示级",
+          "zh-TW": "啟示級",
           "ru": "Omen",
           "de": "Omen",
           "ja": "オーメン",
@@ -3025,11 +2838,10 @@
       "Moa": {
         "shipId": 623,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Moa",
           "zh-CN": "巨鸟级",
-          "zh-TW": "巨鸟级",
+          "zh-TW": "巨鳥級",
           "ru": "Moa",
           "de": "Moa",
           "ja": "モア",
@@ -3041,11 +2853,10 @@
       "Vexor": {
         "shipId": 626,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Vexor",
           "zh-CN": "狂怒者级",
-          "zh-TW": "狂怒者级",
+          "zh-TW": "狂怒者級",
           "ru": "Vexor",
           "de": "Vexor",
           "ja": "ベクサー",
@@ -3057,11 +2868,10 @@
       "Thorax": {
         "shipId": 627,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Thorax",
           "zh-CN": "托勒克斯级",
-          "zh-TW": "托勒克斯级",
+          "zh-TW": "托勒克斯級",
           "ru": "Thorax",
           "de": "Thorax",
           "ja": "ソーラックス",
@@ -3073,11 +2883,10 @@
       "Stabber": {
         "shipId": 622,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Stabber",
-          "zh-CN": "刺刀级",
-          "zh-TW": "刺刀级",
+          "zh-CN": "刺客级",
+          "zh-TW": "刺客級",
           "ru": "Stabber",
           "de": "Stabber",
           "ja": "スタッバー",
@@ -3089,11 +2898,10 @@
       "Rupture": {
         "shipId": 629,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Rupture",
           "zh-CN": "断崖级",
-          "zh-TW": "断崖级",
+          "zh-TW": "斷崖級",
           "ru": "Rupture",
           "de": "Rupture",
           "ja": "ラプチャー",
@@ -3105,11 +2913,10 @@
       "Caracal": {
         "shipId": 621,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Caracal",
           "zh-CN": "狞獾级",
-          "zh-TW": "狞獾级",
+          "zh-TW": "獰獾級",
           "ru": "Caracal",
           "de": "Caracal",
           "ja": "カラカル",
@@ -3123,11 +2930,10 @@
       "Draugur": {
         "shipId": 52254,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Draugur",
           "zh-CN": "德拉古级",
-          "zh-TW": "德拉古级",
+          "zh-TW": "德拉古級",
           "ru": "Draugur",
           "de": "Draugur",
           "ja": "ドラウグル",
@@ -3139,11 +2945,10 @@
       "Mamba": {
         "shipId": 78367,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Mamba",
           "zh-CN": "曼巴级",
-          "zh-TW": "曼巴级",
+          "zh-TW": "曼巴級",
           "ru": "Mamba",
           "de": "Mamba",
           "ja": "マンバ",
@@ -3155,11 +2960,10 @@
       "Tholos": {
         "shipId": 85087,
         "points": 14,
-        "flagshipEligible": false,
         "names": {
           "en": "Tholos",
-          "zh-CN": "神殿级",
-          "zh-TW": "神殿级",
+          "zh-CN": "穹顶级",
+          "zh-TW": "穹頂級",
           "ru": "Tholos",
           "de": "Tholos",
           "ja": "トロス",
@@ -3171,11 +2975,10 @@
       "Pontifex": {
         "shipId": 37481,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Pontifex",
-          "zh-CN": "庞蒂菲斯级",
-          "zh-TW": "庞蒂菲斯级",
+          "zh-CN": "教皇级",
+          "zh-TW": "教皇級",
           "ru": "Pontifex",
           "de": "Pontifex",
           "ja": "ポンティフェックス",
@@ -3187,11 +2990,10 @@
       "Stork": {
         "shipId": 37482,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Stork",
           "zh-CN": "鹳鸟级",
-          "zh-TW": "鹳鸟级",
+          "zh-TW": "鸛鳥級",
           "ru": "Stork",
           "de": "Stork",
           "ja": "ストーク",
@@ -3203,11 +3005,10 @@
       "Magus": {
         "shipId": 37483,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Magus",
           "zh-CN": "占星级",
-          "zh-TW": "占星级",
+          "zh-TW": "占星級",
           "ru": "Magus",
           "de": "Magus",
           "ja": "メイガス",
@@ -3219,11 +3020,10 @@
       "Bifrost": {
         "shipId": 37480,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Bifrost",
           "zh-CN": "天梯级",
-          "zh-TW": "天梯级",
+          "zh-TW": "天梯級",
           "ru": "Bifrost",
           "de": "Bifrost",
           "ja": "ビフレスト",
@@ -3235,11 +3035,10 @@
       "Kikimora": {
         "shipId": 49710,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Kikimora",
           "zh-CN": "奇奇莫拉级",
-          "zh-TW": "奇奇莫拉级",
+          "zh-TW": "奇奇莫拉級",
           "ru": "Kikimora",
           "de": "Kikimora",
           "ja": "キキモラ",
@@ -3251,11 +3050,10 @@
       "Thrasher Fleet Issue": {
         "shipId": 73794,
         "points": 11,
-        "flagshipEligible": false,
         "names": {
           "en": "Thrasher Fleet Issue",
           "zh-CN": "长尾鲛级舰队型",
-          "zh-TW": "长尾鲛级舰队型",
+          "zh-TW": "長尾鮫級艦隊型",
           "ru": "Thrasher Fleet Issue",
           "de": "Thrasher Fleet Issue",
           "ja": "シュラッシャー海軍仕様",
@@ -3267,11 +3065,10 @@
       "Coercer Navy Issue": {
         "shipId": 73789,
         "points": 11,
-        "flagshipEligible": false,
         "names": {
           "en": "Coercer Navy Issue",
           "zh-CN": "强制者级海军型",
-          "zh-TW": "强制者级海军型",
+          "zh-TW": "強制者級海軍型",
           "ru": "Coercer Navy Issue",
           "de": "Coercer Navy Issue",
           "ja": "コウアーサー海軍仕様",
@@ -3283,11 +3080,10 @@
       "Catalyst Navy Issue": {
         "shipId": 73796,
         "points": 11,
-        "flagshipEligible": false,
         "names": {
           "en": "Catalyst Navy Issue",
           "zh-CN": "促进级海军型",
-          "zh-TW": "促进级海军型",
+          "zh-TW": "促進級海軍型",
           "ru": "Catalyst Navy Issue",
           "de": "Catalyst Navy Issue",
           "ja": "カタリスト海軍仕様",
@@ -3299,11 +3095,10 @@
       "Confessor": {
         "shipId": 34317,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Confessor",
           "zh-CN": "忏悔者级",
-          "zh-TW": "忏悔者级",
+          "zh-TW": "懺悔者級",
           "ru": "Confessor",
           "de": "Confessor",
           "ja": "コンフェッサー",
@@ -3315,11 +3110,10 @@
       "Hecate": {
         "shipId": 35683,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Hecate",
           "zh-CN": "赫卡特级",
-          "zh-TW": "赫卡特级",
+          "zh-TW": "赫卡特級",
           "ru": "Hecate",
           "de": "Hecate",
           "ja": "ヘカテ",
@@ -3331,11 +3125,10 @@
       "Svipul": {
         "shipId": 34562,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Svipul",
           "zh-CN": "斯威普级",
-          "zh-TW": "斯威普级",
+          "zh-TW": "斯威普級",
           "ru": "Svipul",
           "de": "Svipul",
           "ja": "スヴィプル",
@@ -3347,11 +3140,10 @@
       "Mekubal": {
         "shipId": 78333,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Mekubal",
-          "zh-CN": "梅库巴级",
-          "zh-TW": "梅库巴级",
+          "zh-CN": "梅库巴尔级",
+          "zh-TW": "梅庫巴爾級",
           "ru": "Mekubal",
           "de": "Mekubal",
           "ja": "メクバル",
@@ -3363,11 +3155,10 @@
       "Heretic": {
         "shipId": 22452,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Heretic",
           "zh-CN": "异端级",
-          "zh-TW": "异端级",
+          "zh-TW": "異端級",
           "ru": "Heretic",
           "de": "Heretic",
           "ja": "ヘレティック",
@@ -3379,11 +3170,10 @@
       "Flycatcher": {
         "shipId": 22464,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Flycatcher",
           "zh-CN": "飞燕级",
-          "zh-TW": "飞燕级",
+          "zh-TW": "飛燕級",
           "ru": "Flycatcher",
           "de": "Flycatcher",
           "ja": "フライキャッチャー",
@@ -3395,11 +3185,10 @@
       "Eris": {
         "shipId": 22460,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Eris",
           "zh-CN": "厄里斯级",
-          "zh-TW": "厄里斯级",
+          "zh-TW": "厄里斯級",
           "ru": "Eris",
           "de": "Eris",
           "ja": "エリス",
@@ -3411,11 +3200,10 @@
       "Sabre": {
         "shipId": 22456,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Sabre",
           "zh-CN": "剑齿虎级",
-          "zh-TW": "剑齿虎级",
+          "zh-TW": "劍齒虎級",
           "ru": "Sabre",
           "de": "Sabre",
           "ja": "セイバー",
@@ -3427,11 +3215,10 @@
       "Jackdaw": {
         "shipId": 34828,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Jackdaw",
           "zh-CN": "寒鸦级",
-          "zh-TW": "寒鸦级",
+          "zh-TW": "寒鴉級",
           "ru": "Jackdaw",
           "de": "Jackdaw",
           "ja": "ジャックドー",
@@ -3443,11 +3230,10 @@
       "Cormorant Navy Issue": {
         "shipId": 73795,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Cormorant Navy Issue",
           "zh-CN": "海燕级海军型",
-          "zh-TW": "海燕级海军型",
+          "zh-TW": "海燕級海軍型",
           "ru": "Cormorant Navy Issue",
           "de": "Cormorant Navy Issue",
           "ja": "コーモラント海軍仕様",
@@ -3459,11 +3245,10 @@
       "Coercer": {
         "shipId": 16236,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Coercer",
           "zh-CN": "强制者级",
-          "zh-TW": "强制者级",
+          "zh-TW": "強制者級",
           "ru": "Coercer",
           "de": "Coercer",
           "ja": "コウアーサー",
@@ -3475,11 +3260,10 @@
       "Dragoon": {
         "shipId": 32874,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Dragoon",
           "zh-CN": "龙骑兵级",
-          "zh-TW": "龙骑兵级",
+          "zh-TW": "龍騎兵級",
           "ru": "Dragoon",
           "de": "Dragoon",
           "ja": "ドラグーン",
@@ -3491,11 +3275,10 @@
       "Cormorant": {
         "shipId": 16238,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Cormorant",
           "zh-CN": "海燕级",
-          "zh-TW": "海燕级",
+          "zh-TW": "海燕級",
           "ru": "Cormorant",
           "de": "Cormorant",
           "ja": "コーモラント",
@@ -3507,11 +3290,10 @@
       "Corax": {
         "shipId": 32876,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Corax",
           "zh-CN": "渡鸦级",
-          "zh-TW": "渡鸦级",
+          "zh-TW": "渡鴉級",
           "ru": "Corax",
           "de": "Corax",
           "ja": "コラックス",
@@ -3523,11 +3305,10 @@
       "Catalyst": {
         "shipId": 16240,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Catalyst",
           "zh-CN": "促进级",
-          "zh-TW": "促进级",
+          "zh-TW": "促進級",
           "ru": "Catalyst",
           "de": "Catalyst",
           "ja": "カタリスト",
@@ -3539,11 +3320,10 @@
       "Algos": {
         "shipId": 32872,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Algos",
           "zh-CN": "阿尔格斯级",
-          "zh-TW": "阿尔格斯级",
+          "zh-TW": "阿爾格斯級",
           "ru": "Algos",
           "de": "Algos",
           "ja": "アルゴス",
@@ -3555,11 +3335,10 @@
       "Thrasher": {
         "shipId": 16242,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Thrasher",
           "zh-CN": "长尾鲛级",
-          "zh-TW": "长尾鲛级",
+          "zh-TW": "長尾鮫級",
           "ru": "Thrasher",
           "de": "Thrasher",
           "ja": "シュラッシャー",
@@ -3571,11 +3350,10 @@
       "Talwar": {
         "shipId": 32878,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Talwar",
           "zh-CN": "弯刀级",
-          "zh-TW": "弯刀级",
+          "zh-TW": "彎刀級",
           "ru": "Talwar",
           "de": "Talwar",
           "ja": "タルワー",
@@ -3587,11 +3365,10 @@
       "Sunesis": {
         "shipId": 42685,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Sunesis",
           "zh-CN": "旭日级",
-          "zh-TW": "旭日级",
+          "zh-TW": "旭日級",
           "ru": "Sunesis",
           "de": "Sunesis",
           "ja": "スネシス",
@@ -3605,11 +3382,10 @@
       "Raiju": {
         "shipId": 60765,
         "points": 32,
-        "flagshipEligible": false,
         "names": {
           "en": "Raiju",
           "zh-CN": "雷兽级",
-          "zh-TW": "雷兽级",
+          "zh-TW": "雷獸級",
           "ru": "Raiju",
           "de": "Raiju",
           "ja": "ライジュウ",
@@ -3621,11 +3397,10 @@
       "Sidewinder": {
         "shipId": 85062,
         "points": 31,
-        "flagshipEligible": false,
         "names": {
           "en": "Sidewinder",
           "zh-CN": "侧进蛇级",
-          "zh-TW": "侧进蛇级",
+          "zh-TW": "側進蛇級",
           "ru": "Sidewinder",
           "de": "Sidewinder",
           "ja": "サイドワインダー",
@@ -3637,11 +3412,10 @@
       "Geri": {
         "shipId": 74141,
         "points": 27,
-        "flagshipEligible": false,
         "names": {
           "en": "Geri",
-          "zh-CN": "恐狼级",
-          "zh-TW": "恐狼级",
+          "zh-CN": "格里级",
+          "zh-TW": "格里級",
           "ru": "Geri",
           "de": "Geri",
           "ja": "ゲリ",
@@ -3653,11 +3427,10 @@
       "Keres": {
         "shipId": 11174,
         "points": 12,
-        "flagshipEligible": false,
         "names": {
           "en": "Keres",
           "zh-CN": "克勒斯级",
-          "zh-TW": "克勒斯级",
+          "zh-TW": "克勒斯級",
           "ru": "Keres",
           "de": "Keres",
           "ja": "ケレス",
@@ -3669,11 +3442,10 @@
       "Sentinel": {
         "shipId": 11190,
         "points": 11,
-        "flagshipEligible": false,
         "names": {
           "en": "Sentinel",
           "zh-CN": "哨兵级",
-          "zh-TW": "哨兵级",
+          "zh-TW": "哨兵級",
           "ru": "Sentinel",
           "de": "Sentinel",
           "ja": "センチネル",
@@ -3685,11 +3457,10 @@
       "Hyena": {
         "shipId": 11387,
         "points": 11,
-        "flagshipEligible": false,
         "names": {
           "en": "Hyena",
           "zh-CN": "土狼级",
-          "zh-TW": "土狼级",
+          "zh-TW": "土狼級",
           "ru": "Hyena",
           "de": "Hyena",
           "ja": "ハイエナ",
@@ -3701,11 +3472,10 @@
       "Kitsune": {
         "shipId": 11194,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Kitsune",
           "zh-CN": "狐妖级",
-          "zh-TW": "狐妖级",
+          "zh-TW": "狐妖級",
           "ru": "Kitsune",
           "de": "Kitsune",
           "ja": "キツネ",
@@ -3717,11 +3487,10 @@
       "Worm": {
         "shipId": 17930,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Worm",
           "zh-CN": "潜龙级",
-          "zh-TW": "潜龙级",
+          "zh-TW": "潛龍級",
           "ru": "Worm",
           "de": "Worm",
           "ja": "ワーム",
@@ -3733,11 +3502,10 @@
       "Nergal": {
         "shipId": 52250,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Nergal",
           "zh-CN": "涅伽尔级",
-          "zh-TW": "涅伽尔级",
+          "zh-TW": "涅伽爾級",
           "ru": "Nergal",
           "de": "Nergal",
           "ja": "ネルガル",
@@ -3749,11 +3517,10 @@
       "Vengeance": {
         "shipId": 11365,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Vengeance",
-          "zh-CN": "惩戒级",
-          "zh-TW": "惩戒级",
+          "zh-CN": "复仇级",
+          "zh-TW": "復仇級",
           "ru": "Vengeance",
           "de": "Vengeance",
           "ja": "ベンジェンス",
@@ -3765,11 +3532,10 @@
       "Retribution": {
         "shipId": 11393,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Retribution",
           "zh-CN": "审判者级",
-          "zh-TW": "审判者级",
+          "zh-TW": "審判者級",
           "ru": "Retribution",
           "de": "Retribution",
           "ja": "レトリビューション",
@@ -3781,11 +3547,10 @@
       "Hawk": {
         "shipId": 11379,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Hawk",
           "zh-CN": "战鹰级",
-          "zh-TW": "战鹰级",
+          "zh-TW": "戰鷹級",
           "ru": "Hawk",
           "de": "Hawk",
           "ja": "ホーク",
@@ -3797,11 +3562,10 @@
       "Harpy": {
         "shipId": 11381,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Harpy",
           "zh-CN": "女妖级",
-          "zh-TW": "女妖级",
+          "zh-TW": "女妖級",
           "ru": "Harpy",
           "de": "Harpy",
           "ja": "ハーピー",
@@ -3813,11 +3577,10 @@
       "Ishkur": {
         "shipId": 12042,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Ishkur",
           "zh-CN": "伊什库尔级",
-          "zh-TW": "伊什库尔级",
+          "zh-TW": "伊什庫爾級",
           "ru": "Ishkur",
           "de": "Ishkur",
           "ja": "イシュカー",
@@ -3829,11 +3592,10 @@
       "Enyo": {
         "shipId": 12044,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Enyo",
           "zh-CN": "恩尤级",
-          "zh-TW": "恩尤级",
+          "zh-TW": "恩尤級",
           "ru": "Enyo",
           "de": "Enyo",
           "ja": "エンヨ",
@@ -3845,11 +3607,10 @@
       "Wolf": {
         "shipId": 11371,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Wolf",
           "zh-CN": "猎狼级",
-          "zh-TW": "猎狼级",
+          "zh-TW": "獵狼級",
           "ru": "Wolf",
           "de": "Wolf",
           "ja": "ウルフ",
@@ -3861,11 +3622,10 @@
       "Jaguar": {
         "shipId": 11400,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Jaguar",
           "zh-CN": "美洲虎级",
-          "zh-TW": "美洲虎级",
+          "zh-TW": "美洲虎級",
           "ru": "Jaguar",
           "de": "Jaguar",
           "ja": "ジャガー",
@@ -3877,11 +3637,10 @@
       "Cruor": {
         "shipId": 17926,
         "points": 9,
-        "flagshipEligible": false,
         "names": {
           "en": "Cruor",
           "zh-CN": "凝血级",
-          "zh-TW": "凝血级",
+          "zh-TW": "凝血級",
           "ru": "Cruor",
           "de": "Cruor",
           "ja": "クルール",
@@ -3893,11 +3652,10 @@
       "Crucifier": {
         "shipId": 2161,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Crucifier",
           "zh-CN": "磨难级",
-          "zh-TW": "磨难级",
+          "zh-TW": "磨難級",
           "ru": "Crucifier",
           "de": "Crucifier",
           "ja": "クルセファー",
@@ -3909,11 +3667,10 @@
       "Dramiel": {
         "shipId": 17932,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Dramiel",
           "zh-CN": "德拉米尔级",
-          "zh-TW": "德拉米尔级",
+          "zh-TW": "德拉米爾級",
           "ru": "Dramiel",
           "de": "Dramiel",
           "ja": "ドラミエル",
@@ -3925,11 +3682,10 @@
       "Garmur": {
         "shipId": 33816,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Garmur",
           "zh-CN": "加姆级",
-          "zh-TW": "加姆级",
+          "zh-TW": "加姆級",
           "ru": "Garmur",
           "de": "Garmur",
           "ja": "ガルム",
@@ -3941,11 +3697,10 @@
       "Succubus": {
         "shipId": 17924,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Succubus",
           "zh-CN": "魔女级",
-          "zh-TW": "魔女级",
+          "zh-TW": "魔女級",
           "ru": "Succubus",
           "de": "Succubus",
           "ja": "サキュバス",
@@ -3957,11 +3712,10 @@
       "Astero": {
         "shipId": 33468,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Astero",
           "zh-CN": "阿斯特罗级",
-          "zh-TW": "阿斯特罗级",
+          "zh-TW": "阿斯特羅級",
           "ru": "Astero",
           "de": "Astero",
           "ja": "アステロ",
@@ -3973,11 +3727,10 @@
       "Daredevil": {
         "shipId": 17928,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Daredevil",
           "zh-CN": "夜魔侠级",
-          "zh-TW": "夜魔侠级",
+          "zh-TW": "夜魔俠級",
           "ru": "Daredevil",
           "de": "Daredevil",
           "ja": "デアデビル",
@@ -3989,11 +3742,10 @@
       "Damavik": {
         "shipId": 47269,
         "points": 8,
-        "flagshipEligible": false,
         "names": {
           "en": "Damavik",
           "zh-CN": "达玛维克级",
-          "zh-TW": "达玛维克级",
+          "zh-TW": "達瑪維克級",
           "ru": "Damavik",
           "de": "Damavik",
           "ja": "ダマヴィク",
@@ -4005,11 +3757,10 @@
       "Griffin": {
         "shipId": 584,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Griffin",
           "zh-CN": "狮鹫级",
-          "zh-TW": "狮鹫级",
+          "zh-TW": "獅鷲級",
           "ru": "Griffin",
           "de": "Griffin",
           "ja": "グリフィン",
@@ -4021,11 +3772,10 @@
       "Maulus": {
         "shipId": 609,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Maulus",
           "zh-CN": "毛鲁斯级",
-          "zh-TW": "毛鲁斯级",
+          "zh-TW": "毛魯斯級",
           "ru": "Maulus",
           "de": "Maulus",
           "ja": "マウルス",
@@ -4037,11 +3787,10 @@
       "Purifier": {
         "shipId": 12038,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Purifier",
           "zh-CN": "净化级",
-          "zh-TW": "净化级",
+          "zh-TW": "淨化級",
           "ru": "Purifier",
           "de": "Purifier",
           "ja": "ピュリファイヤー",
@@ -4053,11 +3802,10 @@
       "Manticore": {
         "shipId": 12032,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Manticore",
           "zh-CN": "蝎尾怪级",
-          "zh-TW": "蝎尾怪级",
+          "zh-TW": "蠍尾怪級",
           "ru": "Manticore",
           "de": "Manticore",
           "ja": "マンティコア",
@@ -4069,11 +3817,10 @@
       "Nemesis": {
         "shipId": 11377,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Nemesis",
           "zh-CN": "纳美西斯级",
-          "zh-TW": "纳美西斯级",
+          "zh-TW": "納美西斯級",
           "ru": "Nemesis",
           "de": "Nemesis",
           "ja": "ネメシス",
@@ -4085,11 +3832,10 @@
       "Hound": {
         "shipId": 12034,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Hound",
           "zh-CN": "猎犬级",
-          "zh-TW": "猎犬级",
+          "zh-TW": "獵犬級",
           "ru": "Hound",
           "de": "Hound",
           "ja": "ハウンド",
@@ -4101,11 +3847,10 @@
       "Punisher": {
         "shipId": 597,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Punisher",
           "zh-CN": "惩罚者级",
-          "zh-TW": "惩罚者级",
+          "zh-TW": "懲罰者級",
           "ru": "Punisher",
           "de": "Punisher",
           "ja": "パニッシャー",
@@ -4117,11 +3862,10 @@
       "Vigil": {
         "shipId": 3766,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Vigil",
           "zh-CN": "守夜者级",
-          "zh-TW": "守夜者级",
+          "zh-TW": "守夜者級",
           "ru": "Vigil",
           "de": "Vigil",
           "ja": "ヴィジリ",
@@ -4133,11 +3877,10 @@
       "Imperial Navy Slicer": {
         "shipId": 17703,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Imperial Navy Slicer",
           "zh-CN": "帝国海军切割机级",
-          "zh-TW": "帝国海军切割机级",
+          "zh-TW": "帝國海軍切割機級",
           "ru": "Imperial Navy Slicer",
           "de": "Imperial Navy Slicer",
           "ja": "帝国海軍仕様スライサー",
@@ -4149,11 +3892,10 @@
       "Crucifier Navy Issue": {
         "shipId": 37453,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Crucifier Navy Issue",
           "zh-CN": "磨难级海军型",
-          "zh-TW": "磨难级海军型",
+          "zh-TW": "磨難級海軍型",
           "ru": "Crucifier Navy Issue",
           "de": "Crucifier Navy Issue",
           "ja": "クルセファー海軍版",
@@ -4165,11 +3907,10 @@
       "Federation Navy Comet": {
         "shipId": 17841,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Federation Navy Comet",
           "zh-CN": "联邦海军彗星级",
-          "zh-TW": "联邦海军彗星级",
+          "zh-TW": "聯邦海軍彗星級",
           "ru": "Federation Navy Comet",
           "de": "Federation Navy Comet",
           "ja": "連邦海軍仕様コメット",
@@ -4181,11 +3922,10 @@
       "Maulus Navy Issue": {
         "shipId": 37456,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Maulus Navy Issue",
           "zh-CN": "毛鲁斯级海军型",
-          "zh-TW": "毛鲁斯级海军型",
+          "zh-TW": "毛魯斯級海軍型",
           "ru": "Maulus Navy Issue",
           "de": "Maulus Navy Issue",
           "ja": "マウルス海軍版",
@@ -4197,11 +3937,10 @@
       "Republic Fleet Firetail": {
         "shipId": 17812,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Republic Fleet Firetail",
           "zh-CN": "共和舰队火尾鸡级",
-          "zh-TW": "共和舰队火尾鸡级",
+          "zh-TW": "共和艦隊火尾雞級",
           "ru": "Republic Fleet Firetail",
           "de": "Republic Fleet Firetail",
           "ja": "共和国海軍仕様ファイアテイル",
@@ -4213,11 +3952,10 @@
       "Vigil Fleet Issue": {
         "shipId": 37454,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Vigil Fleet Issue",
           "zh-CN": "守夜者级舰队型",
-          "zh-TW": "守夜者级舰队型",
+          "zh-TW": "守夜者級艦隊型",
           "ru": "Vigil Fleet Issue",
           "de": "Vigil Fleet Issue",
           "ja": "ヴィジリ フリート版",
@@ -4229,11 +3967,10 @@
       "Crusader": {
         "shipId": 11184,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Crusader",
-          "zh-CN": "科洛斯级",
-          "zh-TW": "科洛斯级",
+          "zh-CN": "十字军级",
+          "zh-TW": "十字軍級",
           "ru": "Crusader",
           "de": "Crusader",
           "ja": "クルセイダー",
@@ -4245,11 +3982,10 @@
       "Malediction": {
         "shipId": 11186,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Malediction",
           "zh-CN": "咒灭级",
-          "zh-TW": "咒灭级",
+          "zh-TW": "咒滅級",
           "ru": "Malediction",
           "de": "Malediction",
           "ja": "メルディクション",
@@ -4261,11 +3997,10 @@
       "Crow": {
         "shipId": 11176,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Crow",
           "zh-CN": "黑鸦级",
-          "zh-TW": "黑鸦级",
+          "zh-TW": "黑鴉級",
           "ru": "Crow",
           "de": "Crow",
           "ja": "クロウ",
@@ -4277,11 +4012,10 @@
       "Raptor": {
         "shipId": 11178,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Raptor",
           "zh-CN": "猛禽级",
-          "zh-TW": "猛禽级",
+          "zh-TW": "猛禽級",
           "ru": "Raptor",
           "de": "Raptor",
           "ja": "ラプター",
@@ -4293,11 +4027,10 @@
       "Taranis": {
         "shipId": 11200,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Taranis",
           "zh-CN": "塔纳尼斯级",
-          "zh-TW": "塔纳尼斯级",
+          "zh-TW": "塔納尼斯級",
           "ru": "Taranis",
           "de": "Taranis",
           "ja": "タラニス",
@@ -4309,11 +4042,10 @@
       "Ares": {
         "shipId": 11202,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Ares",
           "zh-CN": "阿瑞斯级",
-          "zh-TW": "阿瑞斯级",
+          "zh-TW": "阿瑞斯級",
           "ru": "Ares",
           "de": "Ares",
           "ja": "エリーズ",
@@ -4325,11 +4057,10 @@
       "Claw": {
         "shipId": 11196,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Claw",
           "zh-CN": "利爪级",
-          "zh-TW": "利爪级",
+          "zh-TW": "利爪級",
           "ru": "Claw",
           "de": "Claw",
           "ja": "クロー",
@@ -4341,11 +4072,10 @@
       "Stiletto": {
         "shipId": 11198,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Stiletto",
           "zh-CN": "短剑级",
-          "zh-TW": "短剑级",
+          "zh-TW": "短劍級",
           "ru": "Stiletto",
           "de": "Stiletto",
           "ja": "スティレット",
@@ -4357,11 +4087,10 @@
       "Magnate Navy Issue": {
         "shipId": 72907,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Magnate Navy Issue",
           "zh-CN": "富豪级海军型",
-          "zh-TW": "富豪级海军型",
+          "zh-TW": "富豪級海軍型",
           "ru": "Magnate Navy Issue",
           "de": "Magnate Navy Issue",
           "ja": "マグニート海軍仕様",
@@ -4373,11 +4102,10 @@
       "Imicus Navy Issue": {
         "shipId": 72913,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Imicus Navy Issue",
           "zh-CN": "伊米卡斯级海军型",
-          "zh-TW": "伊米卡斯级海军型",
+          "zh-TW": "伊米卡斯級海軍型",
           "ru": "Imicus Navy Issue",
           "de": "Imicus Navy Issue",
           "ja": "イミュカス海軍仕様",
@@ -4389,11 +4117,10 @@
       "Probe Fleet Issue": {
         "shipId": 72903,
         "points": 6,
-        "flagshipEligible": false,
         "names": {
           "en": "Probe Fleet Issue",
           "zh-CN": "探索级舰队型",
-          "zh-TW": "探索级舰队型",
+          "zh-TW": "探索級艦隊型",
           "ru": "Probe Fleet Issue",
           "de": "Probe Fleet Issue",
           "ja": "プローブ海軍仕様",
@@ -4405,11 +4132,10 @@
       "Caldari Navy Hookbill": {
         "shipId": 17619,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Caldari Navy Hookbill",
           "zh-CN": "加达里海军霍克比尔级",
-          "zh-TW": "加达里海军霍克比尔级",
+          "zh-TW": "加達裡海軍霍克比爾級",
           "ru": "Caldari Navy Hookbill",
           "de": "Caldari Navy Hookbill",
           "ja": "カルダリ海軍仕様フックビル",
@@ -4421,11 +4147,10 @@
       "Griffin Navy Issue": {
         "shipId": 37455,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Griffin Navy Issue",
           "zh-CN": "狮鹫级海军型",
-          "zh-TW": "狮鹫级海军型",
+          "zh-TW": "獅鷲級海軍型",
           "ru": "Griffin Navy Issue",
           "de": "Griffin Navy Issue",
           "ja": "グリフィン海軍版",
@@ -4437,11 +4162,10 @@
       "Skybreaker": {
         "shipId": 54731,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Skybreaker",
           "zh-CN": "破天级",
-          "zh-TW": "破天级",
+          "zh-TW": "破天級",
           "ru": "Skybreaker",
           "de": "Skybreaker",
           "ja": "スカイブレイカー",
@@ -4453,11 +4177,10 @@
       "Metamorphosis": {
         "shipId": 77114,
         "points": 5,
-        "flagshipEligible": false,
         "names": {
           "en": "Metamorphosis",
           "zh-CN": "变形级",
-          "zh-TW": "变形级",
+          "zh-TW": "變形級",
           "ru": "Metamorphosis",
           "de": "Metamorphosis",
           "ja": "メタモルフォーシス",
@@ -4469,11 +4192,10 @@
       "Executioner": {
         "shipId": 589,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Executioner",
           "zh-CN": "刽子手级",
-          "zh-TW": "刽子手级",
+          "zh-TW": "劊子手級",
           "ru": "Executioner",
           "de": "Executioner",
           "ja": "エクスキューショナー",
@@ -4485,11 +4207,10 @@
       "Tormentor": {
         "shipId": 591,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Tormentor",
           "zh-CN": "巨神兵级",
-          "zh-TW": "巨神兵级",
+          "zh-TW": "巨神兵級",
           "ru": "Tormentor",
           "de": "Tormentor",
           "ja": "トーメンター",
@@ -4501,11 +4222,10 @@
       "Magnate": {
         "shipId": 29248,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Magnate",
           "zh-CN": "富豪级",
-          "zh-TW": "富豪级",
+          "zh-TW": "富豪級",
           "ru": "Magnate",
           "de": "Magnate",
           "ja": "マグニート",
@@ -4517,11 +4237,10 @@
       "Condor": {
         "shipId": 583,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Condor",
           "zh-CN": "秃鹫级",
-          "zh-TW": "秃鹫级",
+          "zh-TW": "禿鷲級",
           "ru": "Condor",
           "de": "Condor",
           "ja": "コンドール",
@@ -4533,11 +4252,10 @@
       "Kestrel": {
         "shipId": 602,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Kestrel",
           "zh-CN": "茶隼级",
-          "zh-TW": "茶隼级",
+          "zh-TW": "茶隼級",
           "ru": "Kestrel",
           "de": "Kestrel",
           "ja": "ケストレル",
@@ -4549,11 +4267,10 @@
       "Merlin": {
         "shipId": 603,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Merlin",
           "zh-CN": "小鹰级",
-          "zh-TW": "小鹰级",
+          "zh-TW": "小鷹級",
           "ru": "Merlin",
           "de": "Merlin",
           "ja": "マーリン",
@@ -4565,11 +4282,10 @@
       "Heron": {
         "shipId": 605,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Heron",
           "zh-CN": "苍鹭级",
-          "zh-TW": "苍鹭级",
+          "zh-TW": "蒼鷺級",
           "ru": "Heron",
           "de": "Heron",
           "ja": "ヘロン",
@@ -4581,11 +4297,10 @@
       "Atron": {
         "shipId": 608,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Atron",
           "zh-CN": "阿特龙级",
-          "zh-TW": "阿特龙级",
+          "zh-TW": "阿特龍級",
           "ru": "Atron",
           "de": "Atron",
           "ja": "アトロン",
@@ -4597,11 +4312,10 @@
       "Tristan": {
         "shipId": 593,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Tristan",
           "zh-CN": "特里斯坦级",
-          "zh-TW": "特里斯坦级",
+          "zh-TW": "特里斯坦級",
           "ru": "Tristan",
           "de": "Tristan",
           "ja": "トリスタン",
@@ -4613,11 +4327,10 @@
       "Incursus": {
         "shipId": 594,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Incursus",
           "zh-CN": "因卡萨斯级",
-          "zh-TW": "因卡萨斯级",
+          "zh-TW": "因卡薩斯級",
           "ru": "Incursus",
           "de": "Incursus",
           "ja": "インカーサス",
@@ -4629,11 +4342,10 @@
       "Imicus": {
         "shipId": 607,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Imicus",
           "zh-CN": "伊米卡斯级",
-          "zh-TW": "伊米卡斯级",
+          "zh-TW": "伊米卡斯級",
           "ru": "Imicus",
           "de": "Imicus",
           "ja": "イミュカス",
@@ -4645,11 +4357,10 @@
       "Slasher": {
         "shipId": 585,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Slasher",
           "zh-CN": "伐木者级",
-          "zh-TW": "伐木者级",
+          "zh-TW": "伐木者級",
           "ru": "Slasher",
           "de": "Slasher",
           "ja": "スラッシャー",
@@ -4661,11 +4372,10 @@
       "Breacher": {
         "shipId": 598,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Breacher",
           "zh-CN": "分裂者级",
-          "zh-TW": "分裂者级",
+          "zh-TW": "分裂者級",
           "ru": "Breacher",
           "de": "Breacher",
           "ja": "ブリーチャー",
@@ -4677,11 +4387,10 @@
       "Rifter": {
         "shipId": 587,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Rifter",
           "zh-CN": "裂谷级",
-          "zh-TW": "裂谷级",
+          "zh-TW": "裂谷級",
           "ru": "Rifter",
           "de": "Rifter",
           "ja": "リフター",
@@ -4693,11 +4402,10 @@
       "Probe": {
         "shipId": 586,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Probe",
           "zh-CN": "探索级",
-          "zh-TW": "探索级",
+          "zh-TW": "探索級",
           "ru": "Probe",
           "de": "Probe",
           "ja": "プローブ",
@@ -4709,11 +4417,10 @@
       "Anathema": {
         "shipId": 11188,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Anathema",
           "zh-CN": "咒逐级",
-          "zh-TW": "咒逐级",
+          "zh-TW": "咒逐級",
           "ru": "Anathema",
           "de": "Anathema",
           "ja": "アナシマ",
@@ -4725,11 +4432,10 @@
       "Buzzard": {
         "shipId": 11192,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Buzzard",
           "zh-CN": "秃鹰级",
-          "zh-TW": "秃鹰级",
+          "zh-TW": "禿鷹級",
           "ru": "Buzzard",
           "de": "Buzzard",
           "ja": "バザード",
@@ -4741,11 +4447,10 @@
       "Helios": {
         "shipId": 11172,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Helios",
           "zh-CN": "太阳神级",
-          "zh-TW": "太阳神级",
+          "zh-TW": "太陽神級",
           "ru": "Helios",
           "de": "Helios",
           "ja": "ヘリオス",
@@ -4757,11 +4462,10 @@
       "Cheetah": {
         "shipId": 11182,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Cheetah",
           "zh-CN": "猎豹级",
-          "zh-TW": "猎豹级",
+          "zh-TW": "獵豹級",
           "ru": "Cheetah",
           "de": "Cheetah",
           "ja": "チーター",
@@ -4773,11 +4477,10 @@
       "Heron Navy Issue": {
         "shipId": 72904,
         "points": 4,
-        "flagshipEligible": false,
         "names": {
           "en": "Heron Navy Issue",
           "zh-CN": "苍鹭级海军型",
-          "zh-TW": "苍鹭级海军型",
+          "zh-TW": "蒼鷺級海軍型",
           "ru": "Heron Navy Issue",
           "de": "Heron Navy Issue",
           "ja": "ヘロン海軍仕様",
@@ -4789,11 +4492,10 @@
       "Shapash": {
         "shipId": 78414,
         "points": 30,
-        "flagshipEligible": false,
         "names": {
           "en": "Shapash",
           "zh-CN": "沙帕什级",
-          "zh-TW": "沙帕什级",
+          "zh-TW": "沙帕什級",
           "ru": "Shapash",
           "de": "Shapash",
           "ja": "シャパシュ",
@@ -4807,11 +4509,10 @@
       "Deluge": {
         "shipId": 81046,
         "points": 10,
-        "flagshipEligible": false,
         "names": {
           "en": "Deluge",
-          "zh-CN": "暴雨级",
-          "zh-TW": "暴雨级",
+          "zh-CN": "洪水级",
+          "zh-TW": "洪水級",
           "ru": "Deluge",
           "de": "Deluge",
           "ja": "デリュージ",
@@ -4823,11 +4524,10 @@
       "Squall": {
         "shipId": 81008,
         "points": 7,
-        "flagshipEligible": false,
         "names": {
           "en": "Squall",
-          "zh-CN": "疾风级",
-          "zh-TW": "疾风级",
+          "zh-CN": "狂风级",
+          "zh-TW": "狂風級",
           "ru": "Squall",
           "de": "Squall",
           "ja": "スコール",
@@ -4839,11 +4539,10 @@
       "Bestower": {
         "shipId": 1944,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Bestower",
           "zh-CN": "恩赐者级",
-          "zh-TW": "恩赐者级",
+          "zh-TW": "恩賜者級",
           "ru": "Bestower",
           "de": "Bestower",
           "ja": "ビストワー",
@@ -4855,11 +4554,10 @@
       "Sigil": {
         "shipId": 19744,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Sigil",
           "zh-CN": "魔符级",
-          "zh-TW": "魔符级",
+          "zh-TW": "魔符級",
           "ru": "Sigil",
           "de": "Sigil",
           "ja": "サイジル",
@@ -4871,11 +4569,10 @@
       "Badger": {
         "shipId": 648,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Badger",
           "zh-CN": "獾级",
-          "zh-TW": "獾级",
+          "zh-TW": "獾級",
           "ru": "Badger",
           "de": "Badger",
           "ja": "バッジャー",
@@ -4887,11 +4584,10 @@
       "Tayra": {
         "shipId": 649,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Tayra",
           "zh-CN": "狐鼬级",
-          "zh-TW": "狐鼬级",
+          "zh-TW": "狐鼬級",
           "ru": "Tayra",
           "de": "Tayra",
           "ja": "タイラ",
@@ -4903,11 +4599,10 @@
       "Nereus": {
         "shipId": 650,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Nereus",
           "zh-CN": "涅鲁斯级",
-          "zh-TW": "涅鲁斯级",
+          "zh-TW": "涅魯斯級",
           "ru": "Nereus",
           "de": "Nereus",
           "ja": "ネレウス",
@@ -4919,11 +4614,10 @@
       "Kryos": {
         "shipId": 654,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Kryos",
           "zh-CN": "克琉斯级",
-          "zh-TW": "克琉斯级",
+          "zh-TW": "克琉斯級",
           "ru": "Kryos",
           "de": "Kryos",
           "ja": "クリオス",
@@ -4935,11 +4629,10 @@
       "Epithal": {
         "shipId": 655,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Epithal",
           "zh-CN": "埃比斯级",
-          "zh-TW": "埃比斯级",
+          "zh-TW": "埃比斯級",
           "ru": "Epithal",
           "de": "Epithal",
           "ja": "エピタル",
@@ -4951,11 +4644,10 @@
       "Miasmos": {
         "shipId": 656,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Miasmos",
           "zh-CN": "米亚莫斯级",
-          "zh-TW": "米亚莫斯级",
+          "zh-TW": "米亞莫斯級",
           "ru": "Miasmos",
           "de": "Miasmos",
           "ja": "ミアスモス",
@@ -4967,11 +4659,10 @@
       "Iteron Mark V": {
         "shipId": 657,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Iteron Mark V",
           "zh-CN": "伊特龙级MKV",
-          "zh-TW": "伊特龙级MKV",
+          "zh-TW": "伊特龍級MKV",
           "ru": "Iteron Mark V",
           "de": "Iteron Mark V",
           "ja": "イタロンマークV",
@@ -4983,11 +4674,10 @@
       "Hoarder": {
         "shipId": 651,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Hoarder",
           "zh-CN": "囤积者级",
-          "zh-TW": "囤积者级",
+          "zh-TW": "囤積者級",
           "ru": "Hoarder",
           "de": "Hoarder",
           "ja": "ホーダー",
@@ -4999,11 +4689,10 @@
       "Mammoth": {
         "shipId": 652,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Mammoth",
           "zh-CN": "猛犸级",
-          "zh-TW": "猛犸级",
+          "zh-TW": "猛獁級",
           "ru": "Mammoth",
           "de": "Mammoth",
           "ja": "マンモス",
@@ -5015,11 +4704,10 @@
       "Wreathe": {
         "shipId": 653,
         "points": 3,
-        "flagshipEligible": false,
         "names": {
           "en": "Wreathe",
           "zh-CN": "环绕级",
-          "zh-TW": "环绕级",
+          "zh-TW": "環繞級",
           "ru": "Wreathe",
           "de": "Wreathe",
           "ja": "ウレス",
@@ -5033,11 +4721,10 @@
       "Echo": {
         "shipId": 617,
         "points": 2,
-        "flagshipEligible": false,
         "names": {
           "en": "Echo",
           "zh-CN": "回声级",
-          "zh-TW": "回声级",
+          "zh-TW": "回聲級",
           "ru": "Echo",
           "de": "Echo",
           "ja": "エコー",
@@ -5049,11 +4736,10 @@
       "Hematos": {
         "shipId": 33079,
         "points": 2,
-        "flagshipEligible": false,
         "names": {
           "en": "Hematos",
           "zh-CN": "未来人类级",
-          "zh-TW": "未来人类级",
+          "zh-TW": "未來人類級",
           "ru": "Hematos",
           "de": "Hematos",
           "ja": "ヘマトス",
@@ -5065,11 +4751,10 @@
       "Immolator": {
         "shipId": 615,
         "points": 2,
-        "flagshipEligible": false,
         "names": {
           "en": "Immolator",
-          "zh-CN": "因莫雷特级",
-          "zh-TW": "因莫雷特级",
+          "zh-CN": "献祭者级",
+          "zh-TW": "獻祭者級",
           "ru": "Immolator",
           "de": "Immolator",
           "ja": "イモレイター",
@@ -5081,11 +4766,10 @@
       "Taipan": {
         "shipId": 33081,
         "points": 2,
-        "flagshipEligible": false,
         "names": {
           "en": "Taipan",
           "zh-CN": "毒蛇级",
-          "zh-TW": "毒蛇级",
+          "zh-TW": "毒蛇級",
           "ru": "Taipan",
           "de": "Taipan",
           "ja": "タイパン",
@@ -5097,11 +4781,10 @@
       "Violator": {
         "shipId": 33083,
         "points": 2,
-        "flagshipEligible": false,
         "names": {
           "en": "Violator",
           "zh-CN": "违逆者级",
-          "zh-TW": "违逆者级",
+          "zh-TW": "違逆者級",
           "ru": "Violator",
           "de": "Violator",
           "ja": "バイオレイター",
@@ -5113,11 +4796,10 @@
       "Impairor": {
         "shipId": 596,
         "points": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Impairor",
           "zh-CN": "帝国号",
-          "zh-TW": "帝国号",
+          "zh-TW": "帝國號",
           "ru": "Impairor",
           "de": "Impairor",
           "ja": "インパロール",
@@ -5129,11 +4811,10 @@
       "Ibis": {
         "shipId": 601,
         "points": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Ibis",
           "zh-CN": "伊毕斯号",
-          "zh-TW": "伊毕斯号",
+          "zh-TW": "伊畢斯號",
           "ru": "Ibis",
           "de": "Ibis",
           "ja": "イビス",
@@ -5145,11 +4826,10 @@
       "Velator": {
         "shipId": 606,
         "points": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Velator",
           "zh-CN": "维拉托尔号",
-          "zh-TW": "维拉托尔号",
+          "zh-TW": "維拉托爾號",
           "ru": "Velator",
           "de": "Velator",
           "ja": "ベラター",
@@ -5161,11 +4841,10 @@
       "Reaper": {
         "shipId": 588,
         "points": 1,
-        "flagshipEligible": false,
         "names": {
           "en": "Reaper",
           "zh-CN": "死神号",
-          "zh-TW": "死神号",
+          "zh-TW": "死神號",
           "ru": "Reaper",
           "de": "Reaper",
           "ja": "リーパー",

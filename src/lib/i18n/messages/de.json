@@ -16,7 +16,9 @@
     "cancel": "Abbrechen",
     "applyImport": "Import anwenden",
     "copied": "Draft in die Zwischenablage kopiert.",
-    "importApplied": "Draft erfolgreich importiert."
+    "importApplied": "Draft erfolgreich importiert.",
+    "prizeSponsor": "Sponsor: {sponsor}",
+    "prizeShips": "Preisschiffe:"
   },
   "validation": {
     "ship-not-found": "Dieses Schiff ist im ausgewählten Turnierdatensatz nicht verfügbar.",

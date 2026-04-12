@@ -11,7 +11,6 @@ import Tabs from 'primevue/tabs'
 
 import Ship from '@/components/Ship.vue'
 import { useDraftBoard } from '@/features/draft/useDraftBoard'
-import { getTournamentDisplayLabel } from '@/lib/i18n/labels'
 import type { HullType, LocaleCode, ParsedDraft, ShipCatalog, TournamentDataset } from '@/lib/types'
 
 const props = defineProps<{
@@ -31,7 +30,6 @@ const shipGroups = computed(() =>
 const {
   activeHullType,
   addShip,
-  archiveLink,
   banLink,
   banShip,
   banValidation,
@@ -47,13 +45,16 @@ const {
   localizedShipName,
   pickValidation,
   removeShip,
-  ruleLink,
   shipProperty,
   unbanShip,
 } = useDraftBoard(props.dataset, props.shipCatalog, appLocale)
 
 const feedbackMessages = computed(() => feedbackReasons.value.map((reason) => t(`validation.${reason}`)))
-const tournamentLabel = computed(() => getTournamentDisplayLabel(dataset.summary, appLocale.value))
+const prizeSponsorText = computed(() =>
+  t('messages.prizeSponsor', {
+    sponsor: dataset.summary.prize.sponsor,
+  }),
+)
 const hullListElement = ref<HTMLElement | null>(null)
 const shipListHeight = ref('min(62vh, 760px)')
 let hullListResizeObserver: ResizeObserver | undefined
@@ -110,18 +111,25 @@ defineExpose({
 <template>
   <div class="draft-page">
     <section class="draft-hero">
-      <div class="draft-meta">
-        <div class="draft-meta-title-row">
-          <div class="draft-meta-label">{{ tournamentLabel }}</div>
-          <div class="draft-meta-links">
-            <a class="rules-link" :href="ruleLink" target="_blank" rel="noreferrer">
-              {{ $t('messages.rules') }}
-            </a>
-            <a v-if="archiveLink" class="rules-link" :href="archiveLink" target="_blank" rel="noreferrer">
-              {{ $t('messages.matchArchive') }}
-            </a>
-          </div>
-        </div>
+      <div class="feedback-slot" aria-live="polite">
+        <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message">
+          {{ feedbackMessages[0] }}
+        </Message>
+        <Message v-else severity="secondary" variant="outlined" class="feedback-message feedback-message--info">
+          <span class="prize-info">
+            <span>{{ prizeSponsorText }}</span>
+            <span class="prize-ship-group">
+              <span>{{ $t('messages.prizeShips') }}</span>
+              <span class="reward-links">
+                <template v-for="rewardShip in dataset.summary.prize.rewardShips" :key="rewardShip.shipId">
+                  <a class="reward-link" :href="`https://zkillboard.com/ship/${rewardShip.shipId}/`" target="_blank" rel="noreferrer">
+                    {{ rewardShip.name }}
+                  </a>
+                </template>
+              </span>
+            </span>
+          </span>
+        </Message>
       </div>
 
       <div
@@ -137,10 +145,6 @@ defineExpose({
         <span class="points-summary-cap">{{ dataset.rules.maxPoints }}</span>
       </div>
     </section>
-
-    <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message">
-      {{ feedbackMessages[0] }}
-    </Message>
 
     <main class="draft-layout">
       <section class="selection-panel">
@@ -289,40 +293,11 @@ defineExpose({
 
 .draft-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(20rem, 1fr) auto;
   gap: 0.85rem;
   align-items: center;
 }
 
-.draft-meta {
-  display: grid;
-  gap: 0.35rem;
-  min-width: 0;
-}
-
-.draft-meta-title-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.85rem;
-  min-width: 0;
-  flex-wrap: wrap;
-}
-
-.draft-meta-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: baseline;
-}
-
-.draft-meta-label {
-  font-size: clamp(1.1rem, 2vw, 1.45rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  min-width: 0;
-}
-
-.rules-link,
 .ban-rules-link {
   font-size: 1.05rem;
   font-weight: 700;
@@ -365,7 +340,64 @@ defineExpose({
 }
 
 .feedback-message {
+  width: 100%;
   box-shadow: var(--app-shadow-soft);
+}
+
+.feedback-message--info {
+  color: var(--app-text-muted);
+}
+
+.prize-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.prize-ship-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding-inline-start: 1.25rem;
+  border-inline-start: 1px solid var(--app-border);
+}
+
+.reward-link {
+  color: var(--app-accent);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.reward-link:hover {
+  color: var(--app-accent);
+}
+
+.reward-links {
+  display: inline-flex;
+  gap: 0.7rem;
+}
+
+.feedback-slot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  min-height: 2.75rem;
+}
+
+.feedback-slot:deep(.p-message) {
+  margin: 0;
+}
+
+.feedback-slot:deep(.p-message-text) {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .draft-layout {
@@ -686,6 +718,10 @@ defineExpose({
     align-items: start;
   }
 
+  .feedback-slot {
+    justify-content: stretch;
+  }
+
   .draft-layout {
     grid-template-columns: 1fr;
   }
@@ -696,10 +732,6 @@ defineExpose({
 }
 
 @media (max-width: 720px) {
-  .draft-meta-title-row {
-    gap: 0.45rem 0.75rem;
-  }
-
   .selection-layout {
     grid-template-columns: 1fr;
   }
