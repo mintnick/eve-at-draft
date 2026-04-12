@@ -13,8 +13,11 @@
     "data:validate": "tsx ./tools/data-pipeline/cli.ts validate 2025",
     "data:refresh": "tsx ./tools/data-pipeline/cli.ts refresh 2025",
     "tools:validate": "tsx ./tools/validate-data.ts",
-    "build": "vite build",
+    "build": "node ./tools/check-node-version.mjs && vite build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
