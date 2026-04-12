@@ -1,2 +1,2 @@
-data/raw/ linguist-vendored
-data/generated/ linguist-vendored
+data/raw/** linguist-vendored
+data/generated/** linguist-vendored
