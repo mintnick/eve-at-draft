@@ -50,7 +50,6 @@ export function createShipCatalog(source: RawTournamentSource): ShipCatalog {
       if (!entries.has(shipKey)) {
         entries.set(shipKey, {
           shipId: ship.shipId,
-          key: shipKey,
           names: ship.names,
         })
       }
@@ -118,8 +117,6 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
   const dataset: TournamentDataset = {
     summary: {
       year: config.year,
-      slug: config.slug,
-      label: config.label,
       prize: config.prize,
     },
     sources: [
@@ -132,9 +129,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
       maxShips: config.rules.maxShips,
       hullCaps: config.rules.hullCaps,
       pointInflation: config.rules.pointInflation,
-      banRules: config.rules.banRules,
       flagship: {
-        enabled: true,
         hullTypeOverrides: config.rules.flagshipOverrides,
       },
     },
@@ -143,7 +138,6 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
 
   const index: TournamentIndexEntry[] = TOURNAMENTS.map((entry) => ({
     year: entry.year,
-    slug: entry.slug,
     label: entry.label,
     generatedFile: entry.generatedFile,
   }))

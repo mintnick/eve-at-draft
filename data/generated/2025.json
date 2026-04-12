@@ -1,8 +1,6 @@
 {
   "summary": {
     "year": 2025,
-    "slug": "alliance-tournament-xxi",
-    "label": "Alliance Tournament XXI",
     "prize": {
       "sponsor": "Caldari State",
       "rewardShips": [
@@ -45,12 +43,7 @@
       "Industrial": 3,
       "Corvette": 3
     },
-    "banRules": {
-      "enabled": true,
-      "enforced": false
-    },
     "flagship": {
-      "enabled": true,
       "hullTypeOverrides": {
         "Shapash": "Frigate",
         "Geri": "Frigate",

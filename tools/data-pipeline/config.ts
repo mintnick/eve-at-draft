@@ -6,7 +6,6 @@ export const SHIP_CATALOG_FILE = 'ship-catalog.json'
 export interface TournamentPipelineConfig {
   sourceProvider: 'legacy-repo-snapshot' | 'official-sheet-static-values'
   year: number
-  slug: string
   label: string
   prize: {
     sponsor: string
@@ -33,11 +32,6 @@ export interface TournamentPipelineConfig {
     }
     rulesLink: string
     banLink: string
-    banRules: {
-      enabled: boolean
-      enforced: boolean
-      bansPerHull?: number
-    }
     flagshipOverrides: Partial<Record<string, HullType>>
   }
 }
@@ -46,7 +40,6 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
   {
     sourceProvider: 'official-sheet-static-values',
     year: 2021,
-    slug: 'alliance-tournament-xvii',
     label: 'Alliance Tournament XVII',
     prize: {
       sponsor: "Mordu's Legion",
@@ -81,17 +74,12 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
       pointInflation: undefined,
       rulesLink: 'https://www.eveonline.com/news/view/at-xvii-rules-and-registration',
       banLink: 'https://www.eveonline.com/news/view/at-xvii-rules-and-registration#ship-bans',
-      banRules: {
-        enabled: true,
-        enforced: false,
-      },
       flagshipOverrides: {},
     },
   },
   {
     sourceProvider: 'official-sheet-static-values',
     year: 2022,
-    slug: 'alliance-tournament-xviii',
     label: 'Alliance Tournament XVIII',
     prize: {
       sponsor: 'Minmatar Republic',
@@ -128,17 +116,12 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
       },
       rulesLink: 'https://www.eveonline.com/news/view/alliance-tournament-xviii-rules-and-registration',
       banLink: 'https://www.eveonline.com/news/view/alliance-tournament-xviii-rules-and-registration#ship-bans',
-      banRules: {
-        enabled: true,
-        enforced: false,
-      },
       flagshipOverrides: {},
     },
   },
   {
     sourceProvider: 'official-sheet-static-values',
     year: 2023,
-    slug: 'alliance-tournament-xix',
     label: 'Alliance Tournament XIX',
     prize: {
       sponsor: 'Gallente Federation',
@@ -175,17 +158,12 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
       },
       rulesLink: 'https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration',
       banLink: 'https://www.eveonline.com/news/view/alliance-tournament-xix-rules-and-registration#ships-bans',
-      banRules: {
-        enabled: true,
-        enforced: false,
-      },
       flagshipOverrides: {},
     },
   },
   {
     sourceProvider: 'official-sheet-static-values',
     year: 2024,
-    slug: 'alliance-tournament-xx',
     label: 'Alliance Tournament XX',
     prize: {
       sponsor: 'Guristas',
@@ -223,10 +201,6 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
       },
       rulesLink: 'https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules',
       banLink: 'https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules#h2-17',
-      banRules: {
-        enabled: true,
-        enforced: false,
-      },
       flagshipOverrides: {
         Shapash: 'Frigate',
         Geri: 'Frigate',
@@ -240,7 +214,6 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
   {
     sourceProvider: 'legacy-repo-snapshot',
     year: 2025,
-    slug: 'alliance-tournament-xxi',
     label: 'Alliance Tournament XXI',
     prize: {
       sponsor: 'Caldari State',
@@ -273,10 +246,6 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
       pointInflation: undefined,
       rulesLink: 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations',
       banLink: 'https://www.eveonline.com/news/view/alliance-tournament-xxi-rules-and-regulations#h2-15',
-      banRules: {
-        enabled: true,
-        enforced: false,
-      },
       flagshipOverrides: {
         Shapash: 'Frigate',
         Geri: 'Frigate',

@@ -96,17 +96,14 @@ describe('data pipeline build helpers', () => {
     expect(catalog).toEqual({
       Bhaalgorn: {
         shipId: 17920,
-        key: 'Bhaalgorn',
         names: names('Bhaalgorn', '巴戈龙级'),
       },
       Bantam: {
         shipId: 582,
-        key: 'Bantam',
         names: names('Bantam', '矮脚鸡级'),
       },
       Caracal: {
         shipId: 621,
-        key: 'Caracal',
         names: names('Caracal', '狞獾级'),
       },
     })
@@ -138,12 +135,10 @@ describe('data pipeline build helpers', () => {
 
     expect(catalog.Bhaalgorn).toEqual({
       shipId: 17920,
-      key: 'Bhaalgorn',
       names: names('Bhaalgorn', '巴戈龙级'),
     })
     expect(catalog.Condor).toEqual({
       shipId: 583,
-      key: 'Condor',
       names: names('Condor', '秃鹫级'),
     })
   })

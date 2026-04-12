@@ -1,8 +1,6 @@
 {
   "summary": {
     "year": 2022,
-    "slug": "alliance-tournament-xviii",
-    "label": "Alliance Tournament XVIII",
     "prize": {
       "sponsor": "Minmatar Republic",
       "rewardShips": [
@@ -48,12 +46,7 @@
     "pointInflation": {
       "duplicateShipIncrement": 1
     },
-    "banRules": {
-      "enabled": true,
-      "enforced": false
-    },
     "flagship": {
-      "enabled": true,
       "hullTypeOverrides": {}
     }
   },

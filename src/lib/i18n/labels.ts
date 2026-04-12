@@ -1,4 +1,4 @@
-import type { LocaleCode, ShipCatalog, TournamentSummary } from '@/lib/types'
+import type { LocaleCode, ShipCatalog } from '@/lib/types'
 
 export function getShipDisplayName(shipCatalog: ShipCatalog, shipKey: string, locale: LocaleCode): string {
   const ship = shipCatalog[shipKey]
@@ -7,8 +7,4 @@ export function getShipDisplayName(shipCatalog: ShipCatalog, shipKey: string, lo
   }
 
   return ship.names[locale] ?? ship.names.en
-}
-
-export function getTournamentDisplayLabel(summary: TournamentSummary, _locale: LocaleCode): string {
-  return summary.label
 }

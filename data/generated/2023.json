@@ -1,8 +1,6 @@
 {
   "summary": {
     "year": 2023,
-    "slug": "alliance-tournament-xix",
-    "label": "Alliance Tournament XIX",
     "prize": {
       "sponsor": "Gallente Federation",
       "rewardShips": [
@@ -48,12 +46,7 @@
     "pointInflation": {
       "duplicateShipIncrement": 1
     },
-    "banRules": {
-      "enabled": true,
-      "enforced": false
-    },
     "flagship": {
-      "enabled": true,
       "hullTypeOverrides": {}
     }
   },

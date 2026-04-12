@@ -89,10 +89,6 @@ export function getFlagshipClassification(
     return counts
   }, {} as Record<HullType, number>)
 
-  if (!dataset.rules.flagship.enabled) {
-    return classification
-  }
-
   const flagship = state.picks.Flagship[0]
   if (!flagship) {
     return classification

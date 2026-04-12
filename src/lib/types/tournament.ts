@@ -15,8 +15,6 @@ export type HullType =
 
 export interface TournamentSummary {
   year: number
-  slug: string
-  label: string
   prize: {
     sponsor: string
     rewardShips: Array<{
@@ -28,7 +26,6 @@ export interface TournamentSummary {
 
 export interface TournamentIndexEntry {
   year: number
-  slug: string
   label: string
   generatedFile: string
 }
@@ -45,20 +42,13 @@ export interface RuleConfig {
   pointInflation?: {
     duplicateShipIncrement: number
   }
-  banRules: {
-    enabled: boolean
-    enforced: boolean
-    bansPerHull?: number
-  }
   flagship: {
-    enabled: boolean
     hullTypeOverrides: Partial<Record<string, HullType>>
   }
 }
 
 export interface ShipCatalogEntry {
   shipId: number
-  key: string
   names: Record<LocaleCode, string>
 }
 

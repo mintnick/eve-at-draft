@@ -1,7 +1,6 @@
 {
   "Widow": {
     "shipId": 22436,
-    "key": "Widow",
     "names": {
       "en": "Widow",
       "zh-CN": "寡妇级",
@@ -16,7 +15,6 @@
   },
   "Leshak": {
     "shipId": 47271,
-    "key": "Leshak",
     "names": {
       "en": "Leshak",
       "zh-CN": "勒沙克级",
@@ -31,7 +29,6 @@
   },
   "Rattlesnake": {
     "shipId": 17918,
-    "key": "Rattlesnake",
     "names": {
       "en": "Rattlesnake",
       "zh-CN": "响尾蛇级",
@@ -46,7 +43,6 @@
   },
   "Barghest": {
     "shipId": 33820,
-    "key": "Barghest",
     "names": {
       "en": "Barghest",
       "zh-CN": "巴盖斯级",
@@ -61,7 +57,6 @@
   },
   "Thunderchild": {
     "shipId": 54733,
-    "key": "Thunderchild",
     "names": {
       "en": "Thunderchild",
       "zh-CN": "雷裔级",
@@ -76,7 +71,6 @@
   },
   "Abaddon": {
     "shipId": 24692,
-    "key": "Abaddon",
     "names": {
       "en": "Abaddon",
       "zh-CN": "地狱天使级",
@@ -91,7 +85,6 @@
   },
   "Apocalypse": {
     "shipId": 642,
-    "key": "Apocalypse",
     "names": {
       "en": "Apocalypse",
       "zh-CN": "灾难级",
@@ -106,7 +99,6 @@
   },
   "Armageddon": {
     "shipId": 643,
-    "key": "Armageddon",
     "names": {
       "en": "Armageddon",
       "zh-CN": "末日沙场级",
@@ -121,7 +113,6 @@
   },
   "Scorpion": {
     "shipId": 640,
-    "key": "Scorpion",
     "names": {
       "en": "Scorpion",
       "zh-CN": "毒蝎级",
@@ -136,7 +127,6 @@
   },
   "Raven": {
     "shipId": 638,
-    "key": "Raven",
     "names": {
       "en": "Raven",
       "zh-CN": "乌鸦级",
@@ -151,7 +141,6 @@
   },
   "Rokh": {
     "shipId": 24688,
-    "key": "Rokh",
     "names": {
       "en": "Rokh",
       "zh-CN": "鹏鲲级",
@@ -166,7 +155,6 @@
   },
   "Hyperion": {
     "shipId": 24690,
-    "key": "Hyperion",
     "names": {
       "en": "Hyperion",
       "zh-CN": "亥伯龙神级",
@@ -181,7 +169,6 @@
   },
   "Megathron": {
     "shipId": 641,
-    "key": "Megathron",
     "names": {
       "en": "Megathron",
       "zh-CN": "万王宝座级",
@@ -196,7 +183,6 @@
   },
   "Dominix": {
     "shipId": 645,
-    "key": "Dominix",
     "names": {
       "en": "Dominix",
       "zh-CN": "多米尼克斯级",
@@ -211,7 +197,6 @@
   },
   "Tempest": {
     "shipId": 639,
-    "key": "Tempest",
     "names": {
       "en": "Tempest",
       "zh-CN": "狂暴级",
@@ -226,7 +211,6 @@
   },
   "Typhoon": {
     "shipId": 644,
-    "key": "Typhoon",
     "names": {
       "en": "Typhoon",
       "zh-CN": "台风级",
@@ -241,7 +225,6 @@
   },
   "Maelstrom": {
     "shipId": 24694,
-    "key": "Maelstrom",
     "names": {
       "en": "Maelstrom",
       "zh-CN": "死亡漩涡级",
@@ -256,7 +239,6 @@
   },
   "Praxis": {
     "shipId": 47466,
-    "key": "Praxis",
     "names": {
       "en": "Praxis",
       "zh-CN": "实践级",
@@ -271,7 +253,6 @@
   },
   "Apocalypse Navy Issue": {
     "shipId": 17726,
-    "key": "Apocalypse Navy Issue",
     "names": {
       "en": "Apocalypse Navy Issue",
       "zh-CN": "灾难级海军型",
@@ -286,7 +267,6 @@
   },
   "Armageddon Navy Issue": {
     "shipId": 32305,
-    "key": "Armageddon Navy Issue",
     "names": {
       "en": "Armageddon Navy Issue",
       "zh-CN": "末日沙场级海军型",
@@ -301,7 +281,6 @@
   },
   "Scorpion Navy Issue": {
     "shipId": 32309,
-    "key": "Scorpion Navy Issue",
     "names": {
       "en": "Scorpion Navy Issue",
       "zh-CN": "毒蝎级海军型",
@@ -316,7 +295,6 @@
   },
   "Raven Navy Issue": {
     "shipId": 17636,
-    "key": "Raven Navy Issue",
     "names": {
       "en": "Raven Navy Issue",
       "zh-CN": "乌鸦级海军型",
@@ -331,7 +309,6 @@
   },
   "Megathron Navy Issue": {
     "shipId": 17728,
-    "key": "Megathron Navy Issue",
     "names": {
       "en": "Megathron Navy Issue",
       "zh-CN": "万王宝座级海军型",
@@ -346,7 +323,6 @@
   },
   "Dominix Navy Issue": {
     "shipId": 32307,
-    "key": "Dominix Navy Issue",
     "names": {
       "en": "Dominix Navy Issue",
       "zh-CN": "多米尼克斯级海军型",
@@ -361,7 +337,6 @@
   },
   "Tempest Fleet Issue": {
     "shipId": 17732,
-    "key": "Tempest Fleet Issue",
     "names": {
       "en": "Tempest Fleet Issue",
       "zh-CN": "狂暴级舰队型",
@@ -376,7 +351,6 @@
   },
   "Typhoon Fleet Issue": {
     "shipId": 32311,
-    "key": "Typhoon Fleet Issue",
     "names": {
       "en": "Typhoon Fleet Issue",
       "zh-CN": "台风级舰队型",
@@ -391,7 +365,6 @@
   },
   "Redeemer": {
     "shipId": 22428,
-    "key": "Redeemer",
     "names": {
       "en": "Redeemer",
       "zh-CN": "救世级",
@@ -406,7 +379,6 @@
   },
   "Sin": {
     "shipId": 22430,
-    "key": "Sin",
     "names": {
       "en": "Sin",
       "zh-CN": "罪恶级",
@@ -421,7 +393,6 @@
   },
   "Panther": {
     "shipId": 22440,
-    "key": "Panther",
     "names": {
       "en": "Panther",
       "zh-CN": "黑豹级",
@@ -436,7 +407,6 @@
   },
   "Paladin": {
     "shipId": 28659,
-    "key": "Paladin",
     "names": {
       "en": "Paladin",
       "zh-CN": "帕拉丁级",
@@ -451,7 +421,6 @@
   },
   "Golem": {
     "shipId": 28710,
-    "key": "Golem",
     "names": {
       "en": "Golem",
       "zh-CN": "魔像级",
@@ -466,7 +435,6 @@
   },
   "Kronos": {
     "shipId": 28661,
-    "key": "Kronos",
     "names": {
       "en": "Kronos",
       "zh-CN": "克洛诺斯级",
@@ -481,7 +449,6 @@
   },
   "Vargur": {
     "shipId": 28665,
-    "key": "Vargur",
     "names": {
       "en": "Vargur",
       "zh-CN": "恶狼级",
@@ -496,7 +463,6 @@
   },
   "Machariel": {
     "shipId": 17738,
-    "key": "Machariel",
     "names": {
       "en": "Machariel",
       "zh-CN": "马克瑞级",
@@ -511,7 +477,6 @@
   },
   "Bhaalgorn": {
     "shipId": 17920,
-    "key": "Bhaalgorn",
     "names": {
       "en": "Bhaalgorn",
       "zh-CN": "巴戈龙级",
@@ -526,7 +491,6 @@
   },
   "Nightmare": {
     "shipId": 17736,
-    "key": "Nightmare",
     "names": {
       "en": "Nightmare",
       "zh-CN": "噩梦级",
@@ -541,7 +505,6 @@
   },
   "Vindicator": {
     "shipId": 17740,
-    "key": "Vindicator",
     "names": {
       "en": "Vindicator",
       "zh-CN": "复仇者级",
@@ -556,7 +519,6 @@
   },
   "Zarmazd": {
     "shipId": 49713,
-    "key": "Zarmazd",
     "names": {
       "en": "Zarmazd",
       "zh-CN": "扎玛德级",
@@ -571,7 +533,6 @@
   },
   "Inquisitor": {
     "shipId": 590,
-    "key": "Inquisitor",
     "names": {
       "en": "Inquisitor",
       "zh-CN": "检察官级",
@@ -586,7 +547,6 @@
   },
   "Rodiva": {
     "shipId": 49712,
-    "key": "Rodiva",
     "names": {
       "en": "Rodiva",
       "zh-CN": "洛迪瓦级",
@@ -601,7 +561,6 @@
   },
   "Bantam": {
     "shipId": 582,
-    "key": "Bantam",
     "names": {
       "en": "Bantam",
       "zh-CN": "矮脚鸡级",
@@ -616,7 +575,6 @@
   },
   "Navitas": {
     "shipId": 592,
-    "key": "Navitas",
     "names": {
       "en": "Navitas",
       "zh-CN": "纳维达斯级",
@@ -631,7 +589,6 @@
   },
   "Burst": {
     "shipId": 599,
-    "key": "Burst",
     "names": {
       "en": "Burst",
       "zh-CN": "爆发级",
@@ -646,7 +603,6 @@
   },
   "Deacon": {
     "shipId": 37457,
-    "key": "Deacon",
     "names": {
       "en": "Deacon",
       "zh-CN": "执事级",
@@ -661,7 +617,6 @@
   },
   "Kirin": {
     "shipId": 37458,
-    "key": "Kirin",
     "names": {
       "en": "Kirin",
       "zh-CN": "麒麟级",
@@ -676,7 +631,6 @@
   },
   "Thalia": {
     "shipId": 37459,
-    "key": "Thalia",
     "names": {
       "en": "Thalia",
       "zh-CN": "塔利亚级",
@@ -691,7 +645,6 @@
   },
   "Scalpel": {
     "shipId": 37460,
-    "key": "Scalpel",
     "names": {
       "en": "Scalpel",
       "zh-CN": "手术刀级",
@@ -706,7 +659,6 @@
   },
   "Augoror": {
     "shipId": 625,
-    "key": "Augoror",
     "names": {
       "en": "Augoror",
       "zh-CN": "奥格诺级",
@@ -721,7 +673,6 @@
   },
   "Osprey": {
     "shipId": 620,
-    "key": "Osprey",
     "names": {
       "en": "Osprey",
       "zh-CN": "鱼鹰级",
@@ -736,7 +687,6 @@
   },
   "Exequror": {
     "shipId": 634,
-    "key": "Exequror",
     "names": {
       "en": "Exequror",
       "zh-CN": "送葬者级",
@@ -751,7 +701,6 @@
   },
   "Scythe": {
     "shipId": 631,
-    "key": "Scythe",
     "names": {
       "en": "Scythe",
       "zh-CN": "镰刀级",
@@ -766,7 +715,6 @@
   },
   "Guardian": {
     "shipId": 11987,
-    "key": "Guardian",
     "names": {
       "en": "Guardian",
       "zh-CN": "守卫级",
@@ -781,7 +729,6 @@
   },
   "Basilisk": {
     "shipId": 11985,
-    "key": "Basilisk",
     "names": {
       "en": "Basilisk",
       "zh-CN": "皇冠蜥级",
@@ -796,7 +743,6 @@
   },
   "Oneiros": {
     "shipId": 11989,
-    "key": "Oneiros",
     "names": {
       "en": "Oneiros",
       "zh-CN": "奥内罗斯级",
@@ -811,7 +757,6 @@
   },
   "Scimitar": {
     "shipId": 11978,
-    "key": "Scimitar",
     "names": {
       "en": "Scimitar",
       "zh-CN": "曲剑级",
@@ -826,7 +771,6 @@
   },
   "Oracle": {
     "shipId": 4302,
-    "key": "Oracle",
     "names": {
       "en": "Oracle",
       "zh-CN": "预言级",
@@ -841,7 +785,6 @@
   },
   "Naga": {
     "shipId": 4306,
-    "key": "Naga",
     "names": {
       "en": "Naga",
       "zh-CN": "娜迦级",
@@ -856,7 +799,6 @@
   },
   "Talos": {
     "shipId": 4308,
-    "key": "Talos",
     "names": {
       "en": "Talos",
       "zh-CN": "塔洛斯级",
@@ -871,7 +813,6 @@
   },
   "Tornado": {
     "shipId": 4310,
-    "key": "Tornado",
     "names": {
       "en": "Tornado",
       "zh-CN": "龙卷风级",
@@ -886,7 +827,6 @@
   },
   "Prophecy": {
     "shipId": 16233,
-    "key": "Prophecy",
     "names": {
       "en": "Prophecy",
       "zh-CN": "先知级",
@@ -901,7 +841,6 @@
   },
   "Harbinger": {
     "shipId": 24696,
-    "key": "Harbinger",
     "names": {
       "en": "Harbinger",
       "zh-CN": "先驱者级",
@@ -916,7 +855,6 @@
   },
   "Drake": {
     "shipId": 24698,
-    "key": "Drake",
     "names": {
       "en": "Drake",
       "zh-CN": "幼龙级",
@@ -931,7 +869,6 @@
   },
   "Ferox": {
     "shipId": 16227,
-    "key": "Ferox",
     "names": {
       "en": "Ferox",
       "zh-CN": "猛鲑级",
@@ -946,7 +883,6 @@
   },
   "Brutix": {
     "shipId": 16229,
-    "key": "Brutix",
     "names": {
       "en": "Brutix",
       "zh-CN": "布鲁提克斯级",
@@ -961,7 +897,6 @@
   },
   "Myrmidon": {
     "shipId": 24700,
-    "key": "Myrmidon",
     "names": {
       "en": "Myrmidon",
       "zh-CN": "弥洱米顿级",
@@ -976,7 +911,6 @@
   },
   "Hurricane": {
     "shipId": 24702,
-    "key": "Hurricane",
     "names": {
       "en": "Hurricane",
       "zh-CN": "暴风级",
@@ -991,7 +925,6 @@
   },
   "Cyclone": {
     "shipId": 16231,
-    "key": "Cyclone",
     "names": {
       "en": "Cyclone",
       "zh-CN": "飓风级",
@@ -1006,7 +939,6 @@
   },
   "Harbinger Navy Issue": {
     "shipId": 33155,
-    "key": "Harbinger Navy Issue",
     "names": {
       "en": "Harbinger Navy Issue",
       "zh-CN": "先驱者级海军型",
@@ -1021,7 +953,6 @@
   },
   "Drake Navy Issue": {
     "shipId": 33153,
-    "key": "Drake Navy Issue",
     "names": {
       "en": "Drake Navy Issue",
       "zh-CN": "幼龙级海军型",
@@ -1036,7 +967,6 @@
   },
   "Brutix Navy Issue": {
     "shipId": 33151,
-    "key": "Brutix Navy Issue",
     "names": {
       "en": "Brutix Navy Issue",
       "zh-CN": "布鲁提克斯级海军型",
@@ -1051,7 +981,6 @@
   },
   "Hurricane Fleet Issue": {
     "shipId": 33157,
-    "key": "Hurricane Fleet Issue",
     "names": {
       "en": "Hurricane Fleet Issue",
       "zh-CN": "暴风级舰队型",
@@ -1066,7 +995,6 @@
   },
   "Damnation": {
     "shipId": 22474,
-    "key": "Damnation",
     "names": {
       "en": "Damnation",
       "zh-CN": "永灭级",
@@ -1081,7 +1009,6 @@
   },
   "Absolution": {
     "shipId": 22448,
-    "key": "Absolution",
     "names": {
       "en": "Absolution",
       "zh-CN": "救赎级",
@@ -1096,7 +1023,6 @@
   },
   "Vulture": {
     "shipId": 22446,
-    "key": "Vulture",
     "names": {
       "en": "Vulture",
       "zh-CN": "兀鹫级",
@@ -1111,7 +1037,6 @@
   },
   "Nighthawk": {
     "shipId": 22470,
-    "key": "Nighthawk",
     "names": {
       "en": "Nighthawk",
       "zh-CN": "夜鹰级",
@@ -1126,7 +1051,6 @@
   },
   "Astarte": {
     "shipId": 22466,
-    "key": "Astarte",
     "names": {
       "en": "Astarte",
       "zh-CN": "阿施塔特级",
@@ -1141,7 +1065,6 @@
   },
   "Eos": {
     "shipId": 22442,
-    "key": "Eos",
     "names": {
       "en": "Eos",
       "zh-CN": "曙光女神级",
@@ -1156,7 +1079,6 @@
   },
   "Claymore": {
     "shipId": 22468,
-    "key": "Claymore",
     "names": {
       "en": "Claymore",
       "zh-CN": "月刃级",
@@ -1171,7 +1093,6 @@
   },
   "Sleipnir": {
     "shipId": 22444,
-    "key": "Sleipnir",
     "names": {
       "en": "Sleipnir",
       "zh-CN": "斯雷普尼级",
@@ -1186,7 +1107,6 @@
   },
   "Gnosis": {
     "shipId": 3756,
-    "key": "Gnosis",
     "names": {
       "en": "Gnosis",
       "zh-CN": "灵感级",
@@ -1201,7 +1121,6 @@
   },
   "Ikitursa": {
     "shipId": 52252,
-    "key": "Ikitursa",
     "names": {
       "en": "Ikitursa",
       "zh-CN": "伊基图萨级",
@@ -1216,7 +1135,6 @@
   },
   "Gila": {
     "shipId": 17715,
-    "key": "Gila",
     "names": {
       "en": "Gila",
       "zh-CN": "毒蜥级",
@@ -1231,7 +1149,6 @@
   },
   "Vedmak": {
     "shipId": 47270,
-    "key": "Vedmak",
     "names": {
       "en": "Vedmak",
       "zh-CN": "维德马克级",
@@ -1246,7 +1163,6 @@
   },
   "Orthrus": {
     "shipId": 33818,
-    "key": "Orthrus",
     "names": {
       "en": "Orthrus",
       "zh-CN": "奥苏斯级",
@@ -1261,7 +1177,6 @@
   },
   "Stormbringer": {
     "shipId": 54732,
-    "key": "Stormbringer",
     "names": {
       "en": "Stormbringer",
       "zh-CN": "唤风级",
@@ -1276,7 +1191,6 @@
   },
   "Arbitrator": {
     "shipId": 628,
-    "key": "Arbitrator",
     "names": {
       "en": "Arbitrator",
       "zh-CN": "主宰级",
@@ -1291,7 +1205,6 @@
   },
   "Blackbird": {
     "shipId": 632,
-    "key": "Blackbird",
     "names": {
       "en": "Blackbird",
       "zh-CN": "黑鸟级",
@@ -1306,7 +1219,6 @@
   },
   "Celestis": {
     "shipId": 633,
-    "key": "Celestis",
     "names": {
       "en": "Celestis",
       "zh-CN": "星空级",
@@ -1321,7 +1233,6 @@
   },
   "Bellicose": {
     "shipId": 630,
-    "key": "Bellicose",
     "names": {
       "en": "Bellicose",
       "zh-CN": "挑战级",
@@ -1336,7 +1247,6 @@
   },
   "Maller": {
     "shipId": 624,
-    "key": "Maller",
     "names": {
       "en": "Maller",
       "zh-CN": "暴君级",
@@ -1351,7 +1261,6 @@
   },
   "Omen": {
     "shipId": 2006,
-    "key": "Omen",
     "names": {
       "en": "Omen",
       "zh-CN": "启示级",
@@ -1366,7 +1275,6 @@
   },
   "Moa": {
     "shipId": 623,
-    "key": "Moa",
     "names": {
       "en": "Moa",
       "zh-CN": "巨鸟级",
@@ -1381,7 +1289,6 @@
   },
   "Caracal": {
     "shipId": 621,
-    "key": "Caracal",
     "names": {
       "en": "Caracal",
       "zh-CN": "狞獾级",
@@ -1396,7 +1303,6 @@
   },
   "Vexor": {
     "shipId": 626,
-    "key": "Vexor",
     "names": {
       "en": "Vexor",
       "zh-CN": "狂怒者级",
@@ -1411,7 +1317,6 @@
   },
   "Thorax": {
     "shipId": 627,
-    "key": "Thorax",
     "names": {
       "en": "Thorax",
       "zh-CN": "托勒克斯级",
@@ -1426,7 +1331,6 @@
   },
   "Stabber": {
     "shipId": 622,
-    "key": "Stabber",
     "names": {
       "en": "Stabber",
       "zh-CN": "刺客级",
@@ -1441,7 +1345,6 @@
   },
   "Rupture": {
     "shipId": 629,
-    "key": "Rupture",
     "names": {
       "en": "Rupture",
       "zh-CN": "断崖级",
@@ -1456,7 +1359,6 @@
   },
   "Augoror Navy Issue": {
     "shipId": 29337,
-    "key": "Augoror Navy Issue",
     "names": {
       "en": "Augoror Navy Issue",
       "zh-CN": "奥格诺级海军型",
@@ -1471,7 +1373,6 @@
   },
   "Omen Navy Issue": {
     "shipId": 17709,
-    "key": "Omen Navy Issue",
     "names": {
       "en": "Omen Navy Issue",
       "zh-CN": "启示级海军型",
@@ -1486,7 +1387,6 @@
   },
   "Caracal Navy Issue": {
     "shipId": 17634,
-    "key": "Caracal Navy Issue",
     "names": {
       "en": "Caracal Navy Issue",
       "zh-CN": "狞獾级海军型",
@@ -1501,7 +1401,6 @@
   },
   "Osprey Navy Issue": {
     "shipId": 29340,
-    "key": "Osprey Navy Issue",
     "names": {
       "en": "Osprey Navy Issue",
       "zh-CN": "鱼鹰级海军型",
@@ -1516,7 +1415,6 @@
   },
   "Exequror Navy Issue": {
     "shipId": 29344,
-    "key": "Exequror Navy Issue",
     "names": {
       "en": "Exequror Navy Issue",
       "zh-CN": "送葬者级海军型",
@@ -1531,7 +1429,6 @@
   },
   "Vexor Navy Issue": {
     "shipId": 17843,
-    "key": "Vexor Navy Issue",
     "names": {
       "en": "Vexor Navy Issue",
       "zh-CN": "狂怒者级海军型",
@@ -1546,7 +1443,6 @@
   },
   "Scythe Fleet Issue": {
     "shipId": 29336,
-    "key": "Scythe Fleet Issue",
     "names": {
       "en": "Scythe Fleet Issue",
       "zh-CN": "镰刀级舰队型",
@@ -1561,7 +1457,6 @@
   },
   "Stabber Fleet Issue": {
     "shipId": 17713,
-    "key": "Stabber Fleet Issue",
     "names": {
       "en": "Stabber Fleet Issue",
       "zh-CN": "刺客级舰队型",
@@ -1576,7 +1471,6 @@
   },
   "Zealot": {
     "shipId": 12003,
-    "key": "Zealot",
     "names": {
       "en": "Zealot",
       "zh-CN": "狂热级",
@@ -1591,7 +1485,6 @@
   },
   "Sacrilege": {
     "shipId": 12019,
-    "key": "Sacrilege",
     "names": {
       "en": "Sacrilege",
       "zh-CN": "渎圣级",
@@ -1606,7 +1499,6 @@
   },
   "Eagle": {
     "shipId": 12011,
-    "key": "Eagle",
     "names": {
       "en": "Eagle",
       "zh-CN": "银鹰级",
@@ -1621,7 +1513,6 @@
   },
   "Cerberus": {
     "shipId": 11993,
-    "key": "Cerberus",
     "names": {
       "en": "Cerberus",
       "zh-CN": "希尔博拉斯级",
@@ -1636,7 +1527,6 @@
   },
   "Ishtar": {
     "shipId": 12005,
-    "key": "Ishtar",
     "names": {
       "en": "Ishtar",
       "zh-CN": "伊什塔级",
@@ -1651,7 +1541,6 @@
   },
   "Deimos": {
     "shipId": 12023,
-    "key": "Deimos",
     "names": {
       "en": "Deimos",
       "zh-CN": "戴默斯级",
@@ -1666,7 +1555,6 @@
   },
   "Vagabond": {
     "shipId": 11999,
-    "key": "Vagabond",
     "names": {
       "en": "Vagabond",
       "zh-CN": "流浪级",
@@ -1681,7 +1569,6 @@
   },
   "Devoter": {
     "shipId": 12017,
-    "key": "Devoter",
     "names": {
       "en": "Devoter",
       "zh-CN": "奉献级",
@@ -1696,7 +1583,6 @@
   },
   "Onyx": {
     "shipId": 11995,
-    "key": "Onyx",
     "names": {
       "en": "Onyx",
       "zh-CN": "奥尼克斯级",
@@ -1711,7 +1597,6 @@
   },
   "Phobos": {
     "shipId": 12021,
-    "key": "Phobos",
     "names": {
       "en": "Phobos",
       "zh-CN": "伏波斯级",
@@ -1726,7 +1611,6 @@
   },
   "Broadsword": {
     "shipId": 12013,
-    "key": "Broadsword",
     "names": {
       "en": "Broadsword",
       "zh-CN": "阔刀级",
@@ -1741,7 +1625,6 @@
   },
   "Curse": {
     "shipId": 20125,
-    "key": "Curse",
     "names": {
       "en": "Curse",
       "zh-CN": "诅咒级",
@@ -1756,7 +1639,6 @@
   },
   "Pilgrim": {
     "shipId": 11965,
-    "key": "Pilgrim",
     "names": {
       "en": "Pilgrim",
       "zh-CN": "朝圣级",
@@ -1771,7 +1653,6 @@
   },
   "Falcon": {
     "shipId": 11957,
-    "key": "Falcon",
     "names": {
       "en": "Falcon",
       "zh-CN": "战隼级",
@@ -1786,7 +1667,6 @@
   },
   "Rook": {
     "shipId": 11959,
-    "key": "Rook",
     "names": {
       "en": "Rook",
       "zh-CN": "白嘴鸦级",
@@ -1801,7 +1681,6 @@
   },
   "Arazu": {
     "shipId": 11969,
-    "key": "Arazu",
     "names": {
       "en": "Arazu",
       "zh-CN": "埃拉兹级",
@@ -1816,7 +1695,6 @@
   },
   "Lachesis": {
     "shipId": 11971,
-    "key": "Lachesis",
     "names": {
       "en": "Lachesis",
       "zh-CN": "拉克希斯级",
@@ -1831,7 +1709,6 @@
   },
   "Huginn": {
     "shipId": 11961,
-    "key": "Huginn",
     "names": {
       "en": "Huginn",
       "zh-CN": "休津级",
@@ -1846,7 +1723,6 @@
   },
   "Rapier": {
     "shipId": 11963,
-    "key": "Rapier",
     "names": {
       "en": "Rapier",
       "zh-CN": "长剑级",
@@ -1861,7 +1737,6 @@
   },
   "Legion": {
     "shipId": 29986,
-    "key": "Legion",
     "names": {
       "en": "Legion",
       "zh-CN": "圣卒级",
@@ -1876,7 +1751,6 @@
   },
   "Tengu": {
     "shipId": 29984,
-    "key": "Tengu",
     "names": {
       "en": "Tengu",
       "zh-CN": "金鹏级",
@@ -1891,7 +1765,6 @@
   },
   "Proteus": {
     "shipId": 29988,
-    "key": "Proteus",
     "names": {
       "en": "Proteus",
       "zh-CN": "海神级",
@@ -1906,7 +1779,6 @@
   },
   "Loki": {
     "shipId": 29990,
-    "key": "Loki",
     "names": {
       "en": "Loki",
       "zh-CN": "洛基级",
@@ -1921,7 +1793,6 @@
   },
   "Cynabal": {
     "shipId": 17720,
-    "key": "Cynabal",
     "names": {
       "en": "Cynabal",
       "zh-CN": "塞纳波级",
@@ -1936,7 +1807,6 @@
   },
   "Ashimmu": {
     "shipId": 17922,
-    "key": "Ashimmu",
     "names": {
       "en": "Ashimmu",
       "zh-CN": "阿什姆级",
@@ -1951,7 +1821,6 @@
   },
   "Phantasm": {
     "shipId": 17718,
-    "key": "Phantasm",
     "names": {
       "en": "Phantasm",
       "zh-CN": "幽灵级",
@@ -1966,7 +1835,6 @@
   },
   "Stratios": {
     "shipId": 33470,
-    "key": "Stratios",
     "names": {
       "en": "Stratios",
       "zh-CN": "斯特修斯级",
@@ -1981,7 +1849,6 @@
   },
   "Vigilant": {
     "shipId": 17722,
-    "key": "Vigilant",
     "names": {
       "en": "Vigilant",
       "zh-CN": "警惕级",
@@ -1996,7 +1863,6 @@
   },
   "Draugur": {
     "shipId": 52254,
-    "key": "Draugur",
     "names": {
       "en": "Draugur",
       "zh-CN": "德拉古级",
@@ -2011,7 +1877,6 @@
   },
   "Kikimora": {
     "shipId": 49710,
-    "key": "Kikimora",
     "names": {
       "en": "Kikimora",
       "zh-CN": "奇奇莫拉级",
@@ -2026,7 +1891,6 @@
   },
   "Coercer": {
     "shipId": 16236,
-    "key": "Coercer",
     "names": {
       "en": "Coercer",
       "zh-CN": "强制者级",
@@ -2041,7 +1905,6 @@
   },
   "Dragoon": {
     "shipId": 32874,
-    "key": "Dragoon",
     "names": {
       "en": "Dragoon",
       "zh-CN": "龙骑兵级",
@@ -2056,7 +1919,6 @@
   },
   "Cormorant": {
     "shipId": 16238,
-    "key": "Cormorant",
     "names": {
       "en": "Cormorant",
       "zh-CN": "海燕级",
@@ -2071,7 +1933,6 @@
   },
   "Corax": {
     "shipId": 32876,
-    "key": "Corax",
     "names": {
       "en": "Corax",
       "zh-CN": "渡鸦级",
@@ -2086,7 +1947,6 @@
   },
   "Catalyst": {
     "shipId": 16240,
-    "key": "Catalyst",
     "names": {
       "en": "Catalyst",
       "zh-CN": "促进级",
@@ -2101,7 +1961,6 @@
   },
   "Algos": {
     "shipId": 32872,
-    "key": "Algos",
     "names": {
       "en": "Algos",
       "zh-CN": "阿尔格斯级",
@@ -2116,7 +1975,6 @@
   },
   "Thrasher": {
     "shipId": 16242,
-    "key": "Thrasher",
     "names": {
       "en": "Thrasher",
       "zh-CN": "长尾鲛级",
@@ -2131,7 +1989,6 @@
   },
   "Talwar": {
     "shipId": 32878,
-    "key": "Talwar",
     "names": {
       "en": "Talwar",
       "zh-CN": "弯刀级",
@@ -2146,7 +2003,6 @@
   },
   "Pontifex": {
     "shipId": 37481,
-    "key": "Pontifex",
     "names": {
       "en": "Pontifex",
       "zh-CN": "教皇级",
@@ -2161,7 +2017,6 @@
   },
   "Stork": {
     "shipId": 37482,
-    "key": "Stork",
     "names": {
       "en": "Stork",
       "zh-CN": "鹳鸟级",
@@ -2176,7 +2031,6 @@
   },
   "Magus": {
     "shipId": 37483,
-    "key": "Magus",
     "names": {
       "en": "Magus",
       "zh-CN": "占星级",
@@ -2191,7 +2045,6 @@
   },
   "Bifrost": {
     "shipId": 37480,
-    "key": "Bifrost",
     "names": {
       "en": "Bifrost",
       "zh-CN": "天梯级",
@@ -2206,7 +2059,6 @@
   },
   "Heretic": {
     "shipId": 22452,
-    "key": "Heretic",
     "names": {
       "en": "Heretic",
       "zh-CN": "异端级",
@@ -2221,7 +2073,6 @@
   },
   "Flycatcher": {
     "shipId": 22464,
-    "key": "Flycatcher",
     "names": {
       "en": "Flycatcher",
       "zh-CN": "飞燕级",
@@ -2236,7 +2087,6 @@
   },
   "Eris": {
     "shipId": 22460,
-    "key": "Eris",
     "names": {
       "en": "Eris",
       "zh-CN": "厄里斯级",
@@ -2251,7 +2101,6 @@
   },
   "Sabre": {
     "shipId": 22456,
-    "key": "Sabre",
     "names": {
       "en": "Sabre",
       "zh-CN": "剑齿虎级",
@@ -2266,7 +2115,6 @@
   },
   "Confessor": {
     "shipId": 34317,
-    "key": "Confessor",
     "names": {
       "en": "Confessor",
       "zh-CN": "忏悔者级",
@@ -2281,7 +2129,6 @@
   },
   "Jackdaw": {
     "shipId": 34828,
-    "key": "Jackdaw",
     "names": {
       "en": "Jackdaw",
       "zh-CN": "寒鸦级",
@@ -2296,7 +2143,6 @@
   },
   "Hecate": {
     "shipId": 35683,
-    "key": "Hecate",
     "names": {
       "en": "Hecate",
       "zh-CN": "赫卡特级",
@@ -2311,7 +2157,6 @@
   },
   "Svipul": {
     "shipId": 34562,
-    "key": "Svipul",
     "names": {
       "en": "Svipul",
       "zh-CN": "斯威普级",
@@ -2326,7 +2171,6 @@
   },
   "Sunesis": {
     "shipId": 42685,
-    "key": "Sunesis",
     "names": {
       "en": "Sunesis",
       "zh-CN": "旭日级",
@@ -2341,7 +2185,6 @@
   },
   "Executioner": {
     "shipId": 589,
-    "key": "Executioner",
     "names": {
       "en": "Executioner",
       "zh-CN": "刽子手级",
@@ -2356,7 +2199,6 @@
   },
   "Tormentor": {
     "shipId": 591,
-    "key": "Tormentor",
     "names": {
       "en": "Tormentor",
       "zh-CN": "巨神兵级",
@@ -2371,7 +2213,6 @@
   },
   "Punisher": {
     "shipId": 597,
-    "key": "Punisher",
     "names": {
       "en": "Punisher",
       "zh-CN": "惩罚者级",
@@ -2386,7 +2227,6 @@
   },
   "Magnate": {
     "shipId": 29248,
-    "key": "Magnate",
     "names": {
       "en": "Magnate",
       "zh-CN": "富豪级",
@@ -2401,7 +2241,6 @@
   },
   "Condor": {
     "shipId": 583,
-    "key": "Condor",
     "names": {
       "en": "Condor",
       "zh-CN": "秃鹫级",
@@ -2416,7 +2255,6 @@
   },
   "Kestrel": {
     "shipId": 602,
-    "key": "Kestrel",
     "names": {
       "en": "Kestrel",
       "zh-CN": "茶隼级",
@@ -2431,7 +2269,6 @@
   },
   "Merlin": {
     "shipId": 603,
-    "key": "Merlin",
     "names": {
       "en": "Merlin",
       "zh-CN": "小鹰级",
@@ -2446,7 +2283,6 @@
   },
   "Heron": {
     "shipId": 605,
-    "key": "Heron",
     "names": {
       "en": "Heron",
       "zh-CN": "苍鹭级",
@@ -2461,7 +2297,6 @@
   },
   "Atron": {
     "shipId": 608,
-    "key": "Atron",
     "names": {
       "en": "Atron",
       "zh-CN": "阿特龙级",
@@ -2476,7 +2311,6 @@
   },
   "Tristan": {
     "shipId": 593,
-    "key": "Tristan",
     "names": {
       "en": "Tristan",
       "zh-CN": "特里斯坦级",
@@ -2491,7 +2325,6 @@
   },
   "Incursus": {
     "shipId": 594,
-    "key": "Incursus",
     "names": {
       "en": "Incursus",
       "zh-CN": "因卡萨斯级",
@@ -2506,7 +2339,6 @@
   },
   "Imicus": {
     "shipId": 607,
-    "key": "Imicus",
     "names": {
       "en": "Imicus",
       "zh-CN": "伊米卡斯级",
@@ -2521,7 +2353,6 @@
   },
   "Slasher": {
     "shipId": 585,
-    "key": "Slasher",
     "names": {
       "en": "Slasher",
       "zh-CN": "伐木者级",
@@ -2536,7 +2367,6 @@
   },
   "Breacher": {
     "shipId": 598,
-    "key": "Breacher",
     "names": {
       "en": "Breacher",
       "zh-CN": "分裂者级",
@@ -2551,7 +2381,6 @@
   },
   "Rifter": {
     "shipId": 587,
-    "key": "Rifter",
     "names": {
       "en": "Rifter",
       "zh-CN": "裂谷级",
@@ -2566,7 +2395,6 @@
   },
   "Probe": {
     "shipId": 586,
-    "key": "Probe",
     "names": {
       "en": "Probe",
       "zh-CN": "探索级",
@@ -2581,7 +2409,6 @@
   },
   "Crucifier": {
     "shipId": 2161,
-    "key": "Crucifier",
     "names": {
       "en": "Crucifier",
       "zh-CN": "磨难级",
@@ -2596,7 +2423,6 @@
   },
   "Griffin": {
     "shipId": 584,
-    "key": "Griffin",
     "names": {
       "en": "Griffin",
       "zh-CN": "狮鹫级",
@@ -2611,7 +2437,6 @@
   },
   "Maulus": {
     "shipId": 609,
-    "key": "Maulus",
     "names": {
       "en": "Maulus",
       "zh-CN": "毛鲁斯级",
@@ -2626,7 +2451,6 @@
   },
   "Vigil": {
     "shipId": 3766,
-    "key": "Vigil",
     "names": {
       "en": "Vigil",
       "zh-CN": "守夜者级",
@@ -2641,7 +2465,6 @@
   },
   "Imperial Navy Slicer": {
     "shipId": 17703,
-    "key": "Imperial Navy Slicer",
     "names": {
       "en": "Imperial Navy Slicer",
       "zh-CN": "帝国海军切割机级",
@@ -2656,7 +2479,6 @@
   },
   "Crucifier Navy Issue": {
     "shipId": 37453,
-    "key": "Crucifier Navy Issue",
     "names": {
       "en": "Crucifier Navy Issue",
       "zh-CN": "磨难级海军型",
@@ -2671,7 +2493,6 @@
   },
   "Nergal": {
     "shipId": 52250,
-    "key": "Nergal",
     "names": {
       "en": "Nergal",
       "zh-CN": "涅伽尔级",
@@ -2686,7 +2507,6 @@
   },
   "Caldari Navy Hookbill": {
     "shipId": 17619,
-    "key": "Caldari Navy Hookbill",
     "names": {
       "en": "Caldari Navy Hookbill",
       "zh-CN": "加达里海军霍克比尔级",
@@ -2701,7 +2521,6 @@
   },
   "Griffin Navy Issue": {
     "shipId": 37455,
-    "key": "Griffin Navy Issue",
     "names": {
       "en": "Griffin Navy Issue",
       "zh-CN": "狮鹫级海军型",
@@ -2716,7 +2535,6 @@
   },
   "Federation Navy Comet": {
     "shipId": 17841,
-    "key": "Federation Navy Comet",
     "names": {
       "en": "Federation Navy Comet",
       "zh-CN": "联邦海军彗星级",
@@ -2731,7 +2549,6 @@
   },
   "Maulus Navy Issue": {
     "shipId": 37456,
-    "key": "Maulus Navy Issue",
     "names": {
       "en": "Maulus Navy Issue",
       "zh-CN": "毛鲁斯级海军型",
@@ -2746,7 +2563,6 @@
   },
   "Republic Fleet Firetail": {
     "shipId": 17812,
-    "key": "Republic Fleet Firetail",
     "names": {
       "en": "Republic Fleet Firetail",
       "zh-CN": "共和舰队火尾鸡级",
@@ -2761,7 +2577,6 @@
   },
   "Vigil Fleet Issue": {
     "shipId": 37454,
-    "key": "Vigil Fleet Issue",
     "names": {
       "en": "Vigil Fleet Issue",
       "zh-CN": "守夜者级舰队型",
@@ -2776,7 +2591,6 @@
   },
   "Damavik": {
     "shipId": 47269,
-    "key": "Damavik",
     "names": {
       "en": "Damavik",
       "zh-CN": "达玛维克级",
@@ -2791,7 +2605,6 @@
   },
   "Vengeance": {
     "shipId": 11365,
-    "key": "Vengeance",
     "names": {
       "en": "Vengeance",
       "zh-CN": "复仇级",
@@ -2806,7 +2619,6 @@
   },
   "Retribution": {
     "shipId": 11393,
-    "key": "Retribution",
     "names": {
       "en": "Retribution",
       "zh-CN": "审判者级",
@@ -2821,7 +2633,6 @@
   },
   "Worm": {
     "shipId": 17930,
-    "key": "Worm",
     "names": {
       "en": "Worm",
       "zh-CN": "潜龙级",
@@ -2836,7 +2647,6 @@
   },
   "Hawk": {
     "shipId": 11379,
-    "key": "Hawk",
     "names": {
       "en": "Hawk",
       "zh-CN": "战鹰级",
@@ -2851,7 +2661,6 @@
   },
   "Harpy": {
     "shipId": 11381,
-    "key": "Harpy",
     "names": {
       "en": "Harpy",
       "zh-CN": "女妖级",
@@ -2866,7 +2675,6 @@
   },
   "Ishkur": {
     "shipId": 12042,
-    "key": "Ishkur",
     "names": {
       "en": "Ishkur",
       "zh-CN": "伊什库尔级",
@@ -2881,7 +2689,6 @@
   },
   "Enyo": {
     "shipId": 12044,
-    "key": "Enyo",
     "names": {
       "en": "Enyo",
       "zh-CN": "恩尤级",
@@ -2896,7 +2703,6 @@
   },
   "Wolf": {
     "shipId": 11371,
-    "key": "Wolf",
     "names": {
       "en": "Wolf",
       "zh-CN": "猎狼级",
@@ -2911,7 +2717,6 @@
   },
   "Jaguar": {
     "shipId": 11400,
-    "key": "Jaguar",
     "names": {
       "en": "Jaguar",
       "zh-CN": "美洲虎级",
@@ -2926,7 +2731,6 @@
   },
   "Anathema": {
     "shipId": 11188,
-    "key": "Anathema",
     "names": {
       "en": "Anathema",
       "zh-CN": "咒逐级",
@@ -2941,7 +2745,6 @@
   },
   "Buzzard": {
     "shipId": 11192,
-    "key": "Buzzard",
     "names": {
       "en": "Buzzard",
       "zh-CN": "秃鹰级",
@@ -2956,7 +2759,6 @@
   },
   "Helios": {
     "shipId": 11172,
-    "key": "Helios",
     "names": {
       "en": "Helios",
       "zh-CN": "太阳神级",
@@ -2971,7 +2773,6 @@
   },
   "Cheetah": {
     "shipId": 11182,
-    "key": "Cheetah",
     "names": {
       "en": "Cheetah",
       "zh-CN": "猎豹级",
@@ -2986,7 +2787,6 @@
   },
   "Purifier": {
     "shipId": 12038,
-    "key": "Purifier",
     "names": {
       "en": "Purifier",
       "zh-CN": "净化级",
@@ -3001,7 +2801,6 @@
   },
   "Manticore": {
     "shipId": 12032,
-    "key": "Manticore",
     "names": {
       "en": "Manticore",
       "zh-CN": "蝎尾怪级",
@@ -3016,7 +2815,6 @@
   },
   "Nemesis": {
     "shipId": 11377,
-    "key": "Nemesis",
     "names": {
       "en": "Nemesis",
       "zh-CN": "纳美西斯级",
@@ -3031,7 +2829,6 @@
   },
   "Garmur": {
     "shipId": 33816,
-    "key": "Garmur",
     "names": {
       "en": "Garmur",
       "zh-CN": "加姆级",
@@ -3046,7 +2843,6 @@
   },
   "Hound": {
     "shipId": 12034,
-    "key": "Hound",
     "names": {
       "en": "Hound",
       "zh-CN": "猎犬级",
@@ -3061,7 +2857,6 @@
   },
   "Sentinel": {
     "shipId": 11190,
-    "key": "Sentinel",
     "names": {
       "en": "Sentinel",
       "zh-CN": "哨兵级",
@@ -3076,7 +2871,6 @@
   },
   "Kitsune": {
     "shipId": 11194,
-    "key": "Kitsune",
     "names": {
       "en": "Kitsune",
       "zh-CN": "狐妖级",
@@ -3091,7 +2885,6 @@
   },
   "Keres": {
     "shipId": 11174,
-    "key": "Keres",
     "names": {
       "en": "Keres",
       "zh-CN": "克勒斯级",
@@ -3106,7 +2899,6 @@
   },
   "Skybreaker": {
     "shipId": 54731,
-    "key": "Skybreaker",
     "names": {
       "en": "Skybreaker",
       "zh-CN": "破天级",
@@ -3121,7 +2913,6 @@
   },
   "Hyena": {
     "shipId": 11387,
-    "key": "Hyena",
     "names": {
       "en": "Hyena",
       "zh-CN": "土狼级",
@@ -3136,7 +2927,6 @@
   },
   "Crusader": {
     "shipId": 11184,
-    "key": "Crusader",
     "names": {
       "en": "Crusader",
       "zh-CN": "十字军级",
@@ -3151,7 +2941,6 @@
   },
   "Malediction": {
     "shipId": 11186,
-    "key": "Malediction",
     "names": {
       "en": "Malediction",
       "zh-CN": "咒灭级",
@@ -3166,7 +2955,6 @@
   },
   "Crow": {
     "shipId": 11176,
-    "key": "Crow",
     "names": {
       "en": "Crow",
       "zh-CN": "黑鸦级",
@@ -3181,7 +2969,6 @@
   },
   "Raptor": {
     "shipId": 11178,
-    "key": "Raptor",
     "names": {
       "en": "Raptor",
       "zh-CN": "猛禽级",
@@ -3196,7 +2983,6 @@
   },
   "Ares": {
     "shipId": 11202,
-    "key": "Ares",
     "names": {
       "en": "Ares",
       "zh-CN": "阿瑞斯级",
@@ -3211,7 +2997,6 @@
   },
   "Claw": {
     "shipId": 11196,
-    "key": "Claw",
     "names": {
       "en": "Claw",
       "zh-CN": "利爪级",
@@ -3226,7 +3011,6 @@
   },
   "Stiletto": {
     "shipId": 11198,
-    "key": "Stiletto",
     "names": {
       "en": "Stiletto",
       "zh-CN": "短剑级",
@@ -3241,7 +3025,6 @@
   },
   "Dramiel": {
     "shipId": 17932,
-    "key": "Dramiel",
     "names": {
       "en": "Dramiel",
       "zh-CN": "德拉米尔级",
@@ -3256,7 +3039,6 @@
   },
   "Cruor": {
     "shipId": 17926,
-    "key": "Cruor",
     "names": {
       "en": "Cruor",
       "zh-CN": "凝血级",
@@ -3271,7 +3053,6 @@
   },
   "Succubus": {
     "shipId": 17924,
-    "key": "Succubus",
     "names": {
       "en": "Succubus",
       "zh-CN": "魔女级",
@@ -3286,7 +3067,6 @@
   },
   "Astero": {
     "shipId": 33468,
-    "key": "Astero",
     "names": {
       "en": "Astero",
       "zh-CN": "阿斯特罗级",
@@ -3301,7 +3081,6 @@
   },
   "Daredevil": {
     "shipId": 17928,
-    "key": "Daredevil",
     "names": {
       "en": "Daredevil",
       "zh-CN": "夜魔侠级",
@@ -3316,7 +3095,6 @@
   },
   "Bestower": {
     "shipId": 1944,
-    "key": "Bestower",
     "names": {
       "en": "Bestower",
       "zh-CN": "恩赐者级",
@@ -3331,7 +3109,6 @@
   },
   "Sigil": {
     "shipId": 19744,
-    "key": "Sigil",
     "names": {
       "en": "Sigil",
       "zh-CN": "魔符级",
@@ -3346,7 +3123,6 @@
   },
   "Badger": {
     "shipId": 648,
-    "key": "Badger",
     "names": {
       "en": "Badger",
       "zh-CN": "獾级",
@@ -3361,7 +3137,6 @@
   },
   "Tayra": {
     "shipId": 649,
-    "key": "Tayra",
     "names": {
       "en": "Tayra",
       "zh-CN": "狐鼬级",
@@ -3376,7 +3151,6 @@
   },
   "Nereus": {
     "shipId": 650,
-    "key": "Nereus",
     "names": {
       "en": "Nereus",
       "zh-CN": "涅鲁斯级",
@@ -3391,7 +3165,6 @@
   },
   "Kryos": {
     "shipId": 654,
-    "key": "Kryos",
     "names": {
       "en": "Kryos",
       "zh-CN": "克琉斯级",
@@ -3406,7 +3179,6 @@
   },
   "Epithal": {
     "shipId": 655,
-    "key": "Epithal",
     "names": {
       "en": "Epithal",
       "zh-CN": "埃比斯级",
@@ -3421,7 +3193,6 @@
   },
   "Miasmos": {
     "shipId": 656,
-    "key": "Miasmos",
     "names": {
       "en": "Miasmos",
       "zh-CN": "米亚莫斯级",
@@ -3436,7 +3207,6 @@
   },
   "Iteron Mark V": {
     "shipId": 657,
-    "key": "Iteron Mark V",
     "names": {
       "en": "Iteron Mark V",
       "zh-CN": "伊特龙级MKV",
@@ -3451,7 +3221,6 @@
   },
   "Hoarder": {
     "shipId": 651,
-    "key": "Hoarder",
     "names": {
       "en": "Hoarder",
       "zh-CN": "囤积者级",
@@ -3466,7 +3235,6 @@
   },
   "Mammoth": {
     "shipId": 652,
-    "key": "Mammoth",
     "names": {
       "en": "Mammoth",
       "zh-CN": "猛犸级",
@@ -3481,7 +3249,6 @@
   },
   "Wreathe": {
     "shipId": 653,
-    "key": "Wreathe",
     "names": {
       "en": "Wreathe",
       "zh-CN": "环绕级",
@@ -3496,7 +3263,6 @@
   },
   "Impairor": {
     "shipId": 596,
-    "key": "Impairor",
     "names": {
       "en": "Impairor",
       "zh-CN": "帝国号",
@@ -3511,7 +3277,6 @@
   },
   "Ibis": {
     "shipId": 601,
-    "key": "Ibis",
     "names": {
       "en": "Ibis",
       "zh-CN": "伊毕斯号",
@@ -3526,7 +3291,6 @@
   },
   "Velator": {
     "shipId": 606,
-    "key": "Velator",
     "names": {
       "en": "Velator",
       "zh-CN": "维拉托尔号",
@@ -3541,7 +3305,6 @@
   },
   "Reaper": {
     "shipId": 588,
-    "key": "Reaper",
     "names": {
       "en": "Reaper",
       "zh-CN": "死神号",
@@ -3556,7 +3319,6 @@
   },
   "Muninn": {
     "shipId": 12015,
-    "key": "Muninn",
     "names": {
       "en": "Muninn",
       "zh-CN": "缪宁级",
@@ -3571,7 +3333,6 @@
   },
   "Taranis": {
     "shipId": 11200,
-    "key": "Taranis",
     "names": {
       "en": "Taranis",
       "zh-CN": "塔纳尼斯级",
@@ -3586,7 +3347,6 @@
   },
   "Echo": {
     "shipId": 617,
-    "key": "Echo",
     "names": {
       "en": "Echo",
       "zh-CN": "回声级",
@@ -3601,7 +3361,6 @@
   },
   "Hematos": {
     "shipId": 33079,
-    "key": "Hematos",
     "names": {
       "en": "Hematos",
       "zh-CN": "未来人类级",
@@ -3616,7 +3375,6 @@
   },
   "Immolator": {
     "shipId": 615,
-    "key": "Immolator",
     "names": {
       "en": "Immolator",
       "zh-CN": "献祭者级",
@@ -3631,7 +3389,6 @@
   },
   "Taipan": {
     "shipId": 33081,
-    "key": "Taipan",
     "names": {
       "en": "Taipan",
       "zh-CN": "毒蛇级",
@@ -3646,7 +3403,6 @@
   },
   "Violator": {
     "shipId": 33083,
-    "key": "Violator",
     "names": {
       "en": "Violator",
       "zh-CN": "违逆者级",
@@ -3661,7 +3417,6 @@
   },
   "Myrmidon Navy Issue": {
     "shipId": 72869,
-    "key": "Myrmidon Navy Issue",
     "names": {
       "en": "Myrmidon Navy Issue",
       "zh-CN": "弥洱米顿级海军型",
@@ -3676,7 +3431,6 @@
   },
   "Cyclone Fleet Issue": {
     "shipId": 72811,
-    "key": "Cyclone Fleet Issue",
     "names": {
       "en": "Cyclone Fleet Issue",
       "zh-CN": "飓风级舰队型",
@@ -3691,7 +3445,6 @@
   },
   "Ferox Navy Issue": {
     "shipId": 72812,
-    "key": "Ferox Navy Issue",
     "names": {
       "en": "Ferox Navy Issue",
       "zh-CN": "猛鲑级海军型",
@@ -3706,7 +3459,6 @@
   },
   "Prophecy Navy Issue": {
     "shipId": 72872,
-    "key": "Prophecy Navy Issue",
     "names": {
       "en": "Prophecy Navy Issue",
       "zh-CN": "先知级海军型",
@@ -3721,7 +3473,6 @@
   },
   "Catalyst Navy Issue": {
     "shipId": 73796,
-    "key": "Catalyst Navy Issue",
     "names": {
       "en": "Catalyst Navy Issue",
       "zh-CN": "促进级海军型",
@@ -3736,7 +3487,6 @@
   },
   "Thrasher Fleet Issue": {
     "shipId": 73794,
-    "key": "Thrasher Fleet Issue",
     "names": {
       "en": "Thrasher Fleet Issue",
       "zh-CN": "长尾鲛级舰队型",
@@ -3751,7 +3501,6 @@
   },
   "Cormorant Navy Issue": {
     "shipId": 73795,
-    "key": "Cormorant Navy Issue",
     "names": {
       "en": "Cormorant Navy Issue",
       "zh-CN": "海燕级海军型",
@@ -3766,7 +3515,6 @@
   },
   "Coercer Navy Issue": {
     "shipId": 73789,
-    "key": "Coercer Navy Issue",
     "names": {
       "en": "Coercer Navy Issue",
       "zh-CN": "强制者级海军型",
@@ -3781,7 +3529,6 @@
   },
   "Imicus Navy Issue": {
     "shipId": 72913,
-    "key": "Imicus Navy Issue",
     "names": {
       "en": "Imicus Navy Issue",
       "zh-CN": "伊米卡斯级海军型",
@@ -3796,7 +3543,6 @@
   },
   "Magnate Navy Issue": {
     "shipId": 72907,
-    "key": "Magnate Navy Issue",
     "names": {
       "en": "Magnate Navy Issue",
       "zh-CN": "富豪级海军型",
@@ -3811,7 +3557,6 @@
   },
   "Heron Navy Issue": {
     "shipId": 72904,
-    "key": "Heron Navy Issue",
     "names": {
       "en": "Heron Navy Issue",
       "zh-CN": "苍鹭级海军型",
@@ -3826,7 +3571,6 @@
   },
   "Probe Fleet Issue": {
     "shipId": 72903,
-    "key": "Probe Fleet Issue",
     "names": {
       "en": "Probe Fleet Issue",
       "zh-CN": "探索级舰队型",
@@ -3841,7 +3585,6 @@
   },
   "Metamorphosis": {
     "shipId": 77114,
-    "key": "Metamorphosis",
     "names": {
       "en": "Metamorphosis",
       "zh-CN": "变形级",
@@ -3856,7 +3599,6 @@
   },
   "Shapash": {
     "shipId": 78414,
-    "key": "Shapash",
     "names": {
       "en": "Shapash",
       "zh-CN": "沙帕什级",
@@ -3871,7 +3613,6 @@
   },
   "Geri": {
     "shipId": 74141,
-    "key": "Geri",
     "names": {
       "en": "Geri",
       "zh-CN": "格里级",
@@ -3886,7 +3627,6 @@
   },
   "Raiju": {
     "shipId": 60765,
-    "key": "Raiju",
     "names": {
       "en": "Raiju",
       "zh-CN": "雷兽级",
@@ -3901,7 +3641,6 @@
   },
   "Cybele": {
     "shipId": 77726,
-    "key": "Cybele",
     "names": {
       "en": "Cybele",
       "zh-CN": "西布勒级",
@@ -3916,7 +3655,6 @@
   },
   "Laelaps": {
     "shipId": 60764,
-    "key": "Laelaps",
     "names": {
       "en": "Laelaps",
       "zh-CN": "猎獒级",
@@ -3931,7 +3669,6 @@
   },
   "Bestla": {
     "shipId": 74316,
-    "key": "Bestla",
     "names": {
       "en": "Bestla",
       "zh-CN": "贝斯特拉",
@@ -3946,7 +3683,6 @@
   },
   "Khizriel": {
     "shipId": 78369,
-    "key": "Khizriel",
     "names": {
       "en": "Khizriel",
       "zh-CN": "希兹里尔级",
@@ -3961,7 +3697,6 @@
   },
   "Drekavac": {
     "shipId": 49711,
-    "key": "Drekavac",
     "names": {
       "en": "Drekavac",
       "zh-CN": "德雷卡瓦级",
@@ -3976,7 +3711,6 @@
   },
   "Alligator": {
     "shipId": 78366,
-    "key": "Alligator",
     "names": {
       "en": "Alligator",
       "zh-CN": "短吻鳄级",
@@ -3991,7 +3725,6 @@
   },
   "Mamba": {
     "shipId": 78367,
-    "key": "Mamba",
     "names": {
       "en": "Mamba",
       "zh-CN": "曼巴级",
@@ -4006,7 +3739,6 @@
   },
   "Mekubal": {
     "shipId": 78333,
-    "key": "Mekubal",
     "names": {
       "en": "Mekubal",
       "zh-CN": "梅库巴尔级",
@@ -4021,7 +3753,6 @@
   },
   "Squall": {
     "shipId": 81008,
-    "key": "Squall",
     "names": {
       "en": "Squall",
       "zh-CN": "狂风级",
@@ -4036,7 +3767,6 @@
   },
   "Deluge": {
     "shipId": 81046,
-    "key": "Deluge",
     "names": {
       "en": "Deluge",
       "zh-CN": "洪水级",
@@ -4051,7 +3781,6 @@
   },
   "Babaroga": {
     "shipId": 88001,
-    "key": "Babaroga",
     "names": {
       "en": "Babaroga",
       "zh-CN": "巴巴罗加号",
@@ -4066,7 +3795,6 @@
   },
   "Cobra": {
     "shipId": 85229,
-    "key": "Cobra",
     "names": {
       "en": "Cobra",
       "zh-CN": "眼镜蛇级",
@@ -4081,7 +3809,6 @@
   },
   "Sidewinder": {
     "shipId": 85062,
-    "key": "Sidewinder",
     "names": {
       "en": "Sidewinder",
       "zh-CN": "侧进蛇级",
@@ -4096,7 +3823,6 @@
   },
   "Cenotaph": {
     "shipId": 85086,
-    "key": "Cenotaph",
     "names": {
       "en": "Cenotaph",
       "zh-CN": "纪念碑级",
@@ -4111,7 +3837,6 @@
   },
   "Tholos": {
     "shipId": 85087,
-    "key": "Tholos",
     "names": {
       "en": "Tholos",
       "zh-CN": "穹顶级",
