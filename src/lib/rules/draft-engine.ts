@@ -62,17 +62,6 @@ export function findRegisteredShip(
   }
 }
 
-export function findRegisteredShipByKey(dataset: TournamentDataset, shipKey: string): RegisteredShip | null {
-  for (const hullType of getHullTypes(dataset)) {
-    const ship = findRegisteredShip(dataset, hullType, shipKey)
-    if (ship) {
-      return ship
-    }
-  }
-
-  return null
-}
-
 export function listSelections(state: DraftState, key: keyof DraftState): DraftShipSelection[] {
   return [...Object.values(state[key])
     .flat()

@@ -183,7 +183,6 @@ export function useDraftBoard(
     exportDraftText,
     importParsedDraft,
     shipProperty,
-    state,
     unbanShip,
   }
 }

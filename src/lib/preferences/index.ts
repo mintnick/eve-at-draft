@@ -1,15 +1,10 @@
 import type { LocaleCode } from '@/lib/types'
 import { normalizeLocaleCode } from '@/lib/i18n/locales'
 
-export interface AppPreferences {
-  locale: LocaleCode
-  themeDark: boolean
-}
-
 const LANG_COOKIE = 'lang'
 const THEME_COOKIE = 'theme'
 
-export function getCookieValue(name: string): string | null {
+function getCookieValue(name: string): string | null {
   if (typeof document === 'undefined') {
     return null
   }
@@ -66,9 +61,3 @@ export function getInitialThemeDark(): boolean {
   return typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches
 }
 
-export function loadAppPreferences(): AppPreferences {
-  return {
-    locale: getInitialLocale(),
-    themeDark: getInitialThemeDark(),
-  }
-}

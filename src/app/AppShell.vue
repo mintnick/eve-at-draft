@@ -227,15 +227,6 @@ async function applyImport() {
   min-width: 0;
 }
 
-.page-subtitle {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--app-text-muted);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .page-title {
   color: var(--app-accent-warm);
   font-size: clamp(2.2rem, 4vw, 3.4rem);
@@ -438,8 +429,5 @@ async function applyImport() {
     width: 100%;
   }
 
-  .page-subtitle {
-    display: none;
-  }
 }
 </style>
