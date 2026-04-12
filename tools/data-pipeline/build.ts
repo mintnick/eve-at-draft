@@ -7,7 +7,7 @@ import type {
   TournamentShipRule,
 } from '../../src/lib/types'
 import { GENERATED_INDEX_FILE, getTournamentConfig, SHIP_CATALOG_FILE, TOURNAMENTS } from './config'
-import { readJsonFile, writeJsonFile } from './fs'
+import { readJsonFile, readOptionalJsonFile, writeJsonFile } from './fs'
 import type { RawTournamentOverrides, RawTournamentSource } from './types'
 
 export function mergeSourceWithOverrides(
@@ -98,7 +98,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
   const config = getTournamentConfig(year)
   const [source, overrides] = await Promise.all([
     readJsonFile<RawTournamentSource>(config.rawDir, config.sourceFile),
-    readJsonFile<RawTournamentOverrides>(config.rawDir, config.overridesFile),
+    readOptionalJsonFile<RawTournamentOverrides>({}, config.rawDir, config.overridesFile),
   ])
 
   const merged = mergeSourceWithOverrides(source, overrides)
@@ -106,7 +106,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
     TOURNAMENTS.map(async (entry) => {
       const [entrySource, entryOverrides] = await Promise.all([
         readJsonFile<RawTournamentSource>(entry.rawDir, entry.sourceFile),
-        readJsonFile<RawTournamentOverrides>(entry.rawDir, entry.overridesFile),
+        readOptionalJsonFile<RawTournamentOverrides>({}, entry.rawDir, entry.overridesFile),
       ])
 
       return mergeSourceWithOverrides(entrySource, entryOverrides)

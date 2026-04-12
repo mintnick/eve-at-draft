@@ -1,11 +1,25 @@
 # Maintainer Guide
 
-## Repo shape
+## Architecture
 
-- `src/` contains the app shell, draft feature, rules engine, i18n, and preferences code.
-- `data/raw/<year>/` stores fetched upstream artifacts and the normalized raw source snapshot for a tournament year.
-- `data/generated/` stores app-consumable yearly datasets, the shared ship catalog, and the year index.
-- `tools/data-pipeline/` contains the fetch, build, and validate pipeline.
+- `src/app/` — app shell and top-level state
+- `src/features/draft/` — draft screen and wiring
+- `src/lib/rules/` — pure rules engine (points, hull caps, logistics, flagship, import/export)
+- `src/lib/i18n/` — locale bootstrapping and ship label helpers
+- `src/lib/preferences/` — cookie-backed locale and theme persistence
+- `data/raw/<year>/` — fetched upstream artifacts and normalized raw source snapshot
+- `data/generated/` — app-consumable yearly datasets, shared ship catalog, year index
+- `tools/data-pipeline/` — fetch, build, and validate pipeline
+
+## Supported tournament years
+
+| Year | Label | Source |
+|------|-------|--------|
+| 2021 | Alliance Tournament XVII | Official rules post + Google Sheet static-values |
+| 2022 | Alliance Tournament XVIII | Official rules post + Google Sheet static-values |
+| 2023 | Alliance Tournament XIX | Official rules post + Google Sheet static-values |
+| 2024 | Alliance Tournament XX | Official rules post + Google Sheet static-values |
+| 2025 | Alliance Tournament XXI | Legacy snapshot + official rules references |
 
 ## Common commands
 
@@ -41,12 +55,11 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 ## Adding or refreshing a tournament year
 
 1. Add or update the year entry in `tools/data-pipeline/config.ts`.
-2. Fetch upstream artifacts into `data/raw/<year>/sources/`.
-3. Review `data/raw/<year>/source.json` and `data/raw/<year>/overrides.json`.
-4. Build the generated dataset.
-5. Validate the generated outputs.
-6. Run `yarn typecheck`, `yarn test:run`, and `yarn build`.
-7. Update `README.md`, `docs/tournament-source-notes.md`, `docs/refactor-todo.md`, and `docs/session-notes.md` if the supported years or pipeline behavior changed.
+2. Fetch upstream artifacts: `tsx ./tools/data-pipeline/cli.ts fetch <year>`
+3. Review `data/raw/<year>/source.json`. Add manual corrections to `data/raw/<year>/overrides.json` only where necessary — the pipeline treats a missing `overrides.json` the same as an empty one.
+4. Build and validate: `tsx ./tools/data-pipeline/cli.ts build <year> && tsx ./tools/data-pipeline/cli.ts validate <year>`
+5. Run `yarn typecheck`, `yarn test:run`, and `yarn build`.
+6. Update `docs/tournament-source-notes.md` with the new year's source links.
 
 ## Source policy
 
@@ -54,3 +67,8 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 - Use ESI only for stable ship ids and localized names.
 - Use `overrides.json` only for real source gaps or corrections.
 - Keep fetched upstream artifacts checked in under `data/raw/<year>/sources/` so future sessions can audit what the dataset came from.
+
+## Deferred work
+
+- **Phase 8 UI polish** — layout refinement, responsive behavior, and visual hierarchy pass is intentionally incomplete and should get a focused later pass.
+- **Data-pipeline unit tests** — coverage is lighter than app/rules layer; worth expanding when the pipeline is extended.

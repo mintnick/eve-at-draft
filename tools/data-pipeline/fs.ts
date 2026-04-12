@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { access, mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -12,6 +12,17 @@ export function resolveRepoPath(...segments: string[]) {
 
 export async function readJsonFile<T>(...segments: string[]): Promise<T> {
   const absolutePath = resolveRepoPath(...segments)
+  const file = await readFile(absolutePath, 'utf8')
+  return JSON.parse(file) as T
+}
+
+export async function readOptionalJsonFile<T>(defaultValue: T, ...segments: string[]): Promise<T> {
+  const absolutePath = resolveRepoPath(...segments)
+  try {
+    await access(absolutePath)
+  } catch {
+    return defaultValue
+  }
   const file = await readFile(absolutePath, 'utf8')
   return JSON.parse(file) as T
 }
