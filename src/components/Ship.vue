@@ -254,6 +254,11 @@ const extra_points = computed(() => {
   filter: brightness(1.08);
 }
 
+html.app-dark .ship-action--add:hover,
+html.app-dark .ship-action--ban:hover {
+  color: #ffffff;
+}
+
 @media (max-width: 600px) {
   .ship-name {
     font-size: 0.85rem;
