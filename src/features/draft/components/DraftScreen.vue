@@ -356,7 +356,8 @@ defineExpose({
 .prize-info {
   display: inline-flex;
   align-items: center;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
   min-width: 0;
 }
 
@@ -727,16 +728,25 @@ defineExpose({
   }
 
   .summary-header {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .hull-tab-list:deep(.p-tablist-tab-list) {
     grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
   }
 
+  .hull-tab {
+    border-left: 1px solid var(--app-border);
+  }
+
+  .hull-tab.p-tab-active {
+    border-left: 1px solid var(--app-accent);
+    border-top: 2px solid var(--app-accent);
+  }
+
   .hull-tab-content {
     justify-content: center;
-    gap: 0.45rem;
+    gap: 0.4rem;
   }
 
   .hull-tab-name {
@@ -752,5 +762,23 @@ defineExpose({
     font-size: 0.82rem;
   }
 
+  .ship-panel-scroll {
+    height: min(55vh, 600px);
+  }
+
+  .ban-pill-name {
+    max-width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .points-summary-value {
+    font-size: 1.1rem;
+  }
+
+  .prize-ship-group {
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
 }
 </style>

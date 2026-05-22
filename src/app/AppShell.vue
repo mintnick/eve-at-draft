@@ -359,7 +359,7 @@ async function applyImport() {
 
 @media (max-width: 720px) {
   .page-actions-card {
-    padding: 0.75rem;
+    padding: 0.6rem;
   }
 
   .page-actions {
@@ -372,18 +372,42 @@ async function applyImport() {
     width: 100%;
   }
 
-  .page-title-wrap,
+  .page-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+  }
+
   .page-title-copy {
-    display: grid;
+    min-width: 0;
+    flex: 1;
   }
 
   .control-group,
-  .year-select {
-    min-width: 100%;
+  .year-select,
+  .tournament-year-select {
+    min-width: 0;
+    width: 100%;
   }
 
   .language-control {
-    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .language-control .year-select {
+    min-width: 0;
+    width: auto;
+  }
+
+  .tournament-source-links {
+    min-height: 0;
+    gap: 0.75rem;
+    padding-bottom: 0;
   }
 
   .import-dialog-actions {
@@ -393,6 +417,5 @@ async function applyImport() {
   .transfer-button {
     width: 100%;
   }
-
 }
 </style>

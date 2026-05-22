@@ -246,8 +246,32 @@ const extra_points = computed(() => {
 }
 
 @media (max-width: 600px) {
+  .ship-wrapper {
+    gap: 0.4rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .ship-meta {
+    gap: 0.55rem;
+  }
+
   .ship-name {
     font-size: 0.85rem;
+  }
+
+  .ship-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ship-action {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .ship-action-icon {
+    width: 1.55rem;
+    height: 1.55rem;
   }
 }
 </style>
