@@ -182,8 +182,8 @@ const extra_points = computed(() => {
 }
 
 .ship-action {
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border: 1px solid var(--app-border-strong);
 }
 
@@ -194,8 +194,8 @@ const extra_points = computed(() => {
 
 .ship-action-icon {
   display: block;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.85rem;
+  height: 1.85rem;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;

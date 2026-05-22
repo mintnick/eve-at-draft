@@ -298,9 +298,12 @@ defineExpose({
 }
 
 .ban-rules-link {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--app-accent-warm-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--app-accent);
+  white-space: nowrap;
 }
 
 .points-summary {
@@ -343,7 +346,11 @@ defineExpose({
 }
 
 .feedback-message--info {
-  color: var(--app-text-muted);
+  color: var(--app-text-strong);
+}
+
+.feedback-message--info:deep(.p-message-text) {
+  color: var(--app-text-strong);
 }
 
 .prize-info {
@@ -389,6 +396,8 @@ defineExpose({
 
 .feedback-slot:deep(.p-message) {
   margin: 0;
+  transition: none !important;
+  animation: none !important;
 }
 
 .feedback-slot:deep(.p-message-text) {
@@ -621,8 +630,8 @@ defineExpose({
 
 .ban-pill-remove-button {
   flex: 0 0 auto;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid var(--app-border-strong);
   background: var(--app-action-remove-bg);
   color: var(--app-action-remove-fg);
@@ -636,8 +645,8 @@ defineExpose({
 
 .ban-pill-remove-button .ship-action-icon {
   display: block;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.55rem;
+  height: 1.55rem;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;

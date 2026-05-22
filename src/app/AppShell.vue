@@ -218,8 +218,8 @@ async function applyImport() {
 
 .page-title {
   color: var(--app-text-strong);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.2;
