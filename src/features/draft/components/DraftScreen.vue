@@ -776,7 +776,7 @@ defineExpose({
   }
 
   .ship-panel-scroll {
-    height: min(70vh, 720px) !important;
+    height: 440px !important;
   }
 
   .ban-pill-name {
