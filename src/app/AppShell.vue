@@ -113,11 +113,8 @@ async function applyImport() {
         <div class="page-title-copy">
           <div class="page-title">{{ $t('messages.title') }}</div>
         </div>
-        <div class="control-group language-control">
-          <label class="year-picker-label year-picker-label--icon" for="app-language">
-            <span class="language-label-icon" aria-hidden="true"></span>
-            <span>{{ $t('messages.language') }}</span>
-          </label>
+        <div class="language-control">
+          <span class="language-label-icon" aria-hidden="true"></span>
           <Select
             id="app-language"
             :model-value="locale"
@@ -125,6 +122,7 @@ async function applyImport() {
             option-label="label"
             option-value="value"
             scroll-height="none"
+            :aria-label="$t('messages.language')"
             class="year-select"
             @update:model-value="changeLang($event as LocaleCode)"
           />
@@ -281,11 +279,29 @@ async function applyImport() {
 }
 
 .language-control {
-  min-width: 160px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--app-text-muted);
 }
 
 .language-control .year-select {
-  min-width: 160px;
+  min-width: 140px;
+}
+
+.language-label-icon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  background: currentColor;
+  -webkit-mask-image: url('/icons/language.svg');
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url('/icons/language.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
 
 .tournament-source-links {
@@ -305,34 +321,6 @@ async function applyImport() {
   text-transform: uppercase;
   color: var(--app-accent);
   white-space: nowrap;
-}
-
-.year-picker-label {
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--app-text-muted);
-}
-
-.year-picker-label--icon {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.language-label-icon {
-  width: 1rem;
-  height: 1rem;
-  background: currentColor;
-  -webkit-mask-image: url('/icons/language.svg');
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url('/icons/language.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
 }
 
 .year-select {
