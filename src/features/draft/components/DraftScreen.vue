@@ -272,7 +272,6 @@ defineExpose({
           />
           <span class="ban-pill-name">{{ localizedShipName(ship.shipKey) }}</span>
           <Button
-            rounded
             text
             class="ship-action ship-action--remove ban-pill-remove-button"
             @click="unbanShip(ship.hullType, ship.shipKey)"
@@ -308,16 +307,16 @@ defineExpose({
   display: flex;
   align-items: baseline;
   gap: 0.3rem;
-  padding: 0.42rem 0.68rem;
-  border-radius: 0.8rem;
+  padding: 0.35rem 0.6rem;
   background: var(--app-panel-strong);
   border: 1px solid var(--app-border);
-  font-weight: 800;
-  box-shadow: var(--app-shadow-soft);
+  font-family: var(--app-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
 }
 
 .points-summary-value {
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-size: 1.25rem;
   line-height: 1;
 }
 
@@ -341,7 +340,6 @@ defineExpose({
 
 .feedback-message {
   width: 100%;
-  box-shadow: var(--app-shadow-soft);
 }
 
 .feedback-message--info {
@@ -410,15 +408,8 @@ defineExpose({
 .summary-panel,
 .ban-section {
   border: 1px solid var(--app-border);
-  border-radius: 1.4rem;
   background: var(--app-panel);
-  box-shadow: var(--app-shadow-soft);
-  backdrop-filter: blur(16px);
-}
-
-.summary-panel,
-.ban-section {
-  padding: 1rem 1rem 1.1rem;
+  padding: 0.75rem 0.85rem;
 }
 
 .selection-panel {
@@ -474,40 +465,32 @@ defineExpose({
   justify-content: stretch;
   min-width: 0;
   max-width: 100%;
-  padding: 0.42rem 0.55rem;
-  border: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 1rem;
-  background: transparent;
-  transition:
-    background-color 160ms ease,
-    border-color 160ms ease,
-    box-shadow 160ms ease,
-    transform 160ms ease;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--app-border);
+  background: var(--app-panel);
+  transition: background-color 80ms ease, border-color 80ms ease;
 }
 
 .hull-tab:hover {
-  border-color: var(--app-border);
-  background: rgba(148, 163, 184, 0.14);
+  border-color: var(--app-border-strong);
+  background: var(--app-panel-hover);
 }
 
 .hull-tab.p-tab-active {
   border-color: var(--app-accent);
   background: var(--app-panel-strong);
-  box-shadow:
-    inset 0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent),
-    0 12px 28px rgba(15, 23, 42, 0.12);
+  border-left: 2px solid var(--app-accent);
 }
 
 .hull-tab-content {
   display: flex;
   width: 100%;
   min-width: 0;
-  gap: 0.65rem;
+  gap: 0.55rem;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.06rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .hull-tab-content .hull-icon {
@@ -528,7 +511,9 @@ defineExpose({
 .hull-tab-count {
   flex: 0 0 auto;
   white-space: nowrap;
-  font-size: 1rem;
+  font-family: var(--app-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
   color: var(--app-text-muted);
 }
 
@@ -562,9 +547,10 @@ defineExpose({
 }
 
 .summary-title {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .summary-title--pick {
@@ -576,7 +562,9 @@ defineExpose({
 }
 
 .summary-title-count {
-  font-size: 1.125rem;
+  font-family: var(--app-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
 }
 
 .summary-title-count--limit {
@@ -601,31 +589,26 @@ defineExpose({
 .ban-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   max-width: 100%;
-  border: 1px solid rgba(185, 28, 28, 0.22);
-  border-radius: 999px;
-  background: rgba(185, 28, 28, 0.1);
+  border: 1px solid var(--app-border);
+  border-left: 2px solid var(--app-danger);
+  background: var(--app-panel-strong);
   color: var(--app-text);
-  padding: 0.28rem 0.35rem 0.28rem 0.32rem;
-  font-weight: 750;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
-  transition:
-    background-color 160ms ease,
-    border-color 160ms ease,
-    transform 160ms ease;
+  padding: 0.25rem 0.3rem 0.25rem 0.4rem;
+  font-weight: 600;
+  transition: background-color 80ms ease, border-color 80ms ease;
 }
 
 .ban-pill:hover {
-  border-color: rgba(185, 28, 28, 0.42);
-  background: rgba(185, 28, 28, 0.16);
-  transform: translateY(-1px);
+  border-color: var(--app-border-strong);
+  border-left-color: var(--app-danger);
+  background: var(--app-panel-hover);
 }
 
 .ban-pill-icon {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 999px;
+  width: 1.75rem;
+  height: 1.75rem;
   flex: 0 0 auto;
 }
 
@@ -638,25 +621,23 @@ defineExpose({
 
 .ban-pill-remove-button {
   flex: 0 0 auto;
-  width: 2.45rem;
-  height: 2.45rem;
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--app-border-strong);
   background: var(--app-action-remove-bg);
   color: var(--app-action-remove-fg);
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
 }
 
 .ban-pill-remove-button:hover {
-  background: var(--app-action-remove-bg);
-  color: var(--app-action-remove-fg);
-  filter: brightness(1.08);
-  transform: translateY(-1px);
+  background: var(--app-panel-hover);
+  color: var(--app-text-strong);
+  filter: brightness(1.12);
 }
 
 .ban-pill-remove-button .ship-action-icon {
   display: block;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -698,18 +679,18 @@ defineExpose({
 }
 
 .clear-button {
-  border-color: var(--app-action-clear-border);
+  border: 1px solid var(--app-action-clear-border);
   background: var(--app-action-clear-bg);
   color: var(--app-action-clear-fg);
-  font-weight: 800;
-  box-shadow: 0 8px 18px rgba(180, 83, 9, 0.18);
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .clear-button:hover {
   border-color: var(--app-action-clear-border);
   background: var(--app-action-clear-bg);
   color: var(--app-action-clear-fg);
-  filter: brightness(1.08);
+  filter: brightness(1.12);
 }
 
 @media (max-width: 900px) {

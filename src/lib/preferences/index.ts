@@ -2,7 +2,6 @@ import type { LocaleCode } from '@/lib/types'
 import { normalizeLocaleCode } from '@/lib/i18n/locales'
 
 const LANG_COOKIE = 'lang'
-const THEME_COOKIE = 'theme'
 
 function getCookieValue(name: string): string | null {
   if (typeof document === 'undefined') {
@@ -26,19 +25,6 @@ export function setStoredLocale(locale: LocaleCode) {
   }
 }
 
-export function getStoredThemeDark(): boolean | null {
-  const theme = getCookieValue(THEME_COOKIE)
-  if (theme === 'true') return true
-  if (theme === 'false') return false
-  return null
-}
-
-export function setStoredThemeDark(themeDark: boolean) {
-  if (typeof document !== 'undefined') {
-    document.cookie = `${THEME_COOKIE}=${themeDark}`
-  }
-}
-
 function detectBrowserLocale(): LocaleCode | null {
   if (typeof navigator === 'undefined') return null
   for (const lang of navigator.languages ?? []) {
@@ -51,13 +37,3 @@ function detectBrowserLocale(): LocaleCode | null {
 export function getInitialLocale(): LocaleCode {
   return getStoredLocale() ?? detectBrowserLocale() ?? 'en'
 }
-
-export function getInitialThemeDark(): boolean {
-  const storedTheme = getStoredThemeDark()
-  if (storedTheme !== null) {
-    return storedTheme
-  }
-
-  return typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches
-}
-

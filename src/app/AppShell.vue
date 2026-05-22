@@ -11,12 +11,12 @@ import { useAppState } from '@/app/useAppState'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
 import { appMessages } from '@/lib/i18n'
 import { LOCALE_LABELS } from '@/lib/i18n/locales'
-import { setStoredLocale, setStoredThemeDark } from '@/lib/preferences'
+import { setStoredLocale } from '@/lib/preferences'
 import { materializeParsedDraft, parseDraft } from '@/lib/rules/draft-codec'
 import type { DraftValidationResult, LocaleCode, ParsedDraft } from '@/lib/types'
 
 const { locale, t } = useI18n()
-const { availableTournaments, currentTournament, draftState, getTournamentByYear, shipCatalog, tournamentOptions, tournamentState, uiState } = useAppState()
+const { availableTournaments, currentTournament, draftState, getTournamentByYear, shipCatalog, tournamentOptions, tournamentState } = useAppState()
 
 type DraftScreenExpose = {
   exportDraftText: () => string
@@ -36,12 +36,6 @@ const localeOptions = computed(() =>
 )
 const ruleLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Rules')?.url ?? null)
 const archiveLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Match Archive')?.url ?? null)
-
-function toggleTheme() {
-  uiState.isDark = !uiState.isDark
-  document.documentElement.classList.toggle('app-dark', uiState.isDark)
-  setStoredThemeDark(uiState.isDark)
-}
 
 function changeLang(nextLocale: LocaleCode) {
   locale.value = nextLocale
@@ -159,9 +153,6 @@ async function applyImport() {
             </div>
           </div>
           <div class="page-actions-right">
-            <Button rounded text class="toolbar-button" @click="toggleTheme">
-              <span :class="['pi', uiState.isDark ? 'pi-sun' : 'pi-moon']"></span>
-            </Button>
             <Button outlined class="transfer-button" @click="openImportDialog">{{ $t('messages.import') }}</Button>
             <Button outlined class="transfer-button" @click="exportDraft">{{ $t('messages.export') }}</Button>
           </div>
@@ -203,13 +194,13 @@ async function applyImport() {
 <style scoped>
 .page-shell {
   display: grid;
-  gap: 1.25rem;
-  padding-top: 1.75rem;
+  gap: 0.85rem;
+  padding-top: 1rem;
 }
 
 .page-header {
   display: grid;
-  gap: 0.9rem;
+  gap: 0.6rem;
 }
 
 .page-title-wrap {
@@ -228,11 +219,12 @@ async function applyImport() {
 }
 
 .page-title {
-  color: var(--app-accent-warm);
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  font-weight: 800;
-  line-height: 0.95;
-  letter-spacing: 0;
+  color: var(--app-text-strong);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -240,97 +232,86 @@ async function applyImport() {
 
 .page-actions-card {
   border: 1px solid var(--app-border);
-  border-radius: 1.5rem;
   background: var(--app-panel);
-  box-shadow: var(--app-shadow-soft);
-  backdrop-filter: blur(16px);
-  padding: 0.85rem;
+  padding: 0.6rem 0.75rem;
 }
 
 .page-actions {
   display: flex;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.6rem;
   align-items: end;
   flex-wrap: wrap;
 }
 
 .page-actions-left {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   align-items: end;
   flex-wrap: wrap;
 }
 
 .page-actions-right {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
   align-items: end;
   flex-wrap: wrap;
 }
 
-.toolbar-button {
-  gap: 0.45rem;
-  align-self: end;
-  border: 1px solid var(--app-border);
-  background: var(--app-panel-strong);
-  color: var(--app-text);
-  min-height: 2.65rem;
-}
-
 .transfer-button {
   align-self: end;
-  min-height: 2.65rem;
-  border-color: var(--app-action-transfer-border);
-  background: var(--app-action-transfer-bg);
-  color: var(--app-action-transfer-fg);
-  font-weight: 800;
-  box-shadow: 0 8px 18px rgba(29, 78, 216, 0.12);
+  min-height: 2.1rem;
+  border: 1px solid var(--app-border-strong);
+  background: var(--app-panel-strong);
+  color: var(--app-text);
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .transfer-button:hover {
-  border-color: var(--app-action-transfer-border);
-  background: var(--app-action-transfer-bg);
-  color: var(--app-action-transfer-fg);
-  filter: brightness(1.06);
+  border-color: var(--app-text-muted);
+  background: var(--app-panel-hover);
+  color: var(--app-text-strong);
 }
 
 .control-group {
   display: grid;
-  gap: 0.3rem;
-  min-width: 220px;
+  gap: 0.25rem;
+  min-width: 200px;
 }
 
 .language-control {
-  min-width: 180px;
+  min-width: 160px;
 }
 
 .language-control .year-select {
-  min-width: 180px;
+  min-width: 160px;
 }
 
 .tournament-source-links {
   display: flex;
   align-items: flex-end;
   align-self: end;
-  gap: 1.15rem;
-  min-height: 2.65rem;
+  gap: 0.9rem;
+  min-height: 2.1rem;
   flex-wrap: wrap;
   padding-bottom: 0.35rem;
 }
 
 .source-link {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--app-accent-warm-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--app-accent);
   white-space: nowrap;
 }
 
 .year-picker-label {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   color: var(--app-text-muted);
 }
 
@@ -355,21 +336,21 @@ async function applyImport() {
 }
 
 .year-select {
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .tournament-year-select {
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .tournament-year-select:deep(.p-select-label) {
-  font-size: 1.2rem;
-  font-weight: 850;
-  line-height: 1.15;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .transfer-message {
-  box-shadow: var(--app-shadow-soft);
+  border-radius: 2px;
 }
 
 .import-dialog-body {
@@ -415,10 +396,6 @@ async function applyImport() {
 
   .language-control {
     width: 100%;
-  }
-
-  .toolbar-button {
-    justify-self: stretch;
   }
 
   .import-dialog-actions {

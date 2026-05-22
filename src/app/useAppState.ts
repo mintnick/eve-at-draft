@@ -2,7 +2,6 @@ import { computed, reactive, watch } from 'vue'
 
 import tournamentIndexData from '../../data/generated/index.json'
 import shipCatalogData from '../../data/generated/ship-catalog.json'
-import { getInitialThemeDark } from '@/lib/preferences'
 import type { ShipCatalog, TournamentDataset, TournamentIndexEntry } from '@/lib/types'
 
 interface TournamentAppState {
@@ -12,10 +11,6 @@ interface TournamentAppState {
 
 interface DraftAppState {
   resetVersion: number
-}
-
-interface UiAppState {
-  isDark: boolean
 }
 
 const datasetModules = import.meta.glob('../../data/generated/*.json', {
@@ -53,10 +48,6 @@ export function useAppState() {
     resetVersion: 0,
   })
 
-  const uiState = reactive<UiAppState>({
-    isDark: getInitialThemeDark(),
-  })
-
   const currentTournament = computed(() => {
     return datasets.get(tournamentState.selectedYear) ?? datasets.get(initialYear)
   })
@@ -89,6 +80,5 @@ export function useAppState() {
     shipCatalog,
     tournamentOptions,
     tournamentState,
-    uiState,
   }
 }

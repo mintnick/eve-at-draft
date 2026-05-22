@@ -61,7 +61,6 @@ const extra_points = computed(() => {
     <div class="ship-actions">
       <Button
         v-if="has_btn('add')"
-        rounded
         text
         :class="['ship-action ship-action--add', { 'ship-action--blocked': not_pickable }]"
         :title="pick_reason"
@@ -73,7 +72,6 @@ const extra_points = computed(() => {
 
       <Button
         v-if="has_btn('ban')"
-        rounded
         text
         :class="['ship-action ship-action--ban', { 'ship-action--blocked': not_bannable }]"
         :title="ban_reason"
@@ -85,7 +83,6 @@ const extra_points = computed(() => {
 
       <Button
         v-if="has_btn('remove')"
-        rounded
         text
         class="ship-action ship-action--remove"
         @click="emit('remove_ship', hull_type, ship_name)"
@@ -95,7 +92,6 @@ const extra_points = computed(() => {
 
       <Button
         v-if="has_btn('unban')"
-        rounded
         text
         class="ship-action ship-action--remove"
         @click="emit('unban_ship', hull_type, ship_name)"
@@ -111,19 +107,16 @@ const extra_points = computed(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.5rem 0.65rem;
-  border-radius: 0.9rem;
-  border: 1px solid transparent;
-  background: rgba(255, 255, 255, 0.12);
-  transition:
-    background-color 160ms ease,
-    border-color 160ms ease;
+  gap: 0.6rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--app-border);
+  background: var(--app-panel);
+  transition: background-color 80ms ease, border-color 80ms ease;
 }
 
 .ship-wrapper:hover {
-  background-color: rgba(148, 163, 184, 0.18);
-  border-color: var(--app-border);
+  background-color: var(--app-panel-hover);
+  border-color: var(--app-border-strong);
 }
 
 .ship-meta {
@@ -147,10 +140,11 @@ const extra_points = computed(() => {
 .ship-points {
   width: 32px;
   border: 1px solid currentColor;
-  border-radius: 0.55rem;
   text-align: center;
-  font-weight: 700;
-  background: rgba(255, 255, 255, 0.16);
+  font-family: var(--app-font-mono);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  background: var(--app-panel-strong);
 }
 
 .ship-points--extra {
@@ -188,21 +182,20 @@ const extra_points = computed(() => {
 }
 
 .ship-action {
-  width: 2.45rem;
-  height: 2.45rem;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--app-border-strong);
 }
 
 .ship-action--blocked {
-  filter: grayscale(0.35);
-  opacity: 0.62;
+  filter: grayscale(0.5);
+  opacity: 0.55;
 }
 
 .ship-action-icon {
   display: block;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.4rem;
+  height: 1.4rem;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -210,7 +203,6 @@ const extra_points = computed(() => {
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: contain;
-  filter: drop-shadow(0 0 0.6px currentColor) drop-shadow(0 0 0.6px currentColor);
 }
 
 .ship-action-icon--add {
@@ -250,13 +242,7 @@ const extra_points = computed(() => {
 }
 
 .ship-action:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.08);
-}
-
-html.app-dark .ship-action--add:hover,
-html.app-dark .ship-action--ban:hover {
-  color: #ffffff;
+  filter: brightness(1.12);
 }
 
 @media (max-width: 600px) {
