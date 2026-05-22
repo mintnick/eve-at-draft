@@ -366,10 +366,19 @@ async function applyImport() {
     display: grid;
   }
 
-  .page-actions-left,
-  .page-actions-right {
+  .page-actions-left {
     display: grid;
     width: 100%;
+  }
+
+  .page-actions-right {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .page-actions-right .transfer-button {
+    flex: 1;
   }
 
   .page-title-wrap {
@@ -414,8 +423,5 @@ async function applyImport() {
     flex-direction: column-reverse;
   }
 
-  .transfer-button {
-    width: 100%;
-  }
 }
 </style>

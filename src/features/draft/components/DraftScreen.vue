@@ -732,11 +732,15 @@ defineExpose({
   }
 
   .hull-tab-list:deep(.p-tablist-tab-list) {
-    grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(3.5rem, 1fr));
+    gap: 0.4rem;
   }
 
   .hull-tab {
+    padding: 0.3rem 0.25rem;
     border-left: 1px solid var(--app-border);
+    min-width: 0;
+    overflow: hidden;
   }
 
   .hull-tab.p-tab-active {
@@ -746,7 +750,13 @@ defineExpose({
 
   .hull-tab-content {
     justify-content: center;
-    gap: 0.4rem;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+
+  .hull-tab-content .hull-icon {
+    width: 22px;
+    height: 22px;
   }
 
   .hull-tab-name {
@@ -759,11 +769,11 @@ defineExpose({
   }
 
   .hull-tab-count {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
   }
 
   .ship-panel-scroll {
-    height: min(55vh, 600px);
+    height: min(72vh, 720px);
   }
 
   .ban-pill-name {
