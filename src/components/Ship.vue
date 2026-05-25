@@ -18,6 +18,8 @@ const props = defineProps<{
   ban_reason?: string
 }>()
 
+const baseUrl = import.meta.env.BASE_URL
+
 const emit = defineEmits<{
   add_ship: [hull_type: string, ship_name: string, property: typeof props.property]
   ban_ship: [hull_type: string, ship_name: string, property: typeof props.property]
@@ -53,7 +55,7 @@ const extra_points = computed(() => {
       </div>
 
       <div class="ship-name">
-        <img v-if="hull_type === 'Flagship' && has_btn('remove')" src="/hull/Flagship.png" class="hull-icon hull-icon--small" />
+        <img v-if="hull_type === 'Flagship' && has_btn('remove')" :src="`${baseUrl}hull/Flagship.png`" class="hull-icon hull-icon--small" />
         <span>{{ display_name }}</span>
       </div>
     </div>

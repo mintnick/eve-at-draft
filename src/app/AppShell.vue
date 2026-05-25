@@ -114,7 +114,6 @@ async function applyImport() {
           <div class="page-title">{{ $t('messages.title') }}</div>
         </div>
         <div class="language-control">
-          <span class="language-label-icon" aria-hidden="true"></span>
           <Select
             id="app-language"
             :model-value="locale"
@@ -287,21 +286,6 @@ async function applyImport() {
 
 .language-control .year-select {
   min-width: 140px;
-}
-
-.language-label-icon {
-  width: 1rem;
-  height: 1rem;
-  flex: 0 0 auto;
-  background: currentColor;
-  -webkit-mask-image: url('/icons/language.svg');
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url('/icons/language.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
 }
 
 .tournament-source-links {

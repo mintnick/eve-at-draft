@@ -20,6 +20,7 @@ const props = defineProps<{
 
 const { locale, t } = useI18n()
 const appLocale = computed(() => locale.value as LocaleCode)
+const baseUrl = import.meta.env.BASE_URL
 const shipGroups = computed(() =>
   Object.entries(props.dataset.hulls).map(([hullType, ships]) => ({
     hullType: hullType as HullType,
@@ -159,7 +160,7 @@ defineExpose({
               <TabList class="hull-tab-list">
                 <Tab v-for="hullType in hullTypes" :key="hullType" :value="hullType" class="hull-tab">
                   <div class="hull-tab-content">
-                    <img :src="`./hull/${hullType}.png`" class="hull-icon" />
+                    <img :src="`${baseUrl}hull/${hullType}.png`" class="hull-icon" />
                     <span class="hull-tab-name">{{ $t(`types.${hullType}`) }}</span>
                     <span class="hull-tab-count">{{ hullCountLabel(hullType) }}</span>
                   </div>
