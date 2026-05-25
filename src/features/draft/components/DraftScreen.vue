@@ -113,7 +113,7 @@ defineExpose({
   <div class="draft-page">
     <section class="draft-hero">
       <div class="feedback-slot" aria-live="polite">
-        <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message">
+        <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message feedback-message--single-line">
           {{ feedbackMessages[0] }}
         </Message>
         <Message v-else severity="secondary" variant="outlined" class="feedback-message">
@@ -401,7 +401,7 @@ defineExpose({
   animation: none !important;
 }
 
-.feedback-slot:deep(.p-message-text) {
+.feedback-message--single-line:deep(.p-message-text) {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
