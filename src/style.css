@@ -64,12 +64,6 @@ body {
   padding: 0 1rem 2rem;
 }
 
-.hull-icon {
-  background: var(--app-panel-strong);
-  height: 28px;
-  border: 1px solid var(--app-border);
-}
-
 a,
 a:visited {
   color: var(--app-accent);
