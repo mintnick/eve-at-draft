@@ -29,6 +29,7 @@
     "@types/node": "^25.5.2",
     "@types/opencc-js": "^1",
     "@vitejs/plugin-vue": "^6.0.5",
+    "@vue/compiler-dom": "^3.5.21",
     "@vue/test-utils": "^2.4.10",
     "jsdom": "^29.1.1",
     "opencc-js": "^1.0.5",
