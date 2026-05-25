@@ -349,6 +349,10 @@ defineExpose({
   width: 100%;
 }
 
+.feedback-message:deep(.p-message-text) {
+  color: var(--app-text-strong);
+}
+
 .prize-info {
   display: inline-flex;
   align-items: center;
