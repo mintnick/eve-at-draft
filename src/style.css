@@ -17,8 +17,6 @@
   --app-border-strong: #2e343c;
 
   --app-accent: #4b8bd6;
-  --app-accent-warm: #c47a3d;
-  --app-accent-warm-muted: #a9682f;
 
   --app-success: #2e7d32;
   --app-danger: #c0392b;
@@ -33,9 +31,6 @@
   --app-action-clear-bg: #b8860b;
   --app-action-clear-fg: #0b0d10;
   --app-action-clear-border: #8a6608;
-  --app-action-transfer-bg: #1a1f26;
-  --app-action-transfer-fg: #d6dbe1;
-  --app-action-transfer-border: #2e343c;
 
   color-scheme: dark;
   min-height: 100%;
