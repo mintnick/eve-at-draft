@@ -49,7 +49,7 @@ export function useDraftBoard(
     const orderedBanList = [...base.banList].sort((left, right) => {
       const leftOrder = order[banOrderKey(left.hullType, left.shipKey)] ?? 0
       const rightOrder = order[banOrderKey(right.hullType, right.shipKey)] ?? 0
-      return rightOrder - leftOrder
+      return leftOrder - rightOrder
     })
     return { ...base, banList: orderedBanList }
   })
