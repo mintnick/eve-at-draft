@@ -2,11 +2,11 @@ import { mount } from '@vue/test-utils'
 import { nextTick } from 'vue'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import PrimeVue from 'primevue/config'
-import Aura from '@primeuix/themes/aura'
 import Select from 'primevue/select'
 
 import AppShell from '@/app/AppShell.vue'
 import DraftScreen from '@/features/draft/components/DraftScreen.vue'
+import { ConsoleTheme } from '@/app/theme'
 import { createAppI18n } from '@/lib/i18n'
 import shipCatalogData from '../data/generated/ship-catalog.json'
 import tournamentData from '../data/generated/2025.json'
@@ -27,8 +27,9 @@ function mountWithApp(component: unknown, options: Record<string, unknown> = {})
         [
           PrimeVue,
           {
+            ripple: false,
             theme: {
-              preset: Aura,
+              preset: ConsoleTheme,
               options: {
                 darkModeSelector: '.app-dark',
               },
@@ -45,8 +46,6 @@ describe('draft UI', () => {
   beforeEach(() => {
     vi.restoreAllMocks()
     document.cookie = 'lang=en'
-    document.cookie = 'theme=false'
-    document.documentElement.classList.remove('app-dark')
   })
 
   it('supports a legal drafting flow in the draft screen', async () => {
@@ -58,11 +57,11 @@ describe('draft UI', () => {
     })
 
     const shipRows = wrapper.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
 
     expect(bhaalgorn).toBeDefined()
 
-    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
     await nextTick()
 
     expect(wrapper.text()).toContain('50')
@@ -79,7 +78,7 @@ describe('draft UI', () => {
     })
 
     const shipRows = wrapper.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
 
     expect(bhaalgorn).toBeDefined()
     expect(bhaalgorn!.find('.ship-action--ban').exists()).toBe(true)
@@ -94,9 +93,9 @@ describe('draft UI', () => {
     })
 
     const shipRows = wrapper.findAllComponents({ name: 'Ship' })
-    const caracal = shipRows.find((row) => row.props('ship_name') === 'Caracal' && row.props('hull_type') === 'Cruiser')
+    const caracal = shipRows.find((row) => row.props('shipName') === 'Caracal' && row.props('hullType') === 'Cruiser')
 
-    await caracal!.vm.$emit('ban_ship', 'Cruiser', 'Caracal', { points: 4, shipId: 621, original_points: 4 })
+    await caracal!.vm.$emit('banShip', 'Cruiser', 'Caracal', { points: 4, shipId: 621, originalPoints: 4 })
     await nextTick()
 
     const banPill = wrapper.find('.ban-pill')
@@ -122,12 +121,12 @@ describe('draft UI', () => {
     })
 
     const shipRows = wrapper.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
-    const rattlesnake = shipRows.find((row) => row.props('ship_name') === 'Rattlesnake' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
+    const rattlesnake = shipRows.find((row) => row.props('shipName') === 'Rattlesnake' && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
     await nextTick()
-    await rattlesnake!.vm.$emit('add_ship', 'Flagship', 'Rattlesnake', { points: 50, shipId: 17918, original_points: 50 })
+    await rattlesnake!.vm.$emit('addShip', 'Flagship', 'Rattlesnake', { points: 50, shipId: 17918, originalPoints: 50 })
     await nextTick()
 
     expect(wrapper.text()).toContain('Only one flagship can be picked.')
@@ -145,9 +144,9 @@ describe('draft UI', () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
     await nextTick()
 
     const exportButton = wrapper
@@ -196,9 +195,9 @@ describe('draft UI', () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
     await nextTick()
 
     expect(wrapper.text()).toContain('Bhaalgorn')
@@ -220,9 +219,9 @@ describe('draft UI', () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('ship_name') === 'Bhaalgorn' && row.props('hull_type') === 'Flagship')
+    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('add_ship', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, original_points: 50 })
+    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
     await nextTick()
 
     const importButton = wrapper

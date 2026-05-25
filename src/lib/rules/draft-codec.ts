@@ -1,6 +1,6 @@
 import type { DraftState, DraftValidationResult, HullType, ParsedDraft, TournamentDataset } from '@/lib/types'
 
-import { applyDraftAction, findRegisteredShip, listSelections, validateDraftAction } from '@/lib/rules/draft-engine'
+import { applyDraftAction, findRegisteredShip, getHullTypes, listSelections, validateDraftAction } from '@/lib/rules/draft-engine'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
 
 const FORMAT_HEADER = 'EVE-AT-DRAFT v1'
@@ -61,8 +61,8 @@ export function materializeParsedDraft(
   parsedDraft: ParsedDraft,
   tournament: TournamentDataset,
 ): { state: DraftState | null; validation: DraftValidationResult } {
-  const hullTypes = Object.keys(tournament.hulls)
-  let state = createEmptyDraftState(hullTypes as Array<keyof TournamentDataset['hulls']>)
+  const hullTypes = getHullTypes(tournament)
+  let state = createEmptyDraftState(hullTypes)
 
   for (const entry of parsedDraft.bans) {
     const ship = findRegisteredShip(tournament, entry.hullType, entry.shipKey)

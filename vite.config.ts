@@ -12,7 +12,7 @@ export default defineConfig({
             return 'tournament-data'
           }
 
-          if (id.includes('/node_modules/primevue/') || id.includes('/node_modules/@primeuix/') || id.includes('/node_modules/primeicons/')) {
+          if (id.includes('/node_modules/primevue/') || id.includes('/node_modules/@primeuix/')) {
             return 'primevue'
           }
 

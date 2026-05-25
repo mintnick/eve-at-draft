@@ -168,7 +168,7 @@ export function useDraftBoard(
     return {
       points: rule.points,
       shipId: rule.shipId,
-      original_points: rule.points,
+      originalPoints: rule.points,
     }
   }
 

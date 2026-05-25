@@ -3,36 +3,36 @@ import { computed } from 'vue'
 import Button from 'primevue/button'
 
 const props = defineProps<{
-  ship_name: string
-  display_name: string
-  hull_type: string
+  shipName: string
+  displayName: string
+  hullType: string
   property: {
     points: number
     shipId: number
-    original_points?: number
+    originalPoints?: number
   }
   btns?: string[]
-  not_pickable?: boolean
-  not_bannable?: boolean
-  pick_reason?: string
-  ban_reason?: string
+  notPickable?: boolean
+  notBannable?: boolean
+  pickReason?: string
+  banReason?: string
 }>()
 
 const baseUrl = import.meta.env.BASE_URL
 
 const emit = defineEmits<{
-  add_ship: [hull_type: string, ship_name: string, property: typeof props.property]
-  ban_ship: [hull_type: string, ship_name: string, property: typeof props.property]
-  remove_ship: [hull_type: string, ship_name: string]
-  unban_ship: [hull_type: string, ship_name: string]
+  addShip: [hullType: string, shipName: string, property: typeof props.property]
+  banShip: [hullType: string, shipName: string, property: typeof props.property]
+  removeShip: [hullType: string, shipName: string]
+  unbanShip: [hullType: string, shipName: string]
 }>()
 
-const has_btn = (btn_name: string) => {
-  return props.btns?.includes(btn_name)
+const hasBtn = (btnName: string) => {
+  return props.btns?.includes(btnName)
 }
 
-const extra_points = computed(() => {
-  return Boolean(props.property.original_points && props.property.points > props.property.original_points)
+const extraPoints = computed(() => {
+  return Boolean(props.property.originalPoints && props.property.points > props.property.originalPoints)
 })
 </script>
 
@@ -43,60 +43,60 @@ const extra_points = computed(() => {
         <img
           class="ship-icon"
           :src="`https://images.evetech.net/types/${property.shipId}/icon`"
-          :alt="`${ship_name} icon`"
+          :alt="`${shipName} icon`"
         />
         <div
           v-if="property.points"
           class="ship-points"
-          :class="[extra_points ? 'ship-points--extra' : 'ship-points--base']"
+          :class="[extraPoints ? 'ship-points--extra' : 'ship-points--base']"
         >
           {{ property.points }}
         </div>
       </div>
 
       <div class="ship-name">
-        <img v-if="hull_type === 'Flagship' && has_btn('remove')" :src="`${baseUrl}hull/Flagship.png`" class="hull-icon hull-icon--small" />
-        <span>{{ display_name }}</span>
+        <img v-if="hullType === 'Flagship' && hasBtn('remove')" :src="`${baseUrl}hull/Flagship.png`" class="hull-icon hull-icon--small" />
+        <span>{{ displayName }}</span>
       </div>
     </div>
 
     <div class="ship-actions">
       <Button
-        v-if="has_btn('add')"
+        v-if="hasBtn('add')"
         text
-        :class="['ship-action ship-action--add', { 'ship-action--blocked': not_pickable }]"
-        :title="pick_reason"
-        :aria-label="pick_reason || undefined"
-        @click="emit('add_ship', hull_type, ship_name, property)"
+        :class="['ship-action ship-action--add', { 'ship-action--blocked': notPickable }]"
+        :title="pickReason"
+        :aria-label="pickReason || undefined"
+        @click="emit('addShip', hullType, shipName, property)"
       >
         <span class="ship-action-icon ship-action-icon--add" aria-hidden="true"></span>
       </Button>
 
       <Button
-        v-if="has_btn('ban')"
+        v-if="hasBtn('ban')"
         text
-        :class="['ship-action ship-action--ban', { 'ship-action--blocked': not_bannable }]"
-        :title="ban_reason"
-        :aria-label="ban_reason || undefined"
-        @click="emit('ban_ship', hull_type, ship_name, property)"
+        :class="['ship-action ship-action--ban', { 'ship-action--blocked': notBannable }]"
+        :title="banReason"
+        :aria-label="banReason || undefined"
+        @click="emit('banShip', hullType, shipName, property)"
       >
         <span class="ship-action-icon ship-action-icon--ban" aria-hidden="true"></span>
       </Button>
 
       <Button
-        v-if="has_btn('remove')"
+        v-if="hasBtn('remove')"
         text
         class="ship-action ship-action--remove"
-        @click="emit('remove_ship', hull_type, ship_name)"
+        @click="emit('removeShip', hullType, shipName)"
       >
         <span class="ship-action-icon ship-action-icon--remove" aria-hidden="true"></span>
       </Button>
 
       <Button
-        v-if="has_btn('unban')"
+        v-if="hasBtn('unban')"
         text
         class="ship-action ship-action--remove"
-        @click="emit('unban_ship', hull_type, ship_name)"
+        @click="emit('unbanShip', hullType, shipName)"
       >
         <span class="ship-action-icon ship-action-icon--remove" aria-hidden="true"></span>
       </Button>

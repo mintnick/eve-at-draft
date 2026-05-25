@@ -18,6 +18,30 @@ type LegacyShips = Record<
   >
 >
 
+async function fetchOk(url: string, init?: RequestInit): Promise<Response> {
+  let response: Response
+  try {
+    response = await fetch(url, init)
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error)
+    throw new Error(`Network error fetching ${url}: ${message}`)
+  }
+  if (!response.ok) {
+    throw new Error(`Fetch failed ${response.status} ${response.statusText}: ${url}`)
+  }
+  return response
+}
+
+async function fetchText(url: string, init?: RequestInit): Promise<string> {
+  const response = await fetchOk(url, init)
+  return response.text()
+}
+
+async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
+  const response = await fetchOk(url, init)
+  return response.json() as Promise<T>
+}
+
 const ESI_TYPE_NAME_LOCALES = ['zh-CN', 'ru', 'de', 'ja', 'ko', 'fr', 'es'] as const
 const TYPE_NAME_FETCH_CONCURRENCY = 12
 type EsiTypeNameLocale = (typeof ESI_TYPE_NAME_LOCALES)[number]
@@ -43,16 +67,19 @@ export async function fetchTournamentSource(year: number): Promise<void> {
 
   const [legacyShips, rulesHtml] = await Promise.all([
     readJsonFile<LegacyShips>('src', 'assets', 'ships.json'),
-    fetch(config.rulesPageUrl).then((response) => response.text()),
+    fetchText(config.rulesPageUrl),
   ])
 
   const shipKeys = [...new Set(Object.values(legacyShips).flatMap((shipMap) => Object.keys(shipMap)))]
 
-  const idsResponse = await fetch('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(shipKeys),
-  }).then((response) => response.json() as Promise<{ inventory_types?: { id: number; name: string }[] }>)
+  const idsResponse = await fetchJson<{ inventory_types?: { id: number; name: string }[] }>(
+    'https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(shipKeys),
+    },
+  )
 
   const inventoryTypes = idsResponse.inventory_types ?? []
   const filteredIdsResponse = {
@@ -61,11 +88,14 @@ export async function fetchTournamentSource(year: number): Promise<void> {
   const shipIds = inventoryTypes.map((entry) => entry.id)
 
   const [enNames, localizedTypeNames] = await Promise.all([
-    fetch('https://esi.evetech.net/latest/universe/names/?datasource=tranquility', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(shipIds),
-    }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
+    fetchJson<{ id: number; name: string }[]>(
+      'https://esi.evetech.net/latest/universe/names/?datasource=tranquility',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(shipIds),
+      },
+    ),
     fetchLocalizedTypeNames(shipIds, ESI_TYPE_NAME_LOCALES),
   ])
 
@@ -110,11 +140,9 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   const config = getTournamentConfig(year)
   const [legacyShips, rulesHtml, sheetHtml, staticValuesText] = await Promise.all([
     readJsonFile<LegacyShips>('src', 'assets', 'ships.json'),
-    fetch(config.rulesPageUrl).then((response) => response.text()),
-    fetch(config.sheetUrl!).then((response) => response.text()),
-    fetch(`https://docs.google.com/spreadsheets/d/${extractSheetId(config.sheetUrl!)}/gviz/tq?tqx=out:json&gid=${config.staticValuesGid}`).then((response) =>
-      response.text(),
-    ),
+    fetchText(config.rulesPageUrl),
+    fetchText(config.sheetUrl!),
+    fetchText(`https://docs.google.com/spreadsheets/d/${extractSheetId(config.sheetUrl!)}/gviz/tq?tqx=out:json&gid=${config.staticValuesGid}`),
   ])
 
   const shipKeys = new Set(Object.values(legacyShips).flatMap((shipMap) => Object.keys(shipMap)))
@@ -126,11 +154,14 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   const flagshipExtras = Object.keys(config.rules.flagshipOverrides)
   const shipKeysForIds = [...new Set([...Object.keys(staticValues), ...flagshipExtras])]
 
-  const idsResponse = await fetch('https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(shipKeysForIds),
-  }).then((response) => response.json() as Promise<{ inventory_types?: { id: number; name: string }[] }>)
+  const idsResponse = await fetchJson<{ inventory_types?: { id: number; name: string }[] }>(
+    'https://esi.evetech.net/latest/universe/ids/?datasource=tranquility&language=en',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(shipKeysForIds),
+    },
+  )
 
   const inventoryTypes = idsResponse.inventory_types ?? []
   const filteredIdsResponse = {
@@ -139,11 +170,14 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   const shipIds = inventoryTypes.map((entry) => entry.id)
 
   const [enNames, localizedTypeNames] = await Promise.all([
-    fetch('https://esi.evetech.net/latest/universe/names/?datasource=tranquility', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(shipIds),
-    }).then((response) => response.json() as Promise<{ id: number; name: string }[]>),
+    fetchJson<{ id: number; name: string }[]>(
+      'https://esi.evetech.net/latest/universe/names/?datasource=tranquility',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(shipIds),
+      },
+    ),
     fetchLocalizedTypeNames(shipIds, ESI_TYPE_NAME_LOCALES),
   ])
 
@@ -180,8 +214,9 @@ async function fetchLocalizedTypeNames(
         const batch = shipIds.slice(index, index + TYPE_NAME_FETCH_CONCURRENCY)
         const batchNames = await Promise.all(batch.map(async (shipId) => {
           const esiLanguage = ESI_LANGUAGE_BY_LOCALE[locale]
-          const response = await fetch(`https://esi.evetech.net/latest/universe/types/${shipId}/?datasource=tranquility&language=${esiLanguage}`)
-          const payload = await response.json() as { name?: string }
+          const payload = await fetchJson<{ name?: string }>(
+            `https://esi.evetech.net/latest/universe/types/${shipId}/?datasource=tranquility&language=${esiLanguage}`,
+          )
           return [shipId, payload.name] as const
         }))
         names.push(...batchNames)

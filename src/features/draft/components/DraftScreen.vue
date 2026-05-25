@@ -179,17 +179,17 @@ defineExpose({
                   <Ship
                     v-for="(property, shipKey) in group.ships"
                     :key="shipKey"
-                    :hull_type="group.hullType"
-                    :ship_name="shipKey"
-                    :display_name="localizedShipName(shipKey)"
+                    :hull-type="group.hullType"
+                    :ship-name="shipKey"
+                    :display-name="localizedShipName(shipKey)"
                     :property="shipProperty(property)"
                     :btns="['add', 'ban']"
-                    :not_pickable="!pickValidation(group.hullType, shipKey).valid"
-                    :pick_reason="pickReason(group.hullType, shipKey)"
-                    :not_bannable="!banValidation(group.hullType, shipKey).valid"
-                    :ban_reason="banReason(group.hullType, shipKey)"
-                    @add_ship="handleAddShip(group.hullType, shipKey)"
-                    @ban_ship="handleBanShip(group.hullType, shipKey)"
+                    :not-pickable="!pickValidation(group.hullType, shipKey).valid"
+                    :pick-reason="pickReason(group.hullType, shipKey)"
+                    :not-bannable="!banValidation(group.hullType, shipKey).valid"
+                    :ban-reason="banReason(group.hullType, shipKey)"
+                    @add-ship="handleAddShip(group.hullType, shipKey)"
+                    @ban-ship="handleBanShip(group.hullType, shipKey)"
                   />
                 </div>
               </TabPanel>
@@ -229,12 +229,12 @@ defineExpose({
           <Ship
             v-for="(ship, index) in derivedState.pickList"
             :key="`${ship.hullType}-${ship.shipKey}-${index}`"
-            :hull_type="ship.hullType"
-            :ship_name="ship.shipKey"
-            :display_name="localizedShipName(ship.shipKey)"
-            :property="{ points: ship.points, shipId: ship.shipId, original_points: ship.originalPoints }"
+            :hull-type="ship.hullType"
+            :ship-name="ship.shipKey"
+            :display-name="localizedShipName(ship.shipKey)"
+            :property="{ points: ship.points, shipId: ship.shipId, originalPoints: ship.originalPoints }"
             :btns="['remove']"
-            @remove_ship="removeShip(ship.hullType, ship.shipKey)"
+            @remove-ship="removeShip(ship.hullType, ship.shipKey)"
           />
         </div>
       </aside>

@@ -14,8 +14,7 @@ async function main(): Promise<void> {
   await Promise.all([
     ensureExists('data/raw'),
     ensureExists('data/generated'),
-    ensureExists('docs/refactor-plan.md'),
-    ensureExists('docs/refactor-todo.md'),
+    ensureExists('docs/maintainer-guide.md'),
     ensureExists('tools/data-pipeline/cli.ts'),
     ensureExists('data/raw/2025/sources'),
   ])

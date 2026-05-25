@@ -9,7 +9,7 @@ function getCookieValue(name: string): string | null {
   }
 
   return document.cookie
-    .split('; ')
+    .split(/;\s*/)
     .find((row) => row.startsWith(`${name}=`))
     ?.split('=')[1] ?? null
 }
