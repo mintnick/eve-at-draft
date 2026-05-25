@@ -116,7 +116,7 @@ defineExpose({
         <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message">
           {{ feedbackMessages[0] }}
         </Message>
-        <Message v-else severity="secondary" variant="outlined" class="feedback-message feedback-message--info">
+        <Message v-else severity="secondary" variant="outlined" class="feedback-message">
           <span class="prize-info">
             <span>{{ prizeSponsorText }}</span>
             <span class="prize-ship-group">
@@ -347,14 +347,6 @@ defineExpose({
 
 .feedback-message {
   width: 100%;
-}
-
-.feedback-message--info {
-  color: var(--app-text-strong);
-}
-
-.feedback-message--info:deep(.p-message-text) {
-  color: var(--app-text-strong);
 }
 
 .prize-info {
