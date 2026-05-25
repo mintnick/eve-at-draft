@@ -304,6 +304,9 @@ defineExpose({
   text-transform: uppercase;
   color: var(--app-accent);
   white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
 }
 
 .points-summary {
