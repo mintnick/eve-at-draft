@@ -6,7 +6,7 @@
 - `src/features/draft/` — draft screen and wiring
 - `src/lib/rules/` — pure rules engine (points, hull caps, logistics, flagship, import/export)
 - `src/lib/i18n/` — locale bootstrapping and ship label helpers
-- `src/lib/preferences/` — cookie-backed locale and theme persistence
+- `src/lib/preferences/` — cookie-backed locale persistence
 - `data/raw/<year>/` — fetched upstream artifacts and normalized raw source snapshot
 - `data/generated/` — app-consumable yearly datasets, shared ship catalog, year index
 - `tools/data-pipeline/` — fetch, build, and validate pipeline

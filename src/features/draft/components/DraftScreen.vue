@@ -118,7 +118,7 @@ defineExpose({
         </Message>
         <Message v-else severity="secondary" variant="outlined" class="feedback-message">
           <span class="prize-info">
-            <span>{{ prizeSponsorText }}</span>
+            <span class="prize-sponsor">{{ prizeSponsorText }}</span>
             <span class="prize-ship-group">
               <span>{{ $t('messages.prizeShips') }}</span>
               <span class="reward-links">
@@ -781,6 +781,10 @@ defineExpose({
 
   .ban-pill-name {
     max-width: 8rem;
+  }
+
+  .prize-sponsor {
+    display: none;
   }
 }
 
