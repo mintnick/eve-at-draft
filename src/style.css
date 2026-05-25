@@ -146,6 +146,18 @@ a:hover {
   border-radius: 2px;
 }
 
+@media (min-width: 1024px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 720px) {
   #app {
     padding: 0 0.75rem 1.75rem;
