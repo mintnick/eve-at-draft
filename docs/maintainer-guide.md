@@ -70,5 +70,4 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 
 ## Deferred work
 
-- **Phase 8 UI polish** — layout refinement, responsive behavior, and visual hierarchy pass is intentionally incomplete and should get a focused later pass.
 - **Data-pipeline unit tests** — coverage is lighter than app/rules layer; worth expanding when the pipeline is extended.
