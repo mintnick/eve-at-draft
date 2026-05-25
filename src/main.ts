@@ -10,6 +10,7 @@ const i18n = createAppI18n()
 
 createApp(App)
   .use(PrimeVue, {
+    ripple: false,
     theme: {
       preset: ConsoleTheme,
       options: {
