@@ -39,7 +39,20 @@ export function useDraftBoard(
   const banLink = dataset.sources.find((source) => source.label === 'Ban Rules')?.url ?? '#'
   const feedbackReasons = ref<string[]>([])
 
-  const derivedState = computed(() => getDraftDerivedState(dataset, state.value))
+  const banOrder = ref<Record<string, number>>({})
+  let banCounter = 0
+  const banOrderKey = (hullType: HullType, shipKey: string) => `${hullType}:${shipKey}`
+
+  const derivedState = computed(() => {
+    const base = getDraftDerivedState(dataset, state.value)
+    const order = banOrder.value
+    const orderedBanList = [...base.banList].sort((left, right) => {
+      const leftOrder = order[banOrderKey(left.hullType, left.shipKey)] ?? 0
+      const rightOrder = order[banOrderKey(right.hullType, right.shipKey)] ?? 0
+      return rightOrder - leftOrder
+    })
+    return { ...base, banList: orderedBanList }
+  })
   const shipValidation = computed(() => {
     const validation = new Map<string, ShipValidationState>()
     const currentState = state.value
@@ -91,11 +104,21 @@ export function useDraftBoard(
   }
 
   function banShip(hullType: HullType, shipKey: string) {
-    return runAction({ type: 'ban', hullType, shipKey })
+    const result = runAction({ type: 'ban', hullType, shipKey })
+    if (result.valid) {
+      banCounter += 1
+      banOrder.value = { ...banOrder.value, [banOrderKey(hullType, shipKey)]: banCounter }
+    }
+    return result
   }
 
   function unbanShip(hullType: HullType, shipKey: string) {
-    return runAction({ type: 'unban', hullType, shipKey })
+    const result = runAction({ type: 'unban', hullType, shipKey })
+    if (result.valid) {
+      const { [banOrderKey(hullType, shipKey)]: _removed, ...rest } = banOrder.value
+      banOrder.value = rest
+    }
+    return result
   }
 
   function clearPicks() {
@@ -103,7 +126,12 @@ export function useDraftBoard(
   }
 
   function clearBans() {
-    return runAction({ type: 'clear-bans' })
+    const result = runAction({ type: 'clear-bans' })
+    if (result.valid) {
+      banOrder.value = {}
+      banCounter = 0
+    }
+    return result
   }
 
   function pickValidation(hullType: HullType, shipKey: string) {
@@ -147,6 +175,16 @@ export function useDraftBoard(
   function replaceDraftState(nextState: DraftState) {
     state.value = nextState
     feedbackReasons.value = []
+
+    const nextOrder: Record<string, number> = {}
+    banCounter = 0
+    for (const hullType of hullTypes) {
+      for (const selection of nextState.bans[hullType] ?? []) {
+        banCounter += 1
+        nextOrder[banOrderKey(hullType, selection.shipKey)] = banCounter
+      }
+    }
+    banOrder.value = nextOrder
   }
 
   function exportDraftText() {
