@@ -120,6 +120,7 @@ async function applyImport() {
             :options="localeOptions"
             option-label="label"
             option-value="value"
+            scroll-height="none"
             :aria-label="$t('messages.language')"
             class="year-select"
             @update:model-value="changeLang($event as LocaleCode)"
