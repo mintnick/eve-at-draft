@@ -392,7 +392,7 @@ defineExpose({
   align-items: center;
   justify-content: flex-end;
   min-width: 0;
-  min-height: 2.75rem;
+  min-height: 2rem;
 }
 
 .feedback-slot:deep(.p-message) {
