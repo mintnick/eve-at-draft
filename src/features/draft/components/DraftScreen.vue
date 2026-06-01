@@ -56,6 +56,20 @@ const prizeSponsorText = computed(() =>
     sponsor: dataset.summary.prize.sponsor,
   }),
 )
+const shipNameByShipId = computed(() => {
+  const map = new Map<number, Record<LocaleCode, string>>()
+  for (const entry of Object.values(props.shipCatalog)) {
+    map.set(entry.shipId, entry.names)
+  }
+  return map
+})
+const prizeRewardShips = computed(() =>
+  dataset.summary.prize.rewardShips.map((rewardShip) => {
+    const names = shipNameByShipId.value.get(rewardShip.shipId)
+    const localized = names?.[appLocale.value] ?? names?.en ?? rewardShip.name
+    return { shipId: rewardShip.shipId, name: localized }
+  }),
+)
 const hullListElement = ref<HTMLElement | null>(null)
 const shipListHeight = ref('min(62vh, 760px)')
 let hullListResizeObserver: ResizeObserver | undefined
@@ -122,7 +136,7 @@ defineExpose({
             <span class="prize-ship-group">
               <span>{{ $t('messages.prizeShips') }}</span>
               <span class="reward-links">
-                <template v-for="rewardShip in dataset.summary.prize.rewardShips" :key="rewardShip.shipId">
+                <template v-for="rewardShip in prizeRewardShips" :key="rewardShip.shipId">
                   <a class="reward-link" :href="`https://zkillboard.com/ship/${rewardShip.shipId}/`" target="_blank" rel="noreferrer">
                     {{ rewardShip.name }}
                   </a>
