@@ -66,7 +66,7 @@ describe('draft UI', () => {
 
     expect(wrapper.text()).toContain('50')
     expect(wrapper.text()).toContain('Bhaalgorn')
-    expect(wrapper.text()).toContain('(1 / 10)')
+    expect(wrapper.text()).toContain('1 / 10')
   })
 
   it('shows the ban action on flagship ship rows', () => {

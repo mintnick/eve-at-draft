@@ -1,36 +1,43 @@
 :root {
-  --app-font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --app-font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --app-font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --app-font-display: 'Chakra Petch', var(--app-font-family);
+  --app-font-mono: 'Share Tech Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-  --app-bg: #0b0d10;
-  --app-panel: #13171c;
-  --app-panel-strong: #1a1f26;
-  --app-panel-hover: #22272e;
-  --app-row-zebra: #101317;
+  --app-bg: #06080b;
+  --app-panel: #11161c;
+  --app-panel-strong: #1b232c;
+  --app-panel-hover: #161d25;
+  --app-row-zebra: #10151b;
 
-  --app-text: #d6dbe1;
-  --app-text-strong: #f1f3f5;
-  --app-text-muted: #7a8593;
-  --app-text-dim: #5a6472;
+  --app-text: #b9c7d3;
+  --app-text-strong: #f4f8fb;
+  --app-text-muted: #8b99a4;
+  --app-text-dim: #66747f;
 
-  --app-border: #23272e;
-  --app-border-strong: #2e343c;
+  --app-border: rgba(150, 170, 190, 0.13);
+  --app-border-strong: rgba(150, 170, 190, 0.24);
 
-  --app-accent: #4b8bd6;
+  --app-accent: #ffa733;
+  --app-accent-light: #ffbf63;
+  --app-cyan: #34d8ff;
 
-  --app-success: #2e7d32;
-  --app-danger: #c0392b;
-  --app-warning: #b8860b;
+  --app-success: #3ef0bf;
+  --app-danger: #ff4d6a;
+  --app-warning: #ffb13c;
 
-  --app-action-add-bg: #2e7d32;
-  --app-action-add-fg: #f1f3f5;
-  --app-action-ban-bg: #c0392b;
-  --app-action-ban-fg: #f1f3f5;
-  --app-action-remove-bg: #2b3138;
-  --app-action-remove-fg: #d6dbe1;
-  --app-action-clear-bg: #b8860b;
-  --app-action-clear-fg: #0b0d10;
-  --app-action-clear-border: #8a6608;
+  --app-action-add-bg: #3ef0bf;
+  --app-action-add-fg: #06120e;
+  --app-action-ban-bg: #ff4d6a;
+  --app-action-ban-fg: #fff;
+  --app-action-remove-bg: #ff4d6a;
+  --app-action-remove-fg: #fff;
+  --app-action-clear-bg: #ffb13c;
+  --app-action-clear-fg: #1a1206;
+  --app-action-clear-border: #ffb13c;
+
+  --app-console-bg: linear-gradient(180deg, #0e1217, #0c1014);
+  --app-console-stripe: repeating-linear-gradient(45deg, rgba(255, 167, 51, 0.016) 0 2px, transparent 2px 9px);
+  --app-inner-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.035);
 
   color-scheme: dark;
   min-height: 100%;
@@ -54,12 +61,15 @@ body {
 
 body {
   margin: 0;
-  background: var(--app-bg);
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255, 167, 51, 0.06), transparent 34rem),
+    radial-gradient(circle at 88% 6%, rgba(52, 216, 255, 0.045), transparent 30rem),
+    linear-gradient(180deg, #06080b, #070a0e);
   color: inherit;
 }
 
 #app {
-  max-width: 1080px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 1rem 2rem;
 }
@@ -74,6 +84,30 @@ a:hover {
   text-decoration: underline;
 }
 
+.chamfer-5 {
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+}
+
+.chamfer-6 {
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+}
+
+.chamfer-7 {
+  clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
+}
+
+.chamfer-8 {
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.chamfer-9 {
+  clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
+}
+
+.chamfer-16 {
+  clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+}
+
 .app-footer {
   display: flex;
   align-items: center;
@@ -82,7 +116,7 @@ a:hover {
   margin: 2.5rem auto 1rem;
   max-width: 1000px;
   padding: 0.8rem 1rem 0;
-  border-top: 1px solid var(--app-border);
+  border-top: 1px solid rgba(150, 170, 190, 0.16);
   color: var(--app-text-muted);
   font-size: 0.85rem;
   white-space: nowrap;
@@ -123,16 +157,16 @@ a:hover {
   background: var(--app-panel-strong);
   border-color: var(--app-border);
   box-shadow: none;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .p-button {
   box-shadow: none;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .p-message {
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 @media (min-width: 1024px) {

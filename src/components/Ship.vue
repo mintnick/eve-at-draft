@@ -110,15 +110,16 @@ const extraPoints = computed(() => {
   align-items: center;
   justify-content: space-between;
   gap: 0.6rem;
-  padding: 0.35rem 0.5rem;
-  border: 1px solid var(--app-border);
-  background: var(--app-panel);
-  transition: background-color 80ms ease, border-color 80ms ease;
+  padding: 7px 9px 7px 7px;
+  border: 0;
+  background: #11161c;
+  box-shadow: var(--app-inner-shadow);
+  transition: background 0.14s ease, box-shadow 0.14s ease;
+  clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
 }
 
 .ship-wrapper:hover {
-  background-color: var(--app-panel-hover);
-  border-color: var(--app-border-strong);
+  background: #161d25;
 }
 
 .ship-meta {
@@ -131,7 +132,7 @@ const extraPoints = computed(() => {
 .ship-points-wrap {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 9px;
 }
 
 .ship-icon {
@@ -140,21 +141,21 @@ const extraPoints = computed(() => {
 }
 
 .ship-points {
-  width: 32px;
-  border: 1px solid currentColor;
+  min-width: 28px;
   text-align: center;
   font-family: var(--app-font-mono);
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
-  background: var(--app-panel-strong);
 }
 
 .ship-points--extra {
-  color: var(--app-danger);
+  color: var(--app-warning);
 }
 
 .ship-points--base {
-  color: var(--app-success);
+  color: #3ef0bf;
 }
 
 .ship-name {
@@ -163,6 +164,9 @@ const extraPoints = computed(() => {
   gap: 0.4rem;
   min-width: 0;
   text-align: left;
+  color: #dfe7ec;
+  font-family: var(--app-font-family);
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -179,14 +183,15 @@ const extraPoints = computed(() => {
 
 .ship-actions {
   display: flex;
-  gap: 0.25rem;
+  gap: 6px;
   flex: 0 0 auto;
 }
 
 .ship-action {
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid var(--app-border-strong);
+  width: 34px;
+  height: 34px;
+  border: 0;
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
 }
 
 .ship-action--blocked {
@@ -196,8 +201,8 @@ const extraPoints = computed(() => {
 
 .ship-action-icon {
   display: block;
-  width: 1.85rem;
-  height: 1.85rem;
+  width: 24px;
+  height: 24px;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -241,6 +246,7 @@ const extraPoints = computed(() => {
 .ship-action--remove {
   background: var(--app-action-remove-bg);
   color: var(--app-action-remove-fg);
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
 }
 
 .ship-action:hover {
@@ -250,7 +256,7 @@ const extraPoints = computed(() => {
 @media (max-width: 600px) {
   .ship-wrapper {
     gap: 0.4rem;
-    padding: 0.3rem 0.4rem;
+    padding: 6px 7px;
   }
 
   .ship-meta {
@@ -267,13 +273,13 @@ const extraPoints = computed(() => {
   }
 
   .ship-action {
-    width: 2rem;
-    height: 2rem;
+    width: 30px;
+    height: 30px;
   }
 
   .ship-action-icon {
-    width: 1.55rem;
-    height: 1.55rem;
+    width: 21px;
+    height: 21px;
   }
 }
 </style>

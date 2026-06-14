@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+  </style>
+</helmet>
+
+<div style="min-height:100%; font-family:'IBM Plex Sans',system-ui,sans-serif; color:#b9c7d3; background:
+      radial-gradient(1100px 560px at 50% -10%, rgba(255,167,51,.06), transparent 60%),
+      radial-gradient(900px 520px at 88% 6%, rgba(52,216,255,.045), transparent 60%),
+      linear-gradient(0deg,#06080b,#070a0e);
+    padding:34px clamp(16px,4vw,52px) 90px;">
+
+  <!-- ============ MASTHEAD ============ -->
+  <div style="max-width:1240px; margin:0 auto 26px; display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+    <div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="width:34px; height:14px; position:relative;">
+          <div style="position:absolute; inset:0 auto 0 0; width:2px; background:#ffa733;"></div>
+          <div style="position:absolute; left:6px; top:0; right:0; height:2px; background:#ffa733;"></div>
+          <div style="position:absolute; left:6px; bottom:0; right:0; height:2px; background:rgba(255,167,51,.4);"></div>
+        </div>
+        <span style="font-family:'Share Tech Mono',monospace; font-size:11px; letter-spacing:.4em; color:#7a8794;">GUNMETAL · UI REDESIGN</span>
+      </div>
+      <h1 style="margin:10px 0 0; font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:34px; letter-spacing:.04em; color:#eef6fb; text-transform:uppercase;">
+        AT Draft <span style="color:#ffa733;">//</span> Console
+      </h1>
+      <p style="margin:8px 0 0; max-width:640px; font-size:14px; line-height:1.55; color:#7e8d99;">
+        Same layout you have today, re-skinned as a solid-panel cockpit MFD — amber chrome, mint picks, red bans, chamfered corners, industrial type.
+      </p>
+    </div>
+
+    <!-- system / legend tile -->
+    <div style="position:relative; padding:14px 16px; background:#0e1217; clip-path:polygon(11px 0,100% 0,100% calc(100% - 11px),calc(100% - 11px) 100%,0 100%,0 11px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.18);">
+      <div style="font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:.3em; color:#7a8794; margin-bottom:10px;">DESIGN SYSTEM</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <sc-for list="{{ swatches }}" as="sw" hint-placeholder-count="4">
+          <div style="display:flex; flex-direction:column; gap:6px; align-items:center;">
+            <div style="width:30px; height:30px; background:{{ sw.color }}; clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px); box-shadow:0 0 9px {{ sw.glow }};"></div>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:9px; letter-spacing:.12em; color:#8b99a4;">{{ sw.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:12px; padding-top:10px; border-top:1px solid rgba(150,170,190,.14); display:flex; gap:16px; font-size:11px; color:#8b99a4;">
+        <span style="font-family:'Chakra Petch',sans-serif; font-weight:600; color:#cdd9e2;">Chakra Petch</span>
+        <span>IBM Plex Sans</span>
+        <span style="font-family:'Share Tech Mono',monospace;">Share Tech Mono</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CONSOLE ============ -->
+  <div style="max-width:1240px; margin:0 auto;">
+    <div style="position:relative; padding:22px; background:
+        repeating-linear-gradient(45deg, rgba(255,167,51,.016) 0 2px, transparent 2px 9px),
+        linear-gradient(180deg,#0e1217,#0c1014);
+      clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px);
+      box-shadow:inset 0 0 0 1px rgba(150,170,190,.16);">
+
+      <!-- header strip -->
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:18px;">
+        <div style="display:flex; align-items:center; gap:16px; min-width:0;">
+          <div style="position:relative; display:flex; align-items:center; gap:12px; padding:8px 14px; min-width:300px; background:#161d24; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(255,167,51,.34);">
+            <span style="font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:14px; color:#f4f8fb; letter-spacing:.04em;">Alliance Tournament · 2025</span>
+            <span style="margin-left:auto; color:#ffa733;">▾</span>
+          </div>
+          <div style="display:flex; gap:14px;">
+            <span style="font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:12px; letter-spacing:.14em; color:#dfe7ec; text-decoration:underline; text-decoration-color:rgba(255,167,51,.55); text-underline-offset:4px; cursor:pointer;" style-hover="color:#fff;">RULES</span>
+            <span style="font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:12px; letter-spacing:.14em; color:#dfe7ec; text-decoration:underline; text-decoration-color:rgba(255,167,51,.55); text-underline-offset:4px; cursor:pointer;" style-hover="color:#fff;">ARCHIVE</span>
+          </div>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <div style="padding:8px 18px; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:12px; letter-spacing:.12em; color:#dfe7ec; background:#1a222b; clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.24); cursor:pointer;" style-hover="box-shadow:inset 0 0 0 1px rgba(255,167,51,.55); color:#fff;">IMPORT</div>
+          <div style="padding:8px 18px; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:12px; letter-spacing:.12em; color:#dfe7ec; background:#1a222b; clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.24); cursor:pointer;" style-hover="box-shadow:inset 0 0 0 1px rgba(255,167,51,.55); color:#fff;">EXPORT</div>
+        </div>
+      </div>
+
+      <!-- prize + points -->
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; align-items:stretch; margin-bottom:18px;">
+        <div style="display:flex; align-items:center; gap:16px; padding:11px 16px; background:#11161c; clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13), inset 0 1px 0 rgba(255,255,255,.04); font-size:13px;">
+          <span style="color:#8b99a4;">Sponsored by <span style="color:#cdd9e2;">Pandemic Horde</span></span>
+          <span style="width:1px; align-self:stretch; background:rgba(150,170,190,.18);"></span>
+          <span style="color:#8b99a4;">Prize —</span>
+          <span style="color:#ffbf63;">Komodo</span>
+          <span style="color:#ffbf63;">Vanquisher</span>
+        </div>
+        <div style="position:relative; display:flex; align-items:baseline; gap:8px; padding:11px 22px; background:linear-gradient(180deg,#201a12,#181410); clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px); box-shadow:inset 0 0 0 1px rgba(255,167,51,.5);">
+          <span style="font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:.18em; color:#ffa733; margin-right:4px;">POINTS</span>
+          <span style="font-family:'Share Tech Mono',monospace; font-size:28px; line-height:1; color:#ffbf63;">119</span>
+          <span style="font-family:'Share Tech Mono',monospace; font-size:18px; color:#8a7a5a;">/</span>
+          <span style="font-family:'Share Tech Mono',monospace; font-size:18px; color:#8a7a5a;">120</span>
+        </div>
+      </div>
+
+      <!-- main grid -->
+      <div style="display:grid; grid-template-columns:212px minmax(0,1fr) 304px; gap:16px; align-items:start;">
+
+        <!-- RAIL (fixed hull taxonomy) -->
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#1b232c; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(255,167,51,.5), inset 3px 0 0 0 #ffa733; cursor:pointer;">
+            <img src="assets/hull/Battleship.png" style="width:30px; height:30px; flex:0 0 auto;" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#f4f8fb; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Battleship</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#ffbf63;">2/4</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Battlecruiser.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Battlecruiser</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">0/2</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Cruiser.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Cruiser</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">1/6</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Destroyer.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Destroyer</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">0/4</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Frigate.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Frigate</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">1/6</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Logistics.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Logistics</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">1/2</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 11px; background:#10151b; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13); cursor:pointer;" style-hover="background:#161d25;">
+            <img src="assets/hull/Flagship.png" style="width:30px; height:30px; flex:0 0 auto; filter:grayscale(.4) opacity(.8);" />
+            <span style="flex:1; min-width:0; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:.03em; color:#9aa7b1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Flagship</span>
+            <span style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#66747f;">1/1</span>
+          </div>
+        </div>
+
+        <!-- SHIP LIST -->
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:2px;">
+            <span style="font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:.22em; color:#ffa733;">BATTLESHIP</span>
+            <div style="flex:1; height:1px; background:linear-gradient(90deg,rgba(255,167,51,.3),transparent);"></div>
+          </div>
+          <sc-for list="{{ ships }}" as="s" hint-placeholder-count="7">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding:7px 9px 7px 7px; background:#11161c; clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13), inset 0 1px 0 rgba(255,255,255,.035); transition:background .14s ease;" style-hover="background:#161d25;">
+              <div style="display:flex; align-items:center; gap:11px; min-width:0;">
+                <img src="https://images.evetech.net/types/{{ s.id }}/icon" style="width:34px; height:34px; flex:0 0 auto;" />
+                <span style="font-family:'Share Tech Mono',monospace; font-size:16px; color:#3ef0bf; min-width:28px; text-align:center;">{{ s.pts }}</span>
+                <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:14px; color:#dfe7ec; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ s.name }}</span>
+              </div>
+              <div style="display:flex; gap:6px; flex:0 0 auto;">
+                <div style="display:grid; place-items:center; width:34px; height:34px; color:#06120e; background:#3ef0bf; clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px); cursor:pointer;" style-hover="filter:brightness(1.12);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2v-6Z"></path></svg>
+                </div>
+                <div style="display:grid; place-items:center; width:34px; height:34px; color:#fff; background:#ff4d6a; clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px); cursor:pointer;" style-hover="filter:brightness(1.1);">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"></circle><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"></line></svg>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <!-- PICKS -->
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+            <div style="display:flex; align-items:baseline; gap:9px;">
+              <span style="font-family:'Share Tech Mono',monospace; font-size:13px; letter-spacing:.22em; color:#3ef0bf;">PICK</span>
+              <span style="font-family:'Share Tech Mono',monospace; font-size:14px; color:#9aa7b1;">04 / 10</span>
+            </div>
+            <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 12px; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:11px; letter-spacing:.1em; color:#1a1206; background:#ffb13c; clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px); cursor:pointer;" style-hover="filter:brightness(1.08);">CLEAR</div>
+          </div>
+          <sc-for list="{{ picks }}" as="p" hint-placeholder-count="4">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; padding:7px 9px 7px 7px; background:#11161c; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); box-shadow:inset 0 0 0 1px rgba(150,170,190,.13), inset 2px 0 0 #3ef0bf;">
+              <div style="display:flex; align-items:center; gap:9px; min-width:0;">
+                <img src="https://images.evetech.net/types/{{ p.id }}/icon" style="width:28px; height:28px; flex:0 0 auto;" />
+                <span style="font-family:'Share Tech Mono',monospace; font-size:16px; color:#3ef0bf; min-width:28px;">{{ p.pts }}</span>
+                <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:500; font-size:13px; color:#dfe7ec; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ p.name }}</span>
+              </div>
+              <div style="display:grid; place-items:center; width:28px; height:28px; flex:0 0 auto; color:#fff; background:#ff4d6a; clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px); cursor:pointer;" style-hover="filter:brightness(1.1);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11h14v2H5z"></path></svg>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- BAN ROW -->
+      <div style="margin-top:18px; padding-top:14px; border-top:1px solid rgba(150,170,190,.16);">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <span style="font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:.22em; color:#ff4d6a;">BAN</span>
+          <span style="font-family:'Share Tech Mono',monospace; font-size:10px; color:#66747f;">(RULES)</span>
+          <div style="flex:1; height:1px; background:linear-gradient(90deg,rgba(255,77,106,.3),transparent);"></div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <sc-for list="{{ bans }}" as="b" hint-placeholder-count="3">
+            <div style="display:inline-flex; align-items:center; gap:8px; padding:5px 6px 5px 9px; background:#1c1418; clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px); box-shadow:inset 0 0 0 1px rgba(255,77,106,.4), inset 2px 0 0 #ff4d6a;">
+              <img src="https://images.evetech.net/types/{{ b.id }}/icon" style="width:26px; height:26px;" />
+              <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:500; font-size:13px; color:#f0c6cd;">{{ b.name }}</span>
+              <div style="display:grid; place-items:center; width:24px; height:24px; color:#fff; background:#ff4d6a; clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px); cursor:pointer;" style-hover="filter:brightness(1.1);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11h14v2H5z"></path></svg>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const swatches = [
+      { label: 'CHROME', color: '#ffa733', glow: 'rgba(255,167,51,.55)' },
+      { label: 'PICK', color: '#3ef0bf', glow: 'rgba(62,240,191,.55)' },
+      { label: 'BAN', color: '#ff4d6a', glow: 'rgba(255,77,106,.5)' },
+      { label: 'ACCENT', color: '#34d8ff', glow: 'rgba(52,216,255,.5)' },
+    ];
+
+    const ships = [
+      { name: 'Bhaalgorn', id: 17920, pts: 50 },
+      { name: 'Rattlesnake', id: 17918, pts: 50 },
+      { name: 'Barghest', id: 33820, pts: 50 },
+      { name: 'Nightmare', id: 17736, pts: 49 },
+      { name: 'Leshak', id: 47271, pts: 49 },
+      { name: 'Vindicator', id: 17740, pts: 47 },
+      { name: 'Vargur', id: 28665, pts: 47 },
+    ];
+
+    const picks = [
+      { name: 'Nightmare', id: 17736, pts: 49 },
+      { name: 'Scimitar', id: 11978, pts: 32 },
+      { name: 'Augoror', id: 625, pts: 19 },
+      { name: 'Exequror', id: 634, pts: 19 },
+    ];
+
+    const bans = [
+      { name: 'Leshak', id: 47271 },
+      { name: 'Barghest', id: 33820 },
+      { name: 'Vindicator', id: 17740 },
+    ];
+
+    return { swatches, ships, picks, bans };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
-import Message from 'primevue/message'
 import Tab from 'primevue/tab'
 import TabList from 'primevue/tablist'
 import TabPanel from 'primevue/tabpanel'
@@ -51,28 +50,12 @@ const {
 } = useDraftBoard(props.dataset, props.shipCatalog, appLocale)
 
 const feedbackMessages = computed(() => feedbackReasons.value.map((reason) => t(`validation.${reason}`)))
-const prizeSponsorText = computed(() =>
-  t('messages.prizeSponsor', {
-    sponsor: dataset.summary.prize.sponsor,
-  }),
-)
-const shipNameByShipId = computed(() => {
-  const map = new Map<number, Record<LocaleCode, string>>()
-  for (const entry of Object.values(props.shipCatalog)) {
-    map.set(entry.shipId, entry.names)
-  }
-  return map
-})
-const prizeRewardShips = computed(() =>
-  dataset.summary.prize.rewardShips.map((rewardShip) => {
-    const names = shipNameByShipId.value.get(rewardShip.shipId)
-    const localized = names?.[appLocale.value] ?? names?.en ?? rewardShip.name
-    return { shipId: rewardShip.shipId, name: localized }
-  }),
-)
+const toastMessage = ref('')
+const toastVisible = ref(false)
 const hullListElement = ref<HTMLElement | null>(null)
 const shipListHeight = ref('min(62vh, 760px)')
 let hullListResizeObserver: ResizeObserver | undefined
+let toastTimer: ReturnType<typeof setTimeout> | undefined
 
 function updateShipListHeight() {
   const height = hullListElement.value?.getBoundingClientRect().height
@@ -95,6 +78,26 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   hullListResizeObserver?.disconnect()
+  if (toastTimer) {
+    clearTimeout(toastTimer)
+  }
+})
+
+watch(feedbackMessages, ([message]) => {
+  if (!message) {
+    return
+  }
+
+  toastMessage.value = message
+  toastVisible.value = true
+
+  if (toastTimer) {
+    clearTimeout(toastTimer)
+  }
+
+  toastTimer = setTimeout(() => {
+    toastVisible.value = false
+  }, 2000)
 })
 
 function pickReason(hullType: HullType, shipKey: string) {
@@ -125,41 +128,11 @@ defineExpose({
 
 <template>
   <div class="draft-page">
-    <section class="draft-hero">
-      <div class="feedback-slot" aria-live="polite">
-        <Message v-if="feedbackMessages.length" severity="warn" variant="outlined" class="feedback-message feedback-message--single-line">
-          {{ feedbackMessages[0] }}
-        </Message>
-        <Message v-else severity="secondary" variant="outlined" class="feedback-message">
-          <span class="prize-info">
-            <span class="prize-sponsor">{{ prizeSponsorText }}</span>
-            <span class="prize-ship-group">
-              <span>{{ $t('messages.prizeShips') }}</span>
-              <span class="reward-links">
-                <template v-for="rewardShip in prizeRewardShips" :key="rewardShip.shipId">
-                  <a class="reward-link" :href="`https://zkillboard.com/ship/${rewardShip.shipId}/`" target="_blank" rel="noreferrer">
-                    {{ rewardShip.name }}
-                  </a>
-                </template>
-              </span>
-            </span>
-          </span>
-        </Message>
+    <Transition name="feedback-toast">
+      <div v-if="toastVisible" class="feedback-toast" role="alert" aria-live="polite">
+        {{ toastMessage }}
       </div>
-
-      <div
-        class="points-summary"
-        :class="{
-          'points-summary--over': derivedState.totalPoints > dataset.rules.maxPoints,
-          'points-summary--limit': derivedState.totalPoints === dataset.rules.maxPoints,
-          'points-summary--safe': derivedState.totalPoints < dataset.rules.maxPoints,
-        }"
-      >
-        <span class="points-summary-value">{{ derivedState.totalPoints }}</span>
-        <span class="points-summary-divider">/</span>
-        <span class="points-summary-cap">{{ dataset.rules.maxPoints }}</span>
-      </div>
-    </section>
+    </Transition>
 
     <main class="draft-layout">
       <section class="selection-panel">
@@ -189,6 +162,7 @@ defineExpose({
                 :value="group.hullType"
                 class="ship-panel"
               >
+                <div class="ship-section-label">{{ $t(`types.${activeHullType}`) }}</div>
                 <div class="ship-panel-scroll" :style="{ height: shipListHeight }">
                   <Ship
                     v-for="(property, shipKey) in group.ships"
@@ -215,23 +189,30 @@ defineExpose({
       <aside class="summary-panel">
         <div class="summary-header">
           <div class="summary-title summary-title--pick">
-            {{ $t('messages.pick') }}
             <span
-              v-if="derivedState.pickList.length"
               class="summary-title-count"
               :class="{
                 'summary-title-count--limit': derivedState.pickList.length >= dataset.rules.maxShips,
                 'summary-title-count--safe': derivedState.pickList.length < dataset.rules.maxShips,
               }"
             >
-              ({{ derivedState.pickList.length }} / {{ dataset.rules.maxShips }})
+              {{ derivedState.pickList.length }} / {{ dataset.rules.maxShips }}
             </span>
           </div>
+          <div
+            class="points-summary"
+            :class="{
+              'points-summary--over': derivedState.totalPoints > dataset.rules.maxPoints,
+              'points-summary--limit': derivedState.totalPoints === dataset.rules.maxPoints,
+              'points-summary--safe': derivedState.totalPoints < dataset.rules.maxPoints,
+            }"
+          >
+            <span class="points-summary-value">{{ derivedState.totalPoints }}</span>
+            <span class="points-summary-divider">/</span>
+            <span class="points-summary-cap">{{ dataset.rules.maxPoints }}</span>
+          </div>
           <Button
-            v-if="derivedState.pickList.length"
             class="clear-button"
-            severity="contrast"
-            variant="outlined"
             @click="clearPicks"
           >
             <span class="button-icon-image button-icon-image--remove" aria-hidden="true"></span>
@@ -257,21 +238,11 @@ defineExpose({
     <section class="ban-section">
       <div class="summary-header">
         <div class="summary-title summary-title--ban">
-          {{ $t('messages.ban') }}
+          BAN
           <a class="ban-rules-link" :href="banLink" target="_blank" rel="noreferrer">
             ({{ $t('messages.rules') }})
           </a>
         </div>
-        <Button
-          v-if="derivedState.banList.length"
-          class="clear-button"
-          severity="contrast"
-          variant="outlined"
-          @click="clearBans"
-        >
-          <span class="button-icon-image button-icon-image--remove" aria-hidden="true"></span>
-          <span>{{ $t('messages.clear') }}</span>
-        </Button>
       </div>
 
       <div class="ban-list">
@@ -295,145 +266,157 @@ defineExpose({
           </Button>
         </div>
       </div>
+
+      <div v-if="derivedState.banList.length" class="ban-clear-row">
+        <Button
+          class="clear-button"
+          @click="clearBans"
+        >
+          <span class="button-icon-image button-icon-image--remove" aria-hidden="true"></span>
+          <span>{{ $t('messages.clear') }}</span>
+        </Button>
+      </div>
     </section>
   </div>
 </template>
 
 <style scoped>
 .draft-page {
+  position: relative;
   display: grid;
-  gap: 1.2rem;
+  gap: 18px;
+  overflow: hidden;
+  padding: 14px 22px;
+  background: var(--app-console-bg);
+  box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.16);
+  clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
 }
 
-.draft-hero {
-  display: grid;
-  grid-template-columns: minmax(20rem, 1fr) auto;
-  gap: 0.85rem;
-  align-items: center;
+.draft-page::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background: var(--app-console-stripe);
+}
+
+.draft-page > * {
+  position: relative;
+}
+
+.feedback-toast {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 50%;
+  width: min(72%, 680px);
+  padding: 12px 18px;
+  overflow: hidden;
+  color: #ff4d6a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #1c1418;
+  box-shadow: inset 0 0 0 1px rgba(255, 77, 106, 0.42), inset 2px 0 0 #ff4d6a, 0 12px 30px rgba(0, 0, 0, 0.26);
+  transform: translateX(-50%);
+  clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
+}
+
+.feedback-toast-enter-active,
+.feedback-toast-leave-active {
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.feedback-toast-enter-from,
+.feedback-toast-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -6px);
 }
 
 .ban-rules-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  color: #dfe7ec;
+  font-family: var(--app-font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--app-accent);
   white-space: nowrap;
   text-decoration: underline;
+  text-decoration-color: rgba(255, 167, 51, 0.55);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 4px;
+  transition: color 0.14s ease, text-decoration-color 0.14s ease;
+}
+
+.ban-rules-link:hover {
+  color: #fff;
+  text-decoration-color: rgba(255, 167, 51, 0.8);
 }
 
 .points-summary {
   display: flex;
   align-items: baseline;
-  gap: 0.3rem;
-  padding: 0.35rem 0.6rem;
-  background: var(--app-panel-strong);
-  border: 1px solid var(--app-border);
+  gap: 6px;
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: 6px 10px;
+  background: linear-gradient(180deg, #201a12, #181410);
   font-family: var(--app-font-mono);
   font-variant-numeric: tabular-nums;
-  font-weight: 600;
+  font-weight: 400;
+  box-shadow: inset 0 0 0 1px rgba(255, 167, 51, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
+}
+
+.points-summary-label {
+  align-self: center;
+  margin-right: 2px;
+  color: var(--app-accent);
+  font-family: var(--app-font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .points-summary-value {
-  font-size: 1.25rem;
+  color: #ffbf63;
+  font-size: 20px;
   line-height: 1;
 }
 
 .points-summary-divider,
 .points-summary-cap {
-  font-size: 1rem;
-  color: var(--app-text-muted);
+  color: #8a7a5a;
+  font-size: 14px;
 }
 
 .points-summary--over {
-  color: var(--app-danger);
+  box-shadow: inset 0 0 0 1px rgba(255, 77, 106, 0.58), inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
 .points-summary--limit {
-  color: var(--app-warning);
+  box-shadow: inset 0 0 0 1px rgba(255, 177, 60, 0.62), inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
 .points-summary--safe {
-  color: var(--app-success);
-}
-
-.feedback-message {
-  width: 100%;
-}
-
-.feedback-message:deep(.p-message-text) {
-  color: var(--app-text-strong);
-}
-
-.prize-info {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.25rem;
-  min-width: 0;
-}
-
-.prize-ship-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  min-width: 0;
-  padding-inline-start: 1.25rem;
-  border-inline-start: 1px solid var(--app-border);
-}
-
-.reward-link {
-  color: var(--app-accent);
-  font-weight: 400;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
-.reward-link:hover {
-  color: var(--app-accent);
-}
-
-.reward-links {
-  display: inline-flex;
-  gap: 0.7rem;
-}
-
-.feedback-slot {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 0;
-  min-height: 2rem;
-}
-
-.feedback-slot:deep(.p-message) {
-  margin: 0;
-  transition: none !important;
-  animation: none !important;
-}
-
-.feedback-message--single-line:deep(.p-message-text) {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px rgba(255, 167, 51, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
 .draft-layout {
   display: grid;
-  grid-template-columns: max-content minmax(300px, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) 304px;
+  gap: 16px;
   align-items: start;
 }
 
 .summary-panel,
 .ban-section {
-  border: 1px solid var(--app-border);
-  background: var(--app-panel);
-  padding: 0.75rem 0.85rem;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .selection-panel {
@@ -442,8 +425,8 @@ defineExpose({
 
 .selection-layout {
   display: grid;
-  grid-template-columns: minmax(180px, 220px) minmax(360px, 420px);
-  gap: 1.1rem;
+  grid-template-columns: 212px minmax(0, 1fr);
+  gap: 16px;
   align-items: start;
 }
 
@@ -453,7 +436,7 @@ defineExpose({
 
 .hull-tab-list {
   display: grid;
-  gap: 0.6rem;
+  gap: 7px;
   min-width: 0;
   overflow: visible;
   background: transparent;
@@ -479,7 +462,7 @@ defineExpose({
 
 .hull-tab-list:deep(.p-tablist-tab-list) {
   display: grid;
-  gap: 0.6rem;
+  gap: 7px;
   min-width: 0;
   border: 0;
   background: transparent;
@@ -489,38 +472,45 @@ defineExpose({
   justify-content: stretch;
   min-width: 0;
   max-width: 100%;
-  padding: 0.35rem 0.5rem;
-  border: 1px solid var(--app-border);
-  background: var(--app-panel);
-  transition: background-color 80ms ease, border-color 80ms ease;
+  padding: 9px 11px;
+  background: #10151b;
+  box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.13);
+  transition: background 0.14s ease, box-shadow 0.14s ease;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
 }
 
 .hull-tab:hover {
-  border-color: var(--app-border-strong);
-  background: var(--app-panel-hover);
+  background: #161d25;
+  box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.24);
 }
 
 .hull-tab.p-tab-active {
-  border-color: var(--app-accent);
-  background: var(--app-panel-strong);
-  border-left: 2px solid var(--app-accent);
+  background: #1b232c;
+  box-shadow: inset 0 0 0 1px rgba(255, 167, 51, 0.5), inset 3px 0 0 #ffa733;
 }
 
 .hull-tab-content {
   display: flex;
   width: 100%;
   min-width: 0;
-  gap: 0.55rem;
+  gap: 9px;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.9rem;
+  color: #b9c7d3;
+  font-family: var(--app-font-display);
+  font-size: 13px;
   font-weight: 600;
 }
 
 .hull-tab-content .hull-icon {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   flex: 0 0 auto;
+  filter: grayscale(0.4) opacity(0.8);
+}
+
+.hull-tab.p-tab-active .hull-icon {
+  filter: none;
 }
 
 .hull-tab-name {
@@ -535,14 +525,22 @@ defineExpose({
 .hull-tab-count {
   flex: 0 0 auto;
   white-space: nowrap;
-  font-family: var(--app-font-mono);
+  font-family: var(--app-font-display);
   font-variant-numeric: tabular-nums;
-  font-size: 0.85rem;
-  color: var(--app-text-muted);
+  font-size: 13px;
+  color: #dfe7ec;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 6px rgba(255, 167, 51, 0.18);
 }
 
 .hull-tab.p-tab-active .hull-tab-count {
-  color: var(--app-accent);
+  color: #ffbf63;
+  font-weight: 700;
+}
+
+.hull-tab.p-tab-active .hull-tab-name {
+  color: #f4f8fb;
 }
 
 .ship-panel {
@@ -555,6 +553,26 @@ defineExpose({
   min-width: 0;
 }
 
+.ship-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+  color: var(--app-accent);
+  font-family: var(--app-font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.ship-section-label::after {
+  flex: 1;
+  height: 1px;
+  content: '';
+  background: linear-gradient(90deg, rgba(255, 167, 51, 0.72), transparent);
+}
+
 .ship-panel-scroll {
   height: min(62vh, 760px);
   overflow: auto;
@@ -565,16 +583,24 @@ defineExpose({
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 9px;
+}
+
+.summary-panel .summary-header {
+  flex-wrap: nowrap;
 }
 
 .summary-title {
-  font-size: 0.85rem;
-  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--app-font-mono);
+  font-size: 13px;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.18em;
 }
 
 .summary-title--pick {
@@ -583,12 +609,18 @@ defineExpose({
 
 .summary-title--ban {
   color: var(--app-danger);
+  font-family: var(--app-font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .summary-title-count {
   font-family: var(--app-font-mono);
   font-variant-numeric: tabular-nums;
-  font-size: 0.85rem;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #9aa7b1;
 }
 
 .summary-title-count--limit {
@@ -601,38 +633,79 @@ defineExpose({
 
 .summary-list {
   display: grid;
-  gap: 0.4rem;
+  gap: 9px;
+}
+
+.summary-list :deep(.ship-wrapper) {
+  padding: 7px 9px 7px 7px;
+  border: 0;
+  background: #11161c;
+  box-shadow: inset 2px 0 0 #3ef0bf, var(--app-inner-shadow);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.summary-list :deep(.ship-icon) {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-list :deep(.ship-name) {
+  color: #dfe7ec;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.summary-list :deep(.ship-action) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+}
+
+.summary-list :deep(.ship-action-icon--remove) {
+  width: 14px;
+  height: 14px;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
 }
 
 .ban-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 8px;
+}
+
+.ban-clear-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .ban-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   max-width: 100%;
-  border: 1px solid var(--app-border);
-  border-left: 2px solid var(--app-danger);
-  background: var(--app-panel-strong);
-  color: var(--app-text);
-  padding: 0.25rem 0.3rem 0.25rem 0.4rem;
-  font-weight: 600;
-  transition: background-color 80ms ease, border-color 80ms ease;
+  background: #1c1418;
+  box-shadow: inset 0 0 0 1px rgba(255, 77, 106, 0.4), inset 2px 0 0 #ff4d6a;
+  color: #f0c6cd;
+  padding: 5px 6px 5px 9px;
+  font-weight: 500;
+  transition: background 0.14s ease, box-shadow 0.14s ease;
+  clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
 }
 
 .ban-pill:hover {
-  border-color: var(--app-border-strong);
-  border-left-color: var(--app-danger);
-  background: var(--app-panel-hover);
+  background: #21171c;
+  box-shadow: inset 0 0 0 1px rgba(255, 77, 106, 0.6), inset 2px 0 0 #ff4d6a;
 }
 
 .ban-pill-icon {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 26px;
+  height: 26px;
   flex: 0 0 auto;
 }
 
@@ -641,45 +714,67 @@ defineExpose({
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 13px;
 }
 
 .ban-pill-remove-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid var(--app-border-strong);
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
   background: var(--app-action-remove-bg);
   color: var(--app-action-remove-fg);
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
 }
 
 .ban-pill-remove-button:hover {
-  background: var(--app-panel-hover);
-  color: var(--app-text-strong);
+  background: var(--app-action-remove-bg);
+  color: var(--app-action-remove-fg);
   filter: brightness(1.12);
 }
 
 .ban-pill-remove-button .ship-action-icon {
   display: block;
-  width: 1.55rem;
-  height: 1.55rem;
+  width: 14px;
+  height: 14px;
   background: currentColor;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
+  -webkit-mask-size: 100%;
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: contain;
+  mask-size: 100%;
 }
 
 .ban-pill-remove-button .ship-action-icon--remove {
   -webkit-mask-image: url('/icons/remove.svg');
-  -webkit-mask-size: 185%;
   mask-image: url('/icons/remove.svg');
-  mask-size: 185%;
 }
 
 .ban-section {
-  margin-top: 0.15rem;
+  margin-top: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(150, 170, 190, 0.16);
+}
+
+.ban-section .summary-header {
+  align-items: center;
+}
+
+.ban-section .summary-title {
+  flex: 1;
+  color: var(--app-danger);
+}
+
+.ban-section .summary-title::after {
+  flex: 1;
+  height: 1px;
+  content: '';
+  background: linear-gradient(90deg, rgba(255, 77, 106, 0.72), transparent);
 }
 
 .button-icon-image {
@@ -702,41 +797,66 @@ defineExpose({
   mask-size: 145%;
 }
 
-.clear-button {
-  border: 1px solid var(--app-action-clear-border);
+.clear-button,
+.clear-button.p-button {
+  min-height: 28px;
+  padding: 6px 12px;
+  border: 0;
   background: var(--app-action-clear-bg);
   color: var(--app-action-clear-fg);
+  font-family: var(--app-font-display);
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.12em;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
 }
 
-.clear-button:hover {
-  border-color: var(--app-action-clear-border);
+.clear-button:hover,
+.clear-button.p-button:hover,
+.clear-button.p-button:enabled:hover,
+.clear-button.p-button:enabled:active,
+.clear-button.p-button:focus,
+.clear-button.p-button:focus-visible {
+  padding: 6px 12px;
+  border: 0;
   background: var(--app-action-clear-bg);
   color: var(--app-action-clear-fg);
-  filter: brightness(1.12);
+  box-shadow: none;
+  transform: none;
+  filter: none;
+  outline: 0;
+}
+
+.clear-button:active,
+.clear-button:focus,
+.clear-button:focus-visible {
+  box-shadow: none;
+  transform: none;
+}
+
+.clear-button::before,
+.clear-button::after {
+  display: none;
 }
 
 @media (max-width: 900px) {
-  .draft-hero {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
-
-  .feedback-slot {
-    justify-content: stretch;
-  }
-
   .draft-layout {
     grid-template-columns: 1fr;
   }
 
   .selection-layout {
-    grid-template-columns: minmax(180px, 220px) minmax(360px, 1fr);
+    grid-template-columns: 212px minmax(0, 1fr);
   }
 }
 
 @media (max-width: 720px) {
+  .draft-page {
+    padding: 12px 16px;
+  }
+
   .selection-layout {
     grid-template-columns: 1fr;
   }
@@ -751,15 +871,13 @@ defineExpose({
   }
 
   .hull-tab {
-    padding: 0.35rem 0.25rem;
-    border-left: 1px solid var(--app-border);
+    padding: 8px 6px;
     min-width: 0;
     overflow: hidden;
   }
 
   .hull-tab.p-tab-active {
-    border-left: 1px solid var(--app-accent);
-    border-top: 2px solid var(--app-accent);
+    box-shadow: inset 0 3px 0 #ffa733;
   }
 
   .hull-tab-content {
@@ -785,7 +903,7 @@ defineExpose({
   }
 
   .hull-tab-count {
-    font-size: 0.78rem;
+    font-size: 13px;
     line-height: 1;
   }
 
@@ -797,19 +915,11 @@ defineExpose({
     max-width: 8rem;
   }
 
-  .prize-sponsor {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
   .points-summary-value {
-    font-size: 1.1rem;
-  }
-
-  .prize-ship-group {
-    padding-inline-start: 0;
-    border-inline-start: 0;
+    font-size: 24px;
   }
 }
 </style>

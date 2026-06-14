@@ -36,6 +36,24 @@ const localeOptions = computed(() =>
 )
 const ruleLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Rules')?.url ?? null)
 const archiveLink = computed(() => currentTournament.value?.sources.find((source) => source.label === 'Match Archive')?.url ?? null)
+const appLocale = computed(() => locale.value as LocaleCode)
+const prizeRewardShips = computed(() => {
+  const tournament = currentTournament.value
+  if (!tournament) {
+    return []
+  }
+
+  const shipNameByShipId = new Map<number, Record<LocaleCode, string>>()
+  for (const entry of Object.values(shipCatalog)) {
+    shipNameByShipId.set(entry.shipId, entry.names)
+  }
+
+  return tournament.summary.prize.rewardShips.map((rewardShip) => {
+    const names = shipNameByShipId.get(rewardShip.shipId)
+    const localized = names?.[appLocale.value] ?? names?.en ?? rewardShip.name
+    return { shipId: rewardShip.shipId, name: localized }
+  })
+})
 
 function changeLang(nextLocale: LocaleCode) {
   locale.value = nextLocale
@@ -148,6 +166,21 @@ async function applyImport() {
                 {{ $t('messages.matchArchive') }}
               </a>
             </div>
+            <div v-if="prizeRewardShips.length" class="header-prize-links">
+              <span class="header-prize-label">{{ $t('messages.prizeShips') }}</span>
+              <span class="header-reward-links">
+                <a
+                  v-for="rewardShip in prizeRewardShips"
+                  :key="rewardShip.shipId"
+                  class="header-reward-link"
+                  :href="`https://zkillboard.com/ship/${rewardShip.shipId}/`"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {{ rewardShip.name }}
+                </a>
+              </span>
+            </div>
           </div>
           <div class="page-actions-right">
             <Button outlined class="transfer-button" @click="openImportDialog">{{ $t('messages.import') }}</Button>
@@ -191,13 +224,13 @@ async function applyImport() {
 <style scoped>
 .page-shell {
   display: grid;
-  gap: 0.85rem;
+  gap: 18px;
   padding-top: 1rem;
 }
 
 .page-header {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.7rem;
 }
 
 .page-title-wrap {
@@ -217,9 +250,10 @@ async function applyImport() {
 
 .page-title {
   color: var(--app-text-strong);
+  font-family: var(--app-font-display);
   font-size: 1.75rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0;
   text-transform: uppercase;
   line-height: 1.2;
   overflow: hidden;
@@ -228,53 +262,71 @@ async function applyImport() {
 }
 
 .page-actions-card {
-  border: 1px solid var(--app-border);
-  background: var(--app-panel);
-  padding: 0.6rem 0.75rem;
+  position: relative;
+  overflow: hidden;
+  padding: 14px 22px;
+  background: var(--app-console-bg);
+  box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.16);
+  clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+}
+
+.page-actions-card::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background: var(--app-console-stripe);
 }
 
 .page-actions {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 0.6rem;
-  align-items: end;
+  gap: 14px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .page-actions-left {
   display: flex;
-  gap: 0.6rem;
-  align-items: end;
+  gap: 14px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .page-actions-right {
   display: flex;
-  gap: 0.5rem;
-  align-items: end;
+  gap: 8px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .transfer-button {
-  align-self: end;
-  min-height: 2.1rem;
-  border: 1px solid var(--app-border-strong);
-  background: var(--app-panel-strong);
-  color: var(--app-text);
+  align-self: center;
+  min-height: 34px;
+  padding: 8px 18px;
+  border: 0;
+  background: #1a222b;
+  color: #dfe7ec;
+  font-family: var(--app-font-display);
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.12em;
+  box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.24);
+  clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
+  transition: box-shadow 0.14s ease, color 0.14s ease, filter 0.14s ease;
 }
 
 .transfer-button:hover {
-  border-color: var(--app-text-muted);
-  background: var(--app-panel-hover);
-  color: var(--app-text-strong);
+  background: #1a222b;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 167, 51, 0.55);
 }
 
 .control-group {
   display: grid;
   gap: 0.25rem;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 .language-control {
@@ -290,42 +342,95 @@ async function applyImport() {
 
 .tournament-source-links {
   display: flex;
-  align-items: flex-end;
-  align-self: end;
+  align-items: center;
+  align-self: center;
   gap: 0.9rem;
-  min-height: 2.1rem;
+  min-height: 34px;
   flex-wrap: wrap;
-  padding-bottom: 0.35rem;
 }
 
 .source-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  color: #dfe7ec;
+  font-family: var(--app-font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--app-accent);
   white-space: nowrap;
   text-decoration: underline;
+  text-decoration-color: rgba(255, 167, 51, 0.55);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 4px;
+  transition: color 0.14s ease, text-decoration-color 0.14s ease;
+}
+
+.source-link:hover {
+  color: #fff;
+  text-decoration-color: rgba(255, 167, 51, 0.8);
+}
+
+.header-prize-links {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 0.55rem;
+  min-height: 34px;
+  min-width: 0;
+  color: var(--app-text-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.header-prize-label {
+  color: var(--app-text-muted);
+}
+
+.header-reward-links {
+  display: inline-flex;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.header-reward-link {
+  overflow: hidden;
+  color: #ffbf63;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.header-reward-link:hover {
+  color: #ffd18a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .year-select {
   min-width: 200px;
+  background: #161d24;
+  border-color: rgba(255, 167, 51, 0.34);
+  font-family: var(--app-font-display);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
 }
 
 .tournament-year-select {
-  min-width: 280px;
+  min-width: 300px;
+}
+
+.year-select:deep(.p-select-dropdown) {
+  color: var(--app-accent);
 }
 
 .tournament-year-select:deep(.p-select-label) {
-  font-size: 0.95rem;
+  color: #f4f8fb;
+  font-family: var(--app-font-display);
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .transfer-message {
-  border-radius: 2px;
+  clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
 }
 
 .import-dialog-body {
@@ -346,7 +451,7 @@ async function applyImport() {
 
 @media (max-width: 720px) {
   .page-actions-card {
-    padding: 0.6rem;
+    padding: 12px 16px;
   }
 
   .page-actions {
