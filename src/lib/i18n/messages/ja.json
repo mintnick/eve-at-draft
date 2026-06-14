@@ -4,7 +4,6 @@
     "rules": "ルール",
     "matchArchive": "試合アーカイブ",
     "clear": "クリア",
-    "points": "ポイント",
     "pick": "ピック",
     "ban": "バン",
     "language": "言語",
@@ -16,7 +15,6 @@
     "applyImport": "インポートを適用",
     "copied": "ドラフトをクリップボードにコピーしました。",
     "importApplied": "ドラフトをインポートしました。",
-    "prizeSponsor": "スポンサー: {sponsor}",
     "prizeShips": "賞品艦船:",
     "reportBug": "バグを報告",
     "footerDisclaimer": "EVE 関連の素材はすべて CCP Games の所有物です"

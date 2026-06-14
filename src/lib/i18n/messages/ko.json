@@ -4,7 +4,6 @@
     "rules": "규칙",
     "matchArchive": "경기 기록",
     "clear": "지우기",
-    "points": "포인트",
     "pick": "픽",
     "ban": "밴",
     "language": "언어",
@@ -16,7 +15,6 @@
     "applyImport": "가져오기 적용",
     "copied": "드래프트가 클립보드에 복사되었습니다.",
     "importApplied": "드래프트를 가져왔습니다.",
-    "prizeSponsor": "후원: {sponsor}",
     "prizeShips": "상금 함선:",
     "reportBug": "버그 신고",
     "footerDisclaimer": "모든 EVE 관련 자료는 CCP Games의 자산입니다"

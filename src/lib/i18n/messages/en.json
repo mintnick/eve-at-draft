@@ -4,7 +4,6 @@
     "rules": "Rules",
     "matchArchive": "Match Archive",
     "clear": "Clear",
-    "points": "Points",
     "pick": "Picks",
     "ban": "Bans",
     "language": "Language",
@@ -16,7 +15,6 @@
     "applyImport": "Apply Import",
     "copied": "Draft copied to clipboard.",
     "importApplied": "Draft imported successfully.",
-    "prizeSponsor": "Sponsored by {sponsor}",
     "prizeShips": "Prize ships:",
     "reportBug": "Report a bug",
     "footerDisclaimer": "All EVE related materials are property of CCP Games"

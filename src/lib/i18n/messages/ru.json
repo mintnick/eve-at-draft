@@ -4,7 +4,6 @@
     "rules": "Правила",
     "matchArchive": "Архив матчей",
     "clear": "Очистить",
-    "points": "Очки",
     "pick": "Пики",
     "ban": "Баны",
     "language": "Язык",
@@ -16,7 +15,6 @@
     "applyImport": "Применить импорт",
     "copied": "Драфт скопирован в буфер обмена.",
     "importApplied": "Драфт успешно импортирован.",
-    "prizeSponsor": "Спонсор: {sponsor}",
     "prizeShips": "Призовые корабли:",
     "reportBug": "Сообщить об ошибке",
     "footerDisclaimer": "Все материалы, связанные с EVE, являются собственностью CCP Games"

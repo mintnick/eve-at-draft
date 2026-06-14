@@ -4,7 +4,6 @@
     "rules": "規則",
     "matchArchive": "歷史對局",
     "clear": "清空",
-    "points": "分數",
     "pick": "陣容",
     "ban": "禁用",
     "language": "語言",
@@ -16,7 +15,6 @@
     "applyImport": "套用匯入",
     "copied": "陣容已複製到剪貼簿。",
     "importApplied": "陣容匯入成功。",
-    "prizeSponsor": "贊助方：{sponsor}",
     "prizeShips": "獎品艦船：",
     "reportBug": "回報問題",
     "footerDisclaimer": "所有 EVE 相關素材均為 CCP Games 的財產"
