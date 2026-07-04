@@ -214,7 +214,7 @@ async function applyImport() {
 
     <footer class="app-footer">
       <span class="app-footer-disclaimer">{{ $t('messages.footerDisclaimer') }}</span>
-      <span>&copy; Nick Ning</span>
+      <span>&copy; <a href="https://nickning.dev" target="_blank" rel="noreferrer">Nick Ning</a></span>
       <span><a href="https://github.com/mintnick/eve-at-draft" target="_blank" rel="noreferrer">GitHub</a></span>
       <span><a href="https://github.com/mintnick/eve-at-draft/issues/new" target="_blank" rel="noreferrer">{{ $t('messages.reportBug') }}</a></span>
     </footer>
