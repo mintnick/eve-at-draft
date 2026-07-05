@@ -1,7 +1,7 @@
 :root {
   --app-font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --app-font-display: 'Chakra Petch', var(--app-font-family);
-  --app-font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --app-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --app-bg: #06080b;
   --app-panel: #11161c;
