@@ -313,7 +313,7 @@ defineExpose({
   padding: 12px 18px;
   overflow: hidden;
   color: #ff4d6a;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   text-align: center;
   text-overflow: ellipsis;
@@ -338,7 +338,7 @@ defineExpose({
 .ban-rules-link {
   color: #dfe7ec;
   font-family: var(--app-font-display);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -375,7 +375,7 @@ defineExpose({
   margin-right: 2px;
   color: var(--app-accent);
   font-family: var(--app-font-display);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -498,7 +498,7 @@ defineExpose({
   justify-content: space-between;
   color: #b9c7d3;
   font-family: var(--app-font-display);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -527,7 +527,7 @@ defineExpose({
   white-space: nowrap;
   font-family: var(--app-font-display);
   font-variant-numeric: tabular-nums;
-  font-size: 13px;
+  font-size: 14px;
   color: #dfe7ec;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -560,7 +560,7 @@ defineExpose({
   margin-bottom: 7px;
   color: var(--app-accent);
   font-family: var(--app-font-mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   line-height: 1;
   text-transform: uppercase;
@@ -597,7 +597,7 @@ defineExpose({
   align-items: baseline;
   gap: 8px;
   font-family: var(--app-font-mono);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -610,7 +610,7 @@ defineExpose({
 .summary-title--ban {
   color: var(--app-danger);
   font-family: var(--app-font-display);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.12em;
 }
@@ -618,9 +618,9 @@ defineExpose({
 .summary-title-count {
   font-family: var(--app-font-mono);
   font-variant-numeric: tabular-nums;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.08em;
-  color: #9aa7b1;
+  color: var(--app-text);
 }
 
 .summary-title-count--limit {
@@ -651,8 +651,8 @@ defineExpose({
 
 .summary-list :deep(.ship-name) {
   color: #dfe7ec;
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .summary-list :deep(.ship-action) {
@@ -693,7 +693,7 @@ defineExpose({
   box-shadow: inset 0 0 0 1px rgba(255, 77, 106, 0.4), inset 2px 0 0 #ff4d6a;
   color: #f0c6cd;
   padding: 5px 6px 5px 9px;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.14s ease, box-shadow 0.14s ease;
   clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
 }
@@ -714,7 +714,7 @@ defineExpose({
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .ban-pill-remove-button {
@@ -805,7 +805,7 @@ defineExpose({
   background: var(--app-action-clear-bg);
   color: var(--app-action-clear-fg);
   font-family: var(--app-font-display);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
   box-shadow: none;
