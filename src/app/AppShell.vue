@@ -309,7 +309,7 @@ async function applyImport() {
   background: #1a222b;
   color: #dfe7ec;
   font-family: var(--app-font-display);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.12em;
   box-shadow: inset 0 0 0 1px rgba(150, 170, 190, 0.24);
@@ -352,7 +352,7 @@ async function applyImport() {
 .source-link {
   color: #dfe7ec;
   font-family: var(--app-font-display);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -377,7 +377,7 @@ async function applyImport() {
   min-height: 34px;
   min-width: 0;
   color: var(--app-text-muted);
-  font-size: 14px;
+  font-size: 15px;
   white-space: nowrap;
 }
 
@@ -424,7 +424,7 @@ async function applyImport() {
 .tournament-year-select:deep(.p-select-label) {
   color: #f4f8fb;
   font-family: var(--app-font-display);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
 }

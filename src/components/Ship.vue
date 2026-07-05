@@ -144,8 +144,8 @@ const extraPoints = computed(() => {
   min-width: 28px;
   text-align: center;
   font-family: var(--app-font-mono);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
@@ -166,7 +166,7 @@ const extraPoints = computed(() => {
   text-align: left;
   color: #dfe7ec;
   font-family: var(--app-font-family);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -264,7 +264,7 @@ const extraPoints = computed(() => {
   }
 
   .ship-name {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .ship-icon {
