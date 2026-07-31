@@ -16,7 +16,7 @@
     "copied": "陣容已複製到剪貼簿。",
     "importApplied": "陣容匯入成功。",
     "prizeShips": "獎品艦船：",
-    "reportBug": "回報問題",
+    "feedback": "問題回報",
     "footerDisclaimer": "所有 EVE 相關素材均為 CCP Games 的財產"
   },
   "validation": {
@@ -36,8 +36,8 @@
     "invalid-year": "匯入文字中的賽事年份無效。",
     "invalid-sections": "匯入文字必須包含 PICKS 和 BANS 兩個區塊。",
     "invalid-entry": "每條匯入艦船記錄都必須以 \"- \" 開頭。",
-    "import-unknown-year": "該草稿引用的賽事年份目前尚未在應用中提供。",
-    "import-unknown-ship": "該草稿引用了目前賽事資料中不存在的艦船 key。",
+    "import-unknown-year": "該陣容引用的賽事年份目前尚未在應用中提供。",
+    "import-unknown-ship": "該陣容中有目前賽事資料裡不存在的艦船。",
     "clipboard-unavailable": "目前瀏覽器環境不支援剪貼簿存取。"
   },
   "types": {

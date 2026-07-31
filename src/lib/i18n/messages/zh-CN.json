@@ -16,7 +16,7 @@
     "copied": "阵容已复制到剪贴板。",
     "importApplied": "阵容导入成功。",
     "prizeShips": "奖品舰船：",
-    "reportBug": "反馈问题",
+    "feedback": "反馈",
     "footerDisclaimer": "所有 EVE 相关素材均为 CCP Games 的财产"
   },
   "validation": {
@@ -36,8 +36,8 @@
     "invalid-year": "导入文本中的赛事年份无效。",
     "invalid-sections": "导入文本必须包含 PICKS 和 BANS 两个区块。",
     "invalid-entry": "每条导入舰船记录都必须以 \"- \" 开头。",
-    "import-unknown-year": "该草稿引用的赛事年份当前还没有在应用中提供。",
-    "import-unknown-ship": "该草稿引用了当前赛事数据中不存在的舰船 key。",
+    "import-unknown-year": "该阵容引用的赛事年份当前还没有在应用中提供。",
+    "import-unknown-ship": "该阵容中有当前赛事数据里不存在的舰船。",
     "clipboard-unavailable": "当前浏览器环境不支持剪贴板访问。"
   },
   "types": {
