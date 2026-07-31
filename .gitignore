@@ -21,6 +21,11 @@ dist-ssr
 !.yarn/versions
 .pnp.*
 
+# Claude Code — keep the shared launch config, ignore per-machine state and skill symlinks
+.claude/*
+!.claude/launch.json
+.agents/skills
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
