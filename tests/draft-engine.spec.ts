@@ -315,6 +315,58 @@ describe('draft engine', () => {
     })
   })
 
+  it('counts flagship points against the point cap', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    for (const shipKey of ['Barghest', 'Rattlesnake'] as const) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Battleship',
+        shipKey,
+      })
+    }
+    for (const shipKey of ['Anhinga', 'Ferox', 'Drake'] as const) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Battlecruiser',
+        shipKey,
+      })
+    }
+
+    const derived = getDraftDerivedState(dataset2026, state)
+    const flagshipPoints = dataset2026.hulls.Flagship.Barghest.points
+
+    expect(derived.totalShips).toBeLessThan(dataset2026.rules.maxShips)
+    expect(derived.totalPoints + flagshipPoints).toBeGreaterThan(dataset2026.rules.maxPoints)
+    expect(validateDraftAction(dataset2026, state, {
+      type: 'pick',
+      hullType: 'Flagship',
+      shipKey: 'Barghest',
+    })).toEqual({
+      valid: false,
+      reasons: ['max-points-reached'],
+    })
+  })
+
+  it('still allows a flagship whose hull type is banned', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    state = applyDraftAction(dataset2026, state, {
+      type: 'ban',
+      hullType: 'Battleship',
+      shipKey: 'Abaddon',
+    })
+
+    expect(validateDraftAction(dataset2026, state, {
+      type: 'pick',
+      hullType: 'Flagship',
+      shipKey: 'Abaddon',
+    })).toEqual({
+      valid: true,
+      reasons: [],
+    })
+  })
+
   it('excludes the Bhaalgorn from 2026 flagship duty while keeping it draftable', () => {
     expect(dataset2026.hulls.Battleship.Bhaalgorn).toBeDefined()
     expect(dataset2026.hulls.Flagship.Bhaalgorn).toBeUndefined()

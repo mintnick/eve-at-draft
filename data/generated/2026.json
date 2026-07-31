@@ -919,11 +919,13 @@
       },
       "Blackbird": {
         "shipId": 632,
-        "points": 13
+        "points": 13,
+        "inflationIncrement": 2
       },
       "Celestis": {
         "shipId": 633,
-        "points": 13
+        "points": 13,
+        "inflationIncrement": 2
       },
       "Stormbringer": {
         "shipId": 54732,
@@ -932,15 +934,18 @@
       },
       "Arbitrator": {
         "shipId": 628,
-        "points": 12
+        "points": 12,
+        "inflationIncrement": 2
       },
       "Bellicose": {
         "shipId": 630,
-        "points": 10
+        "points": 10,
+        "inflationIncrement": 2
       },
       "Maller": {
         "shipId": 624,
-        "points": 10
+        "points": 10,
+        "inflationIncrement": 2
       },
       "Moa": {
         "shipId": 623,
@@ -969,11 +974,13 @@
       },
       "Vexor": {
         "shipId": 626,
-        "points": 9
+        "points": 9,
+        "inflationIncrement": 2
       },
       "Caracal": {
         "shipId": 621,
-        "points": 8
+        "points": 8,
+        "inflationIncrement": 2
       }
     },
     "Destroyer": {
@@ -1009,7 +1016,8 @@
       },
       "Pontifex": {
         "shipId": 37481,
-        "points": 12
+        "points": 12,
+        "inflationIncrement": 1
       },
       "Stork": {
         "shipId": 37482,
@@ -1028,7 +1036,8 @@
       },
       "Jackdaw": {
         "shipId": 34828,
-        "points": 10
+        "points": 10,
+        "inflationIncrement": 1
       },
       "Svipul": {
         "shipId": 34562,
@@ -1159,7 +1168,8 @@
       },
       "Keres": {
         "shipId": 11174,
-        "points": 12
+        "points": 12,
+        "inflationIncrement": 0
       },
       "Shapash": {
         "shipId": 78414,
@@ -1173,7 +1183,8 @@
       },
       "Sentinel": {
         "shipId": 11190,
-        "points": 11
+        "points": 11,
+        "inflationIncrement": 0
       },
       "Sidewinder": {
         "shipId": 85062,
@@ -1217,7 +1228,8 @@
       },
       "Kitsune": {
         "shipId": 11194,
-        "points": 9
+        "points": 9,
+        "inflationIncrement": 0
       },
       "Retribution": {
         "shipId": 11393,
@@ -1241,7 +1253,8 @@
       },
       "Crucifier": {
         "shipId": 2161,
-        "points": 8
+        "points": 8,
+        "inflationIncrement": 0
       },
       "Cruor": {
         "shipId": 17926,
@@ -1275,7 +1288,8 @@
       },
       "Griffin": {
         "shipId": 584,
-        "points": 7
+        "points": 7,
+        "inflationIncrement": 0
       },
       "Hound": {
         "shipId": 12034,
@@ -1289,7 +1303,8 @@
       },
       "Maulus": {
         "shipId": 609,
-        "points": 7
+        "points": 7,
+        "inflationIncrement": 0
       },
       "Nemesis": {
         "shipId": 11377,
@@ -1378,11 +1393,13 @@
       },
       "Crucifier Navy Issue": {
         "shipId": 37453,
-        "points": 5
+        "points": 5,
+        "inflationIncrement": 0
       },
       "Imperial Navy Slicer": {
         "shipId": 17703,
-        "points": 5
+        "points": 5,
+        "inflationIncrement": 0
       },
       "Metamorphosis": {
         "shipId": 77114,
@@ -1391,7 +1408,8 @@
       },
       "Punisher": {
         "shipId": 597,
-        "points": 5
+        "points": 5,
+        "inflationIncrement": 0
       },
       "Skybreaker": {
         "shipId": 54731,

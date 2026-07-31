@@ -9,72 +9,460 @@
       "name": "Barghest"
     },
     {
-      "id": 596,
-      "name": "Impairor"
-    },
-    {
       "id": 17920,
       "name": "Bhaalgorn"
-    },
-    {
-      "id": 601,
-      "name": "Ibis"
     },
     {
       "id": 17736,
       "name": "Nightmare"
     },
     {
-      "id": 606,
-      "name": "Velator"
-    },
-    {
       "id": 22436,
       "name": "Widow"
-    },
-    {
-      "id": 588,
-      "name": "Reaper"
     },
     {
       "id": 88001,
       "name": "Babaroga"
     },
     {
-      "id": 589,
-      "name": "Executioner"
-    },
-    {
       "id": 47271,
       "name": "Leshak"
-    },
-    {
-      "id": 591,
-      "name": "Tormentor"
     },
     {
       "id": 17740,
       "name": "Vindicator"
     },
     {
+      "id": 28659,
+      "name": "Paladin"
+    },
+    {
+      "id": 28665,
+      "name": "Vargur"
+    },
+    {
+      "id": 28661,
+      "name": "Kronos"
+    },
+    {
+      "id": 17738,
+      "name": "Machariel"
+    },
+    {
+      "id": 28710,
+      "name": "Golem"
+    },
+    {
+      "id": 32311,
+      "name": "Typhoon Fleet Issue"
+    },
+    {
+      "id": 32309,
+      "name": "Scorpion Navy Issue"
+    },
+    {
+      "id": 32305,
+      "name": "Armageddon Navy Issue"
+    },
+    {
+      "id": 32307,
+      "name": "Dominix Navy Issue"
+    },
+    {
+      "id": 17732,
+      "name": "Tempest Fleet Issue"
+    },
+    {
+      "id": 17726,
+      "name": "Apocalypse Navy Issue"
+    },
+    {
+      "id": 17728,
+      "name": "Megathron Navy Issue"
+    },
+    {
+      "id": 17636,
+      "name": "Raven Navy Issue"
+    },
+    {
+      "id": 641,
+      "name": "Megathron"
+    },
+    {
+      "id": 24688,
+      "name": "Rokh"
+    },
+    {
+      "id": 638,
+      "name": "Raven"
+    },
+    {
+      "id": 47466,
+      "name": "Praxis"
+    },
+    {
+      "id": 24694,
+      "name": "Maelstrom"
+    },
+    {
+      "id": 54733,
+      "name": "Thunderchild"
+    },
+    {
+      "id": 77726,
+      "name": "Cybele"
+    },
+    {
+      "id": 49713,
+      "name": "Zarmazd"
+    },
+    {
+      "id": 74316,
+      "name": "Bestla"
+    },
+    {
+      "id": 78369,
+      "name": "Khizriel"
+    },
+    {
+      "id": 29990,
+      "name": "Loki"
+    },
+    {
+      "id": 78366,
+      "name": "Alligator"
+    },
+    {
+      "id": 72811,
+      "name": "Cyclone Fleet Issue"
+    },
+    {
+      "id": 49711,
+      "name": "Drekavac"
+    },
+    {
+      "id": 33153,
+      "name": "Drake Navy Issue"
+    },
+    {
+      "id": 72812,
+      "name": "Ferox Navy Issue"
+    },
+    {
+      "id": 85229,
+      "name": "Cobra"
+    },
+    {
+      "id": 33155,
+      "name": "Harbinger Navy Issue"
+    },
+    {
+      "id": 72872,
+      "name": "Prophecy Navy Issue"
+    },
+    {
+      "id": 20125,
+      "name": "Curse"
+    },
+    {
+      "id": 11957,
+      "name": "Falcon"
+    },
+    {
+      "id": 11959,
+      "name": "Rook"
+    },
+    {
+      "id": 11969,
+      "name": "Arazu"
+    },
+    {
+      "id": 11971,
+      "name": "Lachesis"
+    },
+    {
+      "id": 52252,
+      "name": "Ikitursa"
+    },
+    {
+      "id": 17715,
+      "name": "Gila"
+    },
+    {
+      "id": 11999,
+      "name": "Vagabond"
+    },
+    {
+      "id": 12019,
+      "name": "Sacrilege"
+    },
+    {
+      "id": 49712,
+      "name": "Rodiva"
+    },
+    {
+      "id": 12003,
+      "name": "Zealot"
+    },
+    {
+      "id": 12005,
+      "name": "Ishtar"
+    },
+    {
+      "id": 12015,
+      "name": "Muninn"
+    },
+    {
+      "id": 12023,
+      "name": "Deimos"
+    },
+    {
+      "id": 11993,
+      "name": "Cerberus"
+    },
+    {
+      "id": 4302,
+      "name": "Oracle"
+    },
+    {
+      "id": 4308,
+      "name": "Talos"
+    },
+    {
+      "id": 4310,
+      "name": "Tornado"
+    },
+    {
+      "id": 4306,
+      "name": "Naga"
+    },
+    {
+      "id": 47270,
+      "name": "Vedmak"
+    },
+    {
+      "id": 33818,
+      "name": "Orthrus"
+    },
+    {
+      "id": 29337,
+      "name": "Augoror Navy Issue"
+    },
+    {
+      "id": 33470,
+      "name": "Stratios"
+    },
+    {
+      "id": 12011,
+      "name": "Eagle"
+    },
+    {
+      "id": 29344,
+      "name": "Exequror Navy Issue"
+    },
+    {
+      "id": 17843,
+      "name": "Vexor Navy Issue"
+    },
+    {
+      "id": 29336,
+      "name": "Scythe Fleet Issue"
+    },
+    {
+      "id": 17713,
+      "name": "Stabber Fleet Issue"
+    },
+    {
+      "id": 29340,
+      "name": "Osprey Navy Issue"
+    },
+    {
+      "id": 17634,
+      "name": "Caracal Navy Issue"
+    },
+    {
+      "id": 17720,
+      "name": "Cynabal"
+    },
+    {
+      "id": 17709,
+      "name": "Omen Navy Issue"
+    },
+    {
+      "id": 52254,
+      "name": "Draugur"
+    },
+    {
+      "id": 54732,
+      "name": "Stormbringer"
+    },
+    {
+      "id": 85087,
+      "name": "Tholos"
+    },
+    {
+      "id": 632,
+      "name": "Blackbird"
+    },
+    {
+      "id": 633,
+      "name": "Celestis"
+    },
+    {
+      "id": 49710,
+      "name": "Kikimora"
+    },
+    {
+      "id": 11174,
+      "name": "Keres"
+    },
+    {
+      "id": 628,
+      "name": "Arbitrator"
+    },
+    {
+      "id": 37481,
+      "name": "Pontifex"
+    },
+    {
+      "id": 74141,
+      "name": "Geri"
+    },
+    {
+      "id": 78414,
+      "name": "Shapash"
+    },
+    {
+      "id": 85062,
+      "name": "Sidewinder"
+    },
+    {
+      "id": 11190,
+      "name": "Sentinel"
+    },
+    {
+      "id": 52250,
+      "name": "Nergal"
+    },
+    {
+      "id": 630,
+      "name": "Bellicose"
+    },
+    {
+      "id": 624,
+      "name": "Maller"
+    },
+    {
+      "id": 17930,
+      "name": "Worm"
+    },
+    {
+      "id": 34828,
+      "name": "Jackdaw"
+    },
+    {
+      "id": 11194,
+      "name": "Kitsune"
+    },
+    {
+      "id": 78333,
+      "name": "Mekubal"
+    },
+    {
+      "id": 626,
+      "name": "Vexor"
+    },
+    {
+      "id": 17926,
+      "name": "Cruor"
+    },
+    {
+      "id": 47269,
+      "name": "Damavik"
+    },
+    {
+      "id": 621,
+      "name": "Caracal"
+    },
+    {
+      "id": 2161,
+      "name": "Crucifier"
+    },
+    {
+      "id": 78367,
+      "name": "Mamba"
+    },
+    {
+      "id": 584,
+      "name": "Griffin"
+    },
+    {
+      "id": 609,
+      "name": "Maulus"
+    },
+    {
+      "id": 81008,
+      "name": "Squall"
+    },
+    {
+      "id": 73789,
+      "name": "Coercer Navy Issue"
+    },
+    {
       "id": 597,
       "name": "Punisher"
+    },
+    {
+      "id": 77114,
+      "name": "Metamorphosis"
+    },
+    {
+      "id": 54731,
+      "name": "Skybreaker"
+    },
+    {
+      "id": 17703,
+      "name": "Imperial Navy Slicer"
+    },
+    {
+      "id": 37453,
+      "name": "Crucifier Navy Issue"
+    },
+    {
+      "id": 72907,
+      "name": "Magnate Navy Issue"
+    },
+    {
+      "id": 596,
+      "name": "Impairor"
+    },
+    {
+      "id": 601,
+      "name": "Ibis"
+    },
+    {
+      "id": 606,
+      "name": "Velator"
+    },
+    {
+      "id": 588,
+      "name": "Reaper"
+    },
+    {
+      "id": 589,
+      "name": "Executioner"
+    },
+    {
+      "id": 591,
+      "name": "Tormentor"
     },
     {
       "id": 29248,
       "name": "Magnate"
     },
     {
-      "id": 28659,
-      "name": "Paladin"
-    },
-    {
       "id": 583,
       "name": "Condor"
-    },
-    {
-      "id": 28665,
-      "name": "Vargur"
     },
     {
       "id": 602,
@@ -85,24 +473,12 @@
       "name": "Merlin"
     },
     {
-      "id": 28661,
-      "name": "Kronos"
-    },
-    {
       "id": 605,
       "name": "Heron"
     },
     {
-      "id": 17738,
-      "name": "Machariel"
-    },
-    {
       "id": 608,
       "name": "Atron"
-    },
-    {
-      "id": 28710,
-      "name": "Golem"
     },
     {
       "id": 593,
@@ -113,32 +489,16 @@
       "name": "Incursus"
     },
     {
-      "id": 32311,
-      "name": "Typhoon Fleet Issue"
-    },
-    {
       "id": 607,
       "name": "Imicus"
-    },
-    {
-      "id": 32309,
-      "name": "Scorpion Navy Issue"
     },
     {
       "id": 585,
       "name": "Slasher"
     },
     {
-      "id": 32305,
-      "name": "Armageddon Navy Issue"
-    },
-    {
       "id": 598,
       "name": "Breacher"
-    },
-    {
-      "id": 32307,
-      "name": "Dominix Navy Issue"
     },
     {
       "id": 587,
@@ -149,84 +509,24 @@
       "name": "Probe"
     },
     {
-      "id": 17732,
-      "name": "Tempest Fleet Issue"
-    },
-    {
       "id": 590,
       "name": "Inquisitor"
-    },
-    {
-      "id": 17726,
-      "name": "Apocalypse Navy Issue"
     },
     {
       "id": 582,
       "name": "Bantam"
     },
     {
-      "id": 17728,
-      "name": "Megathron Navy Issue"
-    },
-    {
       "id": 592,
       "name": "Navitas"
-    },
-    {
-      "id": 17636,
-      "name": "Raven Navy Issue"
     },
     {
       "id": 599,
       "name": "Burst"
     },
     {
-      "id": 2161,
-      "name": "Crucifier"
-    },
-    {
-      "id": 641,
-      "name": "Megathron"
-    },
-    {
-      "id": 584,
-      "name": "Griffin"
-    },
-    {
-      "id": 24688,
-      "name": "Rokh"
-    },
-    {
-      "id": 609,
-      "name": "Maulus"
-    },
-    {
-      "id": 638,
-      "name": "Raven"
-    },
-    {
       "id": 3766,
       "name": "Vigil"
-    },
-    {
-      "id": 47466,
-      "name": "Praxis"
-    },
-    {
-      "id": 17703,
-      "name": "Imperial Navy Slicer"
-    },
-    {
-      "id": 24694,
-      "name": "Maelstrom"
-    },
-    {
-      "id": 37453,
-      "name": "Crucifier Navy Issue"
-    },
-    {
-      "id": 54733,
-      "name": "Thunderchild"
     },
     {
       "id": 17619,
@@ -249,10 +549,6 @@
       "name": "Republic Fleet Firetail"
     },
     {
-      "id": 49713,
-      "name": "Zarmazd"
-    },
-    {
       "id": 37454,
       "name": "Vigil Fleet Issue"
     },
@@ -265,32 +561,16 @@
       "name": "Retribution"
     },
     {
-      "id": 78369,
-      "name": "Khizriel"
-    },
-    {
       "id": 11379,
       "name": "Hawk"
-    },
-    {
-      "id": 29990,
-      "name": "Loki"
     },
     {
       "id": 11381,
       "name": "Harpy"
     },
     {
-      "id": 78366,
-      "name": "Alligator"
-    },
-    {
       "id": 12042,
       "name": "Ishkur"
-    },
-    {
-      "id": 72811,
-      "name": "Cyclone Fleet Issue"
     },
     {
       "id": 12044,
@@ -301,24 +581,12 @@
       "name": "Wolf"
     },
     {
-      "id": 49711,
-      "name": "Drekavac"
-    },
-    {
       "id": 11400,
       "name": "Jaguar"
     },
     {
-      "id": 33153,
-      "name": "Drake Navy Issue"
-    },
-    {
       "id": 11188,
       "name": "Anathema"
-    },
-    {
-      "id": 72812,
-      "name": "Ferox Navy Issue"
     },
     {
       "id": 11192,
@@ -333,68 +601,24 @@
       "name": "Cheetah"
     },
     {
-      "id": 33155,
-      "name": "Harbinger Navy Issue"
-    },
-    {
       "id": 12038,
       "name": "Purifier"
-    },
-    {
-      "id": 72872,
-      "name": "Prophecy Navy Issue"
     },
     {
       "id": 12032,
       "name": "Manticore"
     },
     {
-      "id": 20125,
-      "name": "Curse"
-    },
-    {
       "id": 11377,
       "name": "Nemesis"
-    },
-    {
-      "id": 11957,
-      "name": "Falcon"
     },
     {
       "id": 12034,
       "name": "Hound"
     },
     {
-      "id": 11959,
-      "name": "Rook"
-    },
-    {
-      "id": 11190,
-      "name": "Sentinel"
-    },
-    {
-      "id": 11969,
-      "name": "Arazu"
-    },
-    {
-      "id": 11194,
-      "name": "Kitsune"
-    },
-    {
-      "id": 11971,
-      "name": "Lachesis"
-    },
-    {
-      "id": 11174,
-      "name": "Keres"
-    },
-    {
       "id": 11387,
       "name": "Hyena"
-    },
-    {
-      "id": 52252,
-      "name": "Ikitursa"
     },
     {
       "id": 11184,
@@ -403,10 +627,6 @@
     {
       "id": 11186,
       "name": "Malediction"
-    },
-    {
-      "id": 17715,
-      "name": "Gila"
     },
     {
       "id": 11176,
@@ -421,88 +641,44 @@
       "name": "Taranis"
     },
     {
-      "id": 11999,
-      "name": "Vagabond"
-    },
-    {
       "id": 11202,
       "name": "Ares"
-    },
-    {
-      "id": 12019,
-      "name": "Sacrilege"
     },
     {
       "id": 11196,
       "name": "Claw"
     },
     {
-      "id": 49712,
-      "name": "Rodiva"
-    },
-    {
       "id": 11198,
       "name": "Stiletto"
-    },
-    {
-      "id": 12003,
-      "name": "Zealot"
     },
     {
       "id": 37457,
       "name": "Deacon"
     },
     {
-      "id": 12005,
-      "name": "Ishtar"
-    },
-    {
       "id": 37458,
       "name": "Kirin"
-    },
-    {
-      "id": 12015,
-      "name": "Muninn"
     },
     {
       "id": 37459,
       "name": "Thalia"
     },
     {
-      "id": 12023,
-      "name": "Deimos"
-    },
-    {
       "id": 37460,
       "name": "Scalpel"
-    },
-    {
-      "id": 11993,
-      "name": "Cerberus"
     },
     {
       "id": 16236,
       "name": "Coercer"
     },
     {
-      "id": 4302,
-      "name": "Oracle"
-    },
-    {
       "id": 32874,
       "name": "Dragoon"
     },
     {
-      "id": 4308,
-      "name": "Talos"
-    },
-    {
       "id": 16238,
       "name": "Cormorant"
-    },
-    {
-      "id": 4310,
-      "name": "Tornado"
     },
     {
       "id": 32876,
@@ -513,10 +689,6 @@
       "name": "Catalyst"
     },
     {
-      "id": 4306,
-      "name": "Naga"
-    },
-    {
       "id": 32872,
       "name": "Algos"
     },
@@ -525,52 +697,24 @@
       "name": "Thrasher"
     },
     {
-      "id": 47270,
-      "name": "Vedmak"
-    },
-    {
       "id": 32878,
       "name": "Talwar"
-    },
-    {
-      "id": 33818,
-      "name": "Orthrus"
-    },
-    {
-      "id": 37481,
-      "name": "Pontifex"
     },
     {
       "id": 37482,
       "name": "Stork"
     },
     {
-      "id": 29337,
-      "name": "Augoror Navy Issue"
-    },
-    {
       "id": 37483,
       "name": "Magus"
-    },
-    {
-      "id": 33470,
-      "name": "Stratios"
     },
     {
       "id": 37480,
       "name": "Bifrost"
     },
     {
-      "id": 12011,
-      "name": "Eagle"
-    },
-    {
       "id": 22452,
       "name": "Heretic"
-    },
-    {
-      "id": 29344,
-      "name": "Exequror Navy Issue"
     },
     {
       "id": 22464,
@@ -581,88 +725,28 @@
       "name": "Eris"
     },
     {
-      "id": 17843,
-      "name": "Vexor Navy Issue"
-    },
-    {
       "id": 22456,
       "name": "Sabre"
-    },
-    {
-      "id": 29336,
-      "name": "Scythe Fleet Issue"
     },
     {
       "id": 34317,
       "name": "Confessor"
     },
     {
-      "id": 17713,
-      "name": "Stabber Fleet Issue"
-    },
-    {
-      "id": 34828,
-      "name": "Jackdaw"
-    },
-    {
-      "id": 29340,
-      "name": "Osprey Navy Issue"
-    },
-    {
       "id": 35683,
       "name": "Hecate"
-    },
-    {
-      "id": 17634,
-      "name": "Caracal Navy Issue"
     },
     {
       "id": 34562,
       "name": "Svipul"
     },
     {
-      "id": 17720,
-      "name": "Cynabal"
-    },
-    {
-      "id": 628,
-      "name": "Arbitrator"
-    },
-    {
-      "id": 17709,
-      "name": "Omen Navy Issue"
-    },
-    {
-      "id": 632,
-      "name": "Blackbird"
-    },
-    {
-      "id": 633,
-      "name": "Celestis"
-    },
-    {
-      "id": 630,
-      "name": "Bellicose"
-    },
-    {
-      "id": 52254,
-      "name": "Draugur"
-    },
-    {
       "id": 625,
       "name": "Augoror"
     },
     {
-      "id": 54732,
-      "name": "Stormbringer"
-    },
-    {
       "id": 620,
       "name": "Osprey"
-    },
-    {
-      "id": 85087,
-      "name": "Tholos"
     },
     {
       "id": 634,
@@ -673,32 +757,12 @@
       "name": "Scythe"
     },
     {
-      "id": 624,
-      "name": "Maller"
-    },
-    {
-      "id": 49710,
-      "name": "Kikimora"
-    },
-    {
       "id": 2006,
       "name": "Omen"
     },
     {
       "id": 623,
       "name": "Moa"
-    },
-    {
-      "id": 621,
-      "name": "Caracal"
-    },
-    {
-      "id": 626,
-      "name": "Vexor"
-    },
-    {
-      "id": 627,
-      "name": "Thorax"
     },
     {
       "id": 622,
@@ -709,18 +773,6 @@
       "name": "Rupture"
     },
     {
-      "id": 52250,
-      "name": "Nergal"
-    },
-    {
-      "id": 17930,
-      "name": "Worm"
-    },
-    {
-      "id": 78333,
-      "name": "Mekubal"
-    },
-    {
       "id": 12017,
       "name": "Devoter"
     },
@@ -729,16 +781,8 @@
       "name": "Onyx"
     },
     {
-      "id": 17926,
-      "name": "Cruor"
-    },
-    {
       "id": 12021,
       "name": "Phobos"
-    },
-    {
-      "id": 47269,
-      "name": "Damavik"
     },
     {
       "id": 12013,
@@ -761,20 +805,12 @@
       "name": "Scimitar"
     },
     {
-      "id": 78367,
-      "name": "Mamba"
-    },
-    {
       "id": 11965,
       "name": "Pilgrim"
     },
     {
       "id": 11961,
       "name": "Huginn"
-    },
-    {
-      "id": 81008,
-      "name": "Squall"
     },
     {
       "id": 11963,
@@ -793,22 +829,6 @@
       "name": "Proteus"
     },
     {
-      "id": 73789,
-      "name": "Coercer Navy Issue"
-    },
-    {
-      "id": 77114,
-      "name": "Metamorphosis"
-    },
-    {
-      "id": 54731,
-      "name": "Skybreaker"
-    },
-    {
-      "id": 16233,
-      "name": "Prophecy"
-    },
-    {
       "id": 24696,
       "name": "Harbinger"
     },
@@ -817,20 +837,12 @@
       "name": "Drake"
     },
     {
-      "id": 16227,
-      "name": "Ferox"
-    },
-    {
       "id": 16229,
       "name": "Brutix"
     },
     {
       "id": 24700,
       "name": "Myrmidon"
-    },
-    {
-      "id": 72907,
-      "name": "Magnate Navy Issue"
     },
     {
       "id": 24702,
@@ -1009,12 +1021,24 @@
       "name": "Gnosis"
     },
     {
-      "id": 42685,
-      "name": "Sunesis"
-    },
-    {
       "id": 617,
       "name": "Echo"
+    },
+    {
+      "id": 33079,
+      "name": "Hematos"
+    },
+    {
+      "id": 615,
+      "name": "Immolator"
+    },
+    {
+      "id": 33081,
+      "name": "Taipan"
+    },
+    {
+      "id": 33083,
+      "name": "Violator"
     },
     {
       "id": 72904,
@@ -1049,6 +1073,14 @@
       "name": "Deluge"
     },
     {
+      "id": 89808,
+      "name": "Skua"
+    },
+    {
+      "id": 89807,
+      "name": "Anhinga"
+    },
+    {
       "id": 91857,
       "name": "Corax Navy Issue"
     },
@@ -1065,52 +1097,20 @@
       "name": "Dragoon Navy Issue"
     },
     {
-      "id": 77726,
-      "name": "Cybele"
+      "id": 627,
+      "name": "Thorax"
     },
     {
-      "id": 74316,
-      "name": "Bestla"
+      "id": 16233,
+      "name": "Prophecy"
     },
     {
-      "id": 85229,
-      "name": "Cobra"
+      "id": 16227,
+      "name": "Ferox"
     },
     {
-      "id": 74141,
-      "name": "Geri"
-    },
-    {
-      "id": 78414,
-      "name": "Shapash"
-    },
-    {
-      "id": 85062,
-      "name": "Sidewinder"
-    },
-    {
-      "id": 33079,
-      "name": "Hematos"
-    },
-    {
-      "id": 615,
-      "name": "Immolator"
-    },
-    {
-      "id": 33081,
-      "name": "Taipan"
-    },
-    {
-      "id": 33083,
-      "name": "Violator"
-    },
-    {
-      "id": 89808,
-      "name": "Skua"
-    },
-    {
-      "id": 89807,
-      "name": "Anhinga"
+      "id": 42685,
+      "name": "Sunesis"
     }
   ]
 }

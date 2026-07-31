@@ -295,18 +295,21 @@ function parseStaticValuesTable(
   }
 
   const entries = new Map<string, StaticValueEntry>()
-  // The last column set is the authoritative full ship list; earlier sets are
+  // The last column set is the authoritative full ship list; the earlier ones are
   // per-class summary blocks whose rows are only trusted when they name a known ship.
+  // Column sets are the outer loop so the authoritative block always wins: a ship can
+  // appear in a summary block on a *later* row than its authoritative row, and the
+  // summary columns carry no inflation value to copy over.
   const columnSets = [
     { name: 0, points: 1, hull: 2, inflation: -1, authoritative: false },
     { name: 4, points: 6, hull: 7, inflation: -1, authoritative: false },
     { name: 5, points: 7, hull: 8, inflation: 9, authoritative: true },
   ] as const
 
-  for (const row of payload.table.rows) {
-    const values = row.c.map((cell) => cell?.v ?? null)
+  for (const columnSet of columnSets) {
+    for (const row of payload.table.rows) {
+      const values = row.c.map((cell) => cell?.v ?? null)
 
-    for (const columnSet of columnSets) {
       const rawName = values[columnSet.name]
       const rawPoints = values[columnSet.points]
       const rawHull = values[columnSet.hull]

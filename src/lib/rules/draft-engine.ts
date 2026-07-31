@@ -138,7 +138,16 @@ export function validateDraftAction(
     }
 
     if (action.hullType === 'Flagship') {
-      return state.picks.Flagship.length === 0 ? valid() : invalid('flagship-already-picked')
+      if (state.picks.Flagship.length > 0) {
+        return invalid('flagship-already-picked')
+      }
+
+      // A flagship may be fielded even when its hull type is banned, and it can be exempt
+      // from its hull size cap, but it always costs its normal points.
+      return getProjectedPickTotalPoints(currentDerivedState.totalPoints, dataset, state, ship.shipKey, ship.rule)
+        > dataset.rules.maxPoints
+        ? invalid('max-points-reached')
+        : valid()
     }
 
     if (state.bans[action.hullType].some((selection) => selection.shipKey === action.shipKey)) {
