@@ -20,6 +20,7 @@
 | 2023 | Alliance Tournament XIX | Official rules post + Google Sheet static-values |
 | 2024 | Alliance Tournament XX | Official rules post + Google Sheet static-values |
 | 2025 | Alliance Tournament XXI | Legacy snapshot + official rules references |
+| 2026 | Alliance Tournament XXII | Official rules post + Google Sheet static-values |
 
 ## Common commands
 
@@ -38,7 +39,7 @@ yarn test:run
 yarn build
 ```
 
-Default 2025 data refresh:
+Default (current season) data refresh:
 
 ```bash
 yarn data:refresh
@@ -61,6 +62,22 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 5. Run `yarn typecheck`, `yarn test:run`, and `yarn build`.
 6. Update `docs/tournament-source-notes.md` with the new year's source links.
 
+## Per-year rule knobs
+
+Most years only need `maxPoints`, `maxShips`, and `hullCaps`. The rest of `rules` covers formats that deviate:
+
+- `pointInflation.duplicateShipIncrement` — flat inflation for every duplicate hull (2022–2024).
+- Per-ship `inflationIncrement` — read from the official sheet's `Inflation Value` column when
+  inflation varies by hull size (2026). It takes precedence over `duplicateShipIncrement`.
+  Either way, every copy of a duplicated hull pays the inflated price, matching the official calculator.
+- `flagshipOverrides` — hull size a non-battleship flagship counts as.
+- `flagshipExclusions` — battleships banned from flagship duty (2026: Bhaalgorn).
+- `flagshipExemptFromHullCaps` — the flagship does not consume a slot under its hull size cap
+  (2026: battleships are capped at 2, and a flagship pushes the field total to 3).
+
+Logistics hull sizes come from the sheet: `Logistics` cruisers weigh a full slot and
+`Logistics Frigate` entries weigh half, against a `Logistics` cap of 1.
+
 ## Source policy
 
 - Prefer the official EVE Online rules post and linked official spreadsheet for a tournament year.
@@ -71,3 +88,5 @@ tsx ./tools/data-pipeline/cli.ts validate 2024
 ## Deferred work
 
 - **Data-pipeline unit tests** — coverage is lighter than app/rules layer; worth expanding when the pipeline is extended.
+- **ATXXII prize ships** — CCP had not announced the Amarr reward hulls when the rules post landed, so
+  `prize.rewardShips` for 2026 is empty. Fill it in once they are published.

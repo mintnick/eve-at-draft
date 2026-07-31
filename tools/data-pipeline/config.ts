@@ -33,6 +33,10 @@ export interface TournamentPipelineConfig {
     rulesLink: string
     banLink: string
     flagshipOverrides: Partial<Record<string, HullType>>
+    /** Ships that are otherwise flagship-eligible but banned from flagship duty. */
+    flagshipExclusions?: string[]
+    /** True when a fielded flagship does not consume a slot under its hull size cap. */
+    flagshipExemptFromHullCaps?: boolean
   }
 }
 
@@ -254,6 +258,47 @@ export const TOURNAMENTS: TournamentPipelineConfig[] = [
         Laelaps: 'Cruiser',
         Bestla: 'Cruiser',
       },
+    },
+  },
+  {
+    sourceProvider: 'official-sheet-static-values',
+    year: 2026,
+    label: 'Alliance Tournament XXII',
+    prize: {
+      sponsor: 'Amarr Empire',
+      rewardShips: [],
+    },
+    archiveUrl: 'https://open.eve-nt.uk/portal/tournaments/ATXXII',
+    rawDir: 'data/raw/2026',
+    sourcesDir: 'data/raw/2026/sources',
+    generatedFile: '2026.json',
+    sourceFile: 'source.json',
+    overridesFile: 'overrides.json',
+    rulesPageUrl: 'https://www.eveonline.com/news/view/alliance-tournament-xxii-rules-and-regulations',
+    sheetUrl: 'https://docs.google.com/spreadsheets/d/1AVYlWlvuMKnA3yuqqDCcAkia8pvhpb9OBcM29WFw5rM/edit?usp=sharing',
+    staticValuesGid: 284772315,
+    rules: {
+      maxPoints: 200,
+      maxShips: 10,
+      hullCaps: {
+        Flagship: 1,
+        Logistics: 1,
+        Battleship: 2,
+        Battlecruiser: 3,
+        Cruiser: 3,
+        Destroyer: 3,
+        Frigate: 3,
+        Industrial: 3,
+        Corvette: 3,
+      },
+      // ATXXII inflation varies by hull size, so the increment is carried per ship
+      // from the official sheet's "Inflation Value" column instead of a flat rate.
+      pointInflation: undefined,
+      rulesLink: 'https://www.eveonline.com/news/view/alliance-tournament-xxii-rules-and-regulations',
+      banLink: 'https://www.eveonline.com/news/view/alliance-tournament-xxii-rules-and-regulations#h2-15',
+      flagshipOverrides: {},
+      flagshipExclusions: ['Bhaalgorn'],
+      flagshipExemptFromHullCaps: true,
     },
   },
 ]

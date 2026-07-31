@@ -42,6 +42,7 @@ export function createShipSelection(
     originalPoints: rule.points,
     points: rule.points,
     logisticsWeight: rule.logisticsWeight,
+    inflationIncrement: rule.inflationIncrement,
   }
 }
 
@@ -79,7 +80,7 @@ export function getFlagshipClassification(
   }, {} as Record<HullType, number>)
 
   const flagship = state.picks.Flagship[0]
-  if (!flagship) {
+  if (!flagship || dataset.rules.flagship.exemptFromHullCaps) {
     return classification
   }
 
@@ -272,12 +273,14 @@ function cloneDraftState(state: DraftState, hullTypes: HullType[]): DraftState {
   return nextState
 }
 
-function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
-  const duplicateIncrement = dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
-  if (duplicateIncrement === 0) {
-    return
-  }
+function getDuplicateIncrement(
+  dataset: TournamentDataset,
+  ship: Pick<DraftShipSelection, 'inflationIncrement'> | TournamentShipRule,
+) {
+  return ship.inflationIncrement ?? dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
+}
 
+function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
   const shipCounts = new Map<string, number>()
 
   for (const selection of Object.values(state.picks).flat()) {
@@ -285,6 +288,7 @@ function recalculatePickPoints(dataset: TournamentDataset, state: DraftState) {
   }
 
   for (const selection of Object.values(state.picks).flat()) {
+    const duplicateIncrement = getDuplicateIncrement(dataset, selection)
     const duplicates = shipCounts.get(selection.shipKey) ?? 1
     selection.points = (selection.originalPoints ?? selection.points) + duplicateIncrement * (duplicates - 1)
   }
@@ -297,7 +301,7 @@ function getProjectedPickTotalPoints(
   shipKey: string,
   rule: TournamentShipRule,
 ) {
-  const duplicateIncrement = dataset.rules.pointInflation?.duplicateShipIncrement ?? 0
+  const duplicateIncrement = getDuplicateIncrement(dataset, rule)
   if (duplicateIncrement === 0) {
     return currentTotalPoints + rule.points
   }

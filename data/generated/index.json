@@ -23,5 +23,10 @@
     "year": 2025,
     "label": "Alliance Tournament XXI",
     "generatedFile": "2025.json"
+  },
+  {
+    "year": 2026,
+    "label": "Alliance Tournament XXII",
+    "generatedFile": "2026.json"
   }
 ]

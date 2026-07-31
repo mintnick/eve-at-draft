@@ -2,14 +2,17 @@ import { describe, expect, it } from 'vitest'
 
 import tournament2024 from '../data/generated/2024.json'
 import tournament from '../data/generated/2025.json'
+import tournament2026 from '../data/generated/2026.json'
 import { applyDraftAction, getDraftDerivedState, validateDraftAction } from '@/lib/rules/draft-engine'
 import { createEmptyDraftState } from '@/lib/rules/draft-state'
 import type { TournamentDataset } from '@/lib/types'
 
 const dataset2024 = tournament2024 as TournamentDataset
 const dataset = tournament as TournamentDataset
+const dataset2026 = tournament2026 as TournamentDataset
 const hullTypes2024 = Object.keys(dataset2024.hulls) as Array<keyof TournamentDataset['hulls']>
 const hullTypes = Object.keys(dataset.hulls) as Array<keyof TournamentDataset['hulls']>
+const hullTypes2026 = Object.keys(dataset2026.hulls) as Array<keyof TournamentDataset['hulls']>
 
 describe('draft engine', () => {
   it('derives flagship hull counts from dataset overrides', () => {
@@ -233,6 +236,109 @@ describe('draft engine', () => {
     expect(validation).toEqual({
       valid: false,
       reasons: ['max-points-reached'],
+    })
+  })
+
+  it('applies the per-ship 2026 inflation increment to every duplicate copy', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    const ravenPoints = dataset2026.hulls.Battleship.Raven.points
+    const ravenIncrement = dataset2026.hulls.Battleship.Raven.inflationIncrement
+
+    for (let index = 0; index < 2; index += 1) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Battleship',
+        shipKey: 'Raven',
+      })
+    }
+
+    expect(ravenIncrement).toBe(4)
+    expect(state.picks.Battleship.every((pick) => pick.points === ravenPoints + 4)).toBe(true)
+    expect(getDraftDerivedState(dataset2026, state).totalPoints).toBe((ravenPoints + 4) * 2)
+  })
+
+  it('keeps the 2026 corvette inflation at zero while destroyers inflate by one', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    for (let index = 0; index < 2; index += 1) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Corvette',
+        shipKey: 'Velator',
+      })
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Destroyer',
+        shipKey: 'Sabre',
+      })
+    }
+
+    const velatorPoints = dataset2026.hulls.Corvette.Velator.points
+    const sabrePoints = dataset2026.hulls.Destroyer.Sabre.points
+
+    expect(state.picks.Corvette.every((pick) => pick.points === velatorPoints)).toBe(true)
+    expect(state.picks.Destroyer.every((pick) => pick.points === sabrePoints + 1)).toBe(true)
+  })
+
+  it('lets a 2026 flagship sit alongside two battleships without consuming the hull cap', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    state = applyDraftAction(dataset2026, state, {
+      type: 'pick',
+      hullType: 'Flagship',
+      shipKey: 'Abaddon',
+    })
+
+    for (const shipKey of ['Raven', 'Dominix'] as const) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Battleship',
+        shipKey,
+      })
+    }
+
+    const derived = getDraftDerivedState(dataset2026, state)
+
+    expect(dataset2026.rules.hullCaps.Battleship).toBe(2)
+    expect(derived.hullCounts.Battleship).toBe(2)
+    expect(derived.hullCounts.Flagship).toBe(1)
+    expect(derived.totalShips).toBe(3)
+
+    expect(validateDraftAction(dataset2026, state, {
+      type: 'pick',
+      hullType: 'Battleship',
+      shipKey: 'Apocalypse',
+    })).toEqual({
+      valid: false,
+      reasons: ['hull-cap-reached'],
+    })
+  })
+
+  it('excludes the Bhaalgorn from 2026 flagship duty while keeping it draftable', () => {
+    expect(dataset2026.hulls.Battleship.Bhaalgorn).toBeDefined()
+    expect(dataset2026.hulls.Flagship.Bhaalgorn).toBeUndefined()
+  })
+
+  it('treats 2026 logistics frigates as half a logistics slot', () => {
+    let state = createEmptyDraftState(hullTypes2026)
+
+    for (const shipKey of ['Deacon', 'Kirin'] as const) {
+      state = applyDraftAction(dataset2026, state, {
+        type: 'pick',
+        hullType: 'Logistics',
+        shipKey,
+      })
+    }
+
+    expect(getDraftDerivedState(dataset2026, state).logisticsUsage).toBe(1)
+    expect(validateDraftAction(dataset2026, state, {
+      type: 'pick',
+      hullType: 'Logistics',
+      shipKey: 'Scalpel',
+    })).toEqual({
+      valid: false,
+      reasons: ['logistics-cap-reached'],
     })
   })
 })

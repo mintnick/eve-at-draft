@@ -9,11 +9,30 @@ import DraftScreen from '@/features/draft/components/DraftScreen.vue'
 import { ConsoleTheme } from '@/app/theme'
 import { createAppI18n } from '@/lib/i18n'
 import shipCatalogData from '../data/generated/ship-catalog.json'
+import tournamentIndexData from '../data/generated/index.json'
 import tournamentData from '../data/generated/2025.json'
-import type { ShipCatalog, TournamentDataset } from '@/lib/types'
+import type { ShipCatalog, TournamentDataset, TournamentIndexEntry } from '@/lib/types'
 
 const dataset = tournamentData as TournamentDataset
 const shipCatalog = shipCatalogData as ShipCatalog
+
+// AppShell opens on the newest bundled tournament, so these fixtures follow the
+// index instead of pinning a year that goes stale every season.
+const datasetModules = import.meta.glob('../data/generated/*.json', {
+  eager: true,
+  import: 'default',
+}) as Record<string, TournamentDataset>
+
+const latestTournament = [...(tournamentIndexData as TournamentIndexEntry[])]
+  .sort((left, right) => right.year - left.year)[0]!
+const latestDataset = datasetModules[`../data/generated/${latestTournament.generatedFile}`]!
+const [latestFlagshipKey, latestFlagshipRule] = Object.entries(latestDataset.hulls.Flagship)[0]!
+const latestFlagshipName = shipCatalog[latestFlagshipKey]!.names.en
+const latestFlagshipPayload = {
+  points: latestFlagshipRule.points,
+  shipId: latestFlagshipRule.shipId,
+  originalPoints: latestFlagshipRule.points,
+}
 
 function mountWithApp(component: unknown, options: Record<string, unknown> = {}) {
   return mount(component as never, {
@@ -144,9 +163,9 @@ describe('draft UI', () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
+    const flagship = shipRows.find((row) => row.props('shipName') === latestFlagshipName && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
+    await flagship!.vm.$emit('addShip', 'Flagship', latestFlagshipKey, latestFlagshipPayload)
     await nextTick()
 
     const exportButton = wrapper
@@ -158,7 +177,7 @@ describe('draft UI', () => {
     await exportButton!.trigger('click')
 
     expect(clipboardWriteText).toHaveBeenCalledWith(
-      ['EVE-AT-DRAFT v1', 'YEAR: 2025', 'PICKS:', '- Flagship: Bhaalgorn', 'BANS:'].join('\n'),
+      ['EVE-AT-DRAFT v1', `YEAR: ${latestTournament.year}`, 'PICKS:', `- Flagship: ${latestFlagshipKey}`, 'BANS:'].join('\n'),
     )
     expect(wrapper.text()).toContain('Draft copied to clipboard.')
   })
@@ -176,7 +195,7 @@ describe('draft UI', () => {
 
     const textarea = wrapper.find('textarea')
     expect(textarea.exists()).toBe(true)
-    await textarea.setValue(['EVE-AT-DRAFT v1', 'YEAR: 2025', 'PICKS:', '- Flagship: Bhaalgorn', 'BANS:'].join('\n'))
+    await textarea.setValue(['EVE-AT-DRAFT v1', `YEAR: ${latestTournament.year}`, 'PICKS:', `- Flagship: ${latestFlagshipKey}`, 'BANS:'].join('\n'))
 
     const applyButton = wrapper
       .findAll('button')
@@ -188,20 +207,20 @@ describe('draft UI', () => {
     await nextTick()
 
     expect(wrapper.text()).toContain('Draft imported successfully.')
-    expect(wrapper.text()).toContain('Bhaalgorn')
+    expect(wrapper.text()).toContain(latestFlagshipName)
   })
 
   it('switches years and resets the current draft state', async () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
+    const flagship = shipRows.find((row) => row.props('shipName') === latestFlagshipName && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
+    await flagship!.vm.$emit('addShip', 'Flagship', latestFlagshipKey, latestFlagshipPayload)
     await nextTick()
 
-    expect(wrapper.text()).toContain('Bhaalgorn')
-    expect(wrapper.text()).toContain('Alliance Tournament XXI')
+    expect(wrapper.text()).toContain(latestFlagshipName)
+    expect(wrapper.text()).toContain(latestTournament.label)
 
     const yearSelect = wrapper.findAllComponents(Select).find((select) => select.attributes('id') === 'tournament-year')
     expect(yearSelect).toBeDefined()
@@ -219,9 +238,9 @@ describe('draft UI', () => {
     const wrapper = mountWithApp(AppShell)
     const draftScreen = wrapper.findComponent(DraftScreen)
     const shipRows = draftScreen.findAllComponents({ name: 'Ship' })
-    const bhaalgorn = shipRows.find((row) => row.props('shipName') === 'Bhaalgorn' && row.props('hullType') === 'Flagship')
+    const flagship = shipRows.find((row) => row.props('shipName') === latestFlagshipName && row.props('hullType') === 'Flagship')
 
-    await bhaalgorn!.vm.$emit('addShip', 'Flagship', 'Bhaalgorn', { points: 50, shipId: 17920, originalPoints: 50 })
+    await flagship!.vm.$emit('addShip', 'Flagship', latestFlagshipKey, latestFlagshipPayload)
     await nextTick()
 
     const importButton = wrapper
@@ -246,7 +265,7 @@ describe('draft UI', () => {
     await nextTick()
 
     expect(wrapper.text()).toContain('This draft references a ship key that does not exist in the selected tournament dataset.')
-    expect(wrapper.text()).toContain('Alliance Tournament XXI')
-    expect(wrapper.text()).toContain('Bhaalgorn')
+    expect(wrapper.text()).toContain(latestTournament.label)
+    expect(wrapper.text()).toContain(latestFlagshipName)
   })
 })

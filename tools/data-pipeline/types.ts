@@ -4,6 +4,7 @@ export interface RawShipRecord {
   shipId: number
   points: number
   logisticsWeight?: number
+  inflationIncrement?: number
   names: Record<LocaleCode, string>
 }
 
@@ -17,7 +18,7 @@ export interface RawTournamentSource {
 export interface RawTournamentOverrides {
   ships?: Record<
     string,
-    Omit<Partial<Pick<RawShipRecord, 'points' | 'logisticsWeight'>>, 'names'> & {
+    Omit<Partial<Pick<RawShipRecord, 'points' | 'logisticsWeight' | 'inflationIncrement'>>, 'names'> & {
       names?: Partial<Record<LocaleCode, string>>
     }
   >

@@ -44,6 +44,7 @@ export interface RuleConfig {
   }
   flagship: {
     hullTypeOverrides: Partial<Record<string, HullType>>
+    exemptFromHullCaps?: boolean
   }
 }
 
@@ -58,6 +59,7 @@ export interface TournamentShipRule {
   shipId: number
   points: number
   logisticsWeight?: number
+  inflationIncrement?: number
 }
 
 export type TournamentHullRules = Record<HullType, Record<string, TournamentShipRule>>
@@ -76,6 +78,7 @@ export interface DraftShipSelection {
   originalPoints?: number
   points: number
   logisticsWeight?: number
+  inflationIncrement?: number
 }
 
 export type DraftBuckets = Record<HullType, DraftShipSelection[]>

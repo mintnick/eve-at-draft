@@ -151,6 +151,12 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
   )
 
   const staticValues = parseStaticValuesTable(staticValuesText, shipKeys)
+  for (const shipKey of config.rules.flagshipExclusions ?? []) {
+    const entry = staticValues[shipKey]
+    if (entry) {
+      entry.flagshipEligible = false
+    }
+  }
   const flagshipExtras = Object.keys(config.rules.flagshipOverrides)
   const shipKeysForIds = [...new Set([...Object.keys(staticValues), ...flagshipExtras])]
 
@@ -263,10 +269,18 @@ function extractSheetId(sheetUrl: string): string {
   return match[1]
 }
 
+interface StaticValueEntry {
+  hullType: HullType
+  points: number
+  logisticsWeight?: number
+  inflationIncrement?: number
+  flagshipEligible: boolean
+}
+
 function parseStaticValuesTable(
   responseText: string,
   canonicalShipKeys: Set<string>,
-): Record<string, { hullType: HullType; points: number }> {
+): Record<string, StaticValueEntry> {
   const match = responseText.match(/setResponse\((.*)\);/s)
   if (!match) {
     throw new Error('Could not parse Google Visualization response')
@@ -280,38 +294,45 @@ function parseStaticValuesTable(
     }
   }
 
-  const entries = new Map<string, { hullType: HullType; points: number }>()
+  const entries = new Map<string, StaticValueEntry>()
+  // The last column set is the authoritative full ship list; earlier sets are
+  // per-class summary blocks whose rows are only trusted when they name a known ship.
   const columnSets = [
-    [0, 1, 2],
-    [4, 6, 7],
-    [5, 7, 8],
+    { name: 0, points: 1, hull: 2, inflation: -1, authoritative: false },
+    { name: 4, points: 6, hull: 7, inflation: -1, authoritative: false },
+    { name: 5, points: 7, hull: 8, inflation: 9, authoritative: true },
   ] as const
 
   for (const row of payload.table.rows) {
     const values = row.c.map((cell) => cell?.v ?? null)
 
-    for (const [nameIndex, pointsIndex, hullIndex] of columnSets) {
-      const rawName = values[nameIndex]
-      const rawPoints = values[pointsIndex]
-      const rawHull = values[hullIndex]
+    for (const columnSet of columnSets) {
+      const rawName = values[columnSet.name]
+      const rawPoints = values[columnSet.points]
+      const rawHull = values[columnSet.hull]
 
       if (typeof rawName !== 'string' || typeof rawPoints !== 'number' || typeof rawHull !== 'string') {
         continue
       }
 
       const normalizedName = normalizeStaticValueName(rawName)
-      if (!canonicalShipKeys.has(normalizedName)) {
+      if (!columnSet.authoritative && !canonicalShipKeys.has(normalizedName)) {
         continue
       }
 
-      const hullType = normalizeHullType(rawHull)
-      if (!hullType) {
+      const hull = normalizeHullType(rawHull)
+      if (!hull) {
         continue
       }
+
+      const rawInflation = columnSet.inflation >= 0 ? values[columnSet.inflation] : null
 
       entries.set(normalizedName, {
-        hullType,
+        hullType: hull.hullType,
         points: rawPoints,
+        logisticsWeight: hull.logisticsWeight,
+        inflationIncrement: typeof rawInflation === 'number' ? rawInflation : undefined,
+        flagshipEligible: hull.hullType === 'Battleship',
       })
     }
   }
@@ -323,20 +344,22 @@ function normalizeStaticValueName(value: string): string {
   return value.replace(/\s+\([^)]*\)\s*$/, '').trim()
 }
 
-function normalizeHullType(value: string): HullType | null {
-  if (value === 'Logistics') return 'Logistics'
-  if (value === 'Battleship') return 'Battleship'
-  if (value === 'Battlecruiser') return 'Battlecruiser'
-  if (value === 'Cruiser') return 'Cruiser'
-  if (value === 'Destroyer') return 'Destroyer'
-  if (value === 'Frigate') return 'Frigate'
-  if (value === 'Industrial') return 'Industrial'
-  if (value === 'Corvette') return 'Corvette'
+function normalizeHullType(value: string): { hullType: HullType; logisticsWeight?: number } | null {
+  // Logistics cruisers fill the single logistics slot; two logistics frigates fill it instead.
+  if (value === 'Logistics') return { hullType: 'Logistics', logisticsWeight: 1 }
+  if (value === 'Logistics Frigate') return { hullType: 'Logistics', logisticsWeight: 0.5 }
+  if (value === 'Battleship') return { hullType: 'Battleship' }
+  if (value === 'Battlecruiser') return { hullType: 'Battlecruiser' }
+  if (value === 'Cruiser') return { hullType: 'Cruiser' }
+  if (value === 'Destroyer') return { hullType: 'Destroyer' }
+  if (value === 'Frigate') return { hullType: 'Frigate' }
+  if (value === 'Industrial') return { hullType: 'Industrial' }
+  if (value === 'Corvette') return { hullType: 'Corvette' }
   return null
 }
 
 function buildOfficialHulls(
-  staticValues: Record<string, { hullType: HullType; points: number }>,
+  staticValues: Record<string, StaticValueEntry>,
   idByKey: Record<string, number>,
   enNamesById: Record<number, string>,
   localizedTypeNames: LocalizedTypeNamesByLocale,
@@ -364,7 +387,10 @@ function buildOfficialHulls(
     hulls[ship.hullType]![shipKey] = {
       shipId,
       points: ship.points,
-      logisticsWeight: ship.hullType === 'Logistics' ? logisticsWeights[shipKey] : undefined,
+      logisticsWeight: ship.hullType === 'Logistics'
+        ? ship.logisticsWeight ?? logisticsWeights[shipKey]
+        : undefined,
+      inflationIncrement: ship.inflationIncrement,
       names: {
         ...createShipNames(shipKey, shipId, enNamesById, localizedTypeNames),
       },
@@ -372,6 +398,10 @@ function buildOfficialHulls(
   }
 
   for (const [shipKey, ship] of Object.entries(hulls.Battleship ?? {})) {
+    if (staticValues[shipKey]?.flagshipEligible === false) {
+      continue
+    }
+
     hulls.Flagship![shipKey] = {
       ...ship,
     }

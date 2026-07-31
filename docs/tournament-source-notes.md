@@ -44,6 +44,15 @@ The current pipeline should treat the official post and linked sheet as the prim
 - Official Google Sheet:
   - [Quick Comp Creator / New Static Values](https://docs.google.com/spreadsheets/d/1f_-vpJnwJvyOk23BmGam_ojeq2uBWTWukFHHIiwxyQQ/edit?usp=sharing)
 
+### Alliance Tournament XXII
+- Official rules post:
+  - [Alliance Tournament XXII Rules and Regulations](https://www.eveonline.com/news/view/alliance-tournament-xxii-rules-and-regulations)
+  - Published: 2026-07-23
+- Official Google Sheet:
+  - [ATXXII Comp Creator V1.4](https://docs.google.com/spreadsheets/d/1AVYlWlvuMKnA3yuqqDCcAkia8pvhpb9OBcM29WFw5rM/edit?usp=sharing)
+  - "New Static Values (Do Not Edit)" tab recovered through Google Visualization JSON using `gid=284772315`
+  - That tab now carries an `Inflation Value` column and a distinct `Logistics Frigate` hull size
+
 ### Alliance Tournament XX
 - Official rules post:
   - [Alliance Tournament XX: Revamped Rules!](https://www.eveonline.com/news/view/alliance-tournament-xx-revamped-rules)
@@ -72,7 +81,8 @@ When adding a new tournament year or backfilling an old one:
 - 2023 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
 - 2025 is generated from the current legacy snapshot source path plus official rules references.
 - 2024 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
-- `data/generated/index.json` currently exposes 2021 through 2025 to the app year selector.
+- 2026 is generated from the official EVE Online rules post and the official Google Sheet static-values tab.
+- `data/generated/index.json` currently exposes 2021 through 2026 to the app year selector.
 
 ## Earliest reliable official-source coverage found so far
 

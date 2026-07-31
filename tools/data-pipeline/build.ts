@@ -86,6 +86,7 @@ export function createYearlyRules(source: RawTournamentSource): TournamentHullRu
               shipId: ship.shipId,
               points: ship.points,
               logisticsWeight: ship.logisticsWeight,
+              inflationIncrement: ship.inflationIncrement,
             },
           ])
           .sort(([aKey, a], [bKey, b]) => b.points - a.points || aKey.localeCompare(bKey)),
@@ -131,6 +132,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
       pointInflation: config.rules.pointInflation,
       flagship: {
         hullTypeOverrides: config.rules.flagshipOverrides,
+        exemptFromHullCaps: config.rules.flagshipExemptFromHullCaps,
       },
     },
     hulls: createYearlyRules(merged),

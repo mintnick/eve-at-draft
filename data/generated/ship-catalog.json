@@ -3848,5 +3848,89 @@
       "fr": "Tholos",
       "es": "Tholos"
     }
+  },
+  "Anhinga": {
+    "shipId": 89807,
+    "names": {
+      "en": "Anhinga",
+      "zh-CN": "蛇鹈号",
+      "zh-TW": "蛇鵜號",
+      "ru": "Anhinga",
+      "de": "Anhinga",
+      "ja": "アンヒンガ",
+      "ko": "아닝가",
+      "fr": "Anhinga",
+      "es": "Anhinga"
+    }
+  },
+  "Skua": {
+    "shipId": 89808,
+    "names": {
+      "en": "Skua",
+      "zh-CN": "贼鸥号",
+      "zh-TW": "賊鷗號",
+      "ru": "Skua",
+      "de": "Skua",
+      "ja": "スクア",
+      "ko": "스쿠아",
+      "fr": "Skua",
+      "es": "Skua"
+    }
+  },
+  "Corax Navy Issue": {
+    "shipId": 91857,
+    "names": {
+      "en": "Corax Navy Issue",
+      "zh-CN": "渡鸦级海军型",
+      "zh-TW": "渡鴉級海軍型",
+      "ru": "Corax Navy Issue",
+      "de": "Corax Navy Issue",
+      "ja": "コラックス海軍仕様",
+      "ko": "코락스 해군 에디션",
+      "fr": "Corax Navy Issue",
+      "es": "Corax modelo de la Armada"
+    }
+  },
+  "Algos Navy Issue": {
+    "shipId": 91849,
+    "names": {
+      "en": "Algos Navy Issue",
+      "zh-CN": "阿尔格斯级海军型",
+      "zh-TW": "阿爾格斯級海軍型",
+      "ru": "Algos Navy Issue",
+      "de": "Algos Navy Issue",
+      "ja": "アルゴス海軍仕様",
+      "ko": "알고스 해군 에디션",
+      "fr": "Algos Navy Issue",
+      "es": "Algos modelo de la Armada"
+    }
+  },
+  "Talwar Fleet Issue": {
+    "shipId": 91858,
+    "names": {
+      "en": "Talwar Fleet Issue",
+      "zh-CN": "弯刀级舰队型",
+      "zh-TW": "彎刀級艦隊型",
+      "ru": "Talwar Fleet Issue",
+      "de": "Talwar Fleet Issue",
+      "ja": "タルワー海軍仕様",
+      "ko": "탈와르 함대 에디션",
+      "fr": "Talwar Fleet Issue",
+      "es": "Talwar modelo de la Flota"
+    }
+  },
+  "Dragoon Navy Issue": {
+    "shipId": 91775,
+    "names": {
+      "en": "Dragoon Navy Issue",
+      "zh-CN": "龙骑兵级海军型",
+      "zh-TW": "龍騎兵級海軍型",
+      "ru": "Dragoon Navy Issue",
+      "de": "Dragoon Navy Issue",
+      "ja": "ドラグーン海軍仕様",
+      "ko": "드라군 해군 에디션",
+      "fr": "Dragoon Navy Issue",
+      "es": "Dragoon modelo de la Armada"
+    }
   }
 }
