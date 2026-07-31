@@ -238,7 +238,7 @@ defineExpose({
     <section class="ban-section">
       <div class="summary-header">
         <div class="summary-title summary-title--ban">
-          BAN
+          {{ $t('messages.ban') }}
           <a class="ban-rules-link" :href="banLink" target="_blank" rel="noreferrer">
             ({{ $t('messages.rules') }})
           </a>

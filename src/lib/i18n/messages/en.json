@@ -4,7 +4,6 @@
     "rules": "Rules",
     "matchArchive": "Match Archive",
     "clear": "Clear",
-    "pick": "Picks",
     "ban": "Bans",
     "language": "Language",
     "import": "Import",
@@ -17,7 +16,7 @@
     "importApplied": "Draft imported successfully.",
     "prizeShips": "Prize ships:",
     "feedback": "Feedback",
-    "footerDisclaimer": "All EVE related materials are property of CCP Games"
+    "footerDisclaimer": "All EVE-related materials are the property of CCP Games"
   },
   "validation": {
     "ship-not-found": "This ship is not available in the selected tournament dataset.",
