@@ -87,6 +87,4 @@ Logistics hull sizes come from the sheet: `Logistics` cruisers weigh a full slot
 
 ## Deferred work
 
-- **Data-pipeline unit tests** — coverage is lighter than app/rules layer; worth expanding when the pipeline is extended.
-- **ATXXII prize ships** — CCP had not announced the Amarr reward hulls when the rules post landed, so
-  `prize.rewardShips` for 2026 is empty. Fill it in once they are published.
+Tracked in `docs/PLAN.md`.
