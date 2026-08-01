@@ -42,6 +42,21 @@ async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
   return response.json() as Promise<T>
 }
 
+async function isArchiveAvailable(archiveUrl: string | undefined): Promise<boolean> {
+  if (!archiveUrl) return true
+
+  try {
+    const response = await fetch(archiveUrl, { method: 'HEAD', redirect: 'follow' })
+    // Fail open: only a definitive "not there" hides the link. A server error or a rate
+    // limit must leave it in place.
+    return response.status !== 404 && response.status !== 410
+  } catch {
+    // Also fail open. Returning false here would let one offline pipeline run silently
+    // strip the archive link from every tournament year at once.
+    return true
+  }
+}
+
 const ESI_TYPE_NAME_LOCALES = ['zh-CN', 'ru', 'de', 'ja', 'ko', 'fr', 'es'] as const
 const TYPE_NAME_FETCH_CONCURRENCY = 12
 type EsiTypeNameLocale = (typeof ESI_TYPE_NAME_LOCALES)[number]
@@ -125,6 +140,7 @@ export async function fetchTournamentSource(year: number): Promise<void> {
     year,
     provider: 'legacy-repo-snapshot',
     capturedAt: new Date().toISOString(),
+    archiveAvailable: await isArchiveAvailable(config.archiveUrl),
     hulls,
   }
 
@@ -196,6 +212,7 @@ async function fetchOfficialSheetTournamentSource(year: number): Promise<void> {
     year,
     provider: 'official-sheet-static-values',
     capturedAt: new Date().toISOString(),
+    archiveAvailable: await isArchiveAvailable(config.archiveUrl),
     hulls,
   }
 

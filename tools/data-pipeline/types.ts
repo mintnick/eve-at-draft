@@ -12,6 +12,8 @@ export interface RawTournamentSource {
   year: number
   provider: string
   capturedAt: string
+  /** false only when the archive URL is known to be missing upstream; absent means available. */
+  archiveAvailable?: boolean
   hulls: Partial<Record<HullType, Record<string, RawShipRecord>>>
 }
 

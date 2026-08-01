@@ -1,12 +1,14 @@
 import type {
   ShipCatalog,
   ShipCatalogEntry,
+  SourceReference,
   TournamentDataset,
   TournamentHullRules,
   TournamentIndexEntry,
   TournamentShipRule,
 } from '../../src/lib/types'
 import { GENERATED_INDEX_FILE, getTournamentConfig, SHIP_CATALOG_FILE, TOURNAMENTS } from './config'
+import type { TournamentPipelineConfig } from './config'
 import { readJsonFile, readOptionalJsonFile, writeJsonFile } from './fs'
 import type { RawTournamentOverrides, RawTournamentSource } from './types'
 
@@ -95,6 +97,22 @@ export function createYearlyRules(source: RawTournamentSource): TournamentHullRu
   ) as TournamentHullRules
 }
 
+export function createSourceReferences(
+  config: TournamentPipelineConfig,
+  source: RawTournamentSource,
+): SourceReference[] {
+  const references: SourceReference[] = [
+    { label: 'Rules', url: config.rules.rulesLink },
+    { label: 'Ban Rules', url: config.rules.banLink },
+  ]
+
+  if (config.archiveUrl && source.archiveAvailable !== false) {
+    references.push({ label: 'Match Archive', url: config.archiveUrl })
+  }
+
+  return references
+}
+
 export async function buildTournamentArtifacts(year: number): Promise<void> {
   const config = getTournamentConfig(year)
   const [source, overrides] = await Promise.all([
@@ -120,11 +138,7 @@ export async function buildTournamentArtifacts(year: number): Promise<void> {
       year: config.year,
       prize: config.prize,
     },
-    sources: [
-      { label: 'Rules', url: config.rules.rulesLink },
-      { label: 'Ban Rules', url: config.rules.banLink },
-      ...(config.archiveUrl ? [{ label: 'Match Archive', url: config.archiveUrl }] : []),
-    ],
+    sources: createSourceReferences(config, source),
     rules: {
       maxPoints: config.rules.maxPoints,
       maxShips: config.rules.maxShips,
