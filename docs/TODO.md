@@ -211,4 +211,63 @@ and do not retry with a different guess.
 
 ## Coder notes
 
-_(coder: append here if blocked)_
+_(none — coder did not report a blocker)_
+
+## Review
+
+**Result: PASS.** All 10 acceptance criteria met, all constraints respected. One
+low-severity comment nit below; nothing blocking.
+
+### Acceptance criteria
+
+| # | Criterion | Result |
+|---|---|---|
+| 1 | `data/raw/2026/source.json` has `"archiveAvailable": false` | PASS |
+| 2 | `2026.json` sources = `Rules` + `Ban Rules` only | PASS |
+| 3 | `2025.json` keeps `Match Archive`; `raw/2025/source.json` untouched | PASS |
+| 4 | `2021.json`–`2024.json` unmodified | PASS |
+| 5 | `src/app/AppShell.vue` unmodified | PASS — `src/` untouched entirely |
+| 6 | `yarn typecheck` | PASS |
+| 7 | `yarn test:run` incl. 4 new cases | PASS — 39 tests (was 35) |
+| 8 | `yarn build` | PASS |
+| 9 | `validate` for 2021–2026 | PASS — all six |
+| 10 | `build.ts` makes no network calls | PASS — no `fetch`/`http` references |
+
+### Constraints
+
+No new dependencies, no lockfile change, no build/tool config change. Exactly the six
+permitted files were touched. No `docs/` edits. Nothing committed. No scope creep.
+
+### Behaviour verified beyond the criteria
+
+Fail-open was exercised directly against the real implementation's logic, since it is the
+safety-critical path — a wrong `catch` would strip archive links from every year at once:
+
+| Case | `available` |
+|---|---|
+| real 404 (ATXXII) | `false` |
+| real 200 (ATXXI) | `true` |
+| DNS failure | `true` |
+| connection refused | `true` |
+| no archive URL | `true` |
+
+Only a genuine 404 hides the link. Correct.
+
+Also confirmed `data/raw/2026/source.json` changed by exactly two lines (`capturedAt`,
+`archiveAvailable`) — no ship points, ids, or names moved during the re-fetch.
+
+### Findings
+
+1. **low — `tools/data-pipeline/fetch.ts:45-54`, missing rationale comment.** The bare
+   `catch { return true }` and the `!== 404 && !== 410` test read like they could be
+   simplified. They cannot: fail-open is deliberate, and a future maintainer who "tidies"
+   the catch to `return false` would silently drop the archive link from all six years on
+   any network blip. Add a one-line comment on each so the intent survives. Not a
+   correctness problem — behaviour is right today.
+
+### Follow-up (not this task)
+
+The probe has no timeout, so it inherits undici's defaults (~10s connect, 300s headers).
+A hung archive host would stall the pipeline after the expensive ESI work has already
+completed. This was a gap in the task design, not a coder miss. Worth an `AbortSignal.timeout(10_000)`
+next time this file is touched.
